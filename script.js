@@ -31,38 +31,38 @@ async function fetchRepoTree() {
         copyTreeButton.style.display = 'inline-block';
         treeContainer.style.display = 'block';
         container.classList.add('tree-loaded');
-
-        // Animate the tree output
         animateTreeOutput();
 
     } catch (error) {
-        showError(`Error fetching repository: ${error.message}`);
+        // Error handling is now done in the main try/catch
+        showError(error.message); // Display the error message
         copyTreeButton.style.display = 'none';
     } finally {
         showLoading(false);
     }
 }
-
 async function buildTree(repo, branch, path = '', level = 0, treeText = '', plainText = '') {
     const url = `https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}`;
     const response = await fetch(url);
 
     if (!response.ok) {
+        // Throw the error to be caught in fetchRepoTree
         if (response.status === 404) {
             throw new Error("Repository or path not found.");
         } else if (response.status === 403) {
-            handleRateLimit(response)
+            await handleRateLimit(response); // Await here
         } else {
             throw new Error(`GitHub API error: ${response.status}`);
         }
     }
 
+
     const data = await response.json();
     const getIndent = (level) => "    ".repeat(level);
     const getPrefix = (isLast) => (level === 0) ? '' : (isLast ? '└── ' : '├── ');
 
-    let lineNumbersHTML = ''; // Accumulate line numbers here
-    let treeContentHTML = ''; // Accumulate tree content here
+    let lineNumbersHTML = '';
+    let treeContentHTML = '';
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
         const isLast = i === data.length - 1;
@@ -73,20 +73,19 @@ async function buildTree(repo, branch, path = '', level = 0, treeText = '', plai
 
         if (item.type === 'dir') {
             const line = `${indent}${prefix}${icon}<span class="dir-name">${item.name}</span> ${copyButton}`;
-            treeContentHTML += `<span>${line}</span>\n`; // Wrap in span for animation
+            treeContentHTML += `<span>${line}</span>\n`;
             plainText += `${indent}${prefix}${item.name}\n`;
-            let [nestedTreeText, nestedPlainText] = await buildTree(repo, branch, item.path, level + 1, '', ''); //Get nested content.
-            treeContentHTML += nestedTreeText; // Append nested content
+            let [nestedTreeText, nestedPlainText] = await buildTree(repo, branch, item.path, level + 1, '', '');
+            treeContentHTML += nestedTreeText;
             plainText += nestedPlainText;
 
         } else {
             const line = `${indent}${prefix}${icon}<a href="${item.html_url}" target="_blank" style="color: inherit; text-decoration: none;">${item.name}</a> ${copyButton}`;
-            treeContentHTML += `<span>${line}</span>\n`;  // Wrap in span for animation
+            treeContentHTML += `<span>${line}</span>\n`;
             plainText += `${indent}${prefix}${item.name}\n`;
         }
     }
-    // Build line numbers based on the number of lines in treeContentHTML
-    const numLines = treeContentHTML.split('\n').length -1; // -1 because of the extra \n
+    const numLines = treeContentHTML.split('\n').length -1;
     for(let i = 1; i <= numLines; i++){
         lineNumbersHTML += `<span>${i}</span>`;
     }
@@ -94,17 +93,18 @@ async function buildTree(repo, branch, path = '', level = 0, treeText = '', plai
     tree.innerHTML = `<div class="line-numbers">${lineNumbersHTML}</div><div class="line-content">${treeContentHTML}</div>`;
     hiddenTree.value = plainText;
     attachCopyButtonListeners();
-    return [treeContentHTML, plainText]; // Return accumulated content
+    return [treeContentHTML, plainText];
 }
+
 function animateTreeOutput() {
     const lines = tree.querySelectorAll('.line-content > span');
     lines.forEach((line, index) => {
-        // Simple line-by-line reveal
         setTimeout(() => {
             line.style.visibility = 'visible';
-        }, index * 50); // Adjust delay as needed
+        }, index * 50);
     });
 }
+
 function attachCopyButtonListeners() {
     const copyButtons = document.querySelectorAll('.copy-button');
     copyButtons.forEach(button => {
@@ -144,12 +144,20 @@ function clearTree() {
     treeContainer.style.display = 'none';
     container.classList.remove('tree-loaded');
 }
-async function handleRateLimit(response){
+async function handleRateLimit(response) {
     const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining');
     const rateLimitReset = response.headers.get('X-RateLimit-Reset');
+
     if (rateLimitRemaining === '0' && rateLimitReset) {
         const resetTime = new Date(parseInt(rateLimitReset) * 1000);
-        throw new Error(`Rate limit exceeded.  Try again after ${resetTime.toLocaleString()}`);
-     }
-     throw new Error(`GitHub API error: ${response.status}`);
+        const currentTime = new Date();
+        const timeDiff = resetTime.getTime() - currentTime.getTime(); // Difference in milliseconds
+        const minutes = Math.ceil(timeDiff / (1000 * 60)); // Convert to minutes
+
+        // Throw a new error with the formatted message
+        throw new Error(`Rate limit exceeded. Try again after ${resetTime.toLocaleString()} (in approximately ${minutes} minutes).`);
+    } else {
+        // If not a rate limit error, throw a generic error
+        throw new Error(`GitHub API error: ${response.status}`);
+    }
 }
