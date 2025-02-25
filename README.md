@@ -116,4 +116,4 @@ This project is published under the MIT License - see [LICENSE](LICENSE) file fo
 
 **[Follow Me](https://github.com/mgks) on GitHub** | **Add Project to Watchlist** | **Star the Project**
 
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
+<br /><img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
