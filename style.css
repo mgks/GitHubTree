@@ -178,9 +178,10 @@ body {
     text-align: center;
     font-size: 1em;
 }
-
 #error {
-    color: rgb(246, 71, 71);
+    color: rgb(177, 0, 0);
+    font-size: .9em;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
