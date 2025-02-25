@@ -1,0 +1,254 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: all 0.3s ease;
+    text-rendering: optimizespeed;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 2.5em;
+}
+
+.input-area {
+    text-align: center;
+    overflow: hidden;
+}
+
+#main-title {
+    color: #282c34;
+    margin: 1.5em 0 1em;
+    transition: transform 0.3s ease;
+    text-align: center;
+    font-size: 4em;
+}
+
+/* Input and button styling */
+#repoInput,
+#branchInput {
+    padding: .75em 4%;
+    font-size: 1em;
+    font-weight: bold;
+    border: 0;
+    background-color: #41454c;
+    color: #fff;
+    margin-right: .5%;
+    border-radius: 5px;
+    float: left;
+    width: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#fetchButton {
+    padding: .75em 2.5%;
+    width: 22%;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#fetchButton:hover {
+    background-color: #024ea2;
+}
+
+/* Tree container */
+.tree-container {
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 10px;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0 0 25px -10px #282c34;
+}
+
+.tree-header {
+    background-color: #1e2127;
+    padding: .75em;
+    text-align: right;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+
+}
+
+#copyTreeButton {
+    padding: 1em;
+    float: left;
+    background-color: #282c34;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: .75em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#copyTreeButton:hover {
+    background-color: #32363e;
+}
+
+#tree {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    counter-reset: line;
+    line-height: 2;
+    display: flex;
+
+}
+/*line numbers*/
+#tree .line-numbers {
+    color: #999;
+    user-select: none;
+    padding: 1em;
+    text-align: right;
+    min-width: 30px;
+    border-right: 1px solid #333;
+    margin-right: 10px;
+    flex-shrink: 0;
+    background-color: color(srgb 0.1956 0.2104 0.24);
+
+}
+
+#tree .line-numbers span {
+    display: block; /* Each line number on its own line */
+}
+
+#tree .line-content {
+    flex-grow: 1;
+    overflow-x: auto;
+    word-break: break-all;
+    padding: 1em;
+
+}
+
+#tree .line-content > span {
+      display: inline-block; /* Important for consistent animation */
+      visibility: hidden; /* Initially hidden for animation */
+}
+
+.dir-name {
+    font-weight: bold;
+}
+
+.fa-folder {
+    color: #61afef;
+}
+
+.fa-file {
+    color: #98c379;
+}
+
+/* Copy button */
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #53575e;
+    padding: 0;
+    margin-left: .25em;
+    font-size: 0.8em;
+    vertical-align: middle;
+
+}
+
+.copy-button:hover {
+    text-decoration: underline;
+}
+
+/* Loading and error */
+#loading,
+#error {
+    margin: 5em;
+    text-align: center;
+    font-size: 1em;
+}
+
+#error {
+    color: rgb(246, 71, 71);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+
+}
+#repoInput:focus, #branchInput:focus {
+    outline: none;
+
+}
+
+.header-area i {
+    margin: 1em 0;
+    display: block;
+    font-size: .75em;
+    color: #75777a;
+}
+
+.header-area {
+    margin: 7em 0 2em;
+}
+
+.disc {
+    margin: 5em 10%;
+    text-align: center;
+    font-size: .85em;
+    color: #282c34;
+    line-height: 1.5em;
+}
+
+.disc a {
+    background-color: #bbbfc7;
+    padding: 0 .25em;
+}
+
+.tree-loaded .header-area {
+    margin-top: 0;
+    transition: 1s;
+}
+.footer {
+    text-align: center;
+    padding: .75em 1em;
+    position: fixed;
+    bottom: 1em;
+    width: fit-content;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 0.9em;
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: .25px;
+    background-color: #fff;
+}
+.footer svg{
+  float: left;
+  margin-right: .75em;
+}
+@media (max-width: 600px){
+    .header-area{
+        margin:2em 0
+    }
+    #main-title{font-size:2.5em}
+    #main-title span{
+        display:block;
+        margin-bottom: .5em;
+    }
+    #repoInput, #branchInput{width: 80%;margin: .25em 6%;}
+    #fetchButton{width:50%;margin:.25em 25%}
+    .header-area i{text-align:center}
+}
