@@ -155,7 +155,7 @@ async function handleRateLimit(response) {
         const minutes = Math.ceil(timeDiff / (1000 * 60)); // Convert to minutes
 
         // Throw a new error with the formatted message
-        throw new Error(`Rate limit exceeded!<br /><br />Try again after ${resetTime.toLocaleString()} (in ~${minutes} minutes).`);
+        throw new Error(`Rate limit exceeded!\n\nTry again after ${resetTime.toLocaleString()} (in ~${minutes} minutes).`);
     } else {
         // If not a rate limit error, throw a generic error
         throw new Error(`GitHub API error: ${response.status}`);
