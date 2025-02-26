@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" width="500" alt="_GitHubTree Banner">
+  <img src="assets/banner.png" width="500" alt="GitHubTree Banner">
 </p>
 <p align="center">  
   <b>With GitHubTree, visualize the directory structure of any <code>public</code> GitHub repository with a clean, terminal-like interface.</b>
@@ -7,7 +7,7 @@
 
 ----
 
-**This tool allows you to:**
+**GitHubTree allows you to:**
 
 *   **Explore:**  Easily browse the folder and file organization of a GitHub repo without cloning it.
 *   **Copy Paths:**  Quickly copy the path to any file or directory with a single click.
@@ -16,7 +16,7 @@
 *   **No Authentication Required (for public repos):**  Uses the unauthenticated GitHub API, so you don't need to provide any credentials for public repositories.
 
 <p align="center">
-  <img src="assets/tree.png" width="750" alt="_GitHubTree Repo Preview">
+  <img src="assets/tree.png" width="750" alt="GitHubTree Repo Preview">
 </p>
 
 [**Try GitHubTree**](https://mgks.github.io/GitHubTree)
