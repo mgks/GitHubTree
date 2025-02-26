@@ -19,7 +19,7 @@
   <img src="assets/tree.png" width="750" alt="GitHubTree Repo Preview">
 </p>
 
-[**Try GitHubTree**](https://mgks.github.io/GitHubTree)
+[**Try GitHubTree**](https://githubtree.mgks.dev)
 
 ## How to Use
 
