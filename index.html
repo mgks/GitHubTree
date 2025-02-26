@@ -28,7 +28,7 @@
     <meta property="twitter:image" content="https://githubtree.mgks.dev/assets/preview.png">
 
     <link rel="canonical" href="https://githubtree.mgks.dev" />
-    <link rel="stylesheet" href="https://githubtree.mgks.dev/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google tag (gtag.js) -->
@@ -61,6 +61,15 @@
         <div class="tree-container" id="tree-container" style="display: none;">
             <div class="tree-header">
                 <button id="copyTreeButton">Copy Complete Tree</button>
+                <div class="sort-dropdown">
+                    <button id="sortButton" class="sort-button">Sort <i class="fas fa-caret-down"></i></button>
+                    <div class="sort-options" id="sortOptions">
+                        <div data-sort="folders-first-az">Folders First (A-Z)</div>
+                        <div data-sort="folders-first-za">Folders First (Z-A)</div>
+                        <div data-sort="az">A-Z</div>
+                        <div data-sort="za">Z-A</div>
+                    </div>
+                </div>
             </div>
             <pre id="tree"></pre>
         </div>
@@ -70,6 +79,6 @@
         </div>
     </div>
     <div class="footer"><a href="https://github.com/mgks"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> Developed by @mgks</a> | <a href="https://github.com/mgks/GitHubTree">GitHub Repo</a></div>
-    <script src="https://githubtree.mgks.dev/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

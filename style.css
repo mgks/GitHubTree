@@ -80,9 +80,8 @@ body {
     background-color: #1e2127;
     padding: .75em;
     text-align: right;
-    overflow: hidden;
     border-bottom: 1px solid #333;
-
+    position: relative;
 }
 
 #copyTreeButton {
@@ -100,6 +99,69 @@ body {
 
 #copyTreeButton:hover {
     background-color: #32363e;
+}
+
+.sort-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sort-button {
+    padding: 1em;
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .75em;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-button:hover {
+    background-color: #32363e;
+}
+
+.sort-button i {
+    margin-left: 5px;
+}
+
+.sort-options {
+    display: none;
+    position: absolute;
+    background-color: #282c34;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    right: 0;
+    top: 100%;
+    border-radius: 5px;
+}
+
+.sort-options div {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: .9em;
+    border-bottom: 1px solid #32363e;
+}
+
+.sort-options div:last-child {
+    border-bottom: none;
+}
+
+.sort-options div:hover {
+    background-color: #32363e;
+}
+
+/* Show the dropdown options when the button is clicked */
+.sort-dropdown.open .sort-options {
+    display: block;
 }
 
 #tree {
