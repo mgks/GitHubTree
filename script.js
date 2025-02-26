@@ -14,6 +14,8 @@ const sortOptions = document.getElementById('sortOptions');
 
 let currentSort = 'folders-first-az';
 let cachedTreeData = null; // Store fetched tree data
+let currentRepo = ''; // Store current repo
+let currentBranch = ''; // Store current branch
 
 fetchButton.addEventListener('click', fetchRepoTree);
 copyTreeButton.addEventListener('click', () => copyToClipboard(hiddenTree.value));
@@ -43,6 +45,9 @@ async function fetchRepoTree() {
         return;
     }
 
+    // Reset sort order for new requests
+    currentSort = 'folders-first-az';
+
     showLoading(true);
     clearTree();
     clearError();
@@ -54,6 +59,8 @@ async function fetchRepoTree() {
 
         // 2. Get the entire tree (recursively) using the tree SHA
         cachedTreeData = await getRepoTree(repo, commitSha);
+        currentRepo = repo;  // Store for rebuilding
+        currentBranch = branch; // Store for rebuilding
 
         // 3. Sort and build the tree structure
         const sortedData = sortTreeData(cachedTreeData);
@@ -71,7 +78,7 @@ async function fetchRepoTree() {
         showLoading(false);
     }
 }
-// NEW: Function to get the commit SHA
+// Function to get the commit SHA
 async function getCommitSha(repo, branch) {
     const url = `https://api.github.com/repos/${repo}/commits/${branch}`;
     const response = await fetch(url);
@@ -89,9 +96,7 @@ async function getCommitSha(repo, branch) {
     return data.sha; // The SHA of the commit
 }
 
-// Modified: Now takes the commit SHA, not the branch name
 async function getRepoTree(repo, commitSha) {
-    // First, fetch the commit to get the tree SHA
     const commitUrl = `https://api.github.com/repos/${repo}/git/commits/${commitSha}`;
     const commitResponse = await fetch(commitUrl);
 
@@ -176,7 +181,6 @@ function buildTreeHTML(treeData, repo, branch) {
         treeContentHTML += `<span>${line}</span>\n`;
     });
 
-    // Build line numbers
     let lineNumbersHTML = '';
     const numLines = treeContentHTML.split('\n').length - 1;
     for (let i = 1; i <= numLines; i++) {
@@ -187,12 +191,48 @@ function buildTreeHTML(treeData, repo, branch) {
     hiddenTree.value = plainText;
     attachCopyButtonListeners();
 }
-// Sort tree data based on current sort setting (No changes)
+// CORRECTED: Recursive, hierarchical sort
 function sortTreeData(treeData) {
-    return treeData.sort(getSortFunction(currentSort));
+    // 1. Create a hierarchical structure
+    const root = { path: '', type: 'tree', children: [] };
+    const pathMap = { '': root };
+
+    treeData.forEach(item => {
+        const pathParts = item.path.split('/');
+        const parentPath = pathParts.slice(0, -1).join('/');
+        const parent = pathMap[parentPath] || root;
+
+        const node = { ...item, children: [] }; // Add a children array
+        parent.children.push(node);
+        pathMap[item.path] = node;
+    });
+
+    // 2. Recursive sort function
+    const recursiveSort = (node) => {
+        if (node.children) {
+             node.children.sort(getSortFunction(currentSort));
+            node.children.forEach(recursiveSort); // Sort children recursively
+        }
+    };
+
+    // 3. Sort the root's children
+    recursiveSort(root);
+
+    // 4. Flatten back into a list
+    const flattened = [];
+    const flatten = (node) => {
+        if (node !== root) { // Don't include the artificial root
+            flattened.push(node);
+        }
+        if (node.children) {
+            node.children.forEach(flatten);
+        }
+    };
+    flatten(root);
+
+    return flattened;
 }
 
-// Get the appropriate sort function (No changes)
 function getSortFunction(sortType) {
     const compareNames = (a, b) => {
         const aName = a.path.split('/').pop().toLowerCase();
@@ -222,16 +262,14 @@ function getSortFunction(sortType) {
     }
 }
 
-// Sort and rebuild the tree without fetching (No changes)
 function sortAndRebuildTree() {
     if (!cachedTreeData) {
         return;
     }
     const sortedData = sortTreeData(cachedTreeData);
-    buildTreeHTML(sortedData, repoInput.value.trim(), branchInput.value.trim() || 'main');
+    buildTreeHTML(sortedData, currentRepo, currentBranch);
+    animateTreeOutput();
 }
-
-// --- Utility Functions (No Changes) ---
 
 function animateTreeOutput() {
     const lines = tree.querySelectorAll('.line-content > span');
