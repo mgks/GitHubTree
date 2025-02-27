@@ -2,7 +2,7 @@
   <img src="assets/banner.png" width="500" alt="GitHubTree Banner">
 </p>
 <p align="center">  
-  <b>With GitHubTree, visualize the directory structure of any <code>public</code> GitHub repository with a clean, terminal-like interface.</b>
+  <b>With GitHubTree, visualize the directory structure of any <code>public</code> GitHub repository with a clean interface.</b>
 </p>
 
 ----
