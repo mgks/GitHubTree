@@ -26,7 +26,7 @@ body {
 
 #main-title {
     color: #282c34;
-    margin: 1.5em 0 1em;
+    margin: 1.5em 0 0;
     transition: transform 0.3s ease;
     text-align: center;
     font-size: 4em;
@@ -159,7 +159,6 @@ body {
     background-color: #32363e;
 }
 
-/* Show the dropdown options when the button is clicked */
 .sort-dropdown.open .sort-options {
     display: block;
 }
@@ -188,7 +187,7 @@ body {
 }
 
 #tree .line-numbers span {
-    display: block; /* Each line number on its own line */
+    display: block;
 }
 
 #tree .line-content {
@@ -200,8 +199,8 @@ body {
 }
 
 #tree .line-content > span {
-      display: inline-block; /* Important for consistent animation */
-      visibility: hidden; /* Initially hidden for animation */
+      display: inline-block;
+      visibility: hidden;
 }
 
 .dir-name {
@@ -216,7 +215,6 @@ body {
     color: #98c379;
 }
 
-/* Copy button */
 .copy-button {
     background: none;
     border: none;
@@ -233,7 +231,6 @@ body {
     text-decoration: underline;
 }
 
-/* Loading and error */
 #loading,
 #error {
     margin: 5em;
@@ -284,6 +281,31 @@ a {
 .tree-loaded .header-area {
     margin-top: 0;
     transition: 1s;
+}
+.support-block{
+    text-align:center;
+    margin: 1em 0 2em;
+}
+.support-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75em 2em;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: .85em;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease;
+    margin: 0 auto;
+}
+.support-block .fa-heart {
+    color: #f42774;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+.support-button:hover {
+    transform: translateY(1px);
+    box-shadow: inset 0 -20px 25px -5px rgb(244 39 116 / 18%);
 }
 .footer {
     text-align: center;
