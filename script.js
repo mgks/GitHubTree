@@ -12,10 +12,14 @@ const container = document.querySelector('.container');
 const sortButton = document.getElementById('sortButton');
 const sortOptions = document.getElementById('sortOptions');
 
+const metaDescription = document.querySelector('meta[name="description"]'); // Get the meta description tag
+
 let currentSort = 'folders-first-az';
 let cachedTreeData = null; // Store fetched tree data
 let currentRepo = ''; // Store current repo
 let currentBranch = ''; // Store current branch
+let currentRepoTitle = ''; // Store repo title
+let currentRepoDescription = ''; // Store repo description
 
 fetchButton.addEventListener('click', fetchRepoTree);
 copyTreeButton.addEventListener('click', () => copyToClipboard(hiddenTree.value));
@@ -37,6 +41,34 @@ document.addEventListener('click', () => {
     sortOptions.parentElement.classList.remove('open');
 });
 
+// Function to update the URL and page title
+function updateURL(repo, branch) {
+    const newURL = `${window.location.origin}/${repo}/${branch}`;
+    history.pushState({ repo, branch }, '', newURL);
+    updateMetaData(`GitHubTree: ${repo} (${branch}) | View Folder Structure`,currentRepoDescription);
+}
+
+// Function to parse URL parameters on page load
+function parseURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const path = urlParams.get('path');
+
+    if (path) {
+        const pathSegments = path.split('/').filter(Boolean);
+        if (pathSegments.length >= 2) {
+            const [user, repo, ...rest] = pathSegments;
+            const branch = rest.join('/') || 'main';
+            repoInput.value = `${user}/${repo}`;
+            branchInput.value = branch;
+            fetchRepoTree(); // Automatically fetch on page load
+        } else if (pathSegments.length > 0 && pathSegments.length < 2) {
+            showError("Invalid URL format. Please use the format: username/repo/branch");
+            repoInput.value = '';
+            branchInput.value = '';
+        }
+    }
+}
+// Streamlined fetchRepoTree
 async function fetchRepoTree() {
     const repo = repoInput.value.trim();
     const branch = branchInput.value.trim() || 'main';
@@ -45,7 +77,6 @@ async function fetchRepoTree() {
         return;
     }
 
-    // Reset sort order for new requests
     currentSort = 'folders-first-az';
 
     showLoading(true);
@@ -54,17 +85,22 @@ async function fetchRepoTree() {
     hiddenTree.value = '';
 
     try {
-        // 1. Get the commit SHA for the branch
-        const commitSha = await getCommitSha(repo, branch);
+        // 1. Fetch repo info AND commit SHA in one go (using getCombinedRepoInfo)
+        const { repoInfo, commitSha } = await getCombinedRepoInfo(repo, branch);
+        currentRepoDescription = repoInfo.description || 'View the folder structure of this GitHub repository.';
 
-        // 2. Get the entire tree (recursively) using the tree SHA
+        // 2. Update URL, title, and meta description
+        updateURL(repo, branch);
+        updateMetaData(`GitHubTree: ${repoInfo.full_name} | Folder Structure`,currentRepoDescription);
+
+        // 3. Get the entire tree (recursively) using the tree SHA
         cachedTreeData = await getRepoTree(repo, commitSha);
-        currentRepo = repo;  // Store for rebuilding
-        currentBranch = branch; // Store for rebuilding
+        currentRepo = repo;
+        currentBranch = branch;
 
-        // 3. Sort and build the tree structure
+        // 4. Sort and build the tree structure
         const sortedData = sortTreeData(cachedTreeData);
-        buildTreeHTML(sortedData, repo, branch); // Pass repo and branch
+        buildTreeHTML(sortedData, repo, branch);
 
         copyTreeButton.style.display = 'inline-block';
         treeContainer.style.display = 'block';
@@ -78,54 +114,58 @@ async function fetchRepoTree() {
         showLoading(false);
     }
 }
-// Function to get the commit SHA
-async function getCommitSha(repo, branch) {
-    const url = `https://api.github.com/repos/${repo}/commits/${branch}`;
+
+// NEW COMBINED FUNCTION: Get repo info and commit SHA in one request
+async function getCombinedRepoInfo(repo, branch) {
+    const url = `https://api.github.com/repos/${repo}`;
     const response = await fetch(url);
 
     if (!response.ok) {
         if (response.status === 404) {
-            throw new Error("Repository, branch, or commit not found.");
+            throw new Error("Repository not found.");
         } else if (response.status === 403) {
             await handleRateLimit(response);
         }
         throw new Error(`GitHub API error: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data.sha; // The SHA of the commit
-}
+    const repoInfo = await response.json();
 
-async function getRepoTree(repo, commitSha) {
-    const commitUrl = `https://api.github.com/repos/${repo}/git/commits/${commitSha}`;
+    // Now fetch the commit info using the default branch from repoInfo
+    const commitUrl = `https://api.github.com/repos/${repo}/commits/${branch}`;
     const commitResponse = await fetch(commitUrl);
 
     if (!commitResponse.ok) {
         if (commitResponse.status === 404) {
-            throw new Error("Commit not found.");
+            throw new Error("Branch or commit not found.");
         } else if (commitResponse.status === 403) {
-            await handleRateLimit(commitResponse); // Use the correct response
+            await handleRateLimit(commitResponse);
         }
-        throw new Error(`GitHub API error: ${commitResponse.status}`);
+        throw new Error(`GitHub API error (commit): ${commitResponse.status}`);
     }
-    const commitData = await commitResponse.json();
-    const treeSha = commitData.tree.sha; // Get the tree SHA from the commit
 
-    // Now, fetch the tree recursively using the tree SHA
-    const treeUrl = `https://api.github.com/repos/${repo}/git/trees/${treeSha}?recursive=1`;
+    const commitData = await commitResponse.json();
+    const commitSha = commitData.sha;
+
+    return { repoInfo, commitSha };
+}
+
+// MODIFIED: getRepoTree now only fetches the tree
+async function getRepoTree(repo, commitSha) {
+    const treeUrl = `https://api.github.com/repos/${repo}/git/trees/${commitSha}?recursive=1`;
     const treeResponse = await fetch(treeUrl);
 
     if (!treeResponse.ok) {
         if (treeResponse.status === 404) {
             throw new Error("Tree not found.");
         } else if (treeResponse.status === 403) {
-            await handleRateLimit(treeResponse); // Use the correct response
+            await handleRateLimit(treeResponse);
         }
         throw new Error(`GitHub API error: ${treeResponse.status}`);
     }
 
     const treeData = await treeResponse.json();
-     if (!treeData.tree || !Array.isArray(treeData.tree)) {
+    if (!treeData.tree || !Array.isArray(treeData.tree)) {
         throw new Error("Invalid tree data received from GitHub API.");
     }
     return treeData.tree;
@@ -165,7 +205,7 @@ function buildTreeHTML(treeData, repo, branch) {
 
     treeData.forEach(item => {
         const indent = getIndent(item.path);
-        const prefix = getPrefix(item);
+        const prefix = getPrefix(item.path);
         const icon = item.type === 'tree' ? '<i class="fas fa-folder"></i> ' : '<i class="fas fa-file"></i> ';
         const copyButton = `<button class="copy-button" title="Copy path" data-path="${item.path}"><i class="fas fa-copy"></i></button>`;
         let line;
@@ -181,6 +221,7 @@ function buildTreeHTML(treeData, repo, branch) {
         treeContentHTML += `<span>${line}</span>\n`;
     });
 
+    // Build line numbers
     let lineNumbersHTML = '';
     const numLines = treeContentHTML.split('\n').length - 1;
     for (let i = 1; i <= numLines; i++) {
@@ -191,6 +232,7 @@ function buildTreeHTML(treeData, repo, branch) {
     hiddenTree.value = plainText;
     attachCopyButtonListeners();
 }
+// Sort tree data based on current sort setting (No changes)
 // CORRECTED: Recursive, hierarchical sort
 function sortTreeData(treeData) {
     // 1. Create a hierarchical structure
@@ -233,6 +275,7 @@ function sortTreeData(treeData) {
     return flattened;
 }
 
+// Get the appropriate sort function (No changes)
 function getSortFunction(sortType) {
     const compareNames = (a, b) => {
         const aName = a.path.split('/').pop().toLowerCase();
@@ -262,14 +305,18 @@ function getSortFunction(sortType) {
     }
 }
 
+// Sort and rebuild the tree without fetching (No changes)
+// RE-SORT:  Use the stored repo and branch
 function sortAndRebuildTree() {
     if (!cachedTreeData) {
         return;
     }
     const sortedData = sortTreeData(cachedTreeData);
-    buildTreeHTML(sortedData, currentRepo, currentBranch);
+    buildTreeHTML(sortedData, currentRepo, currentBranch); // Use stored values
     animateTreeOutput();
 }
+
+// --- Utility Functions (No Changes) ---
 
 function animateTreeOutput() {
     const lines = tree.querySelectorAll('.line-content > span');
@@ -334,3 +381,25 @@ async function handleRateLimit(response){
         throw new Error(`GitHub API error: ${response.status}`);
     }
 }
+// Update meta description (Simplified) - No changes
+function updateMetaData(title,description) {
+    document.title = title;
+    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+    document.querySelector('meta[property="twitter:title"]').setAttribute('content', title);
+
+    metaDescription.setAttribute('content', description);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', description);
+    document.querySelector('meta[property="twitter:description"]').setAttribute('content', description);
+}
+
+window.addEventListener('DOMContentLoaded', parseURL);
+
+window.addEventListener('popstate', (event) => {
+    if (event.state) {
+        repoInput.value = event.state.repo;
+        branchInput.value = event.state.branch;
+        fetchRepoTree(); // Re-fetch based on history state
+    } else {
+        parseURL();
+    }
+});
