@@ -28,7 +28,7 @@ jobs:
           node-version: '20'
 
       - name: Install Playwright
-        run: npm install playwright
+        run: npx playwright install
 
       - name: Create 404.html
         run: |
