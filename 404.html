@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirecting...</title>
+    <title>GitHubTree: Redirecting...</title>
     <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=/">
     <script>
-        // Get the original URL path (e.g., /user/repo/branch)
         const originalPath = window.location.pathname;
 
-        // Redirect to index.html, passing the original path as a query parameter
-        window.location.replace("/index.html?path=" + originalPath);
+        const redirectUrl = `/index.html?path=${encodeURIComponent(originalPath)}`;
+
+        if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', redirectUrl);
+
+            window.location.reload();
+        } else {
+          window.location.replace(redirectUrl);
+        }
+
     </script>
 </head>
 <body>
