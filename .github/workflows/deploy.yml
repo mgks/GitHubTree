@@ -28,23 +28,12 @@ jobs:
           node-version: '20'
 
       - name: Install Playwright
-        run: npx playwright install
+        run: npm install playwright
 
       - name: Create 404.html
-        run: |
-          node <<EOF
-          const fs = require('fs');
-          const { chromium } = require('playwright');
-
-          (async () => {
-            const browser = await chromium.launch();
-            const page = await browser.newPage();
-            await page.goto('${{ github.event.repository.html_url }}'); // Go to the main page
-            const content = await page.content(); // Get the rendered HTML
-            fs.writeFileSync('404.html', content); // Write it to 404.html
-            await browser.close();
-          })();
-          EOF
+        run: node create-404.js  # Run the separate script
+        env:
+          GITHUB_PAGES_URL: ${{ github.event.repository.html_url }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
