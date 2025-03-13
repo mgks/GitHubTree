@@ -19,24 +19,37 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' # Use Node.js 20.x (LTS)
-
-      - name: Install dependencies
-        run: npm ci  # Use 'npm ci' for a cleaner, faster install
-
-      - name: Build project
-        run: npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: npm install playwright
+
+      - name: Create 404.html
+        run: |
+          node <<EOF
+          const fs = require('fs');
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch();
+            const page = await browser.newPage();
+            await page.goto('${{ github.event.repository.html_url }}'); // Go to the main page
+            const content = await page.content(); // Get the rendered HTML
+            fs.writeFileSync('404.html', content); // Write it to 404.html
+            await browser.close();
+          })();
+          EOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Deploy the 'dist' folder
+          path: ./
 
       - name: Deploy to GitHub Pages
         id: deployment
