@@ -113,7 +113,6 @@ async function fetchRepoTree() {
     } finally {
         showLoading(false);
     }
-    document.dispatchEvent(new Event('render-event'));
 }
 
 // NEW COMBINED FUNCTION: Get repo info and commit SHA in one request
