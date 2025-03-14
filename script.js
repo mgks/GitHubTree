@@ -42,9 +42,10 @@ document.addEventListener('click', () => {
 });
 
 // Function to update the URL and page title
+// Simplified:  We no longer construct URLs like /user/repo/branch
 function updateURL(repo, branch) {
-    const newURL = `${window.location.origin}/${repo}/${branch}`;
-    history.pushState({ repo, branch }, '', newURL);
+    const newURL = `${window.location.origin}/index.html?path=/${repo}/${branch}`;
+     history.pushState({ repo, branch }, '', newURL); // Use pushState to avoid reloads
     updateMetaData(`GitHubTree: ${repo} (${branch}) | View Folder Structure`,currentRepoDescription);
 }
 
