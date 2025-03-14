@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GitHubTree Structure for {{ page.url | remove_first: '/' | replace: '.html', '' }}</title>
+  <meta name="description" content="Easily visualize and explore the folder structure of {{ page.url | remove_first: '/' | replace: '.html', '' }} GitHub repository. Copy and share file paths with a single click.">
+  <meta name="keywords" content="GitHub, repository, folder structure, directory tree, visualize, code, open source, file explorer, tree view, copy path">
+  <meta name="author" content="mgks.dev">
+  <meta http-equiv="refresh" content="0; url=/index.html?path={{ page.url | remove_first: '/' | replace: '.html', '' }}">
+  <script>
+    window.location.replace("/index.html?path={{ page.url | remove_first: '/' | replace: '.html', '' }}");
+  </script>
+</head>
+<body>
+  <p>If you are not redirected, <a href="/index.html?path={{ page.url | remove_first: '/' | replace: '.html', '' }}">click here</a>.</p>
+</body>
+</html>
