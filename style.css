@@ -320,10 +320,15 @@ a {
     font-family: monospace;
     letter-spacing: .25px;
     background-color: #fff;
+    color:#ccc;
 }
 .footer svg{
   float: left;
   margin-right: .75em;
+}
+.footer a {
+    text-decoration: none;
+    color: #2a2a2a;
 }
 @media (max-width: 600px){
     .header-area{
