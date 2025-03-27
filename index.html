@@ -6,28 +6,32 @@
     <title>GitHubTree : View Folder Structures | Repo Directories</title>
     <meta name="description" content="Easily visualize, sort and explore folder/directory structure of any public GitHub repository, and generate GitHub tree view. Copy file paths with a single click.">
     <meta name="keywords" content="GitHub, repository, folder structure, directory tree, visualize, code, open source, file explorer, tree view, copy path">
-    <meta name="author" content="mgks.dev">
+    <meta name="author" content="Ghazi Khan">
 
-    <link rel="icon" href="https://githubtree.mgks.dev/assets/favicon-192.png" size="192x192" type="image/png">
-    <link rel="icon" href="https://githubtree.mgks.dev/assets/favicon-32.png" size="32x32" type="image/png">
-    <link rel="icon" href="https://githubtree.mgks.dev/assets/favicon-16.png" size="16x16" type="image/png">
+    <!-- Favicons -->
+    <link rel="icon" href="/assets/favicon-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="shortcut icon" href="https://githubtree.mgks.dev/favicon.ico">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://githubtree.mgks.dev/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://githubtree.mgks.dev">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
     <meta property="og:title" content="GitHubTree : View Folder Structures | Repo Directories">
     <meta property="og:description" content="Easily visualize, sort and explore folder/directory structure of any public GitHub repository, and generate GitHub tree view. Copy file paths with a single click.">
     <meta property="og:image" content="https://githubtree.mgks.dev/assets/preview.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://githubtree.mgks.dev">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
     <meta property="twitter:title" content="GitHubTree : View Folder Structures | Repo Directories">
     <meta property="twitter:description" content="Easily visualize, sort and explore folder/directory structure of any public GitHub repository, and generate GitHub tree view. Copy file paths with a single click.">
     <meta property="twitter:image" content="https://githubtree.mgks.dev/assets/preview.png">
 
-    <link rel="canonical" href="https://githubtree.mgks.dev" />
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -53,10 +57,10 @@
             </div>
            <div class="input-area">
                 <input type="text" id="repoInput" placeholder="username/repo" value="mgks/GitHubTree">
-                <input type="text" id="branchInput" placeholder="branch" value="main">
+                <input type="text" id="branchInput" placeholder="branch (default: main)" value="main">
                 <button id="fetchButton">Fetch</button>
             </div>
-            <i>Enter a GitHub repository in the format <b>username/repo</b>.</i>
+            <i>Enter a GitHub repository (e.g., <b>mgks/GitHubTree</b>) and optionally a branch.</i>
         </div>
 
         <div id="loading" style="display: none;"><i>Fetching...</i></div>
@@ -64,7 +68,12 @@
 
         <div class="tree-container" id="tree-container" style="display: none;">
             <div class="tree-header">
-                <button id="copyTreeButton">Copy Complete Tree</button>
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="shareButton" title="Share this view"><i class="fas fa-share-alt"></i>&nbsp;Share</button>
+                    <button id="copyTreeButton" title="Copy complete tree text">Copy Complete Tree</button>
+                </div>
+                <!-- Sort Dropdown -->
                 <div class="sort-dropdown">
                     <button id="sortButton" class="sort-button">Sort <i class="fas fa-caret-down"></i></button>
                     <div class="sort-options" id="sortOptions">
@@ -77,9 +86,15 @@
             </div>
             <pre id="tree"></pre>
         </div>
-        <textarea id="hiddenTree" style="display: none;"></textarea>
+        <textarea id="hiddenTree" style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true"></textarea>
         <div class="disc">
-            <i>This works for public repositories only. For private repositories, you'll need to <a href="https://github.com/mgks/GitHubTree">fork this project</a> and add a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank">GitHub Personal Access Token</a>.</i>
+            <i>Works best with public repositories. For private ones, <a href="https://github.com/mgks/GitHubTree#accessing-private-repositories-advanced" target="_blank" rel="noopener noreferrer">fork the project</a> and add a Personal Access Token.</i>
+        </div>
+    </div>
+    <div id="shareOverlay" class="share-container-overlay">
+        <div class="share-content-box">
+            <input type="text" id="shareUrlInput" readonly title="Shareable URL">
+            <button id="copyShareUrlButton" title="Copy URL"><i class="fas fa-copy"></i></button>
         </div>
     </div>
     <div class="footer"><a href="https://github.com/mgks"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> Developed by @mgks</a> | <a href="https://github.com/mgks/GitHubTree">GitHub Repo</a></div>
