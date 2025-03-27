@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GitHubTree: Redirecting...</title>
+    <title>GitHubTree: Page Not Found</title>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="0; url=/">
+    <link rel="canonical" href="/" />
     <script>
-        const originalPath = window.location.pathname;
-
-        const redirectUrl = `/index.html?path=${encodeURIComponent(originalPath)}`;
-
         if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
-            window.history.replaceState(null, '', redirectUrl);
-
-            window.location.reload();
+            window.history.replaceState(null, '', '/');
+            window.location.replace('/');
         } else {
-          window.location.replace(redirectUrl);
+          // fallback for older browsers if meta refresh fails
+          window.location.replace('/');
         }
-
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="/">click here</a>.</p>
+    <p>Page not found. If you are not redirected automatically, <a href="/">click here to go to the homepage</a>.</p>
 </body>
 </html>
