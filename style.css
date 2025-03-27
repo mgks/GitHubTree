@@ -84,7 +84,7 @@ body {
     position: relative;
 }
 
-#copyTreeButton {
+#copyTreeButton, #shareButton {
     padding: 1em;
     float: left;
     background-color: #282c34;
@@ -95,10 +95,101 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     font-family: 'Source Code Pro', monospace;
+    margin-right: 1em;
+
 }
 
-#copyTreeButton:hover {
+#copyTreeButton:hover,#shareButton:hover {
     background-color: #32363e;
+}
+
+.share-container-overlay {
+    position: fixed; /* Position relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex; /* Use flex to center the content box */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Start hidden */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Fade transition */
+}
+
+.share-container-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.share-content-box {
+    background-color: #282c34;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #444;
+
+}
+
+#shareUrlInput {
+    flex-grow: 1; /* Input takes available space */
+    padding: 10px 12px;
+    font-size: 0.95em;
+    border: 1px solid #555;
+    background-color: #3a3f47; /* Input background */
+    color: #eee; /* Light text */
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#copyShareUrlButton {
+    padding: .5em;
+    width: 3em;
+    height: 2.5em;
+    background-color: #024ea2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+
+}
+
+#copyShareUrlButton:hover {
+    background-color: #035fc9;
+}
+
+#copyShareUrlButton i {
+     display: block; /* Ensure icon change works well */
+}
+
+/* Adjust tree header layout if needed */
+.tree-header {
+    background-color: #1e2127;
+    padding: .75em 1em; /* Adjust padding */
+    border-bottom: 1px solid #333;
+    position: relative;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Add gap between flex items */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Space between copy and share */
+    align-items: center;
 }
 
 .sort-dropdown {
