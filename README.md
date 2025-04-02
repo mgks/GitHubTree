@@ -60,47 +60,59 @@ If you want to customize the tool or contribute, you can easily rebuild it:
 
 ## Accessing Private Repositories (Advanced)
 
-**Important Security Note:**  This tool, as deployed, *cannot* directly access private repositories due to security restrictions.  Exposing API keys in client-side JavaScript is a major security risk.
+**Important Security Note:** This tool, as deployed publicly, *cannot* directly access private repositories due to security restrictions. Exposing API keys or tokens in client-side JavaScript intended for public use is a major security risk.
 
-To access *your own* private repositories, you'll need to **fork this project** and modify it to use a GitHub Personal Access Token (PAT):
+To access *your own* private repositories using this tool, you **must fork this project**, keep your fork **private**, and modify it to include your GitHub Personal Access Token (PAT):
 
-1.  **Create a PAT:**
+1.  **Fork the Repository:** Create a fork of this repository on your own GitHub account. **Crucially, ensure your forked repository is set to PRIVATE.**
+2.  **Create a PAT:**
     *   Go to your GitHub settings: [https://github.com/settings/tokens](https://github.com/settings/tokens)
     *   Click "Generate new token" (or "Generate new token (classic)").
-    *   Give the token a descriptive name (e.g., "GitHub Folder Structure Viewer").
-    *   Select the `repo` scope.  This grants access to your private repositories.  **Do not select any other scopes unless absolutely necessary.**
+    *   Give the token a descriptive name (e.g., "GitHubTree Private Access").
+    *   Select the `repo` scope. This grants access to your private repositories. **Do not select any other scopes unless absolutely necessary.**
     *   Click "Generate token."
-    *   **Copy the token immediately.**  You won't be able to see it again.
+    *   **Copy the token immediately.** You won't be able to see it again. Treat this token like a password.
 
-2.  **Add the PAT as a Secret:**
-    *   Go to your forked repository's settings.
-    *   Click "Secrets and variables" > "Actions".
-    *   Click "New repository secret."
-    *   Name the secret `GH_PAT` (or any name you prefer, but you'll need to update the `script.js` accordingly).
-    *   Paste your PAT into the "Secret" field.
-    *   Click "Add secret."
+3.  **Clone Your Private Fork:** Clone your **private** forked repository to your local machine:
 
-3.  **Modify `script.js` (Crucially Important):**
-     You will need to modify the fetch calls to include the PAT in the request headers.  **Do this only in your forked repository, and never commit the PAT directly to the code.**
-
-    ```javascript
-    // ... (rest of the script.js) ...
-
-    async function buildTree(repo, branch, path = '', level = 0, treeText = '', plainText = '') {
-        const url = `https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}`;
-        const response = await fetch(url, {
-             headers: {
-                'Authorization': `token ${{ secrets.GH_PAT }}`, // Use the secret
-             }
-        });
-    // ... (rest of the buildTree function) ...
-
+    ```bash
+    # Replace YOUR_USERNAME with your GitHub username
+    git clone https://github.com/YOUR_USERNAME/GitHubTree.git
+    cd GitHubTree 
     ```
-    **Replace** `${{ secrets.GH_PAT }}` by your github token.
+    *(Note: The directory name might be `GitHubTree` or `github-folder-structure` depending on how you cloned).*
 
-4.  **Deploy:**  Push your changes. GitHub Actions will automatically deploy your modified version to GitHub Pages.
+4.  **Modify `script.js` (Crucially Important):**
+    *   Open the `script.js` file in your local clone.
+    *   Find the following line near the top of the file:
+        ```javascript
+        const GITHUB_PAT = ""; // IMPORTANT: Replace with your Personal Access Token ONLY in your PRIVATE fork...
+        ```
+    *   **Replace the empty string `""` with the Personal Access Token you generated in Step 2.** It should look like this (replace `YOUR_ACTUAL_TOKEN_HERE` with your real token):
+        ```javascript
+        const GITHUB_PAT = "YOUR_ACTUAL_TOKEN_HERE"; // IMPORTANT: Replace with your Personal Access Token ONLY in your PRIVATE fork...
+        ```
+    *   **Save the `script.js` file.**
 
-**Warning:**  Never share your forked repository publicly if it contains your PAT, even in the Actions secrets. Anyone with access to your repository could potentially misuse your token. This method is only for accessing *your own* private repositories.
+5.  **Commit and Push to Your Private Fork:** Commit your changes (which now include your PAT directly in the script) and push them to your *private* forked repository:
+
+    ```bash
+    git add script.js
+    git commit -m "Add PAT for private repo access"
+    git push origin main 
+    ```
+    *(Replace `main` if your default branch has a different name).*
+
+6.  **GitHub Pages Deployment (from Private Fork):**
+    *   Go to your **private** forked repository's settings on GitHub (Settings > Pages).
+    *   Ensure GitHub Pages is enabled. It should be set to deploy from the `main` branch (or your default branch) and the root directory (`/`).
+    *   GitHub Actions should automatically build and deploy your modified version to its own GitHub Pages URL (e.g., `https://YOUR_USERNAME.github.io/GitHubTree/`).
+
+**Warning:**
+*   **Never make your forked repository public if it contains your PAT hardcoded in the `script.js` file.** Anyone who can view the code (even the deployed JavaScript source on the GitHub Pages site) could potentially extract your PAT and gain access to your repositories.
+*   This method embeds your token directly into the deployed JavaScript. While convenient for personal use on a private fork deployed to a potentially restricted GitHub Pages site, it carries inherent risks if the code or the deployment URL becomes accessible to others.
+*   **This modified version is strictly for your personal use to access your *own* private repositories.** Do not share the URL of your deployed private version widely.
+*   Regularly review and consider rotating your PATs.
 
 ## Contributing
 
