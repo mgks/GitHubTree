@@ -395,9 +395,9 @@ function buildTreeHTML(treeData, repo, branch) { // Expects decoded repo/branch
         const iconClass = item.type === 'tree' ? 'fas fa-folder' : 'fas fa-file';
         const name = item.path.split('/').pop();
         // Use encoded repo/branch/path for the URL
-        const encodedRepo = encodeURIComponent(repo);
+        const encodedRepo = encodeURIComponent(repo); // Encode parts, keep slashes
         const encodedBranch = encodeURIComponent(branch);
-        const encodedPath = encodeURIComponent(item.path).replace(/%2F/g, '/'); // Encode parts, keep slashes
+        const encodedPath = encodeURIComponent(item.path).replace(/%2F/g, '/');
 
         const copyButtonHTML = `<button class="copy-button" title="Copy path" data-path="${item.path}"><i class="fas fa-copy"></i></button>`;
         let line;
@@ -406,7 +406,7 @@ function buildTreeHTML(treeData, repo, branch) { // Expects decoded repo/branch
             line = `${indent}${prefix}<i class="${iconClass}"></i> <span class="dir-name">${name}</span> ${copyButtonHTML}`;
             plainText += `${indent}${prefix}${name}/\n`;
         } else if (item.type === 'blob') { // File
-            const fileUrl = `https://github.com/${encodedRepo}/blob/${encodedBranch}/${encodedPath}`;
+            const fileUrl = `https://github.com/${repo}/blob/${encodedBranch}/${encodedPath}`;
             line = `${indent}${prefix}<i class="${iconClass}"></i> <a href="${fileUrl}" target="_blank" rel="noopener noreferrer">${name}</a> ${copyButtonHTML}`;
             plainText += `${indent}${prefix}${name}\n`;
         }
