@@ -349,7 +349,7 @@ a {
     margin: 1em 0;
     display: block;
     font-size: .75em;
-    color: #75777a;
+    color: #465b85;
 }
 
 .header-area {
@@ -360,7 +360,7 @@ a {
     margin: 5em 10%;
     text-align: center;
     font-size: .85em;
-    color: #282c34;
+    color: #465b85;
     line-height: 1.5em;
 }
 
@@ -433,4 +433,99 @@ a {
     #repoInput, #branchInput{width: 80%;margin: .25em 6%;}
     #fetchButton{width:50%;margin:.25em 25%}
     .header-area i{text-align:center}
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode #main-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tree-container {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-mode #tree {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .dir-name {
+    color: #64b5f6;
+}
+
+body.dark-mode .fa-file {
+    color: #90caf9;
+}
+
+body.dark-mode .copy-button {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .copy-button:hover {
+    background-color: #505050;
+}
+
+body.dark-mode #repoInput,
+body.dark-mode #branchInput {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .sort-button {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .sort-button:hover {
+    background-color: #505050;
+}
+
+body.dark-mode .sort-options {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-mode .sort-options div {
+    color: #e0e0e0;
+}
+
+body.dark-mode .sort-options div:hover {
+    background-color: #404040;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode #themeToggle {
+    color: #e0e0e0;
+}
+
+#themeToggle:hover {
+    color: #666;
+}
+
+body.dark-mode #themeToggle:hover {
+    color: #fff;
 }
