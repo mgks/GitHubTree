@@ -39,8 +39,14 @@ let currentRepo = ''; // Stores the decoded repo name (e.g., "mgks/GitHubTree")
 let currentBranch = ''; // Stores the decoded branch name
 let currentRepoDescription = ''; // Stores fetched repo description for meta tags
 
-// --- Event Listeners ---
+// --- Theme handling ---
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('i');
 
+// --- Check for saved theme preference ---
+const savedTheme = localStorage.getItem('theme');
+
+// --- Event Listeners ---
 fetchButton.addEventListener('click', fetchRepoTree);
 
 copyTreeButton.addEventListener('click', () => {
@@ -130,16 +136,16 @@ function parseURL() {
             const encodedBranch = encodeURIComponent(currentBranch);
             const canonicalPath = `/?repo=${encodedRepo}&branch=${encodedBranch}`;
             updateMetaData(
-                `GitHub Tree: ${currentRepo} (${currentBranch})`, // SEO Title
-                currentRepoDescription || `Explore the folder structure of ${currentRepo} (branch: ${currentBranch}) online. View directories and files with GitHubTree.`, // Dynamic Description
+                `${currentRepo}: visualize and navigate github project structures`, // SEO Title
+                `Effortlessly explore ${currentRepo} and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.`, // Dynamic Description
                 canonicalPath
             );
         }
     } else {
         // Reset to homepage defaults if no repo in URL
         updateMetaData(
-            'GitHub Tree Viewer – Explore Repo Folder Structures Online', // Default Title
-            'Online GitHub tree viewer – explore any public GitHub repository, visualize folder structures, copy individual paths or complete trees instantly. No cloning required.', // Default Description
+            'GitHub repo explorer: visualize and navigate github project structures', // Default Title
+            'Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.', // Default Description
             '/'
         );
         clearTree();
@@ -156,8 +162,8 @@ async function fetchRepoTree() {
         showError("Invalid repository format. Use 'username/repo'.");
         // Set generic error metadata but avoid negative terms
         updateMetaData(
-            'GitHub Tree Viewer – Explore Repo Folder Structures Online', // Title
-            'Please provide a repository in the format username/repo to view its structure using the GitHub Tree Viewer.', // Description
+            'GitHub repo explorer: visualize and navigate github project structures', // Title
+            'Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.', // Description
             '/' // Canonical back to homepage
         );
         return;
@@ -168,14 +174,14 @@ async function fetchRepoTree() {
     const repo = `${username}/${repoName}`; // Reconstruct for consistency, potentially cleaning input
 
     // --- Dynamic Loading Text (using parsed parts) ---
-    showLoading(true, `Fetching tree for GitHub repository <i>${repoName}</i> from branch <i>${branch}</i> by user <i>@${username}</i>...`);
+    showLoading(true, `Fetching tree for GitHub repository <i>${repoName}</i> from branch <i>${branch}</i>, published by <i>${username}</i>...`);
     clearTree();
     clearError();
 
     // Define optimistic metadata based on user input *before* the API call
     // This will be used in the catch block if things go wrong
-    const optimisticTitle = `Explore ${repoName} tree structure by ${username} – GitHub Tree Viewer`;
-    const optimisticDescription = `View folder structure for GitHub repository ${repo} (branch: ${branch}) by @${username}. Explore any public GitHub repository, visualize folder structures, copy individual paths or complete trees instantly.`;
+    const optimisticTitle = `${repo}: visualize and navigate github project structures`;
+    const optimisticDescription = `Effortlessly explore ${repo} and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.`;
     const attemptedEncodedRepo = encodeURIComponent(repo);
     const attemptedEncodedBranch = encodeURIComponent(branch);
     const canonicalPathOnError = `/?repo=${attemptedEncodedRepo}&branch=${attemptedEncodedBranch}`;
@@ -204,14 +210,11 @@ async function fetchRepoTree() {
 
         // --- Update Metadata on Success (SEO Optimized & User Format) ---
         // Use repoInfo for more accurate names if available, fallback to parsed input
-        const finalRepoName = repoInfo.name || repoName;
-        const finalUsername = repoInfo.owner?.login || username;
-        const metaTitle = `Explore ${finalRepoName} tree structure by ${finalUsername} – GitHub Tree Viewer`;
+
+        const metaTitle = currentRepoDescription ? `${repo}: ${currentRepoDescription}` : `${repo}: visualize and navigate github project structures`;
 
         // Create description, using fetched description if available
-        const metaDescription = currentRepoDescription
-            ? `Explore complete folder structure for ${repoInfo.full_name || repo} : ${currentRepoDescription.substring(0, 120)}... – Visualize folder structures, copy individual paths or complete trees instantly with GitHub Tree.`
-            : `Explore complete folder structure for ${repoInfo.full_name || repo} from ${currentBranch} branch online. Visualize folder structures, copy individual paths or complete trees instantly with GitHub Tree.`;
+        const metaDescription = `Effortlessly explore ${repo} and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.`;
 
         updateMetaData(metaTitle, metaDescription, canonicalPath);
 
@@ -792,3 +795,22 @@ function updateMetaData(title, description, canonicalPath) { // canonicalPath sh
     if (metaTwitterTitleTag) metaTwitterTitleTag.setAttribute('content', title);
     if (metaTwitterDescriptionTag) metaTwitterDescriptionTag.setAttribute('content', description);
 }
+
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+}
+
+// Theme toggle functionality
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+    }
+});
