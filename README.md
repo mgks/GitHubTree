@@ -12,7 +12,7 @@
 *   **Explore:**  Easily browse the folder and file organization of a GitHub repo without cloning it.
 *   **Copy Paths:**  Quickly copy the path to any file or directory with a single click.
 *   **Copy Entire Tree:**  Copy the complete directory structure as plain text, perfect for documentation or sharing.
-*   **Fast and Lightweight:**  Built with vanilla JavaScript, HTML, and CSS for optimal performance.
+*   **Jekyll Powered:** Built using the Jekyll static site generator for structure and organization, combined with vanilla JavaScript for GitHub API interaction.
 *   **No Authentication Required (for public repos):**  Uses the unauthenticated GitHub API, so you don't need to provide any credentials for public repositories.
 
 <p align="center">
@@ -25,9 +25,9 @@
 
 1.  **Enter Repository:**  Type the GitHub repository name in the format `username/repo` (e.g., `mgks/shaml`).
 2.  **Enter Branch (Optional):**  Specify the branch name (defaults to `main`).
-3.  **Click "Fetch Tree":**  The tool will retrieve and display the repository's folder structure.
+3.  **Click "Fetch":**  The tool will retrieve and display the repository's folder structure.
 4.  **Copy Individual Paths:** Click the copy icon next to any file or directory to copy its path to your clipboard.
-5.  **Copy Entire Tree:** Click the "Copy Whole Tree" button to copy the complete structure as formatted text.
+5.  **Copy Entire Tree:** Click the "Copy Complete Tree" button to copy the complete structure as formatted text.
 
 ## Use Cases
 
@@ -36,87 +36,86 @@
 *   **Collaboration:**  Share the structure with others to discuss code organization.
 *   **Learning:**  Explore how other projects are structured to improve your own coding practices.
 
-## Rebuilding the Project
+## Local Development & Customization
 
-If you want to customize the tool or contribute, you can easily rebuild it:
+If you want to run the project locally, customize it, or contribute:
+
+**Prerequisites:**
+
+*   **Ruby:** Ensure you have Ruby installed. Check with `ruby -v`. (Jekyll is Ruby-based). See [Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+*   **Bundler:** Install the Bundler gem: `gem install bundler`.
+
+**Steps:**
 
 1.  **Fork the Repository:** Create a fork of this repository on your own GitHub account.
 2.  **Clone Your Fork:** Clone your forked repository to your local machine:
 
     ```bash
     git clone https://github.com/mgks/GitHubTree.git
-    cd github-folder-structure
+    cd GitHubTree
     ```
-3.  **Make Changes:** Modify the `index.html`, `script.js`, or `style.css` files as needed.
-4.  **Commit and Push:** Commit your changes and push them to your forked repository:
+3.  **Install Dependencies:** Install Jekyll and other required gems:
+
+    ```bash
+    bundle install
+    ```
+4.  **Run Locally:** Start the Jekyll development server:
+
+    ```bash
+    bundle exec jekyll serve
+    ```
+    This will build the site and serve it locally (usually at `http://localhost:4000`). Changes you make to most files will trigger an automatic rebuild.
+5.  **Make Changes:** Modify the source files as needed. Key areas include:
+    *   `_config.yml`: Site-wide configuration.
+    *   `_layouts/`: HTML layout templates.
+    *   `_includes/`: Reusable HTML snippets.
+    *   `assets/`: CSS, JavaScript (`script.js`), images.
+    *   `_data/`: Data files (like `repositories.json`).
+    *   `index.html`, `404.html`, etc.: Page content files.
+6.  **Commit and Push:** Commit your changes and push them to your forked repository:
 
     ```bash
     git add .
-    git commit -m "GitHubTree script update"
-    git push origin main
+    git commit -m "Describe your changes"
+    git push origin main # Or your default branch name
     ```
 
-5.  **GitHub Pages Deployment:** The project is automatically deployed to GitHub Pages using GitHub Actions.  Make sure GitHub Pages is enabled in your forked repository's settings (Settings > Pages).  It should be set to deploy from the `main` branch (or your default branch) and the root directory (`/`).
+## Deployment
 
-## Accessing Private Repositories (Advanced)
+This project is automatically deployed to GitHub Pages using a **GitHub Actions workflow**.
 
-**Important Security Note:** This tool, as deployed publicly, *cannot* directly access private repositories due to security restrictions. Exposing API keys or tokens in client-side JavaScript intended for public use is a major security risk.
+*   When changes are pushed to the `main` branch (or your configured default branch), the workflow runs.
+*   The workflow installs dependencies (`bundle install`) and builds the Jekyll site (`bundle exec jekyll build`).
+*   It then takes the generated static files from the `_site` directory and deploys them to the `gh-pages` branch (or whichever branch is configured for GitHub Pages hosting).
+*   **Important:** GitHub Pages serves the content from the deployment branch (`gh-pages`), *not* directly from your source code branch (`main`). Ensure GitHub Pages is enabled in your repository settings (Settings > Pages) and configured to deploy from the correct branch (`gh-pages`).
 
-To access *your own* private repositories using this tool, you **must fork this project**, keep your fork **private**, and modify it to include your GitHub Personal Access Token (PAT):
+## Accessing Private Repositories (Advanced & Use With Extreme Caution)
 
-1.  **Fork the Repository:** Create a fork of this repository on your own GitHub account. **Crucially, ensure your forked repository is set to PRIVATE.**
-2.  **Create a PAT:**
-    *   Go to your GitHub settings: [https://github.com/settings/tokens](https://github.com/settings/tokens)
-    *   Click "Generate new token" (or "Generate new token (classic)").
-    *   Give the token a descriptive name (e.g., "GitHubTree Private Access").
-    *   Select the `repo` scope. This grants access to your private repositories. **Do not select any other scopes unless absolutely necessary.**
-    *   Click "Generate token."
-    *   **Copy the token immediately.** You won't be able to see it again. Treat this token like a password.
+**Major Security Warning:** This tool, as deployed publicly, **cannot securely access private repositories.** The primary fetching logic runs in the user's browser (client-side JavaScript). Embedding API keys or tokens directly into client-side code is a **severe security risk**, as they can be easily extracted by anyone viewing the page source.
 
-3.  **Clone Your Private Fork:** Clone your **private** forked repository to your local machine:
+To access *your own* private repositories using a modified version of this tool, you **must**:
 
-    ```bash
-    # Replace YOUR_USERNAME with your GitHub username
-    git clone https://github.com/YOUR_USERNAME/GitHubTree.git
-    cd GitHubTree 
-    ```
-    *(Note: The directory name might be `GitHubTree` or `github-folder-structure` depending on how you cloned).*
+1.  **Fork this project.**
+2.  **Make your fork PRIVATE.** Never make it public if you follow these steps.
+3.  **Obtain a GitHub Personal Access Token (PAT)** with the `repo` scope. Treat this token like a password.
+4.  **Modify `assets/js/script.js` in your PRIVATE fork:** Hardcode your PAT into the `GITHUB_PAT` constant within the script.
+5.  **Commit and push ONLY to your PRIVATE repository.**
 
-4.  **Modify `script.js` (Crucially Important):**
-    *   Open the `script.js` file in your local clone.
-    *   Find the following line near the top of the file:
-        ```javascript
-        const GITHUB_PAT = ""; // IMPORTANT: Replace with your Personal Access Token ONLY in your PRIVATE fork...
-        ```
-    *   **Replace the empty string `""` with the Personal Access Token you generated in Step 2.** It should look like this (replace `YOUR_ACTUAL_TOKEN_HERE` with your real token):
-        ```javascript
-        const GITHUB_PAT = "YOUR_ACTUAL_TOKEN_HERE"; // IMPORTANT: Replace with your Personal Access Token ONLY in your PRIVATE fork...
-        ```
-    *   **Save the `script.js` file.**
+**Deployment of Private Fork:**
 
-5.  **Commit and Push to Your Private Fork:** Commit your changes (which now include your PAT directly in the script) and push them to your *private* forked repository:
+*   The GitHub Actions workflow in your private fork will build the site (including the script with your embedded PAT).
+*   It will deploy the built site (from `_site`) to the `gh-pages` branch of your private repository.
+*   You can enable GitHub Pages on your private repository (Settings > Pages) to serve from the `gh-pages` branch. The resulting URL will likely be accessible only to you (or collaborators on the private repo, depending on your GitHub plan settings).
 
-    ```bash
-    git add script.js
-    git commit -m "Add PAT for private repo access"
-    git push origin main 
-    ```
-    *(Replace `main` if your default branch has a different name).*
-
-6.  **GitHub Pages Deployment (from Private Fork):**
-    *   Go to your **private** forked repository's settings on GitHub (Settings > Pages).
-    *   Ensure GitHub Pages is enabled. It should be set to deploy from the `main` branch (or your default branch) and the root directory (`/`).
-    *   GitHub Actions should automatically build and deploy your modified version to its own GitHub Pages URL (e.g., `https://YOUR_USERNAME.github.io/GitHubTree/`).
-
-**Warning:**
-*   **Never make your forked repository public if it contains your PAT hardcoded in the `script.js` file.** Anyone who can view the code (even the deployed JavaScript source on the GitHub Pages site) could potentially extract your PAT and gain access to your repositories.
-*   This method embeds your token directly into the deployed JavaScript. While convenient for personal use on a private fork deployed to a potentially restricted GitHub Pages site, it carries inherent risks if the code or the deployment URL becomes accessible to others.
-*   **This modified version is strictly for your personal use to access your *own* private repositories.** Do not share the URL of your deployed private version widely.
-*   Regularly review and consider rotating your PATs.
+**Reiteration of Warnings:**
+*   **Never make your forked repository public if it contains your PAT hardcoded in `script.js`.** Your token will be exposed.
+*   This method embeds your token directly into the deployed JavaScript. **Anyone who can access the deployed GitHub Pages site for your private fork might be able to extract the token.**
+*   This modified version is strictly for **your personal use on a private fork** where you understand and accept the security risks.
+*   Regularly review and rotate your PATs. Consider more secure server-side proxy solutions if robust private repository access is needed.
 
 ## Contributing
 
-Contributions are welcome!  Please feel free to submit pull requests with bug fixes, improvements, or new features.
+Contributions are welcome! Please feel free to submit pull requests with bug fixes, improvements, or new features against the original `mgks/GitHubTree` repository.
 
 ## License
 
@@ -124,7 +123,7 @@ This project is published under the MIT License - see [LICENSE](LICENSE) file fo
 
 ## Support the Project
 
-**[GitHub Sponsors](https://github.com/sponsors/mgks):** Support this project and my other work by becoming a GitHub sponsor, it means a lot :)
+**[GitHub Sponsors](https://github.com/sponsors/mgks):** You can support GitHubTree and my other projects by becoming a monthly or one-time GitHub sponsor.
 
 **[Follow Me](https://github.com/mgks) on GitHub** | **Add Project to Watchlist** | **Star the Project**
 
