@@ -122,6 +122,11 @@
     {% if page.repo_name %}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Don't do anything if we're on a 404 page
+            if (document.querySelector('.error-container')) {
+                return;
+            }
+            
             // Redirect legacy parameter URLs to clean URLs
             const urlParams = new URLSearchParams(window.location.search);
             const repoParam = urlParams.get('repo');
