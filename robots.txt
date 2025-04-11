@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /repo/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+Disallow: /assets/
+
+Sitemap: https://githubtree.mgks.dev/sitemap.xml 
