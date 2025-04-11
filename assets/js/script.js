@@ -138,6 +138,11 @@ window.addEventListener('popstate', parseURL);
 // --- Core Logic ---
 
 function parseURL() {
+    // Skip URL parsing if we're on the 404 page
+    if (document.querySelector('.error-container')) {
+        return;
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const repoFromUrl = urlParams.get('repo'); // Already decoded by URLSearchParams
     const branchFromUrl = urlParams.get('branch'); // Already decoded
