@@ -401,7 +401,10 @@ a {
 .footer {
     text-align: center;
     padding: .5em 1em;
+    margin-top: 2em;
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 1em;
     width: fit-content;
     border-radius: 5px;
