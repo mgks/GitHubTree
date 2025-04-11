@@ -1,0 +1,70 @@
+# Jekyll configuration
+title: GitHubTree
+description: Visualize GitHub repository structures
+url: https://githubtree.mgks.dev
+baseurl: ""
+
+# Enable plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+twitter:
+  username: mgks
+  card: summary_large_image
+logo: /assets/images/preview.png
+social:
+  name: Ghazi Khan
+  links:
+    - https://github.com/mgks
+
+# Repository page configuration
+permalink: pretty
+include: [".well-known"]
+
+# Asset paths
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Jekyll Sitemap settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/preview.png
+  - scope:
+      path: "/repo/*"
+    values:
+      sitemap: true
+      layout: repository
+  - scope:
+      path: "assets/css"
+    values:
+      sitemap: false
+      cache: true
+      expires: "30d"
+  - scope:
+      path: "assets/js"
+    values:
+      sitemap: false
+      cache: true
+      expires: "30d"
+  - scope:
+      path: "assets/images"
+    values:
+      sitemap: false
+      cache: true
+      expires: "30d"
+
+# Exclude files from being processed
+exclude:
+  - package.json
+  - package-lock.json
+  - node_modules
+  - .git
+  - .github
+  - README.md
+  - LICENSE
+  - sitemap.xml 
