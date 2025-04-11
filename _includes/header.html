@@ -7,15 +7,4 @@
             <span class="fas fa-moon"></span>
         </button>
     </div>
-    <div class="support-block">
-        <a href="https://github.com/sponsors/mgks" class="support-button">
-            <span class="fas fa-heart"></span> Support the Project
-        </a>
-    </div>
-    <div class="input-area">
-        <input type="text" id="repoInput" placeholder="username/repo" value="{% if page.repo_name %}{{ page.repo_name }}{% else %}mgks/GitHubTree{% endif %}">
-        <input type="text" id="branchInput" placeholder="branch (default: main)" value="{% if page.branch %}{{ page.branch }}{% else %}main{% endif %}">
-        <button id="fetchButton">Fetch</button>
-    </div>
-    <i>Enter a GitHub repository (e.g., <b>{% if page.repo_name %}{{ page.repo_name }}{% else %}mgks/GitHubTree{% endif %}</b>) and optionally a branch.</i>
 </div> 

@@ -83,8 +83,22 @@
 </head>
 <body>
     <div class="container">
+
         {% include header.html %}
-        
+
+        <div class="support-block">
+            <a href="https://github.com/sponsors/mgks" class="support-button">
+                <span class="fas fa-heart"></span> Support the Project
+            </a>
+        </div>
+        <div class="search-area">
+            <div class="input-area">
+                <input type="text" id="repoInput" placeholder="username/repo" value="{% if page.repo_name %}{{ page.repo_name }}{% else %}mgks/GitHubTree{% endif %}">
+                <input type="text" id="branchInput" placeholder="branch (default: main)" value="{% if page.branch %}{{ page.branch }}{% else %}main{% endif %}">
+                <button id="fetchButton">Fetch</button>
+            </div>
+            <i>Enter a GitHub repository (e.g., <b>mgks/GitHubTree</b>) and optionally a branch.</i>
+        </div>
         <div id="loading" style="display: none;"><i>Fetching...</i></div>
         <div id="error" style="display: none;"></div>
 
@@ -107,9 +121,12 @@
             <pre id="tree"></pre>
         </div>
         <textarea id="hiddenTree" style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true"></textarea>
-        
-        {% include footer.html %}
+        <div class="disc">
+            <i>Works best with public repositories. For private ones, <a href="https://github.com/mgks/GitHubTree#accessing-private-repositories-advanced" target="_blank" rel="noopener noreferrer">fork the project</a> and add a Personal Access Token.</i>
+        </div>
     </div>
+
+    {% include footer.html %}
     
     <div id="shareOverlay" class="share-container-overlay">
         <div class="share-content-box">
