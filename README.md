@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" width="500" alt="GitHubTree Banner">
+  <img src="assets/images/banner.png" width="500" alt="GitHubTree Banner">
 </p>
 <p align="center">  
   <b>With GitHubTree, visualize the directory structure of any <code>public</code> GitHub repository with a clean interface.</b>
@@ -16,7 +16,7 @@
 *   **No Authentication Required (for public repos):**  Uses the unauthenticated GitHub API, so you don't need to provide any credentials for public repositories.
 
 <p align="center">
-  <img src="assets/tree.png" width="750" alt="GitHubTree Repo Preview">
+  <img src="assets/images/tree.png" width="750" alt="GitHubTree Repo Preview">
 </p>
 
 [**Try GitHubTree**](https://githubtree.mgks.dev)
