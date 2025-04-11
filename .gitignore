@@ -1,1 +1,13 @@
 .DS_Store
+node_modules
+package-lock.json
+
+# Jekyll build files
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+.cursorignore
+.cursorrules
