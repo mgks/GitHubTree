@@ -40,6 +40,11 @@ defaults:
       sitemap: true
       layout: repository
   - scope:
+      path: "/repo/**/*"
+    values:
+      sitemap: true
+      layout: repository
+  - scope:
       path: "assets/css"
     values:
       sitemap: false
@@ -66,5 +71,4 @@ exclude:
   - .git
   - .github
   - README.md
-  - LICENSE
-  - sitemap.xml 
+  - LICENSE 
