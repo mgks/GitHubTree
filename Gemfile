@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2.0"
-gem "jekyll-sitemap"
+# gem "jekyll-sitemap" # Removed as we use a manual sitemap.xml
 gem "jekyll-seo-tag"
 
 group :jekyll_plugins do
