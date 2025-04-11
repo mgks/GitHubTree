@@ -6,7 +6,7 @@ baseurl: ""
 
 # Enable plugins
 plugins:
-  - jekyll-sitemap
+#  - jekyll-sitemap # Removed as we use a manual sitemap.xml
   - jekyll-seo-tag
 
 # SEO settings
