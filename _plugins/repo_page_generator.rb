@@ -41,6 +41,41 @@ module Jekyll
         # Use site.url from _config.yml
         site_url = site.config['url'] || 'https://githubtree.mgks.dev'
         
+        # Improve SEO by adding more specific keyword variations
+        keywords = [
+          "GitHub repository explorer",
+          "#{owner}/#{repo} file structure",
+          "browse #{owner}/#{repo} repository",
+          "#{owner}/#{repo} code organization",
+          "visualize #{repo} GitHub structure",
+          "#{repo} directory tree",
+          "explore #{owner} #{repo} files online",
+          "GitHub project files viewer"
+        ].join(", ")
+        
+        # Enhanced structured data with more specific details
+        structured_data = {
+          "@context" => "https://schema.org",
+          "@type" => "WebApplication",
+          "name" => "GitHubTree",
+          "url" => "#{site_url}/repo/#{repo_name}/#{branch}/",
+          "description" => description,
+          "applicationCategory" => "DeveloperApplication",
+          "operatingSystem" => "Web",
+          "author" => {
+            "@type" => "Person",
+            "name" => "Ghazi Khan",
+            "url" => "https://github.com/mgks"
+          },
+          "about" => {
+            "@type" => "SoftwareSourceCode",
+            "codeRepository" => "https://github.com/#{repo_name}",
+            "programmingLanguage" => "GitHub Repository",
+            "name" => repo_name,
+            "description" => repo_description || "GitHub repository"
+          }
+        }
+        
         # Create page with front matter and JSON-LD that exactly matches base.html
         page_content = <<~CONTENT
         ---
@@ -50,25 +85,13 @@ module Jekyll
         repo_name: "#{repo_name}"
         branch: "#{branch}"
         canonical_path: "/repo/#{repo_name}/#{branch}/"
-        keywords: "GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders, #{repo_name}"
+        keywords: "#{keywords}"
         image: /assets/images/preview.png
+        last_modified_at: #{Time.now.utc.strftime('%Y-%m-%dT%H:%M:%S+00:00')}
         ---
         <!-- This page is automatically generated for SEO purposes -->
         <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "GitHubTree",
-        "url": "#{site_url}/repo/#{repo_name}/#{branch}/",
-        "description": "#{description}",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Web",
-        "author": {
-            "@type": "Person",
-            "name": "Ghazi Khan",
-            "url": "https://github.com/mgks"
-        }
-        }
+        #{JSON.pretty_generate(structured_data)}
         </script>
         CONTENT
         
