@@ -345,8 +345,8 @@ a {
 
 }
 
-.header-area i {
-    margin: 1em 0;
+.search-area i {
+    margin: 1.5em .5em;
     display: block;
     font-size: .75em;
     color: #465b85;
@@ -375,7 +375,7 @@ a {
 }
 .support-block{
     text-align:center;
-    margin: 1em 0 2em;
+    margin: 0 0 2em;
 }
 .support-button {
     display: inline-flex;
