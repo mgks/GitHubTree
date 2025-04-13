@@ -47,43 +47,40 @@ module Jekyll
         
         # Create page with front matter and JSON-LD that exactly matches base.html
         page_content = <<~CONTENT
-            ---
-            layout: repo-page
-            title: "#{title}"
-            description: "#{description}"
-            repo_name: "#{repo_name}"
-            branch: "#{branch}"
-            canonical_path: "/repo/#{repo_name}/#{branch}/"
-            keywords: "GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders, #{repo_name}"
-            image: /assets/images/preview.png
-            is_static_page: true
-            ---
-            <!-- This page is automatically generated for SEO purposes -->
-            <script type="application/ld+json">
-            {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "GitHubTree",
-            "url": "#{site_url}/repo/#{repo_name}/#{branch}/",
-            "description": "#{description}",
-            "applicationCategory": "DeveloperApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Ghazi Khan",
-                "url": "https://github.com/mgks"
-            }
-            }
-            </script>
-
-            <!-- Static page specific script to prevent 404 errors from API calls -->
-            <script src="/assets/js/static-repo.js"></script>
-            CONTENT
+        ---
+        layout: repo-page
+        title: "#{title}"
+        description: "#{description}"
+        repo_name: "#{repo_name}"
+        branch: "#{branch}"
+        canonical_path: "/repo/#{repo_name}/#{branch}/"
+        keywords: "GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders, #{repo_name}"
+        image: /assets/images/preview.png
+        is_static_page: true
+        ---
+        <!-- This page is automatically generated for SEO purposes -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "GitHubTree",
+        "url": "#{site_url}/repo/#{repo_name}/#{branch}/",
+        "description": "#{description}",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ghazi Khan",
+            "url": "https://github.com/mgks"
+        }
+        }
+        </script>
+        CONTENT
         
         # Write the page file
         index_file = File.join(branch_dir, 'index.html')
