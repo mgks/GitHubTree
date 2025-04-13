@@ -56,6 +56,7 @@ module Jekyll
             canonical_path: "/repo/#{repo_name}/#{branch}/"
             keywords: "GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders, #{repo_name}"
             image: /assets/images/preview.png
+            is_static_page: true
             ---
             <!-- This page is automatically generated for SEO purposes -->
             <script type="application/ld+json">
@@ -79,6 +80,9 @@ module Jekyll
             }
             }
             </script>
+
+            <!-- Static page specific script to prevent 404 errors from API calls -->
+            <script src="/assets/js/static-repo.js"></script>
             CONTENT
         
         # Write the page file
