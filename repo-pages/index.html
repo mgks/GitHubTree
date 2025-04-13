@@ -1,0 +1,18 @@
+---
+layout: base
+title: GitHub Repository Pages
+sitemap: false
+---
+<div class="repository-index">
+  <h1>Famous GitHub Repositories on GitHub Tree</h1>
+  <p>This is a list of famous GitHub repository pages frequently visited by developers. To browse repositories, please use the <a href="/">home page</a>.</p>
+  <ul>
+    {% for repository in site.data.repositories %}
+    <li>
+      <a href="/repo/{{ repository.repo }}/{{ repository.branch | default: 'main' }}/">
+        {{ repository.repo }} ({{ repository.branch | default: 'main' }})
+      </a> - {{ repository.description }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
