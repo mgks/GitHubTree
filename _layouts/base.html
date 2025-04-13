@@ -149,7 +149,8 @@
                 const newPath = `/repo/${repoPath}/${branchPath}/`;
                 window.location.href = newPath;
             } else {
-                // Normal page load - trigger fetch automatically for repo pages
+                // Trigger fetch automatically for repo pages
+                // The static-repo.js script will prevent actual fetching for static pages
                 setTimeout(function() {
                     document.getElementById('fetchButton').click();
                 }, 100);
