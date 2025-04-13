@@ -8,6 +8,14 @@
     <meta name="keywords" content="GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders{% if page.repo_name %}, {{ page.repo_name }}{% endif %}">
     <meta name="author" content="Ghazi Khan">
     
+    <!-- Advanced SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    {% if page.last_modified_at %}
+    <meta name="date" content="{{ page.last_modified_at | date_to_xmlschema }}">
+    {% else %}
+    <meta name="date" content="{{ site.time | date_to_xmlschema }}">
+    {% endif %}
+    
     <!-- Canonical Link - CRITICAL for SEO -->
     <link rel="canonical" href="{{ page.canonical_url | default: site.url }}{{ page.canonical_path | default: page.url }}" />
     
@@ -17,6 +25,8 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}GitHub repo explorer: visualize and navigate github project structures{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/images/preview.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="GitHubTree">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -24,6 +34,7 @@
     <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}GitHub repo explorer: visualize and navigate github project structures{% endif %}">
     <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.{% endif %}">
     <meta property="twitter:image" content="{{ site.url }}/assets/images/preview.png">
+    <meta name="twitter:creator" content="@_enigmazi">
 
     <!-- Favicons -->
     <link rel="icon" href="/assets/images/favicon-192.png" sizes="192x192" type="image/png">
