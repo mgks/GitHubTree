@@ -6,10 +6,6 @@ module Jekyll
       # Get the list of repositories from _data/repositories.json
       repositories = site.data['repositories'] || []
 
-      # Create a directory for repository pages if it doesn't exist
-      repo_pages_dir = File.join(site.source, 'repo-pages')
-      FileUtils.mkdir_p(repo_pages_dir) unless File.directory?(repo_pages_dir)
-
       # Create a "repo" directory at the root for clean URLs
       repo_dir = File.join(site.source, 'repo')
       FileUtils.mkdir_p(repo_dir) unless File.directory?(repo_dir)
@@ -56,7 +52,6 @@ module Jekyll
         canonical_path: "/repo/#{repo_name}/#{branch}/"
         keywords: "GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders, #{repo_name}"
         image: /assets/images/preview.png
-        is_static_page: true
         ---
         <!-- This page is automatically generated for SEO purposes -->
         <script type="application/ld+json">
@@ -68,11 +63,6 @@ module Jekyll
         "description": "#{description}",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Web",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
         "author": {
             "@type": "Person",
             "name": "Ghazi Khan",

@@ -1,8 +1,3 @@
-// --- Check if this is a static page first ---
-if (window.staticPageMode === true) {
-  console.log("Static page mode detected - API calls will be intercepted");
-}
-
 // --- Constants ---
 const GITHUB_PAT = ""; // IMPORTANT: Replace with your Personal Access Token ONLY in your PRIVATE fork. Keep this fork private. NEVER commit a PAT to a public repo.
 
@@ -193,12 +188,6 @@ function parseURL() {
 
 // Function to update meta tags dynamically
 async function fetchRepoTree() {
-    // Check if this is a static page that should prevent fetching
-    if (window.preventRepoFetch === true) {
-        console.log("Static page detected - skipping API fetch");
-        return;
-    }
-
     const repoInputVal = repoInput.value.trim();
     const branch = branchInput.value.trim() || 'main';
 

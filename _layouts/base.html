@@ -8,11 +8,6 @@
     <meta name="keywords" content="GitHub repository explorer, online repo viewer, visualize GitHub project structure, directory tree, file explorer, open source navigation, copy file paths, GitHub project folders{% if page.repo_name %}, {{ page.repo_name }}{% endif %}">
     <meta name="author" content="Ghazi Khan">
     
-    {% if page.is_static_page %}
-    <!-- Preload the static page script to prevent API calls -->
-    <script src="/assets/js/static-repo.js"></script>
-    {% endif %}
-    
     <!-- Canonical Link - CRITICAL for SEO -->
     <link rel="canonical" href="{{ page.canonical_url | default: site.url }}{{ page.canonical_path | default: page.url }}" />
     

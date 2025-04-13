@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Custom workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -40,6 +40,9 @@ jobs:
         run: |
           bundle install
           bundle exec jekyll build
+          # Debug step - list contents of _site directory to verify repository pages
+          echo "Listing _site/repo directory:"
+          ls -la _site/repo || echo "No repo directory found"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
