@@ -188,6 +188,12 @@ function parseURL() {
 
 // Function to update meta tags dynamically
 async function fetchRepoTree() {
+    // Check if this is a static page that should prevent fetching
+    if (window.preventRepoFetch === true) {
+        console.log("Static page detected - skipping API fetch");
+        return;
+    }
+
     const repoInputVal = repoInput.value.trim();
     const branch = branchInput.value.trim() || 'main';
 
@@ -198,7 +204,7 @@ async function fetchRepoTree() {
         updateMetaData(
             'GitHub repo explorer: visualize and navigate github project structures', // Title
             'Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.', // Description
-            '/' // Canonical back to homepage
+            '/'
         );
         return;
     }
