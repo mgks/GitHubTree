@@ -143,6 +143,12 @@ function parseURL() {
         return;
     }
 
+    // Skip URL parsing for specific pages we want to preserve
+    const specialPages = ['/popular-repos/', '/popular-repos/index.html'];
+    if (specialPages.includes(window.location.pathname)) {
+        return; // Don't process URLs for special pages
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const repoFromUrl = urlParams.get('repo'); // Already decoded by URLSearchParams
     const branchFromUrl = urlParams.get('branch'); // Already decoded
@@ -176,13 +182,16 @@ function parseURL() {
             fetchRepoTree(); // This will handle metadata update after fetch
         }
     } else {
-        // Reset to homepage defaults
-        updateMetaData(
-            'GitHub repo explorer: visualize and navigate github project structures', // Default Title
-            'Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.', // Default Description
-            '/'
-        );
-        clearTree();
+        // Only reset to homepage if we're actually on the homepage
+        // This prevents overriding metadata for other pages like /repo-pages/
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            updateMetaData(
+                'GitHub repo explorer: visualize and navigate github project structures', // Default Title
+                'Effortlessly explore and visualize the file structure of any public GitHub repository online. Navigate project folders, view directory trees, and copy paths without cloning.', // Default Description
+                '/'
+            );
+            clearTree();
+        }
     }
 }
 
