@@ -1,0 +1,231 @@
+---
+layout: base
+title: "Popular GitHub Repositories - GitHub Tree Explorer"
+description: "Explore the most popular GitHub repositories with GitHubTree. Browse code structures, visualize directories, and navigate GitHub projects without cloning."
+keywords: "GitHub repositories, popular GitHub projects, code structure explorer, GitHub navigator, trending repositories, open source projects, GitHub directory viewer"
+canonical_path: "/popular-repos/"
+sitemap: true
+last_modified_at: 2023-08-21T12:00:00+00:00
+---
+<div class="tree-container" id="popular-repos-container" style="display: block;">
+  <div class="tree-header">
+    <h1>Popular GitHub Repositories</h1>
+    <p>Browse these popular GitHub repositories and visualize their file structures with GitHubTree.</p>
+    
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="frameworks">Frameworks</button>
+      <button class="category-btn" data-category="tools">Tools</button>
+      <button class="category-btn" data-category="learning">Learning</button>
+      <button class="category-btn" data-category="ai">AI & ML</button>
+      <div class="dropdown">
+        <button class="dropdown-btn">More Categories</button>
+        <div class="dropdown-content">
+          <a href="#" class="category-option" data-category="languages">Languages</a>
+          <a href="#" class="category-option" data-category="databases">Databases</a>
+          <a href="#" class="category-option" data-category="os">OS & Systems</a>
+          <a href="#" class="category-option" data-category="blockchain">Blockchain</a>
+          <a href="#" class="category-option" data-category="gamedev">Game Dev</a>
+          <a href="#" class="category-option" data-category="other">Other</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <pre id="repo-tree">
+<div class="line-numbers">
+{% for repository in site.data.repositories %}
+<span class="line-number" data-repo="{{ repository.repo }}">{{ forloop.index }}</span>
+{% endfor %}
+</div>
+<div class="line-content">
+{% for repository in site.data.repositories %}
+<span class="repo-entry{% if repository.category %} {{ repository.category }}{% endif %}" data-repo="{{ repository.repo }}">
+  <i class="fas {% if repository.category == 'frameworks' %}fa-cubes{% elsif repository.category == 'languages' %}fa-code{% elsif repository.category == 'tools' %}fa-tools{% elsif repository.category == 'learning' %}fa-book{% elsif repository.category == 'ai' %}fa-brain{% elsif repository.category == 'os' %}fa-microchip{% else %}fa-code-branch{% endif %}"></i> 
+  <a href="/repo/{{ repository.repo }}/{{ repository.branch | default: 'main' }}/">{{ repository.repo }}</a> 
+  <small>({{ repository.branch | default: 'main' }})</small>
+  {% if repository.description %}
+  - {{ repository.description }}
+  {% endif %}
+</span>
+{% endfor %}
+</div>
+  </pre>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Most Popular GitHub Repositories - GitHub Tree Explorer",
+  "description": "Explore the most popular GitHub repositories with GitHubTree. Browse code structures, visualize directories, and navigate GitHub projects without cloning.",
+  "url": "{{ site.url }}/popular-repos/",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for repository in site.data.repositories limit:10 %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}/repo/{{ repository.repo }}/{{ repository.branch | default: 'main' }}/",
+        "name": "{{ repository.repo }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+
+<style>
+  #popular-repos-container .tree-header {
+    margin-bottom: 20px;
+  }
+  
+  #popular-repos-container .tree-header h1 {
+    margin-bottom: 10px;
+  }
+  
+  #popular-repos-container a {
+    text-decoration: none;
+  }
+  
+  #popular-repos-container a:hover {
+    text-decoration: underline;
+  }
+  
+  #repo-tree {
+    display: flex;
+    overflow: auto;
+  }
+  
+  .category-buttons {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .category-btn, .dropdown-btn {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .category-btn.active {
+    background: #0366d6;
+    color: white;
+    border-color: #0366d6;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dark-mode .category-btn, .dark-mode .dropdown-btn {
+    background: #333;
+    border-color: #444;
+    color: #eee;
+  }
+  
+  .dark-mode .category-btn.active {
+    background: #58a6ff;
+    border-color: #58a6ff;
+  }
+  
+  .dark-mode .dropdown-content {
+    background-color: #222;
+  }
+  
+  .dark-mode .dropdown-content a {
+    color: #eee;
+  }
+  
+  .dark-mode .dropdown-content a:hover {
+    background-color: #333;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const categoryOptions = document.querySelectorAll('.category-option');
+    const repoEntries = document.querySelectorAll('.repo-entry');
+    const lineNumbers = document.querySelectorAll('.line-number');
+    
+    // Function to filter repositories by category
+    function filterByCategory(category) {
+      // Update active button
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`[data-category="${category}"]`).classList.add('active');
+      
+      // Show all repos if 'all' category selected
+      if (category === 'all') {
+        repoEntries.forEach(entry => entry.classList.remove('hidden'));
+        lineNumbers.forEach(num => num.classList.remove('hidden'));
+        return;
+      }
+      
+      // Hide all entries first
+      repoEntries.forEach(entry => entry.classList.add('hidden'));
+      lineNumbers.forEach(num => num.classList.add('hidden'));
+      
+      // Show only entries matching the selected category
+      document.querySelectorAll(`.${category}`).forEach(entry => {
+        entry.classList.remove('hidden');
+        // Show corresponding line number
+        const repo = entry.getAttribute('data-repo');
+        document.querySelector(`.line-number[data-repo="${repo}"]`).classList.remove('hidden');
+      });
+    }
+    
+    // Filter repositories when category button is clicked
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        filterByCategory(this.getAttribute('data-category'));
+      });
+    });
+    
+    // Filter repositories when dropdown option is clicked
+    categoryOptions.forEach(option => {
+      option.addEventListener('click', function(e) {
+        e.preventDefault();
+        filterByCategory(this.getAttribute('data-category'));
+      });
+    });
+  });
+</script> 
