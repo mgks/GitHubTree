@@ -9,7 +9,7 @@
     <meta name="author" content="Ghazi Khan">
     
     <!-- Advanced SEO Meta Tags -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{% if page.meta_robots %}{{ page.meta_robots }}{% else %}index, follow{% endif %}">
     {% if page.last_modified_at %}
     <meta name="date" content="{{ page.last_modified_at | date_to_xmlschema }}">
     {% else %}
