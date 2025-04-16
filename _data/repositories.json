@@ -4748,7 +4748,7 @@
   {
     "repo": "electron-userland/electron-builder",
     "branch": "master",
-    "description": "A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box",
+    "description": "A complete solution to package and build a ready for distribution Electron app with auto update support out of the box",
     "category": "tools"
   },
   {
@@ -5170,5 +5170,4643 @@
     "branch": "rpi-6.6.y",
     "description": "Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/",
     "category": "os"
+  },
+  {
+    "repo": "codecrafters-io/build-your-own-x",
+    "branch": "master",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "category": "learning"
+  },
+  {
+    "repo": "lobehub/lobe-chat",
+    "branch": "main",
+    "description": "An open-source, modern-design AI chat framework. Supports Multi AI Providers, Knowledge Base, Multi-Modals and more. One-click FREE deployment.",
+    "category": "ai"
+  },
+  {
+    "repo": "krahets/hello-algo",
+    "branch": "main",
+    "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持多种语言。",
+    "category": "learning"
+  },
+  {
+    "repo": "microsoft/generative-ai-for-beginners",
+    "branch": "main",
+    "description": "21 Lessons, Get Started Building with Generative AI.",
+    "category": "learning"
+  },
+  {
+    "repo": "langgenius/dify",
+    "branch": "main",
+    "description": "Dify is an open-source LLM app development platform. Intuitive interface combining AI workflow, RAG pipeline, agent capabilities, model management, observability features.",
+    "category": "ai"
+  },
+  {
+    "repo": "ollama/ollama",
+    "branch": "main",
+    "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 3, Mistral Small 3.1 and other large language models.",
+    "category": "ai"
+  },
+  {
+    "repo": "Pythagora-io/gpt-pilot",
+    "branch": "main",
+    "description": "Dev tool that writes scalable apps from scratch while the developer oversees the implementation.",
+    "category": "ai"
+  },
+  {
+    "repo": "maybe-finance/maybe",
+    "branch": "main",
+    "description": "The OS for your personal finances.",
+    "category": "tools"
+  },
+  {
+    "repo": "danielmiessler/fabric",
+    "branch": "main",
+    "description": "fabric is an open-source framework for augmenting humans using AI. Provides a modular framework for solving specific problems using a crowdsourced set of AI prompts.",
+    "category": "ai"
+  },
+  {
+    "repo": "ossu/computer-science",
+    "branch": "master",
+    "description": "Path to a free self-taught education in Computer Science!",
+    "category": "learning"
+  },
+  {
+    "repo": "lllyasviel/Fooocus",
+    "branch": "main",
+    "description": "Focus on prompting and generating images with Stable Diffusion.",
+    "category": "ai"
+  },
+  {
+    "repo": "cloudcommunity/Free-Certifications",
+    "branch": "main",
+    "description": "A curated list of free courses & certifications.",
+    "category": "learning"
+  },
+  {
+    "repo": "ByteByteGoHq/system-design-101",
+    "branch": "main",
+    "description": "Explains complex system design topics with simple terms and examples. Help you prepare for system design interviews.",
+    "category": "learning"
+  },
+  {
+    "repo": "abi/screenshot-to-code",
+    "branch": "main",
+    "description": "A simple tool to convert screenshots, mockups and Figma designs into clean, functional code using AI.",
+    "category": "ai"
+  },
+  {
+    "repo": "infiniflow/ragflow",
+    "branch": "main",
+    "description": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.",
+    "category": "ai"
+  },
+  {
+    "repo": "fish-shell/fish-shell",
+    "branch": "master",
+    "description": "The user-friendly command line shell.",
+    "category": "tools"
+  },
+  {
+    "repo": "WerWolv/ImHex",
+    "branch": "master",
+    "description": "A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.",
+    "category": "tools"
+  },
+  {
+    "repo": "ByteDance/monolith",
+    "branch": "main",
+    "description": "A deep learning framework for large scale recommendation modeling built on TensorFlow.",
+    "category": "ai"
+  },
+  {
+    "repo": "AgentOps-AI/cline",
+    "branch": "main",
+    "description": "An autonomous coding agent that runs in your IDE. It can create/edit files, execute commands, use the browser, and more.",
+    "category": "ai"
+  },
+  {
+    "repo": "shortest-org/shortest",
+    "branch": "main",
+    "description": "An AI-powered testing framework that lets developers write end-to-end tests in plain English.",
+    "category": "ai"
+  },
+  {
+    "repo": "Vanessa219/siyuan",
+    "branch": "main",
+    "description": "A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.",
+    "category": "tools"
+  },
+  {
+    "repo": "jamez-bondos/awesome-gpt4o-images",
+    "branch": "main",
+    "description": "Awesome curated collection of GPT-4o images & prompts. Explore diverse AI-generated art styles (Ghibli, 3D, etc.) from OpenAI's latest model.",
+    "category": "learning"
+  },
+  {
+    "repo": "OmniSVG/OmniSVG",
+    "branch": "main",
+    "description": "OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs).",
+    "category": "ai"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
+    "branch": "main",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training.",
+    "category": "ai"
+  },
+  {
+    "repo": "hxu296/tariff",
+    "branch": "main",
+    "description": "The official repository for tariff.",
+    "category": "ai"
+  },
+  {
+    "repo": "MoonshotAI/Kimi-VL",
+    "branch": "main",
+    "description": "Kimi-VL: Mixture-of-Experts Vision-Language Model for Multimodal Reasoning, Long-Context Understanding, and Strong Agent Capabilities.",
+    "category": "ai"
+  },
+  {
+    "repo": "ByteDance-Seed/Seed-Thinking-v1.5",
+    "branch": "main",
+    "description": "Seed-Thinking-v1.5 Model Release.",
+    "category": "ai"
+  },
+  {
+    "repo": "SakanaAI/AI-Scientist-v2",
+    "branch": "main",
+    "description": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search.",
+    "category": "ai"
+  },
+  {
+    "repo": "browserable/browserable",
+    "branch": "main",
+    "description": "Open source and self-hostable browser automation library for AI agents.",
+    "category": "ai"
+  },
+  {
+    "repo": "wassim249/fastapi-langgraph-agent-production-ready-template",
+    "branch": "main",
+    "description": "A production-ready FastAPI template for building AI agent applications with LangGraph integration.",
+    "category": "ai"
+  },
+  {
+    "repo": "markitdown/markitdown",
+    "branch": "main",
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "category": "tools"
+  },
+  {
+    "repo": "RUC-GSAI/LightRAG",
+    "branch": "main",
+    "description": "LightRAG: Simple and Fast Retrieval-Augmented Generation.",
+    "category": "ai"
+  },
+  {
+    "repo": "n8n-io/n8n",
+    "branch": "master",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "category": "devops"
+  },
+  {
+    "repo": "maxun-io/maxun",
+    "branch": "main",
+    "description": "A free and open source communication platform for communities.",
+    "category": "communication"
+  },
+  {
+    "repo": "mlabonne/llm-cookbook",
+    "branch": "main",
+    "description": "The LLM Cookbook: guides and examples for Large Language Models.",
+    "category": "learning"
+  },
+  {
+    "repo": "SimplifyJobs/Summer2025-Internships",
+    "branch": "main",
+    "description": "Collection of Summer 2025 tech internships!",
+    "category": "learning"
+  },
+  {
+    "repo": "clockworklabs/SpacetimeDB",
+    "branch": "master",
+    "description": "Multiplayer at the speed of light.",
+    "category": "database"
+  },
+  {
+    "repo": "alibaba/FunASR",
+    "branch": "main",
+    "description": "A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models.",
+    "category": "ai"
+  },
+  {
+    "repo": "jachiam/chartdb",
+    "branch": "main",
+    "description": "Time series database that runs in the browser.",
+    "category": "database"
+  },
+  {
+    "repo": "facebookresearch/llama-cookbook",
+    "branch": "main",
+    "description": "Examples and guides for using Meta Llama models.",
+    "category": "learning"
+  },
+  {
+    "repo": "juliangarnier/anime",
+    "branch": "master",
+    "description": "JavaScript animation engine.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "NVIDIA/cuda-python",
+    "branch": "main",
+    "description": "Python bindings for CUDA.",
+    "category": "ai"
+  },
+  {
+    "repo": "NVIDIA/PhysX",
+    "branch": "main",
+    "description": "NVIDIA PhysX SDK.",
+    "category": "game-dev"
+  },
+  {
+    "repo": "redmine/redmine",
+    "branch": "master",
+    "description": "Redmine is a flexible project management web application written using Ruby on Rails framework.",
+    "category": "tools"
+  },
+  {
+    "repo": "unionai-oss/union",
+    "branch": "main",
+    "description": "Union is an orchestration platform for ML and Data pipelines.",
+    "category": "ai"
+  },
+  {
+    "repo": "lencx/ChatGPT",
+    "branch": "main",
+    "description": "ChatGPT Desktop Application (Mac, Windows and Linux).",
+    "category": "tools"
+  },
+  {
+    "repo": "activepieces/activepieces",
+    "branch": "main",
+    "description": "Your friendliest open source all-in-one automation tool. Connect over 230+ apps.",
+    "category": "tools"
+  },
+  {
+    "repo": "Calllov/Anomaly-Detection-Resources",
+    "branch": "master",
+    "description": "Anomaly detection related books, papers, videos, and toolboxes.",
+    "category": "learning"
+  },
+  {
+    "repo": "virattt/ai-hedge-fund",
+    "branch": "main",
+    "description": "Exploring the use of AI for trading decisions (Educational purposes only).",
+    "category": "ai"
+  },
+  {
+    "repo": "Anduin2017/HowToCook",
+    "branch": "master",
+    "description": "程序员在家做饭方法指南。 Programmers' Guide to Cooking at Home.",
+    "category": "other"
+  },
+  {
+    "repo": "Anxcye/anx-reader",
+    "branch": "main",
+    "description": "Featuring powerful AI capabilities and supporting various e-book formats, it makes reading smarter and more focused.",
+    "category": "tools"
+  },
+  {
+    "repo": "vanna-ai/vanna",
+    "branch": "main",
+    "description": "Chat with your SQL database . Accurate Text-to-SQL Generation via LLMs using RAG.",
+    "category": "ai"
+  },
+  {
+    "repo": "fuma-nama/fumadocs",
+    "branch": "main",
+    "description": "The beautiful docs framework with Next.js.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "DioxusLabs/dioxus",
+    "branch": "master",
+    "description": "Fullstack app framework for web, desktop, mobile, and more.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "opf/openproject",
+    "branch": "dev",
+    "description": "OpenProject is the leading open source project management software.",
+    "category": "tools"
+  },
+  {
+    "repo": "yeongpin/cursor-free-vip",
+    "branch": "main",
+    "description": "Support 0.48.x, Reset Cursor AI MachineID & Bypass Higher Token Limit.",
+    "category": "tools"
+  },
+  {
+    "repo": "Zackriya-Solutions/meeting-minutes",
+    "branch": "main",
+    "description": "A free and open source, self hosted Ai based live meeting note taker and minutes summary generator.",
+    "category": "ai"
+  },
+  {
+    "repo": "ultralytics/ultralytics",
+    "branch": "main",
+    "description": "NEW - YOLOv8 🚀 in PyTorch > ONNX > OpenVINO > CoreML > TFLite.",
+    "category": "ai"
+  },
+  {
+    "repo": "massgravel/Microsoft-Activation-Scripts",
+    "branch": "master",
+    "description": "A Windows and Office activator using HWID / KMS38 / Online KMS activation methods, with a focus on open-source code and fewer antivirus detections.",
+    "category": "tools"
+  },
+  {
+    "repo": "labuladong/fucking-algorithm",
+    "branch": "master",
+    "description": "刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why.",
+    "category": "learning"
+  },
+  {
+    "repo": "Significant-Gravitas/AutoGPT",
+    "branch": "master",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on.",
+    "category": "ai"
+  },
+  {
+    "repo": "Snailclimb/JavaGuide",
+    "branch": "main",
+    "description": "「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。",
+    "category": "learning"
+  },
+  {
+    "repo": "gogs/gogs",
+    "branch": "main",
+    "description": "Gogs is a painless self-hosted Git service.",
+    "category": "tools"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "branch": "master",
+    "description": "Data integration platform for ELT pipelines from APIs, databases & files to warehouses & lakes. Views monitoring, scheduling, documentation.",
+    "category": "devops"
+  },
+  {
+    "repo": "plausible/analytics",
+    "branch": "master",
+    "description": "Simple, lightweight (< 1 KB) and privacy-friendly web analytics. Self-hostable.",
+    "category": "tools"
+  },
+  {
+    "repo": "mastodon/mastodon",
+    "branch": "main",
+    "description": "Your self-hosted, globally interconnected microblogging community.",
+    "category": "communication"
+  },
+  {
+    "repo": "open-webui/open-webui",
+    "branch": "main",
+    "description": "User-friendly WebUI for LLMs (Formerly Ollama WebUI).",
+    "category": "ai"
+  },
+  {
+    "repo": "stanford-oval/storm",
+    "branch": "main",
+    "description": "STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking.",
+    "category": "ai"
+  },
+  {
+    "repo": "google/graph-attribution",
+    "branch": "main",
+    "description": "Library for graph attribution methods.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/r1",
+    "branch": "main",
+    "description": "Code and models for the R1 benchmark for RL agents.",
+    "category": "ai"
+  },
+  {
+    "repo": "WrenAI/wren-ai",
+    "branch": "main",
+    "description": "Open-source GenBI AI Agent that empowers data-driven teams to chat with their data to generate Text-to-SQL, charts, spreadsheets, reports, and BI.",
+    "category": "ai"
+  },
+  {
+    "repo": "NVlabs/Sana",
+    "branch": "main",
+    "description": "Efficient high-resolution image synthesis with Linear Diffusion Transformer.",
+    "category": "ai"
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "description": "A fast multimodal LLM for real-time voice.",
+    "category": "ai"
+  },
+  {
+    "repo": "Unclecode/Crawl4AI",
+    "branch": "main",
+    "description": "Open-source LLM-friendly web crawler and scraper.",
+    "category": "ai"
+  },
+  {
+    "repo": "Henrygd/Beszel",
+    "branch": "main",
+    "description": "Lightweight server monitoring hub with historical data and alerts.",
+    "category": "devops"
+  },
+  {
+    "repo": "Mufeedvh/Code2Prompt",
+    "branch": "main",
+    "description": "CLI tool to convert your codebase into a single LLM prompt.",
+    "category": "ai"
+  },
+  {
+    "repo": "Myhhub/Stock",
+    "branch": "main",
+    "description": "A comprehensive tool for stock data analysis, indicator calculations, pattern recognition, stock selection strategies, and automatic trading.",
+    "category": "tools"
+  },
+  {
+    "repo": "LadybirdBrowser/ladybird",
+    "branch": "master",
+    "description": "Ladybird web browser.",
+    "category": "tools"
+  },
+  {
+    "repo": "Fishaudio/Fish-Speech",
+    "branch": "main",
+    "description": "SOTA Open Source TTS.",
+    "category": "ai"
+  },
+  {
+    "repo": "0Voice/Expert_Readed_Books",
+    "branch": "master",
+    "description": "推荐技术专家们读过的源码书籍，多是经典之作，值得反复研读。",
+    "category": "learning"
+  },
+  {
+    "repo": "Aidenybai/React-Scan",
+    "branch": "main",
+    "description": "Extract information from React components and generate documentation.",
+    "category": "tools"
+  },
+  {
+    "repo": "ruanyf/weekly",
+    "branch": "master",
+    "description": "科技爱好者周刊，每周五发布。",
+    "category": "learning"
+  },
+  {
+    "repo": "Guovin/IPTV-API",
+    "branch": "main",
+    "description": "IPTV API for Chinese channels.",
+    "category": "tools"
+  },
+  {
+    "repo": "keephq/keep",
+    "branch": "main",
+    "description": "The open-source alerts management and automation platform.",
+    "category": "devops"
+  },
+  {
+    "repo": "Kanaries/pygwalker",
+    "branch": "main",
+    "description": "PyGWalker: Turn your pandas dataframe into a Tableau-style User Interface for visual analysis.",
+    "category": "data-science"
+  },
+  {
+    "repo": "alpinejs/alpine",
+    "branch": "main",
+    "description": "A rugged, minimal framework for composing behavior directly in your markup.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "preactjs/preact",
+    "branch": "main",
+    "description": "Fast 3kB React alternative with the same modern API.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "jorgebucaran/hyperapp",
+    "branch": "main",
+    "description": "1kB JavaScript library for building declarative user interfaces.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "jashkenas/backbone",
+    "branch": "master",
+    "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "emberjs/ember.js",
+    "branch": "main",
+    "description": "A JavaScript framework for creating ambitious web applications.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "honojs/hono",
+    "branch": "main",
+    "description": "Web framework built on Web Standards. Fast, lightweight, built on Fetch and Web Standard APIs.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "leon-ai/leon",
+    "branch": "develop",
+    "description": "Your open-source personal assistant.",
+    "category": "ai"
+  },
+  {
+    "repo": "FlowiseAI/Flowise",
+    "branch": "main",
+    "description": "Drag & drop UI to build your customized LLM flow.",
+    "category": "ai"
+  },
+  {
+    "repo": "htmx/htmx",
+    "branch": "master",
+    "description": "Access AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "vercel/ai",
+    "branch": "main",
+    "description": "Build AI-powered applications with React, Svelte, Vue, and Solid.",
+    "category": "ai"
+  },
+  {
+    "repo": "yangshun/tech-interview-handbook",
+    "branch": "master",
+    "description": "Curated coding interview preparation materials for busy software engineers.",
+    "category": "learning"
+  },
+  {
+    "repo": "appwrite/appwrite",
+    "branch": "main",
+    "description": "Build like a team of hundreds_",
+    "category": "backend"
+  },
+  {
+    "repo": "leonardomso/33-js-concepts",
+    "branch": "master",
+    "description": "📜 33 JavaScript concepts every developer should know.",
+    "category": "learning"
+  },
+  {
+    "repo": "30-seconds/30-seconds-of-code",
+    "branch": "master",
+    "description": "Short code snippets for all your development needs.",
+    "category": "learning"
+  },
+  {
+    "repo": "ryanmcdermott/clean-code-javascript",
+    "branch": "main",
+    "description": "Clean Code concepts adapted for JavaScript.",
+    "category": "learning"
+  },
+  {
+    "repo": "microsoft/Web-Dev-For-Beginners",
+    "branch": "main",
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer.",
+    "category": "learning"
+  },
+  {
+    "repo": "PanJiaChen/vue-element-admin",
+    "branch": "master",
+    "description": "A magical vue admin based on Element UI.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "vueuse/vueuse",
+    "branch": "main",
+    "description": "Collection of essential Vue Composition Utilities.",
+    "category": "tools"
+  },
+  {
+    "repo": "slidevjs/slidev",
+    "branch": "main",
+    "description": "Presentation Slides for Developers.",
+    "category": "tools"
+  },
+  {
+    "repo": "vitejs/vitepress",
+    "branch": "main",
+    "description": "Vite & Vue powered static site generator.",
+    "category": "tools"
+  },
+  {
+    "repo": "quilljs/quill",
+    "branch": "develop",
+    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility.",
+    "category": "tools"
+  },
+  {
+    "repo": "unjs/unocss",
+    "branch": "main",
+    "description": "The instant on-demand atomic CSS engine.",
+    "category": "tools"
+  },
+  {
+    "repo": "directus/directus",
+    "branch": "main",
+    "description": "The Modern Data Stack 🐰 — Directus is an instant REST+GraphQL API and intuitive no-code data collaboration app for any SQL database.",
+    "category": "cms"
+  },
+  {
+    "repo": "amplication/amplication",
+    "branch": "master",
+    "description": "Build Node.js apps without coding. Generate quality code, deploy preview environments, manage Git repositories & databases.",
+    "category": "tools"
+  },
+  {
+    "repo": "nhost/nhost",
+    "branch": "main",
+    "description": "The Open Source Alternative to Firebase.",
+    "category": "backend"
+  },
+  {
+    "repo": "hasura/graphql-engine",
+    "branch": "master",
+    "description": "Blazing fast, instant realtime GraphQL APIs on your DB with fine grained access control, also trigger webhooks on database events.",
+    "category": "database"
+  },
+  {
+    "repo": "langchain-ai/langchainjs",
+    "branch": "main",
+    "description": "Build context-aware reasoning applications with LangChain in JS/TS.",
+    "category": "ai"
+  },
+  {
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
+    "description": "A Markdown editor that is easy to use, feature-rich, and supports real-time preview.",
+    "category": "tools"
+  },
+  {
+    "repo": "meteor/meteor",
+    "branch": "devel",
+    "description": "Meteor, the JavaScript App Platform",
+    "category": "frameworks"
+  },
+  {
+    "repo": "jgraph/drawio",
+    "branch": "dev",
+    "description": "draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding.",
+    "category": "tools"
+  },
+  {
+    "repo": "excalidraw/excalidraw",
+    "branch": "master",
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams.",
+    "category": "tools"
+  },
+  {
+    "repo": "tldraw/tldraw",
+    "branch": "main",
+    "description": "Infinite canvas.",
+    "category": "tools"
+  },
+  {
+    "repo": "drizzle-team/drizzle-orm",
+    "branch": "main",
+    "description": "Headless TypeScript ORM with a head.",
+    "category": "database"
+  },
+  {
+    "repo": "tamagui/tamagui",
+    "branch": "master",
+    "description": "Style React Native and Web with optimized universal CSS.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "quasarframework/quasar",
+    "branch": "dev",
+    "description": "Quasar Framework - Build high-performance VueJS user interfaces in record time.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "ionic-team/capacitor",
+    "branch": "main",
+    "description": "Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web.",
+    "category": "mobile"
+  },
+  {
+    "repo": "facebook/stylex",
+    "branch": "main",
+    "description": "StyleX is a JavaScript library for defining styles for optimized user interfaces.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "panda-css/panda",
+    "branch": "main",
+    "description": "🐼 Universal CSS-in-JS framework for modern web development using Build Time Generated Styles.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "vitest-dev/vitest",
+    "branch": "main",
+    "description": "Next generation testing framework powered by Vite.",
+    "category": "tools"
+  },
+  {
+    "repo": "wailsapp/wails",
+    "branch": "master",
+    "description": "Create beautiful applications using Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "nativefier/nativefier",
+    "branch": "development",
+    "description": "Make any web page a desktop application.",
+    "category": "tools"
+  },
+  {
+    "repo": "gluon-framework/gluon",
+    "branch": "main",
+    "description": "Build Desktop Apps with Web Technologies.",
+    "category": "tools"
+  },
+  {
+    "repo": "vercel/nextra",
+    "branch": "main",
+    "description": "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "nanostores/nanostores",
+    "branch": "main",
+    "description": "A tiny (334 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "serverless/serverless",
+    "branch": "main",
+    "description": "Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!",
+    "category": "devops"
+  },
+  {
+    "repo": "MichMich/MagicMirror",
+    "branch": "master",
+    "description": "MagicMirror² is an open source modular smart mirror platform.",
+    "category": "iot"
+  },
+  {
+    "repo": "marktext/marktext",
+    "branch": "master",
+    "description": "A simple and elegant markdown editor, available for Linux, macOS and Windows.",
+    "category": "tools"
+  },
+  {
+    "repo": "TryGhost/Ghost",
+    "branch": "main",
+    "description": "Independent technology for modern publishing, memberships, subscriptions and newsletters.",
+    "category": "cms"
+  },
+  {
+    "repo": "resume/resume.github.com",
+    "branch": "master",
+    "description": "Resumes generated using the GitHub informations.",
+    "category": "tools"
+  },
+  {
+    "repo": "Semantic-Org/Semantic-UI",
+    "branch": "master",
+    "description": "Semantic is a UI component framework based around useful principles from natural language.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "kautukkundan/Awesome-Profile-README-templates",
+    "branch": "master",
+    "description": "A collection of awesome readme templates to display on your profile.",
+    "category": "learning"
+  },
+  {
+    "repo": "jitsi/jitsi-meet",
+    "branch": "master",
+    "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
+    "category": "communication"
+  },
+  {
+    "repo": "SortableJS/Sortable",
+    "branch": "master",
+    "description": "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.",
+    "category": "tools"
+  },
+  {
+    "repo": "nolimits4web/swiper",
+    "branch": "master",
+    "description": "Most modern mobile touch slider with hardware accelerated transitions.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "hakimel/reveal.js",
+    "branch": "master",
+    "description": "The HTML Presentation Framework.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "lodash-archive/lodash-php",
+    "branch": "master",
+    "description": "A PHP utility library delivering consistency, customization, performance, & extras. Inspired by Lo-Dash.",
+    "category": "tools"
+  },
+  {
+    "repo": "typicode/json-server",
+    "branch": "master",
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds.",
+    "category": "tools"
+  },
+  {
+    "repo": "goldbergyoni/nodebestpractices",
+    "branch": "master",
+    "description": "The Node.js best practices list (February 2024).",
+    "category": "learning"
+  },
+  {
+    "repo": "videojs/video.js",
+    "branch": "main",
+    "description": "Video.js - open source HTML5 video player.",
+    "category": "tools"
+  },
+  {
+    "repo": "aosabook/500lines",
+    "branch": "master",
+    "description": "500 Lines or Less.",
+    "category": "learning"
+  },
+  {
+    "repo": "atomiks/tippyjs",
+    "branch": "v6",
+    "description": "Tooltip, popover, dropdown, and menu library.",
+    "category": "tools"
+  },
+  {
+    "repo": "gulpjs/gulp",
+    "branch": "master",
+    "description": "A toolkit to automate & enhance your workflow.",
+    "category": "tools"
+  },
+  {
+    "repo": "websockets/ws",
+    "branch": "master",
+    "description": "Simple to use, blazing fast and thoroughly tested WebSocket client and server for Node.js.",
+    "category": "tools"
+  },
+  {
+    "repo": "mochajs/mocha",
+    "branch": "master",
+    "description": "Simple, flexible, fun JavaScript test framework for Node.js & The Browser.",
+    "category": "tools"
+  },
+  {
+    "repo": "Leaflet/Leaflet",
+    "branch": "main",
+    "description": "JavaScript library for mobile-friendly interactive maps.",
+    "category": "tools"
+  },
+  {
+    "repo": "aframevr/aframe",
+    "branch": "master",
+    "description": "Web framework for building virtual reality experiences.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "chartist/chartist",
+    "branch": "develop",
+    "description": "Simple responsive charts.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "hammerjs/hammer.js",
+    "branch": "master",
+    "description": "A javascript library for multi-touch gestures.",
+    "category": "tools"
+  },
+  {
+    "repo": "fabricjs/fabric.js",
+    "branch": "master",
+    "description": "Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "select2/select2",
+    "branch": "develop",
+    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+    "category": "tools"
+  },
+  {
+    "repo": "jasmine/jasmine",
+    "branch": "main",
+    "description": "Simple JavaScript testing framework for browsers and node.js.",
+    "category": "tools"
+  },
+  {
+    "repo": "pugjs/pug",
+    "branch": "master",
+    "description": "Pug – robust, elegant, feature rich template engine for Node.js and browsers.",
+    "category": "tools"
+  },
+  {
+    "repo": "less/less.js",
+    "branch": "master",
+    "description": "Less. The dynamic stylesheet language.",
+    "category": "tools"
+  },
+  {
+    "repo": "sass/sass",
+    "branch": "main",
+    "description": "Sass makes CSS fun!",
+    "category": "tools"
+  },
+  {
+    "repo": "fullcalendar/fullcalendar",
+    "branch": "main",
+    "description": "Full-sized drag & drop event calendar.",
+    "category": "tools"
+  },
+  {
+    "repo": "requirejs/requirejs",
+    "branch": "master",
+    "description": "A file and module loader for JavaScript.",
+    "category": "tools"
+  },
+  {
+    "repo": "ramsey/uuid",
+    "branch": "4.7",
+    "description": "A PHP library for generating universally unique identifiers (UUIDs).",
+    "category": "tools"
+  },
+  {
+    "repo": "CodeSeven/toastr",
+    "branch": "master",
+    "description": "Simple javascript toast notifications.",
+    "category": "tools"
+  },
+  {
+    "repo": "sweetalert2/sweetalert2",
+    "branch": "main",
+    "description": "A beautiful, responsive, customizable, accessible (WAI-ARIA) replacement for JavaScript's popup boxes.",
+    "category": "tools"
+  },
+  {
+    "repo": "jquery-validation/jquery-validation",
+    "branch": "master",
+    "description": "jQuery Validation Plugin.",
+    "category": "tools"
+  },
+  {
+    "repo": "jquery/jquery-ui",
+    "branch": "main",
+    "description": "The official jQuery user interface library.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "paperjs/paper.js",
+    "branch": "develop",
+    "description": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "HubSpot/messenger",
+    "branch": "master",
+    "description": "Growl-style alerts and messages for your app.",
+    "category": "tools"
+  },
+  {
+    "repo": "nightwatchjs/nightwatch",
+    "branch": "main",
+    "description": "Integrated NodeJS test automation framework for web applications and websites, using W3C WebDriver API.",
+    "category": "tools"
+  },
+  {
+    "repo": "brunch/brunch",
+    "branch": "master",
+    "description": "Fast front-end web app build tool with simple declarative config.",
+    "category": "tools"
+  },
+  {
+    "repo": "backstage/backstage",
+    "branch": "master",
+    "description": "Backstage is an open platform for building developer portals.",
+    "category": "devops"
+  },
+  {
+    "repo": "shadcn-vue/shadcn-vue",
+    "branch": "main",
+    "description": "Vue port of shadcn-ui.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "mui/mui-x",
+    "branch": "master",
+    "description": "MUI X: Build complex and data-rich applications using a growing list of advanced React components.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "yt-dlp/yt-dlp",
+    "branch": "master",
+    "description": "A youtube-dl fork with additional features and fixes.",
+    "category": "tools"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "branch": "develop",
+    "description": "Free, open source crypto trading bot.",
+    "category": "tools"
+  },
+  {
+    "repo": "ManimCommunity/manim",
+    "branch": "main",
+    "description": "A community-maintained Python framework for creating mathematical animations.",
+    "category": "tools"
+  },
+  {
+    "repo": "localstack/localstack",
+    "branch": "master",
+    "description": "A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline!",
+    "category": "cloud"
+  },
+  {
+    "repo": "python-telegram-bot/python-telegram-bot",
+    "branch": "master",
+    "description": "We have made you a wrapper you can't refuse.",
+    "category": "tools"
+  },
+  {
+    "repo": "ansible/ansible",
+    "branch": "devel",
+    "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain.",
+    "category": "devops"
+  },
+  {
+    "repo": "pypa/pip",
+    "branch": "main",
+    "description": "The Python package installer.",
+    "category": "tools"
+  },
+  {
+    "repo": "pytube/pytube",
+    "branch": "master",
+    "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos.",
+    "category": "tools"
+  },
+  {
+    "repo": "home-assistant/core",
+    "branch": "dev",
+    "description": "Open source home automation that puts local control and privacy first.",
+    "category": "iot"
+  },
+  {
+    "repo": "spotipy-dev/spotipy",
+    "branch": "master",
+    "description": "A light weight Python library for the Spotify Web API.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/setuptools",
+    "branch": "main",
+    "description": "Easily download, build, install, upgrade, and uninstall Python packages.",
+    "category": "tools"
+  },
+  {
+    "repo": "pyg-team/pytorch_geometric",
+    "branch": "master",
+    "description": "Graph Neural Network Library for PyTorch.",
+    "category": "ai"
+  },
+  {
+    "repo": "InstaPy/InstaPy",
+    "branch": "master",
+    "description": "Instagram Bot - Tool for automated Instagram interactions.",
+    "category": "tools"
+  },
+  {
+    "repo": "plotly/dash",
+    "branch": "dev",
+    "description": "Analytical Web Apps for Python, R, Julia, and Jupyter. No JavaScript Required.",
+    "category": "data-science"
+  },
+  {
+    "repo": "python-poetry/poetry",
+    "branch": "master",
+    "description": "Python packaging and dependency management made easy.",
+    "category": "tools"
+  },
+  {
+    "repo": "deepfakes/faceswap",
+    "branch": "master",
+    "description": "Deepfakes Software For All.",
+    "category": "ai"
+  },
+  {
+    "repo": "sqlalchemy/alembic",
+    "branch": "main",
+    "description": "A database migration tool for SQLAlchemy.",
+    "category": "database"
+  },
+  {
+    "repo": "aio-libs/aiohttp",
+    "branch": "master",
+    "description": "Asynchronous HTTP Client/Server for asyncio and Python.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "paramiko/paramiko",
+    "branch": "main",
+    "description": "The leading native Python SSHv2 protocol library.",
+    "category": "tools"
+  },
+  {
+    "repo": "sanic-org/sanic",
+    "branch": "main",
+    "description": "Accelerate your web applications.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "encode/django-rest-framework",
+    "branch": "master",
+    "description": "Web APIs for Django.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "psf/requests-html",
+    "branch": "master",
+    "description": "Pythonic HTML Parsing for Humans™.",
+    "category": "tools"
+  },
+  {
+    "repo": "PrefectHQ/prefect",
+    "branch": "main",
+    "description": "Prefect is a workflow orchestration tool empowering developers to build, observe, and react to data pipelines.",
+    "category": "devops"
+  },
+  {
+    "repo": "sqlfluff/sqlfluff",
+    "branch": "main",
+    "description": "A modular SQL linter and auto-formatter with support for multiple dialects and templated code.",
+    "category": "tools"
+  },
+  {
+    "repo": "Textualize/textual",
+    "branch": "main",
+    "description": "The Python framework for interactive dashboard and application development in the terminal.",
+    "category": "tools"
+  },
+  {
+    "repo": "dask/dask",
+    "branch": "main",
+    "description": "Parallel computing with task scheduling.",
+    "category": "data-science"
+  },
+  {
+    "repo": "Supervisor/supervisor",
+    "branch": "master",
+    "description": "Supervisor process control system for UNIX.",
+    "category": "tools"
+  },
+  {
+    "repo": "cookiecutter/cookiecutter",
+    "branch": "master",
+    "description": "A cross-platform command-line utility that creates projects from project templates.",
+    "category": "tools"
+  },
+  {
+    "repo": "PyGithub/PyGithub",
+    "branch": "master",
+    "description": "Typed Interactions with the GitHub API v3.",
+    "category": "tools"
+  },
+  {
+    "repo": "aws/aws-cli",
+    "branch": "v2",
+    "description": "Universal Command Line Interface for Amazon Web Services.",
+    "category": "cloud"
+  },
+  {
+    "repo": "mkdocs/mkdocs",
+    "branch": "master",
+    "description": "Project documentation with Markdown.",
+    "category": "tools"
+  },
+  {
+    "repo": "celery/kombu",
+    "branch": "main",
+    "description": "Messaging library for Python.",
+    "category": "tools"
+  },
+  {
+    "repo": "psycopg/psycopg",
+    "branch": "master",
+    "description": "PostgreSQL database adapter for Python.",
+    "category": "database"
+  },
+  {
+    "repo": "pyca/cryptography",
+    "branch": "main",
+    "description": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+    "category": "security"
+  },
+  {
+    "repo": "prompt-toolkit/python-prompt-toolkit",
+    "branch": "master",
+    "description": "Library for building powerful interactive command line applications in Python.",
+    "category": "tools"
+  },
+  {
+    "repo": "encode/uvicorn",
+    "branch": "master",
+    "description": "The lightning-fast ASGI server.",
+    "category": "web"
+  },
+  {
+    "repo": "dagster-io/dagster",
+    "branch": "master",
+    "description": "An orchestration platform for the development, production, and observation of data assets.",
+    "category": "devops"
+  },
+  {
+    "repo": "locustio/locust",
+    "branch": "master",
+    "description": "Write scalable load tests in Python.",
+    "category": "tools"
+  },
+  {
+    "repo": "ipython/ipython",
+    "branch": "main",
+    "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
+    "category": "tools"
+  },
+  {
+    "repo": "googleapis/google-api-python-client",
+    "branch": "main",
+    "description": "Google API Client Library for Python.",
+    "category": "cloud"
+  },
+  {
+    "repo": "boto/boto",
+    "branch": "develop",
+    "description": "Boto is a Python package that provides interfaces to Amazon Web Services.",
+    "category": "cloud"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "description": "Freeze (package) Python programs into stand-alone executables.",
+    "category": "tools"
+  },
+  {
+    "repo": "Textualize/rich",
+    "branch": "master",
+    "description": "Rich is a Python library for rich text and beautiful formatting in the terminal.",
+    "category": "tools"
+  },
+  {
+    "repo": "kivy/kivy",
+    "branch": "master",
+    "description": "Open source Python library for rapid development of applications that make use of innovative user interfaces, such as multi-touch apps.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "beeware/briefcase",
+    "branch": "main",
+    "description": "Tools to support converting a Python project into a standalone native application.",
+    "category": "tools"
+  },
+  {
+    "repo": "beeware/toga",
+    "branch": "main",
+    "description": "A Python native, OS native GUI toolkit.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "bokeh/bokeh",
+    "branch": "branch-3.4",
+    "description": "Interactive Data Visualization in the browser, from Python.",
+    "category": "data-science"
+  },
+  {
+    "repo": "pydantic/FastUI",
+    "branch": "main",
+    "description": "Build better UIs faster.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "reflex-dev/reflex",
+    "branch": "main",
+    "description": "Web apps in pure Python.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "streamlit/streamlit",
+    "branch": "develop",
+    "description": "The fastest way to build data apps in Python.",
+    "category": "data-science"
+  },
+  {
+    "repo": "altair-viz/altair",
+    "branch": "main",
+    "description": "Declarative statistical visualization library for Python.",
+    "category": "data-science"
+  },
+  {
+    "repo": "mwaskom/seaborn",
+    "branch": "master",
+    "description": "Statistical data visualization using matplotlib.",
+    "category": "data-science"
+  },
+  {
+    "repo": "pandas-profiling/pandas-profiling",
+    "branch": "develop",
+    "description": "Create HTML profiling reports from pandas DataFrame objects.",
+    "category": "data-science"
+  },
+  {
+    "repo": "deepchem/deepchem",
+    "branch": "master",
+    "description": "Democratizing Deep Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology.",
+    "category": "ai"
+  },
+  {
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
+    "description": "Open source machine learning framework to automate text- and voice-based conversations.",
+    "category": "ai"
+  },
+  {
+    "repo": "explosion/spaCy",
+    "branch": "master",
+    "description": "Industrial-strength Natural Language Processing (NLP) in Python.",
+    "category": "ai"
+  },
+  {
+    "repo": "nltk/nltk",
+    "branch": "develop",
+    "description": "Natural Language Toolkit.",
+    "category": "ai"
+  },
+  {
+    "repo": "pola-rs/polars",
+    "branch": "main",
+    "description": "DataFrames implemented in Rust, used in Python, JS, R and SQL. Extensive documentation maintained by the community.",
+    "category": "data-science"
+  },
+  {
+    "repo": "OpenBB-finance/OpenBBTerminal",
+    "branch": "main",
+    "description": "Investment Research for Everyone, Anywhere.",
+    "category": "tools"
+  },
+  {
+    "repo": "python-attrs/attrs",
+    "branch": "main",
+    "description": "Python Classes Without Boilerplate.",
+    "category": "tools"
+  },
+  {
+    "repo": "dateutil/dateutil",
+    "branch": "master",
+    "description": "Useful extensions to the standard Python datetime features.",
+    "category": "tools"
+  },
+  {
+    "repo": "apache/superset",
+    "branch": "master",
+    "description": "Apache Superset is a Data Visualization and Data Exploration Platform.",
+    "category": "data-science"
+  },
+  {
+    "repo": "encode/httpx",
+    "branch": "master",
+    "description": "A next generation HTTP client for Python.",
+    "category": "tools"
+  },
+  {
+    "repo": "great-expectations/great_expectations",
+    "branch": "develop",
+    "description": "Always know what to expect from your data.",
+    "category": "data-science"
+  },
+  {
+    "repo": "python-pillow/Pillow",
+    "branch": "main",
+    "description": "The friendly PIL fork (Python Imaging Library).",
+    "category": "tools"
+  },
+  {
+    "repo": "pynecone-io/pynecone",
+    "branch": "main",
+    "description": "Web apps in pure Python.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "gradio-app/gradio",
+    "branch": "main",
+    "description": "Build and share delightful machine learning apps, all in Python.",
+    "category": "ai"
+  },
+  {
+    "repo": "iterative/dvc",
+    "branch": "main",
+    "description": "Data Version Control | Git for Data & Models | ML Experiments Management.",
+    "category": "ai"
+  },
+  {
+    "repo": "wandb/wandb",
+    "branch": "main",
+    "description": "A tool for visualizing and tracking your machine learning experiments.",
+    "category": "ai"
+  },
+  {
+    "repo": "optuna/optuna",
+    "branch": "master",
+    "description": "A hyperparameter optimization framework.",
+    "category": "ai"
+  },
+  {
+    "repo": "mlflow/mlflow",
+    "branch": "master",
+    "description": "Open source platform for the machine learning lifecycle.",
+    "category": "ai"
+  },
+  {
+    "repo": "bentoml/BentoML",
+    "branch": "main",
+    "description": "Build Production-Grade AI Applications.",
+    "category": "ai"
+  },
+  {
+    "repo": "stanfordnlp/stanza",
+    "branch": "main",
+    "description": "Official Stanford NLP Python Library for Many Human Languages.",
+    "category": "ai"
+  },
+  {
+    "repo": "flairNLP/flair",
+    "branch": "master",
+    "description": "A very simple framework for state-of-the-art Natural Language Processing (NLP).",
+    "category": "ai"
+  },
+  {
+    "repo": "deepset-ai/haystack",
+    "branch": "main",
+    "description": "LLM orchestration framework to build customizable, production-ready LLM applications.",
+    "category": "ai"
+  },
+  {
+    "repo": "PyCQA/bandit",
+    "branch": "main",
+    "description": "Bandit is a tool designed to find common security issues in Python code.",
+    "category": "security"
+  },
+  {
+    "repo": "googleapis/python-storage",
+    "branch": "main",
+    "description": "Google Cloud Storage Client Library for Python.",
+    "category": "cloud"
+  },
+  {
+    "repo": "getredash/redash",
+    "branch": "master",
+    "description": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.",
+    "category": "data-science"
+  },
+  {
+    "repo": "encode/starlette",
+    "branch": "master",
+    "description": "The little ASGI framework that shines.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "marshmallow-code/apispec",
+    "branch": "dev",
+    "description": "A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. Swagger 2.0).",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/pipenv",
+    "branch": "main",
+    "description": "Python Development Workflow for Humans.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/packaging",
+    "branch": "main",
+    "description": "Core utilities for Python packages.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/pipx",
+    "branch": "main",
+    "description": "Install and Run Python Applications in Isolated Environments.",
+    "category": "tools"
+  },
+  {
+    "repo": "gunicorn/gunicorn",
+    "branch": "master",
+    "description": "gunicorn 'Green Unicorn' is a WSGI HTTP Server for UNIX, fast clients and sleepy applications.",
+    "category": "web"
+  },
+  {
+    "repo": "pyinvoke/invoke",
+    "branch": "main",
+    "description": "Python task execution tool & library, drawing inspiration from Make, Fabric 1.x, and Rake.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/hatch",
+    "branch": "master",
+    "description": "Modern, extensible Python project management.",
+    "category": "tools"
+  },
+  {
+    "repo": "jazzband/pip-tools",
+    "branch": "main",
+    "description": "A set of tools to keep your pinned Python dependencies fresh.",
+    "category": "tools"
+  },
+  {
+    "repo": "jazzband/django-debug-toolbar",
+    "branch": "main",
+    "description": "A configurable set of panels that display various debug information about the current request/response.",
+    "category": "tools"
+  },
+  {
+    "repo": "codecrafters-io/build-your-own-x",
+    "branch": "master",
+    "description": "Master programming by recreating your favorite technologies from scratch. (Often includes AI projects like building a neural network).",
+    "category": "learning"
+  },
+  {
+    "repo": "lobehub/lobe-chat",
+    "branch": "main",
+    "description": "An open-source, modern-design AI chat framework. Supports Multi AI Providers, Knowledge Base, Multi-Modals and more. One-click FREE deployment.",
+    "category": "ai"
+  },
+  {
+    "repo": "microsoft/generative-ai-for-beginners",
+    "branch": "main",
+    "description": "21 Lessons, Get Started Building with Generative AI.",
+    "category": "learning"
+  },
+  {
+    "repo": "langgenius/dify",
+    "branch": "main",
+    "description": "Dify is an open-source LLM app development platform. Intuitive interface combining AI workflow, RAG pipeline, agent capabilities, model management, observability features.",
+    "category": "ai"
+  },
+  {
+    "repo": "ollama/ollama",
+    "branch": "main",
+    "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 3, Mistral Small 3.1 and other large language models.",
+    "category": "ai"
+  },
+  {
+    "repo": "Pythagora-io/gpt-pilot",
+    "branch": "main",
+    "description": "Dev tool that writes scalable apps from scratch while the developer oversees the implementation.",
+    "category": "ai"
+  },
+  {
+    "repo": "danielmiessler/fabric",
+    "branch": "main",
+    "description": "fabric is an open-source framework for augmenting humans using AI. Provides a modular framework for solving specific problems using a crowdsourced set of AI prompts.",
+    "category": "ai"
+  },
+  {
+    "repo": "lllyasviel/Fooocus",
+    "branch": "main",
+    "description": "Focus on prompting and generating images with Stable Diffusion.",
+    "category": "ai"
+  },
+  {
+    "repo": "abi/screenshot-to-code",
+    "branch": "main",
+    "description": "A simple tool to convert screenshots, mockups and Figma designs into clean, functional code using AI.",
+    "category": "ai"
+  },
+  {
+    "repo": "infiniflow/ragflow",
+    "branch": "main",
+    "description": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.",
+    "category": "ai"
+  },
+  {
+    "repo": "ByteDance/monolith",
+    "branch": "main",
+    "description": "A deep learning framework for large scale recommendation modeling built on TensorFlow.",
+    "category": "ai"
+  },
+  {
+    "repo": "AgentOps-AI/cline",
+    "branch": "main",
+    "description": "An autonomous coding agent that runs in your IDE. It can create/edit files, execute commands, use the browser, and more.",
+    "category": "ai"
+  },
+  {
+    "repo": "shortest-org/shortest",
+    "branch": "main",
+    "description": "An AI-powered testing framework that lets developers write end-to-end tests in plain English.",
+    "category": "ai"
+  },
+  {
+    "repo": "OmniSVG/OmniSVG",
+    "branch": "main",
+    "description": "OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs).",
+    "category": "ai"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
+    "branch": "main",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training.",
+    "category": "ai"
+  },
+  {
+    "repo": "hxu296/tariff",
+    "branch": "main",
+    "description": "The official repository for tariff.",
+    "category": "ai"
+  },
+  {
+    "repo": "MoonshotAI/Kimi-VL",
+    "branch": "main",
+    "description": "Kimi-VL: Mixture-of-Experts Vision-Language Model for Multimodal Reasoning, Long-Context Understanding, and Strong Agent Capabilities.",
+    "category": "ai"
+  },
+  {
+    "repo": "ByteDance-Seed/Seed-Thinking-v1.5",
+    "branch": "main",
+    "description": "Seed-Thinking-v1.5 Model Release.",
+    "category": "ai"
+  },
+  {
+    "repo": "SakanaAI/AI-Scientist-v2",
+    "branch": "main",
+    "description": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search.",
+    "category": "ai"
+  },
+  {
+    "repo": "browserable/browserable",
+    "branch": "main",
+    "description": "Open source and self-hostable browser automation library for AI agents.",
+    "category": "ai"
+  },
+  {
+    "repo": "wassim249/fastapi-langgraph-agent-production-ready-template",
+    "branch": "main",
+    "description": "A production-ready FastAPI template for building AI agent applications with LangGraph integration.",
+    "category": "ai"
+  },
+  {
+    "repo": "RUC-GSAI/LightRAG",
+    "branch": "main",
+    "description": "LightRAG: Simple and Fast Retrieval-Augmented Generation.",
+    "category": "ai"
+  },
+  {
+    "repo": "mlabonne/llm-cookbook",
+    "branch": "main",
+    "description": "The LLM Cookbook: guides and examples for Large Language Models.",
+    "category": "learning"
+  },
+  {
+    "repo": "alibaba/FunASR",
+    "branch": "main",
+    "description": "A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/llama-cookbook",
+    "branch": "main",
+    "description": "Examples and guides for using Meta Llama models.",
+    "category": "learning"
+  },
+  {
+    "repo": "NVIDIA/cuda-python",
+    "branch": "main",
+    "description": "Python bindings for CUDA.",
+    "category": "ai"
+  },
+  {
+    "repo": "unionai-oss/union",
+    "branch": "main",
+    "description": "Union is an orchestration platform for ML and Data pipelines.",
+    "category": "ai"
+  },
+  {
+    "repo": "lencx/ChatGPT",
+    "branch": "main",
+    "description": "ChatGPT Desktop Application (Mac, Windows and Linux).",
+    "category": "tools"
+  },
+  {
+    "repo": "Calllov/Anomaly-Detection-Resources",
+    "branch": "master",
+    "description": "Anomaly detection related books, papers, videos, and toolboxes.",
+    "category": "learning"
+  },
+  {
+    "repo": "virattt/ai-hedge-fund",
+    "branch": "main",
+    "description": "Exploring the use of AI for trading decisions (Educational purposes only).",
+    "category": "ai"
+  },
+  {
+    "repo": "Anxcye/anx-reader",
+    "branch": "main",
+    "description": "Featuring powerful AI capabilities and supporting various e-book formats, it makes reading smarter and more focused.",
+    "category": "tools"
+  },
+  {
+    "repo": "vanna-ai/vanna",
+    "branch": "main",
+    "description": "Chat with your SQL database . Accurate Text-to-SQL Generation via LLMs using RAG.",
+    "category": "ai"
+  },
+  {
+    "repo": "Zackriya-Solutions/meeting-minutes",
+    "branch": "main",
+    "description": "A free and open source, self hosted Ai based live meeting note taker and minutes summary generator.",
+    "category": "ai"
+  },
+  {
+    "repo": "ultralytics/ultralytics",
+    "branch": "main",
+    "description": "NEW - YOLOv8 🚀 in PyTorch > ONNX > OpenVINO > CoreML > TFLite.",
+    "category": "ai"
+  },
+  {
+    "repo": "Significant-Gravitas/AutoGPT",
+    "branch": "master",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on.",
+    "category": "ai"
+  },
+  {
+    "repo": "open-webui/open-webui",
+    "branch": "main",
+    "description": "User-friendly WebUI for LLMs (Formerly Ollama WebUI).",
+    "category": "ai"
+  },
+  {
+    "repo": "stanford-oval/storm",
+    "branch": "main",
+    "description": "STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking.",
+    "category": "ai"
+  },
+  {
+    "repo": "google/graph-attribution",
+    "branch": "main",
+    "description": "Library for graph attribution methods.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/r1",
+    "branch": "main",
+    "description": "Code and models for the R1 benchmark for RL agents.",
+    "category": "ai"
+  },
+  {
+    "repo": "WrenAI/wren-ai",
+    "branch": "main",
+    "description": "Open-source GenBI AI Agent that empowers data-driven teams to chat with their data to generate Text-to-SQL, charts, spreadsheets, reports, and BI.",
+    "category": "ai"
+  },
+  {
+    "repo": "NVlabs/Sana",
+    "branch": "main",
+    "description": "Efficient high-resolution image synthesis with Linear Diffusion Transformer.",
+    "category": "ai"
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "description": "A fast multimodal LLM for real-time voice.",
+    "category": "ai"
+  },
+  {
+    "repo": "Unclecode/Crawl4AI",
+    "branch": "main",
+    "description": "Open-source LLM-friendly web crawler and scraper.",
+    "category": "ai"
+  },
+  {
+    "repo": "Mufeedvh/Code2Prompt",
+    "branch": "main",
+    "description": "CLI tool to convert your codebase into a single LLM prompt.",
+    "category": "ai"
+  },
+  {
+    "repo": "Fishaudio/Fish-Speech",
+    "branch": "main",
+    "description": "SOTA Open Source TTS.",
+    "category": "ai"
+  },
+  {
+    "repo": "leon-ai/leon",
+    "branch": "develop",
+    "description": "Your open-source personal assistant.",
+    "category": "ai"
+  },
+  {
+    "repo": "FlowiseAI/Flowise",
+    "branch": "main",
+    "description": "Drag & drop UI to build your customized LLM flow.",
+    "category": "ai"
+  },
+  {
+    "repo": "vercel/ai",
+    "branch": "main",
+    "description": "Build AI-powered applications with React, Svelte, Vue, and Solid.",
+    "category": "ai"
+  },
+  {
+    "repo": "langchain-ai/langchainjs",
+    "branch": "main",
+    "description": "Build context-aware reasoning applications with LangChain in JS/TS.",
+    "category": "ai"
+  },
+  {
+    "repo": "deepchem/deepchem",
+    "branch": "master",
+    "description": "Democratizing Deep Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology.",
+    "category": "ai"
+  },
+  {
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
+    "description": "Open source machine learning framework to automate text- and voice-based conversations.",
+    "category": "ai"
+  },
+  {
+    "repo": "pyg-team/pytorch_geometric",
+    "branch": "master",
+    "description": "Graph Neural Network Library for PyTorch.",
+    "category": "ai"
+  },
+  {
+    "repo": "huggingface/optimum",
+    "branch": "main",
+    "description": "Optimization techniques for Transformers.",
+    "category": "ai"
+  },
+  {
+    "repo": "deepmind/dm-haiku",
+    "branch": "main",
+    "description": "JAX-based neural network library.",
+    "category": "ai"
+  },
+  {
+    "repo": "deepmind/alphafold",
+    "branch": "main",
+    "description": "Open source code for AlphaFold.",
+    "category": "ai"
+  },
+  {
+    "repo": "microsoft/unilm",
+    "branch": "master",
+    "description": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities.",
+    "category": "ai"
+  },
+  {
+    "repo": "THUDM/ChatGLM-6B",
+    "branch": "main",
+    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/audiocraft",
+    "branch": "main",
+    "description": "Audiocraft is a library for audio processing and generation with deep learning.",
+    "category": "ai"
+  },
+  {
+    "repo": "serpapi/awesome-agents",
+    "branch": "main",
+    "description": "A curated list of AI agents.",
+    "category": "learning"
+  },
+  {
+    "repo": "ml-explore/mlx",
+    "branch": "main",
+    "description": "MLX: An array framework for machine learning on Apple silicon.",
+    "category": "ai"
+  },
+  {
+    "repo": "OpenBMB/ChatDev",
+    "branch": "main",
+    "description": "Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration).",
+    "category": "ai"
+  },
+  {
+    "repo": "dair-ai/ML-YouTube-Courses",
+    "branch": "main",
+    "description": "A repository to index and organize the latest machine learning courses found on YouTube.",
+    "category": "learning"
+  },
+  {
+    "repo": "dair-ai/Prompt-Engineering-Guide",
+    "branch": "main",
+    "description": "Guides, papers, lecture, notebooks and resources for prompt engineering.",
+    "category": "learning"
+  },
+  {
+    "repo": "dair-ai/ML-Papers-Explained",
+    "branch": "gh-pages",
+    "description": "Explanation to key concepts in ML.",
+    "category": "learning"
+  },
+  {
+    "repo": "fastai/fastai",
+    "branch": "master",
+    "description": "The fastai deep learning library.",
+    "category": "ai"
+  },
+  {
+    "repo": "THUDM/CogVLM",
+    "branch": "main",
+    "description": "Official repo for CogVLM series models.",
+    "category": "ai"
+  },
+  {
+    "repo": "THUDM/CodeGeeX",
+    "branch": "main",
+    "description": "CodeGeeX: An Open Multilingual Code Generation Model.",
+    "category": "ai"
+  },
+  {
+    "repo": "google-deepmind/dm-control",
+    "branch": "main",
+    "description": "DeepMind's software stack for physics-based simulation and Reinforcement Learning.",
+    "category": "ai"
+  },
+  {
+    "repo": "google/flax",
+    "branch": "main",
+    "description": "Flax is a neural network library for JAX that is designed for flexibility.",
+    "category": "ai"
+  },
+  {
+    "repo": "google/trax",
+    "branch": "master",
+    "description": "Trax — Deep Learning with Clear Code and Speed.",
+    "category": "ai"
+  },
+  {
+    "repo": "google/dopamine",
+    "branch": "master",
+    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms.",
+    "category": "ai"
+  },
+  {
+    "repo": "google-research/bert",
+    "branch": "master",
+    "description": "TensorFlow code and pre-trained models for BERT.",
+    "category": "ai"
+  },
+  {
+    "repo": "google-research/vision_transformer",
+    "branch": "main",
+    "description": "Vision Transformer in JAX.",
+    "category": "ai"
+  },
+  {
+    "repo": "openai/gym",
+    "branch": "master",
+    "description": "A toolkit for developing and comparing reinforcement learning algorithms.",
+    "category": "ai"
+  },
+  {
+    "repo": "openai/spinningup",
+    "branch": "master",
+    "description": "An educational resource produced by OpenAI that makes it easier to learn about deep reinforcement learning (deep RL).",
+    "category": "learning"
+  },
+  {
+    "repo": "openai/CLIP",
+    "branch": "main",
+    "description": "Contrastive Language-Image Pretraining.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/detr",
+    "branch": "main",
+    "description": "End-to-End Object Detection with Transformers.",
+    "category": "ai"
+  },
+  {
+    "repo": "facebookresearch/wav2vec",
+    "branch": "main",
+    "description": "Fairseq code for pre-training and fine-tuning Wav2Vec models.",
+    "category": "ai"
+  },
+  {
+    "repo": "EleutherAI/gpt-neox",
+    "branch": "main",
+    "description": "An implementation of model parallel autoregressive transformers on GPUs, based on the DeepSpeed library.",
+    "category": "ai"
+  },
+  {
+    "repo": "EleutherAI/lm-evaluation-harness",
+    "branch": "main",
+    "description": "A framework for few-shot evaluation of autoregressive language models.",
+    "category": "ai"
+  },
+  {
+    "repo": "CompVis/stable-diffusion",
+    "branch": "main",
+    "description": "A latent text-to-image diffusion model.",
+    "category": "ai"
+  },
+  {
+    "repo": "CompVis/latent-diffusion",
+    "branch": "main",
+    "description": "High-Resolution Image Synthesis with Latent Diffusion Models.",
+    "category": "ai"
+  },
+  {
+    "repo": "Stability-AI/generative-models",
+    "branch": "main",
+    "description": "Generative Models by Stability AI.",
+    "category": "ai"
+  },
+  {
+    "repo": "bigcode-project/starcoder",
+    "branch": "main",
+    "description": "Home of StarCoder: fine-tuning & evaluation.",
+    "category": "ai"
+  },
+  {
+    "repo": "mosaicml/llm-foundry",
+    "branch": "main",
+    "description": "LLM training code.",
+    "category": "ai"
+  },
+  {
+    "repo": "TheAlgorithms/Rust",
+    "branch": "master",
+    "description": "All Algorithms implemented in Rust.",
+    "category": "learning"
+  },
+  {
+    "repo": "rust-unofficial/awesome-rust",
+    "branch": "main",
+    "description": "A curated list of Rust code and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "gfx-rs/wgpu",
+    "branch": "master",
+    "description": "Cross-platform, safe, pure-rust graphics api.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "denoland/deno",
+    "branch": "main",
+    "description": "A modern runtime for JavaScript and TypeScript.",
+    "category": "languages"
+  },
+  {
+    "repo": "nushell/nushell",
+    "branch": "main",
+    "description": "A new type of shell.",
+    "category": "tools"
+  },
+  {
+    "repo": "tree-sitter/tree-sitter",
+    "branch": "master",
+    "description": "An incremental parsing system for programming tools.",
+    "category": "tools"
+  },
+  {
+    "repo": "swc-project/swc",
+    "branch": "main",
+    "description": "Rust-based platform for the Web.",
+    "category": "tools"
+  },
+  {
+    "repo": "hyperium/hyper",
+    "branch": "master",
+    "description": "A fast and safe HTTP implementation for Rust.",
+    "category": "web"
+  },
+  {
+    "repo": "SergioBenitez/Rocket",
+    "branch": "master",
+    "description": "A web framework for Rust.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "rust-analyzer/rust-analyzer",
+    "branch": "master",
+    "description": "A Rust compiler front-end for IDEs.",
+    "category": "tools"
+  },
+  {
+    "repo": "diesel-rs/diesel",
+    "branch": "master",
+    "description": "A safe, extensible ORM and Query Builder for Rust.",
+    "category": "database"
+  },
+  {
+    "repo": "launchbadge/sqlx",
+    "branch": "main",
+    "description": "The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL.",
+    "category": "database"
+  },
+  {
+    "repo": "alacritty/alacritty",
+    "branch": "master",
+    "description": "A cross-platform, OpenGL terminal emulator.",
+    "category": "tools"
+  },
+  {
+    "repo": "graphql-rust/juniper",
+    "branch": "master",
+    "description": "GraphQL server library for Rust.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "starship/starship",
+    "branch": "master",
+    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+    "category": "tools"
+  },
+  {
+    "repo": "rayon-rs/rayon",
+    "branch": "master",
+    "description": "Rayon: A data parallelism library for Rust.",
+    "category": "languages"
+  },
+  {
+    "repo": "clap-rs/clap",
+    "branch": "master",
+    "description": "A full featured, fast Command Line Argument Parser for Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "actix/actix",
+    "branch": "master",
+    "description": "Actor framework for Rust.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "helix-editor/helix",
+    "branch": "master",
+    "description": "A post-modern modal text editor.",
+    "category": "tools"
+  },
+  {
+    "repo": "meilisearch/meilisearch",
+    "branch": "main",
+    "description": "A lightning-fast search engine that fits effortlessly into your apps, websites, and workflow.",
+    "category": "database"
+  },
+  {
+    "repo": "cube-js/cube",
+    "branch": "master",
+    "description": "The Semantic Layer for Building Data Applications.",
+    "category": "data-science"
+  },
+  {
+    "repo": "pola-rs/polars",
+    "branch": "main",
+    "description": "DataFrames implemented in Rust, used in Python, JS, R and SQL.",
+    "category": "data-science"
+  },
+  {
+    "repo": "xi-editor/xi-editor",
+    "branch": "master",
+    "description": "A modern editor with a backend written in Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "cloudflare/quiche",
+    "branch": "master",
+    "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3.",
+    "category": "web"
+  },
+  {
+    "repo": "paritytech/polkadot-sdk",
+    "branch": "master",
+    "description": "The Polkadot SDK is the simplest way to get started building blockchains.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "solana-labs/solana-program-library",
+    "branch": "master",
+    "description": "A collection of Solana programs maintained by Solana Labs.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "tikv/tikv",
+    "branch": "master",
+    "description": "Distributed transactional key-value database, originally created to complement TiDB.",
+    "category": "database"
+  },
+  {
+    "repo": "vectordotdev/vector",
+    "branch": "master",
+    "description": "A high-performance observability data pipeline.",
+    "category": "devops"
+  },
+  {
+    "repo": "BurntSushi/xsv",
+    "branch": "master",
+    "description": "A fast CSV command line toolkit written in Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "async-rs/async-std",
+    "branch": "master",
+    "description": "Async version of the Rust standard library.",
+    "category": "languages"
+  },
+  {
+    "repo": "rust-lang/mdBook",
+    "branch": "master",
+    "description": "Create book from markdown files. Like Gitbook but implemented in Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "bottlerocket-os/bottlerocket",
+    "branch": "develop",
+    "description": "An operating system designed for hosting containers.",
+    "category": "os"
+  },
+  {
+    "repo": "esp-rs/esp-idf-hal",
+    "branch": "main",
+    "description": "Hardware Abstraction Layer (HAL) for the Espressif ESP32-C3, ESP32-S2 and ESP32-S3 based on ESP-IDF.",
+    "category": "hardware"
+  },
+  {
+    "repo": "dandavison/delta",
+    "branch": "main",
+    "description": "A syntax-highlighting pager for git, diff, and grep output.",
+    "category": "tools"
+  },
+  {
+    "repo": "rust-embedded/discovery",
+    "branch": "master",
+    "description": "Discover the world of microcontrollers through Rust!",
+    "category": "learning"
+  },
+  {
+    "repo": "valeriansaliou/sonic",
+    "branch": "master",
+    "description": "Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.",
+    "category": "database"
+  },
+  {
+    "repo": "gleam-lang/gleam",
+    "branch": "main",
+    "description": "A friendly language for building type-safe, scalable systems!",
+    "category": "languages"
+  },
+  {
+    "repo": "GoAdminGroup/go-admin",
+    "branch": "master",
+    "description": "A golang framework helps gopher to build a data visualization and admin panel in ten minutes.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "FiloSottile/mkcert",
+    "branch": "master",
+    "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+    "category": "security"
+  },
+  {
+    "repo": "GoogleCloudPlatform/golang-samples",
+    "branch": "main",
+    "description": "Sample apps and code written for Google Cloud in the Go programming language.",
+    "category": "cloud"
+  },
+  {
+    "repo": "go-gitea/gitea",
+    "branch": "main",
+    "description": "Gitea is a community managed lightweight code hosting solution written in Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "go-task/task",
+    "branch": "master",
+    "description": "A task runner / simpler Make alternative written in Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "fatedier/frp",
+    "branch": "dev",
+    "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+    "category": "web"
+  },
+  {
+    "repo": "seaweedfs/seaweedfs",
+    "branch": "master",
+    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files!",
+    "category": "database"
+  },
+  {
+    "repo": "ehang-io/nps",
+    "branch": "master",
+    "description": "A lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal.",
+    "category": "web"
+  },
+  {
+    "repo": "v2ray/v2ray-core",
+    "branch": "master",
+    "description": "A platform for building proxies to bypass network restrictions. (Note: Development may be less active, consider alternatives like v2fly/v2ray-core).",
+    "category": "tools"
+  },
+  {
+    "repo": "v2fly/v2ray-core",
+    "branch": "master",
+    "description": "A platform for building proxies to bypass network restrictions.",
+    "category": "tools"
+  },
+  {
+    "repo": "XTLS/Xray-core",
+    "branch": "main",
+    "description": "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.",
+    "category": "tools"
+  },
+  {
+    "repo": "tinygo-org/tinygo",
+    "branch": "release",
+    "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools.",
+    "category": "languages"
+  },
+  {
+    "repo": "syncthing/syncthing",
+    "branch": "main",
+    "description": "Open Source Continuous File Synchronization.",
+    "category": "tools"
+  },
+  {
+    "repo": "fyne-io/fyne",
+    "branch": "master",
+    "description": "Cross platform GUI toolkit in Go inspired by Material Design.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "nats-io/nats.go",
+    "branch": "main",
+    "description": "Golang client for NATS, the cloud native messaging system.",
+    "category": "devops"
+  },
+  {
+    "repo": "golang/protobuf",
+    "branch": "master",
+    "description": "Go support for Google's protocol buffers.",
+    "category": "tools"
+  },
+  {
+    "repo": "go-resty/resty",
+    "branch": "master",
+    "description": "Simple HTTP and REST client library for Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "golang-migrate/migrate",
+    "branch": "master",
+    "description": "Database migrations. CLI and Golang library.",
+    "category": "database"
+  },
+  {
+    "repo": "quic-go/quic-go",
+    "branch": "master",
+    "description": "A QUIC implementation in pure Go.",
+    "category": "web"
+  },
+  {
+    "repo": "go-kit/kit",
+    "branch": "master",
+    "description": "A standard library for microservices.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "google/wire",
+    "branch": "master",
+    "description": "Compile-time Dependency Injection for Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "uber-go/fx",
+    "branch": "master",
+    "description": "A dependency injection based application framework for Go.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "VictoriaMetrics/VictoriaMetrics",
+    "branch": "master",
+    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database.",
+    "category": "database"
+  },
+  {
+    "repo": "hashicorp/raft",
+    "branch": "main",
+    "description": "Golang implementation of the Raft consensus protocol.",
+    "category": "devops"
+  },
+  {
+    "repo": "influxdata/telegraf",
+    "branch": "master",
+    "description": "The plugin-driven server agent for collecting & reporting metrics.",
+    "category": "devops"
+  },
+  {
+    "repo": "tektoncd/cli",
+    "branch": "main",
+    "description": "A CLI for interacting with Tekton!",
+    "category": "devops"
+  },
+  {
+    "repo": "argoproj/argo-events",
+    "branch": "master",
+    "description": "Event-driven workflow automation framework for Kubernetes.",
+    "category": "devops"
+  },
+  {
+    "repo": "argoproj/argo-rollouts",
+    "branch": "master",
+    "description": "Progressive Delivery for Kubernetes.",
+    "category": "devops"
+  },
+  {
+    "repo": "derailed/k9s",
+    "branch": "master",
+    "description": "Kubernetes CLI To Manage Your Clusters In Style!",
+    "category": "devops"
+  },
+  {
+    "repo": "ahmetb/kubectx",
+    "branch": "master",
+    "description": "Faster way to switch between clusters and namespaces in kubectl.",
+    "category": "devops"
+  },
+  {
+    "repo": "GoogleContainerTools/skaffold",
+    "branch": "main",
+    "description": "Easy and Repeatable Kubernetes Development.",
+    "category": "devops"
+  },
+  {
+    "repo": "pulumi/pulumi",
+    "branch": "master",
+    "description": "Pulumi - Infrastructure as Code in any programming language.",
+    "category": "devops"
+  },
+  {
+    "repo": "opentofu/opentofu",
+    "branch": "main",
+    "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
+    "category": "devops"
+  },
+  {
+    "repo": "aws/aws-cdk",
+    "branch": "main",
+    "description": "The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code.",
+    "category": "cloud"
+  },
+  {
+    "repo": "actions/runner-images",
+    "branch": "main",
+    "description": "GitHub Actions runner images.",
+    "category": "devops"
+  },
+  {
+    "repo": "moby/buildkit",
+    "branch": "master",
+    "description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit.",
+    "category": "devops"
+  },
+  {
+    "repo": "docker/awesome-compose",
+    "branch": "master",
+    "description": "Awesome Docker Compose samples.",
+    "category": "learning"
+  },
+  {
+    "repo": "rancher/k3d",
+    "branch": "main",
+    "description": "Little helper to run CNCF's k3s in Docker.",
+    "category": "devops"
+  },
+  {
+    "repo": "portainer/portainer",
+    "branch": "develop",
+    "description": "Making Docker and Kubernetes management easy.",
+    "category": "devops"
+  },
+  {
+    "repo": "cilium/hubble",
+    "branch": "main",
+    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF.",
+    "category": "devops"
+  },
+  {
+    "repo": "cert-manager/cert-manager",
+    "branch": "master",
+    "description": "Automatically provision and manage TLS certificates in Kubernetes.",
+    "category": "security"
+  },
+  {
+    "repo": "kubeedge/kubeedge",
+    "branch": "master",
+    "description": "Kubernetes Native Edge Computing Framework.",
+    "category": "devops"
+  },
+  {
+    "repo": "cri-o/cri-o",
+    "branch": "main",
+    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface.",
+    "category": "devops"
+  },
+  {
+    "repo": "openfaas/faas",
+    "branch": "master",
+    "description": "OpenFaaS - Serverless Functions Made Simple.",
+    "category": "devops"
+  },
+  {
+    "repo": "buildpacks/lifecycle",
+    "branch": "main",
+    "description": "Provides the platform API implementation for building images using Cloud Native Buildpacks.",
+    "category": "devops"
+  },
+  {
+    "repo": "anchore/syft",
+    "branch": "main",
+    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems.",
+    "category": "security"
+  },
+  {
+    "repo": "anchore/grype",
+    "branch": "main",
+    "description": "A vulnerability scanner for container images and filesystems.",
+    "category": "security"
+  },
+  {
+    "repo": "sigstore/cosign",
+    "branch": "main",
+    "description": "Container Signing, Verification and Storage in an OCI registry.",
+    "category": "security"
+  },
+  {
+    "repo": "tilt-dev/tilt",
+    "branch": "master",
+    "description": "Define your dev environment as code. For microservice apps on Kubernetes.",
+    "category": "devops"
+  },
+  {
+    "repo": "distribution/distribution",
+    "branch": "main",
+    "description": "The toolkit to pack, ship, store, and deliver container content.",
+    "category": "devops"
+  },
+  {
+    "repo": "wagoodman/dive",
+    "branch": "master",
+    "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.",
+    "category": "devops"
+  },
+  {
+    "repo": "FiloSottile/age",
+    "branch": "main",
+    "description": "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.",
+    "category": "security"
+  },
+  {
+    "repo": "slackhq/nebula",
+    "branch": "master",
+    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security.",
+    "category": "devops"
+  },
+  {
+    "repo": "gravitational/teleport",
+    "branch": "master",
+    "description": "The easiest, most secure way to access infrastructure.",
+    "category": "security"
+  },
+  {
+    "repo": "cortexproject/cortex",
+    "branch": "master",
+    "description": "A horizontally scalable, highly available, multi-tenant, long term Prometheus.",
+    "category": "devops"
+  },
+  {
+    "repo": "earthly/earthly",
+    "branch": "main",
+    "description": "Super simple build framework with fast, repeatable builds.",
+    "category": "devops"
+  },
+  {
+    "repo": "dagger/dagger",
+    "branch": "main",
+    "description": "Application Delivery as Code that Runs Anywhere.",
+    "category": "devops"
+  },
+  {
+    "repo": "nvm-sh/nvm",
+    "branch": "master",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "category": "tools"
+  },
+  {
+    "repo": "pyenv/pyenv",
+    "branch": "master",
+    "description": "Simple Python version management.",
+    "category": "tools"
+  },
+  {
+    "repo": "Homebrew/brew",
+    "branch": "master",
+    "description": "🍺 The missing package manager for macOS (or Linux).",
+    "category": "tools"
+  },
+  {
+    "repo": "junegunn/fzf",
+    "branch": "master",
+    "description": "A command-line fuzzy finder.",
+    "category": "tools"
+  },
+  {
+    "repo": "BurntSushi/ripgrep",
+    "branch": "master",
+    "description": "A line-oriented search tool that recursively searches directories for a regex pattern.",
+    "category": "tools"
+  },
+  {
+    "repo": "sharkdp/bat",
+    "branch": "master",
+    "description": "A cat(1) clone with wings.",
+    "category": "tools"
+  },
+  {
+    "repo": "sharkdp/fd",
+    "branch": "master",
+    "description": "A simple, fast and user-friendly alternative to find.",
+    "category": "tools"
+  },
+  {
+    "repo": "neovim/neovim",
+    "branch": "master",
+    "description": "Vim-fork focused on extensibility and usability.",
+    "category": "tools"
+  },
+  {
+    "repo": "zed-industries/zed",
+    "branch": "main",
+    "description": "High-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+    "category": "tools"
+  },
+  {
+    "repo": "lapce/lapce",
+    "branch": "master",
+    "description": "Lightning-fast and Powerful Code Editor written in Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "helix-editor/helix",
+    "branch": "master",
+    "description": "A post-modern modal text editor.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/pip",
+    "branch": "main",
+    "description": "The Python package installer.",
+    "category": "tools"
+  },
+  {
+    "repo": "python-poetry/poetry",
+    "branch": "master",
+    "description": "Python packaging and dependency management made easy.",
+    "category": "tools"
+  },
+  {
+    "repo": "cli/cli",
+    "branch": "trunk",
+    "description": "GitHub’s official command line tool.",
+    "category": "tools"
+  },
+  {
+    "repo": "tmux/tmux",
+    "branch": "master",
+    "description": "A terminal multiplexer.",
+    "category": "tools"
+  },
+  {
+    "repo": "prettier/prettier",
+    "branch": "main",
+    "description": "Prettier is an opinionated code formatter.",
+    "category": "tools"
+  },
+  {
+    "repo": "eslint/eslint",
+    "branch": "main",
+    "description": "Find and fix problems in your JavaScript code.",
+    "category": "tools"
+  },
+  {
+    "repo": "psf/black",
+    "branch": "main",
+    "description": "The uncompromising Python code formatter.",
+    "category": "tools"
+  },
+  {
+    "repo": "golangci/golangci-lint",
+    "branch": "master",
+    "description": "Fast linters runner for Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "ruff/ruff",
+    "branch": "main",
+    "description": "An extremely fast Python linter and code formatter, written in Rust.",
+    "category": "tools"
+  },
+  {
+    "repo": "fish-shell/fish-shell",
+    "branch": "master",
+    "description": "The user-friendly command line shell.",
+    "category": "tools"
+  },
+  {
+    "repo": "starship/starship",
+    "branch": "master",
+    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+    "category": "tools"
+  },
+  {
+    "repo": "zsh-users/zsh-autosuggestions",
+    "branch": "master",
+    "description": "Fish-like autosuggestions for zsh.",
+    "category": "tools"
+  },
+  {
+    "repo": "zsh-users/zsh-syntax-highlighting",
+    "branch": "master",
+    "description": "Fish shell-like syntax highlighting for Zsh.",
+    "category": "tools"
+  },
+  {
+    "repo": "FiloSottile/mkcert",
+    "branch": "master",
+    "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+    "category": "security"
+  },
+  {
+    "repo": "typicode/json-server",
+    "branch": "master",
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds.",
+    "category": "tools"
+  },
+  {
+    "repo": "Textualize/rich",
+    "branch": "master",
+    "description": "Rich is a Python library for rich text and beautiful formatting in the terminal.",
+    "category": "tools"
+  },
+  {
+    "repo": "Textualize/textual",
+    "branch": "main",
+    "description": "The Python framework for interactive dashboard and application development in the terminal.",
+    "category": "tools"
+  },
+  {
+    "repo": "dandavison/delta",
+    "branch": "main",
+    "description": "A syntax-highlighting pager for git, diff, and grep output.",
+    "category": "tools"
+  },
+  {
+    "repo": "LazyVim/LazyVim",
+    "branch": "main",
+    "description": "Neovim config for the lazy.",
+    "category": "tools"
+  },
+  {
+    "repo": "asdf-vm/asdf",
+    "branch": "master",
+    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more.",
+    "category": "tools"
+  },
+  {
+    "repo": "go-task/task",
+    "branch": "master",
+    "description": "A task runner / simpler Make alternative written in Go.",
+    "category": "tools"
+  },
+  {
+    "repo": "sharkdp/hyperfine",
+    "branch": "master",
+    "description": "A command-line benchmarking tool.",
+    "category": "tools"
+  },
+  {
+    "repo": "lsd-rs/lsd",
+    "branch": "master",
+    "description": "The next gen ls command.",
+    "category": "tools"
+  },
+  {
+    "repo": "google/zx",
+    "branch": "main",
+    "description": "A tool for writing better scripts.",
+    "category": "tools"
+  },
+  {
+    "repo": "typst/typst",
+    "branch": "main",
+    "description": "A new markup-based typesetting system that is powerful and easy to learn.",
+    "category": "tools"
+  },
+  {
+    "repo": "tree-sitter/tree-sitter",
+    "branch": "master",
+    "description": "An incremental parsing system for programming tools.",
+    "category": "tools"
+  },
+  {
+    "repo": "wader/fq",
+    "branch": "master",
+    "description": "jq for binary formats.",
+    "category": "tools"
+  },
+  {
+    "repo": "antonmedv/fx",
+    "branch": "master",
+    "description": "Terminal JSON viewer.",
+    "category": "tools"
+  },
+  {
+    "repo": "ajeetdsouza/zoxide",
+    "branch": "main",
+    "description": "A smarter cd command. Supports all major shells.",
+    "category": "tools"
+  },
+  {
+    "repo": "jesseduffield/lazygit",
+    "branch": "master",
+    "description": "simple terminal UI for git commands.",
+    "category": "tools"
+  },
+  {
+    "repo": "jesseduffield/lazydocker",
+    "branch": "master",
+    "description": "The lazier way to manage everything docker.",
+    "category": "tools"
+  },
+  {
+    "repo": "derailed/k9s",
+    "branch": "master",
+    "description": "Kubernetes CLI To Manage Your Clusters In Style!",
+    "category": "devops"
+  },
+  {
+    "repo": "ahmetb/kubectx",
+    "branch": "master",
+    "description": "Faster way to switch between clusters and namespaces in kubectl.",
+    "category": "devops"
+  },
+  {
+    "repo": "prompt-toolkit/python-prompt-toolkit",
+    "branch": "master",
+    "description": "Library for building powerful interactive command line applications in Python.",
+    "category": "tools"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "description": "Freeze (package) Python programs into stand-alone executables.",
+    "category": "tools"
+  },
+  {
+    "repo": "cookiecutter/cookiecutter",
+    "branch": "master",
+    "description": "A cross-platform command-line utility that creates projects from project templates.",
+    "category": "tools"
+  },
+  {
+    "repo": "mkdocs/mkdocs",
+    "branch": "master",
+    "description": "Project documentation with Markdown.",
+    "category": "tools"
+  },
+  {
+    "repo": "sqlfluff/sqlfluff",
+    "branch": "main",
+    "description": "A modular SQL linter and auto-formatter with support for multiple dialects and templated code.",
+    "category": "tools"
+  },
+  {
+    "repo": "microsoft/winget-cli",
+    "branch": "master",
+    "description": "Windows Package Manager CLI (aka winget).",
+    "category": "tools"
+  },
+  {
+    "repo": "nushell/nushell",
+    "branch": "main",
+    "description": "A new type of shell.",
+    "category": "tools"
+  },
+  {
+    "repo": "ogham/exa",
+    "branch": "master",
+    "description": "A modern replacement for ‘ls’. (Note: Development seems to have slowed, `lsd` is a popular alternative).",
+    "category": "tools"
+  },
+  {
+    "repo": "PyGithub/PyGithub",
+    "branch": "master",
+    "description": "Typed Interactions with the GitHub API v3.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/setuptools",
+    "branch": "main",
+    "description": "Easily download, build, install, upgrade, and uninstall Python packages.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/pipenv",
+    "branch": "main",
+    "description": "Python Development Workflow for Humans.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/hatch",
+    "branch": "master",
+    "description": "Modern, extensible Python project management.",
+    "category": "tools"
+  },
+  {
+    "repo": "pypa/pipx",
+    "branch": "main",
+    "description": "Install and Run Python Applications in Isolated Environments.",
+    "category": "tools"
+  },
+  {
+    "repo": "jazzband/pip-tools",
+    "branch": "main",
+    "description": "A set of tools to keep your pinned Python dependencies fresh.",
+    "category": "tools"
+  },
+  {
+    "repo": "github/hub",
+    "branch": "master",
+    "description": "A command-line tool that makes git easier to use with GitHub.",
+    "category": "tools"
+  },
+  {
+    "repo": "WerWolv/ImHex",
+    "branch": "master",
+    "description": "A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.",
+    "category": "tools"
+  },
+  {
+    "repo": "WebAssembly/wabt",
+    "branch": "main",
+    "description": "The WebAssembly Binary Toolkit.",
+    "category": "tools"
+  },
+  {
+    "repo": "bytecodealliance/wasmtime",
+    "branch": "main",
+    "description": "A fast and secure runtime for WebAssembly.",
+    "category": "tools"
+  },
+  {
+    "repo": "wasmerio/wasmer",
+    "branch": "master",
+    "description": "The leading WebAssembly Runtime supporting WASI and Emscripten.",
+    "category": "tools"
+  },
+  {
+    "repo": "emscripten-core/emscripten",
+    "branch": "main",
+    "description": "Emscripten: An LLVM-to-WebAssembly Compiler.",
+    "category": "tools"
+  },
+  {
+    "repo": "AssemblyScript/assemblyscript",
+    "branch": "main",
+    "description": "A TypeScript-like language for WebAssembly.",
+    "category": "languages"
+  },
+  {
+    "repo": "extism/extism",
+    "branch": "main",
+    "description": "The universal plug-in system. Extend anything with WebAssembly.",
+    "category": "tools"
+  },
+  {
+    "repo": "rustwasm/wasm-bindgen",
+    "branch": "main",
+    "description": "Facilitating high-level interactions between Wasm modules and JavaScript.",
+    "category": "tools"
+  },
+  {
+    "repo": "rustwasm/wasm-pack",
+    "branch": "master",
+    "description": "Your favorite Rust -> WebAssembly workflow tool!",
+    "category": "tools"
+  },
+  {
+    "repo": "WebAssembly/spec",
+    "branch": "main",
+    "description": "WebAssembly specification, reference interpreter, and proposal documents.",
+    "category": "learning"
+  },
+  {
+    "repo": "fermyon/spin",
+    "branch": "main",
+    "description": "Spin is the framework for building and running event-driven microservices and WebAssembly applications.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "tinygo-org/tinygo",
+    "branch": "release",
+    "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools.",
+    "category": "languages"
+  },
+  {
+    "repo": "wapm-packages/wapm-cli",
+    "branch": "master",
+    "description": "WebAssembly Package Manager Client.",
+    "category": "tools"
+  },
+  {
+    "repo": "suborbital/sat",
+    "branch": "main",
+    "description": "Tiny & fast WebAssembly serverless functions.",
+    "category": "web"
+  },
+  {
+    "repo": "Shopify/javy",
+    "branch": "main",
+    "description": "JS to WebAssembly toolchain.",
+    "category": "tools"
+  },
+  {
+    "repo": "dbt-labs/dbt-core",
+    "branch": "main",
+    "description": "dbt enables data analysts and engineers to transform data in their warehouse more effectively.",
+    "category": "data-science"
+  },
+  {
+    "repo": "apache/spark",
+    "branch": "master",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing.",
+    "category": "data-science"
+  },
+  {
+    "repo": "apache/airflow",
+    "branch": "main",
+    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows.",
+    "category": "devops"
+  },
+  {
+    "repo": "PrefectHQ/prefect",
+    "branch": "main",
+    "description": "Prefect is a workflow orchestration tool empowering developers to build, observe, and react to data pipelines.",
+    "category": "devops"
+  },
+  {
+    "repo": "dagster-io/dagster",
+    "branch": "master",
+    "description": "An orchestration platform for the development, production, and observation of data assets.",
+    "category": "devops"
+  },
+  {
+    "repo": "apache/kafka",
+    "branch": "trunk",
+    "description": "Mirror of Apache Kafka.",
+    "category": "devops"
+  },
+  {
+    "repo": "apache/flink",
+    "branch": "master",
+    "description": "Apache Flink.",
+    "category": "data-science"
+  },
+  {
+    "repo": "apache/beam",
+    "branch": "master",
+    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing.",
+    "category": "data-science"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "branch": "master",
+    "description": "Data integration platform for ELT pipelines from APIs, databases & files to warehouses & lakes.",
+    "category": "devops"
+  },
+  {
+    "repo": "trinodb/trino",
+    "branch": "master",
+    "description": "Trino is a distributed SQL query engine for big data sources.",
+    "category": "database"
+  },
+  {
+    "repo": "ClickHouse/ClickHouse",
+    "branch": "master",
+    "description": "ClickHouse® is a free analytics DBMS for big data.",
+    "category": "database"
+  },
+  {
+    "repo": "apache/iceberg",
+    "branch": "main",
+    "description": "Apache Iceberg.",
+    "category": "database"
+  },
+  {
+    "repo": "delta-io/delta",
+    "branch": "master",
+    "description": "An open-source storage framework that enables building a Lakehouse architecture with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs for Scala, Java, Rust, Ruby, and Python.",
+    "category": "database"
+  },
+  {
+    "repo": "great-expectations/great_expectations",
+    "branch": "develop",
+    "description": "Always know what to expect from your data.",
+    "category": "data-science"
+  },
+  {
+    "repo": "meltano/meltano",
+    "branch": "main",
+    "description": "Your DataOps Platform - Build, Orchestrate, and Monitor your data pipelines.",
+    "category": "devops"
+  },
+  {
+    "repo": "confluentinc/ksql",
+    "branch": "master",
+    "description": "The database purpose-built for stream processing applications.",
+    "category": "database"
+  },
+  {
+    "repo": "confluentinc/kafka-rest",
+    "branch": "master",
+    "description": "Confluent REST Proxy for Kafka.",
+    "category": "devops"
+  },
+  {
+    "repo": "confluentinc/schema-registry",
+    "branch": "master",
+    "description": "Confluent Schema Registry for Kafka.",
+    "category": "devops"
+  },
+  {
+    "repo": "mage-ai/mage-ai",
+    "branch": "master",
+    "description": "The modern data stack tool for building and running data pipelines.",
+    "category": "devops"
+  },
+  {
+    "repo": "duckdb/duckdb",
+    "branch": "main",
+    "description": "DuckDB is an in-process SQL OLAP Database Management System.",
+    "category": "database"
+  },
+  {
+    "repo": "cube-js/cube",
+    "branch": "master",
+    "description": "The Semantic Layer for Building Data Applications.",
+    "category": "data-science"
+  },
+  {
+    "repo": "lakeFS/lakeFS",
+    "branch": "master",
+    "description": "lakeFS - Data version control for your data lake | Git-like capabilities for your object storage.",
+    "category": "devops"
+  },
+  {
+    "repo": "Dataherald/dataherald",
+    "branch": "main",
+    "description": "An open source RAG framework that connects directly to your structured database.",
+    "category": "ai"
+  },
+  {
+    "repo": "open-policy-agent/opa",
+    "branch": "main",
+    "description": "An open source, general-purpose policy engine.",
+    "category": "security"
+  },
+  {
+    "repo": "aquasecurity/trivy",
+    "branch": "main",
+    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more.",
+    "category": "security"
+  },
+  {
+    "repo": "hashicorp/vault",
+    "branch": "main",
+    "description": "A tool for secrets management, encryption as a service, and privileged access management.",
+    "category": "security"
+  },
+  {
+    "repo": "cert-manager/cert-manager",
+    "branch": "master",
+    "description": "Automatically provision and manage TLS certificates in Kubernetes.",
+    "category": "security"
+  },
+  {
+    "repo": "gitleaks/gitleaks",
+    "branch": "master",
+    "description": "Protect and discover secrets using Gitleaks 🔑.",
+    "category": "security"
+  },
+  {
+    "repo": "anchore/grype",
+    "branch": "main",
+    "description": "A vulnerability scanner for container images and filesystems.",
+    "category": "security"
+  },
+  {
+    "repo": "OWASP/CheatSheetSeries",
+    "branch": "master",
+    "description": "OWASP Cheat Sheet Series.",
+    "category": "learning"
+  },
+  {
+    "repo": "OWASP/Amass",
+    "branch": "master",
+    "description": "In-depth Attack Surface Mapping and Asset Discovery.",
+    "category": "security"
+  },
+  {
+    "repo": "NCSC-NL/spring4shell",
+    "branch": "main",
+    "description": "Operational information regarding the vulnerability in the Spring Core Framework.",
+    "category": "security"
+  },
+  {
+    "repo": "ory/kratos",
+    "branch": "master",
+    "description": "Next-gen identity server (think Auth0, Okta, Firebase) with Ory-hardened authentication, MFA, FIDO2, TOTP, WebAuthn, profile management, identity schemas, social sign in, registration, account recovery, passwordless.",
+    "category": "security"
+  },
+  {
+    "repo": "ory/hydra",
+    "branch": "master",
+    "description": "OpenID Certified™ OpenID Connect and OAuth Provider written in Go.",
+    "category": "security"
+  },
+  {
+    "repo": "ory/oathkeeper",
+    "branch": "master",
+    "description": "A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests.",
+    "category": "security"
+  },
+  {
+    "repo": "projectdiscovery/nuclei",
+    "branch": "master",
+    "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL.",
+    "category": "security"
+  },
+  {
+    "repo": "FiloSottile/mkcert",
+    "branch": "master",
+    "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+    "category": "security"
+  },
+  {
+    "repo": "zaproxy/zaproxy",
+    "branch": "main",
+    "description": "The OWASP ZAP core project.",
+    "category": "security"
+  },
+  {
+    "repo": "sqlmapproject/sqlmap",
+    "branch": "master",
+    "description": "Automatic SQL injection and database takeover tool.",
+    "category": "security"
+  },
+  {
+    "repo": "DefensiveOrigins/Platypus",
+    "branch": "main",
+    "description": "A modern C2 framework (Command & Control).",
+    "category": "security"
+  },
+  {
+    "repo": "Clamav/clamav",
+    "branch": "main",
+    "description": "ClamAV® is an open-source antivirus engine for detecting trojans, viruses, malware & other malicious threats.",
+    "category": "security"
+  },
+  {
+    "repo": "pyca/cryptography",
+    "branch": "main",
+    "description": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+    "category": "security"
+  },
+  {
+    "repo": "drwetter/testssl.sh",
+    "branch": "3.2",
+    "description": "Testing TLS/SSL encryption anywhere on any port.",
+    "category": "security"
+  },
+  {
+    "repo": "trailofbits/algo",
+    "branch": "master",
+    "description": "Set up a personal VPN in the cloud.",
+    "category": "security"
+  },
+  {
+    "repo": "StreisandEffect/streisand",
+    "branch": "master",
+    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge.",
+    "category": "security"
+  },
+  {
+    "repo": "supabase/postgres",
+    "branch": "develop",
+    "description": "PostgreSQL prepared for supabase.",
+    "category": "database"
+  },
+  {
+    "repo": "PostgREST/postgrest",
+    "branch": "main",
+    "description": "REST API for any Postgres database.",
+    "category": "database"
+  },
+  {
+    "repo": "drizzle-team/drizzle-orm",
+    "branch": "main",
+    "description": "Headless TypeScript ORM with a head.",
+    "category": "database"
+  },
+  {
+    "repo": "hasura/graphql-engine",
+    "branch": "master",
+    "description": "Blazing fast, instant realtime GraphQL APIs on your DB with fine grained access control, also trigger webhooks on database events.",
+    "category": "database"
+  },
+  {
+    "repo": "pgvector/pgvector",
+    "branch": "master",
+    "description": "Open-source vector similarity search for Postgres.",
+    "category": "database"
+  },
+  {
+    "repo": "weaviate/weaviate",
+    "branch": "master",
+    "description": "Weaviate is an open source vector database that stores both objects and vectors.",
+    "category": "database"
+  },
+  {
+    "repo": "qdrant/qdrant",
+    "branch": "master",
+    "description": "Qdrant - High-performance, massive-scale Vector Database.",
+    "category": "database"
+  },
+  {
+    "repo": "chroma-core/chroma",
+    "branch": "main",
+    "description": "The AI-native open-source embedding database.",
+    "category": "database"
+  },
+  {
+    "repo": "milvus-io/milvus",
+    "branch": "master",
+    "description": "A cloud-native vector database, storage for next generation AI applications.",
+    "category": "database"
+  },
+  {
+    "repo": "surrealdb/surrealdb",
+    "branch": "main",
+    "description": "A scalable, distributed, collaborative, document-graph database.",
+    "category": "database"
+  },
+  {
+    "repo": "meilisearch/meilisearch",
+    "branch": "main",
+    "description": "A lightning-fast search engine that fits effortlessly into your apps, websites, and workflow.",
+    "category": "database"
+  },
+  {
+    "repo": "typesense/typesense",
+    "branch": "master",
+    "description": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch.",
+    "category": "database"
+  },
+  {
+    "repo": "edgedb/edgedb",
+    "branch": "master",
+    "description": "A graph-relational database with declarative schema, built-in migration system, and a next-generation query language.",
+    "category": "database"
+  },
+  {
+    "repo": "oracledb/node-oracledb",
+    "branch": "main",
+    "description": "Oracle Database driver for Node.js maintained by Oracle Corp.",
+    "category": "database"
+  },
+  {
+    "repo": "brianc/node-postgres",
+    "branch": "master",
+    "description": "PostgreSQL client for node.js.",
+    "category": "database"
+  },
+  {
+    "repo": "mysqljs/mysql",
+    "branch": "master",
+    "description": "A pure node.js JavaScript Client implementing the MySQL protocol.",
+    "category": "database"
+  },
+  {
+    "repo": "kysely-org/kysely",
+    "branch": "master",
+    "description": "A type-safe TypeScript SQL query builder.",
+    "category": "database"
+  },
+  {
+    "repo": "nomic-ai/gpt4all",
+    "branch": "main",
+    "description": "gpt4all: run open-source LLMs anywhere.",
+    "category": "ai"
+  },
+  {
+    "repo": "TanStack/table",
+    "branch": "main",
+    "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS, React, Vue, Solid.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "remotion-dev/remotion",
+    "branch": "main",
+    "description": "Create videos programmatically in React.",
+    "category": "tools"
+  },
+  {
+    "repo": "total-typescript/ts-reset",
+    "branch": "main",
+    "description": "A 'CSS reset' for TypeScript, improving types for common JavaScript API's.",
+    "category": "languages"
+  },
+  {
+    "repo": "facebook/stylex",
+    "branch": "main",
+    "description": "StyleX is a JavaScript library for defining styles for optimized user interfaces.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "unjs/nitro",
+    "branch": "main",
+    "description": "Create build and deploy universal web servers. The open engine powering Nuxt and open to everyone.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "unjs/h3",
+    "branch": "main",
+    "description": "Minimal H(TTP) framework built for high performance and portability.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "vueuse/vueuse",
+    "branch": "main",
+    "description": "Collection of essential Vue Composition Utilities.",
+    "category": "tools"
+  },
+  {
+    "repo": "shadcn-vue/shadcn-vue",
+    "branch": "main",
+    "description": "Vue port of shadcn-ui.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "element-plus/element-plus",
+    "branch": "dev",
+    "description": "A Vue 3 based component library for developers, designers and product managers.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "nuxt/ui",
+    "branch": "dev",
+    "description": "Fully styled and customizable components for Nuxt.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "tamagui/tamagui",
+    "branch": "master",
+    "description": "Style React Native and Web with optimized universal CSS.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "BuilderIO/qwik",
+    "branch": "main",
+    "description": "Instant-loading web apps, without effort.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "BuilderIO/mitosis",
+    "branch": "main",
+    "description": "Write components once, run everywhere. Compiles to Vue, React, Solid, Angular, Svelte, and more.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "solidjs-community/solid-primitives",
+    "branch": "main",
+    "description": "A library of high-quality primitives for SolidJS.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "TanStack/router",
+    "branch": "main",
+    "description": "🤖 A fully typesafe router with first-class search-param APIs and built-in caching, built for JS/TS, React, Solid, Vue and Svelte.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "wagmi-dev/viem",
+    "branch": "main",
+    "description": "TypeScript Interface for Ethereum.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "foundry-rs/foundry",
+    "branch": "master",
+    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "yearn/yearn-finance",
+    "branch": "master",
+    "description": "Yearn Finance Protocol.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "LedgerHQ/ledger-live",
+    "branch": "develop",
+    "description": "Ledger Live application for desktop and mobile.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "dappuniversity/starter_kit",
+    "branch": "master",
+    "description": "Start building full-stack blockchain applications FAST.",
+    "category": "learning"
+  },
+  {
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "graphprotocol/graph-node",
+    "branch": "master",
+    "description": "Graph Node indexes data from blockchains such as Ethereum and serves it over GraphQL.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "safe-global/safe-contracts",
+    "branch": "main",
+    "description": "Safe allows secure management of blockchain assets.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "argentlabs/argent-contracts",
+    "branch": "develop",
+    "description": "Argent smart contracts.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "compound-finance/compound-protocol",
+    "branch": "master",
+    "description": "The Compound On-Chain Protocol.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "makerdao/dss",
+    "branch": "master",
+    "description": "Dai Stablecoin System.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "Synthetixio/synthetix",
+    "branch": "develop",
+    "description": "Synthetix protocol.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "balancer/balancer-v2-monorepo",
+    "branch": "master",
+    "description": "Balancer Protocol V2.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "curvefi/curve-contract",
+    "branch": "master",
+    "description": "Curve contract system.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "web3-storage/web3.storage",
+    "branch": "main",
+    "description": "Simple file storage with IPFS & Filecoin.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "FuelLabs/fuel-core",
+    "branch": "master",
+    "description": "Rust full node implementation of the Fuel protocol.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "FuelLabs/fuels-ts",
+    "branch": "master",
+    "description": "Fuel Network Typescript SDK.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "OffchainLabs/arbitrum",
+    "branch": "master",
+    "description": "Arbitrum is a Layer 2 scaling solution for Ethereum.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "ethereum-optimism/optimism",
+    "branch": "develop",
+    "description": "Optimism is Ethereum, scaled.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "zkSync-Community-Hub/zksync-developers",
+    "branch": "main",
+    "description": "zkSync Developers Hub.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "starkware-libs/cairo",
+    "branch": "main",
+    "description": "Cairo is the first Turing-complete language for creating provable programs for general computation.",
+    "category": "blockchain"
+  },
+  {
+    "repo": "Anuken/Mindustry",
+    "branch": "master",
+    "description": "The automation tower defense RTS.",
+    "category": "game-dev"
+  },
+  {
+    "repo": "vercel/geist-font",
+    "branch": "main",
+    "description": "Geist is a typeface developed by Vercel.",
+    "category": "tools"
+  },
+  {
+    "repo": "sindresorhus/type-fest",
+    "branch": "main",
+    "description": "A collection of essential TypeScript types.",
+    "category": "languages"
+  },
+  {
+    "repo": "MunGell/awesome-for-beginners",
+    "branch": "master",
+    "description": "A list of awesome beginners-friendly projects.",
+    "category": "learning"
+  },
+  {
+    "repo": "trimstray/the-book-of-secret-knowledge",
+    "branch": "master",
+    "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+    "category": "learning"
+  },
+  {
+    "repo": "dypsilon/frontend-dev-bookmarks",
+    "branch": "master",
+    "description": "Manually curated collection of resources for frontend web developers.",
+    "category": "learning"
+  },
+  {
+    "repo": "thedaviddias/Front-End-Checklist",
+    "branch": "master",
+    "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website / HTML page to production.",
+    "category": "learning"
+  },
+  {
+    "repo": "microsoft/ProjectSkillLearning",
+    "branch": "main",
+    "description": "Tools and resources for learners to build expertise quickly.",
+    "category": "learning"
+  },
+  {
+    "repo": "mtdvio/every-programmer-should-know",
+    "branch": "master",
+    "description": "A collection of (mostly) technical things every software developer should know.",
+    "category": "learning"
+  },
+  {
+    "repo": "codecrafters-io/build-your-own-x",
+    "branch": "master",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "category": "learning"
+  },
+  {
+    "repo": "ByteByteGoHq/system-design-101",
+    "branch": "main",
+    "description": "Explains complex system design topics with simple terms and examples. Help you prepare for system design interviews.",
+    "category": "learning"
+  },
+  {
+    "repo": "kdn251/interviews",
+    "branch": "master",
+    "description": "Everything you need to know to get the job.",
+    "category": "learning"
+  },
+  {
+    "repo": "yangshun/tech-interview-handbook",
+    "branch": "master",
+    "description": "Curated coding interview preparation materials for busy software engineers.",
+    "category": "learning"
+  },
+  {
+    "repo": "doocs/leetcode",
+    "branch": "main",
+    "description": "Solutions to LeetCode problems in multiple languages.",
+    "category": "learning"
+  },
+  {
+    "repo": "azl397985856/leetcode",
+    "branch": "master",
+    "description": "LeetCode Solutions: A Record of My Problem Solving Journey.",
+    "category": "learning"
+  },
+  {
+    "repo": "jlevy/the-art-of-command-line",
+    "branch": "master",
+    "description": "Master the command line, in one page.",
+    "category": "learning"
+  },
+  {
+    "repo": "airbnb/knowledge-repo",
+    "branch": "master",
+    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions.",
+    "category": "tools"
+  },
+  {
+    "repo": "tiimgreen/github-cheat-sheet",
+    "branch": "master",
+    "description": "A list of cool features of Git and GitHub.",
+    "category": "learning"
+  },
+  {
+    "repo": "LeCoupa/awesome-cheatsheets",
+    "branch": "master",
+    "description": "Awesome cheatsheets for popular programming languages, frameworks and development tools.",
+    "category": "learning"
+  },
+  {
+    "repo": "Lissy93/awesome-privacy",
+    "branch": "main",
+    "description": "A curated list of privacy-respecting software and services.",
+    "category": "learning"
+  },
+  {
+    "repo": "iCHAIT/awesome-macOS",
+    "branch": "master",
+    "description": "A curated list of awesome applications, softwares, tools and shiny things for macOS.",
+    "category": "learning"
+  },
+  {
+    "repo": "jaywcjlove/awesome-mac",
+    "branch": "master",
+    "description": " Now we have become very big, Different from the original idea. Collect premium software in various categories.",
+    "category": "learning"
+  },
+  {
+    "repo": "herrbischoff/awesome-macos-command-line",
+    "branch": "master",
+    "description": "Use your macOS terminal shell to do awesome things.",
+    "category": "learning"
+  },
+  {
+    "repo": "alebcay/awesome-shell",
+    "branch": "master",
+    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos.",
+    "category": "learning"
+  },
+  {
+    "repo": "josephmisiti/awesome-machine-learning",
+    "branch": "master",
+    "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "ChristosChristofidis/awesome-deep-learning",
+    "branch": "master",
+    "description": "A curated list of awesome Deep Learning tutorials, projects and communities.",
+    "category": "learning"
+  },
+  {
+    "repo": "akullpp/awesome-java",
+    "branch": "master",
+    "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+    "category": "learning"
+  },
+  {
+    "repo": "sorrycc/awesome-javascript",
+    "branch": "master",
+    "description": "A collection of awesome browser-side JavaScript libraries, resources and shiny things.",
+    "category": "learning"
+  },
+  {
+    "repo": "vuejs/awesome-vue",
+    "branch": "master",
+    "description": "A curated list of awesome things related to Vue.js.",
+    "category": "learning"
+  },
+  {
+    "repo": "enaqx/awesome-react",
+    "branch": "master",
+    "description": "A collection of awesome things regarding React ecosystem.",
+    "category": "learning"
+  },
+  {
+    "repo": "veggiemonk/awesome-docker",
+    "branch": "master",
+    "description": "A curated list of Docker resources and projects.",
+    "category": "learning"
+  },
+  {
+    "repo": "jnv/lists",
+    "branch": "master",
+    "description": "The definitive list of lists (of lists) curated on GitHub.",
+    "category": "learning"
+  },
+  {
+    "repo": "dair-ai/ML-Papers-Explained",
+    "branch": "gh-pages",
+    "description": "Explanation to key concepts in ML.",
+    "category": "learning"
+  },
+  {
+    "repo": "ForrestKnight/open-source-cs",
+    "branch": "master",
+    "description": "Video Playlist for Open Source Computer Science Curriculum.",
+    "category": "learning"
+  },
+  {
+    "repo": "DovAmir/awesome-design-patterns",
+    "branch": "master",
+    "description": "A curated list of software and architecture related design patterns.",
+    "category": "learning"
+  },
+  {
+    "repo": "mfornos/awesome-microservices",
+    "branch": "master",
+    "description": "A curated list of Microservice Architecture related principles and technologies.",
+    "category": "learning"
+  },
+  {
+    "repo": "binhnguyennus/awesome-scalability",
+    "branch": "master",
+    "description": "The Patterns of Scalable, Reliable, and Performant Large-Scale Systems.",
+    "category": "learning"
+  },
+  {
+    "repo": "kdeldycke/awesome-falsehood",
+    "branch": "master",
+    "description": "Falsehoods Programmers Believe in.",
+    "category": "learning"
+  },
+  {
+    "repo": "sdmg15/Best-websites-a-programmer-should-visit",
+    "branch": "master",
+    "description": "Some useful websites for programmers.",
+    "category": "learning"
+  },
+  {
+    "repo": "charlax/professional-programming",
+    "branch": "master",
+    "description": "A collection of learning resources for curious software engineers.",
+    "category": "learning"
+  },
+  {
+    "repo": "cloudcommunity/Free-Certifications",
+    "branch": "main",
+    "description": "A curated list of free courses & certifications.",
+    "category": "learning"
+  },
+  {
+    "repo": "libuv/libuv",
+    "branch": "v1.x",
+    "description": "Cross-platform asynchronous I/O library, foundational to Node.js.",
+    "category": "tools"
+  },
+  {
+    "repo": "boostorg/boost",
+    "branch": "master",
+    "description": "Boost provides free peer-reviewed portable C++ source libraries.",
+    "category": "languages"
+  },
+  {
+    "repo": "whatwg/html",
+    "branch": "main",
+    "description": "HTML Standard specification.",
+    "category": "learning"
+  },
+  {
+    "repo": "Pylons/pyramid",
+    "branch": "master",
+    "description": "A Python web framework.",
+    "category": "frameworks"
+  },
+  {
+    "repo": "stedolan/jq",
+    "branch": "master",
+    "description": "Command-line JSON processor.",
+    "category": "tools"
+  },
+  {
+    "repo": "sass/libsass",
+    "branch": "master",
+    "description": "A C/C++ implementation of a Sass compiler.",
+    "category": "tools"
+  },
+  {
+    "repo": "libressl/portable",
+    "branch": "master",
+    "description": "LibreSSL portable source tree.",
+    "category": "security"
+  },
+  {
+    "repo": "nmap/nmap",
+    "branch": "master",
+    "description": "Nmap - the Network Mapper. Open source utility for network discovery and security auditing.",
+    "category": "security"
+  },
+  {
+    "repo": "minix3/minix",
+    "branch": "master",
+    "description": "Minix 3 operating system.",
+    "category": "os"
+  },
+  {
+    "repo": "emacs-mirror/emacs",
+    "branch": "master",
+    "description": "Mirror of GNU Emacs development repository.",
+    "category": "tools"
+  },
+  {
+    "repo": "ninja-build/ninja",
+    "branch": "master",
+    "description": "A small build system with a focus on speed.",
+    "category": "tools"
+  },
+  {
+    "repo": "bazelbuild/bazel",
+    "branch": "master",
+    "description": "a fast, scalable, multi-language and extensible build system.",
+    "category": "tools"
+  },
+  {
+    "repo": "wireshark/wireshark",
+    "branch": "master",
+    "description": "Wireshark network protocol analyzer.",
+    "category": "tools"
+  },
+  {
+    "repo": "qemu/qemu",
+    "branch": "master",
+    "description": "Official QEMU mirror. Please see http://wiki.qemu.org/Contribute/SubmitAPatch for how to submit changes to QEMU.",
+    "category": "tools"
+  },
+  {
+    "repo": "rubygems/rubygems",
+    "branch": "master",
+    "description": "Library packaging and distribution for Ruby.",
+    "category": "tools"
+  },
+  {
+    "repo": "JuliaLang/julia",
+    "branch": "master",
+    "description": "The Julia Programming Language.",
+    "category": "languages"
+  },
+  {
+    "repo": "id-Software/DOOM",
+    "branch": "master",
+    "description": "DOOM Open Source Release.",
+    "category": "game-dev"
+  },
+  {
+    "repo": "torproject/tor",
+    "branch": "main",
+    "description": "Repository for the anonymity network Tor.",
+    "category": "security"
+  },
+  {
+    "repo": "redis/hiredis",
+    "branch": "master",
+    "description": "Minimalistic C client library for the Redis database.",
+    "category": "database"
+  },
+  {
+    "repo": "LuaJIT/LuaJIT",
+    "branch": "v2.1",
+    "description": "Just-In-Time Compiler (JIT) for the Lua programming language.",
+    "category": "languages"
+  },
+  {
+    "repo": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "description": "FFmpeg mirror - Complete, cross-platform solution to record, convert and stream audio and video.",
+    "category": "tools"
+  },
+  {
+    "repo": "ImageMagick/ImageMagick",
+    "branch": "main",
+    "description": "ImageMagick - Convert, Edit, or Compose Bitmap Images.",
+    "category": "tools"
+  },
+  {
+    "repo": "PCRE2Project/pcre2",
+    "branch": "master",
+    "description": "Perl Compatible Regular Expressions library (v2).",
+    "category": "tools"
+  },
+  {
+    "repo": "ossu/computer-science",
+    "branch": "master",
+    "description": "Path to a free self-taught education in Computer Science!",
+    "category": "learning"
+  },
+  {
+    "repo": "prakhar1989/awesome-courses",
+    "branch": "master",
+    "description": "List of awesome university courses for learning Computer Science.",
+    "category": "learning"
+  },
+  {
+    "repo": "mit-pdos/xv6-public",
+    "branch": "master",
+    "description": "xv6 OS, public version. Used in MIT's 6.828 Operating System Engineering course.",
+    "category": "learning"
+  },
+  {
+    "repo": "missing-semester/missing-semester",
+    "branch": "master",
+    "description": "The Missing Semester of Your CS Education (MIT Course).",
+    "category": "learning"
+  },
+  {
+    "repo": "fastai/fastbook",
+    "branch": "master",
+    "description": "The fastai book, published as Jupyter Notebooks.",
+    "category": "learning"
+  },
+  {
+    "repo": "fastai/course-v3",
+    "branch": "master",
+    "description": "The 3rd edition of fast.ai's deep learning course.",
+    "category": "learning"
+  },
+  {
+    "repo": "berkeley-cs186/cs186",
+    "branch": "sp24",
+    "description": "UC Berkeley Introduction to Database Systems Course Materials.",
+    "category": "learning"
+  },
+  {
+    "repo": "Harvard-CS50/cs50",
+    "branch": "main",
+    "description": "Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.",
+    "category": "learning"
+  },
+  {
+    "repo": "cs61a-sp21/cs61a-sp21.github.io",
+    "branch": "master",
+    "description": "CS 61A: Structure and Interpretation of Computer Programs (UC Berkeley - Spring 2021). Note: Specific semester, other versions exist.",
+    "category": "learning"
+  },
+  {
+    "repo": "cs109/2015",
+    "branch": "master",
+    "description": "Harvard CS109 Data Science course (2015). Note: Older version, but foundational.",
+    "category": "learning"
+  },
+  {
+    "repo": "Stanford-CS231N/Stanford-CS231N.github.io",
+    "branch": "master",
+    "description": "Stanford CS231n: Convolutional Neural Networks for Visual Recognition.",
+    "category": "learning"
+  },
+  {
+    "repo": "Stanford-CS224N/CS224n",
+    "branch": "main",
+    "description": "Stanford CS224N: Natural Language Processing with Deep Learning.",
+    "category": "learning"
+  },
+  {
+    "repo": "berkeley-cs294/cs294-112_sp17",
+    "branch": "master",
+    "description": "UC Berkeley CS294: Deep Reinforcement Learning (Spring 2017). Note: Specific semester.",
+    "category": "learning"
+  },
+  {
+    "repo": "LambdaSchool/cs-playground",
+    "branch": "master",
+    "description": "Lambda School's Intro to Computer Science.",
+    "category": "learning"
+  },
+  {
+    "repo": "udacity/deep-learning",
+    "branch": "master",
+    "description": "Repo for the Deep Learning Nanodegree Foundations program.",
+    "category": "learning"
+  },
+  {
+    "repo": "udacity/full-stack-javascript-developer-nanodegree",
+    "branch": "master",
+    "description": "Repo for Udacity's Full Stack JavaScript Developer Nanodegree program.",
+    "category": "learning"
+  },
+  {
+    "repo": "udacity/reactnd-contacts-server",
+    "branch": "master",
+    "description": "Server for Udacity's React Nanodegree program contacts app.",
+    "category": "learning"
+  },
+  {
+    "repo": "CMU-Perceptual-Computing-Lab/openpose",
+    "branch": "master",
+    "description": "OpenPose: Real-time multi-person keypoint detection library for body, face, hands, and foot estimation.",
+    "category": "ai"
+  },
+  {
+    "repo": "rust-lang/book",
+    "branch": "main",
+    "description": "The Rust Programming Language Book.",
+    "category": "learning"
+  },
+  {
+    "repo": "data-science-on-aws/data-science-on-aws",
+    "branch": "master",
+    "description": "AI and Machine Learning with Kubeflow, Amazon EKS, and SageMaker.",
+    "category": "learning"
+  },
+  {
+    "repo": "appbrewery/Flutter-Course-Resources",
+    "branch": "master",
+    "description": "Learn to Code While Building Apps - The Complete Flutter Development Bootcamp.",
+    "category": "learning"
+  },
+  {
+    "repo": "microsoft/Data-Science-For-Beginners",
+    "branch": "main",
+    "description": "10 Weeks, 20 Lessons, Data Science for All!",
+    "category": "learning"
+  },
+  {
+    "repo": "sindresorhus/awesome-electron",
+    "branch": "main",
+    "description": "Useful resources for creating apps with Electron.",
+    "category": "learning"
+  },
+  {
+    "repo": "vsouza/awesome-ios",
+    "branch": "master",
+    "description": "A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects.",
+    "category": "learning"
+  },
+  {
+    "repo": "JStumpp/awesome-android",
+    "branch": "master",
+    "description": "A curated list of awesome Android frameworks, libraries, open source holographic projects and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "Solido/awesome-flutter",
+    "branch": "master",
+    "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.",
+    "category": "learning"
+  },
+  {
+    "repo": "fffaraz/awesome-cpp",
+    "branch": "master",
+    "description": "A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things.",
+    "category": "learning"
+  },
+  {
+    "repo": "akullpp/awesome-java",
+    "branch": "master",
+    "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+    "category": "learning"
+  },
+  {
+    "repo": "KotlinBy/awesome-kotlin",
+    "branch": "master",
+    "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java.",
+    "category": "learning"
+  },
+  {
+    "repo": "rust-unofficial/awesome-rust",
+    "branch": "main",
+    "description": "A curated list of Rust code and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "markets/awesome-ruby",
+    "branch": "master",
+    "description": "A collection of awesome Ruby libraries, tools, frameworks and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "ziadoz/awesome-php",
+    "branch": "master",
+    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things.",
+    "category": "learning"
+  },
+  {
+    "repo": "thangchung/awesome-dotnet-core",
+    "branch": "master",
+    "description": "A collection of awesome .NET core libraries, tools, frameworks and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "uralbash/awesome-pyramid",
+    "branch": "master",
+    "description": "A curated list of awesome Pyramid apps, projects and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "humiaozuzu/awesome-flask",
+    "branch": "master",
+    "description": "A curated list of awesome Flask resources and plugins.",
+    "category": "learning"
+  },
+  {
+    "repo": "veggiemonk/awesome-docker",
+    "branch": "master",
+    "description": "A curated list of Docker resources and projects.",
+    "category": "learning"
+  },
+  {
+    "repo": "ramitsurana/awesome-kubernetes",
+    "branch": "master",
+    "description": "A curated list for awesome kubernetes sources.",
+    "category": "learning"
+  },
+  {
+    "repo": "iJackUA/awesome-vagrant",
+    "branch": "master",
+    "description": "A curated list of awesome Vagrant resources, plugins, tutorials and other nice things.",
+    "category": "learning"
+  },
+  {
+    "repo": "podo/awesome-ios-ui",
+    "branch": "master",
+    "description": "A curated list of awesome iOS UI/UX libraries.",
+    "category": "learning"
+  },
+  {
+    "repo": "wasabeef/awesome-android-ui",
+    "branch": "master",
+    "description": "A curated list of awesome Android UI/UX libraries.",
+    "category": "learning"
+  },
+  {
+    "repo": "josephmisiti/awesome-machine-learning",
+    "branch": "master",
+    "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "ChristosChristofidis/awesome-deep-learning",
+    "branch": "master",
+    "description": "A curated list of awesome Deep Learning tutorials, projects and communities.",
+    "category": "learning"
+  },
+  {
+    "repo": "aikorea/awesome-rl",
+    "branch": "master",
+    "description": "Reinforcement learning resources curated.",
+    "category": "learning"
+  },
+  {
+    "repo": "jbhuang0604/awesome-computer-vision",
+    "branch": "master",
+    "description": "A curated list of awesome computer vision resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "uhub/awesome-cpp",
+    "branch": "master",
+    "description": "A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things.",
+    "category": "learning"
+  },
+  {
+    "repo": "qinwf/awesome-R",
+    "branch": "master",
+    "description": "A curated list of awesome R packages, frameworks and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "lauris/awesome-scala",
+    "branch": "master",
+    "description": "A community driven list of useful Scala libraries, frameworks and software.",
+    "category": "learning"
+  },
+  {
+    "repo": "hantuzun/awesome-clojure",
+    "branch": "master",
+    "description": "A curated list of awesome Clojure libraries and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "inputsh/awesome-linux",
+    "branch": "master",
+    "description": "A list of awesome projects and resources that make Linux even more awesome.",
+    "category": "learning"
+  },
+  {
+    "repo": "iCHAIT/awesome-macOS",
+    "branch": "master",
+    "description": "A curated list of awesome applications, softwares, tools and shiny things for macOS.",
+    "category": "learning"
+  },
+  {
+    "repo": "jaywcjlove/awesome-mac",
+    "branch": "master",
+    "description": " Now we have become very big, Different from the original idea. Collect premium software in various categories.",
+    "category": "learning"
+  },
+  {
+    "repo": "herrbischoff/awesome-macos-command-line",
+    "branch": "master",
+    "description": "Use your macOS terminal shell to do awesome things.",
+    "category": "learning"
+  },
+  {
+    "repo": "alebcay/awesome-shell",
+    "branch": "master",
+    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos.",
+    "category": "learning"
+  },
+  {
+    "repo": "agarrharr/awesome-cli-apps",
+    "branch": "main",
+    "description": "A curated list of command line apps.",
+    "category": "learning"
+  },
+  {
+    "repo": "Lissy93/awesome-privacy",
+    "branch": "main",
+    "description": "A curated list of privacy-respecting software and services.",
+    "category": "learning"
+  },
+  {
+    "repo": "mre/awesome-static-analysis",
+    "branch": "master",
+    "description": "A curated list of static analysis tools, linters and code quality checkers for various programming languages.",
+    "category": "learning"
+  },
+  {
+    "repo": "ligurio/awesome-devsecops",
+    "branch": "master",
+    "description": "An authoritative list of DevSecOps tools.",
+    "category": "learning"
+  },
+  {
+    "repo": "sbilly/awesome-security",
+    "branch": "master",
+    "description": "A collection of awesome software, libraries, documents, books, resources and cools stuffs about security.",
+    "category": "learning"
+  },
+  {
+    "repo": "qazbnm456/awesome-web-security",
+    "branch": "master",
+    "description": "A curated list of Web Security materials and resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "guardrailsio/awesome-python-security",
+    "branch": "master",
+    "description": "A collection of awesome Python security related resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "paragonie/awesome-appsec",
+    "branch": "master",
+    "description": "A curated list of resources for learning about application security.",
+    "category": "learning"
+  },
+  {
+    "repo": "jlevy/the-art-of-command-line",
+    "branch": "master",
+    "description": "Master the command line, in one page.",
+    "category": "learning"
+  },
+  {
+    "repo": "LeCoupa/awesome-cheatsheets",
+    "branch": "master",
+    "description": "Awesome cheatsheets for popular programming languages, frameworks and development tools.",
+    "category": "learning"
+  },
+  {
+    "repo": "tiimgreen/github-cheat-sheet",
+    "branch": "master",
+    "description": "A list of cool features of Git and GitHub.",
+    "category": "learning"
+  },
+  {
+    "repo": "wsargent/docker-cheat-sheet",
+    "branch": "master",
+    "description": "Docker Cheat Sheet.",
+    "category": "learning"
+  },
+  {
+    "repo": "kelseyhightower/kubernetes-the-hard-way",
+    "branch": "master",
+    "description": "Bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts.",
+    "category": "learning"
+  },
+  {
+    "repo": "serpapi/awesome-agents",
+    "branch": "main",
+    "description": "A curated list of AI agents.",
+    "category": "learning"
+  },
+  {
+    "repo": "humanloop/awesome-chatgpt",
+    "branch": "main",
+    "description": "Curated list of awesome tools, demos, docs for ChatGPT and GPT-3.",
+    "category": "learning"
+  },
+  {
+    "repo": "steven2358/awesome-generative-ai",
+    "branch": "main",
+    "description": "A curated list of modern Generative Artificial Intelligence projects and services.",
+    "category": "learning"
+  },
+  {
+    "repo": "awesome-stable-diffusion/awesome-stable-diffusion",
+    "branch": "main",
+    "description": "A curated list of awesome Stable Diffusion resources.",
+    "category": "learning"
+  },
+  {
+    "repo": "dair-ai/awesome-mlops",
+    "branch": "master",
+    "description": "A curated list of awesome MLOps tools.",
+    "category": "learning"
+  },
+  {
+    "repo": "mtdvio/every-programmer-should-know",
+    "branch": "master",
+    "description": "A collection of (mostly) technical things every software developer should know.",
+    "category": "learning"
+  },
+  {
+    "repo": "kdn251/interviews",
+    "branch": "master",
+    "description": "Everything you need to know to get the job.",
+    "category": "learning"
+  },
+  {
+    "repo": "doocs/advanced-java",
+    "branch": "main",
+    "description": "Core resources for advanced Java programmers: papers, guides, interview questions, and books.",
+    "category": "learning"
+  },
+  {
+    "repo": "Snailclimb/JavaGuide",
+    "branch": "main",
+    "description": "「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。",
+    "category": "learning"
+  },
+  {
+    "repo": "CyC2018/CS-Notes",
+    "branch": "master",
+    "description": "Technical interviews preparation guide including algorithms, OS, network, database, system design.",
+    "category": "learning"
+  },
+  {
+    "repo": "TheOdinProject/css-exercises",
+    "branch": "main",
+    "description": "A repository for practicing CSS concepts.",
+    "category": "learning"
+  },
+  {
+    "repo": "linkedin/school-of-sre",
+    "branch": "main",
+    "description": "At LinkedIn, we are using this curriculum for onboarding our entry level talents into the SRE role.",
+    "category": "learning"
+  },
+  {
+    "repo": "trimstray/tech-interview-handbook",
+    "branch": "master",
+    "description": "A curated list of resources for technical interviews.",
+    "category": "learning"
+  },
+  {
+    "repo": "Olshansk/interview",
+    "branch": "master",
+    "description": "Everything you need to prepare for your technical interview.",
+    "category": "learning"
+  },
+  {
+    "repo": "checkcheckzz/system-design-interview",
+    "branch": "master",
+    "description": "System design interview for IT companies.",
+    "category": "learning"
+  },
+  {
+    "repo": "skills/introduction-to-github",
+    "branch": "main",
+    "description": "Get started using GitHub in less than an hour.",
+    "category": "learning"
+  },
+  {
+    "repo": "TeamStuQ/skill-map",
+    "branch": "master",
+    "description": "StuQ 技能图谱 / Skill Map for Developers.",
+    "category": "learning"
+  },
+  {
+    "repo": "Developer-Y/cs-video-courses",
+    "branch": "master",
+    "description": "List of Computer Science courses with video lectures.",
+    "category": "learning"
+  },
+  {
+    "repo": "bregman-arie/devops-resources",
+    "branch": "master",
+    "description": "DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP.",
+    "category": "learning"
+  },
+  {
+    "repo": "bregman-arie/devops-exercises",
+    "branch": "master",
+    "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization.",
+    "category": "learning"
+  },
+  {
+    "repo": "MichaelCade/90DaysOfDevOps",
+    "branch": "main",
+    "description": "This repository is my documenting repository for learning the world of DevOps.",
+    "category": "learning"
+  },
+  {
+    "repo": "poteto/hiring-without-whiteboards",
+    "branch": "master",
+    "description": "Companies that don't have a broken hiring process.",
+    "category": "learning"
+  },
+  {
+    "repo": "CSSEGISandData/COVID-19",
+    "branch": "master",
+    "description": "Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE (Example of a significant data resource often used in learning).",
+    "category": "data-science"
+  },
+  {
+    "repo": "keithnull/TeachYourselfCS-CN",
+    "branch": "master",
+    "description": "TeachYourselfCS 的中文翻译 | A Chinese translation of TeachYourselfCS.",
+    "category": "learning"
+  },
+  {
+    "repo": "CS-Interview-Knowledge-Map/CS-Interview-Knowledge-Map",
+    "branch": "main",
+    "description": "Build the knowledge structure required for technology community recruitment.",
+    "category": "learning"
+  },
+  {
+    "repo": "InterviewReady/system-design-resources",
+    "branch": "main",
+    "description": "These are the best resources for System Design on the Internet.",
+    "category": "learning"
+  },
+  {
+    "repo": "techwithtim/Flask-Web-App-Tutorial",
+    "branch": "main",
+    "description": "Code for the note taking web app tutorial.",
+    "category": "learning"
+  },
+  {
+    "repo": "GokuMohandas/Made-With-ML",
+    "branch": "main",
+    "description": "Learn how to design, develop, deploy and iterate on production-grade ML applications.",
+    "category": "learning"
+  },
+  {
+    "repo": "academic/awesome-datascience",
+    "branch": "master",
+    "description": "An awesome Data Science repository to learn and apply for real world problems.",
+    "category": "learning"
+  },
+  {
+    "repo": "datasciencemasters/go",
+    "branch": "master",
+    "description": "The Open Source Data Science Masters.",
+    "category": "learning"
   }
 ]
