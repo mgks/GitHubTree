@@ -225,10 +225,14 @@ function buildVisualHierarchy(sortedFlatList) {
     const root = { children: [] };
     const map = { '': root };
     
+    // 1. Init Nodes
     sortedFlatList.forEach(item => {
         map[item.path] = { ...item, name: item.path.split('/').pop(), children: [] };
     });
     
+    // 2. Connect Parents
+    // Since 'sortedFlatList' is ALREADY sorted by the user's preference (via gt.sortTree),
+    // pushing items into the 'children' arrays here preserves that specific order.
     sortedFlatList.forEach(item => {
         const parts = item.path.split('/');
         parts.pop();
@@ -236,16 +240,7 @@ function buildVisualHierarchy(sortedFlatList) {
         parent.children.push(map[item.path]);
     });
 
-    const sortNodes = (nodes) => {
-        nodes.sort((a, b) => {
-            if (a.type === 'tree' && b.type !== 'tree') return -1;
-            if (a.type !== 'tree' && b.type === 'tree') return 1;
-            return a.name.localeCompare(b.name);
-        });
-        nodes.forEach(n => sortNodes(n.children));
-    };
-    sortNodes(root.children);
-
+    // 3. Traverse to generate prefixes
     const result = [];
     const traverse = (node, prefix, isLast) => {
         const connector = isLast ? "└── " : "├── ";
