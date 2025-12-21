@@ -1,10 +1,10 @@
 {
-  "name": "githubtree",
+  "name": "gh-tree",
   "version": "0.1.0",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "githubtree": "./bin/cli.js"
+    "gh-tree": "./bin/cli.js"
   },
   "description": "Fetch and visualize GitHub repository file trees.",
   "keywords": [

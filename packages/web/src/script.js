@@ -1,4 +1,4 @@
-import { GitHubTree } from 'githubtree';
+import { GitHubTree } from 'gh-tree';
 
 // --- State ---
 let gt = new GitHubTree(); 

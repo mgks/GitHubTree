@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import { GitHubTree } from '../index.js';
 import fs from 'fs';
 import path from 'path';
@@ -7,7 +8,7 @@ import { execSync } from 'child_process';
 
 const args = process.argv.slice(2);
 const helpText = `
-  Usage: githubtree <user/repo> [flags]
+  Usage: gh-tree <user/repo> [flags]
 
   Flags:
     --branch, -b <name>   Specify branch (default: main)
@@ -17,8 +18,8 @@ const helpText = `
     --help, -h            Show this help
 
   Examples:
-    githubtree facebook/react
-    githubtree mgks/dhwani -b dev --icons
+    gh-tree facebook/react
+    gh-tree mgks/dhwani -b dev --icons
 `;
 
 // Simple Arg Parser
