@@ -34,6 +34,6 @@ jobs:
           ls -la packages/core/
 
       - name: Publish to npm
-        run: npm publish --workspace=githubtree --access public
+        run: npm publish --workspace=gh-tree --access public
         # env:
         #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
