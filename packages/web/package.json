@@ -1,0 +1,16 @@
+{
+  "name": "githubtree-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "githubtree": "*"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

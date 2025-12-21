@@ -1,0 +1,34 @@
+{
+  "name": "githubtree",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "githubtree": "./bin/cli.js"
+  },
+  "description": "Fetch and visualize GitHub repository file trees.",
+  "keywords": [
+    "github",
+    "tree",
+    "api",
+    "visualization",
+    "directory"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": {
+    "name": "mgks",
+    "url": "https://mgks.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgks/githubtree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgks/githubtree/issues"
+  },
+  "homepage": "https://github.com/mgks/githubtree#readme",
+  "funding": "https://github.com/sponsors/mgks",
+  "license": "MIT"
+}
