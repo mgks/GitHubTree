@@ -1,13 +1,13 @@
 # GitHubTree
 
 <p align="left">
-  <a href="https://www.npmjs.com/package/githubtree"><img src="https://img.shields.io/npm/v/githubtree.svg?style=flat-square&color=007acc" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/githubtree"><img src="https://img.shields.io/npm/dt/githubtree.svg?style=flat-square&color=success" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/v/gh-tree.svg?style=flat-square&color=007acc" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=success" alt="npm downloads"></a>
   <a href="https://github.com/mgks/githubtree/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
   <a href="https://github.com/mgks/githubtree/stargazers"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github" alt="stars"></a>
 </p>
 
-**GitHubTree** is a high-performance repository visualizer. It allows you to explore, navigate, and generate ASCII directory trees for any GitHub repository without cloning.
+**GitHubTree (`gh-tree`)** is a high-performance repository visualizer. It allows you to explore, navigate, and generate ASCII directory trees for any GitHub repository without cloning.
 
 It is available as a **Web Application**, a **CLI Tool**, and a **Node.js Library**.
 
@@ -32,17 +32,17 @@ Generate directory trees directly in your terminal. Perfect for documentation an
 Run via `npx` to fetch a tree instantly:
 
 ```bash
-npx githubtree user/repo
+npx gh-tree user/repo
 ```
 
 ### Installation (Global)
 ```bash
-npm install -g githubtree
+npm install -g gh-tree
 ```
 
 ### Commands & Flags
 ```bash
-githubtree <user/repo> [flags]
+gh-tree <user/repo> [flags]
 
 Flags:
   --branch, -b <name>   Specify branch (default: main)
@@ -54,7 +54,7 @@ Flags:
 
 **Example:**
 ```bash
-githubtree facebook/react --icons --branch main
+gh-tree facebook/react --icons --branch main
 ```
 
 ## 📦 For Builders: The NPM Package
@@ -63,13 +63,13 @@ Use the core engine to fetch trees and generate ASCII structures in your own app
 
 ### Installation
 ```bash
-npm install githubtree
+npm install gh-tree
 ```
 
 ### Usage
 
 ```javascript
-import { GitHubTree } from 'githubtree';
+import { GitHubTree } from 'gh-tree';
 
 // 1. Initialize (Token optional, but recommended for higher rate limits)
 const gt = new GitHubTree(process.env.GITHUB_TOKEN);
