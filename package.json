@@ -10,6 +10,6 @@
     "generate": "node tools/generate-seo.js",
     "deploy": "npm run build && npm run generate",
     "copy-assets": "cp README.md packages/core/ && cp LICENSE packages/core/",
-    "publish-core": "npm run copy-assets && npm publish --workspace=githubtree --access public"
+    "publish-core": "npm run copy-assets && npm publish --workspace=gh-tree --access public"
   }
 }
