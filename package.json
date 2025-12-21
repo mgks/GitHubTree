@@ -1,29 +1,15 @@
 {
-  "name": "githubtree",
-  "version": "1.0.0",
-  "description": "Visualize GitHub repository structures",
-  "main": "index.html",
+  "name": "githubtree-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "generate-static-pages": "node generate-static-pages.js",
-    "generate-jekyll-pages": "node generate-jekyll-pages.js",
-    "serve": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
-  },
-  "dependencies": {
-    "axios": "^1.8.4",
-    "node-fetch": "^2.6.7",
-    "xmldom": "^0.6.0"
-  },
-  "author": "mgks",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mgks/GitHubTree.git"
-  },
-  "keywords": [],
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/mgks/GitHubTree/issues"
-  },
-  "homepage": "https://github.com/mgks/GitHubTree#readme"
+    "dev": "npm run dev --workspace=githubtree-web",
+    "build": "npm run build --workspace=githubtree-web",
+    "generate": "node tools/generate-seo.js",
+    "deploy": "npm run build && npm run generate",
+    "copy-assets": "cp README.md packages/core/ && cp LICENSE packages/core/",
+    "publish-core": "npm run copy-assets && npm publish --workspace=githubtree --access public"
+  }
 }
