@@ -588,9 +588,16 @@ input {
 
 /* Mobile Adjustments */
 @media (max-width: 600px) {
-    .search-section { flex-direction: column; }
+    .search-section {
+       flex-direction: column;
+       display: grid;
+    }
+    .primary-btn {
+       align-content: center;
+       display: inline-block;
+    }
+    .primary-btn .fa-search { margin-right: .5em }
     .branch-input { max-width: 100%; }
-    
     .toolbar { 
         flex-direction: column; 
         align-items: flex-start; 
