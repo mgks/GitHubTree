@@ -1,30 +1,47 @@
-# GitHubTree
+<div align="center">
 
-<p align="left">
-  <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/v/gh-tree.svg?style=flat-square&color=007acc" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=success" alt="npm downloads"></a>
-  <a href="https://github.com/mgks/githubtree/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
-  <a href="https://github.com/mgks/githubtree/stargazers"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github" alt="stars"></a>
-</p>
+  <!-- PROJECT TITLE -->
+  <h1>GitHubTree</h1>
+  
+  <!-- ONE LINE SUMMARY -->
+  <p>
+    <b>GitHubTree is a high-performance repository visualizer.</b>
+  </p>
+  
+  <!-- BADGES -->
+  <p>
+    <img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version">
+    <!--<img src="https://img.shields.io/npm/v/gh-tree.svg?style=flat-square&color=fc3b53" alt="npm version">-->
+    <img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=38bd24" alt="npm downloads">
+    <img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars">
+    <img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license">
+  </p>
 
-**GitHubTree (`gh-tree`)** is a high-performance repository visualizer. It allows you to explore, navigate, and generate ASCII directory trees for any GitHub repository without cloning.
+  <!-- MENU -->
+  <p>
+    <h4>
+      <a href="https://githubtree.mgks.dev">🚀 Open Web App</a>
+    </h4>
+  </p>
 
-It is available as a **Web Application**, a **CLI Tool**, and a **Node.js Library**.
+  <!-- PREVIEW -->
+  <p>
+    <img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1de6006-02e5-4ff1-bda1-3f079e350021" />
+  </p>
 
-## 🌐 For Users: The Web App
+</div>
 
-The fastest way to visualize a repository. No installation required.
+GitHubTree allows you to explore, navigate, and generate ASCII directory trees for any GitHub repository without cloning. Available as **Web App**, **CLI Tool**, and **Node.js Library**.
 
-👉 **Use Web App:** [githubtree.mgks.dev](https://githubtree.mgks.dev)
-
-### Features
+## Features
 *   **Instant Search:** Visualize any public repository (e.g., `facebook/react`).
+*   **Smart Branch Detection:** Automatically detects if a branch exists (e.g., `main` vs `master`) and switches to the default branch if needed.
 *   **Private Repo Access:** Securely access your private repositories using a Personal Access Token (saved locally to your browser).
 *   **Smart Copy:** Copy the entire directory tree as text, or copy specific file paths.
 *   **Visual Styles:** Toggle between Classic (└──), Slashed (/src), Minimal, and ASCII (+--).
 *   **Deep Linking:** Share links to specific repositories and branches (e.g., `/repo/mgks/dhwani/main`).
 
-## 💻 For Developers: The CLI
+## For Developers: The CLI
 
 Generate directory trees directly in your terminal. Perfect for documentation and quick checks.
 
@@ -57,7 +74,7 @@ Flags:
 gh-tree facebook/react --icons --branch main
 ```
 
-## 📦 For Builders: The NPM Package
+## For Builders: The NPM Package
 
 Use the core engine to fetch trees and generate ASCII structures in your own applications.
 
@@ -106,7 +123,7 @@ Sorts the tree array.
 Converts the tree array into a formatted string.
 *   `options.icons`: Boolean. If true, adds emojis (📁/📄).
 
-## 🛠️ Development (Monorepo)
+## Development (Monorepo)
 
 This repository is organized as a Monorepo.
 
