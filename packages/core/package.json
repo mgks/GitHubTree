@@ -1,22 +1,44 @@
 {
   "name": "gh-tree",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "High-performance CLI tool and API to visualize GitHub repository file structures as ASCII trees without cloning.",
   "type": "module",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "echo 'No compile step needed for Pure JS' && exit 0" 
+  },
   "bin": {
     "gh-tree": "./bin/cli.js"
   },
-  "description": "Fetch and visualize GitHub repository file trees.",
-  "keywords": [
-    "github",
-    "tree",
-    "api",
-    "visualization",
-    "directory"
-  ],
   "engines": {
     "node": ">=18.0.0"
   },
+  "keywords": [
+    "github",
+    "git",
+    "repository",
+    "repo",
+    "tree",
+    "directory",
+    "structure",
+    "file-structure",
+    "file-tree",
+    "folder-structure",
+    "visualization",
+    "visualizer",
+    "ascii",
+    "ascii-art",
+    "cli",
+    "tool",
+    "viewer",
+    "fetch",
+    "api",
+    "recursive",
+    "devtools",
+    "productivity",
+    "without-cloning"
+  ],
   "author": {
     "name": "mgks",
     "url": "https://mgks.dev"
@@ -28,7 +50,7 @@
   "bugs": {
     "url": "https://github.com/mgks/githubtree/issues"
   },
-  "homepage": "https://github.com/mgks/githubtree#readme",
+  "homepage": "https://githubtree.mgks.dev",
   "funding": "https://github.com/sponsors/mgks",
   "license": "MIT"
 }
