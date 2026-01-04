@@ -4,9 +4,19 @@ import { GitHubTree } from '../index.js';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
+import { createRequire } from 'module';
 import { execSync } from 'child_process';
 
+const require = createRequire(import.meta.url);
+const pkg = require('../package.json');
+
 const args = process.argv.slice(2);
+
+if (args.includes('--version') || args.includes('-v')) {
+    console.log(pkg.version);
+    process.exit(0);
+}
+
 const helpText = `
   Usage: gh-tree <user/repo> [flags]
 
@@ -66,9 +76,18 @@ async function run() {
     console.log(`\n🌳 Fetching ${repo}...`);
     
     try {
-        const data = await gt.getTree(repo, flags.branch);
-        const output = gt.generateAsciiTree(data.tree, { icons: flags.icons });
+        // Pass the requested branch (or default 'main')
+        const requestedBranch = flags.branch || 'main';
+        const data = await gt.getTree(repo, requestedBranch);
         
+        // Notify if branch was switched
+        if (data.branch && data.branch !== requestedBranch) {
+            console.log(`\nℹ️  Branch '${requestedBranch}' not found.`);
+            console.log(`   Switched to default branch: '${data.branch}'`);
+        }
+
+        // Generate and Print Tree
+        const output = gt.generateAsciiTree(data.tree, { icons: flags.icons });        
         console.log('\n' + output);
         
         // Auto-Copy

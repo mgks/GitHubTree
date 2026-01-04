@@ -124,30 +124,70 @@ async function loadTree() {
 
         if (cached) {
             currentData = JSON.parse(cached);
-            console.log("Loaded from cache");
+            showMsg("", ""); // Clear status
+            
+            // Standard URL update for cached items
+            const newUrl = `/repo/${repo}/${branch}/`;
+            if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
         } else {
+            // Fetch from Core
             const data = await gt.getTree(repo, branch);
             currentData = data.tree;
-            if (!tokenActive) try { sessionStorage.setItem(cacheKey, JSON.stringify(currentData)); } catch(e){}
+            
+            // --- SMART BRANCH HANDLING ---
+            if (data.branch && data.branch !== branch) {
+                // Case A: Branch Switched (main -> master)
+                const newBranch = data.branch;
+                
+                // 1. Notify User
+                showMsg(`Branch '${branch}' not found. Switched to '${newBranch}'.`, "loading");
+                
+                // 2. Update Input UI
+                els.branch.value = newBranch;
+                
+                // 3. Cache under the CORRECT key
+                const correctCacheKey = `ght_${repo}_${newBranch}`;
+                if (!tokenActive) try { sessionStorage.setItem(correctCacheKey, JSON.stringify(currentData)); } catch(e){}
+                
+                // 4. Update URL (Replace history so back button works logically)
+                const correctUrl = `/repo/${repo}/${newBranch}/`;
+                window.history.replaceState(null, '', correctUrl);
+                
+            } else {
+                // Case B: Normal Success
+                if (!tokenActive) try { sessionStorage.setItem(cacheKey, JSON.stringify(currentData)); } catch(e){}
+                showMsg("", ""); 
+                
+                // Update URL
+                const newUrl = `/repo/${repo}/${branch}/`;
+                if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
+            }
         }
 
         render();
         els.wrapper.style.display = 'flex';
-        showMsg("", "");
-        
-        const newUrl = `/repo/${repo}/${branch}/`;
-        if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
-        
-        trackEvent('Fetch', 'Success', `${repo}:${branch}`);
 
     } catch (err) {
+        console.error(err);
         let msg = err.message;
-        if (msg.includes('404')) msg = "Repository not found or Private (Check Token).";
-        if (msg.includes('403')) msg = "API Limit Exceeded. Add a Token.";
-        if (msg.includes('401')) msg = "Invalid Token.";
-        showMsg(msg, "error");
+
+        if (msg.includes('401') || msg.includes('Bad credentials')) {
+            showMsg("Invalid Private Token. Please check your settings.", "error");
+            // Optional: Auto-open the private panel?
+            // els.tokenPanel.style.display = 'block'; 
+        
+        } else if (msg.includes('403') || msg.includes('Rate Limit')) {
+            showMsg("API Limit Exceeded. Add a Token.", "error");
+        
+        } else if (msg.includes('404')) {
+            showMsg("Repository not found (or is Private).", "error");
+        
+        } else {
+            showMsg(msg, "error");
+        }
+        
         els.empty.style.display = 'block';
-        trackEvent('Fetch', 'Error', err.message);
+
     } finally {
         els.fetchBtn.disabled = false;
     }
