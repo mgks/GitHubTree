@@ -5,7 +5,7 @@
   
   <!-- ONE LINE SUMMARY -->
   <p>
-    <b>GitHubTree is a high-performance repository visualizer.</b>
+    <b>GitHubTree is a high-performance repository visualiser.</b>
   </p>
   
   <!-- BADGES -->
