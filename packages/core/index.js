@@ -4,6 +4,14 @@ export class GitHubTree {
         this.apiBase = "https://api.github.com";
     }
 
+    async _getRepoInfo(repo) {
+        const headers = { 'Accept': 'application/vnd.github.v3+json' };
+        if (this.token) headers['Authorization'] = `token ${this.token}`;
+        const res = await fetch(`${this.apiBase}/repos/${repo}`, { headers });
+        if (!res.ok) return null;
+        return res.json();
+    }
+
     /**
      * Fetch the tree data from GitHub API
      */
@@ -16,6 +24,13 @@ export class GitHubTree {
         if (!resSha.ok) {
             if (resSha.status === 404) throw new Error(`Repository not found or Private (Token required).`);
             if (resSha.status === 403) throw new Error(`API Limit Exceeded.`);
+            if (resSha.status === 422) {
+                const repoInfo = await this._getRepoInfo(repo);
+                if (repoInfo?.default_branch && repoInfo.default_branch !== branch) {
+                    throw new Error(`Branch '${branch}' not found. Try '${repoInfo.default_branch}' instead.`);
+                }
+                throw new Error(`Branch '${branch}' not found.`);
+            }
             throw new Error(`GitHub API Error: ${resSha.statusText}`);
         }
         const { sha } = await resSha.json();
