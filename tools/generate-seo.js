@@ -26,7 +26,7 @@ repos.forEach(item => {
     fs.mkdirSync(outputDir, { recursive: true });
 
     // --- SEO DATA PREPARATION ---
-    const title = `${item.repo} File Structure | GitHubTree`;
+    const title = `${item.repo} File Structure : GitHubTree`;
     const desc = item.description 
         ? `Explore the ${item.repo} repository structure. ${item.description}` 
         : `Visualize the file structure of ${item.repo} on GitHub without cloning.`;
