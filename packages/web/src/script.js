@@ -124,6 +124,7 @@ async function loadTree() {
 
         if (cached) {
             currentData = JSON.parse(cached);
+            updatePageMetadata(repo, branch); // Update metadata for SEO/share
             showMsg("", ""); // Clear status
             
             // Standard URL update for cached items
@@ -144,6 +145,7 @@ async function loadTree() {
                 
                 // 2. Update Input UI
                 els.branch.value = newBranch;
+                updatePageMetadata(repo, newBranch); // Update metadata for SEO/share
                 
                 // 3. Cache under the CORRECT key
                 const correctCacheKey = `ght_${repo}_${newBranch}`;
@@ -156,7 +158,8 @@ async function loadTree() {
             } else {
                 // Case B: Normal Success
                 if (!tokenActive) try { sessionStorage.setItem(cacheKey, JSON.stringify(currentData)); } catch(e){}
-                showMsg("", ""); 
+                updatePageMetadata(repo, branch); // Update metadata for SEO/share
+                showMsg("", ""); // Clear status
                 
                 // Update URL
                 const newUrl = `/repo/${repo}/${branch}/`;
@@ -416,6 +419,30 @@ function setupDropdowns() {
     });
 
     document.addEventListener('click', () => closeDropdowns());
+}
+
+// --- Metadata Helper ---
+function updatePageMetadata(repo, branch) {
+    // 1. Update Browser Tab Title
+    document.title = `${repo} File Structure : GitHubTree`;
+
+    // 2. Update Meta Description
+    let descTag = document.querySelector('meta[name="description"]');
+    if (!descTag) {
+        descTag = document.createElement('meta');
+        descTag.name = "description";
+        document.head.appendChild(descTag);
+    }
+    descTag.content = `Explore ${repo} on branch ${branch}. Visualize files without cloning.`;
+
+    // 3. Update Canonical URL
+    let linkTag = document.querySelector('link[rel="canonical"]');
+    if (!linkTag) {
+        linkTag = document.createElement('link');
+        linkTag.rel = "canonical";
+        document.head.appendChild(linkTag);
+    }
+    linkTag.href = `https://githubtree.mgks.dev/repo/${repo}/${branch}/`;
 }
 
 function closeDropdowns(except = null) {
