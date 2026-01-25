@@ -12,5 +12,8 @@
     "deploy": "npm run build && npm run generate",
     "copy-assets": "cp README.md packages/core/ && cp LICENSE packages/core/",
     "publish-core": "npm run copy-assets && npm publish --workspace=gh-tree --access public"
+  },
+  "dependencies": {
+    "p-limit": "^7.2.0"
   }
 }
