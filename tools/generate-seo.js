@@ -1,98 +1,140 @@
 import fs from 'fs';
 import path from 'path';
 
-const REPO_DATA = './_data/repositories.json';
-const TEMPLATE = './packages/web/dist/index.html';
+const CSV_PATH = './_data/repositories.csv';
+const TEMPLATE_PATH = './packages/web/dist/index.html';
 const DIST_DIR = './packages/web/dist';
-const SITEMAP_PATH = path.join(DIST_DIR, 'sitemap.xml');
 const BASE_URL = 'https://githubtree.mgks.dev';
 
-console.log('🚀 Starting SEO Generation...');
+// --- HELPER: Smart CSV Parser ---
+function parseCSV(data) {
+    const lines = data.split('\n').filter(l => l.trim().includes(','));
+    const regex = /,(?=(?:(?:[^"]*"){2})*[^"]*$)/; // Splits by comma, ignoring those inside quotes
 
-// 1. Read Data
-const repos = JSON.parse(fs.readFileSync(REPO_DATA, 'utf8'));
-const templateHtml = fs.readFileSync(TEMPLATE, 'utf8');
-
-const sitemapUrls = [];
-
-// 2. Loop & Generate Pages
-repos.forEach(item => {
-    const [user, repoName] = item.repo.split('/');
-    const branch = item.branch || 'main';
-    const cleanPath = `repo/${user}/${repoName}/${branch}`;
-    const outputDir = path.join(DIST_DIR, cleanPath);
-    
-    // Ensure directory exists
-    fs.mkdirSync(outputDir, { recursive: true });
-
-    // --- SEO DATA PREPARATION ---
-    const title = `${item.repo} File Structure : GitHubTree`;
-    const desc = item.description 
-        ? `Explore the ${item.repo} repository structure. ${item.description}` 
-        : `Visualize the file structure of ${item.repo} on GitHub without cloning.`;
-    const url = `${BASE_URL}/${cleanPath}/`;
-    const image = `${BASE_URL}/images/preview.png`; // Or dynamic social image if you have one
-
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareSourceCode",
-        "name": item.repo,
-        "codeRepository": `https://github.com/${item.repo}`,
-        "description": desc,
-        "author": { "@type": "Person", "name": user },
-        "programmingLanguage": "Open Source"
-    };
-
-    // --- INJECTION MAGIC ---
-    // We use Regex to globally replace the default tags with specific ones
-    let pageHtml = templateHtml
-        // 1. Title & Description
-        .replace(/<title>.*?<\/title>/, `<title>${title}</title>`)
-        .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${desc}">`)
-        
-        // 2. Open Graph
-        .replace(/<meta property="og:url" content=".*?">/, `<meta property="og:url" content="${url}">`)
-        .replace(/<meta property="og:title" content=".*?">/, `<meta property="og:title" content="${title}">`)
-        .replace(/<meta property="og:description" content=".*?">/, `<meta property="og:description" content="${desc}">`)
-        
-        // 3. Twitter
-        .replace(/<meta property="twitter:url" content=".*?">/, `<meta property="twitter:url" content="${url}">`)
-        .replace(/<meta property="twitter:title" content=".*?">/, `<meta property="twitter:title" content="${title}">`)
-        .replace(/<meta property="twitter:description" content=".*?">/, `<meta property="twitter:description" content="${desc}">`)
-
-        // 4. Canonical & JSON-LD
-        .replace('</head>', `<link rel="canonical" href="${url}">\n<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>\n</head>`)
-        
-        // 5. Pre-fill Inputs (For JS)
-        .replace('id="repoInput" placeholder="username/repo"', `id="repoInput" value="${item.repo}"`)
-        .replace('id="branchInput" placeholder="main"', `id="branchInput" value="${branch}"`);
-
-    fs.writeFileSync(path.join(outputDir, 'index.html'), pageHtml);
-    
-    // Add to sitemap
-    sitemapUrls.push({
-        loc: url,
-        changefreq: 'weekly',
-        priority: 0.8
+    return lines.slice(1).map(line => {
+        const [repo, branch, language, description] = line.split(regex);
+        return {
+            repo: repo?.trim(),
+            branch: branch?.trim(),
+            language: language?.trim() || 'Other',
+            description: description ? description.replace(/^"|"$/g, '').replace(/""/g, '"') : ""
+        };
     });
-});
+}
 
-// 3. Generate Sitemap XML
-const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+// --- HELPER: Ensure Directory Exists ---
+function ensureDir(dir) {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
+
+async function generate() {
+    console.time('🚀 Build Time');
+
+    // 1. Load Data & Template
+    if (!fs.existsSync(CSV_PATH)) throw new Error("CSV file not found!");
+    const repos = parseCSV(fs.readFileSync(CSV_PATH, 'utf8'));
+    const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf8');
+
+    const languagesMap = {};
+    const sitemapUrls = [BASE_URL + '/'];
+
+    // 2. Pre-calculate Language Stats & Grouping
+    repos.forEach(r => {
+        if (!languagesMap[r.language]) languagesMap[r.language] = [];
+        languagesMap[r.language].push(r);
+    });
+
+    const topLanguages = Object.entries(languagesMap)
+        .sort((a, b) => b[1].length - a[1].length)
+        .slice(0, 20)
+        .map(entry => entry[0]);
+
+    // 3. GENERATE HOMEPAGE (index.html)
+    console.log('Generating Homepage...');
+    const langCloudHtml = topLanguages.map(l => 
+        `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="repo-tag">${l}</a>`
+    ).join('');
+
+    const randomRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 24);
+    const repoCloudHtml = randomRepos.map(r => 
+        `<button class="repo-tag" data-repo="${r.repo}"><span>${r.repo.split('/')[0]}/</span>${r.repo.split('/')[1]}</button>`
+    ).join('');
+
+    const homeHtml = templateHtml
+        .replace('<!-- LANG_INJECT -->', langCloudHtml)
+        .replace('<!-- REPO_INJECT -->', repoCloudHtml);
+    
+    fs.writeFileSync(path.join(DIST_DIR, 'index.html'), homeHtml);
+
+    // 4. GENERATE REPO PAGES
+    console.log(`Generating ${repos.length} Repo Pages...`);
+    repos.forEach(item => {
+        const [user, name] = item.repo.split('/');
+        const cleanPath = `repo/${user}/${name}/${item.branch}`;
+        const outputDir = path.join(DIST_DIR, cleanPath);
+        ensureDir(outputDir);
+
+        const langSlug = item.language.toLowerCase().replace(/\s+/g, '-');
+        const breadcrumb = `<div class="seo-link">Explore more <a href="/language/${langSlug}/">${item.language}</a> repositories</div>`;
+        
+        const pageHtml = templateHtml
+            .replace(/<title>.*?<\/title>/, `<title>${item.repo} Directory Structure | GitHubTree</title>`)
+            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Explore ${item.repo} file structure. ${item.description}">`)
+            .replace('id="repoInput" placeholder="username/repo"', `id="repoInput" value="${item.repo}"`)
+            .replace('id="branchInput" placeholder="main"', `id="branchInput" value="${item.branch}"`)
+            .replace('<!-- BREADCRUMB_INJECT -->', breadcrumb)
+            .replace('</head>', `<link rel="canonical" href="${BASE_URL}/${cleanPath}/"></head>`);
+
+        fs.writeFileSync(path.join(outputDir, 'index.html'), pageHtml);
+        sitemapUrls.push(`${BASE_URL}/${cleanPath}/`);
+    });
+
+    // 5. GENERATE LANGUAGE PAGES
+    console.log(`Generating ${Object.keys(languagesMap).length} Language Pages...`);
+    Object.entries(languagesMap).forEach(([lang, list]) => {
+        const langSlug = lang.toLowerCase().replace(/\s+/g, '-');
+        const outputDir = path.join(DIST_DIR, 'language', langSlug);
+        ensureDir(outputDir);
+
+        const listHtml = list.map(r => `
+            <div class="repo-card">
+                <a href="/repo/${r.repo}/${r.branch}/">
+                    <strong>${r.repo}</strong>
+                    <p>${r.description || 'No description available.'}</p>
+                </a>
+            </div>`).join('');
+
+        const langPageHtml = templateHtml
+            .replace(/<title>.*?<\/title>/, `<title>Best ${lang} GitHub Repositories | GitHubTree</title>`)
+            // Injection: We replace the entire Empty State with the list
+            .replace(
+                /<div id="emptyState"[\s\S]*?<\/div>/,
+                `<div class="language-listing">
+                    <h1>${lang} Repositories</h1>
+                    <div class="repo-grid">${listHtml}</div>
+                    <div style="text-align:center; margin-top:40px;">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                </div>`
+            );
+
+        fs.writeFileSync(path.join(outputDir, 'index.html'), langPageHtml);
+        sitemapUrls.push(`${BASE_URL}/language/${langSlug}/`);
+    });
+
+    // 6. GENERATE SITEMAP
+    console.log('Generating Sitemap...');
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>${BASE_URL}/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    ${sitemapUrls.map(u => `
-    <url>
-        <loc>${u.loc}</loc>
-        <changefreq>${u.changefreq}</changefreq>
-        <priority>${u.priority}</priority>
-    </url>`).join('')}
+${sitemapUrls.map(url => `  <url><loc>${url}</loc><changefreq>weekly</changefreq></url>`).join('\n')}
 </urlset>`;
+    fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemap);
 
-fs.writeFileSync(SITEMAP_PATH, sitemapContent);
+    console.timeEnd('🚀 Build Time');
+    console.log(`✅ SEO Generation Complete. Total pages: ${sitemapUrls.length}`);
+}
 
-console.log(`✅ Generated ${repos.length} SEO pages and sitemap.xml`);
+generate().catch(err => {
+    console.error("❌ Build failed:", err);
+    process.exit(1);
+});
