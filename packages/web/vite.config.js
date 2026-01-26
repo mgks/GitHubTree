@@ -6,12 +6,8 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     target: 'esnext',
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        defaults: true,
-      }
-    }
+    minify: 'esbuild',
+    sourcemap: false
   },
   server: {
     open: true
