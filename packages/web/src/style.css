@@ -790,45 +790,71 @@ position: fixed;
    13. LANGUAGE LISTING & REPO CARDS
    ========================================= */
 
+/* --- Language Page Specifics --- */
 .language-listing {
-    padding: 20px 0;
+    margin-top: 30px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.language-listing h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--accent);
 }
 
 .repo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .repo-card {
     background: var(--header-bg);
     border: 1px solid var(--border);
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, border-color 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .repo-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     border-color: var(--accent);
 }
 
+.repo-card a {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+}
+
 .repo-card strong {
-    color: var(--accent);
     display: block;
-    margin-bottom: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--accent);
+    word-break: break-all;
 }
 
 .repo-card p {
-    font-size: 0.85rem;
-    margin: 0;
+    font-size: 0.9rem;
     color: var(--file-color);
+    line-height: 1.5;
+    margin: 0;
     display: -webkit-box;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.back-link-container {
+    text-align: center;
+    margin: 40px 0;
 }
 
 /* Homepage Sections */
@@ -855,15 +881,6 @@ position: fixed;
     color: var(--accent);
     font-weight: 600;
     text-decoration: underline;
-}
-
-/* Language Listing Header */
-
-.language-listing h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 10px;
-    color: var(--accent);
 }
 
 @media (max-width: 600px) {
