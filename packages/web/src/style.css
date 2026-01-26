@@ -346,13 +346,11 @@ input {
 
 .empty-state {
     text-align: center;
-    margin-top: 60px;
-    opacity: 0.9;
 }
 
 .empty-state h3 {
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .tag-cloud {
@@ -699,19 +697,27 @@ input {
    12. FOOTER & RESPONSIVE
    ========================================= */
 .footer {
-    position: fixed;
-    bottom: 20px;
-    font-size: 0.8rem;
+position: fixed;
+    bottom: 10px;
+    font-size: .75rem;
     color: var(--text-primary);
     text-align: center;
-    opacity: 0.75;
-    width: 100%;
+    opacity: .85;
+    width: fit-content;
     font-family: monospace;
-
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px 10px;
+    background-color: var(--bg);
+    border-radius: 20px;
 }
 
 .footer svg {
     margin: 5px 2px;
+}
+
+.footer b {
+    font-weight: 500;
 }
 
 .footer a {
@@ -834,7 +840,6 @@ input {
 .homepage-section h3 {
     font-size: 1.1rem;
     color: var(--file-color);
-    margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
