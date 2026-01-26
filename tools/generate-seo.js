@@ -111,22 +111,14 @@ async function generate() {
                 </a>
             </div>`).join('');
 
-        const langPageHtml = templateHtml
+        const cleanTemplate = templateHtml.replace(/<div id="emptyState"[\s\S]*?<\/div>/, '<!-- REPLACED -->');
+        const langPageHtml = cleanTemplate
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
-            // 1. Completely hide the homepage-specific sections using CSS
-            .replace('</head>', `<style>
-                .homepage-section { display: none !important; }
-                .language-listing { display: block !important; margin-top: 20px; }
-                .repo-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-            </style></head>`)
-            // 2. Clear the recentCloud content and inject the listing
-            .replace(
-                '<div id="recentCloud" class="tag-cloud"></div>', 
-                `<div id="recentCloud" class="tag-cloud" style="display:none;"></div>
-                <div class="language-listing">
+            .replace('<!-- REPLACED -->', 
+                `<div class="language-listing">
                     <h1>${lang} Repositories</h1>
                     <div class="repo-grid">${listHtml}</div>
-                    <div style="text-align:center; margin-top:40px;">
+                    <div class="back-link-container">
                         <a href="/" class="repo-tag">← Back to Search</a>
                     </div>
                 </div>`
