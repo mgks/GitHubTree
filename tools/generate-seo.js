@@ -51,19 +51,26 @@ async function generate() {
 
     // 3. GENERATE HOMEPAGE (index.html)
     console.log('Generating Homepage...');
+    
+    // Top Languages HTML
     const langCloudHtml = topLanguages.map(l => 
         `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="repo-tag">${l}</a>`
     ).join('');
 
-    const randomRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 24);
+    // Recent Repos HTML
+    const randomRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 30);
     const repoCloudHtml = randomRepos.map(r => 
         `<button class="repo-tag" data-repo="${r.repo}"><span>${r.repo.split('/')[0]}/</span>${r.repo.split('/')[1]}</button>`
     ).join('');
 
-    const homeHtml = templateHtml
-        .replace('<!-- LANG_INJECT -->', langCloudHtml)
-        .replace('<!-- REPO_INJECT -->', repoCloudHtml);
+    // Surgery on the HTML: Target the IDs directly
+    let homeHtml = templateHtml
+        .replace('<div id="langCloud" class="tag-cloud"></div>', `<div id="langCloud" class="tag-cloud">${langCloudHtml}</div>`)
+        .replace('<div id="recentCloud" class="tag-cloud"></div>', `<div id="recentCloud" class="tag-cloud">${repoCloudHtml}</div>`);
     
+    // Also update the Title for the homepage specifically
+    homeHtml = homeHtml.replace(/<title>.*?<\/title>/, `<title>GitHubTree : Visualize GitHub Repository Structures</title>`);
+
     fs.writeFileSync(path.join(DIST_DIR, 'index.html'), homeHtml);
 
     // 4. GENERATE REPO PAGES
