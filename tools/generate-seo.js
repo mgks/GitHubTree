@@ -111,18 +111,20 @@ async function generate() {
                 </a>
             </div>`).join('');
 
-        const cleanTemplate = templateHtml.replace(/<div id="emptyState"[\s\S]*?<\/div>/, '<!-- REPLACED -->');
-        const langPageHtml = cleanTemplate
+        const langPageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
-            .replace('<!-- REPLACED -->', 
-                `<div class="language-listing">
-                    <h1>${lang} Repositories</h1>
-                    <div class="repo-grid">${listHtml}</div>
-                    <div class="back-link-container">
-                        <a href="/" class="repo-tag">← Back to Search</a>
+            .replace(/<div id="emptyState"[\s\S]*?<\/div>/,
+                `<div id="emptyState" class="language-page">
+                    <div class="language-listing">
+                        <h1>${lang} Repositories</h1>
+                        <div class="repo-grid">${listHtml}</div>
+                        <div class="back-link-container">
+                            <a href="/" class="repo-tag">← Back to Search</a>
+                        </div>
                     </div>
                 </div>`
-            );
+            )
+            .replace('<!-- BREADCRUMB_INJECT -->', '');
 
         fs.writeFileSync(path.join(outputDir, 'index.html'), langPageHtml);
         sitemapUrls.push(`${BASE_URL}/language/${langSlug}/`);
