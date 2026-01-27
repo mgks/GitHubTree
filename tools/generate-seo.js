@@ -7,19 +7,26 @@ const DIST_DIR = './packages/web/dist';
 const BASE_URL = 'https://githubtree.mgks.dev';
 
 // --- HELPER: Smart CSV Parser ---
+// Handles commas inside quotes and standardizes data
 function parseCSV(data) {
-    const lines = data.split('\n').filter(l => l.trim().includes(','));
-    const regex = /,(?=(?:(?:[^"]*"){2})*[^"]*$)/; // Splits by comma, ignoring those inside quotes
+    const lines = data.split('\n').filter(l => l.trim().length > 0);
+    // Regex to split by comma ONLY if not inside quotes
+    const regex = /,(?=(?:(?:[^"]*"){2})*[^"]*$)/;
 
+    // Skip header row
     return lines.slice(1).map(line => {
-        const [repo, branch, language, description] = line.split(regex);
+        const parts = line.split(regex);
+        // Safety check for malformed lines
+        if (parts.length < 3) return null; 
+
+        const [repo, branch, language, description] = parts;
         return {
             repo: repo?.trim(),
             branch: branch?.trim(),
             language: language?.trim() || 'Other',
             description: description ? description.replace(/^"|"$/g, '').replace(/""/g, '"') : ""
         };
-    });
+    }).filter(item => item !== null);
 }
 
 // --- HELPER: Ensure Directory Exists ---
@@ -31,14 +38,30 @@ async function generate() {
     console.time('🚀 Build Time');
 
     // 1. Load Data & Template
-    if (!fs.existsSync(CSV_PATH)) throw new Error("CSV file not found!");
+    if (!fs.existsSync(CSV_PATH)) throw new Error(`CSV file not found at ${CSV_PATH}`);
+    if (!fs.existsSync(TEMPLATE_PATH)) throw new Error(`Template not found at ${TEMPLATE_PATH}`);
+
     const repos = parseCSV(fs.readFileSync(CSV_PATH, 'utf8'));
     const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
+    // 2. Define the EXACT Block to Replace
+    // IMPORTANT: This string must match your index.html indentation EXACTLY.
+    // If your build fails to replace this, copy the block from your index.html and paste it here.
+    const emptyStateBlock = `<div id="emptyState" class="empty-state">
+            <div class="homepage-section">
+                <h3>Browse by Language</h3>
+                <div id="langCloud" class="tag-cloud"></div>
+            </div>
+            <div class="homepage-section">
+                <h3>Featured Repositories</h3>
+                <div id="recentCloud" class="tag-cloud"></div>
+            </div>
+        </div>`;
+
+    // 3. Prepare Stats
     const languagesMap = {};
     const sitemapUrls = [BASE_URL + '/'];
 
-    // 2. Pre-calculate Language Stats & Grouping
     repos.forEach(r => {
         if (!languagesMap[r.language]) languagesMap[r.language] = [];
         languagesMap[r.language].push(r);
@@ -49,32 +72,33 @@ async function generate() {
         .slice(0, 20)
         .map(entry => entry[0]);
 
-    // 3. GENERATE HOMEPAGE (index.html)
+    // ============================================================
+    // 4. GENERATE HOMEPAGE (index.html)
+    // ============================================================
     console.log('Generating Homepage...');
-    
-    // Top Languages HTML
+
     const langCloudHtml = topLanguages.map(l => 
         `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="repo-tag">${l}</a>`
     ).join('');
 
-    // Recent Repos HTML
+    // Random 30 repos for homepage
     const randomRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 30);
     const repoCloudHtml = randomRepos.map(r => 
         `<button class="repo-tag" data-repo="${r.repo}"><span>${r.repo.split('/')[0]}/</span>${r.repo.split('/')[1]}</button>`
     ).join('');
 
-    // Surgery on the HTML: Target the IDs directly
-    let homeHtml = templateHtml
+    const homeHtml = templateHtml
         .replace('<div id="langCloud" class="tag-cloud"></div>', `<div id="langCloud" class="tag-cloud">${langCloudHtml}</div>`)
-        .replace('<div id="recentCloud" class="tag-cloud"></div>', `<div id="recentCloud" class="tag-cloud">${repoCloudHtml}</div>`);
-    
-    // Also update the Title for the homepage specifically
-    homeHtml = homeHtml.replace(/<title>.*?<\/title>/, `<title>GitHubTree : Visualize GitHub Repository Structures</title>`);
+        .replace('<div id="recentCloud" class="tag-cloud"></div>', `<div id="recentCloud" class="tag-cloud">${repoCloudHtml}</div>`)
+        .replace('<!-- BREADCRUMB_INJECT -->', ''); // No breadcrumb on home
 
     fs.writeFileSync(path.join(DIST_DIR, 'index.html'), homeHtml);
 
-    // 4. GENERATE REPO PAGES
+    // ============================================================
+    // 5. GENERATE REPO PAGES
+    // ============================================================
     console.log(`Generating ${repos.length} Repo Pages...`);
+    
     repos.forEach(item => {
         const [user, name] = item.repo.split('/');
         const cleanPath = `repo/${user}/${name}/${item.branch}`;
@@ -82,22 +106,38 @@ async function generate() {
         ensureDir(outputDir);
 
         const langSlug = item.language.toLowerCase().replace(/\s+/g, '-');
-        const breadcrumb = `<div class="seo-link">Explore more <a href="/language/${langSlug}/">${item.language}</a> repositories</div>`;
         
+        // The Breadcrumb Link
+        const breadcrumbHtml = `<div class="seo-link" style="text-align:center; margin: 20px 0;">
+            Explore more <a href="/language/${langSlug}/" style="color:var(--accent); text-decoration:underline; font-weight:600;">${item.language}</a> repositories
+        </div>`;
+
         const pageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>${item.repo} Directory Structure | GitHubTree</title>`)
-            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Explore ${item.repo} file structure. ${item.description}">`)
+            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Explore ${item.repo} file structure. ${item.description.substring(0, 150)}...">`)
+            
+            // Inject Breadcrumb
+            .replace('<!-- BREADCRUMB_INJECT -->', breadcrumbHtml)
+            
+            // Hide the default Empty State (Quick Start) so it doesn't clutter the page
+            .replace(emptyStateBlock, '<div id="emptyState" class="empty-state" style="display:none;"></div>')
+            
+            // Pre-fill inputs
             .replace('id="repoInput" placeholder="username/repo"', `id="repoInput" value="${item.repo}"`)
             .replace('id="branchInput" placeholder="main"', `id="branchInput" value="${item.branch}"`)
-            .replace('<!-- BREADCRUMB_INJECT -->', breadcrumb)
+            
+            // Canonical
             .replace('</head>', `<link rel="canonical" href="${BASE_URL}/${cleanPath}/"></head>`);
 
         fs.writeFileSync(path.join(outputDir, 'index.html'), pageHtml);
         sitemapUrls.push(`${BASE_URL}/${cleanPath}/`);
     });
 
-    // 5. GENERATE LANGUAGE PAGES
+    // ============================================================
+    // 6. GENERATE LANGUAGE PAGES
+    // ============================================================
     console.log(`Generating ${Object.keys(languagesMap).length} Language Pages...`);
+    
     Object.entries(languagesMap).forEach(([lang, list]) => {
         const langSlug = lang.toLowerCase().replace(/\s+/g, '-');
         const outputDir = path.join(DIST_DIR, 'language', langSlug);
@@ -113,7 +153,10 @@ async function generate() {
 
         const langPageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
-            .replace(/<div id="emptyState"[\s\S]*?<\/div>/,
+            .replace('<!-- BREADCRUMB_INJECT -->', '') // No breadcrumb here
+            
+            // REPLACE the Empty State entirely with the Grid
+            .replace(emptyStateBlock, 
                 `<div id="emptyState" class="language-page">
                     <div class="language-listing">
                         <h1>${lang} Repositories</h1>
@@ -123,19 +166,21 @@ async function generate() {
                         </div>
                     </div>
                 </div>`
-            )
-            .replace('<!-- BREADCRUMB_INJECT -->', '');
+            );
 
         fs.writeFileSync(path.join(outputDir, 'index.html'), langPageHtml);
         sitemapUrls.push(`${BASE_URL}/language/${langSlug}/`);
     });
 
-    // 6. GENERATE SITEMAP
+    // ============================================================
+    // 7. GENERATE SITEMAP
+    // ============================================================
     console.log('Generating Sitemap...');
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls.map(url => `  <url><loc>${url}</loc><changefreq>weekly</changefreq></url>`).join('\n')}
 </urlset>`;
+    
     fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemap);
 
     console.timeEnd('🚀 Build Time');
