@@ -44,9 +44,7 @@ async function generate() {
     const repos = parseCSV(fs.readFileSync(CSV_PATH, 'utf8'));
     const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
-    // 2. Define the EXACT Block to Replace
-    // IMPORTANT: This string must match your index.html indentation EXACTLY.
-    // If your build fails to replace this, copy the block from your index.html and paste it here.
+    // 2. Empty State Block (to be replaced later)
     const emptyStateBlock = `<div id="emptyState" class="empty-state">
             <div class="homepage-section">
                 <h3>Browse by Language</h3>
@@ -153,10 +151,8 @@ async function generate() {
 
         const langPageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
-            .replace('<!-- BREADCRUMB_INJECT -->', '') // No breadcrumb here
-            
-            // REPLACE the Empty State entirely with the Grid
-            .replace(emptyStateBlock, 
+            .replace('<!-- BREADCRUMB_INJECT -->', '') 
+            .replace(/<div id="emptyState"[\s\S]*?<\/div>\s*<\/div>/,
                 `<div id="emptyState" class="language-page">
                     <div class="language-listing">
                         <h1>${lang} Repositories</h1>
