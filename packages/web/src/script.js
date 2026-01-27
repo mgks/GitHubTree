@@ -112,9 +112,16 @@ async function loadTree() {
 
     if (!repo.includes('/')) return showMsg("Invalid format. Use 'user/repo'", "error");
 
-    els.empty.style.display = 'none';
+    if (els.empty) els.empty.style.display = 'none';
+
+    // Hide language listing ONLY if it exists
     const langList = document.querySelector('.language-listing');
     if (langList) langList.style.display = 'none';
+    
+    // Hide Breadcrumbs ONLY if they exist
+    const breadcrumbs = document.querySelector('.seo-link');
+    if (breadcrumbs) breadcrumbs.style.display = 'none';
+
     els.wrapper.style.display = 'none';
     els.wrapper.style.display = 'none';
     showMsg(`Fetching ${repo}...`, "loading");
