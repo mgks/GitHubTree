@@ -152,7 +152,7 @@ async function generate() {
         const langPageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
             .replace('<!-- BREADCRUMB_INJECT -->', '') 
-            .replace(/<div id="emptyState"[\s\S]*?<\/div>\s*<\/div>/,
+            .replace(emptyStateBlock, 
                 `<div id="emptyState" class="language-page">
                     <div class="language-listing">
                         <h1>${lang} Repositories</h1>
