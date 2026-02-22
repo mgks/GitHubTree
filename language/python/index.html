@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best Python Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>Python Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/EbookFoundation/free-programming-books/main/">
+                    <strong>EbookFoundation/free-programming-books</strong>
+                    <p>:books: Freely available programming books</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/donnemartin/system-design-primer/master/">
+                    <strong>donnemartin/system-design-primer</strong>
+                    <p>Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/transformers/main/">
+                    <strong>huggingface/transformers</strong>
+                    <p>🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/pytorch/main/">
+                    <strong>pytorch/pytorch</strong>
+                    <p>Tensors and Dynamic neural networks in Python with strong GPU acceleration</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/django/django/main/">
+                    <strong>django/django</strong>
+                    <p>The Web framework for perfectionists with deadlines.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pallets/flask/main/">
+                    <strong>pallets/flask</strong>
+                    <p>The Python micro framework for building web applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/models/master/">
+                    <strong>tensorflow/models</strong>
+                    <p>Models and examples built with TensorFlow</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/public-apis/public-apis/master/">
+                    <strong>public-apis/public-apis</strong>
+                    <p>A collective list of free APIs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/scikit-learn/scikit-learn/main/">
+                    <strong>scikit-learn/scikit-learn</strong>
+                    <p>scikit-learn: machine learning in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/requests/requests/main/">
+                    <strong>requests/requests</strong>
+                    <p>A simple, yet elegant, HTTP library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keras-team/keras/master/">
+                    <strong>keras-team/keras</strong>
+                    <p>Deep Learning for humans</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ansible/ansible/devel/">
+                    <strong>ansible/ansible</strong>
+                    <p>Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TheAlgorithms/Python/master/">
+                    <strong>TheAlgorithms/Python</strong>
+                    <p>All Algorithms implemented in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pandas-dev/pandas/main/">
+                    <strong>pandas-dev/pandas</strong>
+                    <p>Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/numpy/numpy/main/">
+                    <strong>numpy/numpy</strong>
+                    <p>The fundamental package for scientific computing with Python.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tiangolo/fastapi/master/">
+                    <strong>tiangolo/fastapi</strong>
+                    <p>FastAPI framework, high performance, easy to learn, fast to code, ready for production</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/airflow/main/">
+                    <strong>apache/airflow</strong>
+                    <p>Apache Airflow - A platform to programmatically author, schedule, and monitor workflows</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AUTOMATIC1111/stable-diffusion-webui/master/">
+                    <strong>AUTOMATIC1111/stable-diffusion-webui</strong>
+                    <p>Stable Diffusion web UI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/langchain-ai/langchain/master/">
+                    <strong>langchain-ai/langchain</strong>
+                    <p>🦜🔗 The platform for reliable agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/whisper/main/">
+                    <strong>openai/whisper</strong>
+                    <p>Robust Speech Recognition via Large-Scale Weak Supervision</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ultralytics/yolov5/master/">
+                    <strong>ultralytics/yolov5</strong>
+                    <p>YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/detectron2/main/">
+                    <strong>facebookresearch/detectron2</strong>
+                    <p>Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/karpathy/nanoGPT/master/">
+                    <strong>karpathy/nanoGPT</strong>
+                    <p>The simplest, fastest repository for training/finetuning medium-sized GPTs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/jax/main/">
+                    <strong>google/jax</strong>
+                    <p>Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vinta/awesome-python/master/">
+                    <strong>vinta/awesome-python</strong>
+                    <p>An opinionated list of awesome Python frameworks, libraries, software and resources.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ytdl-org/youtube-dl/master/">
+                    <strong>ytdl-org/youtube-dl</strong>
+                    <p>Command-line program to download videos from YouTube.com and other video sites</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yt-dlp/yt-dlp/master/">
+                    <strong>yt-dlp/yt-dlp</strong>
+                    <p>A feature-rich command-line audio/video downloader</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/home-assistant/core/dev/">
+                    <strong>home-assistant/core</strong>
+                    <p>:house_with_garden: Open source home automation that puts local control and privacy first.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/vision/main/">
+                    <strong>pytorch/vision</strong>
+                    <p>Datasets, Transforms and Models specific to Computer Vision</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/audio/main/">
+                    <strong>pytorch/audio</strong>
+                    <p>Data manipulation and transformation for audio signal processing, powered by PyTorch</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/certbot/certbot/main/">
+                    <strong>certbot/certbot</strong>
+                    <p>Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/datasets/main/">
+                    <strong>huggingface/datasets</strong>
+                    <p>🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/accelerate/main/">
+                    <strong>huggingface/accelerate</strong>
+                    <p>🚀 A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration, automatic mixed precision (including fp8), and easy-to-configure FSDP and DeepSpeed support</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/diffusers/main/">
+                    <strong>huggingface/diffusers</strong>
+                    <p>🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/peft/main/">
+                    <strong>huggingface/peft</strong>
+                    <p>🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/trl/main/">
+                    <strong>huggingface/trl</strong>
+                    <p>Train transformer language models with reinforcement learning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/generative-ai-python/main/">
+                    <strong>google/generative-ai-python</strong>
+                    <p>This SDK is now deprecated, use the new unified Google GenAI SDK. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google-deepmind/alphageometry/main/">
+                    <strong>google-deepmind/alphageometry</strong>
+                    <p>Solving olympiad geometry without human demonstrations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google-deepmind/graphcast/main/">
+                    <strong>google-deepmind/graphcast</strong>
+                    <p>Deep learning weather model from Google DeepMind.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/AI/master/">
+                    <strong>microsoft/AI</strong>
+                    <p>Microsoft AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/autogen/main/">
+                    <strong>microsoft/autogen</strong>
+                    <p>A programming framework for agentic AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/DeepSpeed/master/">
+                    <strong>microsoft/DeepSpeed</strong>
+                    <p>DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/cascadia-code/main/">
+                    <strong>microsoft/cascadia-code</strong>
+                    <p>This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/openai-python/main/">
+                    <strong>openai/openai-python</strong>
+                    <p>The official Python library for the OpenAI API</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/shap-e/main/">
+                    <strong>openai/shap-e</strong>
+                    <p>Generate 3D objects conditioned on text or images</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/point-e/main/">
+                    <strong>openai/point-e</strong>
+                    <p>Point cloud diffusion for 3D model synthesis</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/glide-text2im/main/">
+                    <strong>openai/glide-text2im</strong>
+                    <p>GLIDE: a diffusion-based text-conditional image synthesis model</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/llama/main/">
+                    <strong>facebookresearch/llama</strong>
+                    <p>Inference code for Llama models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/dino/main/">
+                    <strong>facebookresearch/dino</strong>
+                    <p>PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/fairseq/main/">
+                    <strong>facebookresearch/fairseq</strong>
+                    <p>Facebook AI Research Sequence-to-Sequence Toolkit written in Python.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/xformers/main/">
+                    <strong>facebookresearch/xformers</strong>
+                    <p>Hackable and optimized Transformers building blocks, supporting a composable construction.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepseek-ai/deepseek-coder/main/">
+                    <strong>deepseek-ai/deepseek-coder</strong>
+                    <p>DeepSeek Coder: Let the Code Write Itself</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepseek-ai/DeepSeek-Math/main/">
+                    <strong>deepseek-ai/DeepSeek-Math</strong>
+                    <p>DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepseek-ai/DeepSeek-VL/main/">
+                    <strong>deepseek-ai/DeepSeek-VL</strong>
+                    <p>DeepSeek-VL: Towards Real-World Vision-Language Understanding</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepfakes/faceswap/master/">
+                    <strong>deepfakes/faceswap</strong>
+                    <p>Deepfakes Software For All</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gradio-app/gradio/main/">
+                    <strong>gradio-app/gradio</strong>
+                    <p>Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/streamlit/streamlit/develop/">
+                    <strong>streamlit/streamlit</strong>
+                    <p>Streamlit — A faster way to build and share data apps.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mlflow/mlflow/master/">
+                    <strong>mlflow/mlflow</strong>
+                    <p>The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/optuna/optuna/master/">
+                    <strong>optuna/optuna</strong>
+                    <p>A hyperparameter optimization framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ray-project/ray/master/">
+                    <strong>ray-project/ray</strong>
+                    <p>Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bentoml/BentoML/main/">
+                    <strong>bentoml/BentoML</strong>
+                    <p>The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Multi-model pipelines, and more!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jina-ai/jina/main/">
+                    <strong>jina-ai/jina</strong>
+                    <p>☁️ Build multimodal AI applications with cloud-native stack</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iterative/dvc/main/">
+                    <strong>iterative/dvc</strong>
+                    <p>🦉 Data Versioning and ML Experiments</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wandb/wandb/main/">
+                    <strong>wandb/wandb</strong>
+                    <p>The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/explosion/spaCy/master/">
+                    <strong>explosion/spaCy</strong>
+                    <p>💫 Industrial-strength Natural Language Processing (NLP) in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nltk/nltk/develop/">
+                    <strong>nltk/nltk</strong>
+                    <p>NLTK Source</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/RasaHQ/rasa/main/">
+                    <strong>RasaHQ/rasa</strong>
+                    <p>💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stanfordnlp/stanza/main/">
+                    <strong>stanfordnlp/stanza</strong>
+                    <p>Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/flairNLP/flair/master/">
+                    <strong>flairNLP/flair</strong>
+                    <p>A very simple framework for state-of-the-art Natural Language Processing (NLP)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/allenai/allennlp/main/">
+                    <strong>allenai/allennlp</strong>
+                    <p>An open-source NLP research library, built on PyTorch.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PaddlePaddle/PaddleNLP/develop/">
+                    <strong>PaddlePaddle/PaddleNLP</strong>
+                    <p>Easy-to-use and powerful LLM and SLM library with awesome model zoo.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PaddlePaddle/PaddleOCR/main/">
+                    <strong>PaddlePaddle/PaddleOCR</strong>
+                    <p>Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PaddlePaddle/PaddleDetection/develop/">
+                    <strong>PaddlePaddle/PaddleDetection</strong>
+                    <p>Object Detection toolkit based on PaddlePaddle. It supports object detection, instance segmentation, multiple object tracking and real-time multi-person keypoint detection.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/matplotlib/matplotlib/main/">
+                    <strong>matplotlib/matplotlib</strong>
+                    <p>matplotlib: plotting with Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/plotly/plotly.py/master/">
+                    <strong>plotly/plotly.py</strong>
+                    <p>The interactive graphing library for Python :sparkles:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/altair-viz/altair/main/">
+                    <strong>altair-viz/altair</strong>
+                    <p>Declarative visualization library for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mwaskom/seaborn/master/">
+                    <strong>mwaskom/seaborn</strong>
+                    <p>Statistical data visualization in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/scipy/scipy/main/">
+                    <strong>scipy/scipy</strong>
+                    <p>SciPy library main repository</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/statsmodels/statsmodels/main/">
+                    <strong>statsmodels/statsmodels</strong>
+                    <p>Statsmodels: statistical modeling and econometrics in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sympy/sympy/master/">
+                    <strong>sympy/sympy</strong>
+                    <p>A computer algebra system written in pure Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/networkx/networkx/main/">
+                    <strong>networkx/networkx</strong>
+                    <p>Network Analysis in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/psf/requests-html/master/">
+                    <strong>psf/requests-html</strong>
+                    <p>Pythonic HTML Parsing for Humans™</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/scrapy/scrapy/master/">
+                    <strong>scrapy/scrapy</strong>
+                    <p>Scrapy, a fast high-level web crawling & scraping framework for Python.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aio-libs/aiohttp/master/">
+                    <strong>aio-libs/aiohttp</strong>
+                    <p>Asynchronous HTTP client/server framework for asyncio and Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/encode/httpx/master/">
+                    <strong>encode/httpx</strong>
+                    <p>A next generation HTTP client for Python. 🦋</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/psf/black/main/">
+                    <strong>psf/black</strong>
+                    <p>The uncompromising Python code formatter</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PyCQA/flake8/main/">
+                    <strong>PyCQA/flake8</strong>
+                    <p>flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PyCQA/isort/main/">
+                    <strong>PyCQA/isort</strong>
+                    <p>A Python utility / library to sort imports.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PyCQA/pylint/main/">
+                    <strong>PyCQA/pylint</strong>
+                    <p>It's not just a linter that annoys you!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytest-dev/pytest/main/">
+                    <strong>pytest-dev/pytest</strong>
+                    <p>The pytest framework makes it easy to write small tests, yet scales to support complex functional testing</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytest-dev/pytest-cov/master/">
+                    <strong>pytest-dev/pytest-cov</strong>
+                    <p>Coverage plugin for pytest.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tox-dev/tox/main/">
+                    <strong>tox-dev/tox</strong>
+                    <p>Command line driven CI frontend and development task automation tool.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nedbat/coveragepy/master/">
+                    <strong>nedbat/coveragepy</strong>
+                    <p>The code coverage tool for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/celery/celery/master/">
+                    <strong>celery/celery</strong>
+                    <p>Distributed Task Queue (development branch)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rq/rq/master/">
+                    <strong>rq/rq</strong>
+                    <p>Simple job queues for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sqlalchemy/sqlalchemy/main/">
+                    <strong>sqlalchemy/sqlalchemy</strong>
+                    <p>The Database Toolkit for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/marshmallow-code/marshmallow/dev/">
+                    <strong>marshmallow-code/marshmallow</strong>
+                    <p>A lightweight library for converting complex objects to and from simple Python datatypes.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pydantic/pydantic/main/">
+                    <strong>pydantic/pydantic</strong>
+                    <p>Data validation using Python type hints</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pallets/jinja/main/">
+                    <strong>pallets/jinja</strong>
+                    <p>A very fast and expressive template engine.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pallets/click/main/">
+                    <strong>pallets/click</strong>
+                    <p>Python composable command line interface toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pallets/werkzeug/main/">
+                    <strong>pallets/werkzeug</strong>
+                    <p>The comprehensive WSGI web application library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/python-pillow/Pillow/main/">
+                    <strong>python-pillow/Pillow</strong>
+                    <p>Python Imaging Library (Fork)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/boto/boto3/develop/">
+                    <strong>boto/boto3</strong>
+                    <p>Boto3, an AWS SDK for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/googleapis/google-cloud-python/main/">
+                    <strong>googleapis/google-cloud-python</strong>
+                    <p>Google Cloud Client Library for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Azure/azure-sdk-for-python/main/">
+                    <strong>Azure/azure-sdk-for-python</strong>
+                    <p>This repository is for active development of the Azure SDK for Python. For consumers of the SDK we recommend visiting our public developer docs at https://learn.microsoft.com/python/azure/ or our versioned developer docs at https://azure.github.io/azure-sdk-for-python. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/getsentry/sentry/master/">
+                    <strong>getsentry/sentry</strong>
+                    <p>Developer-first error tracking and performance monitoring</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/newrelic/newrelic-python-agent/main/">
+                    <strong>newrelic/newrelic-python-agent</strong>
+                    <p>New Relic Python Agent</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/raspberrypi/documentation/master/">
+                    <strong>raspberrypi/documentation</strong>
+                    <p>The official documentation for Raspberry Pi computers and microcontrollers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenBMB/MiniCPM-o/main/">
+                    <strong>OpenBMB/MiniCPM-o</strong>
+                    <p>MiniCPM-V 4.5: A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/khoj-ai/khoj/main/">
+                    <strong>khoj-ai/khoj</strong>
+                    <p>Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepseek-ai/DeepSeek-V3/main/">
+                    <strong>deepseek-ai/DeepSeek-V3</strong>
+                    <p>Vision-language models from DeepSeek research.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shubhamsaboo/awesome-llm-apps/main/">
+                    <strong>Shubhamsaboo/awesome-llm-apps</strong>
+                    <p>Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/1Panel-dev/MaxKB/main/">
+                    <strong>1Panel-dev/MaxKB</strong>
+                    <p>🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/roboflow/rf-detr/main/">
+                    <strong>roboflow/rf-detr</strong>
+                    <p>RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO and designed for fine-tuning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PaddlePaddle/PaddleSpeech/develop/">
+                    <strong>PaddlePaddle/PaddleSpeech</strong>
+                    <p>Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/onnx/onnx/main/">
+                    <strong>onnx/onnx</strong>
+                    <p>Open standard for machine learning interoperability</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/tvm/main/">
+                    <strong>apache/tvm</strong>
+                    <p>Open Machine Learning Compiler Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NVIDIA/apex/master/">
+                    <strong>NVIDIA/apex</strong>
+                    <p>A PyTorch Extension:  Tools for easy mixed precision and distributed training in Pytorch</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NVIDIA/NeMo/main/">
+                    <strong>NVIDIA/NeMo</strong>
+                    <p>A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tqdm/tqdm/master/">
+                    <strong>tqdm/tqdm</strong>
+                    <p>:zap: A Fast, Extensible Progress Bar for Python and CLI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/examples/main/">
+                    <strong>pytorch/examples</strong>
+                    <p>A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/ignite/master/">
+                    <strong>pytorch/ignite</strong>
+                    <p>High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Lightning-AI/lightning/master/">
+                    <strong>Lightning-AI/lightning</strong>
+                    <p>Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/datasets/master/">
+                    <strong>tensorflow/datasets</strong>
+                    <p>TFDS is a collection of datasets ready to use with TensorFlow, Jax, ...</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/hub/master/">
+                    <strong>tensorflow/hub</strong>
+                    <p>A library for transfer learning by reusing parts of TensorFlow models.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/agents/master/">
+                    <strong>tensorflow/agents</strong>
+                    <p>TF-Agents: A reliable, scalable and easy to use TensorFlow library for Contextual Bandits and Reinforcement Learning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/tfx/master/">
+                    <strong>tensorflow/tfx</strong>
+                    <p> TFX is an end-to-end platform for deploying production ML pipelines</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keras-team/keras-nlp/master/">
+                    <strong>keras-team/keras-nlp</strong>
+                    <p>Pretrained model hub for Keras 3.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keras-team/keras-cv/master/">
+                    <strong>keras-team/keras-cv</strong>
+                    <p>Industry-strength Computer Vision workflows with Keras</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dbt-labs/dbt-core/main/">
+                    <strong>dbt-labs/dbt-core</strong>
+                    <p>dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/open-telemetry/opentelemetry-python/main/">
+                    <strong>open-telemetry/opentelemetry-python</strong>
+                    <p>OpenTelemetry Python API and SDK </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prometheus/client_python/master/">
+                    <strong>prometheus/client_python</strong>
+                    <p>Prometheus instrumentation library for Python applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ansible/awx/devel/">
+                    <strong>ansible/awx</strong>
+                    <p>AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is one of the upstream projects for Red Hat Ansible Automation Platform.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ansible-collections/community.general/main/">
+                    <strong>ansible-collections/community.general</strong>
+                    <p>Ansible Community General Collection</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/saltstack/salt/master/">
+                    <strong>saltstack/salt</strong>
+                    <p>Software to automate the management and configuration of infrastructure and applications at scale.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/docker/docker-py/main/">
+                    <strong>docker/docker-py</strong>
+                    <p>A Python library for the Docker Engine API</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ReactiveX/RxPY/master/">
+                    <strong>ReactiveX/RxPY</strong>
+                    <p>ReactiveX for Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/matrix-org/synapse/develop/">
+                    <strong>matrix-org/synapse</strong>
+                    <p>Synapse: Matrix homeserver written in Python/Twisted.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zulip/zulip/main/">
+                    <strong>zulip/zulip</strong>
+                    <p>Zulip server and web application. Open-source team chat that helps teams stay productive and focused.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/firewalld/firewalld/main/">
+                    <strong>firewalld/firewalld</strong>
+                    <p>Stateful zone based firewall daemon with D-Bus interface</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Ultimaker/Cura/main/">
+                    <strong>Ultimaker/Cura</strong>
+                    <p>3D printer / slicing GUI built on top of the Uranium framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OctoPrint/OctoPrint/master/">
+                    <strong>OctoPrint/OctoPrint</strong>
+                    <p>OctoPrint is the snappy web interface for your 3D printer!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Pythagora-io/gpt-pilot/main/">
+                    <strong>Pythagora-io/gpt-pilot</strong>
+                    <p>The first real AI developer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lllyasviel/Fooocus/main/">
+                    <strong>lllyasviel/Fooocus</strong>
+                    <p>Focus on prompting and generating</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/abi/screenshot-to-code/main/">
+                    <strong>abi/screenshot-to-code</strong>
+                    <p>Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/infiniflow/ragflow/main/">
+                    <strong>infiniflow/ragflow</strong>
+                    <p>RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ByteDance/monolith/main/">
+                    <strong>ByteDance/monolith</strong>
+                    <p>A Lightweight Recommendation System</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OmniSVG/OmniSVG/main/">
+                    <strong>OmniSVG/OmniSVG</strong>
+                    <p>[NeurIPS 2025] OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs), capable of generating complex and detailed SVGs, from simple icons to intricate anime characters.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/test-time-training/ttt-video-dit/main/">
+                    <strong>test-time-training/ttt-video-dit</strong>
+                    <p>Official PyTorch implementation of One-Minute Video Generation with Test-Time Training</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hxu296/tariff/main/">
+                    <strong>hxu296/tariff</strong>
+                    <p>The official repository for tariff</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SakanaAI/AI-Scientist-v2/main/">
+                    <strong>SakanaAI/AI-Scientist-v2</strong>
+                    <p>The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wassim249/fastapi-langgraph-agent-production-ready-template/main/">
+                    <strong>wassim249/fastapi-langgraph-agent-production-ready-template</strong>
+                    <p>A production-ready FastAPI template for building AI agent applications with LangGraph integration. This template provides a robust foundation for building scalable, secure, and maintainable AI agent services.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SimplifyJobs/Summer2025-Internships/main/">
+                    <strong>SimplifyJobs/Summer2025-Internships</strong>
+                    <p>Collection of Summer 2026 tech internships!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alibaba/FunASR/main/">
+                    <strong>alibaba/FunASR</strong>
+                    <p>A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Recognition, Voice Activity Detection, Text Post-processing etc.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/virattt/ai-hedge-fund/main/">
+                    <strong>virattt/ai-hedge-fund</strong>
+                    <p>An AI Hedge Fund Team</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vanna-ai/vanna/main/">
+                    <strong>vanna-ai/vanna</strong>
+                    <p>🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using Agentic Retrieval 🔄.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ultralytics/ultralytics/main/">
+                    <strong>ultralytics/ultralytics</strong>
+                    <p>Ultralytics YOLO 🚀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Significant-Gravitas/AutoGPT/master/">
+                    <strong>Significant-Gravitas/AutoGPT</strong>
+                    <p>AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/airbytehq/airbyte/master/">
+                    <strong>airbytehq/airbyte</strong>
+                    <p>The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/open-webui/open-webui/main/">
+                    <strong>open-webui/open-webui</strong>
+                    <p>User-friendly AI Interface (Supports Ollama, OpenAI API, ...)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stanford-oval/storm/main/">
+                    <strong>stanford-oval/storm</strong>
+                    <p>An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NVlabs/Sana/main/">
+                    <strong>NVlabs/Sana</strong>
+                    <p>SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Fixie-ai/Ultravox/main/">
+                    <strong>Fixie-ai/Ultravox</strong>
+                    <p>A fast multimodal LLM for real-time voice</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Unclecode/Crawl4AI/main/">
+                    <strong>Unclecode/Crawl4AI</strong>
+                    <p>🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Myhhub/Stock/main/">
+                    <strong>Myhhub/Stock</strong>
+                    <p>stock股票.获取股票数据,计算股票指标,筹码分布,识别股票形态,综合选股,选股策略,股票验证回测,股票自动交易,支持PC及移动设备。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Fishaudio/Fish-Speech/main/">
+                    <strong>Fishaudio/Fish-Speech</strong>
+                    <p>SOTA Open Source TTS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Guovin/IPTV-API/main/">
+                    <strong>Guovin/IPTV-API</strong>
+                    <p>⚡️IPTV直播源自动更新平台『🤖全自动采集、筛选、测速、生成🚀』：自定义获取频道；IPv4/IPv6；接口验效；推流；多平台支持；工作流、Docker、命令行、GUI多端部署 | IPTV live streaming source automatic update platform</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keephq/keep/main/">
+                    <strong>keephq/keep</strong>
+                    <p>The open-source AIOps and alert management platform</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Kanaries/pygwalker/main/">
+                    <strong>Kanaries/pygwalker</strong>
+                    <p>PyGWalker: Turn your dataframe into an interactive UI for visual analysis</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/freqtrade/freqtrade/develop/">
+                    <strong>freqtrade/freqtrade</strong>
+                    <p>Free, open source crypto trading bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ManimCommunity/manim/main/">
+                    <strong>ManimCommunity/manim</strong>
+                    <p>A community-maintained Python framework for creating mathematical animations. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/localstack/localstack/master/">
+                    <strong>localstack/localstack</strong>
+                    <p>💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/python-telegram-bot/python-telegram-bot/master/">
+                    <strong>python-telegram-bot/python-telegram-bot</strong>
+                    <p>We have made you a wrapper you can't refuse</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/pip/main/">
+                    <strong>pypa/pip</strong>
+                    <p>The Python package installer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytube/pytube/master/">
+                    <strong>pytube/pytube</strong>
+                    <p>A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/spotipy-dev/spotipy/master/">
+                    <strong>spotipy-dev/spotipy</strong>
+                    <p>A light weight Python library for the Spotify Web API</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/setuptools/main/">
+                    <strong>pypa/setuptools</strong>
+                    <p>Official project repository for the Setuptools build system</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyg-team/pytorch_geometric/master/">
+                    <strong>pyg-team/pytorch_geometric</strong>
+                    <p>Graph Neural Network Library for PyTorch</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/InstaPy/InstaPy/master/">
+                    <strong>InstaPy/InstaPy</strong>
+                    <p>📷 Instagram Bot - Tool for automated Instagram interactions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/plotly/dash/dev/">
+                    <strong>plotly/dash</strong>
+                    <p>Data Apps & Dashboards for Python. No JavaScript Required.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/python-poetry/poetry/master/">
+                    <strong>python-poetry/poetry</strong>
+                    <p>Python packaging and dependency management made easy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sqlalchemy/alembic/main/">
+                    <strong>sqlalchemy/alembic</strong>
+                    <p>A database migrations tool for SQLAlchemy.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paramiko/paramiko/main/">
+                    <strong>paramiko/paramiko</strong>
+                    <p>The leading native Python SSHv2 protocol library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sanic-org/sanic/main/">
+                    <strong>sanic-org/sanic</strong>
+                    <p> Accelerate your web app development  | Build fast. Run fast.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/encode/django-rest-framework/master/">
+                    <strong>encode/django-rest-framework</strong>
+                    <p>Web APIs for Django. 🎸</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PrefectHQ/prefect/main/">
+                    <strong>PrefectHQ/prefect</strong>
+                    <p>Prefect is a workflow orchestration framework for building resilient data pipelines in Python.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sqlfluff/sqlfluff/main/">
+                    <strong>sqlfluff/sqlfluff</strong>
+                    <p>A modular SQL linter and auto-formatter with support for multiple dialects and templated code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Textualize/textual/main/">
+                    <strong>Textualize/textual</strong>
+                    <p>The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dask/dask/main/">
+                    <strong>dask/dask</strong>
+                    <p>Parallel computing with task scheduling</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Supervisor/supervisor/master/">
+                    <strong>Supervisor/supervisor</strong>
+                    <p>Supervisor process control system for Unix (supervisord)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cookiecutter/cookiecutter/master/">
+                    <strong>cookiecutter/cookiecutter</strong>
+                    <p>A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PyGithub/PyGithub/master/">
+                    <strong>PyGithub/PyGithub</strong>
+                    <p>Typed interactions with the GitHub API v3</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aws/aws-cli/v2/">
+                    <strong>aws/aws-cli</strong>
+                    <p>Universal Command Line Interface for Amazon Web Services</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mkdocs/mkdocs/master/">
+                    <strong>mkdocs/mkdocs</strong>
+                    <p>Project documentation with Markdown.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/celery/kombu/main/">
+                    <strong>celery/kombu</strong>
+                    <p>Messaging library for Python.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/psycopg/psycopg/master/">
+                    <strong>psycopg/psycopg</strong>
+                    <p>New generation PostgreSQL database adapter for the Python programming language </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyca/cryptography/main/">
+                    <strong>pyca/cryptography</strong>
+                    <p>cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prompt-toolkit/python-prompt-toolkit/master/">
+                    <strong>prompt-toolkit/python-prompt-toolkit</strong>
+                    <p>Library for building powerful interactive command line applications in Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/encode/uvicorn/master/">
+                    <strong>encode/uvicorn</strong>
+                    <p>An ASGI web server, for Python. 🦄</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dagster-io/dagster/master/">
+                    <strong>dagster-io/dagster</strong>
+                    <p>An orchestration platform for the development, production, and observation of data assets.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/locustio/locust/master/">
+                    <strong>locustio/locust</strong>
+                    <p>Write scalable load tests in plain Python 🚗💨</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ipython/ipython/main/">
+                    <strong>ipython/ipython</strong>
+                    <p>Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/googleapis/google-api-python-client/main/">
+                    <strong>googleapis/google-api-python-client</strong>
+                    <p>🐍 The official Python client library for Google's discovery based APIs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/boto/boto/develop/">
+                    <strong>boto/boto</strong>
+                    <p>For the latest version of boto, see https://github.com/boto/boto3 -- Python interface to Amazon Web Services</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyinstaller/pyinstaller/develop/">
+                    <strong>pyinstaller/pyinstaller</strong>
+                    <p>Freeze (package) Python programs into stand-alone executables</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Textualize/rich/master/">
+                    <strong>Textualize/rich</strong>
+                    <p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kivy/kivy/master/">
+                    <strong>kivy/kivy</strong>
+                    <p>Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/beeware/briefcase/main/">
+                    <strong>beeware/briefcase</strong>
+                    <p>Tools to support converting a Python project into a standalone native application.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/beeware/toga/main/">
+                    <strong>beeware/toga</strong>
+                    <p>A Python native, OS native GUI toolkit.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pydantic/FastUI/main/">
+                    <strong>pydantic/FastUI</strong>
+                    <p>Build better UIs faster.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reflex-dev/reflex/main/">
+                    <strong>reflex-dev/reflex</strong>
+                    <p>🕸️ Web apps in pure Python 🐍</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pandas-profiling/pandas-profiling/develop/">
+                    <strong>pandas-profiling/pandas-profiling</strong>
+                    <p>1 Line of code data quality profiling & exploratory data analysis for Pandas and Spark DataFrames. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepchem/deepchem/master/">
+                    <strong>deepchem/deepchem</strong>
+                    <p>Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenBB-finance/OpenBBTerminal/main/">
+                    <strong>OpenBB-finance/OpenBBTerminal</strong>
+                    <p>Financial data platform for analysts, quants and AI agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/python-attrs/attrs/main/">
+                    <strong>python-attrs/attrs</strong>
+                    <p>Python Classes Without Boilerplate</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dateutil/dateutil/master/">
+                    <strong>dateutil/dateutil</strong>
+                    <p>Useful extensions to the standard Python datetime features</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/great-expectations/great_expectations/develop/">
+                    <strong>great-expectations/great_expectations</strong>
+                    <p>Always know what to expect from your data.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pynecone-io/pynecone/main/">
+                    <strong>pynecone-io/pynecone</strong>
+                    <p>🕸️ Web apps in pure Python 🐍</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PyCQA/bandit/main/">
+                    <strong>PyCQA/bandit</strong>
+                    <p>Bandit is a tool designed to find common security issues in Python code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/googleapis/python-storage/main/">
+                    <strong>googleapis/python-storage</strong>
+                    <p>Python SDK for GCS (Google Cloud Storage)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/getredash/redash/master/">
+                    <strong>getredash/redash</strong>
+                    <p>Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/encode/starlette/master/">
+                    <strong>encode/starlette</strong>
+                    <p>The little ASGI framework that shines. 🌟</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/marshmallow-code/apispec/dev/">
+                    <strong>marshmallow-code/apispec</strong>
+                    <p>A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. the Swagger specification)..</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/pipenv/main/">
+                    <strong>pypa/pipenv</strong>
+                    <p> Python Development Workflow for Humans.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/packaging/main/">
+                    <strong>pypa/packaging</strong>
+                    <p>Core utilities for Python packages</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/pipx/main/">
+                    <strong>pypa/pipx</strong>
+                    <p>Install and Run Python Applications in Isolated Environments</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyinvoke/invoke/main/">
+                    <strong>pyinvoke/invoke</strong>
+                    <p>Pythonic task management & command execution.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pypa/hatch/master/">
+                    <strong>pypa/hatch</strong>
+                    <p>Modern, extensible Python project management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jazzband/pip-tools/main/">
+                    <strong>jazzband/pip-tools</strong>
+                    <p>A set of tools to keep your pinned Python dependencies fresh.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jazzband/django-debug-toolbar/main/">
+                    <strong>jazzband/django-debug-toolbar</strong>
+                    <p>A configurable set of panels that display various debug information about the current request/response.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/optimum/main/">
+                    <strong>huggingface/optimum</strong>
+                    <p>🚀 Accelerate inference and training of 🤗 Transformers, Diffusers, TIMM and Sentence Transformers with easy to use hardware optimization tools</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepmind/dm-haiku/main/">
+                    <strong>deepmind/dm-haiku</strong>
+                    <p>JAX-based neural network library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepmind/alphafold/main/">
+                    <strong>deepmind/alphafold</strong>
+                    <p>Open source code for AlphaFold 2.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/unilm/master/">
+                    <strong>microsoft/unilm</strong>
+                    <p>Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/THUDM/ChatGLM-6B/main/">
+                    <strong>THUDM/ChatGLM-6B</strong>
+                    <p>ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenBMB/ChatDev/main/">
+                    <strong>OpenBMB/ChatDev</strong>
+                    <p>ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/THUDM/CogVLM/main/">
+                    <strong>THUDM/CogVLM</strong>
+                    <p>a state-of-the-art-level open visual language model | 多模态预训练模型</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/THUDM/CodeGeeX/main/">
+                    <strong>THUDM/CodeGeeX</strong>
+                    <p>CodeGeeX: An Open Multilingual Code Generation Model (KDD 2023)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/trax/master/">
+                    <strong>google/trax</strong>
+                    <p>Trax — Deep Learning with Clear Code and Speed</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google-research/bert/master/">
+                    <strong>google-research/bert</strong>
+                    <p>TensorFlow code and pre-trained models for BERT</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/gym/master/">
+                    <strong>openai/gym</strong>
+                    <p>A toolkit for developing and comparing reinforcement learning algorithms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/spinningup/master/">
+                    <strong>openai/spinningup</strong>
+                    <p>An educational resource to help anyone learn deep reinforcement learning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/detr/main/">
+                    <strong>facebookresearch/detr</strong>
+                    <p>End-to-End Object Detection with Transformers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/EleutherAI/gpt-neox/main/">
+                    <strong>EleutherAI/gpt-neox</strong>
+                    <p>An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/EleutherAI/lm-evaluation-harness/main/">
+                    <strong>EleutherAI/lm-evaluation-harness</strong>
+                    <p>A framework for few-shot evaluation of language models.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Stability-AI/generative-models/main/">
+                    <strong>Stability-AI/generative-models</strong>
+                    <p>Generative Models by Stability AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bigcode-project/starcoder/main/">
+                    <strong>bigcode-project/starcoder</strong>
+                    <p>Home of StarCoder: fine-tuning & inference!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mosaicml/llm-foundry/main/">
+                    <strong>mosaicml/llm-foundry</strong>
+                    <p>LLM training code for Databricks foundation models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/meltano/meltano/main/">
+                    <strong>meltano/meltano</strong>
+                    <p>Meltano: the declarative code-first data integration engine that powers your wildest data and ML-powered product ideas. Say goodbye to writing, maintaining, and scaling your own API integrations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mage-ai/mage-ai/master/">
+                    <strong>mage-ai/mage-ai</strong>
+                    <p>🧙 Build, run, and manage data pipelines for integrating and transforming data.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Dataherald/dataherald/main/">
+                    <strong>Dataherald/dataherald</strong>
+                    <p>Interact with your SQL database, Natural Language to SQL using LLMs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OWASP/CheatSheetSeries/master/">
+                    <strong>OWASP/CheatSheetSeries</strong>
+                    <p>The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sqlmapproject/sqlmap/master/">
+                    <strong>sqlmapproject/sqlmap</strong>
+                    <p>Automatic SQL injection and database takeover tool</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trailofbits/algo/master/">
+                    <strong>trailofbits/algo</strong>
+                    <p>Set up a personal VPN in the cloud</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/edgedb/edgedb/master/">
+                    <strong>edgedb/edgedb</strong>
+                    <p>Gel supercharges Postgres with a modern data model, graph queries, Auth & AI solutions, and much more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/curvefi/curve-contract/master/">
+                    <strong>curvefi/curve-contract</strong>
+                    <p>Vyper contracts used in Curve.fi exchange pools.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/geist-font/main/">
+                    <strong>vercel/geist-font</strong>
+                    <p>Geist is a typeface developed by Vercel.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/airbnb/knowledge-repo/master/">
+                    <strong>airbnb/knowledge-repo</strong>
+                    <p>A next-generation curated knowledge sharing platform for data scientists and other technical professions.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/josephmisiti/awesome-machine-learning/master/">
+                    <strong>josephmisiti/awesome-machine-learning</strong>
+                    <p>A curated list of awesome Machine Learning frameworks, libraries and software.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/charlax/professional-programming/master/">
+                    <strong>charlax/professional-programming</strong>
+                    <p>A collection of learning resources for curious software engineers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Pylons/pyramid/master/">
+                    <strong>Pylons/pyramid</strong>
+                    <p>Pyramid - A Python web framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lauris/awesome-scala/master/">
+                    <strong>lauris/awesome-scala</strong>
+                    <p>A community driven list of useful Scala libraries, frameworks and software.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bregman-arie/devops-exercises/master/">
+                    <strong>bregman-arie/devops-exercises</strong>
+                    <p>Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/QwenLM/Qwen3-TTS/main/">
+                    <strong>QwenLM/Qwen3-TTS</strong>
+                    <p>Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/op7418/Youtube-clipper-skill/main/">
+                    <strong>op7418/Youtube-clipper-skill</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/terausss/polymarket-copy-trading-bot/main/">
+                    <strong>terausss/polymarket-copy-trading-bot</strong>
+                    <p>polymarket bot polymarket bot polymarket bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/KKKKhazix/Khazix-Skills/main/">
+                    <strong>KKKKhazix/Khazix-Skills</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/flybirdxx/ComfyUI-Qwen-TTS/main/">
+                    <strong>flybirdxx/ComfyUI-Qwen-TTS</strong>
+                    <p>A Simple Implementation of Qwen3-TTS's ComfyUI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mvanhorn/last30days-skill/main/">
+                    <strong>mvanhorn/last30days-skill</strong>
+                    <p>Claude Code skill that researches any topic across Reddit + X from the last 30 days, then writes copy-paste-ready prompts</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ysharma3501/LuxTTS/master/">
+                    <strong>ysharma3501/LuxTTS</strong>
+                    <p>A high-quality rapid TTS voice cloning model that reaches speeds of 150x realtime.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/adithya-s-k/manim_skill/main/">
+                    <strong>adithya-s-k/manim_skill</strong>
+                    <p>Agent skills for Manim to create 3Blue1Brown style animations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hanxiao/claudecode-telegram/main/">
+                    <strong>hanxiao/claudecode-telegram</strong>
+                    <p>Telegram bridge for Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/test-time-training/discover/main/">
+                    <strong>test-time-training/discover</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/YuJunZhiXue/github-skill-forge/main/">
+                    <strong>YuJunZhiXue/github-skill-forge</strong>
+                    <p>一个""制造技能的技能""。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/1837620622/cloudflare-bypass-2026/main/">
+                    <strong>1837620622/cloudflare-bypass-2026</strong>
+                    <p>Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/joeseesun/anything-to-notebooklm/main/">
+                    <strong>joeseesun/anything-to-notebooklm</strong>
+                    <p>Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/WhiskeyCoder/Qwen3-Audiobook-Converter/main/">
+                    <strong>WhiskeyCoder/Qwen3-Audiobook-Converter</strong>
+                    <p>Convert PDFs, EPUBs, DOCX, DOC, and TXT files into high-quality audiobooks using **Qwen3 TTS Voice Model** - an open-source voice synthesis system that excels at natural speech generation and voice cloning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/op7418/Document-illustrator-skill/main/">
+                    <strong>op7418/Document-illustrator-skill</strong>
+                    <p>帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stong/gradscii-art/master/">
+                    <strong>stong/gradscii-art</strong>
+                    <p>An extremely good ASCII art generator, based on machine learning</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zarazhangrui/youtube-to-ebook/main/">
+                    <strong>zarazhangrui/youtube-to-ebook</strong>
+                    <p>Claude skill for turning YouTube transcripts from your favorite channels into EPUB ebooks, delivered to your email inbox regularly</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ok-oldking/ok-end-field/master/">
+                    <strong>ok-oldking/ok-end-field</strong>
+                    <p>终末地 End Field Automation 基于ok-script开发的自动化</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kristelTech/make_me_a_meme/main/">
+                    <strong>kristelTech/make_me_a_meme</strong>
+                    <p>This repository detects your facial expressions and matches you with a famous meme.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FranckyB/Voice-Clone-Studio/main/">
+                    <strong>FranckyB/Voice-Clone-Studio</strong>
+                    <p>A Gradio-based web UI for voice cloning and voice design, powered by Qwen3-TTS & VibeVoice.  Can use Whisper or VibeVoice-ASR for automatic transcription.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LYL1015/JarvisX-Cowork/main/">
+                    <strong>LYL1015/JarvisX-Cowork</strong>
+                    <p>JarvisX-Cowork: Your First Personal AI Creative Assistant for Everyone! </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Danm72/home-assistant-automation-suggestions/main/">
+                    <strong>Danm72/home-assistant-automation-suggestions</strong>
+                    <p>A Home Assistant integration that analyzes your manual actions and suggests automations to create</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/barrosyan/PINNeAPPle/main/">
+                    <strong>barrosyan/PINNeAPPle</strong>
+                    <p>Pinneaple is an open-source Physics AI toolkit for Physics-Informed Neural Networks (PINNs), scientific ML, geometry processing, solvers, and reproducible training pipelines.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yizhiyanhua-ai/skills-updater/main/">
+                    <strong>yizhiyanhua-ai/skills-updater</strong>
+                    <p>Manage, update, and discover Claude Code skills. 管理、更新和发现 Claude Code 技能。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/actionmesh/main/">
+                    <strong>facebookresearch/actionmesh</strong>
+                    <p>🎬ActionMesh: A fast video to animated mesh model with unprecedented quality. Generate animated mesh seamlessly importable into any 3D software in less than a minute.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/coleam00/second-brain-skills/main/">
+                    <strong>coleam00/second-brain-skills</strong>
+                    <p>A collection of Claude Skills to turn Claude Code into a Second Brain</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/divyaprakash0426/autoshorts/main/">
+                    <strong>divyaprakash0426/autoshorts</strong>
+                    <p>Automatically generate viral-ready vertical short clips from long-form gameplay footage using AI-powered scene analysis, GPU-accelerated rendering, and optional AI voiceovers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SafeBreach-Labs/CVE-2026-24061/main/">
+                    <strong>SafeBreach-Labs/CVE-2026-24061</strong>
+                    <p>Exploitation of CVE-2026-24061</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/terausss/15min-btc-polymarket-trading-bot/main/">
+                    <strong>terausss/15min-btc-polymarket-trading-bot</strong>
+                    <p>15min btc polymarket arbitrage bot-polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepseek-ai/DeepSeek-OCR-2/main/">
+                    <strong>deepseek-ai/DeepSeek-OCR-2</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Robbyant/lingbot-depth/main/">
+                    <strong>Robbyant/lingbot-depth</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/YunjueTech/Yunjue-Agent/main/">
+                    <strong>YunjueTech/Yunjue-Agent</strong>
+                    <p>Yunjue Agent: A Fully Reproducible, Zero-Start In-Situ Self-Evolving Agent System for Open-Ended Tasks</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DarioFT/ComfyUI-Qwen3-TTS/main/">
+                    <strong>DarioFT/ComfyUI-Qwen3-TTS</strong>
+                    <p>A ComfyUI custom node suite for Qwen3-TTS, supporting 1.7B and 0.6B models, Custom Voice, Voice Design, Voice Cloning and Fine-Tuning.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Robbyant/lingbot-vla/main/">
+                    <strong>Robbyant/lingbot-vla</strong>
+                    <p>A Pragmatic VLA Foundation Model</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/unslop-xyz/noodles/main/">
+                    <strong>unslop-xyz/noodles</strong>
+                    <p>Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reinesana/Doomscroll-Skyrim-Edition/main/">
+                    <strong>reinesana/Doomscroll-Skyrim-Edition</strong>
+                    <p>A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Robbyant/lingbot-world/main/">
+                    <strong>Robbyant/lingbot-world</strong>
+                    <p>Advancing Open-source World Models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jmuncor/sherlock/main/">
+                    <strong>jmuncor/sherlock</strong>
+                    <p>Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions.      </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Prismer-AI/Prismer/main/">
+                    <strong>Prismer-AI/Prismer</strong>
+                    <p>Open Source OpenAI Prism Alternative</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/QwenLM/Qwen3-ASR/main/">
+                    <strong>QwenLM/Qwen3-ASR</strong>
+                    <p>Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenMOSS/MOVA/main/">
+                    <strong>OpenMOSS/MOVA</strong>
+                    <p>MOVA: Towards Scalable and Synchronized Video–Audio Generation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/op7418/Video-Wrapper-Skills/main/">
+                    <strong>op7418/Video-Wrapper-Skills</strong>
+                    <p>为访谈视频添加综艺风格视觉特效的 Claude Skill。AI 分析字幕内容生成建议，用户审批后自动渲染，支持 4 种视觉主题。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/https-deeplearning-ai/sc-agent-skills-files/main/">
+                    <strong>https-deeplearning-ai/sc-agent-skills-files</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/btseytlin/hr-breaker/main/">
+                    <strong>btseytlin/hr-breaker</strong>
+                    <p>Optimize resume for jobs, now with AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Robbyant/lingbot-va/main/">
+                    <strong>Robbyant/lingbot-va</strong>
+                    <p>Causal video-action world model for generalist robot control</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Dokhacgiakhoa/google-antigravity/main/">
+                    <strong>Dokhacgiakhoa/google-antigravity</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cisco-ai-defense/skill-scanner/main/">
+                    <strong>cisco-ai-defense/skill-scanner</strong>
+                    <p>Security Scanner for Agent Skills</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PenglongHuang/chinese-novelist-skill/master/">
+                    <strong>PenglongHuang/chinese-novelist-skill</strong>
+                    <p>让 AI 为你写一部完整的中文小说 - AI 驱动的中文小说创作助手 - 超过20章的小说，几分钟全稿完成    Claude Code Skill：自动创作分章节中文小说，每章悬念钩子</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BquantFinance/licitaciones-espana/main/">
+                    <strong>BquantFinance/licitaciones-espana</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/amlalabs/amla-sandbox/main/">
+                    <strong>amlalabs/amla-sandbox</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/depthsecurity/RelayKing-Depth/master/">
+                    <strong>depthsecurity/RelayKing-Depth</strong>
+                    <p>Dominate the domain. Relay to royalty.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AMAP-ML/MathForge/main/">
+                    <strong>AMAP-ML/MathForge</strong>
+                    <p>(ICLR 2026) Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jmuncor/tokentap/main/">
+                    <strong>jmuncor/tokentap</strong>
+                    <p>Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions.      </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gabagool222/15min-btc-polymarket-trading-bot/main/">
+                    <strong>gabagool222/15min-btc-polymarket-trading-bot</strong>
+                    <p>15min btc polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/idanshen/Self-Distillation/main/">
+                    <strong>idanshen/Self-Distillation</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/934050259/BrowserCluster/main/">
+                    <strong>934050259/BrowserCluster</strong>
+                    <p>Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HKUDS/nanobot/main/">
+                    <strong>HKUDS/nanobot</strong>
+                    <p>🐈 nanobot: The Ultra-Lightweight Clawdbot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/agno-agi/dash/main/">
+                    <strong>agno-agi/dash</strong>
+                    <p>Self-learning data agent that grounds its answers in 6 layers of context and improves with every run. Inspired by OpenAI's in-house implementation.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/v4nsh0x/InstaTrace/main/">
+                    <strong>v4nsh0x/InstaTrace</strong>
+                    <p>Private Instagram Post URL Extractor (Research POC)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/metric-anything/metric-anything/main/">
+                    <strong>metric-anything/metric-anything</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AMAP-ML/SpatialGenEval/main/">
+                    <strong>AMAP-ML/SpatialGenEval</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TQZHR/grok2api/main/">
+                    <strong>TQZHR/grok2api</strong>
+                    <p>Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zai-org/GLM-OCR/main/">
+                    <strong>zai-org/GLM-OCR</strong>
+                    <p>GLM-OCR: Accurate ×  Fast × Comprehensive</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/thesSmartApe/polymarket-copy-trading-bot-python/main/">
+                    <strong>thesSmartApe/polymarket-copy-trading-bot-python</strong>
+                    <p>Polymarket python copy trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/thu-ml/Causal-Forcing/main/">
+                    <strong>thu-ml/Causal-Forcing</strong>
+                    <p>Official codebase for ""Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation""</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bc-dunia/qwen3-TTS-studio/main/">
+                    <strong>bc-dunia/qwen3-TTS-studio</strong>
+                    <p>A professional-grade interface for Qwen3-TTS, designed to unlock the model's full potential with fine-grained control and intuitive workflows.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/assafelovic/skyll/main/">
+                    <strong>assafelovic/skyll</strong>
+                    <p>A tool for AI agents to discover and learn skills autonomously</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xullexer/PYDNS-Scanner/main/">
+                    <strong>xullexer/PYDNS-Scanner</strong>
+                    <p>A modern, high-performance DNS scanner with a beautiful Terminal User Interface (TUI) built with Textual. This tool can scan millions of IP addresses to find working DNS servers with optional Slipstream proxy testing and automatic multi-platform client download.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pshycodr/airctl/main/">
+                    <strong>pshycodr/airctl</strong>
+                    <p>AIRCTL, a modern WiFi management tool for Linux built with GTK4 and Python. It provides a clean interface to scan, connect, and manage wireless networks. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ConardLi/rag-skill/main/">
+                    <strong>ConardLi/rag-skill</strong>
+                    <p>A Skill dedicated to local knowledge base retrieval</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alibaba/landmark-tokenized-dit/main/">
+                    <strong>alibaba/landmark-tokenized-dit</strong>
+                    <p>Official repository for paper ""LaTo: Landmark-tokenized Diffusion Transformer for Fine-grained Human Face Editing""</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Zehong-Ma/PixelGen/main/">
+                    <strong>Zehong-Ma/PixelGen</strong>
+                    <p>Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/starccy/doubaoime-asr/main/">
+                    <strong>starccy/doubaoime-asr</strong>
+                    <p>豆包输入法语音识别的非官方 Python 客户端</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iliya-Developer/VortexL2/main/">
+                    <strong>iliya-Developer/VortexL2</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent-Hunyuan/HY3D-Bench/main/">
+                    <strong>Tencent-Hunyuan/HY3D-Bench</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bron1e/fnos-rce-chain/main/">
+                    <strong>bron1e/fnos-rce-chain</strong>
+                    <p>飞牛系统（fnOS）远程代码执行链：认证绕过</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cfinke/EpsteIn/main/">
+                    <strong>cfinke/EpsteIn</strong>
+                    <p>See which of your LinkedIn connections appear in the Epstein files.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jarodise/pdf2epub-paddle/main/">
+                    <strong>jarodise/pdf2epub-paddle</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ResearAI/AutoFigure-Edit/main/">
+                    <strong>ResearAI/AutoFigure-Edit</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ferrolho/VL53L5CX-BNO08X-viewer/main/">
+                    <strong>ferrolho/VL53L5CX-BNO08X-viewer</strong>
+                    <p>Turn a Time-of-Flight sensor into a 3D Scanner</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ula7i921011/React2Shell-Scanner/main/">
+                    <strong>ula7i921011/React2Shell-Scanner</strong>
+                    <p>React2Shell Scanner</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uedk9p/sora2-watermark-remover/main/">
+                    <strong>uedk9p/sora2-watermark-remover</strong>
+                    <p>sora2 watermark remover</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/opencmit/alphora/main/">
+                    <strong>opencmit/alphora</strong>
+                    <p>A Production-Ready Framework for Building Composable AI Agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bowang-lab/EchoJEPA/main/">
+                    <strong>bowang-lab/EchoJEPA</strong>
+                    <p>Joint-embedding predictive architectures (JEPAs) for medical video.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yangdongchao/UniAudio2/main/">
+                    <strong>yangdongchao/UniAudio2</strong>
+                    <p>UniAudio 2.0: An audio fundation model for text, speech, sound, and music</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/depreciating/DoodleCloud/main/">
+                    <strong>depreciating/DoodleCloud</strong>
+                    <p>Cloud Storage using Instagram.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trumpet-noek/sora2-free-watermark-remover/main/">
+                    <strong>trumpet-noek/sora2-free-watermark-remover</strong>
+                    <p>sora2 free watermark remover</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/timuronlinq/messari-crack/main/">
+                    <strong>timuronlinq/messari-crack</strong>
+                    <p>Messari crack</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uqogihujomuwhiff/sora2-watermark-cleaner-pro/main/">
+                    <strong>uqogihujomuwhiff/sora2-watermark-cleaner-pro</strong>
+                    <p>sora2 watermark cleaner pro</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/marshallrichards/ClawPhone/main/">
+                    <strong>marshallrichards/ClawPhone</strong>
+                    <p>Tweaks for running OpenClaw on a Android smartphone</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/llmsresearch/paperbanana/main/">
+                    <strong>llmsresearch/paperbanana</strong>
+                    <p>Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new domains like slide generation.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xbhatsmymom39/tradingview-full-version-unlocker/main/">
+                    <strong>xbhatsmymom39/tradingview-full-version-unlocker</strong>
+                    <p>TradingView Full version unlocker</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tnbeznlacut/sora2-watermark-deleter-windows-macos/main/">
+                    <strong>tnbeznlacut/sora2-watermark-deleter-windows-macos</strong>
+                    <p>sora2 watermark deleter windows macos</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mqudsi/monospace-ocr/master/">
+                    <strong>mqudsi/monospace-ocr</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cs50victor/claude-code-teams-mcp/main/">
+                    <strong>cs50victor/claude-code-teams-mcp</strong>
+                    <p>use claude code's agent teams orchestraction with any harness</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Lyy-iiis/pMF/main/">
+                    <strong>Lyy-iiis/pMF</strong>
+                    <p>Official Implementation of pMF https://arxiv.org/abs/2601.22158</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aeromomo/claw-compactor/main/">
+                    <strong>aeromomo/claw-compactor</strong>
+                    <p>🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Soul-AILab/SoulX-Singer/main/">
+                    <strong>Soul-AILab/SoulX-Singer</strong>
+                    <p>Official inference code for SoulX-Singer: Towards High-Quality Zero-Shot Singing Voice Synthesis</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FireRedTeam/FireRed-OpenStoryline/main/">
+                    <strong>FireRedTeam/FireRed-OpenStoryline</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SawyerHood/gitclaw/main/">
+                    <strong>SawyerHood/gitclaw</strong>
+                    <p>OpenClaw but it runs entirely on github actions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NoobyGains/claude-pulse/master/">
+                    <strong>NoobyGains/claude-pulse</strong>
+                    <p>Real-time usage monitor for Claude Code — session limits, weekly limits, and plan tier with colour-coded progress bars</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/win4r/team-tasks/master/">
+                    <strong>win4r/team-tasks</strong>
+                    <p>Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenMOSS/MOSS-TTS/main/">
+                    <strong>OpenMOSS/MOSS-TTS</strong>
+                    <p>MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AnkitNayak-eth/EpsteinFiles-RAG/main/">
+                    <strong>AnkitNayak-eth/EpsteinFiles-RAG</strong>
+                    <p>A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler).</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DotNetRussell/BloodBash/main/">
+                    <strong>DotNetRussell/BloodBash</strong>
+                    <p>A Bloodhound alternative. BloodBash will ingest the same files bloodhound does but no server is required to use this tool. It's great for quick AD enumeration.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Renforce-Dynamics/MultiModalWBC/master/">
+                    <strong>Renforce-Dynamics/MultiModalWBC</strong>
+                    <p>MultiModalWBC is a fully open-source, IsaacLab-based framework for multi-modal whole-body control, designed for motion imitation, motion tracking, and task-conditioned control in legged robots. The framework unifies robot proprioceptive states and multi-modal human motion conditions into a consistent interface</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openhome-dev/abilities/dev/">
+                    <strong>openhome-dev/abilities</strong>
+                    <p>Open-source abilities for OpenHome agents. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zscole/model-hierarchy-skill/main/">
+                    <strong>zscole/model-hierarchy-skill</strong>
+                    <p>OpenClaw skill for cost-optimized model routing based on task complexity</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nepfaff/scenesmith/main/">
+                    <strong>nepfaff/scenesmith</strong>
+                    <p>Code for ""SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes""</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FireRedTeam/FireRedASR2S/main/">
+                    <strong>FireRedTeam/FireRedASR2S</strong>
+                    <p>FireRedASR2S is a SOTA Industrial-Grade All-in-One ASR system with ASR, VAD, LID, and Punc modules. FireRedASR2 supports Chinese (Mandarin, 20+ dialects/accents), English, code-switching, and singing lyrics recognition. FireRedVAD supports speech/singing/music in 100+ langs. FireRedLID supports 100+ langs and 20+ zh dialects.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sharbelxyz/x-bookmarks/main/">
+                    <strong>sharbelxyz/x-bookmarks</strong>
+                    <p>OpenClaw skill: turn your X bookmarks into agent actions. Stop hoarding. Start applying.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zilliztech/memsearch/main/">
+                    <strong>zilliztech/memsearch</strong>
+                    <p>A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AgriciDaniel/claude-seo/main/">
+                    <strong>AgriciDaniel/claude-seo</strong>
+                    <p> Universal SEO skill for Claude Code. Comprehensive SEO analysis for any website or business type.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/XiaomiRobotics/Xiaomi-Robotics-0/main/">
+                    <strong>XiaomiRobotics/Xiaomi-Robotics-0</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FireRedTeam/FireRed-Image-Edit/main/">
+                    <strong>FireRedTeam/FireRed-Image-Edit</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MooseGoose0701/skill-compose/main/">
+                    <strong>MooseGoose0701/skill-compose</strong>
+                    <p>Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/softmatcha/softmatcha2/main/">
+                    <strong>softmatcha/softmatcha2</strong>
+                    <p>A fast and soft pattern search for trillion-scale corpora.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ysharma3501/LavaSR/main/">
+                    <strong>ysharma3501/LavaSR</strong>
+                    <p>🌋LavaSR: Fast Speech restoration and enhancement</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/symbolica-ai/arcgentica/main/">
+                    <strong>symbolica-ai/arcgentica</strong>
+                    <p>An ARC-AGI solution using Agentica from Symbolica</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/peteromallet/desloppify/main/">
+                    <strong>peteromallet/desloppify</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HKUDS/FastCode/main/">
+                    <strong>HKUDS/FastCode</strong>
+                    <p>FastCode: Accelerating and Streamlining Your Code Understanding</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rainzz-512/Mewgenics-Chinese-Translation/main/">
+                    <strong>rainzz-512/Mewgenics-Chinese-Translation</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Infatoshi/x-cli/main/">
+                    <strong>Infatoshi/x-cli</strong>
+                    <p>CLI for X/Twitter API v2 -- post, search, like, bookmark from your terminal</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/juanceresa/sift-kg/main/">
+                    <strong>juanceresa/sift-kg</strong>
+                    <p>Turn any collection of documents into a knowledge graph. Domain-configurable entity extraction, human-in-the-loop dedup, and narrative generation — all from the CLI.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kyutai-labs/hibiki-zero/main/">
+                    <strong>kyutai-labs/hibiki-zero</strong>
+                    <p>A real-time and multilingual speech translation model</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Mathews-Tom/no-magic/main/">
+                    <strong>Mathews-Tom/no-magic</strong>
+                    <p>Because `model.fit()` isn't an explanation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tomascupr/sandstorm/main/">
+                    <strong>tomascupr/sandstorm</strong>
+                    <p>One API call. Full Claude agent. Completely sandboxed.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AgriciDaniel/claude-ads/main/">
+                    <strong>AgriciDaniel/claude-ads</strong>
+                    <p>Comprehensive paid advertising audit & optimization skill for Claude Code. 186 checks across Google, Meta, YouTube, LinkedIn, TikTok & Microsoft Ads with weighted scoring, parallel agents, and industry templates.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/joshavant/clawbox/main/">
+                    <strong>joshavant/clawbox</strong>
+                    <p>OpenClaw-ready macOS VMs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HKUDS/ClawWork/main/">
+                    <strong>HKUDS/ClawWork</strong>
+                    <p>ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HackingDave/btrpa-scan/main/">
+                    <strong>HackingDave/btrpa-scan</strong>
+                    <p>Bluetooth Low Energy (BLE) scanner with Resolvable Private Address (RPA) resolution using Identity Resolving Keys (IRKs)   </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Runnin4ik/dpi-detector/main/">
+                    <strong>Runnin4ik/dpi-detector</strong>
+                    <p>DPI detection tool for internet censorship testing. Identifies TLS, TCP, HTTP blocking and 16-20KB connection drops</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gpasquero/voog/main/">
+                    <strong>gpasquero/voog</strong>
+                    <p>VOOG — Virtual Analog Synthesizer (Moog-style polyphonic synth with GUI)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Nasiko-Labs/nasiko/main/">
+                    <strong>Nasiko-Labs/nasiko</strong>
+                    <p>AI-powered development platform for the future</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/brendanhogan/hermitclaw/main/">
+                    <strong>brendanhogan/hermitclaw</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shallowdream204/BitDance/main/">
+                    <strong>shallowdream204/BitDance</strong>
+                    <p>BitDance: Open-source autoregressive model with binary visual tokens. A research project for building powerful multimodal autoregressive model.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dazzyddos/ClickOnceBlobber/main/">
+                    <strong>dazzyddos/ClickOnceBlobber</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/honnibal/claude-skills/main/">
+                    <strong>honnibal/claude-skills</strong>
+                    <p>Claude skills I'm experimenting with. Please review carefully before use.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LYiHub/AR-Mahjong-Assistant-preview/main/">
+                    <strong>LYiHub/AR-Mahjong-Assistant-preview</strong>
+                    <p>一个基于向听算法的AR眼镜端麻将助手</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mverschu/adwsdomaindump/main/">
+                    <strong>mverschu/adwsdomaindump</strong>
+                    <p>Active Directory information dumper via ADWS for evasion purposes.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ythx-101/x-tweet-fetcher/main/">
+                    <strong>ythx-101/x-tweet-fetcher</strong>
+                    <p>🦞 Fetch tweets and replies from X/Twitter without login or API keys. OpenClaw skill.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Pickle-Pixel/ApplyPilot/main/">
+                    <strong>Pickle-Pixel/ApplyPilot</strong>
+                    <p>AI agent that applies to jobs for you. Any site. Any form.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Ibrahim-3d/conductor-orchestrator-superpowers/master/">
+                    <strong>Ibrahim-3d/conductor-orchestrator-superpowers</strong>
+                    <p>Multi-agent orchestration system for Claude Code with parallel execution, automated quality gates, Board of Directors, and bundled Superpowers skills</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Jane-xiaoer/x-fetcher/main/">
+                    <strong>Jane-xiaoer/x-fetcher</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AI45Lab/TrinityGuard/master/">
+                    <strong>AI45Lab/TrinityGuard</strong>
+                    <p>TrinityGuard: A Unified Framework for Safeguarding Multi-Agent System Safety</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ShinMegamiBoson/OpenPlanter/main/">
+                    <strong>ShinMegamiBoson/OpenPlanter</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/olvvier/apple-silicon-accelerometer/main/">
+                    <strong>olvvier/apple-silicon-accelerometer</strong>
+                    <p>reading the undocumented mems accelerometer on apple silicon macbooks via iokit hid</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/buckle42/claude-code-remote/master/">
+                    <strong>buckle42/claude-code-remote</strong>
+                    <p>Use Claude Code from your phone — or anywhere — over a secure VPN connection.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/GHJJ123/brainrotguard/main/">
+                    <strong>GHJJ123/brainrotguard</strong>
+                    <p>YouTube approval system for kids — parent approves via Telegram, kid watches via web UI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xgen-universe/Capybara/main/">
+                    <strong>xgen-universe/Capybara</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CraftyGeezer/Kalshi-Polymarket-Ai-bot/main/">
+                    <strong>CraftyGeezer/Kalshi-Polymarket-Ai-bot</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/badaramoni/wave-field-llm/main/">
+                    <strong>badaramoni/wave-field-llm</strong>
+                    <p>An O(n log n) language model architecture using wave equation dynamics instead of O(n²) self-attention. Within 5% of standard transformer quality.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dseditor/QwenASRMiniTool/main/">
+                    <strong>dseditor/QwenASRMiniTool</strong>
+                    <p>基於OpenVino-int8權重，精簡的QwenASR小工具，用於即時辨識以及字幕轉換使用</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kimjune01/cord/master/">
+                    <strong>kimjune01/cord</strong>
+                    <p>A coordination protocol for trees of Claude Code agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/innoqiu/newsieai/master/">
+                    <strong>innoqiu/newsieai</strong>
+                    <p>No description available.</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

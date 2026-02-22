@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best Shell Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>Shell Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/ohmyzsh/ohmyzsh/master/">
+                    <strong>ohmyzsh/ohmyzsh</strong>
+                    <p>🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/d3/d3/main/">
+                    <strong>d3/d3</strong>
+                    <p>Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/papers-we-love/papers-we-love/master/">
+                    <strong>papers-we-love/papers-we-love</strong>
+                    <p>Papers from the computer science community to read and discuss.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nvm-sh/nvm/master/">
+                    <strong>nvm-sh/nvm</strong>
+                    <p>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zsh-users/zsh-autosuggestions/master/">
+                    <strong>zsh-users/zsh-autosuggestions</strong>
+                    <p>Fish-like autosuggestions for zsh</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zsh-users/zsh-syntax-highlighting/master/">
+                    <strong>zsh-users/zsh-syntax-highlighting</strong>
+                    <p>Fish shell like syntax highlighting for Zsh.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tj/n/master/">
+                    <strong>tj/n</strong>
+                    <p>Node version management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyenv/pyenv/master/">
+                    <strong>pyenv/pyenv</strong>
+                    <p>Simple Python version management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rvm/rvm/master/">
+                    <strong>rvm/rvm</strong>
+                    <p>Ruby enVironment Manager (RVM)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rbenv/rbenv/master/">
+                    <strong>rbenv/rbenv</strong>
+                    <p>Manage your app's Ruby environment</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/super-linter/main/">
+                    <strong>github/super-linter</strong>
+                    <p>Combination of multiple linters to install as a GitHub Action</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/longhorn/longhorn/master/">
+                    <strong>longhorn/longhorn</strong>
+                    <p>Cloud-Native distributed storage built on and for Kubernetes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pi-hole/pi-hole/master/">
+                    <strong>pi-hole/pi-hole</strong>
+                    <p>A black hole for Internet advertisements</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/termux/termux-packages/master/">
+                    <strong>termux/termux-packages</strong>
+                    <p>A package build system for Termux.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/drwetter/testssl.sh/3.2/">
+                    <strong>drwetter/testssl.sh</strong>
+                    <p>Testing TLS/SSL encryption anywhere on any port </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/StreisandEffect/streisand/master/">
+                    <strong>StreisandEffect/streisand</strong>
+                    <p>Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ramitsurana/awesome-kubernetes/master/">
+                    <strong>ramitsurana/awesome-kubernetes</strong>
+                    <p>A curated list for awesome kubernetes sources :ship::tada:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/agarrharr/awesome-cli-apps/main/">
+                    <strong>agarrharr/awesome-cli-apps</strong>
+                    <p>🖥 📊 🕹 🛠 A curated list of command line apps</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MichaelCade/90DaysOfDevOps/main/">
+                    <strong>MichaelCade/90DaysOfDevOps</strong>
+                    <p>This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/snarktank/compound-product/main/">
+                    <strong>snarktank/compound-product</strong>
+                    <p>A self-improving product system that reads reports, identifies priorities, and autonomously implements fixes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wolffcatskyy/crowdsec-blocklist-import/main/">
+                    <strong>wolffcatskyy/crowdsec-blocklist-import</strong>
+                    <p>Dockerized tool to import public threat feeds into CrowdSec - 28+ free blocklists, 60k+ IPs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yohey-w/multi-agent-shogun/main/">
+                    <strong>yohey-w/multi-agent-shogun</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MapleShaw/yt-dlp-downloader-skill/master/">
+                    <strong>MapleShaw/yt-dlp-downloader-skill</strong>
+                    <p>Cursor Agent Skill for downloading videos using yt-dlp</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamNet-dev/conduit-manager/main/">
+                    <strong>SamNet-dev/conduit-manager</strong>
+                    <p>A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mindfold-ai/Trellis/main/">
+                    <strong>mindfold-ai/Trellis</strong>
+                    <p>All-in-one AI framework & toolkit for Claude Code & Cursor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/InfinityLoop1308/PipePipe-X/main/">
+                    <strong>InfinityLoop1308/PipePipe-X</strong>
+                    <p>Modern designed PipePipe</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miaoxworld/ClawdBotInstaller/main/">
+                    <strong>miaoxworld/ClawdBotInstaller</strong>
+                    <p>ClawdBot 一键部署工具</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gemini-cli-extensions/ralph/main/">
+                    <strong>gemini-cli-extensions/ralph</strong>
+                    <p>Gemini CLI extension for Ralph loops</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/1186258278/OpenClawChineseTranslation/main/">
+                    <strong>1186258278/OpenClawChineseTranslation</strong>
+                    <p>🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中文版 | Claude/ChatGPT LLM 接入 | WhatsApp/Telegram/Discord 多平台 | 每小时自动同步 | CLI + Dashboard 全中文 | 全流程搭建教程，以及排错指南！</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miaoxworld/OpenClawInstaller/main/">
+                    <strong>miaoxworld/OpenClawInstaller</strong>
+                    <p>ClawdBot 一键部署工具</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/YougLin-dev/Aha-Loop/main/">
+                    <strong>YougLin-dev/Aha-Loop</strong>
+                    <p>Aha Loop is a fully autonomous AI development system, extended from the core ideas of Ralph. It's not just an execution engine, but a complete AI development framework with planning capabilities, research abilities, and oversight mechanisms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/appsail/Gemini-in-Chrome/master/">
+                    <strong>appsail/Gemini-in-Chrome</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/justlovemaki/OpenClaw-Docker-CN-IM/main/">
+                    <strong>justlovemaki/OpenClaw-Docker-CN-IM</strong>
+                    <p>OpenClaw 的中国IM平台整合Docker版本，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国IM软件的插件，让您可以快速部署一个支持多个中国IM平台的 AI 机器人网关</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamNet-dev/paqctl/main/">
+                    <strong>SamNet-dev/paqctl</strong>
+                    <p>Unified proxy manager for bypassing firewalls - supports Paqet (KCP/raw socket) and GFW-Knocker (violated TCP/QUIC) with dual-backend simultaneous operation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/behzadea12/Paqet-Tunnel-Manager/main/">
+                    <strong>behzadea12/Paqet-Tunnel-Manager</strong>
+                    <p>Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ToolSeRF/Sepehr-GRE-FORWARDER/main/">
+                    <strong>ToolSeRF/Sepehr-GRE-FORWARDER</strong>
+                    <p>اسکریپت سپهر برای راه‌اندازی و مدیریت سریع  و آسان تونل GRE و پورت فورارد که میتوان بین یک یا چند سرور از آن استفاده کرد، یا جان فدای میهن، سپهر عزیز (سپهر کجایی بابا؟)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/davegoldblatt/total-recall/main/">
+                    <strong>davegoldblatt/total-recall</strong>
+                    <p>Persistent memory plugin for Claude Code. Tiered memory system with write gates, correction propagation, and slash commands.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/blader/taskmaster/main/">
+                    <strong>blader/taskmaster</strong>
+                    <p>Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PeonPing/peon-ping/main/">
+                    <strong>PeonPing/peon-ping</strong>
+                    <p>Warcraft III Peon voice notifications for Claude Code. Stop babysitting your terminal.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/harrymunro/nelson/main/">
+                    <strong>harrymunro/nelson</strong>
+                    <p>A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ChownYourLife/paqet-tunnel/master/">
+                    <strong>ChownYourLife/paqet-tunnel</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/itcaat/mtproto-installer/main/">
+                    <strong>itcaat/mtproto-installer</strong>
+                    <p>Ускоритель телеграм =)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/craigsc/cmux/main/">
+                    <strong>craigsc/cmux</strong>
+                    <p>cmux: tmux for Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ToolSeRF/TaHa-Direct-Reverse-Tunnel-Runner/main/">
+                    <strong>ToolSeRF/TaHa-Direct-Reverse-Tunnel-Runner</strong>
+                    <p>راه اندازی و مدیریت تانل مستقیم و معکوس(ریورس) با بیش از 150 پروتو برای عبور از فیلترینگ و پاسخگو برای سرورهایی با محدودیت بسیار شدید، راه اندازی بین یک یا چند سرور، به یاد طاها هوشیار کودک 12 ساله جان فدای میهن</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/s2-streamstore/claude-batch-toolkit/main/">
+                    <strong>s2-streamstore/claude-batch-toolkit</strong>
+                    <p>Send non-urgent work to the Anthropic Batch API at 50% cost — directly from Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rawwerks/ypi/master/">
+                    <strong>rawwerks/ypi</strong>
+                    <p>A recursive coding agent inpired by RLMs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mimurchison/claude-chief-of-staff/main/">
+                    <strong>mimurchison/claude-chief-of-staff</strong>
+                    <p>AI Chief of Staff — Your personal AI operating system built on Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/davidhariri/life-system/main/">
+                    <strong>davidhariri/life-system</strong>
+                    <p>A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/agenticnotetaking/arscontexta/main/">
+                    <strong>agenticnotetaking/arscontexta</strong>
+                    <p>Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xyzthiago/claude-flows/main/">
+                    <strong>xyzthiago/claude-flows</strong>
+                    <p>🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code support via MCP protocol. Ranked #1 in agent-based frameworks.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NikkeTryHard/zerogravity/main/">
+                    <strong>NikkeTryHard/zerogravity</strong>
+                    <p>OpenAI, Anthropic, and Gemini-compatible proxy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hamelsmu/claude-review-loop/main/">
+                    <strong>hamelsmu/claude-review-loop</strong>
+                    <p>Claude Code plugin: automated code review loop with Codex</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

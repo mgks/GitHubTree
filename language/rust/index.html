@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best Rust Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>Rust Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/rust-lang/rust/master/">
+                    <strong>rust-lang/rust</strong>
+                    <p>Empowering everyone to build reliable and efficient software.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/denoland/deno/main/">
+                    <strong>denoland/deno</strong>
+                    <p>A modern runtime for JavaScript and TypeScript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/swc-project/swc/main/">
+                    <strong>swc-project/swc</strong>
+                    <p>Rust-based platform for the Web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zed-industries/zed/main/">
+                    <strong>zed-industries/zed</strong>
+                    <p>Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-lang/rustlings/main/">
+                    <strong>rust-lang/rustlings</strong>
+                    <p>:crab: Small exercises to get you used to reading and writing Rust code!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tauri-apps/tauri/dev/">
+                    <strong>tauri-apps/tauri</strong>
+                    <p>Build smaller, faster, and more secure desktop and mobile applications with a web frontend.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bevyengine/bevy/main/">
+                    <strong>bevyengine/bevy</strong>
+                    <p>A refreshingly simple data-driven game engine built in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/clap-rs/clap/master/">
+                    <strong>clap-rs/clap</strong>
+                    <p>A full featured, fast Command Line Argument Parser for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tokio-rs/tokio/master/">
+                    <strong>tokio-rs/tokio</strong>
+                    <p>A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actix/actix-web/master/">
+                    <strong>actix/actix-web</strong>
+                    <p>Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/serde-rs/serde/master/">
+                    <strong>serde-rs/serde</strong>
+                    <p>Serialization framework for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/tokenizers/main/">
+                    <strong>huggingface/tokenizers</strong>
+                    <p>💥 Fast State-of-the-Art Tokenizers optimized for Research and Production</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/firecracker-microvm/firecracker/main/">
+                    <strong>firecracker-microvm/firecracker</strong>
+                    <p>Secure and fast microVMs for serverless computing.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kata-containers/kata-containers/main/">
+                    <strong>kata-containers/kata-containers</strong>
+                    <p>Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. https://katacontainers.io/</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BurntSushi/ripgrep/master/">
+                    <strong>BurntSushi/ripgrep</strong>
+                    <p>ripgrep recursively searches directories for a regex pattern while respecting your gitignore</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sharkdp/bat/master/">
+                    <strong>sharkdp/bat</strong>
+                    <p>A cat(1) clone with wings.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sharkdp/fd/master/">
+                    <strong>sharkdp/fd</strong>
+                    <p>A simple, fast and user-friendly alternative to 'find'</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sharkdp/hyperfine/master/">
+                    <strong>sharkdp/hyperfine</strong>
+                    <p>A command-line benchmarking tool</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lsd-rs/lsd/master/">
+                    <strong>lsd-rs/lsd</strong>
+                    <p>The next gen ls command</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/starship/starship/master/">
+                    <strong>starship/starship</strong>
+                    <p>☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paritytech/polkadot/master/">
+                    <strong>paritytech/polkadot</strong>
+                    <p>Polkadot Node Implementation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paritytech/substrate/master/">
+                    <strong>paritytech/substrate</strong>
+                    <p>Substrate: The platform for blockchain innovators</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/solana-labs/solana/master/">
+                    <strong>solana-labs/solana</strong>
+                    <p>Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sigp/lighthouse/stable/">
+                    <strong>sigp/lighthouse</strong>
+                    <p>Ethereum consensus client in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rustdesk/rustdesk/master/">
+                    <strong>rustdesk/rustdesk</strong>
+                    <p>An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lapce/lapce/master/">
+                    <strong>lapce/lapce</strong>
+                    <p>Lightning-fast and Powerful Code Editor written in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alacritty/alacritty/master/">
+                    <strong>alacritty/alacritty</strong>
+                    <p>A cross-platform, OpenGL terminal emulator.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/helix-editor/helix/master/">
+                    <strong>helix-editor/helix</strong>
+                    <p>A post-modern modal text editor.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/meilisearch/meilisearch/main/">
+                    <strong>meilisearch/meilisearch</strong>
+                    <p>A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qdrant/qdrant/master/">
+                    <strong>qdrant/qdrant</strong>
+                    <p>Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/influxdata/influxdb/main/">
+                    <strong>influxdata/influxdb</strong>
+                    <p>Scalable datastore for metrics, events, and real-time analytics</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TabbyML/tabby/main/">
+                    <strong>TabbyML/tabby</strong>
+                    <p>Self-hosted AI coding assistant</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cloudflare/pingora/main/">
+                    <strong>cloudflare/pingora</strong>
+                    <p>A library for building fast, reliable and evolvable network services.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/typst/typst/main/">
+                    <strong>typst/typst</strong>
+                    <p>A markup-based typesetting system that is powerful and easy to learn.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/spacedriveapp/spacedrive/main/">
+                    <strong>spacedriveapp/spacedrive</strong>
+                    <p>Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wasmerio/wasmer/master/">
+                    <strong>wasmerio/wasmer</strong>
+                    <p>🚀 Fast, secure, lightweight containers based on WebAssembly</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/surrealdb/surrealdb/main/">
+                    <strong>surrealdb/surrealdb</strong>
+                    <p>A scalable, distributed, collaborative, document-graph database, for the realtime web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/extism/extism/main/">
+                    <strong>extism/extism</strong>
+                    <p>The framework for building with WebAssembly (wasm). Easily & securely load wasm modules, move data, call functions, and build extensible apps.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/thepartly/gatehouse/main/">
+                    <strong>thepartly/gatehouse</strong>
+                    <p>A flexible authorization library that combines role-based (RBAC), attribute-based (ABAC), and relationship-based (ReBAC) access control policies.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rome/tools/main/">
+                    <strong>rome/tools</strong>
+                    <p>Unified developer tools for JavaScript, TypeScript, and the web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ankitects/anki/main/">
+                    <strong>ankitects/anki</strong>
+                    <p>Anki is a smart spaced repetition flashcard program</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ruffle-rs/ruffle/master/">
+                    <strong>ruffle-rs/ruffle</strong>
+                    <p>A Flash Player emulator written in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fish-shell/fish-shell/master/">
+                    <strong>fish-shell/fish-shell</strong>
+                    <p>The user-friendly command line shell.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/clockworklabs/SpacetimeDB/master/">
+                    <strong>clockworklabs/SpacetimeDB</strong>
+                    <p>Multiplayer at the speed of light</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lencx/ChatGPT/main/">
+                    <strong>lencx/ChatGPT</strong>
+                    <p>🔮 ChatGPT Desktop Application (Mac, Windows and Linux)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DioxusLabs/dioxus/master/">
+                    <strong>DioxusLabs/dioxus</strong>
+                    <p>Fullstack app framework for web, desktop, and mobile.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Zackriya-Solutions/meeting-minutes/main/">
+                    <strong>Zackriya-Solutions/meeting-minutes</strong>
+                    <p>Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.  </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Mufeedvh/Code2Prompt/main/">
+                    <strong>Mufeedvh/Code2Prompt</strong>
+                    <p>A CLI tool to convert your codebase into a single LLM prompt with source tree, prompt templating, and token counting.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pola-rs/polars/main/">
+                    <strong>pola-rs/polars</strong>
+                    <p>Extremely fast Query Engine for DataFrames, written in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TheAlgorithms/Rust/master/">
+                    <strong>TheAlgorithms/Rust</strong>
+                    <p> All Algorithms implemented in Rust </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-unofficial/awesome-rust/main/">
+                    <strong>rust-unofficial/awesome-rust</strong>
+                    <p>A curated list of Rust code and resources.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gfx-rs/wgpu/master/">
+                    <strong>gfx-rs/wgpu</strong>
+                    <p>A cross-platform, safe, pure-Rust graphics API.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nushell/nushell/main/">
+                    <strong>nushell/nushell</strong>
+                    <p>A new type of shell</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tree-sitter/tree-sitter/master/">
+                    <strong>tree-sitter/tree-sitter</strong>
+                    <p>An incremental parsing system for programming tools</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hyperium/hyper/master/">
+                    <strong>hyperium/hyper</strong>
+                    <p>An HTTP library for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SergioBenitez/Rocket/master/">
+                    <strong>SergioBenitez/Rocket</strong>
+                    <p>A web framework for Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-analyzer/rust-analyzer/master/">
+                    <strong>rust-analyzer/rust-analyzer</strong>
+                    <p>A Rust compiler front-end for IDEs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/diesel-rs/diesel/master/">
+                    <strong>diesel-rs/diesel</strong>
+                    <p>A safe, extensible ORM and Query Builder for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/launchbadge/sqlx/main/">
+                    <strong>launchbadge/sqlx</strong>
+                    <p>🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/graphql-rust/juniper/master/">
+                    <strong>graphql-rust/juniper</strong>
+                    <p>GraphQL server library for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rayon-rs/rayon/master/">
+                    <strong>rayon-rs/rayon</strong>
+                    <p>Rayon: A data parallelism library for Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actix/actix/master/">
+                    <strong>actix/actix</strong>
+                    <p>Actor framework for Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cube-js/cube/master/">
+                    <strong>cube-js/cube</strong>
+                    <p>📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xi-editor/xi-editor/master/">
+                    <strong>xi-editor/xi-editor</strong>
+                    <p>A modern editor with a backend written in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cloudflare/quiche/master/">
+                    <strong>cloudflare/quiche</strong>
+                    <p>🥧 Savoury implementation of the QUIC transport protocol and HTTP/3</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paritytech/polkadot-sdk/master/">
+                    <strong>paritytech/polkadot-sdk</strong>
+                    <p>The Parity Polkadot Blockchain SDK</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/solana-labs/solana-program-library/master/">
+                    <strong>solana-labs/solana-program-library</strong>
+                    <p>A collection of Solana programs maintained by Solana Labs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tikv/tikv/master/">
+                    <strong>tikv/tikv</strong>
+                    <p>Distributed transactional key-value database, originally created to complement TiDB</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vectordotdev/vector/master/">
+                    <strong>vectordotdev/vector</strong>
+                    <p>A high-performance observability data pipeline.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BurntSushi/xsv/master/">
+                    <strong>BurntSushi/xsv</strong>
+                    <p>A fast CSV command line toolkit written in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/async-rs/async-std/master/">
+                    <strong>async-rs/async-std</strong>
+                    <p>Async version of the Rust standard library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-lang/mdBook/master/">
+                    <strong>rust-lang/mdBook</strong>
+                    <p>Create book from markdown files. Like Gitbook but implemented in Rust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bottlerocket-os/bottlerocket/develop/">
+                    <strong>bottlerocket-os/bottlerocket</strong>
+                    <p>An operating system designed for hosting containers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/esp-rs/esp-idf-hal/main/">
+                    <strong>esp-rs/esp-idf-hal</strong>
+                    <p>embedded-hal implementation for Rust on ESP32 and ESP-IDF</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dandavison/delta/main/">
+                    <strong>dandavison/delta</strong>
+                    <p>A syntax-highlighting pager for git, diff, grep, and blame output</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-embedded/discovery/master/">
+                    <strong>rust-embedded/discovery</strong>
+                    <p>Discover the world of microcontrollers through Rust!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/valeriansaliou/sonic/master/">
+                    <strong>valeriansaliou/sonic</strong>
+                    <p>🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gleam-lang/gleam/main/">
+                    <strong>gleam-lang/gleam</strong>
+                    <p>⭐️ A friendly language for building type-safe, scalable systems!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ajeetdsouza/zoxide/main/">
+                    <strong>ajeetdsouza/zoxide</strong>
+                    <p>A smarter cd command. Supports all major shells.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ogham/exa/master/">
+                    <strong>ogham/exa</strong>
+                    <p>A modern replacement for ‘ls’.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bytecodealliance/wasmtime/main/">
+                    <strong>bytecodealliance/wasmtime</strong>
+                    <p>A lightweight WebAssembly runtime that is fast, secure, and standards-compliant</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rustwasm/wasm-bindgen/main/">
+                    <strong>rustwasm/wasm-bindgen</strong>
+                    <p>Facilitating high-level interactions between Wasm modules and JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rustwasm/wasm-pack/master/">
+                    <strong>rustwasm/wasm-pack</strong>
+                    <p>📦✨ your favorite rust -> wasm workflow tool!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fermyon/spin/main/">
+                    <strong>fermyon/spin</strong>
+                    <p>Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shopify/javy/main/">
+                    <strong>Shopify/javy</strong>
+                    <p>JS to WebAssembly toolchain</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chroma-core/chroma/main/">
+                    <strong>chroma-core/chroma</strong>
+                    <p>Open-source search and retrieval database for AI applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/foundry-rs/foundry/master/">
+                    <strong>foundry-rs/foundry</strong>
+                    <p>Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/graphprotocol/graph-node/master/">
+                    <strong>graphprotocol/graph-node</strong>
+                    <p>Graph Node indexes data from blockchains such as Ethereum and serves it over GraphQL</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FuelLabs/fuel-core/master/">
+                    <strong>FuelLabs/fuel-core</strong>
+                    <p>Rust full node implementation of the Fuel v2 protocol.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/starkware-libs/cairo/main/">
+                    <strong>starkware-libs/cairo</strong>
+                    <p>Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rust-lang/book/main/">
+                    <strong>rust-lang/book</strong>
+                    <p>The Rust Programming Language</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mre/awesome-static-analysis/master/">
+                    <strong>mre/awesome-static-analysis</strong>
+                    <p>⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/1jehuang/mermaid-rs-renderer/master/">
+                    <strong>1jehuang/mermaid-rs-renderer</strong>
+                    <p>A fast native Rust Mermaid diagram renderer. No browser required. 500-1000x faster than mermaid-cli.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tanaer/WindowsClear/main/">
+                    <strong>tanaer/WindowsClear</strong>
+                    <p>Windows C盘清理工具/C盘瘦身工具，还你Appdata的大量硬盘空间 | Windows System disk cleanup, returning a large amount of hard drive space from your Appdata</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/samvallad33/vestige/main/">
+                    <strong>samvallad33/vestige</strong>
+                    <p>Cognitive memory MCP server for Claude - FSRS-6, spreading activation, synaptic tagging, and 130 years of memory research</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/terausss/Polymarket-Kalshi-Arbitrage-Bot/main/">
+                    <strong>terausss/Polymarket-Kalshi-Arbitrage-Bot</strong>
+                    <p>polymarket-kalshi-arbitrage-bot polymarket arbitrage bot kalshi-arbitrage bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qufei1993/skills-hub/main/">
+                    <strong>qufei1993/skills-hub</strong>
+                    <p>A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mroboff/vm-curator/main/">
+                    <strong>mroboff/vm-curator</strong>
+                    <p>vm-curator is a fast and friendly TUI to build and manage QEMU/KVM virtual machines in Linux. It does not rely on libvirt, which means 3D acceleration (para-virtualized, not pass-through) works for NVIDIA GPUs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/embedding-shapes/one-agent-one-browser/master/">
+                    <strong>embedding-shapes/one-agent-one-browser</strong>
+                    <p>One from scratch browser built by one human and one agent, working hand in hand</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alecthomas/t/master/">
+                    <strong>alecthomas/t</strong>
+                    <p>`t` is a concise language for manipulating text, replacing common usage patterns of Unix utilities like grep, sed, cut, awk, sort, and uniq.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ecto/vcad/main/">
+                    <strong>ecto/vcad</strong>
+                    <p>Parametric CAD in Rust — CSG modeling with multi-format export</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rivet-dev/sandbox-agent/main/">
+                    <strong>rivet-dev/sandbox-agent</strong>
+                    <p>Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/thesSmartApe/polymarket-copy-trading-bot-rust/main/">
+                    <strong>thesSmartApe/polymarket-copy-trading-bot-rust</strong>
+                    <p>polymarket rust copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lynaghk/vibe/main/">
+                    <strong>lynaghk/vibe</strong>
+                    <p>Easy Linux virtual machine on MacOS to sandbox LLM agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/liuxiaopai-ai/ralph-desktop/main/">
+                    <strong>liuxiaopai-ai/ralph-desktop</strong>
+                    <p>Ralph Desktop -  Start vague. Ralph Loop until perfect.  A visual controller for AI coding agents that helps you brainstorm requirements and execute tasks through persistent iteration.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miuda-ai/lele/main/">
+                    <strong>miuda-ai/lele</strong>
+                    <p>Bare-Metal Rust Audio AI Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sheeki03/tirith/main/">
+                    <strong>sheeki03/tirith</strong>
+                    <p>Your browser catches homograph attacks. Your terminal doesn't. Tirith guards the gate — intercepts suspicious URLs, ANSI injection, and pipe-to-shell attacks before they execute.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lukehinds/nono/main/">
+                    <strong>lukehinds/nono</strong>
+                    <p>OS-Level Isolation for AI Agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lance0/xfr/master/">
+                    <strong>lance0/xfr</strong>
+                    <p>A modern iperf3 alternative with a live TUI, multi-client server, and QUIC support. Built in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/anthropics/claudes-c-compiler/main/">
+                    <strong>anthropics/claudes-c-compiler</strong>
+                    <p>Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ryan26craf/polymarket-kalshi-arbitrage-bot/main/">
+                    <strong>ryan26craf/polymarket-kalshi-arbitrage-bot</strong>
+                    <p>Kalshi open source trading bot to automate copy trading and arbitrage strategies on crypto prediction markets for free, with simple interface.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tw93/Kaku/main/">
+                    <strong>tw93/Kaku</strong>
+                    <p>☄️ A fast, out-of-the-box terminal built for AI coding.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/taf2/mdvi/master/">
+                    <strong>taf2/mdvi</strong>
+                    <p>cli based Markdown viewer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Veirt/weathr/main/">
+                    <strong>Veirt/weathr</strong>
+                    <p>a terminal weather app with ascii animation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/JaredStewart/coderlm/main/">
+                    <strong>JaredStewart/coderlm</strong>
+                    <p>Tree-sitter-powered code indexing server that gives LLM agents precise, on-demand access to symbols, implementations, callers, tests, and grep across multi-language projects - so they explore codebases through targeted queries instead of loading everything into context.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shanselman/winget-tui/main/">
+                    <strong>shanselman/winget-tui</strong>
+                    <p>A terminal UI for Windows Package Manager (winget) - search, install, upgrade, and manage packages</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/calebwin/pgclaw/main/">
+                    <strong>calebwin/pgclaw</strong>
+                    <p>A ""Clawdbot"" in every row with 400 lines of Postgres SQL</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/theonlyhennygod/zeroclaw/main/">
+                    <strong>theonlyhennygod/zeroclaw</strong>
+                    <p>claw done right 🦀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/0xsouravm/oxichrome/main/">
+                    <strong>0xsouravm/oxichrome</strong>
+                    <p>Framework to build Chrome extensions entirely in Rust with proc macros, type-safe Chrome API bindings, and Leptos for reactive UI. Compiles to WebAssembly with zero hand-written JavaScript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dev-protocol/polymarket-trading-tools-telegram-bot/main/">
+                    <strong>dev-protocol/polymarket-trading-tools-telegram-bot</strong>
+                    <p>🚀polymarket copy trading bot polymarket arbitrage bot polymarket market maker bot polymarket copy trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qhkm/zeptoclaw/main/">
+                    <strong>qhkm/zeptoclaw</strong>
+                    <p>Final form of claw family (Wannabe)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zeroclaw-labs/zeroclaw/main/">
+                    <strong>zeroclaw-labs/zeroclaw</strong>
+                    <p>Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AlexsJones/llmfit/main/">
+                    <strong>AlexsJones/llmfit</strong>
+                    <p>94 models. 30 providers. One command to find what runs on your hardware.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Follow-Gabagool22/5min-btc-polymarket-trading-bot/main/">
+                    <strong>Follow-Gabagool22/5min-btc-polymarket-trading-bot</strong>
+                    <p>5min btc polymarket trading bot that is polymarket trading bot that trade in 5 btc market polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/frank-vpl/IRBox/master/">
+                    <strong>frank-vpl/IRBox</strong>
+                    <p>A versatile proxy client supporting multiple protocols including VLESS, VMess, Shadowsocks, Trojan, Hysteria2, and TUIC with advanced management features, subscription support, routing rules, and system proxy/TUN modes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot/master/">
+                    <strong>Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot</strong>
+                    <p>Real-time polymarket trading bot that combines monitoring with strategy logic for Polymarket's 15-minute prediction markets.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xiaguan/pegainfer/main/">
+                    <strong>xiaguan/pegainfer</strong>
+                    <p>Pure Rust + CUDA LLM inference engine</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/parcadei/ouros/main/">
+                    <strong>parcadei/ouros</strong>
+                    <p>A sandboxed Python runtime for AI agents, written in Rust.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zhixianio/clawpal/main/">
+                    <strong>zhixianio/clawpal</strong>
+                    <p>ClawPal - Manage OpenClaw agents, models, and configs with a visual interface. Stop editing JSON by hand.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/letmutex/gitas/main/">
+                    <strong>letmutex/gitas</strong>
+                    <p>Git Account Switch</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

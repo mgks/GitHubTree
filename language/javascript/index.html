@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best JavaScript Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>JavaScript Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/mgks/GitHubTree/main/">
+                    <strong>mgks/GitHubTree</strong>
+                    <p>Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/react/main/">
+                    <strong>facebook/react</strong>
+                    <p>The library for web and native user interfaces.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/airbnb/javascript/master/">
+                    <strong>airbnb/javascript</strong>
+                    <p>JavaScript Style Guide</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nodejs/node/main/">
+                    <strong>nodejs/node</strong>
+                    <p>Node.js JavaScript runtime ✨🐢🚀✨</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/axios/axios/main/">
+                    <strong>axios/axios</strong>
+                    <p>Promise based HTTP client for the browser and node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trekhleb/javascript-algorithms/master/">
+                    <strong>trekhleb/javascript-algorithms</strong>
+                    <p>📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/next.js/main/">
+                    <strong>vercel/next.js</strong>
+                    <p>The React Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mui/material-ui/master/">
+                    <strong>mui/material-ui</strong>
+                    <p>Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/create-react-app/main/">
+                    <strong>facebook/create-react-app</strong>
+                    <p>Set up a modern web app by running one command.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mrdoob/three.js/dev/">
+                    <strong>mrdoob/three.js</strong>
+                    <p>JavaScript 3D Library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sveltejs/svelte/main/">
+                    <strong>sveltejs/svelte</strong>
+                    <p>web development for the rest of us</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jquery/jquery/main/">
+                    <strong>jquery/jquery</strong>
+                    <p>jQuery JavaScript Library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/h5bp/html5-boilerplate/main/">
+                    <strong>h5bp/html5-boilerplate</strong>
+                    <p>A professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FortAwesome/Font-Awesome/6.x/">
+                    <strong>FortAwesome/Font-Awesome</strong>
+                    <p>The iconic SVG, font, and CSS toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lodash/lodash/master/">
+                    <strong>lodash/lodash</strong>
+                    <p>A modern JavaScript utility library delivering modularity, performance, & extras.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/moment/moment/develop/">
+                    <strong>moment/moment</strong>
+                    <p>Parse, validate, manipulate, and display dates in javascript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/expressjs/express/master/">
+                    <strong>expressjs/express</strong>
+                    <p>Fast, unopinionated, minimalist web framework for node.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chartjs/Chart.js/master/">
+                    <strong>chartjs/Chart.js</strong>
+                    <p>Simple HTML5 Charts using the <canvas> tag</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prettier/prettier/main/">
+                    <strong>prettier/prettier</strong>
+                    <p>Prettier is an opinionated code formatter.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/webpack/webpack/main/">
+                    <strong>webpack/webpack</strong>
+                    <p>A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Automattic/mongoose/master/">
+                    <strong>Automattic/mongoose</strong>
+                    <p>MongoDB object modeling designed to work in an asynchronous environment.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/airbnb/lottie-web/master/">
+                    <strong>airbnb/lottie-web</strong>
+                    <p>Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fastify/fastify/main/">
+                    <strong>fastify/fastify</strong>
+                    <p>Fast and low overhead web framework, for Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ramda/ramda/master/">
+                    <strong>ramda/ramda</strong>
+                    <p>:ram: Practical functional Javascript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/immerjs/immer/main/">
+                    <strong>immerjs/immer</strong>
+                    <p>Create the next immutable state by mutating the current one</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/testing-library/react-testing-library/main/">
+                    <strong>testing-library/react-testing-library</strong>
+                    <p>🐐 Simple and complete React DOM testing utilities that encourage good testing practices.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/Web-Dev-For-Beginners/main/">
+                    <strong>microsoft/Web-Dev-For-Beginners</strong>
+                    <p>24 Lessons, 12 Weeks, Get Started as a Web Developer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/hermes/main/">
+                    <strong>facebook/hermes</strong>
+                    <p>A JavaScript engine optimized for running React Native.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ipfs/js-ipfs/master/">
+                    <strong>ipfs/js-ipfs</strong>
+                    <p>IPFS implementation in JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tailwindlabs/heroicons/master/">
+                    <strong>tailwindlabs/heroicons</strong>
+                    <p>A set of free MIT-licensed high-quality SVG icons for UI development.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent/wepy/master/">
+                    <strong>Tencent/wepy</strong>
+                    <p>小程序组件化开发框架</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mmazzarolo/react-native-modal-datetime-picker/master/">
+                    <strong>mmazzarolo/react-native-modal-datetime-picker</strong>
+                    <p>A React-Native datetime-picker for Android and iOS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-native-picker/picker/master/">
+                    <strong>react-native-picker/picker</strong>
+                    <p>Picker is a cross-platform UI component for selecting an item from a list of options.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rabbitmq/rabbitmq-server/main/">
+                    <strong>rabbitmq/rabbitmq-server</strong>
+                    <p>Open source RabbitMQ: core server and tier 1 (built-in) plugins</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/atom/atom/master/">
+                    <strong>atom/atom</strong>
+                    <p>:atom: The hackable text editor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/brackets-cont/brackets/master/">
+                    <strong>brackets-cont/brackets</strong>
+                    <p>An open source code editor for the web, written in JavaScript, HTML and CSS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/plotly/plotly.js/master/">
+                    <strong>plotly/plotly.js</strong>
+                    <p>Open-source JavaScript charting library behind Plotly and Dash</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/koajs/koa/master/">
+                    <strong>koajs/koa</strong>
+                    <p>Expressive middleware for node.js using ES2017 async functions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hapijs/hapi/main/">
+                    <strong>hapijs/hapi</strong>
+                    <p>The Simple, Secure Framework Developers Trust</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/graphql/dataloader/main/">
+                    <strong>graphql/dataloader</strong>
+                    <p>DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/pkg/main/">
+                    <strong>vercel/pkg</strong>
+                    <p>Package your Node.js project into an executable</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/emotion-js/emotion/main/">
+                    <strong>emotion-js/emotion</strong>
+                    <p>👩‍🎤 CSS-in-JS library designed for high performance style composition</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pmndrs/drei/master/">
+                    <strong>pmndrs/drei</strong>
+                    <p>🥉 useful helpers for react-three-fiber</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/redux-saga/redux-saga/master/">
+                    <strong>redux-saga/redux-saga</strong>
+                    <p>An alternative side effect model for Redux apps</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/validatorjs/validator.js/master/">
+                    <strong>validatorjs/validator.js</strong>
+                    <p>String validation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/auth0/node-jsonwebtoken/master/">
+                    <strong>auth0/node-jsonwebtoken</strong>
+                    <p>JsonWebToken implementation for node.js http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tj/commander.js/master/">
+                    <strong>tj/commander.js</strong>
+                    <p>node.js command-line interfaces made easy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yargs/yargs/main/">
+                    <strong>yargs/yargs</strong>
+                    <p> yargs the modern, pirate-themed successor to optimist.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chalk/chalk/main/">
+                    <strong>chalk/chalk</strong>
+                    <p>🖍 Terminal string styling done right</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shelljs/shelljs/master/">
+                    <strong>shelljs/shelljs</strong>
+                    <p>:shell: Portable Unix shell commands for Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/node-fetch/node-fetch/main/">
+                    <strong>node-fetch/node-fetch</strong>
+                    <p>A light-weight module that brings the Fetch API to Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nodemailer/nodemailer/master/">
+                    <strong>nodemailer/nodemailer</strong>
+                    <p>✉️ Send e-mails with Node.JS – easy as cake!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jsdom/jsdom/main/">
+                    <strong>jsdom/jsdom</strong>
+                    <p>A JavaScript implementation of various web standards, for use with Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/eslint/eslint/main/">
+                    <strong>eslint/eslint</strong>
+                    <p>Find and fix problems in your JavaScript code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/standard/standard/master/">
+                    <strong>standard/standard</strong>
+                    <p>🌟 JavaScript Style Guide, with linter & automatic code fixer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prettier/eslint-plugin-prettier/main/">
+                    <strong>prettier/eslint-plugin-prettier</strong>
+                    <p>ESLint plugin for Prettier formatting</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prettier/eslint-config-prettier/main/">
+                    <strong>prettier/eslint-config-prettier</strong>
+                    <p>Turns off all rules that are unnecessary or might conflict with Prettier.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stylelint/stylelint/main/">
+                    <strong>stylelint/stylelint</strong>
+                    <p>A mighty CSS linter that helps you avoid errors and enforce conventions.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/webpack-contrib/terser-webpack-plugin/master/">
+                    <strong>webpack-contrib/terser-webpack-plugin</strong>
+                    <p>Terser Plugin</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/webpack-contrib/css-loader/master/">
+                    <strong>webpack-contrib/css-loader</strong>
+                    <p>CSS Loader</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/webpack-contrib/style-loader/master/">
+                    <strong>webpack-contrib/style-loader</strong>
+                    <p>Style Loader</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/webpack/webpack-dev-server/master/">
+                    <strong>webpack/webpack-dev-server</strong>
+                    <p>Serves a webpack app. Updates the browser on changes. Documentation https://webpack.js.org/configuration/dev-server/.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/babel/babel-loader/main/">
+                    <strong>babel/babel-loader</strong>
+                    <p>📦 Babel loader for webpack</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/babel/babel-preset-env/main/">
+                    <strong>babel/babel-preset-env</strong>
+                    <p>PSA: this repo has been moved into babel/babel --></p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rollup/rollup/master/">
+                    <strong>rollup/rollup</strong>
+                    <p>Next-generation ES module bundler</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/parcel-bundler/parcel/v2/">
+                    <strong>parcel-bundler/parcel</strong>
+                    <p>The zero configuration build tool for the web. 📦🚀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yarnpkg/yarn/master/">
+                    <strong>yarnpkg/yarn</strong>
+                    <p>The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/npm/cli/latest/">
+                    <strong>npm/cli</strong>
+                    <p>the package manager for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/grpc/grpc-web/master/">
+                    <strong>grpc/grpc-web</strong>
+                    <p>gRPC for Web Clients</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/appium/appium/master/">
+                    <strong>appium/appium</strong>
+                    <p>Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/koodo-reader/koodo-reader/master/">
+                    <strong>koodo-reader/koodo-reader</strong>
+                    <p>A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gorhill/uBlock/master/">
+                    <strong>gorhill/uBlock</strong>
+                    <p>uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/photonstorm/phaser/master/">
+                    <strong>photonstorm/phaser</strong>
+                    <p>Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/melonjs/melonJS/master/">
+                    <strong>melonjs/melonJS</strong>
+                    <p>a fresh, modern & lightweight HTML5 game engine</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jamez-bondos/awesome-gpt4o-images/main/">
+                    <strong>jamez-bondos/awesome-gpt4o-images</strong>
+                    <p>Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1. Explore AI generated visuals created with ChatGPT and Sora, showcasing OpenAI’s advanced image generation capabilities.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/browserable/browserable/main/">
+                    <strong>browserable/browserable</strong>
+                    <p>Open source and self-hostable browser automation library for AI agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/juliangarnier/anime/master/">
+                    <strong>juliangarnier/anime</strong>
+                    <p>JavaScript animation engine</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/preactjs/preact/main/">
+                    <strong>preactjs/preact</strong>
+                    <p>⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jorgebucaran/hyperapp/main/">
+                    <strong>jorgebucaran/hyperapp</strong>
+                    <p>1kB-ish JavaScript framework for building hypertext applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jashkenas/backbone/master/">
+                    <strong>jashkenas/backbone</strong>
+                    <p>Give your JS App some Backbone with Models, Views, Collections, and Events</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/leonardomso/33-js-concepts/master/">
+                    <strong>leonardomso/33-js-concepts</strong>
+                    <p>📜 33 JavaScript concepts every developer should know.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/30-seconds/30-seconds-of-code/master/">
+                    <strong>30-seconds/30-seconds-of-code</strong>
+                    <p>Coding articles to level up your development skills</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ryanmcdermott/clean-code-javascript/main/">
+                    <strong>ryanmcdermott/clean-code-javascript</strong>
+                    <p>Clean Code concepts adapted for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent/cherry-markdown/main/">
+                    <strong>Tencent/cherry-markdown</strong>
+                    <p>✨ A Markdown Editor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/meteor/meteor/devel/">
+                    <strong>meteor/meteor</strong>
+                    <p>Meteor, the JavaScript App Platform</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jgraph/drawio/dev/">
+                    <strong>jgraph/drawio</strong>
+                    <p>draw.io is a JavaScript, client-side editor for general diagramming.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/quasarframework/quasar/dev/">
+                    <strong>quasarframework/quasar</strong>
+                    <p>Quasar Framework - Build high-performance VueJS user interfaces in record time</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/stylex/main/">
+                    <strong>facebook/stylex</strong>
+                    <p>StyleX is the styling system for ambitious user interfaces.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gluon-framework/gluon/main/">
+                    <strong>gluon-framework/gluon</strong>
+                    <p>A new framework for creating desktop apps from websites, using system installed browsers and NodeJS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/serverless/serverless/main/">
+                    <strong>serverless/serverless</strong>
+                    <p>⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MichMich/MagicMirror/master/">
+                    <strong>MichMich/MagicMirror</strong>
+                    <p>MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/marktext/marktext/master/">
+                    <strong>marktext/marktext</strong>
+                    <p>📝A simple and elegant markdown editor, available for Linux, macOS and Windows.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TryGhost/Ghost/main/">
+                    <strong>TryGhost/Ghost</strong>
+                    <p>Independent technology for modern publishing, memberships, subscriptions and newsletters.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/resume/resume.github.com/master/">
+                    <strong>resume/resume.github.com</strong>
+                    <p>Resumes generated using the GitHub informations</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Semantic-Org/Semantic-UI/master/">
+                    <strong>Semantic-Org/Semantic-UI</strong>
+                    <p>Semantic is a UI component framework based around useful principles from natural language.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kautukkundan/Awesome-Profile-README-templates/master/">
+                    <strong>kautukkundan/Awesome-Profile-README-templates</strong>
+                    <p>A collection of awesome readme templates to display on your profile</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SortableJS/Sortable/master/">
+                    <strong>SortableJS/Sortable</strong>
+                    <p>Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nolimits4web/swiper/master/">
+                    <strong>nolimits4web/swiper</strong>
+                    <p>Most modern mobile touch slider with hardware accelerated transitions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hakimel/reveal.js/master/">
+                    <strong>hakimel/reveal.js</strong>
+                    <p>The HTML Presentation Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/typicode/json-server/master/">
+                    <strong>typicode/json-server</strong>
+                    <p>Get a full fake REST API with zero coding in less than 30 seconds (seriously)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/videojs/video.js/main/">
+                    <strong>videojs/video.js</strong>
+                    <p>Video.js - open source HTML5 video player</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aosabook/500lines/master/">
+                    <strong>aosabook/500lines</strong>
+                    <p>500 Lines or Less</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/atomiks/tippyjs/v6/">
+                    <strong>atomiks/tippyjs</strong>
+                    <p>Tooltip, popover, dropdown, and menu library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gulpjs/gulp/master/">
+                    <strong>gulpjs/gulp</strong>
+                    <p>A toolkit to automate & enhance your workflow</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/websockets/ws/master/">
+                    <strong>websockets/ws</strong>
+                    <p>Simple to use, blazing fast and thoroughly tested WebSocket client and server for Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mochajs/mocha/master/">
+                    <strong>mochajs/mocha</strong>
+                    <p>☕️ Classic, reliable, trusted test framework for Node.js and the browser</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Leaflet/Leaflet/main/">
+                    <strong>Leaflet/Leaflet</strong>
+                    <p>🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aframevr/aframe/master/">
+                    <strong>aframevr/aframe</strong>
+                    <p>:a: Web framework for building virtual reality experiences.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hammerjs/hammer.js/master/">
+                    <strong>hammerjs/hammer.js</strong>
+                    <p>A javascript library for multi-touch gestures :// You can touch this</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/select2/select2/develop/">
+                    <strong>select2/select2</strong>
+                    <p>Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jasmine/jasmine/main/">
+                    <strong>jasmine/jasmine</strong>
+                    <p>Simple JavaScript testing framework for browsers and node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pugjs/pug/master/">
+                    <strong>pugjs/pug</strong>
+                    <p>Pug – robust, elegant, feature rich template engine for Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/less/less.js/master/">
+                    <strong>less/less.js</strong>
+                    <p>Less. The dynamic stylesheet language.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/requirejs/requirejs/master/">
+                    <strong>requirejs/requirejs</strong>
+                    <p>A file and module loader for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CodeSeven/toastr/master/">
+                    <strong>CodeSeven/toastr</strong>
+                    <p>Simple javascript toast notifications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sweetalert2/sweetalert2/main/">
+                    <strong>sweetalert2/sweetalert2</strong>
+                    <p>✨ A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies. 🇺🇦🇪🇺</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jquery-validation/jquery-validation/master/">
+                    <strong>jquery-validation/jquery-validation</strong>
+                    <p>jQuery Validation Plugin library sources</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jquery/jquery-ui/main/">
+                    <strong>jquery/jquery-ui</strong>
+                    <p>The official jQuery user interface library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paperjs/paper.js/develop/">
+                    <strong>paperjs/paper.js</strong>
+                    <p>The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HubSpot/messenger/master/">
+                    <strong>HubSpot/messenger</strong>
+                    <p>Growl-style alerts and messages for your app. #hubspot-open-source</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nightwatchjs/nightwatch/main/">
+                    <strong>nightwatchjs/nightwatch</strong>
+                    <p>Integrated end-to-end testing framework written in Node.js and using W3C Webdriver API. Developed at @browserstack</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/brunch/brunch/master/">
+                    <strong>brunch/brunch</strong>
+                    <p>🍴 Web applications made easy. Since 2011.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/zx/main/">
+                    <strong>google/zx</strong>
+                    <p>A tool for writing better scripts</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/brianc/node-postgres/master/">
+                    <strong>brianc/node-postgres</strong>
+                    <p>PostgreSQL client for node.js.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mysqljs/mysql/master/">
+                    <strong>mysqljs/mysql</strong>
+                    <p>A pure node.js JavaScript Client implementing the MySQL protocol.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yearn/yearn-finance/master/">
+                    <strong>yearn/yearn-finance</strong>
+                    <p>🏦 yearn v2 web interface</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LedgerHQ/ledger-live/develop/">
+                    <strong>LedgerHQ/ledger-live</strong>
+                    <p>Mono-repository for packages related to Ledger Live and its JavaScript ecosystem.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dappuniversity/starter_kit/master/">
+                    <strong>dappuniversity/starter_kit</strong>
+                    <p>Start building full stack dApps fast with this starter kit!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Synthetixio/synthetix/develop/">
+                    <strong>Synthetixio/synthetix</strong>
+                    <p>Synthetix Solidity smart contracts</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/web3-storage/web3.storage/main/">
+                    <strong>web3-storage/web3.storage</strong>
+                    <p>DEPRECATED ⁂ The simple file storage service for IPFS & Filecoin</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/azl397985856/leetcode/master/">
+                    <strong>azl397985856/leetcode</strong>
+                    <p>LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LeCoupa/awesome-cheatsheets/master/">
+                    <strong>LeCoupa/awesome-cheatsheets</strong>
+                    <p>👩‍💻👨‍💻 Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jaywcjlove/awesome-mac/master/">
+                    <strong>jaywcjlove/awesome-mac</strong>
+                    <p> Now we have become very big, Different from the original idea. Collect premium software in various categories.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/udacity/reactnd-contacts-server/master/">
+                    <strong>udacity/reactnd-contacts-server</strong>
+                    <p>The backend server for the in-class Contacts project.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/poteto/hiring-without-whiteboards/master/">
+                    <strong>poteto/hiring-without-whiteboards</strong>
+                    <p>⭐️  Companies that don't have a broken hiring process</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PeGasUsCHAkra/mevbot/main/">
+                    <strong>PeGasUsCHAkra/mevbot</strong>
+                    <p>Ethereum Bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dgreenheck/webgpu-claude-skill/main/">
+                    <strong>dgreenheck/webgpu-claude-skill</strong>
+                    <p>A Claude skill for developing WebGPU applications with Three.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shanselman/cert-inspector/master/">
+                    <strong>shanselman/cert-inspector</strong>
+                    <p>🔒 Web tool to inspect SSL certificates and DNS for all domains in a webpage's request tree. Captures full network footprint via headless browser.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/karanb192/claude-code-hooks/main/">
+                    <strong>karanb192/claude-code-hooks</strong>
+                    <p>🪝 A growing collection of useful Claude Code hooks. Copy, paste, customize.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mrdoob/three-quake/main/">
+                    <strong>mrdoob/three-quake</strong>
+                    <p>A port of Quake (1996) to Three.js.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AlexAnys/feishu-openclaw/main/">
+                    <strong>AlexAnys/feishu-openclaw</strong>
+                    <p>Connect 飞书Feishu/Lark bot to openclaw (formerly Clawdbot) — no public server, no domain, no ngrok needed. 稳定免安装、共需5 分钟</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cporter202/video-scraping-apis/main/">
+                    <strong>cporter202/video-scraping-apis</strong>
+                    <p>A collection of APIs for scraping video metadata, engagement stats, and public video data across multiple platforms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FrondEnt/PolymarketBTC15mAssistant/main/">
+                    <strong>FrondEnt/PolymarketBTC15mAssistant</strong>
+                    <p>Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekis</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/imxv/Pretty-mermaid-skills/main/">
+                    <strong>imxv/Pretty-mermaid-skills</strong>
+                    <p>To provide AI with Mermaid chart rendering capability, supporting both SVG and ASCII output formats</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vibe-music/vibe-music-web/main/">
+                    <strong>vibe-music/vibe-music-web</strong>
+                    <p>Open-source cloud music player with a bring-your-own-music model. Local control, optional sync, zero platform dependency.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hzm0321/real-time-fund/main/">
+                    <strong>hzm0321/real-time-fund</strong>
+                    <p>基金实时估值查看</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dwzhu-pku/PaperBanana/main/">
+                    <strong>dwzhu-pku/PaperBanana</strong>
+                    <p>PaperBanana: Automating Academic Illustration For AI Scientists</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Haleclipse/CodexDesktop-Rebuild/master/">
+                    <strong>Haleclipse/CodexDesktop-Rebuild</strong>
+                    <p>Codex Desktop App - Cross-platform Rebuild</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/accius/openhamclock/main/">
+                    <strong>accius/openhamclock</strong>
+                    <p>The original HamClock will cease to function in June 2026. OpenHamClock aims to carry on Elwood's legacy with a modern, open-source implementation that the community can maintain and improve together.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Vasco0x4/AIDA/main/">
+                    <strong>Vasco0x4/AIDA</strong>
+                    <p>AI-Driven Security Assessment - Connect AI to 400+ pentesting tools via MCP</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rohitg00/pro-workflow/main/">
+                    <strong>rohitg00/pro-workflow</strong>
+                    <p>Battle-tested Claude Code workflows from power users. Self-correcting memory, parallel worktrees, wrap-up rituals, and the 80/20 AI coding ratio.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fspecii/ace-step-ui/main/">
+                    <strong>fspecii/ace-step-ui</strong>
+                    <p>🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 AI Music Generation. Free, local, unlimited. Stop paying for Suno!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tonyqinatcmu/SlideBot-AI/main/">
+                    <strong>tonyqinatcmu/SlideBot-AI</strong>
+                    <p>🎨 SlideBot AI - AI-Powered Presentation Generator</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/elder-plinius/GLOSSOPETRAE/main/">
+                    <strong>elder-plinius/GLOSSOPETRAE</strong>
+                    <p>LINGUISTIC ENGINE FOR AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Lucent-Snow/style-extractor/main/">
+                    <strong>Lucent-Snow/style-extractor</strong>
+                    <p>一个能够提取最大化提取网页风格的skill</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/delbaoliveira/learn-claude-code/main/">
+                    <strong>delbaoliveira/learn-claude-code</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Ye-Yu-Mo/FundVal-Live/main/">
+                    <strong>Ye-Yu-Mo/FundVal-Live</strong>
+                    <p>盘中基金估值，实时估值，基金净值</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rohitg00/awesome-claude-code-toolkit/main/">
+                    <strong>rohitg00/awesome-claude-code-toolkit</strong>
+                    <p>The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+15,000 via SkillKit), 42 commands, 120 plugins, 19 hooks, 15 rules, 7 templates, 6 MCP configs, and more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Specia1z/AWS-BuildID-Auto-For-Ext/main/">
+                    <strong>Specia1z/AWS-BuildID-Auto-For-Ext</strong>
+                    <p>⚡ 一键自动化注册 AWS Builder ID 的浏览器扩展</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/krajekisbtc/PolymarketBTC15mAssistant/main/">
+                    <strong>krajekisbtc/PolymarketBTC15mAssistant</strong>
+                    <p>Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekisbtc</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mdp/linkedin-extension-fingerprinting/main/">
+                    <strong>mdp/linkedin-extension-fingerprinting</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/africa1207/AWS-BuildID-Auto-For-Ext/main/">
+                    <strong>africa1207/AWS-BuildID-Auto-For-Ext</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jlia0/tinyclaw/main/">
+                    <strong>jlia0/tinyclaw</strong>
+                    <p>TinyClaw is a tiny wrapper of Claude Code that acts as your 24/7 personal assistant</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wiedymi/restty/main/">
+                    <strong>wiedymi/restty</strong>
+                    <p>Powerful, lightweight web terminal. Batteries included. Powered by libghostty-vt, WebGPU, and text-shaper.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/linguo2625469/qq-farm-bot/main/">
+                    <strong>linguo2625469/qq-farm-bot</strong>
+                    <p>基于 Node.js 的 QQ 经典农场小程序自动化挂机脚本。通过分析小程序 WebSocket 通信协议（Protocol Buffers），实现全自动农场管理。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/oneclaw/oneclaw/main/">
+                    <strong>oneclaw/oneclaw</strong>
+                    <p>OneClaw</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fabriciotrinndade/ats-resume-generator-html/main/">
+                    <strong>fabriciotrinndade/ats-resume-generator-html</strong>
+                    <p>Generate ATS-friendly resumes using structured JSON and HTML</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/by-sonic/unblock-pro/main/">
+                    <strong>by-sonic/unblock-pro</strong>
+                    <p>Обход блокировок Discord и YouTube — автоматический DPI bypass для macOS и Windows | Unblock Discord & YouTube in Russia</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Karmacoke/chargen/main/">
+                    <strong>Karmacoke/chargen</strong>
+                    <p>AI-powered character generator built with React. Create detailed TRPG/Novel characters, NPC system prompts, and visual tags using Gemini, OpenAI, or Local LLMs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ComposioHQ/secure-openclaw/master/">
+                    <strong>ComposioHQ/secure-openclaw</strong>
+                    <p>A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iamzifei/bookmark-is-learned/main/">
+                    <strong>iamzifei/bookmark-is-learned</strong>
+                    <p>收藏到就是学到，解决光收藏不看的问题。收藏的当下立刻学习或者丢弃</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xvhuan/xiaoi/main/">
+                    <strong>xvhuan/xiaoi</strong>
+                    <p>小爱音箱语音通知工具：提供 CLI/TUI/MCP/Webhook 一键播报与控制音量，支持 PM2 常驻部署，支持docker部署。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iltekin/remove-local-temu/main/">
+                    <strong>iltekin/remove-local-temu</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/requestsession/IndexGPT/main/">
+                    <strong>requestsession/IndexGPT</strong>
+                    <p>IndexGPT: 本地科研助手（RAG + SFT + LoRA）| Local research assistant for PDF parsing, retrieval QA, SFT data generation, and LoRA training.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/andyhuo520/openclaw-assistant-mvp/main/">
+                    <strong>andyhuo520/openclaw-assistant-mvp</strong>
+                    <p>OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/marswei/seaseed-clawerse/main/">
+                    <strong>marswei/seaseed-clawerse</strong>
+                    <p>Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/andyhuo520/rf-detr-detection/main/">
+                    <strong>andyhuo520/rf-detr-detection</strong>
+                    <p>基于 RF-DETR 的浏览器端实时目标检测应用</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/khalildh/garment-notation/main/">
+                    <strong>khalildh/garment-notation</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yeuxuan/openclaw-docs/main/">
+                    <strong>yeuxuan/openclaw-docs</strong>
+                    <p>openclaw 剖析、拆解、教程在线文档</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dimartarmizi/map-to-poster/main/">
+                    <strong>dimartarmizi/map-to-poster</strong>
+                    <p>MapToPoster JS is a client-side web app that turns any location into a high-resolution, customizable map poster with various themes, layouts, and export options.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vikasprogrammer/walkie/main/">
+                    <strong>vikasprogrammer/walkie</strong>
+                    <p>P2P communication for AI agents. No server. No setup. Just talk.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/userland-run/nano/main/">
+                    <strong>userland-run/nano</strong>
+                    <p>nano — Run real Node.js and other statically linked Linux binaries directly in the browser via a tiny RISC-V user-mode Linux interpreter compiled to WebAssembly. No containers. No servers. Pure client-side execution.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vava-nessa/free-coding-models/main/">
+                    <strong>vava-nessa/free-coding-models</strong>
+                    <p>No description available.</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best TypeScript Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>TypeScript Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/freeCodeCamp/freeCodeCamp/main/">
+                    <strong>freeCodeCamp/freeCodeCamp</strong>
+                    <p>freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vuejs/vue/main/">
+                    <strong>vuejs/vue</strong>
+                    <p>This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/vscode/main/">
+                    <strong>microsoft/vscode</strong>
+                    <p>Visual Studio Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kamranahmedse/developer-roadmap/master/">
+                    <strong>kamranahmedse/developer-roadmap</strong>
+                    <p>Interactive roadmaps, guides and other educational content to help developers grow in their careers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/TypeScript/main/">
+                    <strong>microsoft/TypeScript</strong>
+                    <p>TypeScript is a superset of JavaScript that compiles to clean JavaScript output.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DefinitelyTyped/DefinitelyTyped/master/">
+                    <strong>DefinitelyTyped/DefinitelyTyped</strong>
+                    <p>The repository for high quality TypeScript type definitions.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/angular/angular/main/">
+                    <strong>angular/angular</strong>
+                    <p>Deliver web apps with confidence 🚀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/storybookjs/storybook/next/">
+                    <strong>storybookjs/storybook</strong>
+                    <p>Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ant-design/ant-design/master/">
+                    <strong>ant-design/ant-design</strong>
+                    <p>An enterprise-class UI design language and React UI library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tailwindcss/tailwindcss/master/">
+                    <strong>tailwindcss/tailwindcss</strong>
+                    <p>A utility-first CSS framework for rapid UI development.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nestjs/nest/master/">
+                    <strong>nestjs/nest</strong>
+                    <p>A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/babel/babel/main/">
+                    <strong>babel/babel</strong>
+                    <p>🐠 Babel is a compiler for writing next generation JavaScript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/socketio/socket.io/main/">
+                    <strong>socketio/socket.io</strong>
+                    <p>Realtime application framework (Node.JS server)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/grafana/grafana/main/">
+                    <strong>grafana/grafana</strong>
+                    <p>The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reduxjs/redux/master/">
+                    <strong>reduxjs/redux</strong>
+                    <p>A JS library for predictable global state management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nuxt/nuxt/main/">
+                    <strong>nuxt/nuxt</strong>
+                    <p>The Full-Stack Vue Framework.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/remix-run/remix/main/">
+                    <strong>remix-run/remix</strong>
+                    <p>Build Better Websites. Create modern, resilient user experiences with web fundamentals.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/solidjs/solid/main/">
+                    <strong>solidjs/solid</strong>
+                    <p>A declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/payloadcms/payload/main/">
+                    <strong>payloadcms/payload</strong>
+                    <p>Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/strapi/strapi/main/">
+                    <strong>strapi/strapi</strong>
+                    <p>🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/supabase/supabase/master/">
+                    <strong>supabase/supabase</strong>
+                    <p>The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/date-fns/date-fns/main/">
+                    <strong>date-fns/date-fns</strong>
+                    <p>⏳ Modern JavaScript date utility library ⌛️</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/colinhacks/zod/master/">
+                    <strong>colinhacks/zod</strong>
+                    <p>TypeScript-first schema validation with static type inference</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/playwright/main/">
+                    <strong>microsoft/playwright</strong>
+                    <p>Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/jest/main/">
+                    <strong>facebook/jest</strong>
+                    <p>Delightful JavaScript Testing.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vitejs/vite/main/">
+                    <strong>vitejs/vite</strong>
+                    <p>Next generation frontend tooling. It's fast!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MetaMask/metamask-extension/develop/">
+                    <strong>MetaMask/metamask-extension</strong>
+                    <p>:globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prisma/prisma/main/">
+                    <strong>prisma/prisma</strong>
+                    <p>Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/echarts/master/">
+                    <strong>apache/echarts</strong>
+                    <p>Apache ECharts is a powerful, interactive charting and data visualization library for browser</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vuetifyjs/vuetify/master/">
+                    <strong>vuetifyjs/vuetify</strong>
+                    <p>🐉 Vue Component Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/element-plus/element-plus/dev/">
+                    <strong>element-plus/element-plus</strong>
+                    <p>🎉 A Vue.js 3 UI Library made by Element team</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apollographql/apollo-client/main/">
+                    <strong>apollographql/apollo-client</strong>
+                    <p>The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/graphql/graphql-js/main/">
+                    <strong>graphql/graphql-js</strong>
+                    <p>A reference implementation of GraphQL for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apollographql/apollo-server/main/">
+                    <strong>apollographql/apollo-server</strong>
+                    <p>🌍  Spec-compliant and production ready JavaScript GraphQL server that lets you develop in a schema-first way. Built for Express, Connect, Hapi, Koa, and more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/typeorm/typeorm/master/">
+                    <strong>typeorm/typeorm</strong>
+                    <p>ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sequelize/sequelize/main/">
+                    <strong>sequelize/sequelize</strong>
+                    <p>Feature-rich ORM for modern Node.js and TypeScript, it supports PostgreSQL (with JSON and JSONB support), MySQL, MariaDB, SQLite, MS SQL Server, Snowflake, Oracle DB (v6), DB2 and DB2 for IBM i.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/docusaurus/main/">
+                    <strong>facebook/docusaurus</strong>
+                    <p>Easy to maintain open source documentation websites.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mattermost/mattermost-server/master/">
+                    <strong>mattermost/mattermost-server</strong>
+                    <p>Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/polkadot-js/apps/master/">
+                    <strong>polkadot-js/apps</strong>
+                    <p>Basic Polkadot/Substrate UI for interacting with a Polkadot and Substrate node. This is the main user-facing application, allowing access to all features available on Substrate chains.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trufflesuite/truffle/develop/">
+                    <strong>trufflesuite/truffle</strong>
+                    <p>:warning: The Truffle Suite is being sunset. For information on ongoing support, migration options and FAQs, visit the Consensys blog. Thank you for all the support over the years.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NomicFoundation/hardhat/master/">
+                    <strong>NomicFoundation/hardhat</strong>
+                    <p>Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ChainSafe/lodestar/stable/">
+                    <strong>ChainSafe/lodestar</strong>
+                    <p>🌟 Ethereum Consensus client for the Zig and TypeScript ecosystem</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ethereumjs/ethereumjs-monorepo/master/">
+                    <strong>ethereumjs/ethereumjs-monorepo</strong>
+                    <p>Ethereum L1 Protocol Stack and EVM in TypeScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ethers-io/ethers.js/main/">
+                    <strong>ethers-io/ethers.js</strong>
+                    <p>Complete Ethereum library and wallet implementation in JavaScript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/web3/web3.js/1.x/">
+                    <strong>web3/web3.js</strong>
+                    <p>Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wagmi-dev/wagmi/main/">
+                    <strong>wagmi-dev/wagmi</strong>
+                    <p>Reactive primitives for Ethereum apps</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/WalletConnect/walletconnect-monorepo/v2.0/">
+                    <strong>WalletConnect/walletconnect-monorepo</strong>
+                    <p>WalletConnect Monorepo </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Uniswap/v3-core/main/">
+                    <strong>Uniswap/v3-core</strong>
+                    <p>🦄 🦄 🦄 Core smart contracts of Uniswap v3</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Uniswap/v2-core/master/">
+                    <strong>Uniswap/v2-core</strong>
+                    <p>🦄 🦄  Core smart contracts of Uniswap V2</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Uniswap/interface/main/">
+                    <strong>Uniswap/interface</strong>
+                    <p>🦄 Open source interfaces for the Uniswap protocol</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aave/aave-v3-core/master/">
+                    <strong>aave/aave-v3-core</strong>
+                    <p>This repository contains the core smart contracts of the Aave V3 protocol.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ensdomains/ens-contracts/master/">
+                    <strong>ensdomains/ens-contracts</strong>
+                    <p>The core contracts of the ENS protocol </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tailwindlabs/headlessui/main/">
+                    <strong>tailwindlabs/headlessui</strong>
+                    <p>Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shadcn-ui/ui/main/">
+                    <strong>shadcn-ui/ui</strong>
+                    <p>A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/radix-ui/primitives/main/">
+                    <strong>radix-ui/primitives</strong>
+                    <p>Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nextui-org/nextui/main/">
+                    <strong>nextui-org/nextui</strong>
+                    <p>🚀 Beautiful, fast and modern React UI library. (Previously NextUI)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chakra-ui/chakra-ui/main/">
+                    <strong>chakra-ui/chakra-ui</strong>
+                    <p>Chakra UI is a component system for building SaaS products with speed ⚡️</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mantinedev/mantine/master/">
+                    <strong>mantinedev/mantine</strong>
+                    <p>A fully featured React components library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/primefaces/primeng/master/">
+                    <strong>primefaces/primeng</strong>
+                    <p>The Most Complete Angular UI Component Library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ant-design/ant-design-pro/master/">
+                    <strong>ant-design/ant-design-pro</strong>
+                    <p>👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ant-design/ant-design-mobile/master/">
+                    <strong>ant-design/ant-design-mobile</strong>
+                    <p>Essential UI blocks for building mobile web apps.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/umijs/umi/master/">
+                    <strong>umijs/umi</strong>
+                    <p>A framework in react community ✨</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alibaba/ice/master/">
+                    <strong>alibaba/ice</strong>
+                    <p>🚀 ice.js: The Progressive App Framework Based On React（基于 React 的渐进式应用框架）</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent/omi/master/">
+                    <strong>Tencent/omi</strong>
+                    <p>Web Components Framework - Web组件框架</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent/tdesign-react/main/">
+                    <strong>Tencent/tdesign-react</strong>
+                    <p>A React UI components lib for TDesign.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Tencent/tdesign-vue-next/develop/">
+                    <strong>Tencent/tdesign-vue-next</strong>
+                    <p>A Vue3.x UI components lib for TDesign.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/fluentui/master/">
+                    <strong>microsoft/fluentui</strong>
+                    <p>Fluent UI web represents a collection of utilities, React components, and web components for building web applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/fast/master/">
+                    <strong>microsoft/fast</strong>
+                    <p>The adaptive interface system for modern web experiences.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/adobe/react-spectrum/main/">
+                    <strong>adobe/react-spectrum</strong>
+                    <p>A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/angular/components/main/">
+                    <strong>angular/components</strong>
+                    <p>Component infrastructure and Material Design components for Angular</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/angular/angular-cli/main/">
+                    <strong>angular/angular-cli</strong>
+                    <p>CLI tool for Angular</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ngrx/platform/main/">
+                    <strong>ngrx/platform</strong>
+                    <p>Reactive State for Angular</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ionic-team/ionic-framework/main/">
+                    <strong>ionic-team/ionic-framework</strong>
+                    <p>A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NativeScript/NativeScript/main/">
+                    <strong>NativeScript/NativeScript</strong>
+                    <p>⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love ❤️ Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Flutter and you name it compatible.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/expo/expo/main/">
+                    <strong>expo/expo</strong>
+                    <p>An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-navigation/react-navigation/main/">
+                    <strong>react-navigation/react-navigation</strong>
+                    <p>Routing and navigation for React Native and Web apps</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-native-maps/react-native-maps/master/">
+                    <strong>react-native-maps/react-native-maps</strong>
+                    <p>React Native Mapview component for iOS + Android</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-native-webview/react-native-webview/master/">
+                    <strong>react-native-webview/react-native-webview</strong>
+                    <p>React Native Cross-Platform WebView</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-native-async-storage/async-storage/main/">
+                    <strong>react-native-async-storage/async-storage</strong>
+                    <p>An asynchronous, persistent, key-value storage system for React Native.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/invertase/react-native-firebase/main/">
+                    <strong>invertase/react-native-firebase</strong>
+                    <p>🔥 A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/oblador/react-native-vector-icons/master/">
+                    <strong>oblador/react-native-vector-icons</strong>
+                    <p>Customizable Icons for React Native with support for image source and full styling.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/software-mansion/react-native-gesture-handler/main/">
+                    <strong>software-mansion/react-native-gesture-handler</strong>
+                    <p>Declarative API exposing platform native touch and gesture system to React Native.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/software-mansion/react-native-reanimated/main/">
+                    <strong>software-mansion/react-native-reanimated</strong>
+                    <p>React Native's Animated library reimplemented</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/software-mansion/react-native-screens/main/">
+                    <strong>software-mansion/react-native-screens</strong>
+                    <p>Native navigation primitives for your React Native app.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shopify/react-native-skia/main/">
+                    <strong>Shopify/react-native-skia</strong>
+                    <p>High-performance React Native Graphics using Skia</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shopify/flash-list/main/">
+                    <strong>Shopify/flash-list</strong>
+                    <p>A better list for React Native</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gorhom/react-native-bottom-sheet/master/">
+                    <strong>gorhom/react-native-bottom-sheet</strong>
+                    <p>A performant interactive bottom sheet with fully configurable options 🚀</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-native-device-info/react-native-device-info/master/">
+                    <strong>react-native-device-info/react-native-device-info</strong>
+                    <p>Device Information for React Native iOS and Android</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zoontek/react-native-bootsplash/master/">
+                    <strong>zoontek/react-native-bootsplash</strong>
+                    <p>🚀 Show a splash screen during app startup. Hide it when you are ready.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/hyper/main/">
+                    <strong>vercel/hyper</strong>
+                    <p>A terminal built on web technologies</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jupyterlab/jupyterlab/main/">
+                    <strong>jupyterlab/jupyterlab</strong>
+                    <p>JupyterLab computational environment.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bokeh/bokeh/branch-3.4/">
+                    <strong>bokeh/bokeh</strong>
+                    <p>Interactive Data Visualization in the browser, from  Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/getsentry/sentry-javascript/develop/">
+                    <strong>getsentry/sentry-javascript</strong>
+                    <p>Official Sentry SDKs for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/homebridge/homebridge/latest/">
+                    <strong>homebridge/homebridge</strong>
+                    <p>HomeKit support for the impatient.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Koenkk/zigbee2mqtt/master/">
+                    <strong>Koenkk/zigbee2mqtt</strong>
+                    <p>Zigbee 🐝 to MQTT bridge 🌉, get rid of your proprietary Zigbee bridges 🔨</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nocodb/nocodb/develop/">
+                    <strong>nocodb/nocodb</strong>
+                    <p>🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/RocketChat/Rocket.Chat/develop/">
+                    <strong>RocketChat/Rocket.Chat</strong>
+                    <p>The Secure CommsOS™ for mission-critical operations</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mermaid-js/mermaid/develop/">
+                    <strong>mermaid-js/mermaid</strong>
+                    <p>Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/refinedev/refine/master/">
+                    <strong>refinedev/refine</strong>
+                    <p>A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/immich-app/immich/main/">
+                    <strong>immich-app/immich</strong>
+                    <p>High performance self-hosted photo and video management solution.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/triggerdotdev/trigger.dev/main/">
+                    <strong>triggerdotdev/trigger.dev</strong>
+                    <p>Trigger.dev – build and deploy fully‑managed AI agents and workflows</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/winglang/wing/main/">
+                    <strong>winglang/wing</strong>
+                    <p>A programming language for the cloud ☁️ A unified programming model, combining infrastructure and runtime code into one language ⚡</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openobserve/openobserve/main/">
+                    <strong>openobserve/openobserve</strong>
+                    <p>Modern observability platform: 10x easier, 140x lower storage cost, petabyte scale. Open-source alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jae-jae/fetcher-mcp/main/">
+                    <strong>jae-jae/fetcher-mcp</strong>
+                    <p>MCP server for fetch web page content using Playwright headless browser.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/tensorboard/master/">
+                    <strong>tensorflow/tensorboard</strong>
+                    <p>TensorFlow's Visualization Toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/superset/master/">
+                    <strong>apache/superset</strong>
+                    <p>Apache Superset is a Data Visualization and Data Exploration Platform</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apollographql/graphql-subscriptions/main/">
+                    <strong>apollographql/graphql-subscriptions</strong>
+                    <p>:newspaper: A small module that implements GraphQL subscriptions for Node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prisma/graphql-yoga/main/">
+                    <strong>prisma/graphql-yoga</strong>
+                    <p>🧘 Rewrite of a fully-featured GraphQL Server with focus on easy setup, performance & great developer experience.  The core of Yoga implements WHATWG Fetch API and can run/deploy on any JS environment.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gothinkster/realworld/main/">
+                    <strong>gothinkster/realworld</strong>
+                    <p>"The mother of all demo apps" — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/serve/main/">
+                    <strong>vercel/serve</strong>
+                    <p>Static file serving and directory listing</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/swr/main/">
+                    <strong>vercel/swr</strong>
+                    <p>React Hooks for Data Fetching</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TanStack/query/main/">
+                    <strong>TanStack/query</strong>
+                    <p>🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TanStack/table/main/">
+                    <strong>TanStack/table</strong>
+                    <p>🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TanStack/router/main/">
+                    <strong>TanStack/router</strong>
+                    <p>🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more).</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/styled-components/styled-components/main/">
+                    <strong>styled-components/styled-components</strong>
+                    <p>Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pmndrs/zustand/main/">
+                    <strong>pmndrs/zustand</strong>
+                    <p>🐻 Bear necessities for state management in React</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pmndrs/jotai/main/">
+                    <strong>pmndrs/jotai</strong>
+                    <p>👻 Primitive and flexible state management for React</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pmndrs/react-three-fiber/master/">
+                    <strong>pmndrs/react-three-fiber</strong>
+                    <p>🇨🇭 A React renderer for Three.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reduxjs/reselect/master/">
+                    <strong>reduxjs/reselect</strong>
+                    <p>Selector library for Redux</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reduxjs/redux-thunk/master/">
+                    <strong>reduxjs/redux-thunk</strong>
+                    <p>Thunk middleware for Redux</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reduxjs/redux-toolkit/master/">
+                    <strong>reduxjs/redux-toolkit</strong>
+                    <p>The official, opinionated, batteries-included toolset for efficient Redux development</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/react-hook-form/react-hook-form/master/">
+                    <strong>react-hook-form/react-hook-form</strong>
+                    <p>📋 React Hooks for form state management and validation (Web + React Native)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/formik/formik/main/">
+                    <strong>formik/formik</strong>
+                    <p>Build forms in React, without the tears 😭 </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/faker-js/faker/main/">
+                    <strong>faker-js/faker</strong>
+                    <p>Generate massive amounts of fake data in the browser and node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uuidjs/uuid/main/">
+                    <strong>uuidjs/uuid</strong>
+                    <p>Generate RFC-compliant UUIDs in JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/puppeteer/puppeteer/main/">
+                    <strong>puppeteer/puppeteer</strong>
+                    <p>JavaScript API for Chrome and Firefox</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cheeriojs/cheerio/main/">
+                    <strong>cheeriojs/cheerio</strong>
+                    <p>The fast, flexible, and elegant library for parsing and manipulating HTML and XML.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lerna/lerna/main/">
+                    <strong>lerna/lerna</strong>
+                    <p>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nrwl/nx/master/">
+                    <strong>nrwl/nx</strong>
+                    <p>Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pnpm/pnpm/main/">
+                    <strong>pnpm/pnpm</strong>
+                    <p>Fast, disk space efficient package manager</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yarnpkg/berry/master/">
+                    <strong>yarnpkg/berry</strong>
+                    <p>📦🐈 Active development trunk for Yarn ⚒</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/open-telemetry/opentelemetry-js/main/">
+                    <strong>open-telemetry/opentelemetry-js</strong>
+                    <p>OpenTelemetry JavaScript Client</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/elastic/kibana/main/">
+                    <strong>elastic/kibana</strong>
+                    <p>Your window into all of your data</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/docs/main/">
+                    <strong>github/docs</strong>
+                    <p>The open-source repo for docs.github.com</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/checkout/main/">
+                    <strong>actions/checkout</strong>
+                    <p>Action for checking out a repo</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/setup-node/main/">
+                    <strong>actions/setup-node</strong>
+                    <p>Set up your GitHub Actions workflow with a specific version of node.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/setup-python/main/">
+                    <strong>actions/setup-python</strong>
+                    <p>Set up your GitHub Actions workflow with a specific version of Python</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/cache/main/">
+                    <strong>actions/cache</strong>
+                    <p>Cache dependencies and build outputs in GitHub Actions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/upload-artifact/main/">
+                    <strong>actions/upload-artifact</strong>
+                    <p>Upload artifacts from your workflow</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/actions/download-artifact/main/">
+                    <strong>actions/download-artifact</strong>
+                    <p>Download artifacts from your build</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/material-components/material-components-web/master/">
+                    <strong>material-components/material-components-web</strong>
+                    <p>Modular and customizable Material Design UI components for the web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PowerShell/vscode-powershell/main/">
+                    <strong>PowerShell/vscode-powershell</strong>
+                    <p>Provides PowerShell language and debugging support for Visual Studio Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ReactiveX/RxJS/master/">
+                    <strong>ReactiveX/RxJS</strong>
+                    <p>A reactive programming library for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cypress-io/cypress/develop/">
+                    <strong>cypress-io/cypress</strong>
+                    <p>Fast, easy and reliable testing for anything that runs in a browser.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/storybookjs/testing-react/main/">
+                    <strong>storybookjs/testing-react</strong>
+                    <p>Testing utilities that allow you to reuse your Storybook stories in your React unit tests!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/remotion-dev/remotion/main/">
+                    <strong>remotion-dev/remotion</strong>
+                    <p>🎥      Make videos programmatically with React</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/electron-userland/electron-builder/master/">
+                    <strong>electron-userland/electron-builder</strong>
+                    <p>A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/electron-userland/electron-forge/main/">
+                    <strong>electron-userland/electron-forge</strong>
+                    <p>:electron: A complete tool for building and publishing Electron applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nteract/nteract/master/">
+                    <strong>nteract/nteract</strong>
+                    <p>📘 The interactive computing suite for you!  ✨</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/standardnotes/app/main/">
+                    <strong>standardnotes/app</strong>
+                    <p>Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/signalapp/Signal-Desktop/main/">
+                    <strong>signalapp/Signal-Desktop</strong>
+                    <p>A private messenger for Windows, macOS, and Linux.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/element-hq/element-web/develop/">
+                    <strong>element-hq/element-web</strong>
+                    <p>A glossy Matrix collaboration client for the web.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/matrix-org/matrix-react-sdk/develop/">
+                    <strong>matrix-org/matrix-react-sdk</strong>
+                    <p>Matrix SDK for React Javascript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/matrix-org/matrix-js-sdk/develop/">
+                    <strong>matrix-org/matrix-js-sdk</strong>
+                    <p>Matrix Client-Server SDK for JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vector-im/hydrogen-web/master/">
+                    <strong>vector-im/hydrogen-web</strong>
+                    <p>Lightweight matrix client with legacy and mobile browser support</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bitwarden/clients/master/">
+                    <strong>bitwarden/clients</strong>
+                    <p>Bitwarden client apps (web, browser extension, desktop, and cli).</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BabylonJS/Babylon.js/master/">
+                    <strong>BabylonJS/Babylon.js</strong>
+                    <p>Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pixijs/pixijs/dev/">
+                    <strong>pixijs/pixijs</strong>
+                    <p>The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lobehub/lobe-chat/main/">
+                    <strong>lobehub/lobe-chat</strong>
+                    <p>🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/langgenius/dify/main/">
+                    <strong>langgenius/dify</strong>
+                    <p>Production-ready platform for agentic workflow development.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/n8n-io/n8n/master/">
+                    <strong>n8n-io/n8n</strong>
+                    <p>Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/activepieces/activepieces/main/">
+                    <strong>activepieces/activepieces</strong>
+                    <p>AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fuma-nama/fumadocs/main/">
+                    <strong>fuma-nama/fumadocs</strong>
+                    <p>The beautiful & flexible React.js docs framework.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Aidenybai/React-Scan/main/">
+                    <strong>Aidenybai/React-Scan</strong>
+                    <p>Scan for React performance issues and eliminate slow renders in your app</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/emberjs/ember.js/main/">
+                    <strong>emberjs/ember.js</strong>
+                    <p>Ember.js - A JavaScript framework for creating ambitious web applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/honojs/hono/main/">
+                    <strong>honojs/hono</strong>
+                    <p>Web framework built on Web Standards</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/leon-ai/leon/develop/">
+                    <strong>leon-ai/leon</strong>
+                    <p>🧠 Leon is your open-source personal assistant.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FlowiseAI/Flowise/main/">
+                    <strong>FlowiseAI/Flowise</strong>
+                    <p>Build AI Agents, Visually</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel/ai/main/">
+                    <strong>vercel/ai</strong>
+                    <p>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yangshun/tech-interview-handbook/master/">
+                    <strong>yangshun/tech-interview-handbook</strong>
+                    <p>Curated coding interview preparation materials for busy software engineers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/appwrite/appwrite/main/">
+                    <strong>appwrite/appwrite</strong>
+                    <p>Appwrite® - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vueuse/vueuse/main/">
+                    <strong>vueuse/vueuse</strong>
+                    <p>Collection of essential Vue Composition Utilities for Vue 3</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/slidevjs/slidev/main/">
+                    <strong>slidevjs/slidev</strong>
+                    <p>Presentation Slides for Developers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/quilljs/quill/develop/">
+                    <strong>quilljs/quill</strong>
+                    <p>Quill is a modern WYSIWYG editor built for compatibility and extensibility</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/directus/directus/main/">
+                    <strong>directus/directus</strong>
+                    <p>The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/amplication/amplication/master/">
+                    <strong>amplication/amplication</strong>
+                    <p>Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nhost/nhost/main/">
+                    <strong>nhost/nhost</strong>
+                    <p>The Open Source Firebase Alternative with GraphQL.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hasura/graphql-engine/master/">
+                    <strong>hasura/graphql-engine</strong>
+                    <p>Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/langchain-ai/langchainjs/main/">
+                    <strong>langchain-ai/langchainjs</strong>
+                    <p>🦜🔗 Build context-aware reasoning applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/excalidraw/excalidraw/master/">
+                    <strong>excalidraw/excalidraw</strong>
+                    <p>Virtual whiteboard for sketching hand-drawn like diagrams</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tldraw/tldraw/main/">
+                    <strong>tldraw/tldraw</strong>
+                    <p>very good whiteboard infinite canvas SDK</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/drizzle-team/drizzle-orm/main/">
+                    <strong>drizzle-team/drizzle-orm</strong>
+                    <p>ORM</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tamagui/tamagui/master/">
+                    <strong>tamagui/tamagui</strong>
+                    <p>Style React fast with 100% parity on React Native, an optional UI kit, and optimizing compiler.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ionic-team/capacitor/main/">
+                    <strong>ionic-team/capacitor</strong>
+                    <p>Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vitest-dev/vitest/main/">
+                    <strong>vitest-dev/vitest</strong>
+                    <p>Next generation testing framework powered by Vite.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nativefier/nativefier/development/">
+                    <strong>nativefier/nativefier</strong>
+                    <p>Make any web page a desktop application</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nanostores/nanostores/main/">
+                    <strong>nanostores/nanostores</strong>
+                    <p>A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jitsi/jitsi-meet/master/">
+                    <strong>jitsi/jitsi-meet</strong>
+                    <p>Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fabricjs/fabric.js/master/">
+                    <strong>fabricjs/fabric.js</strong>
+                    <p>Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sass/sass/main/">
+                    <strong>sass/sass</strong>
+                    <p>Sass makes CSS fun!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fullcalendar/fullcalendar/main/">
+                    <strong>fullcalendar/fullcalendar</strong>
+                    <p>Full-sized drag & drop event calendar in JavaScript</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/backstage/backstage/master/">
+                    <strong>backstage/backstage</strong>
+                    <p>Backstage is an open framework for building developer portals</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mui/mui-x/master/">
+                    <strong>mui/mui-x</strong>
+                    <p>MUI X: Build complex and data-rich applications using a growing list of advanced React components, like the Data Grid, Date and Time Pickers, Charts, and more!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aws/aws-cdk/main/">
+                    <strong>aws/aws-cdk</strong>
+                    <p>The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/portainer/portainer/develop/">
+                    <strong>portainer/portainer</strong>
+                    <p>Making Docker and Kubernetes management easy.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kysely-org/kysely/master/">
+                    <strong>kysely-org/kysely</strong>
+                    <p>A type-safe TypeScript SQL query builder</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/total-typescript/ts-reset/main/">
+                    <strong>total-typescript/ts-reset</strong>
+                    <p>A 'CSS reset' for TypeScript, improving types for common JavaScript API's</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/unjs/nitro/main/">
+                    <strong>unjs/nitro</strong>
+                    <p>Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/unjs/h3/main/">
+                    <strong>unjs/h3</strong>
+                    <p>⚡️ Minimal H(TTP) framework built for high performance and portability </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BuilderIO/qwik/main/">
+                    <strong>BuilderIO/qwik</strong>
+                    <p>Instant-loading web apps, without effort</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BuilderIO/mitosis/main/">
+                    <strong>BuilderIO/mitosis</strong>
+                    <p>Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelte, and more. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/solidjs-community/solid-primitives/main/">
+                    <strong>solidjs-community/solid-primitives</strong>
+                    <p>A library of high-quality primitives that extend SolidJS reactivity.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wagmi-dev/viem/main/">
+                    <strong>wagmi-dev/viem</strong>
+                    <p>TypeScript Interface for Ethereum</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/safe-global/safe-contracts/main/">
+                    <strong>safe-global/safe-contracts</strong>
+                    <p>Safe allows secure management of blockchain assets. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/compound-finance/compound-protocol/master/">
+                    <strong>compound-finance/compound-protocol</strong>
+                    <p>The Compound On-Chain Protocol</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/balancer/balancer-v2-monorepo/master/">
+                    <strong>balancer/balancer-v2-monorepo</strong>
+                    <p>Balancer V2 Monorepo</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FuelLabs/fuels-ts/master/">
+                    <strong>FuelLabs/fuels-ts</strong>
+                    <p>Fuel Network Typescript SDK</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sindresorhus/type-fest/main/">
+                    <strong>sindresorhus/type-fest</strong>
+                    <p>A collection of essential TypeScript types</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/unicodeveloper/globalthreatmap/main/">
+                    <strong>unicodeveloper/globalthreatmap</strong>
+                    <p>Global threat map. Learn wars, conflicts, military bases and history of nations. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/junaid-mahmood/nlsh/main/">
+                    <strong>junaid-mahmood/nlsh</strong>
+                    <p>Turn natural language to terminal commands</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/npmx-dev/npmx.dev/main/">
+                    <strong>npmx-dev/npmx.dev</strong>
+                    <p>a fast, modern browser for the npm registry</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trycua/launchpad/main/">
+                    <strong>trycua/launchpad</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/better-auth/better-icons/main/">
+                    <strong>better-auth/better-icons</strong>
+                    <p>Skill and MCP server for searching and retrieving icons</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fspecii/HeartMuLa-Studio/main/">
+                    <strong>fspecii/HeartMuLa-Studio</strong>
+                    <p>Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miantiao-me/cloud-code/master/">
+                    <strong>miantiao-me/cloud-code</strong>
+                    <p>Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill/main/">
+                    <strong>YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill</strong>
+                    <p>Claude Code / Cursor skill to recommend from 6000+ Nano Banana Pro image prompts.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wenqingyu/ralphy-openspec/main/">
+                    <strong>wenqingyu/ralphy-openspec</strong>
+                    <p>Ralph loop + OpenSpec integration for Cursor, OpenCode and ClaudeCode heavy lifting.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vueuse/skills/main/">
+                    <strong>vueuse/skills</strong>
+                    <p>Agent Skills for VueUse</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dashrobotco/robot-components/main/">
+                    <strong>dashrobotco/robot-components</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nyanko3141592/remotion-voicevox-template/master/">
+                    <strong>nyanko3141592/remotion-voicevox-template</strong>
+                    <p>Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DangJin/pdf2video/main/">
+                    <strong>DangJin/pdf2video</strong>
+                    <p>Transform PDF documents into engaging video presentations with smooth animations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TheCaspianAI/Caspian/main/">
+                    <strong>TheCaspianAI/Caspian</strong>
+                    <p>Caspian is a control plane for running multiple AI coding agents in parallel, using curated workflows that fit your team.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sndrec/WebMonkeyBall/main/">
+                    <strong>sndrec/WebMonkeyBall</strong>
+                    <p>Super Monkey Ball on Web Broser.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Anarkh-Lee/universal-db-mcp/main/">
+                    <strong>Anarkh-Lee/universal-db-mcp</strong>
+                    <p>MCP 数据库万能连接器：使用支持MCP服务协议的工具（例如：Claude Desktop、Cherry Studio等）直接连接你的数据库，用自然语言查询和分析数据</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/luccast/crabwalk/master/">
+                    <strong>luccast/crabwalk</strong>
+                    <p>🦀 Crabwalk 🦀 Real-time companion monitor for Clawdbot agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/m1heng/clawdbot-feishu/main/">
+                    <strong>m1heng/clawdbot-feishu</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nhevers/claude-recall/main/">
+                    <strong>nhevers/claude-recall</strong>
+                    <p>Long-term memory layer for Clawd & Claude Code that learns and recalls your project context automatically</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antfu/skills/main/">
+                    <strong>antfu/skills</strong>
+                    <p>Anthony Fu's curated collection of agent skills.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ColeMurray/background-agents/main/">
+                    <strong>ColeMurray/background-agents</strong>
+                    <p>An open-source background agent coding system</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HugoRCD/evlog/main/">
+                    <strong>HugoRCD/evlog</strong>
+                    <p>Logging that makes sense. Wide events, structured errors, zero chaos.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/coollabsio/jean/main/">
+                    <strong>coollabsio/jean</strong>
+                    <p>Run AI agents parallel in isolated workspaces.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Castor6/tactus/main/">
+                    <strong>Castor6/tactus</strong>
+                    <p>The first browser AI Agent extension to support Agent Skills, enabling AI to perform complex tasks through an expandable skill system. 🌟 Star if you like it! | 首个支持 Agent Skills 的浏览器 AI Agent 扩展，让 AI 通过可扩展技能系统执行复杂任务 🌟 如果喜欢请点个 Star！</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/blendi-remade/sprite-sheet-creator/master/">
+                    <strong>blendi-remade/sprite-sheet-creator</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/lukilabs/beautiful-mermaid/main/">
+                    <strong>lukilabs/beautiful-mermaid</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cloudflare/moltworker/main/">
+                    <strong>cloudflare/moltworker</strong>
+                    <p>Run Moltbot (formely Clawdbot) on Cloudflare Workers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DingTalk-Real-AI/dingtalk-moltbot-connector/main/">
+                    <strong>DingTalk-Real-AI/dingtalk-moltbot-connector</strong>
+                    <p>将钉钉机器人连接到 Moltbot Gateway 的轻量级 Python和TS 双版本连接器，支持 AI Card 流式响应</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/supermemoryai/clawdbot-supermemory/main/">
+                    <strong>supermemoryai/clawdbot-supermemory</strong>
+                    <p>Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pierceboggan/primer/main/">
+                    <strong>pierceboggan/primer</strong>
+                    <p>Get your repo ready for AI.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nhevers/MoltBrain/main/">
+                    <strong>nhevers/MoltBrain</strong>
+                    <p>Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cursor/agent-trace/main/">
+                    <strong>cursor/agent-trace</strong>
+                    <p>A standard format for tracing AI-generated code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jamiepine/voicebox/main/">
+                    <strong>jamiepine/voicebox</strong>
+                    <p>The open-source voice synthesis studio powered by Qwen3-TTS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BradGroux/veritas-kanban/main/">
+                    <strong>BradGroux/veritas-kanban</strong>
+                    <p>The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/supermemoryai/openclaw-supermemory/main/">
+                    <strong>supermemoryai/openclaw-supermemory</strong>
+                    <p>Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BytePioneer-AI/moltbot-china/main/">
+                    <strong>BytePioneer-AI/moltbot-china</strong>
+                    <p>Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antfu/skills-npm/main/">
+                    <strong>antfu/skills-npm</strong>
+                    <p>Install agent skills from npm</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/grp06/openclaw-studio/main/">
+                    <strong>grp06/openclaw-studio</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/soimy/openclaw-channel-dingtalk/main/">
+                    <strong>soimy/openclaw-channel-dingtalk</strong>
+                    <p>A dingtalk bot channel plugin for clawdbot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sliverp/qqbot/main/">
+                    <strong>sliverp/qqbot</strong>
+                    <p>qqbot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gavrielc/nanoclaw/main/">
+                    <strong>gavrielc/nanoclaw</strong>
+                    <p>My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ygwyg/MAHORAGA/main/">
+                    <strong>ygwyg/MAHORAGA</strong>
+                    <p>autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zuckermanai/zuckerman/main/">
+                    <strong>zuckermanai/zuckerman</strong>
+                    <p>Ultra-minimal personal AI agent: starts small, self-modifies its code live, adapts by writing exactly the code & features you need</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jgarzik/botmaker/main/">
+                    <strong>jgarzik/botmaker</strong>
+                    <p>UI/app to Create containerized OpenClaw bots</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shuyu-labs/BigBanana-AI-Director/main/">
+                    <strong>shuyu-labs/BigBanana-AI-Director</strong>
+                    <p>BigBanana AI Director是一个 AI 一站式短剧/漫剧平台，面向创作者，实现从灵感到成片的高效生产。  它摇弃了传统的“抽卡式”生成，采用 ""Script-to-Asset-to-Keyframe"" 的工业化工作流。实现 “一句话生成完整短剧，从剧本到成片全自动化”，同时精准控制角色一致性、场景连续性与镜头运动。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pi0/skillman/main/">
+                    <strong>pi0/skillman</strong>
+                    <p>🤹 Manage project skills and lock them in skills.json</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/voocel/openclaw-mini/main/">
+                    <strong>voocel/openclaw-mini</strong>
+                    <p>OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/letta-ai/lettabot/main/">
+                    <strong>letta-ai/lettabot</strong>
+                    <p>Your personal AI assistant that remembers everything across Telegram, Slack, WhatsApp, and Signal</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Syngnat/GoNavi/main/">
+                    <strong>Syngnat/GoNavi</strong>
+                    <p>现代化、原生体验的数据库管理工具，支持 MySQL、PostgreSQL、SQLite 等数据库，采用 Go 后端 + Wails + React 前端构建，启动快、体积小、性能强。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/robinebers/openusage/main/">
+                    <strong>robinebers/openusage</strong>
+                    <p>A plugin-based menu bar app for tracking AI coding tool subscriptions like Cursor, Claude, Codex and more, all in one place with a heavy focus user experience, speed, and stability.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/first-fluke/oh-my-ag/main/">
+                    <strong>first-fluke/oh-my-ag</strong>
+                    <p>The Ultimate Multi-Agent Framework for Google Antigravity. Orchestrate 6 specialized agents via Serena Memory. Parallel CLI execution, real-time observability, and zero-config skills.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xywml/PaperGrid/main/">
+                    <strong>xywml/PaperGrid</strong>
+                    <p>执笔为剑  - 一款基于NEXT.js的轻量化博客</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/callstackincubator/agent-device/main/">
+                    <strong>callstackincubator/agent-device</strong>
+                    <p>CLI to control iOS and Android devices for AI agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/BlockRunAI/ClawRouter/main/">
+                    <strong>BlockRunAI/ClawRouter</strong>
+                    <p>Smart LLM router — save 78% on inference costs. 30+ models, one wallet, x402 micropayments.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/crshdn/mission-control/main/">
+                    <strong>crshdn/mission-control</strong>
+                    <p>AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yazinsai/quran-validator/main/">
+                    <strong>yazinsai/quran-validator</strong>
+                    <p>Validate and verify Quranic verses in LLM-generated text with high accuracy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vikingmute/better-wechatpay/main/">
+                    <strong>vikingmute/better-wechatpay</strong>
+                    <p>现代化的微信支付 Node.js SDK - ESM、TypeScript、全支付方式支持</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ibelick/webclaw/main/">
+                    <strong>ibelick/webclaw</strong>
+                    <p>Fast web client for OpenClaw</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shuaiplus/NodeWarden/main/">
+                    <strong>shuaiplus/NodeWarden</strong>
+                    <p>Minimal Bitwarden-compatible server on Cloudflare Workers for personal use</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/foru17/clash-master/main/">
+                    <strong>foru17/clash-master</strong>
+                    <p>A modern and elegant dashboard for visualizing and managing Clash network traffic.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antonpk1/excalidraw-mcp-app/main/">
+                    <strong>antonpk1/excalidraw-mcp-app</strong>
+                    <p>Excalidraw MCP App Server — hand-drawn diagrams for Claude</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/earendil-works/gondolin/main/">
+                    <strong>earendil-works/gondolin</strong>
+                    <p>Experimental Linux microvm setup with a TypeScript Control Plane</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sonpiaz/evox/main/">
+                    <strong>sonpiaz/evox</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/op7418/CodePilot/main/">
+                    <strong>op7418/CodePilot</strong>
+                    <p>A native desktop GUI for Claude Code — chat, code, and manage projects visually. Built with Electron + Next.js.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ewindmer/polymarket-arbitrage-trading-bot/main/">
+                    <strong>ewindmer/polymarket-arbitrage-trading-bot</strong>
+                    <p>polymarket arbitrage trading bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dev-protocol/polymarket-copy-bot/main/">
+                    <strong>dev-protocol/polymarket-copy-bot</strong>
+                    <p>Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/The-Vibe-Company/claude-code-controller/main/">
+                    <strong>The-Vibe-Company/claude-code-controller</strong>
+                    <p>Programmatic TypeScript API to pilot Claude Code agents via the internal teams/inbox/tasks filesystem protocol</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mikeyobrien/rho/main/">
+                    <strong>mikeyobrien/rho</strong>
+                    <p>An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/godagoo/claude-telegram-relay/master/">
+                    <strong>godagoo/claude-telegram-relay</strong>
+                    <p>Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openperf/openclaw-cloud/main/">
+                    <strong>openperf/openclaw-cloud</strong>
+                    <p>Give your AI Agent a cloud-native life. Deploy once, converse everywhere.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jarodise/XQuery/master/">
+                    <strong>jarodise/XQuery</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stablyai/agent-slack/master/">
+                    <strong>stablyai/agent-slack</strong>
+                    <p>Slack automation CLI for AI agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rohunvora/x-research-skill/main/">
+                    <strong>rohunvora/x-research-skill</strong>
+                    <p>X/Twitter research skill for Claude Code and OpenClaw. Agentic search, thread following, deep-dives, sourced briefings.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/needle-tools/md-browse/main/">
+                    <strong>needle-tools/md-browse</strong>
+                    <p>Markdown Browser – See the web like an AI does</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenDCAI/OpenPrism/main/">
+                    <strong>OpenDCAI/OpenPrism</strong>
+                    <p>Open-source implementation of AI-powered academic writing workspace inspired by OpenAI Prism, featuring LaTeX editing, PDF preview, and intelligent AI assistance</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dayflow-js/BlossomColorPicker/main/">
+                    <strong>dayflow-js/BlossomColorPicker</strong>
+                    <p>A beautiful, blooming color picker component build by Tailwind for Web.     🌟 If you like it, give it a star :)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/The-Vibe-Company/companion/main/">
+                    <strong>The-Vibe-Company/companion</strong>
+                    <p>Web UI for Claude Code built on a reverse-engineered WebSocket protocol. Launch sessions, stream responses, approve tools.  All from your browser / mobile</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SumeLabs/clawra/main/">
+                    <strong>SumeLabs/clawra</strong>
+                    <p>Clawra - Openclaw as your girlfriend</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/snarktank/antfarm/main/">
+                    <strong>snarktank/antfarm</strong>
+                    <p>Build your agent team in OpenClaw with one command.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MemeCalculate/moyin-creator/main/">
+                    <strong>MemeCalculate/moyin-creator</strong>
+                    <p>AI 影视生产级工具 | 支持 Seedance 2.0 | 剧本到成片全流程批量化 | AI-powered film production tool with Seedance 2.0 support</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prompt-security/clawsec/main/">
+                    <strong>prompt-security/clawsec</strong>
+                    <p>A complete security skill suite for OpenClaw's family of agents. Protect your SOUL.md (etc') with drift detection, live security recommendations, automated audits, and skill integrity verification. All from one installable suite.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chekusu/shipkey/main/">
+                    <strong>chekusu/shipkey</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nicepkg/ctxport/main/">
+                    <strong>nicepkg/ctxport</strong>
+                    <p>Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TermiX-official/cryptoclaw/main/">
+                    <strong>TermiX-official/cryptoclaw</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xyzeva/k-id-age-verifier/main/">
+                    <strong>xyzeva/k-id-age-verifier</strong>
+                    <p>automatically verify your age on discord, twitch, kick, quora and more (k-id)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openperf/brief/main/">
+                    <strong>openperf/brief</strong>
+                    <p>AI Agent Service Agreement</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aarondfrancis/counselors/main/">
+                    <strong>aarondfrancis/counselors</strong>
+                    <p>Fan out prompts to multiple AI coding agents in parallel</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HKUDS/MoChat/main/">
+                    <strong>HKUDS/MoChat</strong>
+                    <p>MoChat: Reconnecting the World through AI Agents (OpenClaw & nanobot & ClaudeCode) https://mochat.io</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/spaceraccoon/vulnerability-spoiler-alert-action/main/">
+                    <strong>spaceraccoon/vulnerability-spoiler-alert-action</strong>
+                    <p>GitHub Action to alert on security patches before the CVE drops.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/freestylefly/openclaw-wechat/master/">
+                    <strong>freestylefly/openclaw-wechat</strong>
+                    <p>让 OpenClaw稳定的连上你的个人微信</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chu2bard/pinion-os/main/">
+                    <strong>chu2bard/pinion-os</strong>
+                    <p>Client SDK, Claude plugin and skill framework for the Pinion protocol. x402 micropayments on Base.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ochyai/open-japan-politech-platform/main/">
+                    <strong>ochyai/open-japan-politech-platform</strong>
+                    <p>政党・企業によらない政治のデジタル化オープンソース基盤 </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/owengretzinger/constellagent/main/">
+                    <strong>owengretzinger/constellagent</strong>
+                    <p>Desktop app for running multiple AI agents in parallel. Each agent gets its own terminal, editor, and git worktree, all in one window.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vigorX777/ai-daily-digest/main/">
+                    <strong>vigorX777/ai-daily-digest</strong>
+                    <p>从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mbeijen/andrej-karpathy-skills-cursor-vscode/main/">
+                    <strong>mbeijen/andrej-karpathy-skills-cursor-vscode</strong>
+                    <p>Andrej Karpathy skills for your Cursor or VS Code editor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamuelQZQ/auto-coding-agent-demo/main/">
+                    <strong>SamuelQZQ/auto-coding-agent-demo</strong>
+                    <p>一个长达 10 小时的 AI 全自动编程实验</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/molefrog/skills/main/">
+                    <strong>molefrog/skills</strong>
+                    <p>❈ Claude skill for generating high-quality PDFs using react-pdf</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/avihaymenahem/velo/main/">
+                    <strong>avihaymenahem/velo</strong>
+                    <p>Open source desktop email client for Gmail</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TheDecipherist/claude-code-mastery-project-starter-kit/main/">
+                    <strong>TheDecipherist/claude-code-mastery-project-starter-kit</strong>
+                    <p>The definitive starting point for Claude Code projects. Based on Claude Code Mastery Guides V3-V5.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel-labs/portless/main/">
+                    <strong>vercel-labs/portless</strong>
+                    <p>Replace port numbers with stable, named .localhost URLs. For humans and agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/anl331/goey-toast/main/">
+                    <strong>anl331/goey-toast</strong>
+                    <p>A gooey, morphing toast component built on Sonner with Framer Motion animations</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kapishdima/soundcn/main/">
+                    <strong>kapishdima/soundcn</strong>
+                    <p>700+ curated UI sound effects for modern web apps. Browse, preview, and install sounds with a single command. Free and open source</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/IAmUnbounded/devctx/main/">
+                    <strong>IAmUnbounded/devctx</strong>
+                    <p>Carry context across coding agents/editors/IDEs - Cursor/Windsurf/Claude Code/Antigravity</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/glommer/cachebro/main/">
+                    <strong>glommer/cachebro</strong>
+                    <p>File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keanucz/detour/master/">
+                    <strong>keanucz/detour</strong>
+                    <p>On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jayminwest/overstory/main/">
+                    <strong>jayminwest/overstory</strong>
+                    <p>Project-agnostic swarm system for Claude Code agent orchestration</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mo1app/pipemagic/main/">
+                    <strong>mo1app/pipemagic</strong>
+                    <p>Visual image processing pipeline editor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/millionco/react-doctor/main/">
+                    <strong>millionco/react-doctor</strong>
+                    <p>Let coding agents diagnose and fix your React code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Conway-Research/automaton/main/">
+                    <strong>Conway-Research/automaton</strong>
+                    <p>The first AI that can earn its own existence, replicate, and evolve — without needing a human</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SuperCmdLabs/SuperCmd/main/">
+                    <strong>SuperCmdLabs/SuperCmd</strong>
+                    <p>What Apple Intelligence should have been</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kewonit/aeris/main/">
+                    <strong>kewonit/aeris</strong>
+                    <p>Aeris is a real-time 3D flight radar for the web</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dododook/FlowZ/main/">
+                    <strong>dododook/FlowZ</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/paradigmxyz/evmbench/main/">
+                    <strong>paradigmxyz/evmbench</strong>
+                    <p>A benchmark and harness for finding and exploiting smart contract bugs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/daymonio/daymon/main/">
+                    <strong>daymonio/daymon</strong>
+                    <p>Daymon puts your favorite AI to work 24/7. It schedules, remembers, and orchestrates your own virtual team. Free.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kellyclaudeai/openclaw-deck/master/">
+                    <strong>kellyclaudeai/openclaw-deck</strong>
+                    <p>Multi-column chat interface for OpenClaw agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/angel10x/Crash-Frontend/main/">
+                    <strong>angel10x/Crash-Frontend</strong>
+                    <p>About Crash game - frontend</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TraderAlice/OpenAlice/master/">
+                    <strong>TraderAlice/OpenAlice</strong>
+                    <p>File-driven AI trading agent engine for crypto and securities markets</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mayfer/electrobun-macos-native-blur/master/">
+                    <strong>mayfer/electrobun-macos-native-blur</strong>
+                    <p>Enable background blur like a native app in Electrobun</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/benjitaylor/liveline/main/">
+                    <strong>benjitaylor/liveline</strong>
+                    <p>Real-time animated line chart for React.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/botiverse/agent-vault/main/">
+                    <strong>botiverse/agent-vault</strong>
+                    <p>Keep your secrets hidden from AI agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/quoroom-ai/room/main/">
+                    <strong>quoroom-ai/room</strong>
+                    <p>Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MrFadiAi/openclaw-manager/main/">
+                    <strong>MrFadiAi/openclaw-manager</strong>
+                    <p>OpenClaw One Click Installer - A desktop manager for OpenClaw</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vercel-labs/visual-json/main/">
+                    <strong>vercel-labs/visual-json</strong>
+                    <p>The Visual JSON Editor. Schema-aware, embeddable, extensible.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/johannesjo/parallel-code/main/">
+                    <strong>johannesjo/parallel-code</strong>
+                    <p>Run Claude Code, Codex, and Gemini side by side — each in      its own git worktree</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/storybook-addon-performance-panel/main/">
+                    <strong>github/storybook-addon-performance-panel</strong>
+                    <p>A Storybook Addon for tracking web performance</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dev-protocol/polymarket-copytrading-bot-sport/master/">
+                    <strong>dev-protocol/polymarket-copytrading-bot-sport</strong>
+                    <p>This Polymarket Copy Trading Bot is designed to diversify across different prediction markets, minimizing exposure to any single market’s volatility. CLUE: @polymarket copytrading bot || #polymarket trading bot || @polymarket copytrading bot || #polymarket trading bot || @polymarket copytrading bot || #polymarket trading bot || polymarket copytrade</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/GreenSheep01201/claw-empire/main/">
+                    <strong>GreenSheep01201/claw-empire</strong>
+                    <p>Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/midudev/alg0.dev/main/">
+                    <strong>midudev/alg0.dev</strong>
+                    <p>alg0.dev is an interactive algorithm visualizer where classic algorithms come to life through step by step animations, controls to pause or advance, and access to the underlying code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/eddyson-B/AI-Pumpfun-Copy-Trading-Bot/main/">
+                    <strong>eddyson-B/AI-Pumpfun-Copy-Trading-Bot</strong>
+                    <p>A simulation and execution script for tracking top wallet trades on PumpFun and analyzing profit opportunities with AI modeling.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Kirubel125/Kalshi-Claw/main/">
+                    <strong>Kirubel125/Kalshi-Claw</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/abhinavkale-dev/fynt/master/">
+                    <strong>abhinavkale-dev/fynt</strong>
+                    <p>Self-hostable workflow automation platform</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TheCSir/TerminalStart/main/">
+                    <strong>TheCSir/TerminalStart</strong>
+                    <p>Chromium Extension for Tech Bros</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
