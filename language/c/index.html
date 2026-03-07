@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best C Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>C Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/torvalds/linux/master/">
+                    <strong>torvalds/linux</strong>
+                    <p>Linux kernel source tree</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/redis/redis/unstable/">
+                    <strong>redis/redis</strong>
+                    <p>For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openssl/openssl/master/">
+                    <strong>openssl/openssl</strong>
+                    <p>TLS/SSL and crypto library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/curl/curl/master/">
+                    <strong>curl/curl</strong>
+                    <p>A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/git/git/master/">
+                    <strong>git/git</strong>
+                    <p>Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/systemd/systemd/main/">
+                    <strong>systemd/systemd</strong>
+                    <p>The systemd System and Service Manager </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nginx/nginx/master/">
+                    <strong>nginx/nginx</strong>
+                    <p>The official NGINX Open Source repository.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tmux/tmux/master/">
+                    <strong>tmux/tmux</strong>
+                    <p>tmux source code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/react-native-code-push/master/">
+                    <strong>microsoft/react-native-code-push</strong>
+                    <p>React Native module for CodePush</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/postgres/postgres/master/">
+                    <strong>postgres/postgres</strong>
+                    <p>Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sqlite/sqlite/master/">
+                    <strong>sqlite/sqlite</strong>
+                    <p>Official Git mirror of the SQLite source tree</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/timescale/timescaledb/main/">
+                    <strong>timescale/timescaledb</strong>
+                    <p>A time-series database for high-performance real-time analytics packaged as a Postgres extension</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/arendst/Tasmota/development/">
+                    <strong>arendst/Tasmota</strong>
+                    <p>Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NVIDIA/cuda-samples/master/">
+                    <strong>NVIDIA/cuda-samples</strong>
+                    <p>Samples for CUDA Developers which demonstrates features in CUDA Toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fluent/fluent-bit/master/">
+                    <strong>fluent/fluent-bit</strong>
+                    <p>Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/netblue30/firejail/master/">
+                    <strong>netblue30/firejail</strong>
+                    <p>Linux namespaces and seccomp-bpf sandbox</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mpv-player/mpv/master/">
+                    <strong>mpv-player/mpv</strong>
+                    <p>🎥 Command line media player</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/videolan/vlc/master/">
+                    <strong>videolan/vlc</strong>
+                    <p>VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/obsproject/obs-studio/master/">
+                    <strong>obsproject/obs-studio</strong>
+                    <p>OBS Studio - Free and open source software for live streaming and screen recording</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Klipper3d/klipper/master/">
+                    <strong>Klipper3d/klipper</strong>
+                    <p>Klipper is a 3d-printer firmware</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/espressif/esp-idf/master/">
+                    <strong>espressif/esp-idf</strong>
+                    <p>Espressif IoT Development Framework. Official development framework for Espressif SoCs.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/micropython/micropython/master/">
+                    <strong>micropython/micropython</strong>
+                    <p>MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/adafruit/circuitpython/main/">
+                    <strong>adafruit/circuitpython</strong>
+                    <p>CircuitPython - a Python implementation for teaching coding with microcontrollers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/raspberrypi/linux/rpi-6.6.y/">
+                    <strong>raspberrypi/linux</strong>
+                    <p>Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pgvector/pgvector/master/">
+                    <strong>pgvector/pgvector</strong>
+                    <p>Open-source vector similarity search for Postgres</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/libuv/libuv/v1.x/">
+                    <strong>libuv/libuv</strong>
+                    <p>Cross-platform asynchronous I/O</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stedolan/jq/master/">
+                    <strong>stedolan/jq</strong>
+                    <p>Command-line JSON processor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/libressl/portable/master/">
+                    <strong>libressl/portable</strong>
+                    <p>LibreSSL Portable itself. This includes the build scaffold and compatibility layer that builds portable LibreSSL from the OpenBSD source code. Pull requests or patches sent to tech@openbsd.org are welcome.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nmap/nmap/master/">
+                    <strong>nmap/nmap</strong>
+                    <p>Nmap - the Network Mapper. Github mirror of official SVN repository.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wireshark/wireshark/master/">
+                    <strong>wireshark/wireshark</strong>
+                    <p>Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. ⚠️ GitHub won't let us disable pull requests. ⚠️ THEY WILL BE IGNORED HERE ⚠️ Upload them at GitLab instead.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qemu/qemu/master/">
+                    <strong>qemu/qemu</strong>
+                    <p>Official QEMU mirror. Please see https://www.qemu.org/contribute/ for how to submit changes to QEMU. Pull Requests are ignored. Please only use release tarballs from the QEMU website.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/redis/hiredis/master/">
+                    <strong>redis/hiredis</strong>
+                    <p>Minimalistic C client for Redis >= 1.2</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LuaJIT/LuaJIT/v2.1/">
+                    <strong>LuaJIT/LuaJIT</strong>
+                    <p>Mirror of the LuaJIT git repository</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FFmpeg/FFmpeg/master/">
+                    <strong>FFmpeg/FFmpeg</strong>
+                    <p>Mirror of https://git.ffmpeg.org/ffmpeg.git</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ImageMagick/ImageMagick/main/">
+                    <strong>ImageMagick/ImageMagick</strong>
+                    <p>ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PCRE2Project/pcre2/master/">
+                    <strong>PCRE2Project/pcre2</strong>
+                    <p>PCRE2 development is based here.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mit-pdos/xv6-public/master/">
+                    <strong>mit-pdos/xv6-public</strong>
+                    <p>xv6 OS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mitjafelicijan/xdgctl/master/">
+                    <strong>mitjafelicijan/xdgctl</strong>
+                    <p>TUI for managing XDG default applications</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antirez/tgterm/main/">
+                    <strong>antirez/tgterm</strong>
+                    <p>Control your MacOS terminals via Telegram, for fun coding agents interaction and profit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antirez/voxtral.c/main/">
+                    <strong>antirez/voxtral.c</strong>
+                    <p>Pure C inference of Mistral Voxtral Realtime 4B speech to text model</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tompftampffern/polyseed-monero/main/">
+                    <strong>tompftampffern/polyseed-monero</strong>
+                    <p>Polyseed Monero</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/memovai/mimiclaw/main/">
+                    <strong>memovai/mimiclaw</strong>
+                    <p>MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS.😗Local-first memory. Shareable. Portable. Privacy-first.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antirez/qwen-asr/main/">
+                    <strong>antirez/qwen-asr</strong>
+                    <p>C inference for Qwen3-ASR 0.6b and 1.7b transcriptions models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/EricEsquivel/CobaltStrike-Linux-Beacon/main/">
+                    <strong>EricEsquivel/CobaltStrike-Linux-Beacon</strong>
+                    <p>Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/datavorous/sameshi/master/">
+                    <strong>datavorous/sameshi</strong>
+                    <p>a ~1200 Elo chess engine that fits within 2KB</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vixhal-baraiya/microgpt-c/main/">
+                    <strong>vixhal-baraiya/microgpt-c</strong>
+                    <p>The most atomic way to train and inference a GPT in pure, dependency-free C</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Zaneham/BarraCUDA/master/">
+                    <strong>Zaneham/BarraCUDA</strong>
+                    <p>Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/RightNow-AI/picolm/main/">
+                    <strong>RightNow-AI/picolm</strong>
+                    <p>Run a 1-billion parameter LLM on a $10 board with 256MB RAM</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tnm/zclaw/main/">
+                    <strong>tnm/zclaw</strong>
+                    <p>Your personal AI assistant in under 888 KB, running on an ESP32</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dazzyddos/lsawhisper-bof/main/">
+                    <strong>dazzyddos/lsawhisper-bof</strong>
+                    <p>A Beacon Object File (BOF) that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory.</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

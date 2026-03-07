@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+
+    <title>Best Other Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CstEIZxj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfktDUTf.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>Other Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/996icu/996.ICU/master/">
+                    <strong>996icu/996.ICU</strong>
+                    <p>Repo for counting stars and contributing. Press F to pay respect to glorious developers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jwasham/coding-interview-university/main/">
+                    <strong>jwasham/coding-interview-university</strong>
+                    <p>A complete computer science study plan to become a software engineer.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sindresorhus/awesome/main/">
+                    <strong>sindresorhus/awesome</strong>
+                    <p>😎 Awesome lists about all kinds of interesting topics</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/gitignore/main/">
+                    <strong>github/gitignore</strong>
+                    <p>A collection of useful .gitignore templates</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/getify/You-Dont-Know-JS/master/">
+                    <strong>getify/You-Dont-Know-JS</strong>
+                    <p>A book series (2 published editions) on the JS language.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Stability-AI/stablediffusion/main/">
+                    <strong>Stability-AI/stablediffusion</strong>
+                    <p>High-Resolution Image Synthesis with Latent Diffusion Models.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/astro/astro/main/">
+                    <strong>astro/astro</strong>
+                    <p>The web framework that scales with you, with server-first rendering and an all-in-one build flow.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qwikverse/qwik/main/">
+                    <strong>qwikverse/qwik</strong>
+                    <p>The HTML-first framework. Instant apps of any size with ~ 1kb JS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/awesome-selfhosted/awesome-selfhosted/master/">
+                    <strong>awesome-selfhosted/awesome-selfhosted</strong>
+                    <p>A list of Free Software network services and web applications which can be hosted on your own servers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sindresorhus/awesome-nodejs/main/">
+                    <strong>sindresorhus/awesome-nodejs</strong>
+                    <p>:zap: Delightful Node.js packages and resources</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/material-design-icons/master/">
+                    <strong>google/material-design-icons</strong>
+                    <p>Material Design icons by Google (Material Symbols)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/LlamaSharp/main/">
+                    <strong>microsoft/LlamaSharp</strong>
+                    <p>.NET library for Llama model inference.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openai/sora-prompt-engineering-guide/main/">
+                    <strong>openai/sora-prompt-engineering-guide</strong>
+                    <p>Guide for prompt engineering for video generation with Sora.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepinfra/deepinfra/main/">
+                    <strong>deepinfra/deepinfra</strong>
+                    <p>Run popular AI models like Llama-3, Mistral on DeepInfra's platform.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deep-learning-indaba/GoodPracticesML/main/">
+                    <strong>deep-learning-indaba/GoodPracticesML</strong>
+                    <p>A repository of good practices for developing usable ML products in Africa.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gvisor/gvisor/master/">
+                    <strong>gvisor/gvisor</strong>
+                    <p>Application Kernel for Containers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aave/aave-v2/master/">
+                    <strong>aave/aave-v2</strong>
+                    <p>Aave Protocol V2</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bytedance/semi-design/main/">
+                    <strong>bytedance/semi-design</strong>
+                    <p>A modern, comprehensive, flexible design system and React UI library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/geoffreymcgill/react-native-collapsible/master/">
+                    <strong>geoffreymcgill/react-native-collapsible</strong>
+                    <p>Animated collapsible component for React Native, good for accordions, toggles etc</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SudoPlz/spicetify-cli/master/">
+                    <strong>SudoPlz/spicetify-cli</strong>
+                    <p>Command-line tool to customize Spotify client.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/raspberrypi/firmware/master/">
+                    <strong>raspberrypi/firmware</strong>
+                    <p>This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fastlane/supply/master/">
+                    <strong>fastlane/supply</strong>
+                    <p>Command line tool for updating Android apps and their metadata on the Google Play Store</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/copilot-docs/main/">
+                    <strong>github/copilot-docs</strong>
+                    <p>Documentation for GitHub Copilot</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cncf/landscape/master/">
+                    <strong>cncf/landscape</strong>
+                    <p>🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/goharbor/community/main/">
+                    <strong>goharbor/community</strong>
+                    <p>Harbor community-related material</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/obsidianmd/obsidian-releases/master/">
+                    <strong>obsidianmd/obsidian-releases</strong>
+                    <p>Community plugins list, theme list, and releases of Obsidian.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LineageOS/android/lineage-21.0/">
+                    <strong>LineageOS/android</strong>
+                    <p>Placeholder repository for LineageOS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kdenlive/kdenlive/master/">
+                    <strong>kdenlive/kdenlive</strong>
+                    <p>Kdenlive is a free and open source video editor, available for GNU/Linux, Windows and macOS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/godotengine/godot-proposals/master/">
+                    <strong>godotengine/godot-proposals</strong>
+                    <p>Godot Improvement Proposals (GIPs)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cloudcommunity/Free-Certifications/main/">
+                    <strong>cloudcommunity/Free-Certifications</strong>
+                    <p>A curated list of free courses with certifications. Also available at https://free-certifications.com/</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ByteByteGoHq/system-design-101/main/">
+                    <strong>ByteByteGoHq/system-design-101</strong>
+                    <p>Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MoonshotAI/Kimi-VL/main/">
+                    <strong>MoonshotAI/Kimi-VL</strong>
+                    <p>Kimi-VL: Mixture-of-Experts Vision-Language Model for Multimodal Reasoning, Long-Context Understanding, and Strong Agent Capabilities</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ByteDance-Seed/Seed-Thinking-v1.5/main/">
+                    <strong>ByteDance-Seed/Seed-Thinking-v1.5</strong>
+                    <p>Seed-Thinking-v1.5 Model Release.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/0Voice/Expert_Readed_Books/master/">
+                    <strong>0Voice/Expert_Readed_Books</strong>
+                    <p>2021年最新总结，推荐工程师合适读本，计算机科学，软件技术，创业，思想类，数学类，人物传记书籍</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ruanyf/weekly/master/">
+                    <strong>ruanyf/weekly</strong>
+                    <p>科技爱好者周刊，每周五发布</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dair-ai/ML-YouTube-Courses/main/">
+                    <strong>dair-ai/ML-YouTube-Courses</strong>
+                    <p>📺 Discover the latest machine learning / AI courses on YouTube.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dair-ai/ML-Papers-Explained/gh-pages/">
+                    <strong>dair-ai/ML-Papers-Explained</strong>
+                    <p>Explanation to key concepts in ML</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NCSC-NL/spring4shell/main/">
+                    <strong>NCSC-NL/spring4shell</strong>
+                    <p>Operational information regarding the Spring4Shell vulnerability in the Spring Core Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OffchainLabs/arbitrum/master/">
+                    <strong>OffchainLabs/arbitrum</strong>
+                    <p>Arbitrum is a Layer 2 scaling solution for Ethereum.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zkSync-Community-Hub/zksync-developers/main/">
+                    <strong>zkSync-Community-Hub/zksync-developers</strong>
+                    <p>Discussions and Support for the ZKsync Developer Community.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MunGell/awesome-for-beginners/master/">
+                    <strong>MunGell/awesome-for-beginners</strong>
+                    <p>A list of awesome beginners-friendly projects.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trimstray/the-book-of-secret-knowledge/master/">
+                    <strong>trimstray/the-book-of-secret-knowledge</strong>
+                    <p>A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dypsilon/frontend-dev-bookmarks/master/">
+                    <strong>dypsilon/frontend-dev-bookmarks</strong>
+                    <p>Manually curated collection of resources for frontend web developers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/thedaviddias/Front-End-Checklist/master/">
+                    <strong>thedaviddias/Front-End-Checklist</strong>
+                    <p>🗂 The perfect Front-End Checklist for modern websites and meticulous developers</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mtdvio/every-programmer-should-know/master/">
+                    <strong>mtdvio/every-programmer-should-know</strong>
+                    <p>A collection of (mostly) technical things every software developer should know about</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jlevy/the-art-of-command-line/master/">
+                    <strong>jlevy/the-art-of-command-line</strong>
+                    <p>Master the command line, in one page</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tiimgreen/github-cheat-sheet/master/">
+                    <strong>tiimgreen/github-cheat-sheet</strong>
+                    <p>A list of cool features of Git and GitHub.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iCHAIT/awesome-macOS/master/">
+                    <strong>iCHAIT/awesome-macOS</strong>
+                    <p>  A curated list of awesome applications, softwares, tools and shiny things for macOS.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/herrbischoff/awesome-macos-command-line/master/">
+                    <strong>herrbischoff/awesome-macos-command-line</strong>
+                    <p>Use your macOS terminal shell to do awesome things.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/alebcay/awesome-shell/master/">
+                    <strong>alebcay/awesome-shell</strong>
+                    <p>A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ChristosChristofidis/awesome-deep-learning/master/">
+                    <strong>ChristosChristofidis/awesome-deep-learning</strong>
+                    <p>A curated list of awesome Deep Learning tutorials, projects and communities.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/akullpp/awesome-java/master/">
+                    <strong>akullpp/awesome-java</strong>
+                    <p>A curated list of awesome frameworks, libraries and software for the Java programming language.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sorrycc/awesome-javascript/master/">
+                    <strong>sorrycc/awesome-javascript</strong>
+                    <p>🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vuejs/awesome-vue/master/">
+                    <strong>vuejs/awesome-vue</strong>
+                    <p>🎉 A curated list of awesome things related to Vue.js</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/enaqx/awesome-react/master/">
+                    <strong>enaqx/awesome-react</strong>
+                    <p>A collection of awesome things regarding React ecosystem</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/veggiemonk/awesome-docker/master/">
+                    <strong>veggiemonk/awesome-docker</strong>
+                    <p>:whale: A curated list of Docker resources and projects</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jnv/lists/master/">
+                    <strong>jnv/lists</strong>
+                    <p>The definitive list of lists (of lists) curated on GitHub and elsewhere</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ForrestKnight/open-source-cs/master/">
+                    <strong>ForrestKnight/open-source-cs</strong>
+                    <p>Video discussing this curriculum:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/DovAmir/awesome-design-patterns/master/">
+                    <strong>DovAmir/awesome-design-patterns</strong>
+                    <p>A curated list of software and architecture related design patterns.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mfornos/awesome-microservices/master/">
+                    <strong>mfornos/awesome-microservices</strong>
+                    <p>A curated list of Microservice Architecture related principles and technologies.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/binhnguyennus/awesome-scalability/master/">
+                    <strong>binhnguyennus/awesome-scalability</strong>
+                    <p>The Patterns of Scalable, Reliable, and Performant Large-Scale Systems</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kdeldycke/awesome-falsehood/master/">
+                    <strong>kdeldycke/awesome-falsehood</strong>
+                    <p>😱 Falsehoods Programmers Believe in</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sdmg15/Best-websites-a-programmer-should-visit/master/">
+                    <strong>sdmg15/Best-websites-a-programmer-should-visit</strong>
+                    <p>:link: Some useful websites for programmers.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/minix3/minix/master/">
+                    <strong>minix3/minix</strong>
+                    <p>Redirection to the real github page only.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/torproject/tor/main/">
+                    <strong>torproject/tor</strong>
+                    <p>unofficial git repo -- report bugs/issues/pull requests on https://gitlab.torproject.org/ --</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prakhar1989/awesome-courses/master/">
+                    <strong>prakhar1989/awesome-courses</strong>
+                    <p>:books: List of awesome university courses for learning Computer Science!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cs109/2015/master/">
+                    <strong>cs109/2015</strong>
+                    <p>Public material for CS109</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/appbrewery/Flutter-Course-Resources/master/">
+                    <strong>appbrewery/Flutter-Course-Resources</strong>
+                    <p>Learn to Code While Building Apps - The Complete Flutter Development Bootcamp.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sindresorhus/awesome-electron/main/">
+                    <strong>sindresorhus/awesome-electron</strong>
+                    <p>Useful resources for creating apps with Electron</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/JStumpp/awesome-android/master/">
+                    <strong>JStumpp/awesome-android</strong>
+                    <p>A curated list of awesome Android packages and resources.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fffaraz/awesome-cpp/master/">
+                    <strong>fffaraz/awesome-cpp</strong>
+                    <p>A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/markets/awesome-ruby/master/">
+                    <strong>markets/awesome-ruby</strong>
+                    <p>💎 A collection of awesome Ruby libraries, tools, frameworks and software</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ziadoz/awesome-php/master/">
+                    <strong>ziadoz/awesome-php</strong>
+                    <p>A curated list of amazingly awesome PHP libraries, resources and shiny things.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uralbash/awesome-pyramid/master/">
+                    <strong>uralbash/awesome-pyramid</strong>
+                    <p>A curated list of awesome Pyramid apps, projects and resources.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/humiaozuzu/awesome-flask/master/">
+                    <strong>humiaozuzu/awesome-flask</strong>
+                    <p>A curated list of awesome Flask resources and plugins</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iJackUA/awesome-vagrant/master/">
+                    <strong>iJackUA/awesome-vagrant</strong>
+                    <p>A curated list of awesome Vagrant resources, plugins, tutorials and other nice things.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wasabeef/awesome-android-ui/master/">
+                    <strong>wasabeef/awesome-android-ui</strong>
+                    <p>A curated list of awesome Android UI/UX libraries</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aikorea/awesome-rl/master/">
+                    <strong>aikorea/awesome-rl</strong>
+                    <p>Reinforcement learning resources curated</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jbhuang0604/awesome-computer-vision/master/">
+                    <strong>jbhuang0604/awesome-computer-vision</strong>
+                    <p>A curated list of awesome computer vision resources</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uhub/awesome-cpp/master/">
+                    <strong>uhub/awesome-cpp</strong>
+                    <p>A curated list of awesome C++ frameworks, libraries and software.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hantuzun/awesome-clojure/master/">
+                    <strong>hantuzun/awesome-clojure</strong>
+                    <p>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/inputsh/awesome-linux/master/">
+                    <strong>inputsh/awesome-linux</strong>
+                    <p>:penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sbilly/awesome-security/master/">
+                    <strong>sbilly/awesome-security</strong>
+                    <p>A collection of awesome software, libraries, documents, books, resources and cools stuffs about security.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/qazbnm456/awesome-web-security/master/">
+                    <strong>qazbnm456/awesome-web-security</strong>
+                    <p>🐶 A curated list of Web Security materials and resources.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/guardrailsio/awesome-python-security/master/">
+                    <strong>guardrailsio/awesome-python-security</strong>
+                    <p>Awesome Python Security resources 🕶🐍🔐</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wsargent/docker-cheat-sheet/master/">
+                    <strong>wsargent/docker-cheat-sheet</strong>
+                    <p>Docker Cheat Sheet</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kelseyhightower/kubernetes-the-hard-way/master/">
+                    <strong>kelseyhightower/kubernetes-the-hard-way</strong>
+                    <p>Bootstrap Kubernetes the hard way. No scripts.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/humanloop/awesome-chatgpt/main/">
+                    <strong>humanloop/awesome-chatgpt</strong>
+                    <p>Curated list of awesome tools, demos, docs for ChatGPT and GPT-3</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/steven2358/awesome-generative-ai/main/">
+                    <strong>steven2358/awesome-generative-ai</strong>
+                    <p>A curated list of modern Generative Artificial Intelligence projects and services</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CyC2018/CS-Notes/master/">
+                    <strong>CyC2018/CS-Notes</strong>
+                    <p>:books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Olshansk/interview/master/">
+                    <strong>Olshansk/interview</strong>
+                    <p>Everything you need to prepare for your technical interview</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/checkcheckzz/system-design-interview/master/">
+                    <strong>checkcheckzz/system-design-interview</strong>
+                    <p>System design interview for IT companies</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/skills/introduction-to-github/main/">
+                    <strong>skills/introduction-to-github</strong>
+                    <p>Get started using GitHub in less than an hour.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Developer-Y/cs-video-courses/master/">
+                    <strong>Developer-Y/cs-video-courses</strong>
+                    <p>List of Computer Science courses with video lectures.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CSSEGISandData/COVID-19/master/">
+                    <strong>CSSEGISandData/COVID-19</strong>
+                    <p>Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keithnull/TeachYourselfCS-CN/master/">
+                    <strong>keithnull/TeachYourselfCS-CN</strong>
+                    <p>TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/InterviewReady/system-design-resources/main/">
+                    <strong>InterviewReady/system-design-resources</strong>
+                    <p>These are the best resources for System Design on the Internet</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/academic/awesome-datascience/master/">
+                    <strong>academic/awesome-datascience</strong>
+                    <p>:memo: An awesome Data Science repository to learn and apply for real world problems.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/datasciencemasters/go/master/">
+                    <strong>datasciencemasters/go</strong>
+                    <p>The Open Source Data Science Masters</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-group">
+                    <div class="dropdown">
+                        <button class="tool-btn" id="sortBtnLabel">
+                            <i class="fas fa-sort-amount-down"></i> Sort
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tool-btn" id="styleBtnLabel">
+                            <i class="fas fa-code-branch"></i> Style
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-group right">
+                    <button id="shareBtn" class="tool-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copyAllBtn" class="tool-btn action-btn">
+                        <i class="far fa-copy"></i> Copy Tree
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
