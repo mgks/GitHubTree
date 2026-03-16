@@ -888,3 +888,13 @@ position: fixed;
 .hidden {
     display: none;
 }
+
+/* =========================================
+   14. COLLAPSIBLE TREE
+   ========================================= */
+.child-hidden { display: none !important; }
+.tree-folder { cursor: pointer; }
+.tree-folder:hover { background: rgba(128,128,128,0.08); border-radius: 4px; }
+.t-caret { display: inline-flex; width: 16px; justify-content: center; transition: transform 0.2s ease; font-size: 0.7em; opacity: 0.5; }
+.tree-folder.collapsed .t-caret { transform: rotate(-90deg); }
+.tree-folder.collapsed .t-name { opacity: 0.75; }
