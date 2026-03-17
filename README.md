@@ -31,28 +31,26 @@
 
 </div>
 
-GitHubTree allows you to explore, navigate, and generate ASCII directory trees for any GitHub repository without cloning. Available as **Web App**, **CLI Tool**, and **Node.js Library**.
+GitHubTree allows you to explore, navigate, and generate formatted directory trees for any GitHub repository without cloning. Perfect for documentation, code reviews, and project overviews.
 
-## Features
-*   **Instant Search:** Visualize any public repository (e.g., `facebook/react`).
-*   **Smart Branch Detection:** Automatically detects if a branch exists (e.g., `main` vs `master`) and switches to the default branch if needed.
-*   **Private Repo Access:** Securely access your private repositories using a Personal Access Token (saved locally to your browser).
-*   **Smart Copy:** Copy the entire directory tree as text, or copy specific file paths.
-*   **Visual Styles:** Toggle between Classic (└──), Slashed (/src), Minimal, and ASCII (+--).
-*   **Deep Linking:** Share links to specific repositories and branches (e.g., `/repo/mgks/dhwani/main`).
+## ✨ Features
+*   **Instant Explorer:** Visualize any public repository (e.g., `facebook/react`).
+*   **Intelligent Navigation:** Search and filter files in real-time with parent-folder context preservation.
+*   **Interactive Controls:** Unified tree toggles (Compact/Expand) and collapsible folder support.
+*   **Visual Styles:** Choose between Classic (└──), Slashed (/src), Minimal, ASCII (+--), and **Bulleted (•)**.
+*   **Private Repository Access:** Securely access personal repos using a GitHub PAT (stored only in your browser).
+*   **Deep Linking:** Share links that persist your branch, filter, sort, and style settings.
+*   **High Performance:** Core engine optimized for large repositories with automated branch detection.
 
-## For Developers: The CLI
-
-Generate directory trees directly in your terminal. Perfect for documentation and quick checks.
+## CLI Tool
+Generate directory trees directly in your terminal. 
 
 ### Usage (No Install)
-Run via `npx` to fetch a tree instantly:
-
 ```bash
 npx gh-tree user/repo
 ```
 
-### Installation (Global)
+### Global Installation
 ```bash
 npm install -g gh-tree
 ```
@@ -63,101 +61,56 @@ gh-tree <user/repo> [flags]
 
 Flags:
   --branch, -b <name>   Specify branch (default: main)
+  --depth, -d <num>     Limit recursion depth
+  --ignore, -i <pats>   Ignore patterns (comma-separated, e.g. "node_modules,*.log")
+  --json                Output raw JSON data instead of ASCII
   --icons               Show file/folder icons in output
   --token, -t <key>     Use a specific GitHub Token
   --save-token <key>    Save a token globally for future use
-  --help                Show help
+  --clear-cache         Clear local tree cache
 ```
 
-**Example:**
-```bash
-gh-tree facebook/react --icons --branch main
-```
-
-## For Builders: The NPM Package
-
-Use the core engine to fetch trees and generate ASCII structures in your own applications.
+## For Builders: NPM Package
+Use the core engine to integrate tree generation into your own Node.js applications.
 
 ### Installation
 ```bash
 npm install gh-tree
 ```
 
-### Usage
-
+### Quick Start
 ```javascript
 import { GitHubTree } from 'gh-tree';
 
-// 1. Initialize (Token optional, but recommended for higher rate limits)
 const gt = new GitHubTree(process.env.GITHUB_TOKEN);
 
-// 2. Fetch Tree
 try {
     const { tree } = await gt.getTree('mgks/githubtree', 'main');
-    
-    // 3. Sort & Generate ASCII
-    const sorted = gt.sortTree(tree, 'folder-az');
-    const output = gt.generateAsciiTree(sorted, { icons: true });
-    
+    const output = gt.generateAsciiTree(tree, { style: 'classic', icons: true });
     console.log(output);
 } catch (err) {
     console.error(err);
 }
 ```
 
-### API Reference
-
-#### `new GitHubTree(token?)`
-Creates a new instance.
-*   `token` (string, optional): GitHub Personal Access Token.
-
-#### `getTree(repo, branch?)`
-Fetches the raw recursive tree from GitHub API.
-*   Returns: `{ tree: Array, truncated: Boolean }`
-
-#### `sortTree(tree, method?)`
-Sorts the tree array.
-*   `method`: `'folder-az'` (default), `'folder-za'`, `'alpha-az'`, `'alpha-za'`.
-
-#### `generateAsciiTree(tree, options?)`
-Converts the tree array into a formatted string.
-*   `options.icons`: Boolean. If true, adds emojis (📁/📄).
-
 ## Development (Monorepo)
+*   `packages/core`: Core logic, API fetcher, and CLI tool.
+*   `packages/web`: Vite-based Web Application.
+*   `tools/`: SEO and static page generation scripts.
 
-This repository is organized as a Monorepo.
-
-*   `packages/core`: The logic, API fetcher, and CLI tool.
-*   `packages/web`: The Vite-based Web Application.
-*   `tools/`: Scripts for generating SEO static pages.
-
-### Local Setup
-
-1.  **Clone:**
+1.  **Clone & Install:**
     ```bash
     git clone https://github.com/mgks/GitHubTree.git
     cd GitHubTree
-    ```
-
-2.  **Install:**
-    ```bash
     npm install
     ```
+2.  **Run Development Server:** `npm run dev`
+3.  **Deploy Production Build:** `npm run deploy` (Generates web app & SEO pages)
 
-3.  **Run Web App:**
-    ```bash
-    npm run dev
-    ```
-
-4.  **Build & Generate SEO Pages:**
-    ```bash
-    npm run deploy
-    ```
+### Self-Hosted Features
+The **File Preview** feature is disabled by default for security. To enable it on your own instance, follow the instructions in the `Enable File Preview` section of the codebase or see the `packages/web` implementation details.
 
 ## License
-
 MIT
 
-> **{ github.com/mgks }**
-> 
-> ![Website Badge](https://img.shields.io/badge/Visit-mgks.dev-blue?style=flat&link=https%3A%2F%2Fmgks.dev) ![Sponsor Badge](https://img.shields.io/badge/%20%20Become%20a%20Sponsor%20%20-red?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmgks)
+![Website Badge](https://img.shields.io/badge/.*%20mgks.dev-blue?style=flat&link=https%3A%2F%2Fmgks.dev) ![Sponsor Badge](https://img.shields.io/badge/%20%20Become%20a%20Sponsor%20%20-red?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmgks)
