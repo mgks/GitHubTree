@@ -104,7 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Enter Key Support
+    // Enter Key & Fetch Support
+    els.fetchBtn.addEventListener('click', loadTree);
     [els.repo, els.branch, els.ghToken].forEach(el => 
         el.addEventListener('keypress', e => e.key === 'Enter' && (el === els.ghToken ? saveToken() : loadTree()))
     );
