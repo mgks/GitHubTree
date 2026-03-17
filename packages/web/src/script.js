@@ -32,8 +32,7 @@ const els = {
     // Actions
     copyAll: document.getElementById('copyAllBtn'),
     shareBtn: document.getElementById('shareBtn'),
-    expandAll: document.getElementById('expandAllBtn'),
-    collapseAll: document.getElementById('collapseAllBtn'),
+    treeToggle: document.getElementById('treeToggleBtn'),
 
     // Overlays & Dropdowns
     overlay: document.getElementById('shareOverlay'),
@@ -41,6 +40,13 @@ const els = {
     copyShareBtn: document.getElementById('copyShareBtn'),
     closeOverlay: document.getElementById('closeOverlay'),
     
+    // Search & Preview
+    treeSearch: document.getElementById('treeSearch'),
+    previewOverlay: document.getElementById('previewOverlay'),
+    previewTitle: document.getElementById('previewTitle'),
+    previewBody: document.getElementById('previewBody'),
+    closePreview: document.getElementById('closePreview'),
+
     // Dropdown Labels
     sortBtnLabel: document.getElementById('sortBtnLabel'),
     styleBtnLabel: document.getElementById('styleBtnLabel'),
@@ -56,10 +62,27 @@ document.addEventListener('DOMContentLoaded', () => {
     setupShareOverlay();
     
     // Main Listeners
-    els.fetchBtn.addEventListener('click', loadTree);
     els.copyAll.addEventListener('click', copyFullTree);
-    els.expandAll.addEventListener('click', () => { toggleAll(false); trackEvent('UI', 'Expand All'); });
-    els.collapseAll.addEventListener('click', () => { toggleAll(true); trackEvent('UI', 'Collapse All'); });
+    els.treeToggle.addEventListener('click', () => {
+        const isCollapsed = els.treeToggle.innerHTML.includes('Expand');
+        toggleAll(!isCollapsed);
+        
+        // Update button state
+        const nextState = !isCollapsed ? 'Expand' : 'Compact';
+        const nextIcon = !isCollapsed ? 'fa-expand-alt' : 'fa-compress-alt';
+        els.treeToggle.innerHTML = `<i class="fas ${nextIcon}"></i> <span class="btn-text">${nextState}</span>`;
+        
+        trackEvent('UI', 'Tree Toggle', nextState);
+    });
+
+    // Search
+    els.treeSearch.addEventListener('input', () => render());
+
+    // Preview (Disabled)
+    if (els.closePreview) els.closePreview.addEventListener('click', () => els.previewOverlay.classList.remove('visible'));
+    if (els.previewOverlay) els.previewOverlay.addEventListener('click', (e) => {
+        if (e.target === els.previewOverlay) els.previewOverlay.classList.remove('visible');
+    });
 
     // Private Token Toggles
     els.privateBtn.addEventListener('click', () => {
@@ -95,6 +118,12 @@ function setupUrlHandler() {
         if (parts.length >= 3) {
             els.repo.value = `${parts[1]}/${parts[2]}`;
             els.branch.value = parts[3] || 'main';
+            
+            // Sync Style/Sort from URL
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('sort')) currentSort = params.get('sort');
+            if (params.has('style')) currentStyle = params.get('style');
+            
             loadTree();
         }
     }
@@ -215,8 +244,26 @@ function render() {
     els.lineNums.innerHTML = '';
     els.treeContent.innerHTML = '';
 
+    const term = els.treeSearch.value.toLowerCase();
+    let filteredData = currentData;
+    
+    if (term) {
+        const matches = currentData.filter(item => item.path.toLowerCase().includes(term));
+        const pathsToInclude = new Set();
+        
+        matches.forEach(item => {
+            const parts = item.path.split('/');
+            // Add the item itself and all its parents
+            for (let i = 1; i <= parts.length; i++) {
+                pathsToInclude.add(parts.slice(0, i).join('/'));
+            }
+        });
+
+        filteredData = currentData.filter(item => pathsToInclude.has(item.path));
+    }
+
     // 1. Sort Data (using Core Logic)
-    const sortedFlat = gt.sortTree(currentData, currentSort);
+    const sortedFlat = gt.sortTree(filteredData, currentSort);
 
     // 2. Build Visual Props (Prefixes like │   ├──)
     const hierarchy = buildVisualHierarchy(sortedFlat);
@@ -228,6 +275,8 @@ function render() {
     hierarchy.forEach((item, idx) => {
         // Line Number
         const n = document.createElement('div');
+        // If searching, line numbers are not strictly meaningful in chronological order, 
+        // but let's keep them as a count of visible items.
         n.textContent = idx + 1;
         fragNums.appendChild(n);
 
@@ -243,7 +292,11 @@ function render() {
         const iconClass = isFolder ? 'fa-solid fa-folder' : 'fa-regular fa-file';
         const typeClass = isFolder ? 'folder' : 'file';
 
-        if (isFolder) row.classList.add('tree-folder');
+        if (isFolder) {
+            row.classList.add('tree-folder');
+            // Auto-expand if searching
+            if (term) row.classList.remove('collapsed');
+        }
 
         // Apply Styles
         let prefixDisplay = item.prefix;
@@ -254,6 +307,10 @@ function render() {
         if (currentStyle === 'slashed') {
             if (isFolder) nameDisplay = `/${item.name}`;
             prefixDisplay = item.prefix.replace(/│/g, ' ').replace(/├──/g, ' ').replace(/└──/g, ' ');
+        }
+        if (currentStyle === 'bulleted') {
+            prefixDisplay = item.indent.replace(/    /g, '  ');
+            nameDisplay = `• ${item.name}${isFolder ? '/' : ''}`;
         }
 
         const caretHTML = isFolder ? '<span class="t-caret"><i class="fas fa-angle-down"></i></span>' : '';
@@ -275,6 +332,32 @@ function render() {
 
     // Event Delegation
     els.treeContent.onclick = handleTreeClick;
+}
+
+// --- Preview Logic ---
+async function showPreview(item) {
+    // Feature disabled by default due to CSP/Fetch limitations
+    console.log("Preview disabled:", item.path);
+    return;
+    
+    const repo = els.repo.value.trim();
+    const branch = els.branch.value.trim() || 'main';
+    const cleanPath = item.path.replace(/^\//, '');
+    const url = `https://raw.githubusercontent.com/${repo}/${branch}/${cleanPath}`;
+
+    els.previewTitle.innerText = item.name;
+    els.previewBody.innerText = "Loading...";
+    els.previewOverlay.classList.add('visible');
+
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`Could not load file (Code ${res.status})`);
+        const text = await res.text();
+        els.previewBody.innerText = text;
+        trackEvent('Preview', 'Open', item.path);
+    } catch (err) {
+        els.previewBody.innerText = `⚠️ Error: ${err.message}\n\nNote: Browsers may block large files or non-text content.`;
+    }
 }
 
 // --- Helper: Build Visual Hierarchy (Prefix Generator) ---
@@ -334,8 +417,31 @@ function handleTreeClick(e) {
 
     // 2. Folder toggle
     const folderRow = e.target.closest('.tree-folder');
-    if (!folderRow) return;
+    if (folderRow && !e.target.closest('.t-name')) {
+        toggleFolder(folderRow);
+        return;
+    }
 
+    // 3. File Preview Trigger (Disabled)
+    const fileName = e.target.closest('.t-name.file');
+    /*
+    if (fileName) {
+        const row = fileName.parentElement;
+        const depth = Number(row.dataset.depth);
+        const name = fileName.innerText;
+        // In this UI implementation, we need the path.
+        // Let's find the original item from currentData
+        const path = row.querySelector('.sub-copy').dataset.path;
+        showPreview({ name, path });
+        return;
+    }
+    */
+
+    if (!folderRow) return;
+    toggleFolder(folderRow);
+}
+
+function toggleFolder(folderRow) {
     const rows = Array.from(els.treeContent.children);
     const nums = Array.from(els.lineNums.children);
     const startIdx = rows.indexOf(folderRow);
@@ -434,7 +540,7 @@ function handleCopy(btn, text, isSub) {
 }
 
 function copyFullTree() {
-    const text = gt.generateAsciiTree(currentData); // Uses Core logic for formatting
+    const text = gt.generateAsciiTree(currentData, { style: currentStyle }); // Pass current style
     handleCopy(els.copyAll, text, false);
 }
 
@@ -479,11 +585,18 @@ function checkSavedToken() {
 
 // --- UI Helpers ---
 function setupDropdowns() {
-    [els.sortBtnLabel, els.styleBtnLabel].forEach(btn => {
+    // Select the actual buttons, not just the labels
+    const dropdownBtns = [
+        document.getElementById('sortBtn'),
+        document.getElementById('styleBtn')
+    ];
+
+    dropdownBtns.forEach(btn => {
+        if (!btn) return;
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
-            const parent = btn.parentElement;
-            closeDropdowns(parent); // Close others
+            const parent = btn.closest('.dropdown');
+            closeDropdowns(parent);
             parent.classList.toggle('active');
         });
     });
@@ -492,7 +605,7 @@ function setupDropdowns() {
         el.addEventListener('click', (e) => {
             e.preventDefault();
             currentSort = e.target.dataset.sort;
-            els.sortBtnLabel.innerHTML = `<i class="fas fa-sort-amount-down"></i> ${e.target.innerText}`;
+            els.sortBtnLabel.textContent = e.target.innerText;
             closeDropdowns();
             render();
             trackEvent('UI', 'Sort Change', currentSort);
@@ -503,7 +616,7 @@ function setupDropdowns() {
         el.addEventListener('click', (e) => {
             e.preventDefault();
             currentStyle = e.target.dataset.style;
-            els.styleBtnLabel.innerHTML = `<i class="fas fa-code-branch"></i> ${e.target.innerText}`;
+            els.styleBtnLabel.textContent = e.target.innerText;
             closeDropdowns();
             render();
             trackEvent('UI', 'Style Change', currentStyle);
@@ -535,6 +648,12 @@ function updatePageMetadata(repo, branch) {
         document.head.appendChild(linkTag);
     }
     linkTag.href = `https://githubtree.mgks.dev/repo/${repo}/${branch}/`;
+
+    // 4. Update History Entry with Sort/Style Params
+    const url = new URL(window.location.href);
+    url.searchParams.set('sort', currentSort);
+    url.searchParams.set('style', currentStyle);
+    window.history.replaceState(null, '', url.toString());
 }
 
 function closeDropdowns(except = null) {

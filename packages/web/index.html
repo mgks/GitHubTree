@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com https://www.googletagmanager.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://www.google-analytics.com;">
 
     <title>GitHub Repo Structure Visualizer : GitHubTree</title>
     <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
@@ -109,12 +109,17 @@
 
         <div id="treeWrapper" class="tree-wrapper" style="display: none;">
             <div class="toolbar">
-                <div class="tools-group">
-                    <div class="dropdown">
-                        <button class="tool-btn" id="sortBtnLabel">
-                            <i class="fas fa-sort-amount-down"></i> Sort
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
                         </button>
-                        <div class="dropdown-content">
+                        <div class="dropdown-content" id="sortDropdown">
                             <a href="#" data-sort="folder-az">Folders First (A-Z)</a>
                             <a href="#" data-sort="folder-za">Folders First (Z-A)</a>
                             <a href="#" data-sort="alpha-az">Name (A-Z)</a>
@@ -122,31 +127,30 @@
                         </div>
                     </div>
 
-                    <div class="dropdown">
-                        <button class="tool-btn" id="styleBtnLabel">
-                            <i class="fas fa-code-branch"></i> Style
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
                         </button>
-                        <div class="dropdown-content">
+                        <div class="dropdown-content" id="styleDropdown">
                             <a href="#" data-style="classic">Classic (└──)</a>
                             <a href="#" data-style="slashed">Slashed (/src)</a>
                             <a href="#" data-style="plus">ASCII (+--)</a>
                             <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
                         </div>
                     </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
                 </div>
 
-                <div class="tools-group right">
-                    <button id="expandAllBtn" title="Expand All" class="tool-btn">
-                        <i class="fas fa-expand-alt"></i> Expand
-                    </button>
-                    <button id="collapseAllBtn" title="Collapse All" class="tool-btn">
-                        <i class="fas fa-compress-alt"></i> Collapse
-                    </button>
-                    <button id="shareBtn" class="tool-btn">
-                        <i class="fas fa-share-alt"></i> Share
-                    </button>
-                    <button id="copyAllBtn" class="tool-btn action-btn">
-                        <i class="far fa-copy"></i> Copy Tree
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
                     </button>
                 </div>
             </div>
@@ -170,6 +174,16 @@
             <button id="closeOverlay" class="close-btn">&times;</button>
         </div>
     </div>
+
+    <!-- PREVIEW OVERLAY (Disabled by default, uncomment to enable)
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Preview</h3>
+            <pre id="previewBody"></pre>
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+    -->
 
     <script type="module" src="/src/script.js"></script>
 </body>

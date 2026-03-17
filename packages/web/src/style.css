@@ -398,33 +398,52 @@ input {
 }
 
 .toolbar {
-    background: var(--header-bg);
-    padding: 10px 15px;
-    border-bottom: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 12px;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
     border-radius: 8px 8px 0 0;
+    gap: 12px;
+    flex-wrap: nowrap;
 }
 
-.tools-group {
+.tools-left {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+.tools-left .search-box-inline #treeSearch{
+    width: 88%;
+    margin-left: 2%;
+}
+
+.tools-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .tool-btn {
     background: var(--btn-bg);
     border: 1px solid var(--btn-border);
     color: var(--text);
-    padding: 6px 14px;
+    padding: 0 14px;
+    height: 38px;
     border-radius: 6px;
     font-size: 0.85rem;
     font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .tool-btn:hover,
@@ -436,6 +455,7 @@ input {
 .action-btn {
     color: #ffffff;
     background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 .action-btn:hover {
@@ -898,3 +918,51 @@ position: fixed;
 .t-caret { display: inline-flex; width: 16px; justify-content: center; transition: transform 0.2s ease; font-size: 0.7em; opacity: 0.5; }
 .tree-folder.collapsed .t-caret { transform: rotate(-90deg); }
 .tree-folder.collapsed .t-name { opacity: 0.75; }
+
+.t-name { cursor: default; }
+
+/* 3-Line Responsive Grid for Small Screens */
+@media (max-width: 768px) {
+    .toolbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .tools-left, .tools-right {
+        display: contents; /* Direct children become grid items */
+    }
+
+    /* Row 1: Search (Full Width) */
+    .search-box-inline {
+        grid-column: span 4;
+        width: 100% !important;
+        margin-bottom: 4px;
+        order: 1 !important;
+    }
+
+    /* Row 2: Sort, Style, Toggle, Share */
+    #sortDropdownContainer { order: 2 !important; grid-column: span 1; width: 100%; }
+    #styleDropdownContainer { order: 3 !important; grid-column: span 1; width: 100%; }
+    #treeToggleBtn { order: 4 !important; grid-column: span 1; width: 100%; }
+    #shareBtn { order: 5 !important; grid-column: span 1; width: 100%; }
+
+    /* Row 3: Copy Tree (Full Width) */
+    #copyAllBtn { order: 6 !important; grid-column: span 4; width: 100%; }
+
+    /* UI Consistency */
+    .responsive-btn .btn-text,
+    .dropdown .btn-text { display: none; }
+    
+    .toolbar .tool-btn { padding: 0; width: 100%; height: 42px; border-radius: 4px; }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+    .responsive-btn .btn-text { display: none; }
+}
+
+.always-visible .btn-text { display: inline !important; }
+
+/* Tree Styles Adjustments */
+.t-prefix { font-family: 'Fira Code', monospace; white-space: pre; }
