@@ -6,19 +6,24 @@ export class GitHubTree {
 
 
     async getTree(repo, branch = 'main') {
-        const headers = { 'Accept': 'application/vnd.github.v3+json' };
+        const headers = { 
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28'
+        };
         if (this.token) headers['Authorization'] = `token ${this.token}`;
 
-        let targetBranch = branch;
+        // Sanitize inputs
+        const cleanRepo = repo.trim().replace(/\/$/, "");
+        let targetBranch = (branch || 'main').trim().replace(/\/$/, "");
         let sha = null;
 
         // 1. Try fetching SHA for the requested branch
-        let resSha = await fetch(`${this.apiBase}/repos/${repo}/commits/${targetBranch}`, { headers });
+        let resSha = await fetch(`${this.apiBase}/repos/${cleanRepo}/commits/${targetBranch}`, { headers });
 
         // 2. Fail-Safe: If 404 (Repo/Branch not found) or 422 (Git ref invalid), check for Default Branch
         if (!resSha.ok && (resSha.status === 404 || resSha.status === 422)) {
             // Fetch Repo Metadata to find the true default branch
-            const resRepo = await fetch(`${this.apiBase}/repos/${repo}`, { headers });
+            const resRepo = await fetch(`${this.apiBase}/repos/${cleanRepo}`, { headers });
             
             if (resRepo.ok) {
                 const repoData = await resRepo.json();
@@ -27,29 +32,30 @@ export class GitHubTree {
                 // If we were asking for 'main' but default is 'master' (or vice versa), try again
                 if (defaultBranch && defaultBranch !== targetBranch) {
                     targetBranch = defaultBranch;
-                    resSha = await fetch(`${this.apiBase}/repos/${repo}/commits/${targetBranch}`, { headers });
+                    resSha = await fetch(`${this.apiBase}/repos/${cleanRepo}/commits/${targetBranch}`, { headers });
                 }
             } else if (resRepo.status === 404) {
-                throw new Error(`Repository "${repo}" not found or is private.`);
+                throw new Error(`Repository "${cleanRepo}" not found or is private.`);
             }
         }
 
         // 3. Handle Errors (After retry attempt)
         if (!resSha.ok) {
             if (resSha.status === 403) throw new Error(`API Rate Limit Exceeded.`);
-            if (resSha.status === 404 || resSha.status === 422) throw new Error(`Branch "${branch}" not found in ${repo}.`);
+            if (resSha.status === 404 || resSha.status === 422) throw new Error(`Branch "${branch}" not found in ${cleanRepo}.`);
             throw new Error(`GitHub API Error (${resSha.status}): ${resSha.statusText}`);
         }
 
         const commitData = await resSha.json();
         sha = commitData.sha;
 
+        if (!sha) throw new Error(`Could not resolve commit SHA.`);
+
         // 4. Get Recursive Tree
-        const resTree = await fetch(`${this.apiBase}/repos/${repo}/git/trees/${sha}?recursive=1`, { headers });
-        if (!resTree.ok) throw new Error(`Failed to fetch tree data.`);
+        const resTree = await fetch(`${this.apiBase}/repos/${cleanRepo}/git/trees/${sha}?recursive=1`, { headers });
+        if (!resTree.ok) throw new Error(`Failed to fetch tree data (${resTree.status}).`);
         const data = await resTree.json();
         
-        // Return actual branch used so UI can update
         return { tree: data.tree, truncated: data.truncated, branch: targetBranch };
     }
 
