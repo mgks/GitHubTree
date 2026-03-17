@@ -141,8 +141,14 @@ function trackEvent(category, action, label = null) {
 
 // --- Fetch Logic ---
 async function loadTree() {
-    const repo = els.repo.value.trim();
+    let repo = els.repo.value.trim();
     const branch = els.branch.value.trim() || 'main';
+
+    // 1. Sanitize: If full URL is pasted, extract user/repo
+    if (repo.includes('github.com/')) {
+        repo = repo.split('github.com/').pop().split('?')[0].split('#')[0].replace(/\/$/, "");
+        els.repo.value = repo; // Update UI to clean version
+    }
 
     if (!repo.includes('/')) return showMsg("Invalid format. Use 'user/repo'", "error");
 
@@ -157,13 +163,13 @@ async function loadTree() {
     if (breadcrumbs) breadcrumbs.style.display = 'none';
 
     els.wrapper.style.display = 'none';
-    els.wrapper.style.display = 'none';
     showMsg(`Fetching ${repo}...`, "loading");
     els.fetchBtn.disabled = true;
 
+    const cacheKey = `ght_${repo}_${branch}`;
+    const tokenActive = !!localStorage.getItem('ght_token');
+
     try {
-        const cacheKey = `ght_${repo}_${branch}`;
-        const tokenActive = !!localStorage.getItem('ght_token');
         const cached = !tokenActive ? sessionStorage.getItem(cacheKey) : null;
 
         if (cached) {
