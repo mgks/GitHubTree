@@ -32,7 +32,9 @@ const els = {
     // Actions
     copyAll: document.getElementById('copyAllBtn'),
     shareBtn: document.getElementById('shareBtn'),
-    
+    expandAll: document.getElementById('expandAllBtn'),
+    collapseAll: document.getElementById('collapseAllBtn'),
+
     // Overlays & Dropdowns
     overlay: document.getElementById('shareOverlay'),
     shareInput: document.getElementById('shareInput'),
@@ -56,7 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Main Listeners
     els.fetchBtn.addEventListener('click', loadTree);
     els.copyAll.addEventListener('click', copyFullTree);
-    
+    els.expandAll.addEventListener('click', () => { toggleAll(false); trackEvent('UI', 'Expand All'); });
+    els.collapseAll.addEventListener('click', () => { toggleAll(true); trackEvent('UI', 'Collapse All'); });
+
     // Private Token Toggles
     els.privateBtn.addEventListener('click', () => {
         const isHidden = els.tokenPanel.style.display === 'none';
@@ -212,11 +216,9 @@ function render() {
     els.treeContent.innerHTML = '';
 
     // 1. Sort Data (using Core Logic)
-    // Note: We sort first, THEN build visual hierarchy
     const sortedFlat = gt.sortTree(currentData, currentSort);
 
     // 2. Build Visual Props (Prefixes like │   ├──)
-    // We reuse logic similar to generateAsciiTree but for Objects
     const hierarchy = buildVisualHierarchy(sortedFlat);
 
     // 3. Create DOM
@@ -232,28 +234,33 @@ function render() {
         // Content Row
         const row = document.createElement('div');
         row.className = 'tree-line';
+        row.dataset.depth = item.depth;
         // Fast animation cap (max 500ms)
         row.style.animation = `fadeIn 0.1s forwards ${Math.min(idx * 2, 500)}ms`;
         row.style.opacity = '0';
 
-        const iconClass = item.type === 'tree' ? 'fa-solid fa-folder' : 'fa-regular fa-file';
-        const typeClass = item.type === 'tree' ? 'folder' : 'file';
+        const isFolder = item.type === 'tree';
+        const iconClass = isFolder ? 'fa-solid fa-folder' : 'fa-regular fa-file';
+        const typeClass = isFolder ? 'folder' : 'file';
+
+        if (isFolder) row.classList.add('tree-folder');
 
         // Apply Styles
         let prefixDisplay = item.prefix;
         let nameDisplay = item.name;
 
-        // Custom Style Tweaks
-        if (currentStyle === 'minimal') prefixDisplay = item.indent; // No lines
+        if (currentStyle === 'minimal') prefixDisplay = item.indent;
         if (currentStyle === 'plus') prefixDisplay = prefixDisplay.replace(/└──/g, '+--').replace(/├──/g, '+--').replace(/│/g, '|');
         if (currentStyle === 'slashed') {
-            if (item.type === 'tree') nameDisplay = `/${item.name}`;
-            prefixDisplay = item.prefix.replace(/│/g, ' ').replace(/├──/g, ' ').replace(/└──/g, ' '); 
-            // Slashed usually implies clean indented look or just minimal
+            if (isFolder) nameDisplay = `/${item.name}`;
+            prefixDisplay = item.prefix.replace(/│/g, ' ').replace(/├──/g, ' ').replace(/└──/g, ' ');
         }
+
+        const caretHTML = isFolder ? '<span class="t-caret"><i class="fas fa-angle-down"></i></span>' : '';
 
         row.innerHTML = `
             <span class="t-prefix">${prefixDisplay}</span>
+            ${caretHTML}
             <span class="t-icon"><i class="${iconClass}"></i></span>
             <span class="t-name ${typeClass}">${nameDisplay}</span>
             <button class="sub-copy" data-path="${item.path}" title="Copy Path">
@@ -267,10 +274,7 @@ function render() {
     els.treeContent.appendChild(fragLines);
 
     // Event Delegation
-    els.treeContent.onclick = (e) => {
-        const btn = e.target.closest('.sub-copy');
-        if (btn) handleCopy(btn, btn.dataset.path, true);
-    };
+    els.treeContent.onclick = handleTreeClick;
 }
 
 // --- Helper: Build Visual Hierarchy (Prefix Generator) ---
@@ -284,8 +288,6 @@ function buildVisualHierarchy(sortedFlatList) {
     });
     
     // 2. Connect Parents
-    // Since 'sortedFlatList' is ALREADY sorted by the user's preference (via gt.sortTree),
-    // pushing items into the 'children' arrays here preserves that specific order.
     sortedFlatList.forEach(item => {
         const parts = item.path.split('/');
         parts.pop();
@@ -295,12 +297,13 @@ function buildVisualHierarchy(sortedFlatList) {
 
     // 3. Traverse to generate prefixes
     const result = [];
-    const traverse = (node, prefix, isLast) => {
+    const traverse = (node, prefix, isLast, depth) => {
         const connector = isLast ? "└── " : "├── ";
         result.push({
             name: node.name,
             path: node.path,
             type: node.type,
+            depth: depth,
             prefix: prefix + connector,
             indent: prefix.replace(/│   /g, '    ').replace(/├── /g, '    ').replace(/└── /g, '    ')
         });
@@ -308,15 +311,94 @@ function buildVisualHierarchy(sortedFlatList) {
         if (node.children) {
             const childPrefix = prefix + (isLast ? "    " : "│   ");
             node.children.forEach((child, i) => {
-                traverse(child, childPrefix, i === node.children.length - 1);
+                traverse(child, childPrefix, i === node.children.length - 1, depth + 1);
             });
         }
     };
 
     root.children.forEach((child, i) => {
-        traverse(child, "", i === root.children.length - 1);
+        traverse(child, "", i === root.children.length - 1, 0);
     });
     return result;
+}
+
+// --- Tree Click Handler ---
+function handleTreeClick(e) {
+    // 1. Copy button takes priority
+    const btn = e.target.closest('.sub-copy');
+    if (btn) {
+        e.stopPropagation();
+        handleCopy(btn, btn.dataset.path, true);
+        return;
+    }
+
+    // 2. Folder toggle
+    const folderRow = e.target.closest('.tree-folder');
+    if (!folderRow) return;
+
+    const rows = Array.from(els.treeContent.children);
+    const nums = Array.from(els.lineNums.children);
+    const startIdx = rows.indexOf(folderRow);
+    const folderDepth = Number(folderRow.dataset.depth);
+    const isClosing = !folderRow.classList.contains('collapsed');
+
+    folderRow.classList.toggle('collapsed');
+
+    for (let i = startIdx + 1; i < rows.length; i++) {
+        if (Number(rows[i].dataset.depth) <= folderDepth) break;
+
+        if (isClosing) {
+            rows[i].classList.add('child-hidden');
+            nums[i].classList.add('child-hidden');
+        } else {
+            // When expanding, skip rows inside a nested collapsed folder
+            if (isInsideCollapsedAncestor(rows, i, startIdx, folderDepth)) continue;
+            rows[i].classList.remove('child-hidden');
+            nums[i].classList.remove('child-hidden');
+        }
+    }
+
+    renumber();
+}
+
+// --- Helper: Check if row is inside a collapsed ancestor between afterIdx and targetIdx ---
+function isInsideCollapsedAncestor(rows, targetIdx, afterIdx, stopDepth) {
+    const targetDepth = Number(rows[targetIdx].dataset.depth);
+    for (let j = targetIdx - 1; j > afterIdx; j--) {
+        const d = Number(rows[j].dataset.depth);
+        if (d < targetDepth && rows[j].classList.contains('collapsed')) return true;
+        if (d <= stopDepth) break;
+    }
+    return false;
+}
+
+// --- Helper: Renumber visible lines ---
+function renumber() {
+    let num = 0;
+    Array.from(els.lineNums.children).forEach(el => {
+        el.textContent = el.classList.contains('child-hidden') ? '' : ++num;
+    });
+}
+
+// --- Toggle All Folders ---
+function toggleAll(collapse) {
+    const rows = Array.from(els.treeContent.children);
+    const nums = Array.from(els.lineNums.children);
+
+    rows.forEach((row, i) => {
+        if (collapse) {
+            if (row.classList.contains('tree-folder')) row.classList.add('collapsed');
+            if (Number(row.dataset.depth) > 0) {
+                row.classList.add('child-hidden');
+                nums[i].classList.add('child-hidden');
+            }
+        } else {
+            row.classList.remove('collapsed', 'child-hidden');
+            nums[i].classList.remove('child-hidden');
+        }
+    });
+
+    renumber();
 }
 
 // --- Copy Logic ---
