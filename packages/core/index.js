@@ -4,29 +4,6 @@ export class GitHubTree {
         this.apiBase = "https://api.github.com";
     }
 
-    /**
-     * Fetch the tree data from GitHub API
-     */
-    async getTree(repo, branch = 'main') {
-        const headers = { 'Accept': 'application/vnd.github.v3+json' };
-        if (this.token) headers['Authorization'] = `token ${this.token}`;
-
-        // 1. Get SHA of the branch
-        const resSha = await fetch(`${this.apiBase}/repos/${repo}/commits/${branch}`, { headers });
-        if (!resSha.ok) {
-            if (resSha.status === 404) throw new Error(`Repository not found or Private (Token required).`);
-            if (resSha.status === 403) throw new Error(`API Limit Exceeded.`);
-            throw new Error(`GitHub API Error: ${resSha.statusText}`);
-        }
-        const { sha } = await resSha.json();
-
-        // 2. Get Recursive Tree
-        const resTree = await fetch(`${this.apiBase}/repos/${repo}/git/trees/${sha}?recursive=1`, { headers });
-        if (!resTree.ok) throw new Error(`Failed to fetch tree data.`);
-        const data = await resTree.json();
-        
-        return { tree: data.tree, truncated: data.truncated };
-    }
 
     async getTree(repo, branch = 'main') {
         const headers = { 'Accept': 'application/vnd.github.v3+json' };
@@ -77,11 +54,28 @@ export class GitHubTree {
     }
 
     /**
-     * Sorts the tree based on the selected method
+     * Sorts and filters the tree based on the selected method, ignore patterns, and depth
      * methods: 'folder-az', 'folder-za', 'alpha-az', 'alpha-za'
      */
-    sortTree(flatTree, method = 'folder-az') {
+    sortTree(flatTree, method = 'folder-az', options = {}) {
         if (!flatTree) return [];
+
+        let result = [...flatTree];
+
+        // 1. Filter by Depth
+        if (options.depth) {
+            result = result.filter(item => item.path.split('/').length <= options.depth);
+        }
+
+        // 2. Filter by Ignore Patterns (Simple glob-like matching)
+        if (options.ignore && Array.isArray(options.ignore)) {
+            result = result.filter(item => {
+                return !options.ignore.some(pattern => {
+                    const regex = new RegExp('^' + pattern.replace(/\*/g, '.*').replace(/\//g, '\\/') + '($|\\/)');
+                    return regex.test(item.path);
+                });
+            });
+        }
 
         // Helper to reconstruct hierarchy for correct sorting
         const buildHierarchy = (items) => {
@@ -99,7 +93,7 @@ export class GitHubTree {
             return root.children;
         };
 
-        const nodes = buildHierarchy(flatTree);
+        const nodes = buildHierarchy(result);
 
         const compare = (a, b) => a.name.localeCompare(b.name);
         
@@ -150,8 +144,9 @@ export class GitHubTree {
      * │   └── utils.js
      * └── package.json
      */
-    generateAsciiTree(flatTree, options = { icons: false }) {
+    generateAsciiTree(flatTree, options = { icons: false, json: false }) {
         if (!flatTree || flatTree.length === 0) return "";
+        if (options.json) return JSON.stringify(flatTree, null, 2);
 
         // Re-build Hierarchy locally for generation
         const root = { name: '.', children: [] };
@@ -180,13 +175,14 @@ export class GitHubTree {
         let output = "";
 
         const renderNode = (node, prefix, isLast) => {
-            const connector = isLast ? "└── " : "├── ";
-            const childPrefix = isLast ? "    " : "│   ";
+            const isBulleted = options.style === 'bulleted';
+            const connector = isBulleted ? "• " : (isLast ? "└── " : "├── ");
+            const childPrefix = isBulleted ? "  " : (isLast ? "    " : "│   ");
             
             let icon = "";
             if (options.icons) icon = node.type === 'tree' ? "📁 " : "📄 ";
 
-            output += `${prefix}${connector}${icon}${node.name}${node.type === 'tree' && !options.icons ? '/' : ''}\n`;
+            output += `${prefix}${connector}${icon}${node.name}${node.type === 'tree' && !options.icons && !isBulleted ? '/' : ''}\n`;
 
             if (node.children) {
                 node.children.forEach((child, index) => {
