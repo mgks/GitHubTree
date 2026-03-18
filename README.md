@@ -10,11 +10,11 @@
   
   <!-- BADGES -->
   <p>
-    <img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version">
+    <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version"></a>
     <!--<img src="https://img.shields.io/npm/v/gh-tree.svg?style=flat-square&color=fc3b53" alt="npm version">-->
-    <img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=38bd24" alt="npm downloads">
-    <img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars">
-    <img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license">
+    <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=38bd24" alt="npm downloads"></a>
+    <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars"></a>
+    <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
   </p>
 
   <!-- MENU -->
@@ -26,7 +26,8 @@
 
   <!-- PREVIEW -->
   <p>
-    <img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1de6006-02e5-4ff1-bda1-3f079e350021" />
+    <img width="1000" alt="image" src="https://github.com/user-attachments/assets/94819dfc-e0a7-493a-9b10-e38822e9c55b" />
+    <!--<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1de6006-02e5-4ff1-bda1-3f079e350021" />-->
   </p>
 
 </div>
