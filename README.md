@@ -58,16 +58,32 @@ npm install -g gh-tree
 ### Commands & Flags
 ```bash
 gh-tree <user/repo> [flags]
+```
 
-Flags:
-  --branch, -b <name>   Specify branch (default: main)
-  --depth, -d <num>     Limit recursion depth
-  --ignore, -i <pats>   Ignore patterns (comma-separated, e.g. "node_modules,*.log")
-  --json                Output raw JSON data instead of ASCII
-  --icons               Show file/folder icons in output
-  --token, -t <key>     Use a specific GitHub Token
-  --save-token <key>    Save a token globally for future use
-  --clear-cache         Clear local tree cache
+**Flags:**
+*   `--branch`, `-b <name>`: Specify branch (default: `main`)
+*   `--depth`, `-d <num>`: Limit recursion depth
+*   `--ignore`, `-i <patterns>`: Ignore patterns (comma-separated, e.g. `node_modules,*.log`)
+*   `--style <type>`: Visual style (`classic`, `bulleted`, `minimal`, etc.)
+*   `--json`: Output raw JSON data instead of ASCII
+*   `--icons`: Show file/folder icons in output
+*   `--token`, `-t <key>`: Use a specific GitHub Token
+*   `--save-token <key>`: Save a token globally for future use
+*   `--clear-cache`: Clear local tree cache
+
+### CLI Examples
+```bash
+# Basic usage
+gh-tree mgks/githubtree
+
+# Limit depth and ignore specific patterns
+gh-tree facebook/react -d 2 -i "node_modules,*.log"
+
+# Show icons and use a specific branch
+gh-tree user/repo --branch develop --icons
+
+# Output as JSON for processing
+gh-tree user/repo --json > tree.json
 ```
 
 ## For Builders: NPM Package
@@ -93,7 +109,7 @@ try {
 }
 ```
 
-## Development (Monorepo)
+## Local Development (Monorepo)
 *   `packages/core`: Core logic, API fetcher, and CLI tool.
 *   `packages/web`: Vite-based Web Application.
 *   `tools/`: SEO and static page generation scripts.
@@ -105,10 +121,16 @@ try {
     npm install
     ```
 2.  **Run Development Server:** `npm run dev`
-3.  **Deploy Production Build:** `npm run deploy` (Generates web app & SEO pages)
+3.  **Deploy Production Build**: `npm run deploy`
 
-### Self-Hosted Features
-The **File Preview** feature is disabled by default for security. To enable it on your own instance, follow the instructions in the `Enable File Preview` section of the codebase or see the `packages/web` implementation details.
+## Contributing
+Contributions are welcome! If you have a feature request, bug report, or a pull request, please feel free to open an issue or submit a PR on [GitHub](https://github.com/mgks/GitHubTree).
+
+1.  **Fork the Repo**
+2.  **Create a Feature Branch** (`git checkout -b feature/amazing-feature`)
+3.  **Commit Changes** (`git commit -m 'Add amazing feature'`)
+4.  **Push to Branch** (`git push origin feature/amazing-feature`)
+5.  **Open a Pull Request**
 
 ## License
 MIT
