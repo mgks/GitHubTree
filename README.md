@@ -26,7 +26,9 @@
 
   <!-- PREVIEW -->
   <p>
-    <img width="1000" alt="image" src="https://github.com/user-attachments/assets/94819dfc-e0a7-493a-9b10-e38822e9c55b" />
+    <a href="https://githubtree.mgks.dev">
+      <img width="1000" alt="image" src="https://github.com/user-attachments/assets/94819dfc-e0a7-493a-9b10-e38822e9c55b" />
+    </a>
     <!--<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1de6006-02e5-4ff1-bda1-3f079e350021" />-->
   </p>
 
