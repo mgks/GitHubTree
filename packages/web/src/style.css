@@ -716,11 +716,10 @@ input {
    12. FOOTER & RESPONSIVE
    ========================================= */
 .footer {
-position: fixed;
+    position: fixed;
     bottom: 10px;
     font-size: .75rem;
     color: var(--text-primary);
-    text-align: center;
     opacity: .85;
     width: fit-content;
     font-family: monospace;
@@ -729,10 +728,15 @@ position: fixed;
     padding: 5px 20px 10px;
     background-color: var(--bg);
     border-radius: 20px;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    gap: 6px;                
 }
 
 .footer svg {
-    margin: 5px 2px;
+    margin: 0;
+    display: block;          
 }
 
 .footer b {
