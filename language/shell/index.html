@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://www.google-analytics.com;">
+
+    <title>Best Shell Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-BCKwZj-y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BYl99n9A.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>Shell Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/ohmyzsh/ohmyzsh/master/">
+                    <strong>ohmyzsh/ohmyzsh</strong>
+                    <p>🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/d3/d3/main/">
+                    <strong>d3/d3</strong>
+                    <p>Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/papers-we-love/papers-we-love/master/">
+                    <strong>papers-we-love/papers-we-love</strong>
+                    <p>Papers from the computer science community to read and discuss.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nvm-sh/nvm/master/">
+                    <strong>nvm-sh/nvm</strong>
+                    <p>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zsh-users/zsh-autosuggestions/master/">
+                    <strong>zsh-users/zsh-autosuggestions</strong>
+                    <p>Fish-like autosuggestions for zsh</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zsh-users/zsh-syntax-highlighting/master/">
+                    <strong>zsh-users/zsh-syntax-highlighting</strong>
+                    <p>Fish shell like syntax highlighting for Zsh.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tj/n/master/">
+                    <strong>tj/n</strong>
+                    <p>Node version management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pyenv/pyenv/master/">
+                    <strong>pyenv/pyenv</strong>
+                    <p>Simple Python version management</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rvm/rvm/master/">
+                    <strong>rvm/rvm</strong>
+                    <p>Ruby enVironment Manager (RVM)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rbenv/rbenv/master/">
+                    <strong>rbenv/rbenv</strong>
+                    <p>Manage your app's Ruby environment</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/github/super-linter/main/">
+                    <strong>github/super-linter</strong>
+                    <p>Combination of multiple linters to install as a GitHub Action</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/longhorn/longhorn/master/">
+                    <strong>longhorn/longhorn</strong>
+                    <p>Cloud-Native distributed storage built on and for Kubernetes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pi-hole/pi-hole/master/">
+                    <strong>pi-hole/pi-hole</strong>
+                    <p>A black hole for Internet advertisements</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/termux/termux-packages/master/">
+                    <strong>termux/termux-packages</strong>
+                    <p>A package build system for Termux.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/drwetter/testssl.sh/3.2/">
+                    <strong>drwetter/testssl.sh</strong>
+                    <p>Testing TLS/SSL encryption anywhere on any port </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/StreisandEffect/streisand/master/">
+                    <strong>StreisandEffect/streisand</strong>
+                    <p>Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ramitsurana/awesome-kubernetes/master/">
+                    <strong>ramitsurana/awesome-kubernetes</strong>
+                    <p>A curated list for awesome kubernetes sources :ship::tada:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/agarrharr/awesome-cli-apps/main/">
+                    <strong>agarrharr/awesome-cli-apps</strong>
+                    <p>🖥 📊 🕹 🛠 A curated list of command line apps</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MichaelCade/90DaysOfDevOps/main/">
+                    <strong>MichaelCade/90DaysOfDevOps</strong>
+                    <p>This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/snarktank/compound-product/main/">
+                    <strong>snarktank/compound-product</strong>
+                    <p>A self-improving product system that reads reports, identifies priorities, and autonomously implements fixes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wolffcatskyy/crowdsec-blocklist-import/main/">
+                    <strong>wolffcatskyy/crowdsec-blocklist-import</strong>
+                    <p>Dockerized tool to import public threat feeds into CrowdSec - 28+ free blocklists, 60k+ IPs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yohey-w/multi-agent-shogun/main/">
+                    <strong>yohey-w/multi-agent-shogun</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MapleShaw/yt-dlp-downloader-skill/master/">
+                    <strong>MapleShaw/yt-dlp-downloader-skill</strong>
+                    <p>Cursor Agent Skill for downloading videos using yt-dlp</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamNet-dev/conduit-manager/main/">
+                    <strong>SamNet-dev/conduit-manager</strong>
+                    <p>A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mindfold-ai/Trellis/main/">
+                    <strong>mindfold-ai/Trellis</strong>
+                    <p>All-in-one AI framework & toolkit for Claude Code & Cursor</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/InfinityLoop1308/PipePipe-X/main/">
+                    <strong>InfinityLoop1308/PipePipe-X</strong>
+                    <p>Modern designed PipePipe</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miaoxworld/ClawdBotInstaller/main/">
+                    <strong>miaoxworld/ClawdBotInstaller</strong>
+                    <p>ClawdBot 一键部署工具</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gemini-cli-extensions/ralph/main/">
+                    <strong>gemini-cli-extensions/ralph</strong>
+                    <p>Gemini CLI extension for Ralph loops</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/1186258278/OpenClawChineseTranslation/main/">
+                    <strong>1186258278/OpenClawChineseTranslation</strong>
+                    <p>🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中文版 | Claude/ChatGPT LLM 接入 | WhatsApp/Telegram/Discord 多平台 | 每小时自动同步 | CLI + Dashboard 全中文 | 全流程搭建教程，以及排错指南！</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/miaoxworld/OpenClawInstaller/main/">
+                    <strong>miaoxworld/OpenClawInstaller</strong>
+                    <p>ClawdBot 一键部署工具</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/YougLin-dev/Aha-Loop/main/">
+                    <strong>YougLin-dev/Aha-Loop</strong>
+                    <p>Aha Loop is a fully autonomous AI development system, extended from the core ideas of Ralph. It's not just an execution engine, but a complete AI development framework with planning capabilities, research abilities, and oversight mechanisms.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/appsail/Gemini-in-Chrome/master/">
+                    <strong>appsail/Gemini-in-Chrome</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/justlovemaki/OpenClaw-Docker-CN-IM/main/">
+                    <strong>justlovemaki/OpenClaw-Docker-CN-IM</strong>
+                    <p>OpenClaw 的中国IM平台整合Docker版本，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国IM软件的插件，让您可以快速部署一个支持多个中国IM平台的 AI 机器人网关</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamNet-dev/paqctl/main/">
+                    <strong>SamNet-dev/paqctl</strong>
+                    <p>Unified proxy manager for bypassing firewalls - supports Paqet (KCP/raw socket) and GFW-Knocker (violated TCP/QUIC) with dual-backend simultaneous operation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/behzadea12/Paqet-Tunnel-Manager/main/">
+                    <strong>behzadea12/Paqet-Tunnel-Manager</strong>
+                    <p>Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ToolSeRF/Sepehr-GRE-FORWARDER/main/">
+                    <strong>ToolSeRF/Sepehr-GRE-FORWARDER</strong>
+                    <p>اسکریپت سپهر برای راه‌اندازی و مدیریت سریع  و آسان تونل GRE و پورت فورارد که میتوان بین یک یا چند سرور از آن استفاده کرد، یا جان فدای میهن، سپهر عزیز (سپهر کجایی بابا؟)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/davegoldblatt/total-recall/main/">
+                    <strong>davegoldblatt/total-recall</strong>
+                    <p>Persistent memory plugin for Claude Code. Tiered memory system with write gates, correction propagation, and slash commands.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/blader/taskmaster/main/">
+                    <strong>blader/taskmaster</strong>
+                    <p>Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PeonPing/peon-ping/main/">
+                    <strong>PeonPing/peon-ping</strong>
+                    <p>Warcraft III Peon voice notifications for Claude Code. Stop babysitting your terminal.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/harrymunro/nelson/main/">
+                    <strong>harrymunro/nelson</strong>
+                    <p>A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ChownYourLife/paqet-tunnel/master/">
+                    <strong>ChownYourLife/paqet-tunnel</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/itcaat/mtproto-installer/main/">
+                    <strong>itcaat/mtproto-installer</strong>
+                    <p>Ускоритель телеграм =)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/craigsc/cmux/main/">
+                    <strong>craigsc/cmux</strong>
+                    <p>cmux: tmux for Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ToolSeRF/TaHa-Direct-Reverse-Tunnel-Runner/main/">
+                    <strong>ToolSeRF/TaHa-Direct-Reverse-Tunnel-Runner</strong>
+                    <p>راه اندازی و مدیریت تانل مستقیم و معکوس(ریورس) با بیش از 150 پروتو برای عبور از فیلترینگ و پاسخگو برای سرورهایی با محدودیت بسیار شدید، راه اندازی بین یک یا چند سرور، به یاد طاها هوشیار کودک 12 ساله جان فدای میهن</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/s2-streamstore/claude-batch-toolkit/main/">
+                    <strong>s2-streamstore/claude-batch-toolkit</strong>
+                    <p>Send non-urgent work to the Anthropic Batch API at 50% cost — directly from Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/rawwerks/ypi/master/">
+                    <strong>rawwerks/ypi</strong>
+                    <p>A recursive coding agent inpired by RLMs</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mimurchison/claude-chief-of-staff/main/">
+                    <strong>mimurchison/claude-chief-of-staff</strong>
+                    <p>AI Chief of Staff — Your personal AI operating system built on Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/davidhariri/life-system/main/">
+                    <strong>davidhariri/life-system</strong>
+                    <p>A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/agenticnotetaking/arscontexta/main/">
+                    <strong>agenticnotetaking/arscontexta</strong>
+                    <p>Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xyzthiago/claude-flows/main/">
+                    <strong>xyzthiago/claude-flows</strong>
+                    <p>🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code support via MCP protocol. Ranked #1 in agent-based frameworks.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NikkeTryHard/zerogravity/main/">
+                    <strong>NikkeTryHard/zerogravity</strong>
+                    <p>OpenAI, Anthropic, and Gemini-compatible proxy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hamelsmu/claude-review-loop/main/">
+                    <strong>hamelsmu/claude-review-loop</strong>
+                    <p>Claude Code plugin: automated code review loop with Codex</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sangrokjung/claude-forge/main/">
+                    <strong>sangrokjung/claude-forge</strong>
+                    <p>oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/steveclarke/real-world-rails/main/">
+                    <strong>steveclarke/real-world-rails</strong>
+                    <p>200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/joeseesun/knowledge-site-creator/main/">
+                    <strong>joeseesun/knowledge-site-creator</strong>
+                    <p>一句话生成任何领域的知识学习网站 - AI 理解主题，自动创作内容，生成页面，一键部署</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/derHaken/SuperAntigravity/main/">
+                    <strong>derHaken/SuperAntigravity</strong>
+                    <p>Superpowers + SuperClaude for Google Antigravity IDE</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hiragram/claude-docker/main/">
+                    <strong>hiragram/claude-docker</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mathiaschu/meta-ads-analyzer/main/">
+                    <strong>mathiaschu/meta-ads-analyzer</strong>
+                    <p>Meta Ads Analyzer skill + MCP server for Claude Code. Breakdown Effect, Learning Phase, and expert-level campaign diagnosis.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Eronred/aso-skills/main/">
+                    <strong>Eronred/aso-skills</strong>
+                    <p>AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/34306/vphone-aio/main/">
+                    <strong>34306/vphone-aio</strong>
+                    <p>1 script run the vphone</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/slowmist/openclaw-security-practice-guide/main/">
+                    <strong>slowmist/openclaw-security-practice-guide</strong>
+                    <p>This guide is designed for OpenClaw itself (Agent-facing), not as a traditional human-only hardening checklist.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TriangleMagistrate/DeepSeek-Claw/main/">
+                    <strong>TriangleMagistrate/DeepSeek-Claw</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LeoYeAI/openclaw-guardian/main/">
+                    <strong>LeoYeAI/openclaw-guardian</strong>
+                    <p>🛡️ Guardian watchdog for OpenClaw Gateway — auto-monitor, self-repair via doctor --fix, git-based rollback, daily snapshots, and Discord alerts. Powered by MyClaw.ai</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/altstackHQ/altstack-data/main/">
+                    <strong>altstackHQ/altstack-data</strong>
+                    <p>A curated list of 450+ awesome open-source alternatives to proprietary SaaS. Deployment configs, self-hosting guides, and tool directory.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/daniel3303/ClaudeCodeStatusLine/main/">
+                    <strong>daniel3303/ClaudeCodeStatusLine</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ckckck/UltimateSearchSkill/main/">
+                    <strong>ckckck/UltimateSearchSkill</strong>
+                    <p>Dual-engine web search Skill for OpenClaw/Pi: Grok AI + Tavily + FireCrawl</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/adamveld12/ghost/main/">
+                    <strong>adamveld12/ghost</strong>
+                    <p>Git is the coding agent</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shenhao-stu/openclaw-agents/main/">
+                    <strong>shenhao-stu/openclaw-agents</strong>
+                    <p>🐾 One-command multi-agent setup for OpenClaw — 9 specialized AI agents, group routing, safe config merge.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/erenjugs/OpenGork/main/">
+                    <strong>erenjugs/OpenGork</strong>
+                    <p>🧠 Uncensored AI agent powered by xAI's Grok - no filters, no limits</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LeoYeAI/openclaw-backup/main/">
+                    <strong>LeoYeAI/openclaw-backup</strong>
+                    <p>One-click backup & restore for OpenClaw instances — workspace, credentials, skills, agent history. Powered by MyClaw.ai</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NoizAI/skills/main/">
+                    <strong>NoizAI/skills</strong>
+                    <p>Allow your 🦞 bot to Shout, Speak, with ""human"" vibe</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/coyvalyss1/model-matchmaker/main/">
+                    <strong>coyvalyss1/model-matchmaker</strong>
+                    <p>Local hook for Cursor and Claude Code that routes prompts to the right model tier. Stop paying Opus prices to rename files.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kamranahmedse/claude-statusline/main/">
+                    <strong>kamranahmedse/claude-statusline</strong>
+                    <p>Minimal Claude Code statusline setup I personally use</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SamNet-dev/dnstm-setup/master/">
+                    <strong>SamNet-dev/dnstm-setup</strong>
+                    <p>Interactive setup wizard for dnstm — automated DNS-based network configuration</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sujitagarwal/multigravity-cli/main/">
+                    <strong>sujitagarwal/multigravity-cli</strong>
+                    <p>Run multiple Antigravity IDE profiles at the same time — each with its own accounts, settings, and extensions.  No more logging in and out. Just switch profiles instantly or use them all at once!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Adityaraj0421/design-studio/main/">
+                    <strong>Adityaraj0421/design-studio</strong>
+                    <p>A virtual design team for Claude Code — 9 specialist roles, 16 commands, 5 agents</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xunchahaha/mi_nobl_root/main/">
+                    <strong>xunchahaha/mi_nobl_root</strong>
+                    <p>小米免解bl的ksu+lsp方案</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/orange2ai/openclaw-killer/main/">
+                    <strong>orange2ai/openclaw-killer</strong>
+                    <p>一键完美卸载 OpenClaw，让这只龙虾体面告别 🦞</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/krisrice/oracle-db-skills/main/">
+                    <strong>krisrice/oracle-db-skills</strong>
+                    <p>Oracle DB Skills is a curated library of 100+ practical, documentation-backed guides for working with Oracle Database, organized by domain</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/byJoey/openclawctl/main/">
+                    <strong>byJoey/openclawctl</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mariusdjen/vpskit/main/">
+                    <strong>mariusdjen/vpskit</strong>
+                    <p>The easiest way to secure, deploy and manage a Linux VPS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/JudyaiLab/ai-night-shift/main/">
+                    <strong>JudyaiLab/ai-night-shift</strong>
+                    <p>Multi-agent autonomous framework — let your AI work while you sleep 🌙</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/makermate/clarvis-ai/main/">
+                    <strong>makermate/clarvis-ai</strong>
+                    <p>Clarvis - 3D Printing Made Easy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/collaborator-ai/collab-public/main/">
+                    <strong>collaborator-ai/collab-public</strong>
+                    <p>Collaborator is a place to build with agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uditgoenka/autoresearch/master/">
+                    <strong>uditgoenka/autoresearch</strong>
+                    <p>Claude Autoresearch Skill — Autonomous goal-directed iteration for Claude Code. Inspired by Karpathy's autoresearch. Modify → Verify → Keep/Discard → Repeat forever.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/liorwn/claudetop/main/">
+                    <strong>liorwn/claudetop</strong>
+                    <p>htop for your Claude Code sessions — real-time cost, cache efficiency, model comparison, and smart alerts</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/huggingface/hf-agents/main/">
+                    <strong>huggingface/hf-agents</strong>
+                    <p>HF CLI extension to run local coding agent powered by llmfit and llama.cpp</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/leo-lilinxiao/codex-autoresearch/main/">
+                    <strong>leo-lilinxiao/codex-autoresearch</strong>
+                    <p>Codex Autoresearch Skill — A self-directed iterative system for Codex that continuously cycles through: modify, verify, retain or discard, and repeat indefinitely. Inspired by Karpathy’s autoresearch concept.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SahilH4ck4you/iOS-SSL-pinning-bypass-without-jalibreak/main/">
+                    <strong>SahilH4ck4you/iOS-SSL-pinning-bypass-without-jalibreak</strong>
+                    <p>SSL pinning bypass setup for iOS (No Jailbreak) using OpenVPN + iptables traffic redirection to proxy (Burp Suite / mitmproxy)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ccbkkb/MicroWARP/main/">
+                    <strong>ccbkkb/MicroWARP</strong>
+                    <p>🚀 An 800KB RAM ultra-lightweight Cloudflare WARP SOCKS5 proxy in Docker. 仅需 800KB 内存的纯内核态 Cloudflare WARP 代理 - Docker</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/komunite/kalfa/main/">
+                    <strong>komunite/kalfa</strong>
+                    <p>Claude Code için Türkçe profesyonel işletim sistemi — 10 uzman agent, 22 komut, 993 skill, 6 katmanlı hafıza</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gnekt/My-Brain-Is-Full-Crew/main/">
+                    <strong>gnekt/My-Brain-Is-Full-Crew</strong>
+                    <p>Built by a PhD whose memory was failing, whose diet was a mess, and whose anxiety had its own agenda. Most second brain tools ignore the fact that your brain doesn't work in isolation: your body and your mental health are part of the system too. This crew handles all three: knowledge, nutrition, and mental wellness.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zhu1090093659/spec_driven_develop/main/">
+                    <strong>zhu1090093659/spec_driven_develop</strong>
+                    <p>Cross-platform AI agent skill for spec-driven development: analyze codebases, decompose large  transformations, and track long-running work.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/jnMetaCode/superpowers-zh/main/">
+                    <strong>jnMetaCode/superpowers-zh</strong>
+                    <p>AI 编程超能力中文版 — superpowers 完整汉化 + 中国特色 skills（Gitee/Coding 工作流、中文排版、MCP 构建）</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ericboy0224/learn-docker-and-k8s/main/">
+                    <strong>ericboy0224/learn-docker-and-k8s</strong>
+                    <p>Interactive AI-driven game to learn Docker, Linux, networking & Kubernetes. Open in Claude Code or Cursor, type 'let's play'.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/juntoku9/claude_immigration_attorney/main/">
+                    <strong>juntoku9/claude_immigration_attorney</strong>
+                    <p>Claude code environment for laywers </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/udayanwalvekar/clearshot/main/">
+                    <strong>udayanwalvekar/clearshot</strong>
+                    <p>📸 Structured screenshot intelligence for AI coding tools. Give your AI X-ray vision for UI screenshots.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Euro-Office/DocumentServer/main/">
+                    <strong>Euro-Office/DocumentServer</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/poshan0126/dotclaude/main/">
+                    <strong>poshan0126/dotclaude</strong>
+                    <p>The standard .claude/  folder structure for everyday development.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/esaradev/icarus-daedalus/main/">
+                    <strong>esaradev/icarus-daedalus</strong>
+                    <p>Icarus Memory Protocol -- universal agent memory in 50 lines. markdown files in a directory. any framework, any platform, shared memory. includes two-agent reference implementation with Telegram, Slack, and cross-platform recall.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/TylerBoni/headless-airplay-screen-mirror/main/">
+                    <strong>TylerBoni/headless-airplay-screen-mirror</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/garagon/nanostack/main/">
+                    <strong>garagon/nanostack</strong>
+                    <p>Minimal AI coding agent team skills for the full engineering workflow. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/0xSteph/pentest-ai/main/">
+                    <strong>0xSteph/pentest-ai</strong>
+                    <p>Turn Claude Code into your offensive security research assistant. Specialized AI subagents for authorized penetration testing plan engagements, analyze recon, research exploits, build detections, audit STIGs, and write reports.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/theNetworkChuck/axios-attack-guide/main/">
+                    <strong>theNetworkChuck/axios-attack-guide</strong>
+                    <p>Axios npm supply chain attack — detection scripts, IOCs, and protection guide</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chatgptprojects/clear-code/main/">
+                    <strong>chatgptprojects/clear-code</strong>
+                    <p>See your claude code logs in clear details in your dashboard</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Ganso/refugiOS/main/">
+                    <strong>Ganso/refugiOS</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/iamfakeguru/claude-md/main/">
+                    <strong>iamfakeguru/claude-md</strong>
+                    <p>Production-grade agent directives for Claude Code</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/russelleNVy/three-man-team/main/">
+                    <strong>russelleNVy/three-man-team</strong>
+                    <p>A structured 3-agent AI dev team — Architect, Builder, Reviewer. Built from production use. Token-optimized. Works with Claude Code, VS Code, Cursor, and any AI that supports context files.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cathrynlavery/openclaw-ops/main/">
+                    <strong>cathrynlavery/openclaw-ops</strong>
+                    <p>OpenClaw operations skill with health checks, repair scripts, watchdogs, update triage, and security scans.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sdyckjq-lab/llm-wiki-skill/main/">
+                    <strong>sdyckjq-lab/llm-wiki-skill</strong>
+                    <p>基于 Karpathy llm-wiki 方法论的个人知识库构建 Skill，支持多平台！</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/uton88/dan-binary-releases/main/">
+                    <strong>uton88/dan-binary-releases</strong>
+                    <p>Public binary-only releases and install scripts for dan</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/elkimek/honcho-self-hosted/main/">
+                    <strong>elkimek/honcho-self-hosted</strong>
+                    <p>Self-host Honcho memory layer for Hermes Agent — OpenRouter + Venice, no code changes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AgriciDaniel/claude-obsidian/main/">
+                    <strong>AgriciDaniel/claude-obsidian</strong>
+                    <p>Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ussumant/llm-wiki-compiler/main/">
+                    <strong>ussumant/llm-wiki-compiler</strong>
+                    <p>Claude Code plugin that compiles markdown knowledge files into a topic-based wiki. Implements Karpathy's LLM Knowledge Base pattern.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pcruz1905/hls-restream-proxy/main/">
+                    <strong>pcruz1905/hls-restream-proxy</strong>
+                    <p>Lightweight HLS restream proxy for Jellyfin/Emby/Plex — injects headers, rewrites playlists, auto-refreshes tokens</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/yizhiyanhua-ai/fireworks-tech-graph/main/">
+                    <strong>yizhiyanhua-ai/fireworks-tech-graph</strong>
+                    <p>Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ParthJadhav/ios-marketing-capture/main/">
+                    <strong>ParthJadhav/ios-marketing-capture</strong>
+                    <p>Automate Multi-Locale asset creation for your iOS app.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hexiecs/talk-normal/main/">
+                    <strong>hexiecs/talk-normal</strong>
+                    <p>Make any LLM talk like a normal person. A system prompt that removes AI slop.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mohi-devhub/antivibe/main/">
+                    <strong>mohi-devhub/antivibe</strong>
+                    <p>Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/techjarves/USB-Uncensored-LLM/main/">
+                    <strong>techjarves/USB-Uncensored-LLM</strong>
+                    <p>The ultimate zero-install, portable local AI environment. Run high-quality, uncensored LLMs (Gemma, Qwen, NemoMix) directly from any USB drive or SSD. Fully air-gapped, cross-platform (Win/Mac/Linux), and privacy-first with persistent chat history.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/seramo/sni-scanner/main/">
+                    <strong>seramo/sni-scanner</strong>
+                    <p>A lightweight Bash tool to scan common CDN ports on a list of IPs and domains.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/smallnest/autoresearch/master/">
+                    <strong>smallnest/autoresearch</strong>
+                    <p>autoresearch for software development</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/unclebob/swarm-forge/main/">
+                    <strong>unclebob/swarm-forge</strong>
+                    <p>A simple tool for coordinating several AI agents.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/golbin/agent-skills/main/">
+                    <strong>golbin/agent-skills</strong>
+                    <p>Reusable agent skills for Codex and compatible tools</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nexu-io/auto-github-contributor/main/">
+                    <strong>nexu-io/auto-github-contributor</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/worldwonderer/oh-story-claudecode/main/">
+                    <strong>worldwonderer/oh-story-claudecode</strong>
+                    <p>网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味全流程</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chaohong-ai/ai-auto-work/main/">
+                    <strong>chaohong-ai/ai-auto-work</strong>
+                    <p>Automatically completes the full workflow from requirement research → research review → planning → plan review → development →  development review using → test AI large language models. Capable of autonomously handling medium to large-scale engineering projects.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/charlie947/social-media-skills/main/">
+                    <strong>charlie947/social-media-skills</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/evanklem/evanflow/main/">
+                    <strong>evanklem/evanflow</strong>
+                    <p>A TDD-driven iterative feedback loop for software development. 16 cohesive Claude Code skills walk an idea from brainstorm → plan → execute → iterate, with checkpoints throughout.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/99xAgency/GodModeSkill/main/">
+                    <strong>99xAgency/GodModeSkill</strong>
+                    <p>Multi-LLM cross-review workflow for Claude Code. /work orchestrates plan/implement/bug-fix with 3 different model families voting on every gate.</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- PREVIEW OVERLAY (Disabled by default, uncomment to enable)
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Preview</h3>
+            <pre id="previewBody"></pre>
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+    -->
+
+</body>
+</html>

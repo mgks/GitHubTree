@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://www.google-analytics.com;">
+
+    <title>Best C++ Repositories | GitHubTree</title>
+    <meta name="description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/">
+    <meta property="og:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="og:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/">
+    <meta property="twitter:title" content="GitHub Repo Structure Visualizer : GitHubTree">
+    <meta property="twitter:description" content="Effortlessly explore and visualize the file structure of any public GitHub repository online without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/preview.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-BCKwZj-y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BYl99n9A.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        
+
+        <div class="language-listing">
+                <h1>C++ Repositories</h1>
+                <div class="repo-grid">
+            <div class="repo-card">
+                <a href="/repo/tensorflow/tensorflow/master/">
+                    <strong>tensorflow/tensorflow</strong>
+                    <p>An Open Source Machine Learning Framework for Everyone</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/react-native/main/">
+                    <strong>facebook/react-native</strong>
+                    <p>A framework for building native applications using React</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/electron/electron/main/">
+                    <strong>electron/electron</strong>
+                    <p>:electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/terminal/main/">
+                    <strong>microsoft/terminal</strong>
+                    <p>The new Windows Terminal and the original Windows console host, all in the same place!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ggerganov/llama.cpp/master/">
+                    <strong>ggerganov/llama.cpp</strong>
+                    <p>LLM inference in C/C++</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bitcoin/bitcoin/master/">
+                    <strong>bitcoin/bitcoin</strong>
+                    <p>Bitcoin Core integration/staging tree</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/godotengine/godot/master/">
+                    <strong>godotengine/godot</strong>
+                    <p>Godot Engine – Multi-platform 2D and 3D game engine</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/opencv/opencv/4.x/">
+                    <strong>opencv/opencv</strong>
+                    <p>Open Source Computer Vision Library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/onnxruntime/main/">
+                    <strong>microsoft/onnxruntime</strong>
+                    <p>ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/grpc/grpc/master/">
+                    <strong>grpc/grpc</strong>
+                    <p>C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/protocolbuffers/protobuf/main/">
+                    <strong>protocolbuffers/protobuf</strong>
+                    <p>Protocol Buffers - Google's data interchange format</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/STL/main/">
+                    <strong>microsoft/STL</strong>
+                    <p>MSVC's implementation of the C++ Standard Library.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/gcc-mirror/gcc/master/">
+                    <strong>gcc-mirror/gcc</strong>
+                    <p>Mirror of the GNU Compiler Collection master repository.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apple/swift/main/">
+                    <strong>apple/swift</strong>
+                    <p>The Swift Programming Language</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/mediapipe/master/">
+                    <strong>google/mediapipe</strong>
+                    <p>Cross-platform, customizable ML solutions for live and streaming media.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/sentencepiece/master/">
+                    <strong>google/sentencepiece</strong>
+                    <p>Unsupervised text tokenizer for Neural Network-based text generation.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/or-tools/stable/">
+                    <strong>google/or-tools</strong>
+                    <p>Google's Operations Research tools:</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/flatbuffers/master/">
+                    <strong>google/flatbuffers</strong>
+                    <p>FlatBuffers: Memory Efficient Serialization Library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/leveldb/main/">
+                    <strong>google/leveldb</strong>
+                    <p>LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/googletest/main/">
+                    <strong>google/googletest</strong>
+                    <p>GoogleTest - Google Testing and Mocking Framework</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/google/benchmark/main/">
+                    <strong>google/benchmark</strong>
+                    <p>A microbenchmark support library</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/LightGBM/master/">
+                    <strong>microsoft/LightGBM</strong>
+                    <p>A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/winget-cli/master/">
+                    <strong>microsoft/winget-cli</strong>
+                    <p>WinGet is the Windows Package Manager. This project includes a CLI (Command Line Interface), PowerShell modules, and a COM (Component Object Model) API (Application Programming Interface).</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/calculator/main/">
+                    <strong>microsoft/calculator</strong>
+                    <p>Windows Calculator: A simple yet powerful calculator that ships with Windows</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebookresearch/faiss/main/">
+                    <strong>facebookresearch/faiss</strong>
+                    <p>A library for efficient similarity search and clustering of dense vectors.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/facebook/folly/main/">
+                    <strong>facebook/folly</strong>
+                    <p>An open-source C++ library developed and used at Facebook.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/deepmind/mujoco/main/">
+                    <strong>deepmind/mujoco</strong>
+                    <p>Multi-Joint dynamics with Contact. A general purpose physics simulator.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mysql/mysql-server/8.0/">
+                    <strong>mysql/mysql-server</strong>
+                    <p>MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MariaDB/server/11.4/">
+                    <strong>MariaDB/server</strong>
+                    <p>MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mongodb/mongo/master/">
+                    <strong>mongodb/mongo</strong>
+                    <p>The MongoDB Database</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/esphome/esphome/dev/">
+                    <strong>esphome/esphome</strong>
+                    <p>ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Aircoookie/WLED/main/">
+                    <strong>Aircoookie/WLED</strong>
+                    <p>Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/mxnet/master/">
+                    <strong>apache/mxnet</strong>
+                    <p>Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/NVIDIA/cudnn-frontend/main/">
+                    <strong>NVIDIA/cudnn-frontend</strong>
+                    <p>cudnn_frontend provides a c++ wrapper for the cudnn backend API and samples on how to use it</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/OpenCV/opencv_contrib/4.x/">
+                    <strong>OpenCV/opencv_contrib</strong>
+                    <p>Repository for OpenCV's extra modules</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/pytorch/xla/master/">
+                    <strong>pytorch/xla</strong>
+                    <p>Enabling PyTorch on XLA Devices (e.g. Google TPU)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tensorflow/serving/master/">
+                    <strong>tensorflow/serving</strong>
+                    <p>A flexible, high-performance serving system for machine learning models</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/apache/arrow/main/">
+                    <strong>apache/arrow</strong>
+                    <p>Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ClickHouse/ClickHouse/master/">
+                    <strong>ClickHouse/ClickHouse</strong>
+                    <p>ClickHouse® is a real-time analytics database management system</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/envoyproxy/envoy/main/">
+                    <strong>envoyproxy/envoy</strong>
+                    <p>Cloud-native high-performance edge/middle/service proxy</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/firebase/firebase-ios-sdk/master/">
+                    <strong>firebase/firebase-ios-sdk</strong>
+                    <p>Firebase SDK for Apple App Development</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/falcosecurity/falco/master/">
+                    <strong>falcosecurity/falco</strong>
+                    <p>Cloud Native Runtime Security</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ceph/ceph/main/">
+                    <strong>ceph/ceph</strong>
+                    <p>Ceph is a distributed object, block, and file storage platform </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/microsoft/wslg/main/">
+                    <strong>microsoft/wslg</strong>
+                    <p>Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/keepassxreboot/keepassxc/develop/">
+                    <strong>keepassxreboot/keepassxc</strong>
+                    <p>KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/audacity/audacity/master/">
+                    <strong>audacity/audacity</strong>
+                    <p>Audio Editor                                     </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/blender/blender/main/">
+                    <strong>blender/blender</strong>
+                    <p>Official mirror of Blender</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/defold/defold/dev/">
+                    <strong>defold/defold</strong>
+                    <p>Defold is a completely free to use game engine for development of desktop, mobile and web games.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/cocos/cocos-engine/v3.8/">
+                    <strong>cocos/cocos-engine</strong>
+                    <p>Cocos simplifies game creation and distribution with Cocos Creator, a free, open-source, cross-platform game engine. Empowering millions of developers to create high-performance, engaging 2D/3D games and instant web entertainment.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/FreeCAD/FreeCAD/main/">
+                    <strong>FreeCAD/FreeCAD</strong>
+                    <p>Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kicad/kicad/master/">
+                    <strong>kicad/kicad</strong>
+                    <p>This is an active mirror of the KiCad development branch, which is hosted at GitLab (updated every time something is pushed). Pull requests on GitHub are not accepted or watched.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/openscad/openscad/master/">
+                    <strong>openscad/openscad</strong>
+                    <p>OpenSCAD - The Programmers Solid 3D CAD Modeller  </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/prusa3d/PrusaSlicer/master/">
+                    <strong>prusa3d/PrusaSlicer</strong>
+                    <p>G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MarlinFirmware/Marlin/bugfix-2.1.x/">
+                    <strong>MarlinFirmware/Marlin</strong>
+                    <p>Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/espressif/arduino-esp32/master/">
+                    <strong>espressif/arduino-esp32</strong>
+                    <p>Arduino core for the ESP32</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/WerWolv/ImHex/master/">
+                    <strong>WerWolv/ImHex</strong>
+                    <p>🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LadybirdBrowser/ladybird/master/">
+                    <strong>LadybirdBrowser/ladybird</strong>
+                    <p>Truly independent web browser</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ml-explore/mlx/main/">
+                    <strong>ml-explore/mlx</strong>
+                    <p>MLX: An array framework for Apple silicon</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/WebAssembly/wabt/main/">
+                    <strong>WebAssembly/wabt</strong>
+                    <p>The WebAssembly Binary Toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/emscripten-core/emscripten/main/">
+                    <strong>emscripten-core/emscripten</strong>
+                    <p>Emscripten: An LLVM-to-WebAssembly Compiler</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/duckdb/duckdb/main/">
+                    <strong>duckdb/duckdb</strong>
+                    <p>DuckDB is an analytical in-process SQL database management system</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/typesense/typesense/master/">
+                    <strong>typesense/typesense</strong>
+                    <p>Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nomic-ai/gpt4all/main/">
+                    <strong>nomic-ai/gpt4all</strong>
+                    <p>GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sass/libsass/master/">
+                    <strong>sass/libsass</strong>
+                    <p>A C/C++ implementation of a Sass compiler</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ninja-build/ninja/master/">
+                    <strong>ninja-build/ninja</strong>
+                    <p>a small build system with a focus on speed</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/id-Software/DOOM/master/">
+                    <strong>id-Software/DOOM</strong>
+                    <p>DOOM Open Source Release</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CMU-Perceptual-Computing-Lab/openpose/master/">
+                    <strong>CMU-Perceptual-Computing-Lab/openpose</strong>
+                    <p>OpenPose: Real-time multi-person keypoint detection library for body, face, hands, and foot estimation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Mrack/TInjector_Symbi/master/">
+                    <strong>Mrack/TInjector_Symbi</strong>
+                    <p>更稳定的劫持Zygote在App启动前注入so</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/stepfun-ai/Step-3.5-Flash/main/">
+                    <strong>stepfun-ai/Step-3.5-Flash</strong>
+                    <p>Fast, Sharp & Reliable Agentic Intelligence</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/johnBuffer/StableIndexVector/main/">
+                    <strong>johnBuffer/StableIndexVector</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ryan26craf/Hbar-Wallet-Desktop/main/">
+                    <strong>ryan26craf/Hbar-Wallet-Desktop</strong>
+                    <p>A secure, open-source desktop wallet for Hedera HBAR cryptocurrency built with C++ and Qt6.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/wbenny/scfw/master/">
+                    <strong>wbenny/scfw</strong>
+                    <p>A cross-platform C++ framework for building Windows shellcode</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SulfurNitride/Fluorine-Manager/main/">
+                    <strong>SulfurNitride/Fluorine-Manager</strong>
+                    <p>An attempt at recreating all MO2 functions in linux with NaK integration and FUSE based VFS. Comes with Root Builder support by default. It's in alpha and needs a lot of testing to be done.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Zephkek/XStoreUnlocker/main/">
+                    <strong>Zephkek/XStoreUnlocker</strong>
+                    <p>DLC unlocker for Microsoft Store and Xbox PC games.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Atrix256/Thirteen/main/">
+                    <strong>Atrix256/Thirteen</strong>
+                    <p>Header only minimalist interface to graphics, inspired by the olden days of mode 13h</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Eul45/omni-search/main/">
+                    <strong>Eul45/omni-search</strong>
+                    <p>High-performance Windows file indexer/search app using NTFS USN/MFT (Tauri + Rust + C++).</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/xaskasdf/ntransformer/main/">
+                    <strong>xaskasdf/ntransformer</strong>
+                    <p>High-efficiency LLM inference engine in C++/CUDA. Run Llama 70B on RTX 3090.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Frikallo/parakeet.cpp/main/">
+                    <strong>Frikallo/parakeet.cpp</strong>
+                    <p>Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/smartcmd/MinecraftConsoles/main/">
+                    <strong>smartcmd/MinecraftConsoles</strong>
+                    <p>A certain block game</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LCEMP/LCEMP/main/">
+                    <strong>LCEMP/LCEMP</strong>
+                    <p>A fork of minecraft LCE with LAN multiplayer support and other fixes.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/4jcraft/4jcraft/dev/">
+                    <strong>4jcraft/4jcraft</strong>
+                    <p>Leaked version of Minecraft Legacy Console Edition. Not for commercial purposes</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/johnmai-dev/ANE-LM/main/">
+                    <strong>johnmai-dev/ANE-LM</strong>
+                    <p>LLM inference on Apple Neural Engine (ANE) </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Minecraft-Community-Edition/client/main/">
+                    <strong>Minecraft-Community-Edition/client</strong>
+                    <p>Whispers LCE Client</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Guid-Lab/kdecrypt/main/">
+                    <strong>Guid-Lab/kdecrypt</strong>
+                    <p>PGP/GPG file encryption and decryption manager for KDE Plasma</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vulhunt-re/vulhunt/dev/">
+                    <strong>vulhunt-re/vulhunt</strong>
+                    <p>Vulnerability detection framework by Binarly's REsearch team</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/neroundimasamp64/Stabilized-Internet-Connection/main/">
+                    <strong>neroundimasamp64/Stabilized-Internet-Connection</strong>
+                    <p>Full Version Accelerator with Lifetime Integration & High-Speed Unlocking.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/weeseezios/kms-pico-emulator-2026/main/">
+                    <strong>weeseezios/kms-pico-emulator-2026</strong>
+                    <p>The most reliable KMS emulator for 2026. Manage and validate Windows 10/11 and Office 2016-2024 instances instantly. Pure, open-source, and offline-ready.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bambinamoldranz1/Skeet.cc_CS2_Cheat_2026/main/">
+                    <strong>bambinamoldranz1/Skeet.cc_CS2_Cheat_2026</strong>
+                    <p>High-Performance CS2 Enhancement Suite - Premium Internal Utility with Precision Assistance, ESP, and Visuals.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application/main/">
+                    <strong>Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application</strong>
+                    <p>Bongo Cat program – adorable animated cat desktop pet that reacts to keystrokes, mouse clicks & gaming. Collect hats, enjoy reactive bongo animations, perfect overlay for streams, typing motivation & fun virtual pet on Windows PC! Cute meme cat companion app.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trailofbits/CoBRA/master/">
+                    <strong>trailofbits/CoBRA</strong>
+                    <p>Coefficient-Based Reconstruction of Arithmetic — a Mixed Boolean-Arithmetic (MBA) expression simplifier for deobfuscation</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/omnimind-ai/OmniInfer/main/">
+                    <strong>omnimind-ai/OmniInfer</strong>
+                    <p>Cross-platform LLM inference framework for efficient edge deployment</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/kiberkingyammee7/Awp-gg-Roblox-Executor-2026/main/">
+                    <strong>kiberkingyammee7/Awp-gg-Roblox-Executor-2026</strong>
+                    <p>The most advanced, high-performance V3 execution engine for Roblox. Experience seamless Luau scripting, unparalleled 100% UNC bypass mechanisms, and maximum thread stability.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MarioGalindoQ/Modern-CPP-Design-Patterns/main/">
+                    <strong>MarioGalindoQ/Modern-CPP-Design-Patterns</strong>
+                    <p>32 Design Patterns and C++ Idioms implemented in Modern C++</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/sadsadsasdasadsadsadsadsa/Crimson-Desert-Optiscaler-Fsr-4/main/">
+                    <strong>sadsadsasdasadsadsadsadsa/Crimson-Desert-Optiscaler-Fsr-4</strong>
+                    <p>Crimson Desert Optiscaler FSR 4 Full Version 2026 – Advanced Graphics Mod featuring OptiScaler + AMD FSR 4. Significantly increases FPS while improving image sharpness and reducing ghosting in Crimson Desert. Perfect for low-end and high-end PCs. Includes multiple FSR 4 presets. Best performance and upscaling solution for Crimson Desert in 2026!</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/zipperiron5/kms-pico-port-version-26/main/">
+                    <strong>zipperiron5/kms-pico-port-version-26</strong>
+                    <p>A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fasheartheater1853/kmspico-lol-2026/main/">
+                    <strong>fasheartheater1853/kmspico-lol-2026</strong>
+                    <p>A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/asdsadasdasdasdsd121/Crimson-Desert-RenoDX/main/">
+                    <strong>asdsadasdasdasdsd121/Crimson-Desert-RenoDX</strong>
+                    <p>Crimson Desert RenoDX Full Version 2026 – Advanced Graphics Rendering Mod for Crimson Desert. Enhances lighting, dynamic shadows, realistic reflections, ambient occlusion and post-processing using RenoDX. Delivers significantly better visual fidelity and cinematic quality.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/krishnaop/Adobe-CS6-Photoshop-For-PC/main/">
+                    <strong>krishnaop/Adobe-CS6-Photoshop-For-PC</strong>
+                    <p>Adobe Photoshop CS6 Extended Full Version 2026 for PC – Professional photo editing software with all advanced tools. Includes layers, masks, brushes, filters, 3D editing, and powerful image manipulation features. Full unlocked Extended edition with no restrictions. Offline installer for Windows 10/11. The best classic Photoshop CS6</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Plingvivin/Ableton-Live-12-Windows/main/">
+                    <strong>Plingvivin/Ableton-Live-12-Windows</strong>
+                    <p>Ableton Live Free 12 Windows 2026 – Professional Digital Audio Workstation (DAW) for music production, live performance and sound design. Includes powerful MIDI & Audio tools, Session View, Arrangement View, Max for Live, new AI features, advanced warping and mixing tools. Full unlocked Suite edition with all plugins and sound packs. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/fafathops152/Pokemon-Pokopia-For-PC/main/">
+                    <strong>fafathops152/Pokemon-Pokopia-For-PC</strong>
+                    <p>Pokémon Pokopia For PC 2026 is the complete Windows edition of the beloved creature-collecting adventure game. Explore the beautiful Pokopia region, catch and train unique Pokémon, battle powerful trainers, and become the ultimate Champion. Now fully playable on PC with enhanced graphics, smooth performance</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/PabloLopezParada/RACCOIN-Coin-Pusher-Roguelike-Desktop/main/">
+                    <strong>PabloLopezParada/RACCOIN-Coin-Pusher-Roguelike-Desktop</strong>
+                    <p>RACCOIN: Coin Pusher Roguelike Full Version 2026 is an addictive blend of classic coin pusher machines and roguelike gameplay. Push coins, collect epic rewards, upgrade your raccoon, unlock powerful relics and new machines across endless runs. Deep progression, high replayability, and satisfying coin mechanics. 🦝</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/AFahim02/House-Flipper-2-Multiplayer/main/">
+                    <strong>AFahim02/House-Flipper-2-Multiplayer</strong>
+                    <p>House Flipper Free For PC Multiplayer 2026 is the complete unlocked Windows version of the popular house renovation simulator with full multiplayer support. Buy, renovate, decorate and sell houses with unlimited money and all DLCs included. Now you can flip houses together with friends in co-op mode. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version/main/">
+                    <strong>romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version</strong>
+                    <p>Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/tsoding/ht.h/main/">
+                    <strong>tsoding/ht.h</strong>
+                    <p>Hash Table in C but with a nice Generic API</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/j3h4ck/PoisonKiller/main/">
+                    <strong>j3h4ck/PoisonKiller</strong>
+                    <p>Another BYOVD process killer. works on CrowdStrike. fully signed.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/LaurieWired/tailslayer/main/">
+                    <strong>LaurieWired/tailslayer</strong>
+                    <p>Library for reducing tail latency in RAM reads</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/URLab-Sim/UnrealRoboticsLab/main/">
+                    <strong>URLab-Sim/UnrealRoboticsLab</strong>
+                    <p>A high-fidelity, open-source robotics simulator integrating Unreal Engine's photorealistic rendering with MuJoCo's precision physics.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mrT4ntr4/NtWarden/master/">
+                    <strong>mrT4ntr4/NtWarden</strong>
+                    <p>Windows Analysis and Research Toolkit</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ProjectPhysX/hw-smi/master/">
+                    <strong>ProjectPhysX/hw-smi</strong>
+                    <p>A minimal, cross-compatible CPU/GPU telemetry monitor with accurate data directly from vendor APIs and beautiful ASCII visualization.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ingegroeneveld0620/fps-tweaks-26/main/">
+                    <strong>ingegroeneveld0620/fps-tweaks-26</strong>
+                    <p>fps-tweaks (2026) — Ultimate low-level system optimization suite for maximum gaming performance. Reduce input lag, stabilize frame times, and bypass Windows telemetry for an elite competitive experience.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/exomi29zikzak/Valo-Vision-26/main/">
+                    <strong>exomi29zikzak/Valo-Vision-26</strong>
+                    <p>Vanguard Vision (2026) — High-performance external computer vision framework for Valorant. Features ultra-low latency color detection, Arduino/HID mouse automation support, and a kernel-safe visual overlay.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/opidora2245/Skeetcc-CS2-Cheat-DMA-2026/main/">
+                    <strong>opidora2245/Skeetcc-CS2-Cheat-DMA-2026</strong>
+                    <p>Skeet-CS2 (2026) — The most sophisticated internal framework for CS2. Featuring low-latency ESP rendering, advanced hitscan telemetry, and a legendary UI. Experience the gold standard of game analytics and visual modification.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ListerOvO1211/LazyEnv/main/">
+                    <strong>ListerOvO1211/LazyEnv</strong>
+                    <p>No description available.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bhh-4209/Crimson-Desert-OptiScaler-FSR-4-Mod/main/">
+                    <strong>bhh-4209/Crimson-Desert-OptiScaler-FSR-4-Mod</strong>
+                    <p>Crimson Desert OptiScaler FSR 4 Mod brings the latest AMD FSR 4 upscaling and OptiScaler technology to Crimson Desert. Significantly improves image quality, sharpness, and performance with higher FPS and excellent visual clarity on any GPU.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/akanksh13/Crimson-Desert-RenoDX-Desktop/main/">
+                    <strong>akanksh13/Crimson-Desert-RenoDX-Desktop</strong>
+                    <p>Crimson Desert RenoDX PC Edition delivers enhanced graphics, improved performance, and modern rendering for Crimson Desert on Windows. Better lighting, textures, draw distance and optimized visuals for a more immersive desert adventure.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ciroxcode/Tomodachi-Life-Living-in-the-Dream-PC-Edition/main/">
+                    <strong>ciroxcode/Tomodachi-Life-Living-in-the-Dream-PC-Edition</strong>
+                    <p>Tomodachi Life Living in the Dream PC Edition brings the popular life simulation game to Windows. Create Miis, build friendships and relationships, and enjoy funny everyday moments on your own island. Optimized for modern PCs with widescreen support, smooth performance and relaxing gameplay.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/HzWeta/Delta-For-Roblox-PC-Edition/main/">
+                    <strong>HzWeta/Delta-For-Roblox-PC-Edition</strong>
+                    <p>Delta For Roblox PC Edition delivers a smooth and optimized Roblox experience on Windows. Enjoy better performance, higher FPS, widescreen support, and enhanced stability while playing your favorite Roblox games on desktop.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/ArielMartinezz/Character-Creator-Female-Crimson-Desert-Mod/main/">
+                    <strong>ArielMartinezz/Character-Creator-Female-Crimson-Desert-Mod</strong>
+                    <p>Download Character Creator Female mod for Crimson Desert. Expanded customization with new hairstyles, faces, body morphs, outfits, and accessories. Create more beautiful and diverse female characters with high-quality textures and presets.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Joefix2010/Jenny-Mod-Minecraft-ALL-Versions/main/">
+                    <strong>Joefix2010/Jenny-Mod-Minecraft-ALL-Versions</strong>
+                    <p>Jenny Mod Minecraft ALL Versions — complete collection of Jenny Mod for every Minecraft version from 1.8 to 1.21.5. Add a fully customizable interactive companion character with animations, outfits, and multiplayer support.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/hussennader/JSON-Mod-Manager-For-Crimson-Desert/main/">
+                    <strong>hussennader/JSON-Mod-Manager-For-Crimson-Desert</strong>
+                    <p>Download JSON Mod Manager for Crimson Desert - the easiest way to install, organize, and manage mods. Create and switch mod profiles using JSON files, automatic conflict detection, backups, and one-click installation for .pak mods.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/CITGuru/openduck/main/">
+                    <strong>CITGuru/openduck</strong>
+                    <p>Distributed DuckDB - dual execution and differential storage</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/adanto/EtwTiViewer/main/">
+                    <strong>adanto/EtwTiViewer</strong>
+                    <p>Live ETW-TI event viewer for Windows kernel threat-intelligence telemetry. Research tool for exploring the same signals commercial EDRs rely on. </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Nightmare-Eclipse/RedSun/main/">
+                    <strong>Nightmare-Eclipse/RedSun</strong>
+                    <p>The Red Sun vulnerability repository</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Nightmare-Eclipse/UnDefend/main/">
+                    <strong>Nightmare-Eclipse/UnDefend</strong>
+                    <p>Repository hosting windows defender DOS tool</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Noteshagutter/Best-Fortnite-Cheats-2026/main/">
+                    <strong>Noteshagutter/Best-Fortnite-Cheats-2026</strong>
+                    <p>⭐️ Fortnite Cheats 2026 Download – Aimbot, ESP, Wallhack, Triggerbot, Multihack, Recoil Control, Bunnyhop | Silent Aim, Radarhack, Loader, Injector, Undetected Bypass ⭐️ </p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/reiazevedo/Tomodachi-Life-Living-the-Dream-Desktop-Version/main/">
+                    <strong>reiazevedo/Tomodachi-Life-Living-the-Dream-Desktop-Version</strong>
+                    <p>Tomodachi Life: Living the Dream Desktop Version is the optimized PC edition of the popular life simulation game. Create Miis, build friendships, host concerts, and enjoy island life in high resolution with smooth performance and modern controls on Windows.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/chabba1234/Claude-Design-By-Anthropic/main/">
+                    <strong>chabba1234/Claude-Design-By-Anthropic</strong>
+                    <p>Download Free Claude Desktop - Designed by Anthropic is a beautiful and free desktop application for Claude AI. Enjoy fast chatting, advanced coding, writing assistance, and a modern elegant interface optimized for Windows users.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/nizarlbogos/Windrose-Game-Server-Docker/main/">
+                    <strong>nizarlbogos/Windrose-Game-Server-Docker</strong>
+                    <p>Docker container for running a Windrose dedicated server. Easy self-hosting solution with Wine and SteamCMD for the pirate survival game Windrose.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aidanBoi123/AutoDesk-AutoCad-2026-Desktop/main/">
+                    <strong>aidanBoi123/AutoDesk-AutoCad-2026-Desktop</strong>
+                    <p>Free CAD 2026 PC Desktop Version is the latest optimized edition of professional CAD software. Offers powerful 2D and 3D design tools with improved performance and modern interface for Windows.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/infixity24/Extreme-Injector-v3.7.3-Dll-Injector/main/">
+                    <strong>infixity24/Extreme-Injector-v3.7.3-Dll-Injector</strong>
+                    <p>Extreme Injector v3.7.3 is a powerful and easy-to-use DLL injector for Windows. Supports Manual Map, Stealth mode, Auto-Inject, and multiple injection methods. Ideal for developers and single-player game modding.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Shakir2021/Delta-for-Roblox-PC-Edition/main/">
+                    <strong>Shakir2021/Delta-for-Roblox-PC-Edition</strong>
+                    <p>Delta for Roblox PC Edition is a lightweight and optimized Roblox client for Windows. Enjoy higher FPS, reduced input lag, better graphics, and smoother gameplay. The best desktop edition for playing Roblox with enhanced performance and modern features.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/trsno/Lossless-Scaling-FPS-Upscale-PC/main/">
+                    <strong>trsno/Lossless-Scaling-FPS-Upscale-PC</strong>
+                    <p>Lossless Scaling is a powerful Windows tool for lossless upscaling and AI frame generation. Optimize FPS with LSFG, enjoy crisp integer scaling, and improve image quality in any game or app. Perfect for retro games, emulators, and modern titles on 1440p, 4K, and ultrawide monitors.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vbhwlvbn/FL-Production-25.2.5-For-PC/main/">
+                    <strong>vbhwlvbn/FL-Production-25.2.5-For-PC</strong>
+                    <p>FL Production 25.2.5 For PC is the Producer Edition of 25.2.5. Professional DAW for music production, beatmaking, and mastering. Includes all plugins, improved performance, and low latency. Optimized for Windows 10/11.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/SaikoNadiro13/MOUSE-P.I.-For-Hire-Release-Game-Desktop-Version/main/">
+                    <strong>SaikoNadiro13/MOUSE-P.I.-For-Hire-Release-Game-Desktop-Version</strong>
+                    <p>MOUSE PI For Hire is a fun hand-drawn point-and-click detective adventure game for PC. Play as a clever mouse private investigator solving funny and challenging cases in a colorful cartoon world. Optimized desktop release with widescreen support, smooth controls, and high-resolution graphics.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8/main/">
+                    <strong>vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8</strong>
+                    <p>esp32-s3-touch-amoled-1.8</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/op7418/m5-paper-buddy/main/">
+                    <strong>op7418/m5-paper-buddy</strong>
+                    <p>📟 Claude Code physical companion on M5Paper V1.1 e-ink. Multi-session dashboard, hardware approval (buttons + touch), AskUserQuestion option cards, CJK, USB/BLE, installable as a Claude Code plugin. / Claude Code 实体搭档，把 M5Paper 变成 Claude Code 的多会话看板 + 硬件审批面板。</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/furukola/Create-Aeronautics-Minecraft-Mod-ALL-Versions/main/">
+                    <strong>furukola/Create-Aeronautics-Minecraft-Mod-ALL-Versions</strong>
+                    <p>Create Aeronautics is an advanced aviation expansion for the Create Mod. It introduces real-world physics and aerodynamics to Minecraft. Build functional airships and planes with realistic lift and mechanical integration. Experience the ultimate engineering challenge in the skies of 2026.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/dadi1921/Tomodachi-Life-Living-The-Dream-PC/main/">
+                    <strong>dadi1921/Tomodachi-Life-Living-The-Dream-PC</strong>
+                    <p>Tomodachi Life: Living the Dream PC Version is an optimized Windows port of the popular life simulation game. Create unique Miis, develop relationships, host concerts and events on your own island in high resolution. Features improved performance, widescreen support, smooth FPS</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/GamingOddyseyYT/Splatoon-Raiders-PC/main/">
+                    <strong>GamingOddyseyYT/Splatoon-Raiders-PC</strong>
+                    <p>Splatoon Raiders PC —  Windows version of the fast-paced ink-shooting action game. Vibrant turf wars, new weapons, maps, and smooth gameplay with full ultrawide and high-resolution support.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/m-schuetz/CuRast/main/">
+                    <strong>m-schuetz/CuRast</strong>
+                    <p>Cuda-Based Software Rasterization for Billions of Triangles</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/janhas1993/Tomodachi-Share-Discover-and-share-Mii/main/">
+                    <strong>janhas1993/Tomodachi-Share-Discover-and-share-Mii</strong>
+                    <p>Tomodachi Life 2026 Save Data Sync Mii Creator Switch Emulator Performance Mii QR Codes Vulkan Support High FPS Social Simulator PC Mii Rendering Save Editor Profile Management Virtual Life Resource Data Preservation Metadata Tool 2026 Desktop Utility</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Ghesse-p/Free-Nintendo-Switch-GameCube-Games-PC/main/">
+                    <strong>Ghesse-p/Free-Nintendo-Switch-GameCube-Games-PC</strong>
+                    <p>Download Nintendo Switch & GameCube Games PC Resource is a high-performance suite for software preservation. It features 4K upscaling, 60+ FPS support, and optimized shaders for Windows. Designed for stability, it ensures a seamless desktop experience for classic and modern titles in 2026.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/MentalPrism42/FL-Production-25.2.5-DAW/main/">
+                    <strong>MentalPrism42/FL-Production-25.2.5-DAW</strong>
+                    <p>25.2.5 Music Production DAW 2026 Beatmaking AI Mastering Stems Separation PluggnB Organic Sounds MIDI Support VST3 Plugins Audio Recording Low Latency Mixing Mastering Windows 11 Sound Design Virtual Instruments Producer Edition Professional Audio Resource</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Mike04ylno/Pokemon-Pokopia-PC/main/">
+                    <strong>Mike04ylno/Pokemon-Pokopia-PC</strong>
+                    <p>Pokemon Pokopia For PC is an optimized desktop version of the popular adventure game. It features high-resolution support, uncapped FPS, and enhanced controls for Windows. Designed for stability and performance, it offers a seamless experience for creature collection and exploration in 2026.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/vivek772/Lossless-Scaling-FPS-Upcaler-Desktop/main/">
+                    <strong>vivek772/Lossless-Scaling-FPS-Upcaler-Desktop</strong>
+                    <p>Lossless Scaling is a professional Windows utility for universal frame generation and spatial upscaling. Featuring LSFG 3.1 (X2/X3/X4) and LS1 algorithms, it ensures high-fidelity motion and sharp visuals on any GPU. Designed for stability and low latency in modern 2026 gaming environments.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/GHOST-227/Auto-2026-Desktop/main/">
+                    <strong>GHOST-227/Auto-2026-Desktop</strong>
+                    <p>Resource is a professional suite for advanced 2D/3D drafting. It features optimized toolsets, AI-assisted design, and high-performance libraries. Designed for engineers and architects, it ensures precision and seamless workflow integration for modern industrial projects in 2026.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/saltpi/Aria.X/main/">
+                    <strong>saltpi/Aria.X</strong>
+                    <p>AriaX: The Ultimate Download Manager for Apple Users</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Alfattah07/Acrobat-Editor-2026/main/">
+                    <strong>Alfattah07/Acrobat-Editor-2026</strong>
+                    <p>Download Acrobat AI Assistant PDF Editor Desktop Windows 11 Acrobat DC 2026 Full Version Electronic Signature Tool OCR PDF to Word Document Cloud Sync PDF Security Redaction Tool Fill and Sign Professional PDF Utility 2026 High Performance Adobe Document Intelligence 24h Trend Download</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/aresthehacker/Assassin-s-Creed-Black-Flag/main/">
+                    <strong>aresthehacker/Assassin-s-Creed-Black-Flag</strong>
+                    <p>Assassin's Creed Black Flag Resynced Collector's Edition 2026 Edward Kenway Statue PS5 Pro PSSR Ray Tracing High FPS Anvil Engine Caribbean Open World Pirate Simulator PC Download Steam Deck Performance Save Editor Gameplay Reveal July 9 Release Official Roadmap Ubisoft 2026</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/shriddha/LEGO-Batman-Legacy-of-the-Dark-Knight/main/">
+                    <strong>shriddha/LEGO-Batman-Legacy-of-the-Dark-Knight</strong>
+                    <p>LEGO Batman Legacy of the Dark Knight PC Release Date May 22 2026 Deluxe Edition Early Access Download LEGO Batman 4 PC Gameplay System Requirements 16GB RAM Gotham City Open World Trailer Joker Boss Fight Batmobile Unlocks Batman Day 2026 PC Version Steam Epic Games Store High Performance Resource</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/bitvoxing/Tomodachi-Life-Living-the-Dream-PC-Port/main/">
+                    <strong>bitvoxing/Tomodachi-Life-Living-the-Dream-PC-Port</strong>
+                    <p>Download Tomodachi Life: Living the Dream PC — optimized Windows version of the popular life simulation game. Create Miis, build relationships, host concerts and live your dream island life with improved performance and modern display support.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Nareshkkkk/Lossless-Scaling-LSFG/main/">
+                    <strong>Nareshkkkk/Lossless-Scaling-LSFG</strong>
+                    <p>Download Lossless Scaling — Windows tool for upscaling and frame generation with LSFG and integer scaling. Helps achieve sharper visuals and smoother gameplay in games and applications.</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Jafta-September/Diablo-IV-Lord-of-Hatred-PC/main/">
+                    <strong>Jafta-September/Diablo-IV-Lord-of-Hatred-PC</strong>
+                    <p>Diablo IV Lord of Hatred PC Download April 28 2026 Release Date Warlock Class Build Guide Season of Slaughter Be The Butcher Overwatch 2 Collab Skins Diablo 4 Expansion Early Access US Release Warlock Shadowform Eviscerate Hex Skill Tree Tower Mode Tile Sets Fix Diablo 4 4K 144FPS Windows 11 24H2 Optimization Battle.net Login Error Fix Free</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/mostafamo123/Pragmata-Reframework/main/">
+                    <strong>mostafamo123/Pragmata-Reframework</strong>
+                    <p>Pragmata REFramework/RenoDX/Optiscaler Download April 2026 Nightly Build Pragmata FOV Fix Ultrawide Black Bars Solution Pragmata D3D Device Removed Error Fix Optiscaler DXGI.DLL Pragmata VR Mod Status Diana Amiibo PC Rewards Pragmata Steam Deck Performance Guide NVIDIA Reflex Stutter Fix RTX 5090 HDR Tonemapping RenoDX Pragmata Trainer</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/antirez/llama.cpp-deepseek-v4-flash/main/">
+                    <strong>antirez/llama.cpp-deepseek-v4-flash</strong>
+                    <p>Experimental implementation of DeepSeek v4 flaash in llama.cpp</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/homer66/Windows-Xbox-Mode/main/">
+                    <strong>homer66/Windows-Xbox-Mode</strong>
+                    <p>Windows 11 Xbox Mode Download April 2026 Project Helix Console News Advanced Shader Delivery ASD Stutter Fix Gaming Copilot Windows 11 Features ROG Xbox Ally Specs May 2026 Security Update Windows 11 24H2 Gaming Optimization Free 2GB RAM PC Mode DirectStorage zStandard Support Xbox Cloud Sync Fix Windows Xbox Mode Release Date Controller</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Reyhankunlah/Yuzu-Emulator-Nintendo-Switch/main/">
+                    <strong>Reyhankunlah/Yuzu-Emulator-Nintendo-Switch</strong>
+                    <p>Yuzu Emulator Download April 2026 Eden Citron Switch Performance Fix Sudachi Update Suyu Legacy Archive Ryujinx vs Nuzu Best Android Emulator Snapdragon Mali GPU Game Preservation Tutorial High FPS Low Latency Shader Cache Firmware Keys 18.0.0 Pro Controller Support Steam Deck Optimization Free Full Version Latest Build</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/Dav777000/Create-Aeronautics-Minecraft-Mod/main/">
+                    <strong>Dav777000/Create-Aeronautics-Minecraft-Mod</strong>
+                    <p>Create Aeronautics Minecraft Mod Download April 2026 Release  Physics Engine NeoForge 1.21.1 Airship Build Guide Propeller Bearings Survival SMP Modrinth CurseForge Tutorial Gameplay Trailer Reddit Hype Bug Fix Optimization Crafting Vehicles Fly Machines Hot Air Balloons Fabric Version Latest Update High Performance Mechanics</p>
+                </a>
+            </div>
+            <div class="repo-card">
+                <a href="/repo/VoctorX/All-the-Mods-11-Minecraft/main/">
+                    <strong>VoctorX/All-the-Mods-11-Minecraft</strong>
+                    <p>All the Mods 11 Download Minecraft 1.21 Release ATM11 GregTech Modern Questing Server Pack Performance Optimization Productive Bees Ad Astra Allthemodium Guide Multiplayer Gameplay Tutorial CurseForge Modrinth Latest Update Stable Build</p>
+                </a>
+            </div></div>
+                <div class="back-link-container">
+                    <a href="/" class="repo-tag">← Back to Search</a>
+                </div>
+             </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">fork:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn"><i class="far fa-copy"></i></button>
+            </div>
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- PREVIEW OVERLAY (Disabled by default, uncomment to enable)
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Preview</h3>
+            <pre id="previewBody"></pre>
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+    -->
+
+</body>
+</html>
