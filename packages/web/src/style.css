@@ -1034,6 +1034,7 @@ position: fixed;
     cursor: pointer;
     color: var(--line-num);
     transition: color 0.2s;
+    gap: 5px
 }
 
 .preview-header button:hover {
