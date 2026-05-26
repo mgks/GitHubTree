@@ -111,9 +111,19 @@ async function generate() {
         </div>`;
 
         const pageHtml = templateHtml
-            .replace(/<title>.*?<\/title>/, `<title>${item.repo} Directory Structure | GitHubTree</title>`)
-            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Explore ${item.repo} file structure. ${item.description.substring(0, 150)}...">`)
+            .replace(/<title>.*?<\/title>/, `<title>${item.repo} File Structure Explorer | GitHubTree</title>`)
+            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Explore the folder tree and file structure of ${item.repo} on branch ${item.branch}. ${item.description.substring(0, 150)}...">`)
             
+            // Open Graph / Facebook
+            .replace(/<meta property="og:title" content=".*?">/, `<meta property="og:title" content="${item.repo} File Structure Explorer | GitHubTree">`)
+            .replace(/<meta property="og:description" content=".*?">/, `<meta property="og:description" content="Explore the folder tree and file structure of ${item.repo} on branch ${item.branch}. ${item.description.substring(0, 150)}...">`)
+            .replace(/<meta property="og:url" content=".*?">/, `<meta property="og:url" content="${BASE_URL}/${cleanPath}/">`)
+
+            // Twitter
+            .replace(/<meta property="twitter:title" content=".*?">/, `<meta property="twitter:title" content="${item.repo} File Structure Explorer | GitHubTree">`)
+            .replace(/<meta property="twitter:description" content=".*?">/, `<meta property="twitter:description" content="Explore the folder tree and file structure of ${item.repo} on branch ${item.branch}. ${item.description.substring(0, 150)}...">`)
+            .replace(/<meta property="twitter:url" content=".*?">/, `<meta property="twitter:url" content="${BASE_URL}/${cleanPath}/">`)
+
             // Inject Breadcrumb
             .replace('<!-- BREADCRUMB_INJECT -->', breadcrumbHtml)
             
@@ -150,7 +160,19 @@ async function generate() {
             </div>`).join('');
 
         const langPageHtml = templateHtml
-            .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories | GitHubTree</title>`)
+            .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories Directory | GitHubTree</title>`)
+            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
+            
+            // Open Graph / Facebook
+            .replace(/<meta property="og:title" content=".*?">/, `<meta property="og:title" content="Best ${lang} Repositories Directory | GitHubTree">`)
+            .replace(/<meta property="og:description" content=".*?">/, `<meta property="og:description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
+            .replace(/<meta property="og:url" content=".*?">/, `<meta property="og:url" content="${BASE_URL}/language/${langSlug}/">`)
+
+            // Twitter
+            .replace(/<meta property="twitter:title" content=".*?">/, `<meta property="twitter:title" content="Best ${lang} Repositories Directory | GitHubTree">`)
+            .replace(/<meta property="twitter:description" content=".*?">/, `<meta property="twitter:description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
+            .replace(/<meta property="twitter:url" content=".*?">/, `<meta property="twitter:url" content="${BASE_URL}/language/${langSlug}/">`)
+
             .replace('<!-- BREADCRUMB_INJECT -->', '') 
             .replace(
             /<!-- EMPTY_STATE_START -->[\s\S]*?<!-- EMPTY_STATE_END -->/, 

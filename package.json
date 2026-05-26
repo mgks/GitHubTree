@@ -1,6 +1,7 @@
 {
   "name": "githubtree-monorepo",
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -10,6 +11,7 @@
     "preview": "npm run preview --workspace=githubtree-web",
     "generate": "node tools/generate-seo.js",
     "deploy": "npm run build && npm run generate",
+    "serve": "npm run deploy && npm run preview",
     "copy-assets": "cp README.md packages/core/ && cp LICENSE packages/core/",
     "publish-core": "npm run copy-assets && npm publish --workspace=gh-tree --access public"
   },

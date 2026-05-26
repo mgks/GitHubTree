@@ -965,3 +965,401 @@ position: fixed;
 
 /* Tree Styles Adjustments */
 .t-prefix { font-family: 'Fira Code', monospace; white-space: pre; }
+
+/* =========================================
+   13. FILE DETAILS & PREVIEW OVERLAY
+   ========================================= */
+.preview-content {
+    max-width: 800px;
+    width: 95%;
+}
+
+.file-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+    background: var(--header-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.detail-item {
+    word-break: break-all;
+}
+
+.sha-text {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: var(--file-color);
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.file-actions .tool-btn {
+    flex: 1;
+    min-width: 130px;
+    justify-content: center;
+}
+
+.file-preview-container {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+    font-family: 'Fira Code', monospace;
+    color: var(--file-color);
+}
+
+.preview-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--line-num);
+    transition: color 0.2s;
+}
+
+.preview-header button:hover {
+    color: var(--accent);
+}
+
+#previewBody {
+    margin: 0;
+    padding: 15px;
+    background: var(--panel-bg);
+    max-height: 400px;
+    overflow: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+/* Badge container in Share modal */
+.share-badge-section {
+    margin-top: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+}
+
+.share-badge-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+}
+
+.badge-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--header-bg);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.badge-preview-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge-preview-container span {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-preview-container img {
+    height: 20px;
+}
+
+.badge-code-box {
+    display: flex;
+    gap: 8px;
+}
+
+.badge-code-box input {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: 'Fira Code', monospace;
+    flex: 1;
+}
+
+.badge-code-box button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.badge-code-box button:hover {
+    background: var(--accent-hover);
+}
+
+/* Keyword Search Highlighting */
+.search-highlight {
+    background: rgba(242, 199, 68, 0.35);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 2px;
+    font-weight: 600;
+}
+[data-theme="dark"] .search-highlight {
+    background: rgba(242, 199, 68, 0.45);
+}
+
+/* =========================================
+   14. REPOSITORY DETAILS CARD
+   ========================================= */
+.repo-details-card {
+    background: var(--header-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-bottom: 24px;
+    animation: slideDownCard 0.25s ease-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+@keyframes slideDownCard {
+    from {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.repo-meta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.repo-meta-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Fira Code', monospace;
+    color: var(--accent);
+}
+
+.repo-meta-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.meta-badge {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--file-color);
+}
+
+.meta-badge i {
+    font-size: 0.85rem;
+}
+
+/* Custom colors for badges */
+#repoStars i {
+    color: #f1e05a;
+}
+
+#repoForks i {
+    color: #4f8fba;
+}
+
+#repoLanguage i {
+    color: #e34c26; /* Dynamic js/html circle will be styled if needed */
+}
+
+.repo-meta-desc {
+    margin: 12px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.9;
+}
+
+/* Image Preview inside Modal */
+.image-preview-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 20px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.preview-img {
+    max-width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Premium visual grid checkerboard for transparent PNGs/SVGs */
+    background-image: linear-gradient(45deg, var(--border) 25%, transparent 25%), 
+                      linear-gradient(-45deg, var(--border) 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, var(--border) 75%), 
+                      linear-gradient(-45deg, transparent 75%, var(--border) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Inline Card Badge Embed Styling */
+.repo-badge-embed {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.embed-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.embed-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0.85;
+    white-space: nowrap;
+}
+
+.embed-badge-img {
+    height: 20px;
+    object-fit: contain;
+}
+
+.embed-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 6px;
+    min-width: 280px;
+}
+
+.embed-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text);
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+.embed-copy-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text);
+    opacity: 0.6;
+    padding: 4px;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.embed-copy-btn:hover {
+    opacity: 1;
+    color: var(--folder-color);
+}
+
+/* Audio Player Preview Styling */
+.audio-preview-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.audio-player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.audio-icon {
+    font-size: 2.5rem;
+    color: var(--folder-color);
+}
+
+.audio-filename {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    word-break: break-all;
+}
+
+.preview-audio {
+    width: 100%;
+    outline: none;
+}

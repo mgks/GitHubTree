@@ -5,6 +5,7 @@ let gt = new GitHubTree();
 let currentData = []; // Stores the Raw API response
 let currentSort = 'folder-az';
 let currentStyle = 'classic';
+let activeDetailItem = null;
 
 // --- Elements ---
 const els = {
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupUrlHandler();
     setupDropdowns();
     setupShareOverlay();
+    initHistoryCloud();
     
     // Main Listeners
     els.copyAll.addEventListener('click', copyFullTree);
@@ -76,12 +78,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Search
-    els.treeSearch.addEventListener('input', () => render());
+    let searchDebounce = null;
+    els.treeSearch.addEventListener('input', () => {
+        render();
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => {
+            const term = els.treeSearch.value.trim();
+            if (term) trackEvent('Search', 'Query', term);
+        }, 1000);
+    });
 
-    // Preview (Disabled)
+    // Preview & Details Dialog
     if (els.closePreview) els.closePreview.addEventListener('click', () => els.previewOverlay.classList.remove('visible'));
     if (els.previewOverlay) els.previewOverlay.addEventListener('click', (e) => {
         if (e.target === els.previewOverlay) els.previewOverlay.classList.remove('visible');
+    });
+    
+    // Bind Details Overlay Actions
+    document.getElementById('btnCopyPath').addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        const path = document.getElementById('detailPath').innerText;
+        handleCopy(btn, path, true);
+        trackEvent('Modal', 'Copy Path', path);
+    });
+
+    document.getElementById('btnTogglePreview').addEventListener('click', (e) => {
+        const container = document.getElementById('filePreviewContainer');
+        const isHidden = container.style.display === 'none';
+        
+        if (isHidden) {
+            loadFilePreviewContent();
+            trackEvent('Modal', 'Show Preview', activeDetailItem ? activeDetailItem.path : '');
+        } else {
+            container.style.display = 'none';
+            e.currentTarget.innerHTML = `<i class="far fa-eye"></i> Show Content`;
+            trackEvent('Modal', 'Hide Preview', activeDetailItem ? activeDetailItem.path : '');
+        }
+    });
+
+    document.getElementById('btnCopyPreviewContent').addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        const content = document.getElementById('previewBody').querySelector('code').innerText;
+        handleCopy(btn, content, true);
+        trackEvent('Modal', 'Copy Preview Content', activeDetailItem ? activeDetailItem.path : '');
+    });
+
+    document.getElementById('btnOpenGitHub').addEventListener('click', () => {
+        if (activeDetailItem) {
+            trackEvent('Modal', 'Open GitHub Link', activeDetailItem.path);
+        }
     });
 
     // Private Token Toggles
@@ -144,6 +189,10 @@ async function loadTree() {
     let repo = els.repo.value.trim();
     const branch = els.branch.value.trim() || 'main';
 
+    // Hide repo details card at start of fetch
+    const detailsCard = document.getElementById('repoDetailsCard');
+    if (detailsCard) detailsCard.style.display = 'none';
+
     // 1. Sanitize: If full URL is pasted, extract user/repo
     if (repo.includes('github.com/')) {
         repo = repo.split('github.com/').pop().split('?')[0].split('#')[0].replace(/\/$/, "");
@@ -180,6 +229,10 @@ async function loadTree() {
             // Standard URL update for cached items
             const newUrl = `/repo/${repo}/${branch}/`;
             if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
+
+            // Fetch repo details card dynamically
+            fetchAndRenderRepoDetails(repo);
+            trackEvent('Fetch', 'Cache Hit', repo);
         } else {
             // Fetch from Core
             const data = await gt.getTree(repo, branch);
@@ -187,7 +240,6 @@ async function loadTree() {
             
             // --- SMART BRANCH HANDLING ---
             if (data.branch && data.branch !== branch) {
-                // Case A: Branch Switched (main -> master)
                 const newBranch = data.branch;
                 
                 // 1. Notify User
@@ -215,19 +267,23 @@ async function loadTree() {
                 const newUrl = `/repo/${repo}/${branch}/`;
                 if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
             }
+
+            // Fetch repo details card dynamically
+            fetchAndRenderRepoDetails(repo);
+            trackEvent('Fetch', 'Success', repo);
         }
 
         render();
         els.wrapper.style.display = 'flex';
+        saveToSearchHistory(repo);
 
     } catch (err) {
         console.error(err);
         let msg = err.message;
+        trackEvent('Fetch', 'Failure', `${repo} : ${msg}`);
 
         if (msg.includes('401') || msg.includes('Bad credentials')) {
             showMsg("Invalid Private Token. Please check your settings.", "error");
-            // Optional: Auto-open the private panel?
-            // els.tokenPanel.style.display = 'block'; 
         
         } else if (msg.includes('403') || msg.includes('Rate Limit')) {
             showMsg("API Limit Exceeded. Add a Token.", "error");
@@ -251,16 +307,34 @@ function render() {
     els.lineNums.innerHTML = '';
     els.treeContent.innerHTML = '';
 
-    const term = els.treeSearch.value.toLowerCase();
+    const term = els.treeSearch.value.trim();
     let filteredData = currentData;
+    let regex = null;
     
     if (term) {
-        const matches = currentData.filter(item => item.path.toLowerCase().includes(term));
+        let isRegex = false;
+        // Check if query is enclosed in slashes for regex, e.g. /\.js$/i or /src/
+        const regexMatch = term.match(/^\/(.+)\/([gimy]*)$/);
+        if (regexMatch) {
+            try {
+                regex = new RegExp(regexMatch[1], regexMatch[2] || 'i');
+                isRegex = true;
+            } catch (e) {
+                // Invalid regex, fallback to regular matching
+            }
+        }
+        
+        if (!isRegex) {
+            // Safe escape special characters for regex search
+            const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            regex = new RegExp(escaped, 'i');
+        }
+
+        const matches = currentData.filter(item => regex.test(item.path));
         const pathsToInclude = new Set();
         
         matches.forEach(item => {
             const parts = item.path.split('/');
-            // Add the item itself and all its parents
             for (let i = 1; i <= parts.length; i++) {
                 pathsToInclude.add(parts.slice(0, i).join('/'));
             }
@@ -282,8 +356,6 @@ function render() {
     hierarchy.forEach((item, idx) => {
         // Line Number
         const n = document.createElement('div');
-        // If searching, line numbers are not strictly meaningful in chronological order, 
-        // but let's keep them as a count of visible items.
         n.textContent = idx + 1;
         fragNums.appendChild(n);
 
@@ -291,7 +363,6 @@ function render() {
         const row = document.createElement('div');
         row.className = 'tree-line';
         row.dataset.depth = item.depth;
-        // Fast animation cap (max 500ms)
         row.style.animation = `fadeIn 0.1s forwards ${Math.min(idx * 2, 500)}ms`;
         row.style.opacity = '0';
 
@@ -301,23 +372,27 @@ function render() {
 
         if (isFolder) {
             row.classList.add('tree-folder');
-            // Auto-expand if searching
             if (term) row.classList.remove('collapsed');
         }
 
         // Apply Styles
         let prefixDisplay = item.prefix;
+        
+        // Highlight matched search queries
         let nameDisplay = item.name;
+        if (regex && regex.test(item.name)) {
+            nameDisplay = item.name.replace(regex, (match) => `<mark class="search-highlight">${match}</mark>`);
+        }
 
         if (currentStyle === 'minimal') prefixDisplay = item.indent;
         if (currentStyle === 'plus') prefixDisplay = prefixDisplay.replace(/└──/g, '+--').replace(/├──/g, '+--').replace(/│/g, '|');
         if (currentStyle === 'slashed') {
-            if (isFolder) nameDisplay = `/${item.name}`;
+            nameDisplay = isFolder ? `/${nameDisplay}` : nameDisplay;
             prefixDisplay = item.prefix.replace(/│/g, ' ').replace(/├──/g, ' ').replace(/└──/g, ' ');
         }
         if (currentStyle === 'bulleted') {
             prefixDisplay = item.indent.replace(/    /g, '  ');
-            nameDisplay = `• ${item.name}${isFolder ? '/' : ''}`;
+            nameDisplay = `• ${nameDisplay}${isFolder ? '/' : ''}`;
         }
 
         const caretHTML = isFolder ? '<span class="t-caret"><i class="fas fa-angle-down"></i></span>' : '';
@@ -429,20 +504,17 @@ function handleTreeClick(e) {
         return;
     }
 
-    // 3. File Preview Trigger (Disabled)
+    // 3. File Details Trigger
     const fileName = e.target.closest('.t-name.file');
-    /*
     if (fileName) {
         const row = fileName.parentElement;
-        const depth = Number(row.dataset.depth);
-        const name = fileName.innerText;
-        // In this UI implementation, we need the path.
-        // Let's find the original item from currentData
         const path = row.querySelector('.sub-copy').dataset.path;
-        showPreview({ name, path });
+        const item = currentData.find(d => d.path === path);
+        if (item) {
+            showFileDetailsModal(item);
+        }
         return;
     }
-    */
 
     if (!folderRow) return;
     toggleFolder(folderRow);
@@ -454,6 +526,12 @@ function toggleFolder(folderRow) {
     const startIdx = rows.indexOf(folderRow);
     const folderDepth = Number(folderRow.dataset.depth);
     const isClosing = !folderRow.classList.contains('collapsed');
+
+    // Track folder interaction
+    const pathBtn = folderRow.querySelector('.sub-copy');
+    if (pathBtn) {
+        trackEvent('Tree', isClosing ? 'Collapse Folder' : 'Expand Folder', pathBtn.dataset.path);
+    }
 
     folderRow.classList.toggle('collapsed');
 
@@ -672,7 +750,24 @@ function closeDropdowns(except = null) {
 function setupShareOverlay() {
     els.shareBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        els.shareInput.value = window.location.href;
+        
+        const repo = els.repo.value.trim();
+        const branch = els.branch.value.trim() || 'main';
+        const shareUrl = `${window.location.origin}/repo/${repo}/${branch}/`;
+        
+        els.shareInput.value = shareUrl;
+
+        // Generate dynamic shields.io badge link
+        const badgeImgUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
+        const markdownBadge = `[![GitHubTree](${badgeImgUrl})](${shareUrl})`;
+        const htmlBadge = `<a href="${shareUrl}"><img src="${badgeImgUrl}" alt="GitHubTree Structure"></a>`;
+
+        document.getElementById('badgeMarkdownPreview').src = badgeImgUrl;
+        document.getElementById('badgeHtmlPreview').src = badgeImgUrl;
+
+        document.getElementById('badgeMarkdownInput').value = markdownBadge;
+        document.getElementById('badgeHtmlInput').value = htmlBadge;
+
         els.overlay.classList.add('visible');
         trackEvent('Share', 'Open Modal');
     });
@@ -688,6 +783,35 @@ function setupShareOverlay() {
         handleCopy(els.copyShareBtn, els.shareInput.value, true);
         trackEvent('Share', 'Copy Link');
     });
+
+    document.getElementById('btnCopyBadgeMarkdown').addEventListener('click', (e) => {
+        const input = document.getElementById('badgeMarkdownInput');
+        handleCopy(e.currentTarget, input.value, true);
+    });
+
+    document.getElementById('btnCopyBadgeHtml').addEventListener('click', (e) => {
+        const input = document.getElementById('badgeHtmlInput');
+        handleCopy(e.currentTarget, input.value, true);
+    });
+
+    // Inline card badge copy & select
+    const badgeInput = document.getElementById('repoMetaBadgeInput');
+    const badgeCopyBtn = document.getElementById('btnCopyRepoMetaBadge');
+    
+    if (badgeInput) {
+        badgeInput.addEventListener('click', () => {
+            badgeInput.select();
+            handleCopy(badgeCopyBtn, badgeInput.value, true);
+            trackEvent('Share', 'Copy Card Badge Input', els.repo.value);
+        });
+    }
+
+    if (badgeCopyBtn) {
+        badgeCopyBtn.addEventListener('click', () => {
+            handleCopy(badgeCopyBtn, badgeInput.value, true);
+            trackEvent('Share', 'Copy Card Badge Button', els.repo.value);
+        });
+    }
 }
 
 function showMsg(text, type) {
@@ -697,7 +821,11 @@ function showMsg(text, type) {
 }
 
 function initTheme() {
-    const saved = localStorage.getItem('theme') || 'light';
+    let saved = localStorage.getItem('theme');
+    if (!saved) {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        saved = prefersDark ? 'dark' : 'light';
+    }
     document.documentElement.setAttribute('data-theme', saved);
     
     document.getElementById('themeToggle').addEventListener('click', () => {
@@ -712,3 +840,414 @@ function initTheme() {
 const style = document.createElement('style');
 style.innerHTML = `@keyframes fadeIn { to { opacity: 1; } }`;
 document.head.appendChild(style);
+
+// --- Search History Helpers ---
+function getSearchHistory() {
+    try {
+        const data = localStorage.getItem('ght_history');
+        return data ? JSON.parse(data) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function saveToSearchHistory(repo) {
+    if (!repo || !repo.includes('/')) return;
+    try {
+        let history = getSearchHistory();
+        history = history.filter(item => item.toLowerCase() !== repo.toLowerCase());
+        history.unshift(repo);
+        history = history.slice(0, 6);
+        localStorage.setItem('ght_history', JSON.stringify(history));
+    } catch (e) {}
+}
+
+function initHistoryCloud() {
+    const history = getSearchHistory();
+    if (history.length === 0) return;
+
+    const emptyState = document.getElementById('emptyState');
+    if (!emptyState) return;
+
+    const historySection = document.createElement('div');
+    historySection.className = 'homepage-section';
+    historySection.id = 'historySection';
+
+    const h3 = document.createElement('h3');
+    h3.textContent = 'Recently Visited';
+    historySection.appendChild(h3);
+
+    const historyCloud = document.createElement('div');
+    historyCloud.className = 'tag-cloud';
+    historyCloud.id = 'historyCloud';
+
+    history.forEach(repo => {
+        const btn = document.createElement('button');
+        btn.className = 'repo-tag';
+        btn.dataset.repo = repo;
+        
+        const userPart = repo.split('/')[0];
+        const namePart = repo.split('/')[1] || '';
+        
+        btn.innerHTML = `<span>${userPart}/</span>${namePart}`;
+        btn.addEventListener('click', () => {
+            els.repo.value = repo;
+            els.branch.value = 'main';
+            loadTree();
+            trackEvent('Fetch', 'History Click', repo);
+        });
+        historyCloud.appendChild(btn);
+    });
+
+    historySection.appendChild(historyCloud);
+    emptyState.appendChild(historySection);
+}
+
+// --- File Details & Content Preview Logic ---
+
+function showFileDetailsModal(item) {
+    activeDetailItem = item;
+    
+    const repo = els.repo.value.trim();
+    const branch = els.branch.value.trim() || 'main';
+
+    document.getElementById('detailPath').innerText = item.path;
+    document.getElementById('detailSize').innerText = formatBytes(item.size);
+    document.getElementById('detailMode').innerText = decodeGitMode(item.mode);
+    document.getElementById('detailSha').innerText = item.sha;
+
+    // Reset and show Loading state for commit update
+    const lastUpdatedEl = document.getElementById('detailLastUpdated');
+    if (lastUpdatedEl) {
+        lastUpdatedEl.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Loading last commit update history...`;
+    }
+
+    // Set GitHub Link
+    const githubLink = `https://github.com/${repo}/blob/${branch}/${item.path}`;
+    document.getElementById('btnOpenGitHub').href = githubLink;
+
+    // Reset Preview View state
+    document.getElementById('filePreviewContainer').style.display = 'none';
+    document.getElementById('btnTogglePreview').innerHTML = `<i class="far fa-eye"></i> Show Content`;
+    
+    // Disable preview if it's not a regular file or is too large (> 150KB)
+    if (item.type !== 'blob') {
+        document.getElementById('btnTogglePreview').style.display = 'none';
+    } else {
+        document.getElementById('btnTogglePreview').style.display = 'inline-flex';
+    }
+
+    els.previewOverlay.classList.add('visible');
+    trackEvent('Preview', 'Open Details', item.path);
+
+    // Asynchronously fetch last updated time from github
+    fetchLastUpdated(repo, item.path, branch);
+}
+
+async function fetchLastUpdated(repo, path, branch) {
+    const el = document.getElementById('detailLastUpdated');
+    if (!el) return;
+
+    try {
+        const token = localStorage.getItem('ght_token');
+        const headers = { 'Accept': 'application/vnd.github+json' };
+        if (token) headers['Authorization'] = `token ${token}`;
+
+        const url = `https://api.github.com/repos/${repo}/commits?path=${encodeURIComponent(path)}&sha=${branch}&page=1&per_page=1`;
+        const res = await fetch(url, { headers });
+        if (!res.ok) throw new Error();
+
+        const commits = await res.json();
+        if (commits && commits.length > 0) {
+            const commitObj = commits[0];
+            const dateStr = commitObj.commit.committer.date;
+            const formattedDate = formatDate(dateStr);
+            const author = commitObj.commit.committer.name || commitObj.commit.author.name;
+            const message = commitObj.commit.message.split('\n')[0]; // only first line
+
+            el.innerHTML = `${formattedDate} by <strong>${author}</strong> &mdash; <em>"${message}"</em>`;
+        } else {
+            el.innerText = "No commit history found.";
+        }
+    } catch (e) {
+        el.innerText = "Failed to load update history.";
+    }
+}
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return dateString;
+    return date.toLocaleDateString(undefined, {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    }) + ' at ' + date.toLocaleTimeString(undefined, {
+        hour: 'numeric',
+        minute: '2-digit'
+    });
+}
+
+async function fetchAndRenderRepoDetails(repo) {
+    const card = document.getElementById('repoDetailsCard');
+    if (!card) return;
+
+    try {
+        const token = localStorage.getItem('ght_token');
+        const headers = { 'Accept': 'application/vnd.github+json' };
+        if (token) headers['Authorization'] = `token ${token}`;
+
+        const res = await fetch(`https://api.github.com/repos/${repo}`, { headers });
+        if (!res.ok) throw new Error();
+
+        const data = await res.json();
+        
+        document.getElementById('repoMetaDesc').innerText = data.description || "No description provided.";
+        document.getElementById('repoStars').innerHTML = `<i class="far fa-star"></i> ${formatNumber(data.stargazers_count)} stars`;
+        document.getElementById('repoForks').innerHTML = `<i class="fas fa-code-branch"></i> ${formatNumber(data.forks_count)} forks`;
+        
+        // Render size badge (comes in KB from github api)
+        const sizeBadge = document.getElementById('repoSize');
+        if (sizeBadge) {
+            sizeBadge.innerHTML = `<i class="fas fa-database"></i> ${formatBytes(data.size * 1024)}`;
+        }
+
+        const langBadge = document.getElementById('repoLanguage');
+        if (data.language) {
+            langBadge.style.display = 'inline-flex';
+            langBadge.innerHTML = `<i class="fas fa-circle"></i> ${data.language}`;
+            const colors = {
+                'JavaScript': '#f1e05a',
+                'TypeScript': '#3178c6',
+                'Python': '#3572A5',
+                'HTML': '#e34c26',
+                'CSS': '#563d7c',
+                'Go': '#00ADD8',
+                'Rust': '#dea584',
+                'C++': '#f34b7d',
+                'Java': '#b07219'
+            };
+            langBadge.querySelector('i').style.color = colors[data.language] || '#8b949e';
+        } else {
+            langBadge.style.display = 'none';
+        }
+
+        // Inline Card Badge Embed Configuration
+        const badgeUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
+        const structureUrl = `${window.location.origin}/repo/${repo}/${data.default_branch || 'main'}/`;
+        const badgeMarkdown = `[![GitHubTree](${badgeUrl})](${structureUrl})`;
+
+        const badgePreview = document.getElementById('repoMetaBadgePreview');
+        const badgeInput = document.getElementById('repoMetaBadgeInput');
+        if (badgePreview) badgePreview.src = badgeUrl;
+        if (badgeInput) badgeInput.value = badgeMarkdown;
+        
+        card.style.display = 'block';
+
+        // Pre-reset branch and contributor labels with loading state
+        const branchesEl = document.getElementById('repoBranches');
+        const contributorsEl = document.getElementById('repoContributors');
+        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> Loading...`;
+        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
+
+        // Asynchronously fetch extra statistics to not block UI rendering
+        fetchRepoExtraStats(repo).then(stats => {
+            if (branchesEl) {
+                branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> ${formatNumber(stats.branchesCount)} ${stats.branchesCount === 1 ? 'branch' : 'branches'}`;
+            }
+            if (contributorsEl) {
+                contributorsEl.innerHTML = `<i class="fas fa-users"></i> ${formatNumber(stats.contributorsCount)} ${stats.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
+            }
+        });
+
+    } catch (e) {
+        card.style.display = 'none';
+    }
+}
+
+async function fetchRepoExtraStats(repo) {
+    const token = localStorage.getItem('ght_token');
+    const headers = { 'Accept': 'application/vnd.github+json' };
+    if (token) headers['Authorization'] = `token ${token}`;
+
+    let branchesCount = 1;
+    let contributorsCount = 1;
+
+    // Fetch branches count (efficient page=1&per_page=1 Link rel="last" header parser)
+    try {
+        const res = await fetch(`https://api.github.com/repos/${repo}/branches?per_page=1`, { headers });
+        if (res.ok) {
+            const link = res.headers.get('Link');
+            if (link) {
+                const match = link.match(/page=(\d+)&per_page=1>; rel="last"/);
+                if (match) branchesCount = parseInt(match[1]);
+            } else {
+                const data = await res.json();
+                branchesCount = data.length || 1;
+            }
+        }
+    } catch (e) {}
+
+    // Fetch contributors count (efficient Rel last header parser)
+    try {
+        const res = await fetch(`https://api.github.com/repos/${repo}/contributors?per_page=1`, { headers });
+        if (res.ok) {
+            const link = res.headers.get('Link');
+            if (link) {
+                const match = link.match(/page=(\d+)&per_page=1>; rel="last"/);
+                if (match) contributorsCount = parseInt(match[1]);
+            } else {
+                const data = await res.json();
+                contributorsCount = data.length || 1;
+            }
+        }
+    } catch (e) {}
+
+    return { branchesCount, contributorsCount };
+}
+
+function formatNumber(num) {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+    return num;
+}
+
+async function loadFilePreviewContent() {
+    if (!activeDetailItem) return;
+    
+    const container = document.getElementById('filePreviewContainer');
+    const label = document.getElementById('previewFileLabel');
+    const codeContainer = document.getElementById('previewBody');
+    const toggleBtn = document.getElementById('btnTogglePreview');
+
+    container.style.display = 'block';
+    label.innerText = activeDetailItem.path.split('/').pop();
+    
+    // Clear code display and show fetching
+    codeContainer.innerHTML = '<code>Fetching content...</code>';
+    toggleBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Fetching...`;
+
+    const ext = activeDetailItem.path.split('.').pop().toLowerCase();
+    const imageExtensions = ['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg', 'ico', 'bmp'];
+    const isImage = imageExtensions.includes(ext);
+
+    const audioExtensions = ['mp3', 'wav', 'ogg', 'm4a', 'flac'];
+    const isAudio = audioExtensions.includes(ext);
+
+    const binaryExtensions = ['zip', 'tar', 'gz', 'rar', 'pdf', 'exe', 'dll', 'so', 'dylib', 'bin', 'woff', 'woff2', 'ttf', 'eot'];
+    const isBinary = binaryExtensions.includes(ext) && !isAudio;
+
+    try {
+        if (isBinary) {
+            throw new Error("Preview not supported for binary file types. Click 'Open on GitHub' to view this file.");
+        }
+
+        if (activeDetailItem.size > 150 * 1024 && !isImage && !isAudio) {
+            throw new Error("File too large to preview directly in browser (Max: 150 KB). Click 'Open on GitHub' to view it.");
+        }
+        
+        const result = await fetchFileContent(activeDetailItem.path, isImage, isAudio, ext);
+        
+        if (result.type === 'image') {
+            codeContainer.innerHTML = `<div class="image-preview-wrapper"><img src="${result.content}" alt="Image Preview" class="preview-img"></div>`;
+            document.getElementById('btnCopyPreviewContent').style.display = 'none';
+        } else if (result.type === 'audio') {
+            codeContainer.innerHTML = `
+                <div class="audio-preview-wrapper">
+                    <div class="audio-player-card">
+                        <i class="fas fa-music audio-icon"></i>
+                        <span class="audio-filename">${activeDetailItem.path.split('/').pop()}</span>
+                        <audio controls class="preview-audio" src="${result.content}"></audio>
+                    </div>
+                </div>`;
+            document.getElementById('btnCopyPreviewContent').style.display = 'none';
+        } else {
+            codeContainer.innerHTML = `<code></code>`;
+            codeContainer.querySelector('code').innerText = result.content;
+            document.getElementById('btnCopyPreviewContent').style.display = 'inline-flex';
+        }
+        
+        toggleBtn.innerHTML = `<i class="far fa-eye-slash"></i> Hide Content`;
+        trackEvent('Preview', 'Fetch Content Success', activeDetailItem.path);
+    } catch (err) {
+        codeContainer.innerHTML = `<code>⚠️ Preview Error: ${err.message}</code>`;
+        toggleBtn.innerHTML = `<i class="far fa-eye"></i> Show Content`;
+        trackEvent('Preview', 'Fetch Content Failed', err.message);
+    }
+}
+
+async function fetchFileContent(path, isImage = false, isAudio = false, ext = '') {
+    const repo = els.repo.value.trim();
+    const branch = els.branch.value.trim() || 'main';
+    const token = localStorage.getItem('ght_token');
+    
+    const url = `https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}`;
+    const headers = { 'Accept': 'application/vnd.github+json' };
+    if (token) headers['Authorization'] = `token ${token}`;
+
+    const res = await fetch(url, { headers });
+    if (!res.ok) {
+        if (res.status === 403) throw new Error("API Limit Exceeded or Access Forbidden.");
+        if (res.status === 404) throw new Error("File not found or is in a private repo without credentials.");
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+    }
+    
+    const data = await res.json();
+    if (data.encoding === 'base64') {
+        const cleanBase64 = data.content.replace(/\s/g, '');
+        if (isImage) {
+            const mimes = {
+                'png': 'image/png',
+                'jpg': 'image/jpeg',
+                'jpeg': 'image/jpeg',
+                'gif': 'image/gif',
+                'webp': 'image/webp',
+                'svg': 'image/svg+xml',
+                'ico': 'image/x-icon',
+                'bmp': 'image/bmp'
+            };
+            const mime = mimes[ext] || 'image/png';
+            return { type: 'image', content: `data:${mime};base64,${cleanBase64}` };
+        }
+        if (isAudio) {
+            const mimes = {
+                'mp3': 'audio/mpeg',
+                'wav': 'audio/wav',
+                'ogg': 'audio/ogg',
+                'm4a': 'audio/mp4',
+                'flac': 'audio/flac'
+            };
+            const mime = mimes[ext] || 'audio/mpeg';
+            return { type: 'audio', content: `data:${mime};base64,${cleanBase64}` };
+        }
+
+        const binary = atob(cleanBase64);
+        const bytes = new Uint8Array(binary.length);
+        for (let i = 0; i < binary.length; i++) {
+            bytes[i] = binary.charCodeAt(i);
+        }
+        const text = new TextDecoder('utf-8').decode(bytes);
+        return { type: 'text', content: text };
+    }
+    throw new Error("Unsupported file encoding");
+}
+
+function formatBytes(bytes) {
+    if (bytes === undefined || bytes === null) return "N/A";
+    if (bytes === 0) return "0 Bytes";
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+function decodeGitMode(mode) {
+    if (!mode) return "N/A";
+    const modes = {
+        '100644': 'Regular File (rw-r--r--)',
+        '100755': 'Executable File (rwxr-xr-x)',
+        '120000': 'Symbolic Link',
+        '160000': 'Submodule Gitlink',
+        '040000': 'Directory'
+    };
+    return modes[mode] || mode;
+}

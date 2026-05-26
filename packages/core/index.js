@@ -4,12 +4,14 @@ export class GitHubTree {
         this.apiBase = "https://api.github.com";
     }
 
-
     async getTree(repo, branch = 'main') {
         const headers = { 
             'Accept': 'application/vnd.github+json',
             'X-GitHub-Api-Version': '2022-11-28'
         };
+        if (typeof window === 'undefined') {
+            headers['User-Agent'] = 'gh-tree';
+        }
         if (this.token) headers['Authorization'] = `token ${this.token}`;
 
         // Sanitize inputs
@@ -77,7 +79,13 @@ export class GitHubTree {
         if (options.ignore && Array.isArray(options.ignore)) {
             result = result.filter(item => {
                 return !options.ignore.some(pattern => {
-                    const regex = new RegExp('^' + pattern.replace(/\*/g, '.*').replace(/\//g, '\\/') + '($|\\/)');
+                    // Escape all regex special characters except * to prevent syntax errors
+                    // e.g. "folder(copy)" or "test.spec.js" won't trigger regex parsing errors
+                    const escapedPattern = pattern
+                        .split('*')
+                        .map(s => s.replace(/[.+^${}()|[\]\\]/g, '\\$&'))
+                        .join('.*');
+                    const regex = new RegExp('^' + escapedPattern.replace(/\//g, '\\/') + '($|\\/)');
                     return regex.test(item.path);
                 });
             });
