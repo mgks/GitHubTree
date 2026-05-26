@@ -15,6 +15,10 @@
     "copy-assets": "cp README.md packages/core/ && cp LICENSE packages/core/",
     "publish-core": "npm run copy-assets && npm publish --workspace=gh-tree --access public"
   },
+  "overrides": {
+    "picomatch": "^4.0.4",
+    "postcss": "^8.5.15"
+  },
   "dependencies": {
     "p-limit": "^7.3.0"
   }

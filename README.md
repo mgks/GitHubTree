@@ -37,12 +37,15 @@ GitHubTree allows you to explore, navigate, and generate formatted directory tre
 
 ## ✨ Features
 *   **Instant Explorer:** Visualize any public repository (e.g., `facebook/react`).
+*   **Media-Aware File Previewer:** Live preview code, images (with transparency checkerboard support), and audio elements natively in the web dashboard.
+*   **Repository Meta Intelligence:** Get instant rich statistics (repository size, stargazers, forks, branch totals, and active contributors) inside a color-matched dashboard.
+*   **Interactive Embeddable Badges**: Share and showcase your repository structure in README files using a custom shields.io Markdown badge generator.
+*   **High Performance & Limit-Free:** Zero-API rate-limit usage for public file previews utilizing direct raw CDN fetches with highly efficient session-wide caching.
 *   **Intelligent Navigation:** Search and filter files in real-time with parent-folder context preservation.
 *   **Interactive Controls:** Unified tree toggles (Compact/Expand) and collapsible folder support.
 *   **Visual Styles:** Choose between Classic (└──), Slashed (/src), Minimal, ASCII (+--), and **Bulleted (•)**.
 *   **Private Repository Access:** Securely access personal repos using a GitHub PAT (stored only in your browser).
 *   **Deep Linking:** Share links that persist your branch, filter, sort, and style settings.
-*   **High Performance:** Core engine optimized for large repositories with automated branch detection.
 
 ## CLI Tool
 Generate directory trees directly in your terminal. 
