@@ -21,7 +21,7 @@ jobs:
 
       - name: Run Update Script
         id: update
-        run: node tools/update-repos.js
+        run: node tools/update-repos.cjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
