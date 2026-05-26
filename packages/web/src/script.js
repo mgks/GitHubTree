@@ -1024,9 +1024,43 @@ async function fetchAndRenderRepoDetails(repo) {
                 'Go': '#00ADD8',
                 'Rust': '#dea584',
                 'C++': '#f34b7d',
-                'Java': '#b07219'
+                'C': '#555555',
+                'C#': '#178600',
+                'Java': '#b07219',
+                'PHP': '#4f5d95',
+                'Ruby': '#701516',
+                'Swift': '#f05138',
+                'Kotlin': '#a97bff',
+                'Shell': '#89e051',
+                'Dart': '#00b4ab',
+                'Objective-C': '#438eff',
+                'Scala': '#c22d40',
+                'Vue': '#41b883',
+                'Svelte': '#ff3e00',
+                'Markdown': '#083fa1',
+                'Elixir': '#6e4a7e',
+                'Haskell': '#5e5086'
             };
-            langBadge.querySelector('i').style.color = colors[data.language] || '#8b949e';
+            
+            const hex = colors[data.language] || '#8b949e';
+            langBadge.querySelector('i').style.color = hex;
+
+            // Generate soft background tint and border dynamic inline-styles
+            // Convert Hex to RGB
+            const cleanHex = hex.replace('#', '');
+            const r = parseInt(cleanHex.slice(0, 2), 16);
+            const g = parseInt(cleanHex.slice(2, 4), 16);
+            const b = parseInt(cleanHex.slice(4, 6), 16);
+            
+            langBadge.style.background = `rgba(${r}, ${g}, ${b}, 0.07)`;
+            langBadge.style.borderColor = `rgba(${r}, ${g}, ${b}, 0.25)`;
+            
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark && colors[data.language]) {
+                langBadge.style.color = hex;
+            } else {
+                langBadge.style.color = 'var(--text)';
+            }
         } else {
             langBadge.style.display = 'none';
         }
