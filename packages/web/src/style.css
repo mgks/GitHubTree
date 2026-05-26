@@ -1181,10 +1181,11 @@ position: fixed;
 .repo-meta-badges {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .meta-badge {
-    background: var(--bg);
+    background: var(--bg-hover);
     border: 1px solid var(--border);
     padding: 5px 12px;
     border-radius: 20px;
@@ -1193,32 +1194,116 @@ position: fixed;
     display: flex;
     align-items: center;
     gap: 6px;
-    color: var(--file-color);
+    color: var(--text);
+    transition: all 0.2s ease;
 }
 
 .meta-badge i {
     font-size: 0.85rem;
 }
 
-/* Custom colors for badges */
+/* Premium Professional Colors for Badges */
+#repoStars {
+    background: rgba(212, 175, 55, 0.07);
+    border-color: rgba(212, 175, 55, 0.25);
+    color: #8c7110;
+}
 #repoStars i {
+    color: #b59210;
+}
+[data-theme="dark"] #repoStars {
+    background: rgba(241, 224, 90, 0.1);
+    border-color: rgba(241, 224, 90, 0.3);
+    color: #f1e05a;
+}
+[data-theme="dark"] #repoStars i {
     color: #f1e05a;
 }
 
+#repoForks {
+    background: rgba(79, 143, 186, 0.08);
+    border-color: rgba(79, 143, 186, 0.25);
+    color: #2b6b96;
+}
 #repoForks i {
-    color: #4f8fba;
+    color: #3b82b6;
+}
+[data-theme="dark"] #repoForks {
+    background: rgba(79, 143, 186, 0.12);
+    border-color: rgba(79, 143, 186, 0.35);
+    color: #7ab8e2;
+}
+[data-theme="dark"] #repoForks i {
+    color: #7ab8e2;
 }
 
-#repoLanguage i {
-    color: #e34c26; /* Dynamic js/html circle will be styled if needed */
+#repoLanguage {
+    background: rgba(139, 148, 158, 0.06);
+    border-color: rgba(139, 148, 158, 0.25);
+    color: var(--text);
+}
+[data-theme="dark"] #repoLanguage {
+    background: rgba(139, 148, 158, 0.1);
+    border-color: rgba(139, 148, 158, 0.3);
+}
+
+#repoSize {
+    background: rgba(147, 51, 234, 0.06);
+    border-color: rgba(147, 51, 234, 0.25);
+    color: #7c3aed;
+}
+#repoSize i {
+    color: #8b5cf6;
+}
+[data-theme="dark"] #repoSize {
+    background: rgba(167, 139, 250, 0.1);
+    border-color: rgba(167, 139, 250, 0.35);
+    color: #c084fc;
+}
+[data-theme="dark"] #repoSize i {
+    color: #c084fc;
+}
+
+#repoBranches {
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.25);
+    color: #059669;
+}
+#repoBranches i {
+    color: #10b981;
+}
+[data-theme="dark"] #repoBranches {
+    background: rgba(52, 211, 153, 0.1);
+    border-color: rgba(52, 211, 153, 0.35);
+    color: #34d399;
+}
+[data-theme="dark"] #repoBranches i {
+    color: #34d399;
+}
+
+#repoContributors {
+    background: rgba(244, 63, 94, 0.06);
+    border-color: rgba(244, 63, 94, 0.25);
+    color: #e11d48;
+}
+#repoContributors i {
+    color: #f43f5e;
+}
+[data-theme="dark"] #repoContributors {
+    background: rgba(251, 113, 133, 0.1);
+    border-color: rgba(251, 113, 133, 0.35);
+    color: #fda4af;
+}
+[data-theme="dark"] #repoContributors i {
+    color: #fda4af;
 }
 
 .repo-meta-desc {
     margin: 12px 0 0 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     color: var(--text);
-    opacity: 0.9;
+    opacity: 0.75;
 }
 
 /* Image Preview inside Modal */
