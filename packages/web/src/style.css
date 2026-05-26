@@ -1344,12 +1344,6 @@ position: fixed;
     gap: 10px;
 }
 
-.embed-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .embed-label {
     font-size: 0.85rem;
     font-weight: 600;
@@ -1366,7 +1360,7 @@ position: fixed;
 .embed-input-wrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     background: var(--bg-hover);
     border: 1px solid var(--border);
     padding: 8px 12px;
