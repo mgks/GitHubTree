@@ -1,0 +1,34 @@
+name: Daily Workflow Discovery
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Run Update Script
+        id: update
+        run: node tools/update-repos.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push Changes
+        if: steps.update.outputs.added_count > 0
+        run: |
+          git config --global user.name "GitHubTreeBot"
+          git config --global user.email "mgks@users.noreply.github.com"
+          git add _data/repositories.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: added ${{ steps.update.outputs.added_count }} new repos" && git push)
