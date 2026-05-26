@@ -11,10 +11,9 @@
   <!-- BADGES -->
   <p>
     <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version"></a>
-    <!--<img src="https://img.shields.io/npm/v/gh-tree.svg?style=flat-square&color=fc3b53" alt="npm version">-->
-    <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/npm/dt/gh-tree.svg?style=flat-square&color=38bd24" alt="npm downloads"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
+    <a href="https://githubtree.mgks.dev/repo/mgks/githubtree/main/"><img src="https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square" alt="GitHubTree"></a>
   </p>
 
   <!-- MENU -->

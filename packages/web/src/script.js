@@ -1208,6 +1208,34 @@ async function fetchFileContent(path, isImage = false, isAudio = false, ext = ''
     const branch = els.branch.value.trim() || 'main';
     const token = localStorage.getItem('ght_token');
     
+    // Formulate raw CDN URL first (Bypasses GitHub API Rate Limits!)
+    const rawUrl = `https://raw.githubusercontent.com/${repo}/${branch}/${path}`;
+    
+    // If no token is provided, or we want to try raw CDN first
+    if (!token) {
+        try {
+            const res = await fetch(rawUrl);
+            if (res.ok) {
+                if (isImage) {
+                    const blob = await res.blob();
+                    const dataUrl = await readBlobAsDataURL(blob);
+                    return { type: 'image', content: dataUrl };
+                }
+                if (isAudio) {
+                    const blob = await res.blob();
+                    const dataUrl = await readBlobAsDataURL(blob);
+                    return { type: 'audio', content: dataUrl };
+                }
+                // Text file
+                const text = await res.text();
+                return { type: 'text', content: text };
+            }
+        } catch (e) {
+            console.warn("Raw CDN fetch failed, falling back to API:", e);
+        }
+    }
+
+    // Fallback: API-based fetching (Used for private repos or token-based requests)
     const url = `https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}`;
     const headers = { 'Accept': 'application/vnd.github+json' };
     if (token) headers['Authorization'] = `token ${token}`;
@@ -1257,6 +1285,15 @@ async function fetchFileContent(path, isImage = false, isAudio = false, ext = ''
         return { type: 'text', content: text };
     }
     throw new Error("Unsupported file encoding");
+}
+
+function readBlobAsDataURL(blob) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+    });
 }
 
 function formatBytes(bytes) {
