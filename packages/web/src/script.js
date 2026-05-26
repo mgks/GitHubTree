@@ -948,6 +948,20 @@ async function fetchLastUpdated(repo, path, branch) {
     const el = document.getElementById('detailLastUpdated');
     if (!el) return;
 
+    const cacheKey = `ght_commit_${repo}_${branch}_${path}`;
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) {
+        try {
+            const commitInfo = JSON.parse(cached);
+            if (commitInfo.empty) {
+                el.innerText = "No commit history found.";
+            } else {
+                el.innerHTML = `${commitInfo.date} by <strong>${commitInfo.author}</strong> &mdash; <em>"${commitInfo.message}"</em>`;
+            }
+            return;
+        } catch(e) {}
+    }
+
     try {
         const token = localStorage.getItem('ght_token');
         const headers = { 'Accept': 'application/vnd.github+json' };
@@ -965,9 +979,17 @@ async function fetchLastUpdated(repo, path, branch) {
             const author = commitObj.commit.committer.name || commitObj.commit.author.name;
             const message = commitObj.commit.message.split('\n')[0]; // only first line
 
+            const commitInfo = {
+                date: formattedDate,
+                author: author,
+                message: message
+            };
+
             el.innerHTML = `${formattedDate} by <strong>${author}</strong> &mdash; <em>"${message}"</em>`;
+            sessionStorage.setItem(cacheKey, JSON.stringify(commitInfo));
         } else {
             el.innerText = "No commit history found.";
+            sessionStorage.setItem(cacheKey, JSON.stringify({ empty: true }));
         }
     } catch (e) {
         el.innerText = "Failed to load update history.";
@@ -987,9 +1009,105 @@ function formatDate(dateString) {
     });
 }
 
+function renderRepoDetailsCard(repo, details) {
+    const card = document.getElementById('repoDetailsCard');
+    if (!card) return;
+
+    document.getElementById('repoMetaDesc').innerText = details.description || "No description provided.";
+    document.getElementById('repoStars').innerHTML = `<i class="far fa-star"></i> ${formatNumber(details.stargazers_count)} stars`;
+    document.getElementById('repoForks').innerHTML = `<i class="fas fa-code-branch"></i> ${formatNumber(details.forks_count)} forks`;
+    
+    const sizeBadge = document.getElementById('repoSize');
+    if (sizeBadge) {
+        sizeBadge.innerHTML = `<i class="fas fa-database"></i> ${formatBytes(details.size * 1024)}`;
+    }
+
+    const langBadge = document.getElementById('repoLanguage');
+    if (details.language) {
+        langBadge.style.display = 'inline-flex';
+        langBadge.innerHTML = `<i class="fas fa-circle"></i> ${details.language}`;
+        const colors = {
+            'JavaScript': '#f1e05a',
+            'TypeScript': '#3178c6',
+            'Python': '#3572A5',
+            'HTML': '#e34c26',
+            'CSS': '#563d7c',
+            'Go': '#00ADD8',
+            'Rust': '#dea584',
+            'C++': '#f34b7d',
+            'C': '#555555',
+            'C#': '#178600',
+            'Java': '#b07219',
+            'PHP': '#4f5d95',
+            'Ruby': '#701516',
+            'Swift': '#f05138',
+            'Kotlin': '#a97bff',
+            'Shell': '#89e051',
+            'Dart': '#00b4ab',
+            'Objective-C': '#438eff',
+            'Scala': '#c22d40',
+            'Vue': '#41b883',
+            'Svelte': '#ff3e00',
+            'Markdown': '#083fa1',
+            'Elixir': '#6e4a7e',
+            'Haskell': '#5e5086'
+        };
+        
+        const hex = colors[details.language] || '#8b949e';
+        langBadge.querySelector('i').style.color = hex;
+
+        const cleanHex = hex.replace('#', '');
+        const r = parseInt(cleanHex.slice(0, 2), 16);
+        const g = parseInt(cleanHex.slice(2, 4), 16);
+        const b = parseInt(cleanHex.slice(4, 6), 16);
+        
+        langBadge.style.background = `rgba(${r}, ${g}, ${b}, 0.04)`;
+        langBadge.style.borderColor = `rgba(${r}, ${g}, ${b}, 0.15)`;
+        langBadge.style.color = 'var(--text)';
+    } else {
+        langBadge.style.display = 'none';
+    }
+
+    const badgeUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
+    const structureUrl = `https://githubtree.mgks.dev/repo/${repo}/${details.default_branch || 'main'}/?ref=badge`;
+    const badgeMarkdown = `[![GitHubTree](${badgeUrl})](${structureUrl})`;
+
+    const badgePreview = document.getElementById('repoMetaBadgePreview');
+    const badgeInput = document.getElementById('repoMetaBadgeInput');
+    if (badgePreview) badgePreview.src = badgeUrl;
+    if (badgeInput) badgeInput.value = badgeMarkdown;
+    
+    const branchesEl = document.getElementById('repoBranches');
+    const contributorsEl = document.getElementById('repoContributors');
+    
+    if (details.branchesCount !== undefined) {
+        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> ${formatNumber(details.branchesCount)} ${details.branchesCount === 1 ? 'branch' : 'branches'}`;
+    } else {
+        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> Loading...`;
+    }
+
+    if (details.contributorsCount !== undefined) {
+        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> ${formatNumber(details.contributorsCount)} ${details.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
+    } else {
+        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
+    }
+
+    card.style.display = 'block';
+}
+
 async function fetchAndRenderRepoDetails(repo) {
     const card = document.getElementById('repoDetailsCard');
     if (!card) return;
+
+    const cacheKey = `ght_details_${repo}`;
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) {
+        try {
+            const details = JSON.parse(cached);
+            renderRepoDetailsCard(repo, details);
+            return;
+        } catch(e) {}
+    }
 
     try {
         const token = localStorage.getItem('ght_token');
@@ -1000,92 +1118,28 @@ async function fetchAndRenderRepoDetails(repo) {
         if (!res.ok) throw new Error();
 
         const data = await res.json();
-        
-        document.getElementById('repoMetaDesc').innerText = data.description || "No description provided.";
-        document.getElementById('repoStars').innerHTML = `<i class="far fa-star"></i> ${formatNumber(data.stargazers_count)} stars`;
-        document.getElementById('repoForks').innerHTML = `<i class="fas fa-code-branch"></i> ${formatNumber(data.forks_count)} forks`;
-        
-        // Render size badge (comes in KB from github api)
-        const sizeBadge = document.getElementById('repoSize');
-        if (sizeBadge) {
-            sizeBadge.innerHTML = `<i class="fas fa-database"></i> ${formatBytes(data.size * 1024)}`;
-        }
+        const details = {
+            description: data.description || "No description provided.",
+            stargazers_count: data.stargazers_count,
+            forks_count: data.forks_count,
+            size: data.size,
+            language: data.language,
+            default_branch: data.default_branch || 'main'
+        };
 
-        const langBadge = document.getElementById('repoLanguage');
-        if (data.language) {
-            langBadge.style.display = 'inline-flex';
-            langBadge.innerHTML = `<i class="fas fa-circle"></i> ${data.language}`;
-            const colors = {
-                'JavaScript': '#f1e05a',
-                'TypeScript': '#3178c6',
-                'Python': '#3572A5',
-                'HTML': '#e34c26',
-                'CSS': '#563d7c',
-                'Go': '#00ADD8',
-                'Rust': '#dea584',
-                'C++': '#f34b7d',
-                'C': '#555555',
-                'C#': '#178600',
-                'Java': '#b07219',
-                'PHP': '#4f5d95',
-                'Ruby': '#701516',
-                'Swift': '#f05138',
-                'Kotlin': '#a97bff',
-                'Shell': '#89e051',
-                'Dart': '#00b4ab',
-                'Objective-C': '#438eff',
-                'Scala': '#c22d40',
-                'Vue': '#41b883',
-                'Svelte': '#ff3e00',
-                'Markdown': '#083fa1',
-                'Elixir': '#6e4a7e',
-                'Haskell': '#5e5086'
-            };
-            
-            const hex = colors[data.language] || '#8b949e';
-            langBadge.querySelector('i').style.color = hex;
+        // Render primary card data immediately
+        renderRepoDetailsCard(repo, details);
 
-            // Generate soft background tint and border dynamic inline-styles
-            // Convert Hex to RGB
-            const cleanHex = hex.replace('#', '');
-            const r = parseInt(cleanHex.slice(0, 2), 16);
-            const g = parseInt(cleanHex.slice(2, 4), 16);
-            const b = parseInt(cleanHex.slice(4, 6), 16);
-            
-            langBadge.style.background = `rgba(${r}, ${g}, ${b}, 0.04)`;
-            langBadge.style.borderColor = `rgba(${r}, ${g}, ${b}, 0.15)`;
-            langBadge.style.color = 'var(--text)';
-        } else {
-            langBadge.style.display = 'none';
-        }
+        // Fetch secondary analytics asynchronously
+        const stats = await fetchRepoExtraStats(repo);
+        details.branchesCount = stats.branchesCount;
+        details.contributorsCount = stats.contributorsCount;
 
-        // Inline Card Badge Embed Configuration
-        const badgeUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
-        const structureUrl = `https://githubtree.mgks.dev/repo/${repo}/${data.default_branch || 'main'}/?ref=badge`;
-        const badgeMarkdown = `[![GitHubTree](${badgeUrl})](${structureUrl})`;
+        // Render full analytics
+        renderRepoDetailsCard(repo, details);
 
-        const badgePreview = document.getElementById('repoMetaBadgePreview');
-        const badgeInput = document.getElementById('repoMetaBadgeInput');
-        if (badgePreview) badgePreview.src = badgeUrl;
-        if (badgeInput) badgeInput.value = badgeMarkdown;
-        
-        card.style.display = 'block';
-
-        // Pre-reset branch and contributor labels with loading state
-        const branchesEl = document.getElementById('repoBranches');
-        const contributorsEl = document.getElementById('repoContributors');
-        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> Loading...`;
-        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
-
-        // Asynchronously fetch extra statistics to not block UI rendering
-        fetchRepoExtraStats(repo).then(stats => {
-            if (branchesEl) {
-                branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> ${formatNumber(stats.branchesCount)} ${stats.branchesCount === 1 ? 'branch' : 'branches'}`;
-            }
-            if (contributorsEl) {
-                contributorsEl.innerHTML = `<i class="fas fa-users"></i> ${formatNumber(stats.contributorsCount)} ${stats.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
-            }
-        });
+        // Store complete object in cache
+        sessionStorage.setItem(cacheKey, JSON.stringify(details));
 
     } catch (e) {
         card.style.display = 'none';
