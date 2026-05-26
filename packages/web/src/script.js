@@ -1061,7 +1061,7 @@ async function fetchAndRenderRepoDetails(repo) {
 
         // Inline Card Badge Embed Configuration
         const badgeUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
-        const structureUrl = `https://githubtree.mgks.dev/repo/${repo}/${data.default_branch || 'main'}/`;
+        const structureUrl = `https://githubtree.mgks.dev/repo/${repo}/${data.default_branch || 'main'}/?ref=badge`;
         const badgeMarkdown = `[![GitHubTree](${badgeUrl})](${structureUrl})`;
 
         const badgePreview = document.getElementById('repoMetaBadgePreview');
