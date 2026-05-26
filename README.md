@@ -10,10 +10,10 @@
   
   <!-- BADGES -->
   <p>
+    <a href="https://githubtree.mgks.dev/repo/mgks/githubtree/main/"><img src="https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square" alt="GitHubTree"></a>
     <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
-    <a href="https://githubtree.mgks.dev/repo/mgks/githubtree/main/"><img src="https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square" alt="GitHubTree"></a>
   </p>
 
   <!-- MENU -->
@@ -28,7 +28,6 @@
     <a href="https://githubtree.mgks.dev">
       <img width="1000" alt="image" src="https://github.com/user-attachments/assets/94819dfc-e0a7-493a-9b10-e38822e9c55b" />
     </a>
-    <!--<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1de6006-02e5-4ff1-bda1-3f079e350021" />-->
   </p>
 
 </div>
