@@ -1052,15 +1052,9 @@ async function fetchAndRenderRepoDetails(repo) {
             const g = parseInt(cleanHex.slice(2, 4), 16);
             const b = parseInt(cleanHex.slice(4, 6), 16);
             
-            langBadge.style.background = `rgba(${r}, ${g}, ${b}, 0.07)`;
-            langBadge.style.borderColor = `rgba(${r}, ${g}, ${b}, 0.25)`;
-            
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            if (isDark && colors[data.language]) {
-                langBadge.style.color = hex;
-            } else {
-                langBadge.style.color = 'var(--text)';
-            }
+            langBadge.style.background = `rgba(${r}, ${g}, ${b}, 0.04)`;
+            langBadge.style.borderColor = `rgba(${r}, ${g}, ${b}, 0.15)`;
+            langBadge.style.color = 'var(--text)';
         } else {
             langBadge.style.display = 'none';
         }
