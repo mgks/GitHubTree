@@ -72,7 +72,11 @@ async function main() {
   }
   
   if (addedCount > 0) {
-    console.log(`Adding ${addedCount} new repositories.`);
+    console.log(`Adding ${addedCount} new repositories:`);
+    newCsvLines.forEach(line => {
+      const repoName = line.split(',')[0];
+      console.log(`+ ${repoName}`);
+    });
     fs.appendFileSync(CSV_PATH, '\n' + newCsvLines.join('\n'));
     
     // Set output for github actions
