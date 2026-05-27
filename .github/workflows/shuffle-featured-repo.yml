@@ -23,4 +23,5 @@ jobs:
       - name: Run Shuffle Script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node tools/shuffle-featured.cjs
