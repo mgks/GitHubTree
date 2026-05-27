@@ -1495,64 +1495,77 @@ position: fixed;
     text-decoration: none;
 }
 
-.repo-index-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(56, 189, 36, 0.04);
-    border: 1px dashed rgba(56, 189, 36, 0.2);
-    border-radius: 8px;
-    padding: 10px 14px;
+.repo-actions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
     margin-top: 14px;
-    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border);
 }
 
-.banner-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+@media (min-width: 600px) {
+    .repo-actions-container.has-feature {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.banner-icon {
-    font-size: 1rem;
-    color: var(--folder-color);
-}
-
-.banner-text {
+.repo-action-block {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    text-align: left;
+    gap: 6px;
 }
 
-.banner-text strong {
-    font-size: 0.78rem;
-    color: var(--text);
-}
-
-.banner-text span {
+.action-label {
     font-size: 0.68rem;
+    font-weight: 600;
     color: var(--text-muted);
-}
-
-.banner-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.7rem;
+}
+
+.feature-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 32px;
+    font-size: 0.72rem;
     font-weight: 600;
     color: #fff !important;
     background: var(--folder-color);
     border: none;
     border-radius: 4px;
-    padding: 6px 12px;
     text-decoration: none;
     cursor: pointer;
     transition: background 0.15s ease;
-    white-space: nowrap;
 }
 
-.banner-btn:hover {
+.feature-action-btn:hover {
     background: #2ea01d;
     text-decoration: none;
+}
+
+/* Homepage Hero Styles */
+.home-hero {
+    text-align: center;
+    margin: 40px auto 30px;
+    max-width: 600px;
+    padding: 0 16px;
+}
+
+.home-hero h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.home-hero p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
 }

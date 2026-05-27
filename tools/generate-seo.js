@@ -46,13 +46,24 @@ async function generate() {
 
     // 2. Empty State Block (to be replaced later)
     const emptyStateBlock = `<div id="emptyState" class="empty-state">
+            <div class="home-hero">
+                <h1>Explore GitHub Repositories Visually</h1>
+                <p>Interactive tree views, size insights, file breakdowns, and shields badges for any public repository.</p>
+            </div>
+
+            <div class="homepage-section">
+                <div class="section-header">
+                    <h3>Featured Repositories</h3>
+                    <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-request.md&title=Feature+Request:+owner/repo" target="_blank" class="section-cta">
+                        <i class="fas fa-plus"></i> Feature Your Repo
+                    </a>
+                </div>
+                <div id="recentCloud" class="tag-cloud"></div>
+            </div>
+
             <div class="homepage-section">
                 <h3>Browse by Language</h3>
                 <div id="langCloud" class="tag-cloud"></div>
-            </div>
-            <div class="homepage-section">
-                <h3>Featured Repositories</h3>
-                <div id="recentCloud" class="tag-cloud"></div>
             </div>
         </div>`;
 

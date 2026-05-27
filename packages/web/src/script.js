@@ -1194,13 +1194,16 @@ function renderRepoDetailsCard(repo, details) {
     }
 
     // Check if indexed in our database
-    const banner = document.getElementById('repoIndexBanner');
-    if (banner) {
+    const indexCol = document.getElementById('repoIndexCol');
+    const actionsContainer = document.querySelector('.repo-actions-container');
+    if (indexCol) {
         const lowerRepo = repo.toLowerCase();
         if (typeof indexedRepos !== 'undefined' && indexedRepos.has(lowerRepo)) {
-            banner.style.display = 'none';
+            indexCol.style.display = 'none';
+            if (actionsContainer) actionsContainer.classList.remove('has-feature');
         } else {
-            banner.style.display = 'flex';
+            indexCol.style.display = 'flex';
+            if (actionsContainer) actionsContainer.classList.add('has-feature');
             const btn = document.getElementById('repoIndexBtn');
             if (btn) {
                 btn.href = `https://github.com/mgks/GitHubTree/issues/new?template=feature-request.md&title=Feature+Request:+${encodeURIComponent(repo)}`;
