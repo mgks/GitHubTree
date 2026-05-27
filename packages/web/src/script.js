@@ -1203,8 +1203,7 @@ function renderRepoDetailsCard(repo, details) {
             banner.style.display = 'flex';
             const btn = document.getElementById('repoIndexBtn');
             if (btn) {
-                const defaultBranch = details.default_branch || 'main';
-                btn.href = `https://github.com/mgks/GitHubTree/issues/new?title=Feature+Request:+${encodeURIComponent(repo)}&body=Please+index+and+feature+my+repository:%0A-%20Repo:%20${encodeURIComponent(repo)}%0A-%20Branch:%20${encodeURIComponent(defaultBranch)}`;
+                btn.href = `https://github.com/mgks/GitHubTree/issues/new?template=feature-request.md&title=Feature+Request:+${encodeURIComponent(repo)}`;
             }
         }
     }
