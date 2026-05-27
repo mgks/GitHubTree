@@ -233,53 +233,97 @@ async function generate() {
     });
 
     // ============================================================
-    // 6. GENERATE LANGUAGE PAGES
+    // 6. GENERATE LANGUAGE PAGES WITH PAGINATION (60 ITEMS/PAGE)
     // ============================================================
     console.log(`Generating ${Object.keys(languagesMap).length} Language Pages...`);
+    const ITEMS_PER_PAGE = 60;
     
     Object.entries(languagesMap).forEach(([lang, list]) => {
         const langSlug = lang.toLowerCase().replace(/\s+/g, '-');
-        const outputDir = path.join(DIST_DIR, 'language', langSlug);
-        ensureDir(outputDir);
+        const totalPages = Math.ceil(list.length / ITEMS_PER_PAGE);
 
-        const listHtml = list.map(r => `
-            <a href="/repo/${r.repo}/${r.branch}/" class="mini-repo-card" style="text-decoration: none;">
-                <div class="mrc-header">
-                    <span class="mrc-title">${r.repo}</span>
-                    <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
-                </div>
-                <p class="mrc-desc">${r.description || 'No description available.'}</p>
-            </a>`).join('');
-
-        const langPageHtml = templateHtml
-            .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories Directory | GitHubTree</title>`)
-            .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
+        for (let page = 1; page <= totalPages; page++) {
+            const chunk = list.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
             
-            // Open Graph / Facebook
-            .replace(/<meta property="og:title" content=".*?">/, `<meta property="og:title" content="Best ${lang} Repositories Directory | GitHubTree">`)
-            .replace(/<meta property="og:description" content=".*?">/, `<meta property="og:description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
-            .replace(/<meta property="og:url" content=".*?">/, `<meta property="og:url" content="${BASE_URL}/language/${langSlug}/">`)
+            const pagePath = page === 1 ? langSlug : path.join(langSlug, String(page));
+            const outputDir = path.join(DIST_DIR, 'language', pagePath);
+            ensureDir(outputDir);
 
-            // Twitter
-            .replace(/<meta property="twitter:title" content=".*?">/, `<meta property="twitter:title" content="Best ${lang} Repositories Directory | GitHubTree">`)
-            .replace(/<meta property="twitter:description" content=".*?">/, `<meta property="twitter:description" content="Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.">`)
-            .replace(/<meta property="twitter:url" content=".*?">/, `<meta property="twitter:url" content="${BASE_URL}/language/${langSlug}/">`)
+            const listHtml = chunk.map(r => `
+                <a href="/repo/${r.repo}/${r.branch}/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">${r.repo}</span>
+                        <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
+                    </div>
+                    <p class="mrc-desc">${r.description || 'No description available.'}</p>
+                </a>`).join('');
 
-            .replace('<!-- BREADCRUMB_INJECT -->', '') 
-            .replace(
-            /<!-- EMPTY_STATE_START -->[\s\S]*?<!-- EMPTY_STATE_END -->/, 
-            `<div class="language-listing">
-                <h1>${lang} Repositories</h1>
-                <div class="featured-grid">${listHtml}</div>
-                <div class="back-link-container">
-                    <a href="/" class="repo-tag">← Back to Search</a>
-                </div>
-             </div>`
-            )
-            .replace('class="empty-state"', 'class="language-page"');
+            let paginationHtml = '';
+            if (totalPages > 1) {
+                const prevUrl = page === 2 ? `/language/${langSlug}/` : `/language/${langSlug}/${page - 1}/`;
+                const nextUrl = `/language/${langSlug}/${page + 1}/`;
 
-        fs.writeFileSync(path.join(outputDir, 'index.html'), langPageHtml);
-        sitemapUrls.push(`${BASE_URL}/language/${langSlug}/`);
+                paginationHtml = `
+                    <div class="pagination-container">
+                        <a href="${prevUrl}" class="pagination-btn ${page === 1 ? 'disabled' : ''}">← Previous</a>
+                        <span class="pagination-info">Page ${page} of ${totalPages}</span>
+                        <a href="${nextUrl}" class="pagination-btn ${page === totalPages ? 'disabled' : ''}">Next →</a>
+                    </div>`;
+            }
+
+            const pageTitle = page === 1 
+                ? `Best ${lang} Repositories Directory | GitHubTree` 
+                : `Best ${lang} Repositories Directory - Page ${page} | GitHubTree`;
+
+            const pageDesc = page === 1
+                ? `Browse the ultimate collection of best ${lang} repositories. Explore directory structures and files instantly without cloning.`
+                : `Browse the ultimate collection of best ${lang} repositories - Page ${page}. Explore directory structures and files instantly without cloning.`;
+
+            const pageUrl = page === 1 ? `/language/${langSlug}/` : `/language/${langSlug}/${page}/`;
+            const canonicalUrl = `${BASE_URL}${pageUrl}`;
+
+            let seoHeadTags = `<link rel="canonical" href="${canonicalUrl}">`;
+            if (page > 1) {
+                const prevAbsoluteUrl = page === 2 ? `${BASE_URL}/language/${langSlug}/` : `${BASE_URL}/language/${langSlug}/${page - 1}/`;
+                seoHeadTags += `\n    <link rel="prev" href="${prevAbsoluteUrl}">`;
+            }
+            if (page < totalPages) {
+                seoHeadTags += `\n    <link rel="next" href="${BASE_URL}/language/${langSlug}/${page + 1}/">`;
+            }
+            seoHeadTags += '\n</head>';
+
+            const langPageHtml = templateHtml
+                .replace(/<title>.*?<\/title>/, `<title>${pageTitle}</title>`)
+                .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${pageDesc}">`)
+                
+                // Open Graph / Facebook
+                .replace(/<meta property="og:title" content=".*?">/, `<meta property="og:title" content="${pageTitle}">`)
+                .replace(/<meta property="og:description" content=".*?">/, `<meta property="og:description" content="${pageDesc}">`)
+                .replace(/<meta property="og:url" content=".*?">/, `<meta property="og:url" content="${BASE_URL}${pageUrl}">`)
+
+                // Twitter
+                .replace(/<meta property="twitter:title" content=".*?">/, `<meta property="twitter:title" content="${pageTitle}">`)
+                .replace(/<meta property="twitter:description" content=".*?">/, `<meta property="twitter:description" content="${pageDesc}">`)
+                .replace(/<meta property="twitter:url" content=".*?">/, `<meta property="twitter:url" content="${BASE_URL}${pageUrl}">`)
+
+                .replace('<!-- BREADCRUMB_INJECT -->', '') 
+                .replace(
+                /<!-- EMPTY_STATE_START -->[\s\S]*?<!-- EMPTY_STATE_END -->/, 
+                `<div class="language-listing">
+                    <h1>${lang} Repositories</h1>
+                    <div class="featured-grid">${listHtml}</div>
+                    ${paginationHtml}
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>`
+                )
+                .replace('class="empty-state"', 'class="language-page"')
+                .replace('</head>', seoHeadTags);
+
+            fs.writeFileSync(path.join(outputDir, 'index.html'), langPageHtml);
+            sitemapUrls.push(`${BASE_URL}${pageUrl}`);
+        }
     });
 
     // ============================================================
