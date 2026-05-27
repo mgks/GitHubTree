@@ -1142,6 +1142,9 @@ function renderRepoDetailsCard(repo, details) {
     if (details.language) {
         langBadge.style.display = 'inline-flex';
         langBadge.innerHTML = `<i class="fas fa-circle"></i> ${details.language}`;
+        const langSlug = details.language.toLowerCase().replace(/\s+/g, '-');
+        langBadge.href = `/language/${langSlug}/`;
+        langBadge.style.cursor = 'pointer';
         const colors = {
             'JavaScript': '#f1e05a',
             'TypeScript': '#3178c6',

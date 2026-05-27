@@ -243,12 +243,13 @@ async function generate() {
         ensureDir(outputDir);
 
         const listHtml = list.map(r => `
-            <div class="repo-card">
-                <a href="/repo/${r.repo}/${r.branch}/">
-                    <strong>${r.repo}</strong>
-                    <p>${r.description || 'No description available.'}</p>
-                </a>
-            </div>`).join('');
+            <a href="/repo/${r.repo}/${r.branch}/" class="mini-repo-card" style="text-decoration: none;">
+                <div class="mrc-header">
+                    <span class="mrc-title">${r.repo}</span>
+                    <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
+                </div>
+                <p class="mrc-desc">${r.description || 'No description available.'}</p>
+            </a>`).join('');
 
         const langPageHtml = templateHtml
             .replace(/<title>.*?<\/title>/, `<title>Best ${lang} Repositories Directory | GitHubTree</title>`)
@@ -269,7 +270,7 @@ async function generate() {
             /<!-- EMPTY_STATE_START -->[\s\S]*?<!-- EMPTY_STATE_END -->/, 
             `<div class="language-listing">
                 <h1>${lang} Repositories</h1>
-                <div class="repo-grid">${listHtml}</div>
+                <div class="featured-grid">${listHtml}</div>
                 <div class="back-link-container">
                     <a href="/" class="repo-tag">← Back to Search</a>
                 </div>
