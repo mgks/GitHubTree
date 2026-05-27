@@ -365,20 +365,20 @@ input {
 }
 
 .repo-tag {
-    background: var(--btn-bg);
-    border: 1px solid var(--border);
+    background: #0969da0a;
+    border: 1px solid rgba(9, 105, 218, .18);
     color: var(--accent);
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 0.85rem;
-    font-family: 'Fira Code', monospace;
-    transition: all 0.2s;
+    font-size: .85rem;
+    font-weight: 500;
+    transition: all .2s;
 }
 
 .repo-tag:hover {
     border-color: var(--accent);
-    background: var(--bg);
+    background: #0969da1a;
     transform: translateY(-2px);
 }
 
