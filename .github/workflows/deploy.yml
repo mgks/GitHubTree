@@ -33,11 +33,11 @@ jobs:
       - name: Build Web App
         run: npm run build --workspace=githubtree-web
 
-      - name: Create 404 Fallback
-        run: cp packages/web/dist/index.html packages/web/dist/404.html
-
       - name: Generate SEO Pages
         run: node tools/generate-seo.js
+
+      - name: Create 404 Fallback
+        run: cp packages/web/dist/index.html packages/web/dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
