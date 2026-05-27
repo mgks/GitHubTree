@@ -1213,6 +1213,11 @@ function renderRepoDetailsCard(repo, details) {
         if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
     }
 
+    const githubLinkEl = document.getElementById('repoGithubLink');
+    if (githubLinkEl) {
+        githubLinkEl.href = `https://github.com/${details.fullName || repo}`;
+    }
+
     // Check if indexed in our database
     const indexCol = document.getElementById('repoIndexCol');
     const actionsContainer = document.querySelector('.repo-actions-container');
