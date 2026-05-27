@@ -11,7 +11,7 @@ permissions:
 jobs:
   index_repo:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.issue.title, 'Feature Request:') || startsWith(github.event.issue.title, 'Index Request:')
+    if: startsWith(github.event.issue.title, 'Feature Request:') || startsWith(github.event.issue.title, 'Index Request:') || startsWith(github.event.issue.title, 'Feature Repo:')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6

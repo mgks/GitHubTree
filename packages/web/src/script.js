@@ -141,15 +141,30 @@ document.addEventListener('DOMContentLoaded', () => {
     els.saveToken.addEventListener('click', saveToken);
     els.clearToken.addEventListener('click', clearToken);
 
-    // Quick Start Tags
-    document.querySelectorAll('.repo-tag').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const [u, r] = btn.dataset.repo.split('/');
-            els.repo.value = `${u}/${r}`;
-            els.branch.value = 'main';
-            loadTree();
-            trackEvent('Fetch', 'Quick Start', `${u}/${r}`);
-        });
+    // Quick Start Cards & Buttons
+    document.addEventListener('click', (e) => {
+        const card = e.target.closest('.mini-repo-card');
+        const tpBtn = e.target.closest('.tp-explore-btn');
+        
+        if (card && !card.classList.contains('history-card')) {
+            const repo = card.dataset.repo;
+            if (repo) {
+                const [u, r] = repo.split('/');
+                els.repo.value = `${u}/${r}`;
+                els.branch.value = 'main';
+                loadTree();
+                trackEvent('Fetch', 'Quick Start Card', repo);
+            }
+        } else if (tpBtn) {
+            const repo = tpBtn.dataset.repo;
+            if (repo) {
+                const [u, r] = repo.split('/');
+                els.repo.value = `${u}/${r}`;
+                els.branch.value = 'main';
+                loadTree();
+                trackEvent('Fetch', 'Trending Project Click', repo);
+            }
+        }
     });
 
     // Enter Key & Fetch Support
@@ -977,18 +992,20 @@ function initHistoryCloud() {
     historySection.appendChild(h3);
 
     const historyCloud = document.createElement('div');
-    historyCloud.className = 'tag-cloud';
+    historyCloud.className = 'history-grid';
     historyCloud.id = 'historyCloud';
 
     history.forEach(repo => {
-        const btn = document.createElement('button');
-        btn.className = 'repo-tag';
+        const btn = document.createElement('div');
+        btn.className = 'mini-repo-card history-card';
         btn.dataset.repo = repo;
         
-        const userPart = repo.split('/')[0];
-        const namePart = repo.split('/')[1] || '';
-        
-        btn.innerHTML = `<span>${userPart}/</span>${namePart}`;
+        btn.innerHTML = `
+            <div class="mrc-header">
+                <span class="mrc-title">${repo}</span>
+                <span class="mrc-lang"><i class="fas fa-history"></i> Visited</span>
+            </div>
+        `;
         btn.addEventListener('click', () => {
             els.repo.value = repo;
             els.branch.value = 'main';
@@ -1206,7 +1223,7 @@ function renderRepoDetailsCard(repo, details) {
             if (actionsContainer) actionsContainer.classList.add('has-feature');
             const btn = document.getElementById('repoIndexBtn');
             if (btn) {
-                btn.href = `https://github.com/mgks/GitHubTree/issues/new?template=feature-request.md&title=Feature+Request:+${encodeURIComponent(repo)}`;
+                btn.href = `https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+${encodeURIComponent(repo)}`;
             }
         }
     }

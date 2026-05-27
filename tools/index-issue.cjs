@@ -12,12 +12,12 @@ async function run() {
         process.exit(1);
     }
 
-    // Extract repo path: e.g. "Feature Request: owner/repo" or "Index Request: owner/repo"
-    const cleanedTitle = title.replace(/^(Feature Request:|Index Request:)/i, '').trim();
+    // Extract repo path: e.g. "Feature Request: owner/repo", "Index Request: owner/repo", or "Feature Repo: owner/repo"
+    const cleanedTitle = title.replace(/^(Feature Request:|Index Request:|Feature Repo:)/i, '').trim();
     const repoMatch = cleanedTitle.match(/^([a-zA-Z0-9-._]+)\/([a-zA-Z0-9-._]+)$/);
 
     if (!repoMatch) {
-        await commentAndClose(issueNum, token, `❌ **Error:** Invalid repository format. Please ensure the issue title is exactly in the format \`Feature Request: owner/repo\` or \`Index Request: owner/repo\`.`);
+        await commentAndClose(issueNum, token, `❌ **Error:** Invalid repository format. Please ensure the issue title is exactly in the format \`Feature Repo: owner/repo\`.`);
         return;
     }
 

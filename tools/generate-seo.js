@@ -87,18 +87,73 @@ async function generate() {
     console.log('Generating Homepage...');
 
     const langCloudHtml = topLanguages.map(l => 
-        `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="repo-tag">${l}</a>`
+        `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="lang-card">
+            <span class="lc-name">${l}</span>
+            <span class="lc-count">${languagesMap[l].length} repos</span>
+         </a>`
     ).join('');
 
-    // Random 30 repos for homepage
-    const randomRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const repoCloudHtml = randomRepos.map(r => 
-        `<button class="repo-tag" data-repo="${r.repo}"><span>${r.repo.split('/')[0]}/</span>${r.repo.split('/')[1]}</button>`
+    // Shuffled repos or fallback to random
+    let displayRepos = [];
+    const shuffledPath = path.resolve('_data/featured-shuffled.json');
+    if (fs.existsSync(shuffledPath)) {
+        try {
+            displayRepos = JSON.parse(fs.readFileSync(shuffledPath, 'utf8'));
+        } catch (e) {
+            displayRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 24);
+        }
+    } else {
+        displayRepos = [...repos].sort(() => 0.5 - Math.random()).slice(0, 24);
+    }
+
+    const repoCloudHtml = displayRepos.map(r => 
+        `<div class="mini-repo-card" data-repo="${r.repo}">
+            <div class="mrc-header">
+                <span class="mrc-title">${r.repo}</span>
+                <span class="mrc-lang"><i class="fas fa-circle mrc-lang-dot"></i> ${r.language}</span>
+            </div>
+            <p class="mrc-desc">${r.description || 'No description available.'}</p>
+         </div>`
     ).join('');
+
+    // Load Trending Project
+    let highlightedHtml = '';
+    const highlightedPath = path.resolve('_data/highlighted.json');
+    let highlighted = null;
+    if (fs.existsSync(highlightedPath)) {
+        try {
+            highlighted = JSON.parse(fs.readFileSync(highlightedPath, 'utf8'));
+        } catch(e) {}
+    }
+    if (!highlighted) {
+        highlighted = {
+            repo: 'mgks/GitHubTree',
+            stars: 120,
+            forks: 45,
+            description: 'Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library.',
+            language: 'JavaScript',
+            branch: 'main'
+        };
+    }
+    highlightedHtml = `
+        <div class="trending-project-card">
+            <div class="tp-badge"><i class="fas fa-fire"></i> Trending Project</div>
+            <div class="tp-content">
+                <h4 class="tp-title">${highlighted.repo}</h4>
+                <p class="tp-desc">${highlighted.description}</p>
+                <div class="tp-meta">
+                    <span class="tp-meta-item"><i class="fas fa-circle tp-lang-dot" style="background-color: var(--folder-color);"></i> ${highlighted.language}</span>
+                    <span class="tp-meta-item"><i class="far fa-star"></i> ${highlighted.stars} stars</span>
+                    <span class="tp-meta-item"><i class="fas fa-code-branch"></i> ${highlighted.forks} forks</span>
+                </div>
+            </div>
+            <button class="tp-explore-btn" data-repo="${highlighted.repo}"><i class="fas fa-eye"></i> Explore Structure</button>
+        </div>`;
 
     const homeHtml = templateHtml
-        .replace('<div id="langCloud" class="tag-cloud"></div>', `<div id="langCloud" class="tag-cloud">${langCloudHtml}</div>`)
-        .replace('<div id="recentCloud" class="tag-cloud"></div>', `<div id="recentCloud" class="tag-cloud">${repoCloudHtml}</div>`)
+        .replace('<div id="langCloud" class="language-grid"></div>', `<div id="langCloud" class="language-grid">${langCloudHtml}</div>`)
+        .replace('<div id="recentCloud" class="featured-grid"></div>', `<div id="recentCloud" class="featured-grid">${repoCloudHtml}</div>`)
+        .replace('<!-- HIGHLIGHTED_PROJECT_INJECT -->', highlightedHtml)
         .replace('<!-- BREADCRUMB_INJECT -->', ''); // No breadcrumb on home
 
     fs.writeFileSync(path.join(DIST_DIR, 'index.html'), homeHtml);
