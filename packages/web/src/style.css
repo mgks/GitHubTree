@@ -43,7 +43,7 @@
     --header-bg: #161b22;
     --border: #30363d;
     --accent: #0e65c8;
-    --accent-hover: #79c0ff;
+    --accent-hover: #287bc6;
     --panel-bg: #0d1117;
     --panel-border: #30363d;
     --folder-color: #58a6ff;
@@ -1421,7 +1421,8 @@ position: fixed;
     gap: 12px;
     background: var(--bg-hover);
     border: 1px solid var(--border);
-    padding: 8px 12px;
+    padding: 2px 6px;
+    height: 32px;
     border-radius: 6px;
 }
 
@@ -1451,7 +1452,7 @@ position: fixed;
 
 .embed-copy-btn:hover {
     opacity: 1;
-    color: var(--folder-color);
+    color: var(--accent);
 }
 
 /* Audio Player Preview Styling */
@@ -1522,9 +1523,9 @@ position: fixed;
 }
 
 .app-star-btn:hover,.app-star-btn.starred {
-    background: #fff4d4;
-    color: #8e6e00;
-    border-color: #d7ad18;
+    background: rgba(255, 210, 78, 0.36);
+    color: #c79d00;
+    border-color: #ffe999;
 }
 
 .app-star-btn i {
@@ -1589,7 +1590,7 @@ position: fixed;
 }
 
 .action-label {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--text-muted);
     display: flex;
@@ -1603,19 +1604,19 @@ position: fixed;
     justify-content: center;
     gap: 6px;
     height: 32px;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: #fff !important;
-    background: var(--folder-color);
+    background: var(--accent);
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
     transition: background 0.15s ease;
 }
 
 .feature-action-btn:hover {
-    background: #2ea01d;
+    background: var(--accent-hover);
     text-decoration: none;
 }
 
