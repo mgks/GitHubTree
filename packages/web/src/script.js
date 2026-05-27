@@ -7,6 +7,7 @@ let currentSort = 'folder-az';
 let currentStyle = 'classic';
 let activeDetailItem = null;
 let indexedRepos = new Set();
+let indexedReposReady = Promise.resolve();
 
 // --- Elements ---
 const els = {
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     checkSavedToken();
     initAppStarButton();
-    loadIndexedRepos();
+    indexedReposReady = loadIndexedRepos();
     setupUrlHandler();
     setupDropdowns();
     setupShareOverlay();
@@ -1244,6 +1245,9 @@ async function fetchAndRenderRepoDetails(repo) {
     if (!card) return;
 
     const cacheKey = `ght_details_${repo}`;
+    // Ensure indexedRepos is populated before rendering (guards against refresh race)
+    await indexedReposReady;
+
     const cached = sessionStorage.getItem(cacheKey);
     if (cached) {
         try {
