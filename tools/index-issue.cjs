@@ -2,9 +2,35 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const REPO_OWNER = process.env.GITHUB_REPOSITORY; // e.g. "mgks/GitHubTree"
+const REPO_OWNER = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
 const VALID_PREFIXES = ['Feature Repo:', 'Feature Request:', 'Index Request:'];
+const DEPLOY_WORKFLOW = 'deploy-site.yml';
+
+async function triggerDeploy() {
+    try {
+        const res = await fetch(
+            `https://api.github.com/repos/${REPO_OWNER}/actions/workflows/${DEPLOY_WORKFLOW}/dispatches`,
+            {
+                method: 'POST',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Accept': 'application/vnd.github+json',
+                    'User-Agent': 'GitHubTree-Indexer',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ref: 'main' })
+            }
+        );
+        if (res.status === 204) {
+            console.log('  ✅ Deploy workflow triggered.');
+        } else {
+            console.warn(`  ⚠️ Deploy dispatch returned status ${res.status}`);
+        }
+    } catch (e) {
+        console.warn('  ⚠️ Could not trigger deploy:', e.message);
+    }
+}
 
 async function ghFetch(url, options = {}) {
     const res = await fetch(url, {
@@ -118,6 +144,7 @@ async function processIssue(issue) {
         execSync('git add _data/repositories.csv');
         execSync(`git commit -m "feat(database): index ${repo} via issue #${issueNum}"`);
         execSync('git push origin main');
+        await triggerDeploy();
 
         console.log(`  ✓ Indexed and pushed — closing`);
         await addComment(issueNum,

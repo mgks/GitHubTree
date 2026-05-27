@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const GITHUB_REPO = process.env.GITHUB_REPOSITORY || 'mgks/GitHubTree';
-const DEPLOY_WORKFLOW = 'deploy-app.yml';
+const DEPLOY_WORKFLOW = 'deploy-site.yml';
 
 function parseCSV(content) {
     const lines = content.split('\n');
