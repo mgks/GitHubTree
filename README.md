@@ -26,7 +26,7 @@
   <!-- PREVIEW -->
   <p>
     <a href="https://githubtree.mgks.dev">
-      <img width="1000" alt="image" src="https://github.com/user-attachments/assets/94819dfc-e0a7-493a-9b10-e38822e9c55b" />
+      <img width="1000" alt="image" src="https://raw.githubusercontent.com/mgks/GitHubTree/refs/heads/main/packages/web/public/images/gh-tree-preview.webp" />
     </a>
   </p>
 

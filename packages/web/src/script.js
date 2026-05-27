@@ -1068,7 +1068,8 @@ function renderRepoDetailsCard(repo, details) {
         langBadge.style.display = 'none';
     }
 
-    const badgeUrl = `https://img.shields.io/badge/Structure-GitHubTree-blue?style=flat-square`;
+    const repoNameOnly = repo.split('/')[1] || repo;
+    const badgeUrl = `https://img.shields.io/badge/GitHubTree-${encodeURIComponent(repoNameOnly)}-blue?style=flat-square`;
     const structureUrl = `https://githubtree.mgks.dev/repo/${repo}/${details.default_branch || 'main'}/?ref=badge`;
     const badgeMarkdown = `[![GitHubTree](${badgeUrl})](${structureUrl})`;
 
