@@ -119,20 +119,28 @@ async function run() {
 
     const dataDir = path.resolve('_data');
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
-    fs.writeFileSync(path.join(dataDir, 'highlighted.json'), JSON.stringify(highlighted, null, 2));
 
     // Featured grid: shuffle ALL repos except the highlighted one, pick 24
     const rest = repos.filter(r => r.repo !== highlighted.repo);
     const shuffled = [...rest].sort(() => 0.5 - Math.random()).slice(0, 24);
-    fs.writeFileSync(path.join(dataDir, 'featured-shuffled.json'), JSON.stringify(shuffled, null, 2));
 
-    console.log('Saved 24 shuffled featured repositories.');
+    console.log('Saving 24 shuffled featured repositories.');
 
-    // Commit and push
+    // Configure git and pull BEFORE writing any files
     try {
         execSync('git config --global user.name "github-actions[bot]"');
         execSync('git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"');
         execSync('git pull --rebase origin main');
+    } catch (err) {
+        console.error('Git setup/pull failed:', err.message);
+        process.exit(1);
+    }
+
+    fs.writeFileSync(path.join(dataDir, 'highlighted.json'), JSON.stringify(highlighted, null, 2));
+    fs.writeFileSync(path.join(dataDir, 'featured-shuffled.json'), JSON.stringify(shuffled, null, 2));
+
+    // Commit and push
+    try {
         execSync('git add _data/highlighted.json _data/featured-shuffled.json');
 
         const status = execSync('git status --porcelain').toString();

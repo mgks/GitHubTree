@@ -115,12 +115,8 @@ async function processIssue(issue) {
         if (!csvContent.endsWith('\n')) csvContent += '\n';
         fs.writeFileSync(csvPath, csvContent + newRow + '\n');
 
-        // Pull latest before pushing to avoid race conditions
-        execSync('git config --global user.name "github-actions[bot]"');
-        execSync('git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"');
-        execSync('git pull --rebase origin main');
         execSync('git add _data/repositories.csv');
-        execSync(`git commit -m "feat(database): index and feature ${repo} via issue #${issueNum}"`);
+        execSync(`git commit -m "feat(database): index ${repo} via issue #${issueNum}"`);
         execSync('git push origin main');
 
         console.log(`  ✓ Indexed and pushed — closing`);
@@ -152,6 +148,11 @@ async function run() {
         console.log('Nothing to do.');
         return;
     }
+
+    // Configure git and pull once before any file changes
+    execSync('git config --global user.name "github-actions[bot]"');
+    execSync('git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"');
+    execSync('git pull --rebase origin main');
 
     for (const issue of issues) {
         await processIssue(issue);
