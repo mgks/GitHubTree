@@ -6,6 +6,7 @@ let currentData = []; // Stores the Raw API response
 let currentSort = 'folder-az';
 let currentStyle = 'classic';
 let activeDetailItem = null;
+let indexedRepos = new Set();
 
 // --- Elements ---
 const els = {
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     checkSavedToken();
     initAppStarButton();
+    loadIndexedRepos();
     setupUrlHandler();
     setupDropdowns();
     setupShareOverlay();
@@ -674,6 +676,16 @@ function checkSavedToken() {
     }
 }
 
+async function loadIndexedRepos() {
+    try {
+        const res = await fetch('/repos.json');
+        if (res.ok) {
+            const list = await res.json();
+            indexedRepos = new Set(list.map(r => r.toLowerCase()));
+        }
+    } catch (e) {}
+}
+
 function initAppStarButton() {
     const starBtn = document.getElementById('appStarBtn');
     if (!starBtn) return;
@@ -1179,6 +1191,22 @@ function renderRepoDetailsCard(repo, details) {
         if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> ${formatNumber(details.contributorsCount)} ${details.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
     } else {
         if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
+    }
+
+    // Check if indexed in our database
+    const banner = document.getElementById('repoIndexBanner');
+    if (banner) {
+        const lowerRepo = repo.toLowerCase();
+        if (typeof indexedRepos !== 'undefined' && indexedRepos.has(lowerRepo)) {
+            banner.style.display = 'none';
+        } else {
+            banner.style.display = 'flex';
+            const btn = document.getElementById('repoIndexBtn');
+            if (btn) {
+                const defaultBranch = details.default_branch || 'main';
+                btn.href = `https://github.com/mgks/GitHubTree/issues/new?title=Feature+Request:+${encodeURIComponent(repo)}&body=Please+index+and+feature+my+repository:%0A-%20Repo:%20${encodeURIComponent(repo)}%0A-%20Branch:%20${encodeURIComponent(defaultBranch)}`;
+            }
+        }
     }
 
     card.style.display = 'block';

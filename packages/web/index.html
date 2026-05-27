@@ -117,6 +117,19 @@
                     </button>
                 </div>
             </div>
+
+            <div class="repo-index-banner" id="repoIndexBanner" style="display: none;">
+                <div class="banner-content">
+                    <i class="fas fa-magic banner-icon"></i>
+                    <div class="banner-text">
+                        <strong>Dynamic Preview</strong>
+                        <span>This repository structure is not yet indexed in our database.</span>
+                    </div>
+                </div>
+                <a id="repoIndexBtn" href="#" target="_blank" class="banner-btn">
+                    <i class="fas fa-rocket"></i> Index & Feature Repo
+                </a>
+            </div>
         </div>
 
         <!-- BREADCRUMB_INJECT -->
@@ -129,7 +142,12 @@
             </div>
 
             <div class="homepage-section">
-                <h3>Featured Repositories</h3>
+                <div class="section-header">
+                    <h3>Featured Repositories</h3>
+                    <a href="https://github.com/mgks/GitHubTree/issues/new?title=Feature+Request:+[user/repo]&body=Please+index+and+feature+my+repository:%0A-%20Repo:%20user/repo" target="_blank" class="section-cta">
+                        <i class="fas fa-plus"></i> Feature Your Repo
+                    </a>
+                </div>
                 <div id="recentCloud" class="tag-cloud"></div>
             </div>
         </div>

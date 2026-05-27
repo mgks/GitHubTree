@@ -1,0 +1,29 @@
+name: Index & Feature Request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  index_repo:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'Feature Request:') || startsWith(github.event.issue.title, 'Index Request:')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Process Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node tools/index-issue.cjs

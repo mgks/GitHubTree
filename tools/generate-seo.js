@@ -201,6 +201,12 @@ ${sitemapUrls.map(url => `  <url><loc>${url}</loc><changefreq>weekly</changefreq
     
     fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemap);
 
+    // ============================================================
+    // 8. GENERATE REPO LIST JSON FOR CLIENT-SIDE VERIFICATION
+    // ============================================================
+    const repoList = repos.map(r => r.repo);
+    fs.writeFileSync(path.join(DIST_DIR, 'repos.json'), JSON.stringify(repoList));
+
     console.timeEnd('🚀 Build Time');
     console.log(`✅ SEO Generation Complete. Total pages: ${sitemapUrls.length}`);
 }
