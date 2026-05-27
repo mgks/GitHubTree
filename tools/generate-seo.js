@@ -6,6 +6,31 @@ const TEMPLATE_PATH = './packages/web/dist/index.html';
 const DIST_DIR = './packages/web/dist';
 const BASE_URL = 'https://githubtree.mgks.dev';
 
+const langColors = {
+    'javascript': '#f1e05a',
+    'typescript': '#3178c6',
+    'python': '#3572a5',
+    'html': '#e34c26',
+    'css': '#563d7c',
+    'go': '#00add8',
+    'rust': '#dea584',
+    'c++': '#f34b7d',
+    'java': '#b07219',
+    'ruby': '#701516',
+    'php': '#4f5d95',
+    'shell': '#89e051',
+    'swift': '#f05138',
+    'c#': '#178600',
+    'dart': '#00b4ab',
+    'kotlin': '#a97bff',
+    'vue': '#41b883',
+    'c': '#555555',
+    'objective-c': '#438eff',
+    'scala': '#c22d40'
+};
+const getLangColor = (lang) => langColors[lang?.toLowerCase()] || '#8b949e';
+const getLangClass = (lang) => 'lang-' + (lang?.toLowerCase()?.replace(/c#/, 'cs')?.replace(/c\+\+/, 'cpp')?.replace(/\s+/g, '-') || 'other');
+
 // --- HELPER: Smart CSV Parser ---
 // Handles commas inside quotes and standardizes data
 function parseCSV(data) {
@@ -87,7 +112,7 @@ async function generate() {
     console.log('Generating Homepage...');
 
     const langCloudHtml = topLanguages.map(l => 
-        `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="lang-card">
+        `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="lang-card" style="--lang-color: ${getLangColor(l)}">
             <span class="lc-name">${l}</span>
             <span class="lc-count">${languagesMap[l].length} repos</span>
          </a>`
@@ -110,7 +135,7 @@ async function generate() {
         `<div class="mini-repo-card" data-repo="${r.repo}">
             <div class="mrc-header">
                 <span class="mrc-title">${r.repo}</span>
-                <span class="mrc-lang"><i class="fas fa-circle mrc-lang-dot"></i> ${r.language}</span>
+                <span class="mrc-lang"><i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i> ${r.language}</span>
             </div>
             <p class="mrc-desc">${r.description || 'No description available.'}</p>
          </div>`
@@ -136,13 +161,13 @@ async function generate() {
         };
     }
     highlightedHtml = `
-        <div class="trending-project-card">
-            <div class="tp-badge"><i class="fas fa-fire"></i> Trending Project</div>
+        <div class="trending-repo-card" style="--lang-color: ${getLangColor(highlighted.language)}">
+            <div class="tp-badge"><i class="fas fa-fire"></i> Trending Repo</div>
             <div class="tp-content">
                 <h4 class="tp-title">${highlighted.repo}</h4>
                 <p class="tp-desc">${highlighted.description}</p>
                 <div class="tp-meta">
-                    <span class="tp-meta-item"><i class="fas fa-circle tp-lang-dot" style="background-color: var(--folder-color);"></i> ${highlighted.language}</span>
+                    <span class="tp-meta-item"><i class="fas fa-circle tp-lang-dot ${getLangClass(highlighted.language)}"></i> ${highlighted.language}</span>
                     <span class="tp-meta-item"><i class="far fa-star"></i> ${highlighted.stars} stars</span>
                     <span class="tp-meta-item"><i class="fas fa-code-branch"></i> ${highlighted.forks} forks</span>
                 </div>

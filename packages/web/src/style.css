@@ -1662,8 +1662,9 @@ position: fixed;
 
 /* Language Cards */
 .lang-card {
-    background: var(--bg);
-    border: 1px solid var(--border);
+    --lang-color: #8b949e;
+    background: color-mix(in srgb, var(--lang-color) 5%, transparent);
+    border: 1px solid color-mix(in srgb, var(--lang-color) 20%, transparent);
     border-radius: 6px;
     padding: 10px 12px;
     display: flex;
@@ -1675,28 +1676,48 @@ position: fixed;
 }
 
 .lang-card:hover {
-    border-color: var(--accent);
-    background: var(--btn-bg);
+    background: color-mix(in srgb, var(--lang-color) 10%, transparent);
+    border-color: color-mix(in srgb, var(--lang-color) 40%, transparent);
 }
 
 .lc-name {
     font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--text);
+    font-weight: 600;
+    color: var(--lang-color);
 }
 
 .lc-count {
     font-size: 0.65rem;
-    color: var(--text-muted);
-    background: var(--border);
+    color: var(--lang-color);
+    background: color-mix(in srgb, var(--lang-color) 12%, transparent);
     padding: 2px 6px;
     border-radius: 10px;
+    font-weight: 500;
 }
 
-/* Highlighted Trending Project Card */
-.trending-project-card {
-    background: linear-gradient(135deg, rgba(9, 105, 218, 0.03) 0%, rgba(56, 189, 36, 0.02) 100%);
-    border: 1px solid var(--border);
+/* Language Colored Dots */
+.lang-js { color: #f1e05a !important; }
+.lang-ts { color: #3178c6 !important; }
+.lang-py { color: #3572a5 !important; }
+.lang-html { color: #e34c26 !important; }
+.lang-css { color: #563d7c !important; }
+.lang-go { color: #00add8 !important; }
+.lang-rust { color: #dea584 !important; }
+.lang-cpp { color: #f34b7d !important; }
+.lang-java { color: #b07219 !important; }
+.lang-ruby { color: #701516 !important; }
+.lang-php { color: #4f5d95 !important; }
+.lang-shell { color: #89e051 !important; }
+.lang-swift { color: #f05138 !important; }
+.lang-cs { color: #178600 !important; }
+.lang-dart { color: #00b4ab !important; }
+.lang-kotlin { color: #a97bff !important; }
+.lang-other { color: #8b949e !important; }
+
+/* Highlighted Trending Repo Card */
+.trending-repo-card {
+    background: color-mix(in srgb, var(--lang-color, var(--accent)) 4%, var(--bg));
+    border: 1px solid color-mix(in srgb, var(--lang-color, var(--accent)) 15%, var(--border));
     border-radius: 12px;
     padding: 20px;
     max-width: 900px;
@@ -1707,14 +1728,14 @@ position: fixed;
     box-sizing: border-box;
 }
 
-.trending-project-card::before {
+.trending-repo-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--accent), var(--folder-color));
+    background: var(--lang-color, var(--accent));
 }
 
 .tp-badge {
@@ -1759,13 +1780,22 @@ position: fixed;
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    line-height: 1;
+}
+
+.tp-meta-item i {
+    font-size: 0.82rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .tp-lang-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
+    font-size: 0.55rem !important;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2px;
 }
 
 .tp-explore-btn {
