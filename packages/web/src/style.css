@@ -1425,3 +1425,63 @@ position: fixed;
     width: 100%;
     outline: none;
 }
+
+/* Header Star Button Styling */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-star-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(139, 148, 158, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.72rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-star-btn:hover {
+    background: rgba(212, 175, 55, 0.08);
+    border-color: rgba(212, 175, 55, 0.35);
+    color: #cca410;
+    transform: translateY(-1px);
+}
+
+[data-theme="dark"] .app-star-btn:hover {
+    background: rgba(241, 224, 90, 0.08);
+    border-color: rgba(241, 224, 90, 0.3);
+    color: #f1e05a;
+}
+
+.app-star-btn.starred {
+    background: rgba(212, 175, 55, 0.12);
+    border-color: rgba(212, 175, 55, 0.45);
+    color: #cca410;
+}
+
+[data-theme="dark"] .app-star-btn.starred {
+    background: rgba(241, 224, 90, 0.12);
+    border-color: rgba(241, 224, 90, 0.4);
+    color: #f1e05a;
+}
+
+.app-star-btn i {
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.app-star-btn:hover i {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.app-star-btn.starred i {
+    transform: scale(1.1) rotate(0deg);
+}

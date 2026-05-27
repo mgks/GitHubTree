@@ -58,6 +58,7 @@ const els = {
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     checkSavedToken();
+    initAppStarButton();
     setupUrlHandler();
     setupDropdowns();
     setupShareOverlay();
@@ -639,6 +640,11 @@ function saveToken() {
     showMsg("Token saved.", "loading"); // Re-using loading style for info
     setTimeout(() => showMsg("", ""), 1500);
     trackEvent('Settings', 'Token Saved');
+
+    // Verify star status when token changes
+    if (!localStorage.getItem('ght_starred_self')) {
+        verifyAppStarStatus(token);
+    }
 }
 
 function clearToken() {
@@ -666,6 +672,87 @@ function checkSavedToken() {
         els.saveToken.style.display = 'inline-block';
         els.clearToken.style.display = 'none';
     }
+}
+
+function initAppStarButton() {
+    const starBtn = document.getElementById('appStarBtn');
+    if (!starBtn) return;
+
+    const hasStarred = localStorage.getItem('ght_starred_self');
+    if (hasStarred) {
+        starBtn.classList.add('starred');
+        const starText = document.getElementById('appStarText');
+        if (starText) starText.innerText = 'Starred';
+        const starIcon = starBtn.querySelector('i');
+        if (starIcon) starIcon.className = 'fas fa-star';
+    }
+
+    const token = localStorage.getItem('ght_token');
+    if (token && !hasStarred) {
+        verifyAppStarStatus(token);
+    }
+
+    starBtn.addEventListener('click', async () => {
+        const token = localStorage.getItem('ght_token');
+        if (!token) {
+            window.open('https://github.com/mgks/GitHubTree', '_blank');
+            trackEvent('Header', 'Star Click', 'Redirect to GitHub');
+            return;
+        }
+
+        try {
+            starBtn.style.pointerEvents = 'none';
+            const res = await fetch('https://api.github.com/user/starred/mgks/GitHubTree', {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Accept': 'application/vnd.github+json',
+                    'Content-Length': '0'
+                }
+            });
+
+            if (res.status === 204 || res.ok) {
+                localStorage.setItem('ght_starred_self', 'true');
+                starBtn.classList.add('starred');
+                const starText = document.getElementById('appStarText');
+                if (starText) starText.innerText = 'Starred';
+                const starIcon = starBtn.querySelector('i');
+                if (starIcon) starIcon.className = 'fas fa-star';
+                trackEvent('Header', 'Star Success', 'API Starred');
+                
+                starBtn.style.transform = 'scale(1.1)';
+                setTimeout(() => starBtn.style.transform = '', 300);
+            } else {
+                window.open('https://github.com/mgks/GitHubTree', '_blank');
+            }
+        } catch (e) {
+            window.open('https://github.com/mgks/GitHubTree', '_blank');
+        } finally {
+            starBtn.style.pointerEvents = 'auto';
+        }
+    });
+}
+
+async function verifyAppStarStatus(token) {
+    try {
+        const res = await fetch('https://api.github.com/user/starred/mgks/GitHubTree', {
+            headers: {
+                'Authorization': `token ${token}`,
+                'Accept': 'application/vnd.github+json'
+            }
+        });
+        if (res.status === 204) {
+            localStorage.setItem('ght_starred_self', 'true');
+            const starBtn = document.getElementById('appStarBtn');
+            if (starBtn) {
+                starBtn.classList.add('starred');
+                const starText = document.getElementById('appStarText');
+                if (starText) starText.innerText = 'Starred';
+                const starIcon = starBtn.querySelector('i');
+                if (starIcon) starIcon.className = 'fas fa-star';
+            }
+        }
+    } catch (e) {}
 }
 
 // --- UI Helpers ---
