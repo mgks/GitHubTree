@@ -1,16 +1,15 @@
-name: Index Feature Repos
+name: Refresh Featured
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
-  issues: write
 
 jobs:
-  process_issues:
+  shuffle:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,8 +20,8 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Process all open Feature Repo issues
+      - name: Run Shuffle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: node tools/index-issue.cjs
+        run: node tools/shuffle-featured.cjs
