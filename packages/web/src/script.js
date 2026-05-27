@@ -1003,7 +1003,7 @@ function initHistoryCloud() {
         btn.innerHTML = `
             <div class="mrc-header">
                 <span class="mrc-title">${repo}</span>
-                <span class="mrc-lang"><i class="fas fa-history"></i> Visited</span>
+                <span class="mrc-lang">Visited <i class="fas fa-history"></i></span>
             </div>
         `;
         btn.addEventListener('click', () => {

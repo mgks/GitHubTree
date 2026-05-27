@@ -135,7 +135,7 @@ async function generate() {
         `<div class="mini-repo-card" data-repo="${r.repo}">
             <div class="mrc-header">
                 <span class="mrc-title">${r.repo}</span>
-                <span class="mrc-lang"><i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i> ${r.language}</span>
+                <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
             </div>
             <p class="mrc-desc">${r.description || 'No description available.'}</p>
          </div>`
