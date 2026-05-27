@@ -1,17 +1,17 @@
-name: Index & Feature Request
+name: Index Feature Repos
 
 on:
-  issues:
-    types: [opened]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
   issues: write
 
 jobs:
-  index_repo:
+  process_issues:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.issue.title, 'Feature Request:') || startsWith(github.event.issue.title, 'Index Request:') || startsWith(github.event.issue.title, 'Feature Repo:')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -21,9 +21,8 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Process Request
+      - name: Process all open Feature Repo issues
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node tools/index-issue.cjs
