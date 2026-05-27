@@ -693,11 +693,23 @@ function checkSavedToken() {
 }
 
 async function loadIndexedRepos() {
+    const CACHE_KEY = 'ght_indexed_repos';
+    const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
     try {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
+            const { ts, data } = JSON.parse(cached);
+            if (Date.now() - ts < CACHE_TTL) {
+                indexedRepos = new Set(data);
+                return;
+            }
+        }
         const res = await fetch('/repos.json');
         if (res.ok) {
             const list = await res.json();
-            indexedRepos = new Set(list.map(r => r.toLowerCase()));
+            const lower = list.map(r => r.toLowerCase());
+            indexedRepos = new Set(lower);
+            localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: lower }));
         }
     } catch (e) {}
 }
