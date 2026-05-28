@@ -1,146 +1,146 @@
 [
   {
-    "repo": "openai/codex-plugin-cc",
+    "repo": "HsMirage/CliproxyAccountCleaner",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个用于CLI Proxy API 批量账号管理的工具（暂时只支持codex）：Cliproxy Account Cleaner"
+  },
+  {
+    "repo": "microsoft/unilm",
+    "branch": "master",
+    "language": "Python",
+    "description": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities"
+  },
+  {
+    "repo": "glommer/cachebro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
+  },
+  {
+    "repo": "Soul-AILab/SoulX-Singer",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official inference code for SoulX-Singer: Towards High-Quality Zero-Shot Singing Voice Synthesis"
+  },
+  {
+    "repo": "andyhuo520/openclaw-assistant-mvp",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Use Codex from Claude Code to review code or delegate tasks."
+    "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech"
   },
   {
-    "repo": "nj19257/FastSkills",
-    "branch": "main",
-    "language": "Python",
-    "description": "⚡ MCP server that brings Agent Skills (the open standard behind Claude Code, OpenClaw & nanobot) to any MCP-compatible agent. Discover, load, create & execute skills."
-  },
-  {
-    "repo": "square/okhttp",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM."
-  },
-  {
-    "repo": "thanos-io/thanos",
-    "branch": "main",
-    "language": "Go",
-    "description": "Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project."
-  },
-  {
-    "repo": "ant-design/ant-design-pro",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
-  },
-  {
-    "repo": "PaddlePaddle/PaddleSpeech",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award."
-  },
-  {
-    "repo": "jyoung105/frouter",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Free model router CLI to discover, benchmark, and configure free AI models for OpenCode and OpenClaw"
-  },
-  {
-    "repo": "homebridge/homebridge",
-    "branch": "latest",
-    "language": "TypeScript",
-    "description": "HomeKit support for the impatient."
-  },
-  {
-    "repo": "1jehuang/mermaid-rs-renderer",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A fast native Rust Mermaid diagram renderer. No browser required. 500-1000x faster than mermaid-cli."
-  },
-  {
-    "repo": "matplotlib/matplotlib",
-    "branch": "main",
-    "language": "Python",
-    "description": "matplotlib: plotting with Python"
-  },
-  {
-    "repo": "atom/atom",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":atom: The hackable text editor"
-  },
-  {
-    "repo": "PyCQA/isort",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Python utility / library to sort imports."
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-V3",
-    "branch": "main",
-    "language": "Python",
-    "description": "Vision-language models from DeepSeek research."
-  },
-  {
-    "repo": "f/textream",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay."
-  },
-  {
-    "repo": "storybookjs/testing-react",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Testing utilities that allow you to reuse your Storybook stories in your React unit tests!"
-  },
-  {
-    "repo": "square/picasso",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A powerful image downloading and caching library for Android"
-  },
-  {
-    "repo": "apache/hadoop",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "Apache Hadoop"
-  },
-  {
-    "repo": "pytest-dev/pytest-cov",
+    "repo": "NoobyGains/claude-pulse",
     "branch": "master",
     "language": "Python",
-    "description": "Coverage plugin for pytest."
+    "description": "Real-time usage monitor for Claude Code — session limits, weekly limits, and plan tier with colour-coded progress bars"
   },
   {
-    "repo": "nocodb/nocodb",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
+    "repo": "wireshark/wireshark",
+    "branch": "master",
+    "language": "C",
+    "description": "Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. ⚠️ GitHub won't let us disable pull requests. ⚠️ THEY WILL BE IGNORED HERE ⚠️ Upload them at GitLab instead."
   },
   {
-    "repo": "LeoYeAI/openclaw-master-skills",
+    "repo": "jmuncor/tokentap",
     "branch": "main",
     "language": "Python",
-    "description": "🧠 Curated collection of 127+ best OpenClaw skills — weekly updated from skills.sh, GitHub & ClaWHub. Powered by MyClaw.ai"
+    "description": "Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions."
   },
   {
-    "repo": "mosaicml/llm-foundry",
+    "repo": "jazzband/pip-tools",
     "branch": "main",
     "language": "Python",
-    "description": "LLM training code for Databricks foundation models"
+    "description": "A set of tools to keep your pinned Python dependencies fresh."
   },
   {
-    "repo": "meilisearch/meilisearch",
+    "repo": "Veirt/weathr",
     "branch": "main",
     "language": "Rust",
-    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
+    "description": "a terminal weather app with ascii animation"
   },
   {
-    "repo": "anl331/goey-toast",
+    "repo": "nepfaff/scenesmith",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A gooey, morphing toast component built on Sonner with Framer Motion animations"
+    "language": "Python",
+    "description": "Code for SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes"
   },
   {
-    "repo": "shanselman/winget-tui",
+    "repo": "chroma-core/chroma",
     "branch": "main",
     "language": "Rust",
-    "description": "A terminal UI for Windows Package Manager (winget) - search, install, upgrade, and manage packages"
+    "description": "Open-source search and retrieval database for AI applications."
+  },
+  {
+    "repo": "OpenMOSS/MOSS-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+  },
+  {
+    "repo": "SulfurNitride/Fluorine-Manager",
+    "branch": "main",
+    "language": "C++",
+    "description": "An attempt at recreating all MO2 functions in linux with NaK integration and FUSE based VFS. Comes with Root Builder support by default. It's in alpha and needs a lot of testing to be done."
+  },
+  {
+    "repo": "Intrect-io/OpenSwarm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "OpenSwarm, CLI Code Agent Orchstrator"
+  },
+  {
+    "repo": "academic/awesome-datascience",
+    "branch": "master",
+    "language": "Other",
+    "description": ":memo: An awesome Data Science repository to learn and apply for real world problems."
+  },
+  {
+    "repo": "m1heng/clawdbot-feishu",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "google/trax",
+    "branch": "master",
+    "language": "Python",
+    "description": "Trax — Deep Learning with Clear Code and Speed"
+  },
+  {
+    "repo": "openperf/brief",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI Agent Service Agreement"
+  },
+  {
+    "repo": "terausss/Polymarket-Kalshi-Arbitrage-Bot",
+    "branch": "main",
+    "language": "Rust",
+    "description": "polymarket-kalshi-arbitrage-bot polymarket arbitrage bot kalshi-arbitrage bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+  },
+  {
+    "repo": "avbiswas/fast-rlm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Recursive Language Models (https://arxiv.org/abs/2512.24601)"
+  },
+  {
+    "repo": "vixhal-baraiya/microgpt-c",
+    "branch": "main",
+    "language": "C",
+    "description": "The most atomic way to train and inference a GPT in pure, dependency-free C"
+  },
+  {
+    "repo": "pulsemindcover/Polymarket-AI-Trading-Bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "AI-powered macOS trading script for Polymarket. Automatically analyzes markets, generates intelligent trade decisions, and executes orders using configurable risk management and strategy parameters. One-command installation, lightweight setup, and optimized performance for automated prediction market trading."
+  },
+  {
+    "repo": "honnibal/claude-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude skills I'm experimenting with. Please review carefully before use."
   }
 ]
