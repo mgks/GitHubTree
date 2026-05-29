@@ -1,146 +1,146 @@
 [
   {
-    "repo": "kelseyhightower/kubernetes-the-hard-way",
-    "branch": "master",
-    "language": "Other",
-    "description": "Bootstrap Kubernetes the hard way. No scripts."
-  },
-  {
-    "repo": "ByteDance/monolith",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Lightweight Recommendation System"
-  },
-  {
-    "repo": "projectdiscovery/nuclei",
-    "branch": "master",
-    "language": "Go",
-    "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations."
-  },
-  {
-    "repo": "google/benchmark",
-    "branch": "main",
-    "language": "C++",
-    "description": "A microbenchmark support library"
-  },
-  {
-    "repo": "DataDog/datadog-agent",
-    "branch": "main",
-    "language": "Go",
-    "description": "Main repository for Datadog Agent"
-  },
-  {
-    "repo": "golangci/golangci-lint",
-    "branch": "master",
-    "language": "Go",
-    "description": "Fast linters runner for Go"
-  },
-  {
-    "repo": "gleam-lang/gleam",
-    "branch": "main",
-    "language": "Rust",
-    "description": "⭐️ A friendly language for building type-safe, scalable systems!"
-  },
-  {
-    "repo": "tmux/tmux",
-    "branch": "master",
-    "language": "C",
-    "description": "tmux source code"
-  },
-  {
-    "repo": "PyGithub/PyGithub",
-    "branch": "master",
-    "language": "Python",
-    "description": "Typed interactions with the GitHub API v3"
-  },
-  {
-    "repo": "chalk/chalk",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🖍 Terminal string styling done right"
-  },
-  {
-    "repo": "kimlawtech/korean-privacy-terms",
-    "branch": "main",
-    "language": "Go Template",
-    "description": "한국 법령 기반 개인정보처리방침·이용약관 자동 생성 Claude Code 스킬. 2025.4.21 작성지침 및 2026.3 개정 법령 반영."
-  },
-  {
-    "repo": "PaperGuru-AI/PaperGuru-Benchmark",
-    "branch": "main",
-    "language": "TeX",
-    "description": "Lifecycle-Aware Memory for long-horizon LLM agents — 66.05% on PaperBench, 94.66% on SurveyBench, 10 peer-reviewed acceptances at FSE/ICML/TOSEM/AEI/ICoGB"
-  },
-  {
-    "repo": "JustLikeCheese/LGBT-Prompt",
-    "branch": "main",
-    "language": "HTML",
-    "description": "利用 AI 对 LGBT 弱势群体的 同情偏向 让他执行原先会被拒绝的请求"
-  },
-  {
-    "repo": "shobhit99/SuperIsland",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Dynamic Island for MacOS — with Extensions"
-  },
-  {
-    "repo": "serenity-bdd/serenity-core",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Serenity BDD is a test automation library designed to make writing automated acceptance tests easier, and more fun."
-  },
-  {
-    "repo": "injaneity/pi-computer-use",
+    "repo": "freeCodeCamp/freeCodeCamp",
     "branch": "main",
     "language": "TypeScript",
-    "description": "control your applications using pi-coding-agent. fully invisible."
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "techjarves/Uncensored-Local-AI-Multiplatform",
+    "repo": "microsoft/PowerToys",
     "branch": "main",
-    "language": "Dart",
-    "description": "A cross-platform Flutter app that runs uncensored, 100% offline open-source AI models (GGUF) directly on your Android, iOS, or PC. No cloud, no filters, total privacy."
+    "language": "C#",
+    "description": "Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks"
   },
   {
-    "repo": "airbnb/lottie-android",
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "✨ A Markdown Editor"
+  },
+  {
+    "repo": "pypa/pipx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Install and Run Python Applications in Isolated Environments"
+  },
+  {
+    "repo": "OpenMOSS/MOSS-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+  },
+  {
+    "repo": "mfornos/awesome-microservices",
     "branch": "master",
+    "language": "Other",
+    "description": "A curated list of Microservice Architecture related principles and technologies."
+  },
+  {
+    "repo": "rust-lang/book",
+    "branch": "main",
+    "language": "Rust",
+    "description": "The Rust Programming Language"
+  },
+  {
+    "repo": "XposeMarket/SmallClaw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "© 2026 Xpose Market. SmallClaw is a product of Xpose Market. All rights reserved."
+  },
+  {
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "language": "Go",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+  },
+  {
+    "repo": "THUDM/ChatGLM-6B",
+    "branch": "main",
+    "language": "Python",
+    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
+  },
+  {
+    "repo": "beeware/briefcase",
+    "branch": "main",
+    "language": "Python",
+    "description": "Tools to support converting a Python project into a standalone native application."
+  },
+  {
+    "repo": "BradGroux/veritas-kanban",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era."
+  },
+  {
+    "repo": "doocs/advanced-java",
+    "branch": "main",
     "language": "Java",
-    "description": "Render After Effects animations natively on Android and iOS, Web, and React Native"
+    "description": "😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识"
   },
   {
-    "repo": "rebane2001/x86CSS",
-    "branch": "mane",
-    "language": "HTML",
-    "description": "x86CSS is a working CSS-only x86 CPU/emulator/computer. No JavaScript required."
+    "repo": "google/trax",
+    "branch": "master",
+    "language": "Python",
+    "description": "Trax — Deep Learning with Clear Code and Speed"
   },
   {
-    "repo": "NatiCha/bunwv",
+    "repo": "iCHAIT/awesome-macOS",
+    "branch": "master",
+    "language": "Other",
+    "description": " A curated list of awesome applications, softwares, tools and shiny things for macOS."
+  },
+  {
+    "repo": "binhanchen25-arch/agent_plus",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "metric-anything/metric-anything",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "dair-ai/Prompt-Engineering-Guide",
+    "branch": "main",
+    "language": "MDX",
+    "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
+  },
+  {
+    "repo": "solidjs-community/solid-primitives",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A library of high-quality primitives that extend SolidJS reactivity."
+  },
+  {
+    "repo": "THUDM/CodeGeeX",
+    "branch": "main",
+    "language": "Python",
+    "description": "CodeGeeX: An Open Multilingual Code Generation Model (KDD 2023)"
+  },
+  {
+    "repo": "Lakr233/vphone-cli",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Zaneham/BarraCUDA",
+    "branch": "master",
+    "language": "C",
+    "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code."
+  },
+  {
+    "repo": "RhysSullivan/fastergh",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "mohi-devhub/antivibe",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives."
-  },
-  {
-    "repo": "pallets/click",
+    "repo": "Prismer-AI/Prismer",
     "branch": "main",
     "language": "Python",
-    "description": "Python composable command line interface toolkit"
-  },
-  {
-    "repo": "apple/swift-algorithms",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Commonly used sequence and collection algorithms for Swift"
-  },
-  {
-    "repo": "joeseesun/anything-to-notebooklm",
-    "branch": "main",
-    "language": "Python",
-    "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc."
+    "description": "Open Source OpenAI Prism Alternative"
   }
 ]
