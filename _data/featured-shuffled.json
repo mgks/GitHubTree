@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ossu/computer-science",
-    "branch": "master",
-    "language": "HTML",
-    "description": "🎓 Path to a free self-taught education in Computer Science!"
-  },
-  {
-    "repo": "WenXiaoWendy/cyberboss",
+    "repo": "assafelovic/skyll",
     "branch": "main",
-    "language": "JavaScript",
-    "description": ""
+    "language": "Python",
+    "description": "A tool for AI agents to discover and learn skills autonomously"
   },
   {
-    "repo": "zachlatta/freeflow",
+    "repo": "TX-Leo/HumanEgo",
+    "branch": "main",
+    "language": "Python",
+    "description": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos"
+  },
+  {
+    "repo": "apache/arrow",
+    "branch": "main",
+    "language": "C++",
+    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+  },
+  {
+    "repo": "gorhom/react-native-bottom-sheet",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
+  },
+  {
+    "repo": "huggingface/optimum",
+    "branch": "main",
+    "language": "Python",
+    "description": "🚀 Accelerate inference and training of 🤗 Transformers, Diffusers, TIMM and Sentence Transformers with easy to use hardware optimization tools"
+  },
+  {
+    "repo": "BurntSushi/ripgrep",
+    "branch": "master",
+    "language": "Rust",
+    "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore"
+  },
+  {
+    "repo": "ant-design/ant-design-mobile",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Essential UI blocks for building mobile web apps."
+  },
+  {
+    "repo": "angular/components",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Component infrastructure and Material Design components for Angular"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
+  },
+  {
+    "repo": "spf13/viper",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go configuration with fangs"
+  },
+  {
+    "repo": "honojs/hono",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Web framework built on Web Standards"
+  },
+  {
+    "repo": "expo/expo",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web."
+  },
+  {
+    "repo": "pointfreeco/swift-composable-architecture",
     "branch": "main",
     "language": "Swift",
-    "description": "Free and open source alternative to Wispr Flow / Superwhisper / Monologue / etc"
+    "description": "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
   },
   {
-    "repo": "originalankur/GenerateAgents.md",
+    "repo": "androidx/media",
     "branch": "main",
-    "language": "Python",
-    "description": "Automated generation of comprehensive Agents.md for LLMs, driven by the DSPy Recursive language model implementation."
-  },
-  {
-    "repo": "Runnin4ik/dpi-detector",
-    "branch": "main",
-    "language": "Python",
-    "description": "DPI detection tool for internet censorship testing. Identifies TLS, TCP, HTTP blocking and 16-20KB connection drops"
-  },
-  {
-    "repo": "Sir-Scuzza/gluetun-webui",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "jwasham/coding-interview-university",
-    "branch": "main",
-    "language": "Other",
-    "description": "A complete computer science study plan to become a software engineer."
-  },
-  {
-    "repo": "petergpt/bullshit-benchmark",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "jgraph/drawio",
-    "branch": "dev",
-    "language": "JavaScript",
-    "description": "draw.io is a JavaScript, client-side editor for general diagramming."
-  },
-  {
-    "repo": "pola-rs/polars",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Extremely fast Query Engine for DataFrames, written in Rust"
-  },
-  {
-    "repo": "aframevr/aframe",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":a: Web framework for building virtual reality experiences."
-  },
-  {
-    "repo": "kossisoroyce/timber",
-    "branch": "main",
-    "language": "Python",
-    "description": "Ollama for classical ML models. AOT compiler that turns XGBoost, LightGBM, scikit-learn, CatBoost & ONNX models into native C99 inference code. One command to load, one command to serve. 336x faster than Python inference."
-  },
-  {
-    "repo": "react-native-maps/react-native-maps",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "React Native Mapview component for iOS + Android"
-  },
-  {
-    "repo": "mathiaschu/meta-ads-analyzer",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Meta Ads Analyzer skill + MCP server for Claude Code. Breakdown Effect, Learning Phase, and expert-level campaign diagnosis."
-  },
-  {
-    "repo": "Panniantong/Agent-Reach",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "kivy/kivy",
-    "branch": "master",
-    "language": "Python",
-    "description": "Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS"
-  },
-  {
-    "repo": "google-deepmind/graphcast",
-    "branch": "main",
-    "language": "Python",
-    "description": "Deep learning weather model from Google DeepMind."
-  },
-  {
-    "repo": "34306/vphone-aio",
-    "branch": "main",
-    "language": "Shell",
-    "description": "1 script run the vphone"
-  },
-  {
-    "repo": "theonlyhennygod/zeroclaw",
-    "branch": "main",
-    "language": "Rust",
-    "description": "claw done right 🦀"
-  },
-  {
-    "repo": "spinnaker/spinnaker",
-    "branch": "master",
     "language": "Java",
-    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
   },
   {
-    "repo": "amplication/amplication",
+    "repo": "psf/requests-html",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams."
-  },
-  {
-    "repo": "solidjs/solid",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
-  },
-  {
-    "repo": "stylelint/stylelint",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A mighty CSS linter that helps you avoid errors and enforce conventions."
-  },
-  {
-    "repo": "huggingface/peft",
-    "branch": "main",
     "language": "Python",
-    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+    "description": "Pythonic HTML Parsing for Humans™"
+  },
+  {
+    "repo": "wagmi-dev/wagmi",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Reactive primitives for Ethereum apps"
+  },
+  {
+    "repo": "spring-projects/spring-framework",
+    "branch": "main",
+    "language": "Java",
+    "description": "Spring Framework"
+  },
+  {
+    "repo": "timescale/timescaledb",
+    "branch": "main",
+    "language": "C",
+    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension"
+  },
+  {
+    "repo": "zoontek/react-native-permissions",
+    "branch": "master",
+    "language": "Objective-C++",
+    "description": "An unified permissions API for React Native on iOS, Android and Windows."
+  },
+  {
+    "repo": "lens-protocol/lens-protocol",
+    "branch": "main",
+    "language": "Solidity",
+    "description": "The Lens Protocol"
+  },
+  {
+    "repo": "esphome/esphome",
+    "branch": "dev",
+    "language": "C++",
+    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
+  },
+  {
+    "repo": "arendst/Tasmota",
+    "branch": "development",
+    "language": "C",
+    "description": "Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at"
+  },
+  {
+    "repo": "bitwarden/server",
+    "branch": "master",
+    "language": "C#",
+    "description": "Bitwarden infrastructure/backend (API, database, Docker, etc)."
+  },
+  {
+    "repo": "flame-engine/flame",
+    "branch": "main",
+    "language": "Dart",
+    "description": "A Flutter based game engine."
   }
 ]
