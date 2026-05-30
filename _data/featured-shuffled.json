@@ -1,69 +1,75 @@
 [
   {
-    "repo": "mockk/mockk",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "mocking library for Kotlin"
-  },
-  {
-    "repo": "rodrigojpgamer2022/JourneyMap-Minecraft-Modpack",
+    "repo": "erikdarlingdata/PerformanceMonitor",
     "branch": "main",
-    "language": "Java",
-    "description": "Journeymap Minecraft Modpack download minimap waypoints fullscreen map cartography Forge Fabric world map mobs tracking caves biomes teleport markers."
+    "language": "C#",
+    "description": "Free, open-source SQL Server performance monitoring. Full Edition (server-installed, 30 collectors) and Lite Edition (standalone, DuckDB). Built-in MCP server for AI integration."
   },
   {
-    "repo": "GreatScott/enveil",
-    "branch": "main",
-    "language": "Rust",
-    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
-  },
-  {
-    "repo": "DingTalk-Real-AI/dingtalk-moltbot-connector",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "将钉钉机器人连接到 Moltbot Gateway 的轻量级 Python和TS 双版本连接器，支持 AI Card 流式响应"
-  },
-  {
-    "repo": "makerdao/dss",
-    "branch": "master",
-    "language": "Solidity",
-    "description": "Dai Stablecoin System"
-  },
-  {
-    "repo": "openai/CLIP",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image"
-  },
-  {
-    "repo": "solana-labs/solana-program-library",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A collection of Solana programs maintained by Solana Labs"
-  },
-  {
-    "repo": "bigcode-project/starcoder",
+    "repo": "intertwine/dspy-agent-skills",
     "branch": "main",
     "language": "Python",
-    "description": "Home of StarCoder: fine-tuning & inference!"
+    "description": "DSPy 3.1.x agent skills + validated end-to-end examples for Claude Code and Codex CLI — fundamentals, evaluation, GEPA optimization, and RLM. Three reproducible GEPA-improvement demos on free OpenRouter models."
   },
   {
-    "repo": "wireshark/wireshark",
-    "branch": "master",
-    "language": "C",
-    "description": "Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. ⚠️ GitHub won't let us disable pull requests. ⚠️ THEY WILL BE IGNORED HERE ⚠️ Upload them at GitLab instead."
-  },
-  {
-    "repo": "cube-js/cube",
-    "branch": "master",
-    "language": "Rust",
-    "description": "📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics"
-  },
-  {
-    "repo": "balancer/balancer-v2-monorepo",
-    "branch": "master",
+    "repo": "m1heng/clawdbot-feishu",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
+    "description": ""
+  },
+  {
+    "repo": "KKKKhazix/Khazix-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "QwenLM/Qwen3-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+  },
+  {
+    "repo": "Olshansk/interview",
+    "branch": "master",
+    "language": "Other",
+    "description": "Everything you need to prepare for your technical interview"
+  },
+  {
+    "repo": "tilt-dev/tilt",
+    "branch": "master",
+    "language": "Go",
+    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
+  },
+  {
+    "repo": "distribution/distribution",
+    "branch": "main",
+    "language": "Go",
+    "description": "The toolkit to pack, ship, store, and deliver container content"
+  },
+  {
+    "repo": "1837620622/cloudflare-bypass-2026",
+    "branch": "main",
+    "language": "Python",
+    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
+  },
+  {
+    "repo": "rustwasm/wasm-bindgen",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Facilitating high-level interactions between Wasm modules and JavaScript"
+  },
+  {
+    "repo": "sorrycc/awesome-javascript",
+    "branch": "master",
+    "language": "Other",
+    "description": "🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things."
+  },
+  {
+    "repo": "wagoodman/dive",
+    "branch": "master",
+    "language": "Go",
+    "description": "A tool for exploring each layer in a docker image"
   },
   {
     "repo": "v2ray/v2ray-core",
@@ -72,75 +78,69 @@
     "description": "A platform for building proxies to bypass network restrictions."
   },
   {
-    "repo": "mage-ai/mage-ai",
-    "branch": "master",
-    "language": "Python",
-    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
-  },
-  {
-    "repo": "confluentinc/schema-registry",
-    "branch": "master",
-    "language": "Java",
-    "description": "Confluent Schema Registry for Kafka"
-  },
-  {
-    "repo": "nuxt/ui",
-    "branch": "dev",
-    "language": "Vue",
-    "description": "The Intuitive Vue UI Library powered by Reka UI & Tailwind CSS."
-  },
-  {
-    "repo": "nomic-ai/gpt4all",
-    "branch": "main",
-    "language": "C++",
-    "description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use."
-  },
-  {
-    "repo": "hashicorp/raft",
-    "branch": "main",
-    "language": "Go",
-    "description": "Golang implementation of the Raft consensus protocol"
-  },
-  {
-    "repo": "microsoft/Data-Science-For-Beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "10 Weeks, 20 Lessons, Data Science for All!"
-  },
-  {
-    "repo": "milvus-io/milvus",
+    "repo": "AdguardTeam/AdGuardHome",
     "branch": "master",
     "language": "Go",
-    "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
+    "description": "Network-wide ads & trackers blocking DNS server"
   },
   {
-    "repo": "BuilderIO/qwik",
+    "repo": "shanselman/openclaw-windows-hub",
+    "branch": "master",
+    "language": "C#",
+    "description": "Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension"
+  },
+  {
+    "repo": "aws/aws-cdk",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Instant-loading web apps, without effort"
+    "description": "The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code"
   },
   {
-    "repo": "cilium/hubble",
+    "repo": "tj/n",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Node version management"
+  },
+  {
+    "repo": "redux-saga/redux-saga",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An alternative side effect model for Redux apps"
+  },
+  {
+    "repo": "dotnet/maui",
     "branch": "main",
-    "language": "Makefile",
-    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF"
+    "language": "C#",
+    "description": ".NET MAUI is the .NET Multi-platform App UI, a framework for building native device applications spanning mobile, tablet, and desktop."
   },
   {
-    "repo": "thedaviddias/Front-End-Checklist",
+    "repo": "zai-org/GLM-OCR",
+    "branch": "main",
+    "language": "Python",
+    "description": "GLM-OCR: Accurate ×  Fast × Comprehensive"
+  },
+  {
+    "repo": "gorhom/react-native-bottom-sheet",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
+  },
+  {
+    "repo": "keithnull/TeachYourselfCS-CN",
     "branch": "master",
     "language": "Other",
-    "description": "🗂 The perfect Front-End Checklist for modern websites and meticulous developers"
+    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
   },
   {
-    "repo": "TheAlgorithms/Rust",
-    "branch": "master",
-    "language": "Rust",
-    "description": "All Algorithms implemented in Rust"
-  },
-  {
-    "repo": "dair-ai/Prompt-Engineering-Guide",
+    "repo": "dwzhu-pku/PaperBanana",
     "branch": "main",
-    "language": "MDX",
-    "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
+    "language": "JavaScript",
+    "description": "PaperBanana: Automating Academic Illustration For AI Scientists"
+  },
+  {
+    "repo": "asdf-vm/asdf",
+    "branch": "master",
+    "language": "Go",
+    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
   }
 ]
