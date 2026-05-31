@@ -1,146 +1,146 @@
 [
   {
-    "repo": "OpenNSWM-Lab/FAROS",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "composer/composer",
-    "branch": "main",
-    "language": "PHP",
-    "description": "Dependency Manager for PHP"
-  },
-  {
-    "repo": "jesseduffield/lazydocker",
+    "repo": "duoan/TorchCode",
     "branch": "master",
-    "language": "Go",
-    "description": "The lazier way to manage everything docker"
+    "language": "Jupyter Notebook",
+    "description": "🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online."
   },
   {
-    "repo": "google/trax",
-    "branch": "master",
-    "language": "Python",
-    "description": "Trax — Deep Learning with Clear Code and Speed"
-  },
-  {
-    "repo": "polkadot-js/apps",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Basic Polkadot/Substrate UI for interacting with a Polkadot and Substrate node. This is the main user-facing application, allowing access to all features available on Substrate chains."
-  },
-  {
-    "repo": "remix-run/remix",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Build Better Websites. Create modern, resilient user experiences with web fundamentals."
-  },
-  {
-    "repo": "confluentinc/ksql",
-    "branch": "master",
-    "language": "Java",
-    "description": "The database purpose-built for stream processing applications."
-  },
-  {
-    "repo": "silships/figma-cli",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "spacedriveapp/spacedrive",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
-  },
-  {
-    "repo": "Dataherald/dataherald",
-    "branch": "main",
-    "language": "Python",
-    "description": "Interact with your SQL database, Natural Language to SQL using LLMs"
-  },
-  {
-    "repo": "CompVis/stable-diffusion",
+    "repo": "facebookresearch/tribev2",
     "branch": "main",
     "language": "Jupyter Notebook",
-    "description": "A latent text-to-image diffusion model"
+    "description": "This repository contains the code to train and evaluate TRIBE v2, a multimodal model for brain response prediction"
   },
   {
-    "repo": "arendst/Tasmota",
-    "branch": "development",
+    "repo": "Klipper3d/klipper",
+    "branch": "master",
     "language": "C",
-    "description": "Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at"
+    "description": "Klipper is a 3d-printer firmware"
   },
   {
-    "repo": "airbnb/lottie-ios",
+    "repo": "gcc-mirror/gcc",
     "branch": "master",
-    "language": "Swift",
-    "description": "An iOS library to natively render After Effects vector animations"
+    "language": "C++",
+    "description": "Mirror of the GNU Compiler Collection master repository."
   },
   {
-    "repo": "tox-dev/tox",
+    "repo": "wesm/msgvault",
     "branch": "main",
-    "language": "Python",
-    "description": "Command line driven CI frontend and development task automation tool."
+    "language": "Go",
+    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
   },
   {
-    "repo": "brunch/brunch",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🍴 Web applications made easy. Since 2011."
-  },
-  {
-    "repo": "anthropics/financial-services-plugins",
+    "repo": "amneziawg-mikrotik/awg-proxy",
     "branch": "main",
-    "language": "Python",
+    "language": "Go",
     "description": ""
   },
   {
-    "repo": "akitaonrails/FrankSherlock",
+    "repo": "zsh-users/zsh-autosuggestions",
     "branch": "master",
+    "language": "Shell",
+    "description": "Fish-like autosuggestions for zsh"
+  },
+  {
+    "repo": "postrv/forgemax",
+    "branch": "main",
     "language": "Rust",
-    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
+    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
   },
   {
-    "repo": "jenkinsci/jenkins",
-    "branch": "master",
-    "language": "Java",
-    "description": "Jenkins automation server"
-  },
-  {
-    "repo": "ktorio/ktor",
+    "repo": "mandel-macaque/memento",
     "branch": "main",
-    "language": "Kotlin",
-    "description": "Framework for quickly creating connected applications in Kotlin with minimal effort"
+    "language": "F#",
+    "description": "Keep track of you codex sessions per commit"
   },
   {
-    "repo": "sindresorhus/awesome-electron",
-    "branch": "main",
-    "language": "Other",
-    "description": "Useful resources for creating apps with Electron"
-  },
-  {
-    "repo": "originalankur/GenerateAgents.md",
+    "repo": "apache/airflow",
     "branch": "main",
     "language": "Python",
-    "description": "Automated generation of comprehensive Agents.md for LLMs, driven by the DSPy Recursive language model implementation."
+    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
   },
   {
-    "repo": "wireshark/wireshark",
+    "repo": "vitejs/vite",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next generation frontend tooling. It's fast!"
+  },
+  {
+    "repo": "nuxt/nuxt",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The Full-Stack Vue Framework."
+  },
+  {
+    "repo": "Synthetixio/synthetix",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "Synthetix Solidity smart contracts"
+  },
+  {
+    "repo": "apache/echarts",
     "branch": "master",
-    "language": "C",
-    "description": "Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. ⚠️ GitHub won't let us disable pull requests. ⚠️ THEY WILL BE IGNORED HERE ⚠️ Upload them at GitLab instead."
+    "language": "TypeScript",
+    "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser"
   },
   {
-    "repo": "google/sentencepiece",
+    "repo": "mage-ai/mage-ai",
+    "branch": "master",
+    "language": "Python",
+    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
+  },
+  {
+    "repo": "ForrestKnight/open-source-cs",
+    "branch": "master",
+    "language": "Other",
+    "description": "Video discussing this curriculum:"
+  },
+  {
+    "repo": "pallets/jinja",
+    "branch": "main",
+    "language": "Python",
+    "description": "A very fast and expressive template engine."
+  },
+  {
+    "repo": "azl397985856/leetcode",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+  },
+  {
+    "repo": "argoproj/argo-workflows",
+    "branch": "master",
+    "language": "Go",
+    "description": "Workflow Engine for Kubernetes"
+  },
+  {
+    "repo": "google/flatbuffers",
     "branch": "master",
     "language": "C++",
-    "description": "Unsupervised text tokenizer for Neural Network-based text generation."
+    "description": "FlatBuffers: Memory Efficient Serialization Library"
   },
   {
-    "repo": "buildpacks/pack",
+    "repo": "plotly/dash",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
+  },
+  {
+    "repo": "hanxiao/claudecode-telegram",
     "branch": "main",
-    "language": "Go",
-    "description": "CLI for building apps using Cloud Native Buildpacks"
+    "language": "Python",
+    "description": "Telegram bridge for Claude Code"
+  },
+  {
+    "repo": "redux-saga/redux-saga",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An alternative side effect model for Redux apps"
+  },
+  {
+    "repo": "cilium/hubble",
+    "branch": "main",
+    "language": "Makefile",
+    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF"
   }
 ]
