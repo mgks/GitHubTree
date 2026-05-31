@@ -1,146 +1,146 @@
 [
   {
-    "repo": "duoan/TorchCode",
+    "repo": "Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot",
     "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online."
+    "language": "Rust",
+    "description": "Real-time polymarket trading bot that combines monitoring with strategy logic for Polymarket's 15-minute prediction markets."
   },
   {
-    "repo": "facebookresearch/tribev2",
+    "repo": "BoundingBoxSoftware/CharacterController",
     "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "This repository contains the code to train and evaluate TRIBE v2, a multimodal model for brain response prediction"
+    "language": "C#",
+    "description": "A character controller for Unity that covers many edge cases."
   },
   {
-    "repo": "Klipper3d/klipper",
-    "branch": "master",
-    "language": "C",
-    "description": "Klipper is a 3d-printer firmware"
-  },
-  {
-    "repo": "gcc-mirror/gcc",
-    "branch": "master",
-    "language": "C++",
-    "description": "Mirror of the GNU Compiler Collection master repository."
-  },
-  {
-    "repo": "wesm/msgvault",
+    "repo": "vkhanhqui/figma-mcp-go",
     "branch": "main",
     "language": "Go",
-    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
+    "description": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code"
   },
   {
-    "repo": "amneziawg-mikrotik/awg-proxy",
+    "repo": "opa334/darksword-kexploit",
     "branch": "main",
-    "language": "Go",
+    "language": "Objective-C",
+    "description": "iOS <=26.0.1 DarkSword Kernel Exploit reimplemented in Objective-C"
+  },
+  {
+    "repo": "autoclaw-cc/xiaohongshu-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "xiaohongshu-skills"
+  },
+  {
+    "repo": "romus204/tree-sitter-manager.nvim",
+    "branch": "main",
+    "language": "Tree-sitter Query",
+    "description": "A lightweight Tree-sitter parser manager for Neovim."
+  },
+  {
+    "repo": "Infatoshi/OpenSquirrel",
+    "branch": "main",
+    "language": "Rust",
+    "description": "For people who get distracted by agents. A native Rust/GPUI control plane for running Claude Code, Codex, Cursor, and OpenCode side by side — because if you're going to be squirrely, you might as well optimize for it."
+  },
+  {
+    "repo": "Shpigford/chops",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp."
+  },
+  {
+    "repo": "lardissone/ansi-saver",
+    "branch": "main",
+    "language": "Swift",
+    "description": "ANSI art screensaver for macOS — streams art from 16colo.rs BBS archive packs"
+  },
+  {
+    "repo": "vedangvatsa123/vedang-swarm-prediction",
+    "branch": "main",
+    "language": "Python",
+    "description": "Swarm Intelligence Prediction Engine - Multi-agent AI debate for calibrated forecasting"
+  },
+  {
+    "repo": "ahmadawais/chartli",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg."
+  },
+  {
+    "repo": "DeveloperExotic/LegacyCrossPlay",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A Minecraft Legacy Edition proxy translator, that allows connections to Java Edition servers."
+  },
+  {
+    "repo": "mrphrazer/binary-ninja-headless-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "Headless Binary Ninja MCP server — giving AI agents deep reverse-engineering capabilities via 180 tools."
+  },
+  {
+    "repo": "MoyangLi00/DROID-W",
+    "branch": "main",
+    "language": "Python",
+    "description": "[CVPR 2026] DROID-SLAM in the Wild"
+  },
+  {
+    "repo": "Abnerla/AI_paper",
+    "branch": "main",
+    "language": "Python",
+    "description": "一站式AI学术写作辅助工具 · 支持降AIGC、查重率、润色、智能纠错等功能"
+  },
+  {
+    "repo": "Vacutagin/GameEnhancementSuite",
+    "branch": "main",
+    "language": "Python",
+    "description": "Advanced Gaming Enhancement Platform for Modern Titles.Enhance your gaming experience with performance optimization, visual improvements, and quality-of-life features"
+  },
+  {
+    "repo": "WeaveMindAI/weft",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A programming language for AI systems"
+  },
+  {
+    "repo": "jarmuine/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Fork of instructkr/claude-code"
+  },
+  {
+    "repo": "mikewang817/MacBar",
+    "branch": "master",
+    "language": "Swift",
+    "description": "A lightweight macOS menu bar clipboard manager with OCR, file support, and global hotkey"
+  },
+  {
+    "repo": "TristanH/wikiwise",
+    "branch": "main",
+    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "zsh-users/zsh-autosuggestions",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Fish-like autosuggestions for zsh"
-  },
-  {
-    "repo": "postrv/forgemax",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
-  },
-  {
-    "repo": "mandel-macaque/memento",
-    "branch": "main",
-    "language": "F#",
-    "description": "Keep track of you codex sessions per commit"
-  },
-  {
-    "repo": "apache/airflow",
-    "branch": "main",
-    "language": "Python",
-    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
-  },
-  {
-    "repo": "vitejs/vite",
+    "repo": "Lab-Overflow/prompt-optimizer-lite",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Next generation frontend tooling. It's fast!"
+    "description": ""
   },
   {
-    "repo": "nuxt/nuxt",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Full-Stack Vue Framework."
-  },
-  {
-    "repo": "Synthetixio/synthetix",
-    "branch": "develop",
-    "language": "JavaScript",
-    "description": "Synthetix Solidity smart contracts"
-  },
-  {
-    "repo": "apache/echarts",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser"
-  },
-  {
-    "repo": "mage-ai/mage-ai",
-    "branch": "master",
-    "language": "Python",
-    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
-  },
-  {
-    "repo": "ForrestKnight/open-source-cs",
-    "branch": "master",
-    "language": "Other",
-    "description": "Video discussing this curriculum:"
-  },
-  {
-    "repo": "pallets/jinja",
+    "repo": "Whit1985/Binance-Futures-Signal-Bot",
     "branch": "main",
     "language": "Python",
-    "description": "A very fast and expressive template engine."
+    "description": "Professional automated trading bot for Binance and Bybit Futures markets with multi-strategy engine and real-time P&L dashboard."
   },
   {
-    "repo": "azl397985856/leetcode",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
-  },
-  {
-    "repo": "argoproj/argo-workflows",
-    "branch": "master",
-    "language": "Go",
-    "description": "Workflow Engine for Kubernetes"
-  },
-  {
-    "repo": "google/flatbuffers",
-    "branch": "master",
-    "language": "C++",
-    "description": "FlatBuffers: Memory Efficient Serialization Library"
-  },
-  {
-    "repo": "plotly/dash",
+    "repo": "cnitlrt/AutoTeam",
     "branch": "dev",
     "language": "Python",
-    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
+    "description": "ChatGPT Team 账号自动轮转管理 - Codex 额度监控、自动换号、CPA 认证同步"
   },
   {
-    "repo": "hanxiao/claudecode-telegram",
+    "repo": "averygan/reclip",
     "branch": "main",
-    "language": "Python",
-    "description": "Telegram bridge for Claude Code"
-  },
-  {
-    "repo": "redux-saga/redux-saga",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "An alternative side effect model for Redux apps"
-  },
-  {
-    "repo": "cilium/hubble",
-    "branch": "main",
-    "language": "Makefile",
-    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF"
+    "language": "HTML",
+    "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI."
   }
 ]
