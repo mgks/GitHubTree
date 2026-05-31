@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Real-time polymarket trading bot that combines monitoring with strategy logic for Polymarket's 15-minute prediction markets."
-  },
-  {
-    "repo": "BoundingBoxSoftware/CharacterController",
-    "branch": "main",
-    "language": "C#",
-    "description": "A character controller for Unity that covers many edge cases."
-  },
-  {
-    "repo": "vkhanhqui/figma-mcp-go",
-    "branch": "main",
-    "language": "Go",
-    "description": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code"
-  },
-  {
-    "repo": "opa334/darksword-kexploit",
-    "branch": "main",
-    "language": "Objective-C",
-    "description": "iOS <=26.0.1 DarkSword Kernel Exploit reimplemented in Objective-C"
-  },
-  {
-    "repo": "autoclaw-cc/xiaohongshu-skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "xiaohongshu-skills"
-  },
-  {
-    "repo": "romus204/tree-sitter-manager.nvim",
-    "branch": "main",
-    "language": "Tree-sitter Query",
-    "description": "A lightweight Tree-sitter parser manager for Neovim."
-  },
-  {
-    "repo": "Infatoshi/OpenSquirrel",
-    "branch": "main",
-    "language": "Rust",
-    "description": "For people who get distracted by agents. A native Rust/GPUI control plane for running Claude Code, Codex, Cursor, and OpenCode side by side — because if you're going to be squirrely, you might as well optimize for it."
-  },
-  {
-    "repo": "Shpigford/chops",
+    "repo": "apple/swift-protobuf",
     "branch": "main",
     "language": "Swift",
-    "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp."
+    "description": "Plugin and runtime library for using protobuf with Swift"
   },
   {
-    "repo": "lardissone/ansi-saver",
-    "branch": "main",
-    "language": "Swift",
-    "description": "ANSI art screensaver for macOS — streams art from 16colo.rs BBS archive packs"
-  },
-  {
-    "repo": "vedangvatsa123/vedang-swarm-prediction",
-    "branch": "main",
-    "language": "Python",
-    "description": "Swarm Intelligence Prediction Engine - Multi-agent AI debate for calibrated forecasting"
-  },
-  {
-    "repo": "ahmadawais/chartli",
+    "repo": "GumbyEnder/hermes-kanban",
     "branch": "main",
     "language": "TypeScript",
-    "description": "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg."
+    "description": "A dedicated Obsidian plugin + Hermes skill that turns Hermes into an autonomous project executor using Kanban boards inside your Obsidian vault."
   },
   {
-    "repo": "DeveloperExotic/LegacyCrossPlay",
+    "repo": "git/git",
+    "branch": "master",
+    "language": "C",
+    "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements."
+  },
+  {
+    "repo": "sharkdp/bat",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A cat(1) clone with wings."
+  },
+  {
+    "repo": "fastlane/fastlane",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps"
+  },
+  {
+    "repo": "apollographql/apollo-client",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development."
+  },
+  {
+    "repo": "pytorch/audio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+  },
+  {
+    "repo": "apache/spark",
+    "branch": "master",
+    "language": "Scala",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
+  },
+  {
+    "repo": "h5bp/html5-boilerplate",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A Minecraft Legacy Edition proxy translator, that allows connections to Java Edition servers."
+    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
   },
   {
-    "repo": "mrphrazer/binary-ninja-headless-mcp",
+    "repo": "apache/iceberg",
     "branch": "main",
-    "language": "Python",
-    "description": "Headless Binary Ninja MCP server — giving AI agents deep reverse-engineering capabilities via 180 tools."
+    "language": "Java",
+    "description": "Apache Iceberg"
   },
   {
-    "repo": "MoyangLi00/DROID-W",
-    "branch": "main",
-    "language": "Python",
-    "description": "[CVPR 2026] DROID-SLAM in the Wild"
-  },
-  {
-    "repo": "Abnerla/AI_paper",
-    "branch": "main",
-    "language": "Python",
-    "description": "一站式AI学术写作辅助工具 · 支持降AIGC、查重率、润色、智能纠错等功能"
-  },
-  {
-    "repo": "Vacutagin/GameEnhancementSuite",
-    "branch": "main",
-    "language": "Python",
-    "description": "Advanced Gaming Enhancement Platform for Modern Titles.Enhance your gaming experience with performance optimization, visual improvements, and quality-of-life features"
-  },
-  {
-    "repo": "WeaveMindAI/weft",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A programming language for AI systems"
-  },
-  {
-    "repo": "jarmuine/claude-code",
+    "repo": "actions/upload-artifact",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Fork of instructkr/claude-code"
+    "description": "Upload artifacts from your workflow"
   },
   {
-    "repo": "mikewang817/MacBar",
+    "repo": "nrwl/nx",
     "branch": "master",
-    "language": "Swift",
-    "description": "A lightweight macOS menu bar clipboard manager with OCR, file support, and global hotkey"
+    "language": "TypeScript",
+    "description": "Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents."
   },
   {
-    "repo": "TristanH/wikiwise",
+    "repo": "apache/kafka",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "Mirror of Apache Kafka"
+  },
+  {
+    "repo": "kivy/kivy",
+    "branch": "master",
+    "language": "Python",
+    "description": "Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS"
+  },
+  {
+    "repo": "sqlalchemy/alembic",
     "branch": "main",
-    "language": "HTML",
-    "description": ""
+    "language": "Python",
+    "description": "A database migrations tool for SQLAlchemy."
   },
   {
-    "repo": "Lab-Overflow/prompt-optimizer-lite",
+    "repo": "TrendTechVista/polymarket-sports-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket spots"
   },
   {
-    "repo": "Whit1985/Binance-Futures-Signal-Bot",
+    "repo": "Stability-AI/stablediffusion",
+    "branch": "main",
+    "language": "Other",
+    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
+  },
+  {
+    "repo": "dair-ai/ML-YouTube-Courses",
+    "branch": "main",
+    "language": "Other",
+    "description": "📺 Discover the latest machine learning / AI courses on YouTube."
+  },
+  {
+    "repo": "OpenBB-finance/OpenBBTerminal",
     "branch": "main",
     "language": "Python",
-    "description": "Professional automated trading bot for Binance and Bybit Futures markets with multi-strategy engine and real-time P&L dashboard."
+    "description": "Financial data platform for analysts, quants and AI agents."
   },
   {
-    "repo": "cnitlrt/AutoTeam",
-    "branch": "dev",
-    "language": "Python",
-    "description": "ChatGPT Team 账号自动轮转管理 - Codex 额度监控、自动换号、CPA 认证同步"
-  },
-  {
-    "repo": "averygan/reclip",
+    "repo": "sanic-org/sanic",
     "branch": "main",
-    "language": "HTML",
-    "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI."
+    "language": "Python",
+    "description": "Accelerate your web app development  | Build fast. Run fast."
+  },
+  {
+    "repo": "kamranahmedse/developer-roadmap",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
+  },
+  {
+    "repo": "github/gitignore",
+    "branch": "main",
+    "language": "Other",
+    "description": "A collection of useful .gitignore templates"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
+  },
+  {
+    "repo": "GoAdminGroup/go-admin",
+    "branch": "master",
+    "language": "Go",
+    "description": "A golang framework helps gopher to build a data visualization and admin panel in ten minutes"
   }
 ]
