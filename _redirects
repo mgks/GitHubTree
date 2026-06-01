@@ -1,0 +1,10 @@
+# Exclude robots.txt, sitemap.xml and assets from SPA redirect
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/assets/* /assets/:splat 200
+
+# Rewrite repo paths to index.html with 200 status code for SEO
+/repo/* /index.html 200
+
+# General SPA Fallback
+/* /index.html 200
