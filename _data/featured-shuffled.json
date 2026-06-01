@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Morgensonne/EditDeck",
+    "repo": "jquery/jquery",
     "branch": "main",
+    "language": "JavaScript",
+    "description": "jQuery JavaScript Library"
+  },
+  {
+    "repo": "jake-stewart/tuie",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A rich, performant TUI library for Rust."
+  },
+  {
+    "repo": "thanos-io/thanos",
+    "branch": "main",
+    "language": "Go",
+    "description": "Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project."
+  },
+  {
+    "repo": "uuidjs/uuid",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Generate RFC-compliant UUIDs in JavaScript"
+  },
+  {
+    "repo": "quailyquaily/aqua",
+    "branch": "master",
+    "language": "Go",
+    "description": "Aqua, a cli message tool for AI agents"
+  },
+  {
+    "repo": "vaneenige/monochrome-ui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
+  },
+  {
+    "repo": "guidelabs/steerling",
+    "branch": "main",
+    "language": "Python",
+    "description": "Interpretable Causal Diffusion Language Models"
+  },
+  {
+    "repo": "trinodb/trino",
+    "branch": "master",
+    "language": "Java",
+    "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)"
+  },
+  {
+    "repo": "binhanchen25-arch/agent_plus",
+    "branch": "master",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "freestylefly/openclaw-wechat",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "让 OpenClaw稳定的连上你的个人微信"
-  },
-  {
-    "repo": "androidx/media",
+    "repo": "xM0kht4r/VEN0m-Ransomware",
     "branch": "main",
-    "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+    "language": "Rust",
+    "description": "Fully undetectable and evasive ransomware written in Rust, leveraging a BYOVD technique to disable AV/EDR solutions on the infected systems."
   },
   {
-    "repo": "pyca/cryptography",
+    "repo": "altair-viz/altair",
     "branch": "main",
     "language": "Python",
-    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
+    "description": "Declarative visualization library for Python"
   },
   {
-    "repo": "Frikallo/parakeet.cpp",
-    "branch": "main",
-    "language": "C++",
-    "description": "Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support"
-  },
-  {
-    "repo": "rawwerks/ypi",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A recursive coding agent inpired by RLMs"
-  },
-  {
-    "repo": "photonstorm/phaser",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering."
-  },
-  {
-    "repo": "ktorio/ktor",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "Framework for quickly creating connected applications in Kotlin with minimal effort"
-  },
-  {
-    "repo": "GreenSheep01201/claw-empire",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company."
-  },
-  {
-    "repo": "spinnaker/spinnaker",
-    "branch": "master",
-    "language": "Java",
-    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
-  },
-  {
-    "repo": "MapleShaw/yt-dlp-downloader-skill",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Cursor Agent Skill for downloading videos using yt-dlp"
-  },
-  {
-    "repo": "open-policy-agent/opa",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine."
-  },
-  {
-    "repo": "kevinho/clawfeed",
-    "branch": "main",
-    "language": "HTML",
-    "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard"
-  },
-  {
-    "repo": "runesleo/x-reader",
+    "repo": "numpy/numpy",
     "branch": "main",
     "language": "Python",
-    "description": "Universal content reader — fetch, normalize, and digest content from 7+ platforms (WeChat, Telegram, X, YouTube, Bilibili, Xiaohongshu, RSS)"
+    "description": "The fundamental package for scientific computing with Python."
   },
   {
-    "repo": "TanStack/query",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query."
-  },
-  {
-    "repo": "mage-ai/mage-ai",
-    "branch": "master",
-    "language": "Python",
-    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
-  },
-  {
-    "repo": "arrow-kt/arrow",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
-  },
-  {
-    "repo": "wiedymi/restty",
+    "repo": "yargs/yargs",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Powerful, lightweight web terminal. Batteries included. Powered by libghostty-vt, WebGPU, and text-shaper."
+    "description": "yargs the modern, pirate-themed successor to optimist."
   },
   {
-    "repo": "hashicorp/raft",
+    "repo": "avelino/awesome-go",
     "branch": "main",
     "language": "Go",
-    "description": "Golang implementation of the Raft consensus protocol"
+    "description": "A curated list of awesome Go frameworks, libraries and software"
   },
   {
-    "repo": "eljojo/rememory",
+    "repo": "dseditor/QwenASRMiniTool",
     "branch": "main",
-    "language": "Go",
-    "description": "have a plan for the worst-case scenario"
+    "language": "Python",
+    "description": "基於OpenVino-int8權重，精簡的QwenASR小工具，用於即時辨識以及字幕轉換使用"
   },
   {
-    "repo": "v2fly/v2ray-core",
+    "repo": "gin-gonic/gin",
     "branch": "master",
     "language": "Go",
-    "description": "A platform for building proxies to bypass network restrictions."
+    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
   },
   {
-    "repo": "containerd/containerd",
-    "branch": "main",
-    "language": "Go",
-    "description": "An open and reliable container runtime"
-  },
-  {
-    "repo": "knative/serving",
-    "branch": "main",
-    "language": "Go",
-    "description": "Kubernetes-based, scale-to-zero, request-driven compute"
-  },
-  {
-    "repo": "actions/checkout",
+    "repo": "remotion-dev/remotion",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Action for checking out a repo"
+    "description": "🎥      Make videos programmatically with React"
+  },
+  {
+    "repo": "liuxiaopai-ai/raphael-publish",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Raphael Publish - 公众号排版大师 | 现代 Markdown 排版引擎"
+  },
+  {
+    "repo": "ReactiveX/RxPY",
+    "branch": "master",
+    "language": "Python",
+    "description": "ReactiveX for Python"
+  },
+  {
+    "repo": "aquasecurity/kube-bench",
+    "branch": "main",
+    "language": "Go",
+    "description": "Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark"
+  },
+  {
+    "repo": "postgres/postgres",
+    "branch": "master",
+    "language": "C",
+    "description": "Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch"
+  },
+  {
+    "repo": "timescale/timescaledb",
+    "branch": "main",
+    "language": "C",
+    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension"
+  },
+  {
+    "repo": "adysec/CForum",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "CForum — A modern, serverless forum built on Cloudflare Workers + Pages + D1 + R2, featuring posts, threaded comments, image uploads, 2FA authentication, and a hybrid deployment architecture optimized through smart edge routing."
+  },
+  {
+    "repo": "golang-standards/project-layout",
+    "branch": "master",
+    "language": "Makefile",
+    "description": "Standard Go Project Layout"
   }
 ]
