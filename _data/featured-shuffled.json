@@ -1,146 +1,146 @@
 [
   {
-    "repo": "apple/swift-protobuf",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Plugin and runtime library for using protobuf with Swift"
-  },
-  {
-    "repo": "GumbyEnder/hermes-kanban",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A dedicated Obsidian plugin + Hermes skill that turns Hermes into an autonomous project executor using Kanban boards inside your Obsidian vault."
-  },
-  {
-    "repo": "git/git",
-    "branch": "master",
-    "language": "C",
-    "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements."
-  },
-  {
-    "repo": "sharkdp/bat",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A cat(1) clone with wings."
-  },
-  {
-    "repo": "fastlane/fastlane",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps"
-  },
-  {
-    "repo": "apollographql/apollo-client",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development."
-  },
-  {
-    "repo": "pytorch/audio",
+    "repo": "Morgensonne/EditDeck",
     "branch": "main",
     "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+    "description": ""
   },
   {
-    "repo": "apache/spark",
+    "repo": "freestylefly/openclaw-wechat",
     "branch": "master",
-    "language": "Scala",
-    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
+    "language": "TypeScript",
+    "description": "让 OpenClaw稳定的连上你的个人微信"
   },
   {
-    "repo": "h5bp/html5-boilerplate",
+    "repo": "androidx/media",
+    "branch": "main",
+    "language": "Java",
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+  },
+  {
+    "repo": "pyca/cryptography",
+    "branch": "main",
+    "language": "Python",
+    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
+  },
+  {
+    "repo": "Frikallo/parakeet.cpp",
+    "branch": "main",
+    "language": "C++",
+    "description": "Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support"
+  },
+  {
+    "repo": "rawwerks/ypi",
+    "branch": "master",
+    "language": "Shell",
+    "description": "A recursive coding agent inpired by RLMs"
+  },
+  {
+    "repo": "photonstorm/phaser",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering."
+  },
+  {
+    "repo": "ktorio/ktor",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Framework for quickly creating connected applications in Kotlin with minimal effort"
+  },
+  {
+    "repo": "GreenSheep01201/claw-empire",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company."
+  },
+  {
+    "repo": "spinnaker/spinnaker",
+    "branch": "master",
+    "language": "Java",
+    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
+  },
+  {
+    "repo": "MapleShaw/yt-dlp-downloader-skill",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Cursor Agent Skill for downloading videos using yt-dlp"
+  },
+  {
+    "repo": "open-policy-agent/opa",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine."
+  },
+  {
+    "repo": "kevinho/clawfeed",
+    "branch": "main",
+    "language": "HTML",
+    "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard"
+  },
+  {
+    "repo": "runesleo/x-reader",
+    "branch": "main",
+    "language": "Python",
+    "description": "Universal content reader — fetch, normalize, and digest content from 7+ platforms (WeChat, Telegram, X, YouTube, Bilibili, Xiaohongshu, RSS)"
+  },
+  {
+    "repo": "TanStack/query",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query."
+  },
+  {
+    "repo": "mage-ai/mage-ai",
+    "branch": "master",
+    "language": "Python",
+    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
+  },
+  {
+    "repo": "arrow-kt/arrow",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
+  },
+  {
+    "repo": "wiedymi/restty",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
+    "description": "Powerful, lightweight web terminal. Batteries included. Powered by libghostty-vt, WebGPU, and text-shaper."
   },
   {
-    "repo": "apache/iceberg",
+    "repo": "hashicorp/raft",
     "branch": "main",
-    "language": "Java",
-    "description": "Apache Iceberg"
+    "language": "Go",
+    "description": "Golang implementation of the Raft consensus protocol"
   },
   {
-    "repo": "actions/upload-artifact",
+    "repo": "eljojo/rememory",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Upload artifacts from your workflow"
+    "language": "Go",
+    "description": "have a plan for the worst-case scenario"
   },
   {
-    "repo": "nrwl/nx",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents."
-  },
-  {
-    "repo": "apache/kafka",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "Mirror of Apache Kafka"
-  },
-  {
-    "repo": "kivy/kivy",
-    "branch": "master",
-    "language": "Python",
-    "description": "Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS"
-  },
-  {
-    "repo": "sqlalchemy/alembic",
-    "branch": "main",
-    "language": "Python",
-    "description": "A database migrations tool for SQLAlchemy."
-  },
-  {
-    "repo": "TrendTechVista/polymarket-sports-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket sports bot polymarket spots"
-  },
-  {
-    "repo": "Stability-AI/stablediffusion",
-    "branch": "main",
-    "language": "Other",
-    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
-  },
-  {
-    "repo": "dair-ai/ML-YouTube-Courses",
-    "branch": "main",
-    "language": "Other",
-    "description": "📺 Discover the latest machine learning / AI courses on YouTube."
-  },
-  {
-    "repo": "OpenBB-finance/OpenBBTerminal",
-    "branch": "main",
-    "language": "Python",
-    "description": "Financial data platform for analysts, quants and AI agents."
-  },
-  {
-    "repo": "sanic-org/sanic",
-    "branch": "main",
-    "language": "Python",
-    "description": "Accelerate your web app development  | Build fast. Run fast."
-  },
-  {
-    "repo": "kamranahmedse/developer-roadmap",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
-  },
-  {
-    "repo": "github/gitignore",
-    "branch": "main",
-    "language": "Other",
-    "description": "A collection of useful .gitignore templates"
-  },
-  {
-    "repo": "pyinstaller/pyinstaller",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Freeze (package) Python programs into stand-alone executables"
-  },
-  {
-    "repo": "GoAdminGroup/go-admin",
+    "repo": "v2fly/v2ray-core",
     "branch": "master",
     "language": "Go",
-    "description": "A golang framework helps gopher to build a data visualization and admin panel in ten minutes"
+    "description": "A platform for building proxies to bypass network restrictions."
+  },
+  {
+    "repo": "containerd/containerd",
+    "branch": "main",
+    "language": "Go",
+    "description": "An open and reliable container runtime"
+  },
+  {
+    "repo": "knative/serving",
+    "branch": "main",
+    "language": "Go",
+    "description": "Kubernetes-based, scale-to-zero, request-driven compute"
+  },
+  {
+    "repo": "actions/checkout",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Action for checking out a repo"
   }
 ]
