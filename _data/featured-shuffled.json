@@ -1,146 +1,146 @@
 [
   {
-    "repo": "jquery/jquery",
+    "repo": "keras-team/keras-cv",
+    "branch": "master",
+    "language": "Python",
+    "description": "Industry-strength Computer Vision workflows with Keras"
+  },
+  {
+    "repo": "GokuMohandas/Made-With-ML",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Learn how to design, develop, deploy and iterate on production-grade ML applications."
+  },
+  {
+    "repo": "locustio/locust",
+    "branch": "master",
+    "language": "Python",
+    "description": "Write scalable load tests in plain Python 🚗💨"
+  },
+  {
+    "repo": "node-fetch/node-fetch",
     "branch": "main",
     "language": "JavaScript",
-    "description": "jQuery JavaScript Library"
+    "description": "A light-weight module that brings the Fetch API to Node.js"
   },
   {
-    "repo": "jake-stewart/tuie",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A rich, performant TUI library for Rust."
-  },
-  {
-    "repo": "thanos-io/thanos",
+    "repo": "kubernetes-sigs/kind",
     "branch": "main",
     "language": "Go",
-    "description": "Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project."
+    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
   },
   {
-    "repo": "uuidjs/uuid",
+    "repo": "altstackHQ/altstack-data",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Generate RFC-compliant UUIDs in JavaScript"
+    "language": "Shell",
+    "description": "A curated list of 450+ awesome open-source alternatives to proprietary SaaS. Deployment configs, self-hosting guides, and tool directory."
   },
   {
-    "repo": "quailyquaily/aqua",
-    "branch": "master",
-    "language": "Go",
-    "description": "Aqua, a cli message tool for AI agents"
-  },
-  {
-    "repo": "vaneenige/monochrome-ui",
+    "repo": "androidx/media",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
-  },
-  {
-    "repo": "guidelabs/steerling",
-    "branch": "main",
-    "language": "Python",
-    "description": "Interpretable Causal Diffusion Language Models"
-  },
-  {
-    "repo": "trinodb/trino",
-    "branch": "master",
     "language": "Java",
-    "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)"
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
   },
   {
-    "repo": "binhanchen25-arch/agent_plus",
+    "repo": "makerdao/dss",
     "branch": "master",
+    "language": "Solidity",
+    "description": "Dai Stablecoin System"
+  },
+  {
+    "repo": "lerna/lerna",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository."
+  },
+  {
+    "repo": "ReactiveX/RxAndroid",
+    "branch": "3.x",
+    "language": "Java",
+    "description": "RxJava bindings for Android"
+  },
+  {
+    "repo": "winglang/wing",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A programming language for the cloud ☁️ A unified programming model, combining infrastructure and runtime code into one language ⚡"
+  },
+  {
+    "repo": "Composio-HQ/polymarket-kalshi-arbitrage-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket Kalshi arbitrage prediction-markets trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv"
+  },
+  {
+    "repo": "viperrcrypto/Siftly",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
+  },
+  {
+    "repo": "MangoLion/stretchystudio",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "FOSS 2D animation tool for turning static illustrations into mesh-deformable characters"
+  },
+  {
+    "repo": "BitrigApp/XCDocs",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Apple's developer docs as a Swift package and CLI."
+  },
+  {
+    "repo": "aiming-lab/AutoHarness",
+    "branch": "main",
     "language": "Python",
+    "description": "AutoHarness: Automated Harness Engineering for AI Agents"
+  },
+  {
+    "repo": "lsm1103/CC",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "xM0kht4r/VEN0m-Ransomware",
+    "repo": "5uNRiSEBr7059Oken/uniswap-arbitrage-bot-2026",
+    "branch": "main",
+    "language": "Solidity",
+    "description": "Uniswap V3 arbitrage bot 2026 – mempool sniper with real profits"
+  },
+  {
+    "repo": "jshachm/pi-rs",
     "branch": "main",
     "language": "Rust",
-    "description": "Fully undetectable and evasive ransomware written in Rust, leveraging a BYOVD technique to disable AV/EDR solutions on the infected systems."
+    "description": "基于pi-mono，rust轻量化版本"
   },
   {
-    "repo": "altair-viz/altair",
+    "repo": "LoseNine/ruyipage",
     "branch": "main",
     "language": "Python",
-    "description": "Declarative visualization library for Python"
+    "description": "RuyiPage is a Python-based Firefox automation framework built on the next-generation WebDriver BiDi protocol."
   },
   {
-    "repo": "numpy/numpy",
-    "branch": "main",
-    "language": "Python",
-    "description": "The fundamental package for scientific computing with Python."
-  },
-  {
-    "repo": "yargs/yargs",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "yargs the modern, pirate-themed successor to optimist."
-  },
-  {
-    "repo": "avelino/awesome-go",
-    "branch": "main",
-    "language": "Go",
-    "description": "A curated list of awesome Go frameworks, libraries and software"
-  },
-  {
-    "repo": "dseditor/QwenASRMiniTool",
-    "branch": "main",
-    "language": "Python",
-    "description": "基於OpenVino-int8權重，精簡的QwenASR小工具，用於即時辨識以及字幕轉換使用"
-  },
-  {
-    "repo": "gin-gonic/gin",
-    "branch": "master",
-    "language": "Go",
-    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
-  },
-  {
-    "repo": "remotion-dev/remotion",
+    "repo": "vercel-labs/openreview",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🎥      Make videos programmatically with React"
+    "description": "An open-source, self-hosted AI code review bot powered by Vercel."
   },
   {
-    "repo": "liuxiaopai-ai/raphael-publish",
+    "repo": "JuliusBrussee/caveman",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Raphael Publish - 公众号排版大师 | 现代 Markdown 排版引擎"
-  },
-  {
-    "repo": "ReactiveX/RxPY",
-    "branch": "master",
     "language": "Python",
-    "description": "ReactiveX for Python"
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 75% of tokens by talking like caveman"
   },
   {
-    "repo": "aquasecurity/kube-bench",
-    "branch": "main",
-    "language": "Go",
-    "description": "Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark"
-  },
-  {
-    "repo": "postgres/postgres",
-    "branch": "master",
-    "language": "C",
-    "description": "Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch"
-  },
-  {
-    "repo": "timescale/timescaledb",
-    "branch": "main",
-    "language": "C",
-    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension"
-  },
-  {
-    "repo": "adysec/CForum",
+    "repo": "Houseofmvps/codesight",
     "branch": "main",
     "language": "TypeScript",
-    "description": "CForum — A modern, serverless forum built on Cloudflare Workers + Pages + D1 + R2, featuring posts, threaded comments, image uploads, 2FA authentication, and a hybrid deployment architecture optimized through smart edge routing."
+    "description": "Universal AI context generator. Saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex, and more."
   },
   {
-    "repo": "golang-standards/project-layout",
-    "branch": "master",
-    "language": "Makefile",
-    "description": "Standard Go Project Layout"
+    "repo": "pengchengneo/Claude-Code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "可运行的Claude Code源码"
   }
 ]
