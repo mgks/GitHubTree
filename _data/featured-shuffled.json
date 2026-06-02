@@ -1,146 +1,146 @@
 [
   {
-    "repo": "romus204/tree-sitter-manager.nvim",
+    "repo": "trekhleb/javascript-algorithms",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
+  },
+  {
+    "repo": "ironsh/iron-proxy",
     "branch": "main",
-    "language": "Tree-sitter Query",
-    "description": "A lightweight Tree-sitter parser manager for Neovim."
+    "language": "Go",
+    "description": "An egress firewall for untrusted workloads."
   },
   {
-    "repo": "paperclipai/paperclip",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Open-source orchestration for zero-human companies"
+    "repo": "THUDM/ChatGLM-6B",
+    "branch": "main",
+    "language": "Python",
+    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
   },
   {
-    "repo": "WerWolv/ImHex",
-    "branch": "master",
-    "language": "C++",
-    "description": "🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM."
+    "repo": "lllyasviel/Fooocus",
+    "branch": "main",
+    "language": "Python",
+    "description": "Focus on prompting and generating"
   },
   {
-    "repo": "SamNet-dev/conduit-manager",
+    "repo": "d3/d3",
     "branch": "main",
     "language": "Shell",
-    "description": "A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution"
+    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
   },
   {
-    "repo": "Enriquefft/openclaw-kapso-whatsapp",
+    "repo": "OmniSVG/OmniSVG",
     "branch": "main",
-    "language": "Go",
-    "description": "Give your OpenClaw AI agent a WhatsApp number. Official Meta Cloud API via Kapso. No ban risk."
-  },
-  {
-    "repo": "stong/gradscii-art",
-    "branch": "master",
     "language": "Python",
-    "description": "An extremely good ASCII art generator, based on machine learning"
+    "description": "[NeurIPS 2025] OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs), capable of generating complex and detailed SVGs, from simple icons to intricate anime characters."
   },
   {
-    "repo": "shanselman/MaximizeToVirtualDesktop",
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "dimartarmizi/map-to-poster",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "MapToPoster JS is a client-side web app that turns any location into a high-resolution, customizable map poster with various themes, layouts, and export options."
+  },
+  {
+    "repo": "BytePioneer-AI/moltbot-china",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信"
+  },
+  {
+    "repo": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "language": "C",
+    "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
+  },
+  {
+    "repo": "paid-tw/skills",
+    "branch": "main",
+    "language": "PHP",
+    "description": "台灣第三方金流 Skills for AI Agents - 藍新金流、綠界科技 ECPay、統一金流 PAYUNi"
+  },
+  {
+    "repo": "LuaJIT/LuaJIT",
+    "branch": "v2.1",
+    "language": "C",
+    "description": "Mirror of the LuaJIT git repository"
+  },
+  {
+    "repo": "leon-ai/leon",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "🧠 Leon is your open-source personal assistant."
+  },
+  {
+    "repo": "redis/hiredis",
+    "branch": "master",
+    "language": "C",
+    "description": "Minimalistic C client for Redis >= 1.2"
+  },
+  {
+    "repo": "sndrec/WebMonkeyBall",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Super Monkey Ball on Web Broser."
+  },
+  {
+    "repo": "yizhiyanhua-ai/skills-updater",
+    "branch": "main",
+    "language": "Python",
+    "description": "Manage, update, and discover Claude Code skills. 管理、更新和发现 Claude Code 技能。"
+  },
+  {
+    "repo": "PCRE2Project/pcre2",
+    "branch": "master",
+    "language": "C",
+    "description": "PCRE2 development is based here."
+  },
+  {
+    "repo": "v2fly/v2ray-core",
+    "branch": "master",
+    "language": "Go",
+    "description": "A platform for building proxies to bypass network restrictions."
+  },
+  {
+    "repo": "jquery/jquery",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "jQuery JavaScript Library"
+  },
+  {
+    "repo": "vectordotdev/vector",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A high-performance observability data pipeline."
+  },
+  {
+    "repo": "Klipper3d/klipper",
+    "branch": "master",
+    "language": "C",
+    "description": "Klipper is a 3d-printer firmware"
+  },
+  {
+    "repo": "plausible/analytics",
+    "branch": "master",
+    "language": "Elixir",
+    "description": "Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics."
+  },
+  {
+    "repo": "browserable/browserable",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source and self-hostable browser automation library for AI agents"
+  },
+  {
+    "repo": "thangchung/awesome-dotnet-core",
     "branch": "master",
     "language": "C#",
-    "description": "macOS green-button behavior for Windows 11 — maximize any window to its own virtual desktop"
-  },
-  {
-    "repo": "cisco-ai-defense/skill-scanner",
-    "branch": "main",
-    "language": "Python",
-    "description": "Security Scanner for Agent Skills"
-  },
-  {
-    "repo": "facebook/folly",
-    "branch": "main",
-    "language": "C++",
-    "description": "An open-source C++ library developed and used at Facebook."
-  },
-  {
-    "repo": "0xMH/fichero-printer",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Fichero D11s thermal label printer - BLE protocol reverse engineering and Python CLI tool"
-  },
-  {
-    "repo": "curvefi/curve-contract",
-    "branch": "master",
-    "language": "Python",
-    "description": "Vyper contracts used in Curve.fi exchange pools."
-  },
-  {
-    "repo": "diesel-rs/diesel",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A safe, extensible ORM and Query Builder for Rust"
-  },
-  {
-    "repo": "linuxhsj/openclaw-zero-token",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "免token使用openclaw  Use openclaw without a token"
-  },
-  {
-    "repo": "public-apis/public-apis",
-    "branch": "master",
-    "language": "Python",
-    "description": "A collective list of free APIs"
-  },
-  {
-    "repo": "EbookFoundation/free-programming-books",
-    "branch": "main",
-    "language": "Python",
-    "description": ":books: Freely available programming books"
-  },
-  {
-    "repo": "lsd-rs/lsd",
-    "branch": "master",
-    "language": "Rust",
-    "description": "The next gen ls command"
-  },
-  {
-    "repo": "uqogihujomuwhiff/sora2-watermark-cleaner-pro",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 watermark cleaner pro"
-  },
-  {
-    "repo": "humanloop/awesome-chatgpt",
-    "branch": "main",
-    "language": "Other",
-    "description": "Curated list of awesome tools, demos, docs for ChatGPT and GPT-3"
-  },
-  {
-    "repo": "MunGell/awesome-for-beginners",
-    "branch": "master",
-    "language": "Other",
-    "description": "A list of awesome beginners-friendly projects."
-  },
-  {
-    "repo": "pytorch/pytorch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
-  },
-  {
-    "repo": "996icu/996.ICU",
-    "branch": "master",
-    "language": "Other",
-    "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-  },
-  {
-    "repo": "libp2p/go-libp2p",
-    "branch": "master",
-    "language": "Go",
-    "description": "libp2p implementation in Go"
-  },
-  {
-    "repo": "kibitzsh/kibitz",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Real-time decoded feed of AI agent actions — monitor multiple Claude Code & Codex sessions, see exactly what each agent is doing, and coordinate swarms efficiently"
-  },
-  {
-    "repo": "LightTable/LightTable",
-    "branch": "master",
-    "language": "Clojure",
-    "description": "The Light Table IDE ⛺"
+    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
   }
 ]
