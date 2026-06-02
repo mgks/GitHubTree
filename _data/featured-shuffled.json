@@ -1,111 +1,117 @@
 [
   {
-    "repo": "AdeleZhu/teacher-skill",
+    "repo": "bozhouDev/14days-build-claude-code-cli",
     "branch": "main",
-    "language": "Python",
-    "description": "蒸馏你的老师 —— 把老师的教学方式、性格特点和学科知识提取成 AI 技能文件，让 AI 像你的老师一样给你讲题。Inspired by colleague-skill（同事skill）。"
+    "language": "MDX",
+    "description": "网页版教程，看起来会舒服一点"
   },
   {
-    "repo": "sparkyniner/Netryx-OpenSource-Next-Gen-Street-Level-Geolocation",
+    "repo": "open-telemetry/opentelemetry-js",
     "branch": "main",
-    "language": "Python",
-    "description": "Netryx is a powerful, locally-hosted geolocation tool that uses state-of-the-art computer vision to identify the exact coordinates of a street-level image. It replicates the core pipeline of high-end geolocation SaaS platforms but runs entirely on your local hardware."
+    "language": "TypeScript",
+    "description": "OpenTelemetry JavaScript Client"
   },
   {
-    "repo": "doocs/advanced-java",
+    "repo": "lodash/lodash",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+  },
+  {
+    "repo": "mantinedev/mantine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A fully featured React components library"
+  },
+  {
+    "repo": "THUDM/ChatGLM-6B",
     "branch": "main",
+    "language": "Python",
+    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
+  },
+  {
+    "repo": "godagoo/claude-telegram-relay",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included."
+  },
+  {
+    "repo": "TrendTechVista/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot"
+  },
+  {
+    "repo": "airbnb/lottie-android",
+    "branch": "master",
     "language": "Java",
-    "description": "😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识"
+    "description": "Render After Effects animations natively on Android and iOS, Web, and React Native"
   },
   {
-    "repo": "kelseyhightower/kubernetes-the-hard-way",
-    "branch": "master",
-    "language": "Other",
-    "description": "Bootstrap Kubernetes the hard way. No scripts."
+    "repo": "daymonio/daymon",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Daymon puts your favorite AI to work 24/7. It schedules, remembers, and orchestrates your own virtual team. Free."
   },
   {
-    "repo": "liuwei283/RealWonder",
+    "repo": "test-time-training/ttt-video-dit",
     "branch": "main",
     "language": "Python",
-    "description": "Real-Time Physical Action-Conditioned Video Generation"
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
   },
   {
-    "repo": "akitaonrails/FrankSherlock",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
-  },
-  {
-    "repo": "CatsJuice/medal-forge",
+    "repo": "eslint/eslint",
     "branch": "main",
-    "language": "TypeScript",
-    "description": ""
+    "language": "JavaScript",
+    "description": "Find and fix problems in your JavaScript code."
   },
   {
-    "repo": "SharifiZarchi/janfadaa",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-V3",
+    "repo": "huggingface/accelerate",
     "branch": "main",
     "language": "Python",
-    "description": "Vision-language models from DeepSeek research."
+    "description": "🚀 A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration, automatic mixed precision (including fp8), and easy-to-configure FSDP and DeepSpeed support"
   },
   {
-    "repo": "anthropic-claude-code-ai/free-claude-code-ai-desktop-app",
-    "branch": "main",
-    "language": "C#",
-    "description": "claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026"
-  },
-  {
-    "repo": "evanklem/evanflow",
-    "branch": "main",
-    "language": "Shell",
-    "description": "A TDD-driven iterative feedback loop for software development. 16 cohesive Claude Code skills walk an idea from brainstorm → plan → execute → iterate, with checkpoints throughout."
-  },
-  {
-    "repo": "nrwl/nx",
+    "repo": "tailwindcss/tailwindcss",
     "branch": "master",
     "language": "TypeScript",
-    "description": "Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents."
+    "description": "A utility-first CSS framework for rapid UI development."
   },
   {
-    "repo": "saltpi/Aria.X",
-    "branch": "main",
-    "language": "C++",
-    "description": "AriaX: The Ultimate Download Manager for Apple Users"
-  },
-  {
-    "repo": "gaotiexinqu/OneResearchClaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "Any research. One Claw. 🦞 From any materials to research with fully autonomous & skill-driven researcher."
-  },
-  {
-    "repo": "CookSleep/gpt_image_playground",
+    "repo": "The-Vibe-Company/companion",
     "branch": "main",
     "language": "TypeScript",
-    "description": "基于 OpenAI gpt-image-2 接口的图片生成与编辑工具"
+    "description": "Web UI for Claude Code built on a reverse-engineered WebSocket protocol. Launch sessions, stream responses, approve tools.  All from your browser / mobile"
   },
   {
-    "repo": "ionic-team/capacitor",
+    "repo": "dev-protocol/polymarket-copy-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️"
+    "description": "Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot, Polymarket Copy Trading Bot"
   },
   {
-    "repo": "Nareshkkkk/Lossless-Scaling-LSFG",
+    "repo": "fluxcd/flux2",
     "branch": "main",
-    "language": "C++",
-    "description": "Download Lossless Scaling — Windows tool for upscaling and frame generation with LSFG and integer scaling. Helps achieve sharper visuals and smoother gameplay in games and applications."
+    "language": "Go",
+    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
   },
   {
-    "repo": "quilljs/quill",
-    "branch": "develop",
+    "repo": "avihaymenahem/velo",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
+    "description": "Open source desktop email client for Gmail"
+  },
+  {
+    "repo": "MrFadiAi/openclaw-manager",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "OpenClaw One Click Installer - A desktop manager for OpenClaw"
+  },
+  {
+    "repo": "dev-protocol/polymarket-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket copytrading bot || polymarket copy trading bot || polymarket copy bot ||"
   },
   {
     "repo": "Frikallo/parakeet.cpp",
@@ -114,33 +120,27 @@
     "description": "Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support"
   },
   {
-    "repo": "30-seconds/30-seconds-of-code",
+    "repo": "kubernetes-sigs/kubespray",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "Coding articles to level up your development skills"
+    "language": "Jinja",
+    "description": "Deploy a Production Ready Kubernetes Cluster"
   },
   {
-    "repo": "Anarkh-Lee/universal-db-mcp",
+    "repo": "AThevon/TokenEater",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "MCP 数据库万能连接器：使用支持MCP服务协议的工具（例如：Claude Desktop、Cherry Studio等）直接连接你的数据库，用自然语言查询和分析数据"
+    "language": "Swift",
+    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
   },
   {
-    "repo": "remotion-dev/html-in-canvas",
+    "repo": "pola-rs/polars",
     "branch": "main",
-    "language": "TypeScript",
-    "description": ""
+    "language": "Rust",
+    "description": "Extremely fast Query Engine for DataFrames, written in Rust"
   },
   {
-    "repo": "Mike04ylno/Pokemon-Pokopia-PC",
+    "repo": "bleuropa/loomkin",
     "branch": "main",
-    "language": "C++",
-    "description": "Pokemon Pokopia For PC is an optimized desktop version of the popular adventure game. It features high-resolution support, uncapped FPS, and enhanced controls for Windows. Designed for stability and performance, it offers a seamless experience for creature collection and exploration in 2026."
-  },
-  {
-    "repo": "uqogihujomuwhiff/sora2-watermark-cleaner-pro",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 watermark cleaner pro"
+    "language": "Elixir",
+    "description": "An Elixir-native AI coding assistant with persistent decision graphs, repo intelligence, and a Phoenix LiveView UI"
   }
 ]
