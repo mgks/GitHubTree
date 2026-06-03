@@ -1,87 +1,9 @@
 [
   {
-    "repo": "trekhleb/javascript-algorithms",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
-  },
-  {
-    "repo": "ironsh/iron-proxy",
-    "branch": "main",
-    "language": "Go",
-    "description": "An egress firewall for untrusted workloads."
-  },
-  {
-    "repo": "THUDM/ChatGLM-6B",
+    "repo": "LemoLev/tg-ws-proxy-ANDROID",
     "branch": "main",
     "language": "Python",
-    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
-  },
-  {
-    "repo": "lllyasviel/Fooocus",
-    "branch": "main",
-    "language": "Python",
-    "description": "Focus on prompting and generating"
-  },
-  {
-    "repo": "d3/d3",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
-  },
-  {
-    "repo": "OmniSVG/OmniSVG",
-    "branch": "main",
-    "language": "Python",
-    "description": "[NeurIPS 2025] OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs), capable of generating complex and detailed SVGs, from simple icons to intricate anime characters."
-  },
-  {
-    "repo": "vuejs/vue",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
-  },
-  {
-    "repo": "dimartarmizi/map-to-poster",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "MapToPoster JS is a client-side web app that turns any location into a high-resolution, customizable map poster with various themes, layouts, and export options."
-  },
-  {
-    "repo": "BytePioneer-AI/moltbot-china",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信"
-  },
-  {
-    "repo": "FFmpeg/FFmpeg",
-    "branch": "master",
-    "language": "C",
-    "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
-  },
-  {
-    "repo": "paid-tw/skills",
-    "branch": "main",
-    "language": "PHP",
-    "description": "台灣第三方金流 Skills for AI Agents - 藍新金流、綠界科技 ECPay、統一金流 PAYUNi"
-  },
-  {
-    "repo": "LuaJIT/LuaJIT",
-    "branch": "v2.1",
-    "language": "C",
-    "description": "Mirror of the LuaJIT git repository"
-  },
-  {
-    "repo": "leon-ai/leon",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "🧠 Leon is your open-source personal assistant."
-  },
-  {
-    "repo": "redis/hiredis",
-    "branch": "master",
-    "language": "C",
-    "description": "Minimalistic C client for Redis >= 1.2"
+    "description": "Flowseal/tg-ws-proxy на андроид (да и не только)"
   },
   {
     "repo": "sndrec/WebMonkeyBall",
@@ -90,57 +12,135 @@
     "description": "Super Monkey Ball on Web Broser."
   },
   {
-    "repo": "yizhiyanhua-ai/skills-updater",
+    "repo": "kubernetes-sigs/kubespray",
+    "branch": "master",
+    "language": "Jinja",
+    "description": "Deploy a Production Ready Kubernetes Cluster"
+  },
+  {
+    "repo": "ceph/ceph",
     "branch": "main",
+    "language": "C++",
+    "description": "Ceph is a distributed object, block, and file storage platform"
+  },
+  {
+    "repo": "react-native-video/react-native-video",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "A <Video /> component for react-native"
+  },
+  {
+    "repo": "boto/boto3",
+    "branch": "develop",
     "language": "Python",
-    "description": "Manage, update, and discover Claude Code skills. 管理、更新和发现 Claude Code 技能。"
+    "description": "Boto3, an AWS SDK for Python"
   },
   {
-    "repo": "PCRE2Project/pcre2",
-    "branch": "master",
-    "language": "C",
-    "description": "PCRE2 development is based here."
-  },
-  {
-    "repo": "v2fly/v2ray-core",
-    "branch": "master",
-    "language": "Go",
-    "description": "A platform for building proxies to bypass network restrictions."
-  },
-  {
-    "repo": "jquery/jquery",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "jQuery JavaScript Library"
-  },
-  {
-    "repo": "vectordotdev/vector",
+    "repo": "lsd-rs/lsd",
     "branch": "master",
     "language": "Rust",
-    "description": "A high-performance observability data pipeline."
+    "description": "The next gen ls command"
   },
   {
-    "repo": "Klipper3d/klipper",
+    "repo": "rbenv/rbenv",
     "branch": "master",
-    "language": "C",
-    "description": "Klipper is a 3d-printer firmware"
+    "language": "Shell",
+    "description": "Manage your app's Ruby environment"
   },
   {
-    "repo": "plausible/analytics",
-    "branch": "master",
-    "language": "Elixir",
-    "description": "Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics."
+    "repo": "SnapKit/SnapKit",
+    "branch": "develop",
+    "language": "Swift",
+    "description": "A Swift Autolayout DSL for iOS & OS X"
   },
   {
-    "repo": "browserable/browserable",
+    "repo": "standardnotes/app",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source and self-hostable browser automation library for AI agents"
+    "language": "TypeScript",
+    "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help."
   },
   {
-    "repo": "thangchung/awesome-dotnet-core",
+    "repo": "signalapp/Signal-Desktop",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A private messenger for Windows, macOS, and Linux."
+  },
+  {
+    "repo": "sharkdp/bat",
     "branch": "master",
-    "language": "C#",
-    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
+    "language": "Rust",
+    "description": "A cat(1) clone with wings."
+  },
+  {
+    "repo": "NirDiamant/GenAI_Agents",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems."
+  },
+  {
+    "repo": "vitejs/vite",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next generation frontend tooling. It's fast!"
+  },
+  {
+    "repo": "google/generative-ai-python",
+    "branch": "main",
+    "language": "Python",
+    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
+  },
+  {
+    "repo": "micronaut-projects/micronaut-core",
+    "branch": "4.3.x",
+    "language": "Java",
+    "description": "Micronaut Application Framework"
+  },
+  {
+    "repo": "pytorch/vision",
+    "branch": "main",
+    "language": "Python",
+    "description": "Datasets, Transforms and Models specific to Computer Vision"
+  },
+  {
+    "repo": "apache/commons-lang",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Commons Lang"
+  },
+  {
+    "repo": "metallb/metallb",
+    "branch": "main",
+    "language": "Go",
+    "description": "A network load-balancer implementation for Kubernetes using standard routing protocols"
+  },
+  {
+    "repo": "cilium/cilium",
+    "branch": "main",
+    "language": "Go",
+    "description": "eBPF-based Networking, Security, and Observability"
+  },
+  {
+    "repo": "iluwatar/java-design-patterns",
+    "branch": "master",
+    "language": "Java",
+    "description": "Design patterns implemented in Java"
+  },
+  {
+    "repo": "primefaces/primeng",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The Most Complete Angular UI Component Library"
+  },
+  {
+    "repo": "tensorflow/models",
+    "branch": "master",
+    "language": "Python",
+    "description": "Models and examples built with TensorFlow"
+  },
+  {
+    "repo": "plotly/plotly.js",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Open-source JavaScript charting library behind Plotly and Dash"
   }
 ]
