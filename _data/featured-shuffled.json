@@ -1,146 +1,146 @@
 [
   {
-    "repo": "LemoLev/tg-ws-proxy-ANDROID",
-    "branch": "main",
-    "language": "Python",
-    "description": "Flowseal/tg-ws-proxy на андроид (да и не только)"
-  },
-  {
-    "repo": "sndrec/WebMonkeyBall",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Super Monkey Ball on Web Broser."
-  },
-  {
-    "repo": "kubernetes-sigs/kubespray",
-    "branch": "master",
-    "language": "Jinja",
-    "description": "Deploy a Production Ready Kubernetes Cluster"
-  },
-  {
-    "repo": "ceph/ceph",
-    "branch": "main",
+    "repo": "MarlinFirmware/Marlin",
+    "branch": "bugfix-2.1.x",
     "language": "C++",
-    "description": "Ceph is a distributed object, block, and file storage platform"
+    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
   },
   {
-    "repo": "react-native-video/react-native-video",
+    "repo": "ray-project/ray",
     "branch": "master",
-    "language": "Kotlin",
-    "description": "A <Video /> component for react-native"
-  },
-  {
-    "repo": "boto/boto3",
-    "branch": "develop",
     "language": "Python",
-    "description": "Boto3, an AWS SDK for Python"
+    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
   },
   {
-    "repo": "lsd-rs/lsd",
-    "branch": "master",
-    "language": "Rust",
-    "description": "The next gen ls command"
-  },
-  {
-    "repo": "rbenv/rbenv",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Manage your app's Ruby environment"
-  },
-  {
-    "repo": "SnapKit/SnapKit",
-    "branch": "develop",
+    "repo": "realm/SwiftLint",
+    "branch": "main",
     "language": "Swift",
-    "description": "A Swift Autolayout DSL for iOS & OS X"
+    "description": "A tool to enforce Swift style and conventions."
   },
   {
-    "repo": "standardnotes/app",
+    "repo": "pmndrs/zustand",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help."
+    "description": "🐻 Bear necessities for state management in React"
   },
   {
-    "repo": "signalapp/Signal-Desktop",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A private messenger for Windows, macOS, and Linux."
-  },
-  {
-    "repo": "sharkdp/bat",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A cat(1) clone with wings."
-  },
-  {
-    "repo": "NirDiamant/GenAI_Agents",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems."
-  },
-  {
-    "repo": "vitejs/vite",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Next generation frontend tooling. It's fast!"
-  },
-  {
-    "repo": "google/generative-ai-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
-  },
-  {
-    "repo": "micronaut-projects/micronaut-core",
-    "branch": "4.3.x",
-    "language": "Java",
-    "description": "Micronaut Application Framework"
-  },
-  {
-    "repo": "pytorch/vision",
-    "branch": "main",
-    "language": "Python",
-    "description": "Datasets, Transforms and Models specific to Computer Vision"
-  },
-  {
-    "repo": "apache/commons-lang",
-    "branch": "master",
-    "language": "Java",
-    "description": "Apache Commons Lang"
-  },
-  {
-    "repo": "metallb/metallb",
-    "branch": "main",
-    "language": "Go",
-    "description": "A network load-balancer implementation for Kubernetes using standard routing protocols"
-  },
-  {
-    "repo": "cilium/cilium",
-    "branch": "main",
-    "language": "Go",
-    "description": "eBPF-based Networking, Security, and Observability"
-  },
-  {
-    "repo": "iluwatar/java-design-patterns",
-    "branch": "master",
-    "language": "Java",
-    "description": "Design patterns implemented in Java"
-  },
-  {
-    "repo": "primefaces/primeng",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The Most Complete Angular UI Component Library"
-  },
-  {
-    "repo": "tensorflow/models",
-    "branch": "master",
-    "language": "Python",
-    "description": "Models and examples built with TensorFlow"
-  },
-  {
-    "repo": "plotly/plotly.js",
+    "repo": "Tencent/wepy",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Open-source JavaScript charting library behind Plotly and Dash"
+    "description": "小程序组件化开发框架"
+  },
+  {
+    "repo": "davidhariri/life-system",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement."
+  },
+  {
+    "repo": "rq/rq",
+    "branch": "master",
+    "language": "Python",
+    "description": "Simple job queues for Python"
+  },
+  {
+    "repo": "antfu/skills",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Anthony Fu's curated collection of agent skills."
+  },
+  {
+    "repo": "swc-project/swc",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Rust-based platform for the Web"
+  },
+  {
+    "repo": "EbookFoundation/free-programming-books",
+    "branch": "main",
+    "language": "Python",
+    "description": ":books: Freely available programming books"
+  },
+  {
+    "repo": "quarkusio/quarkus",
+    "branch": "main",
+    "language": "Java",
+    "description": "Quarkus: Supersonic Subatomic Java."
+  },
+  {
+    "repo": "avelino/awesome-go",
+    "branch": "main",
+    "language": "Go",
+    "description": "A curated list of awesome Go frameworks, libraries and software"
+  },
+  {
+    "repo": "actions/runner",
+    "branch": "main",
+    "language": "C#",
+    "description": "The Runner for GitHub Actions :rocket:"
+  },
+  {
+    "repo": "github/copilot-docs",
+    "branch": "main",
+    "language": "Other",
+    "description": "Documentation for GitHub Copilot"
+  },
+  {
+    "repo": "coleam00/excalidraw-diagram-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Skill to give Claude Code (and any coding agent) the ability to generate beautiful and practical Excalidraw diagrams."
+  },
+  {
+    "repo": "charonviz/text2geo",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "zscole/model-hierarchy-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw skill for cost-optimized model routing based on task complexity"
+  },
+  {
+    "repo": "ringhyacinth/Star-Office-UI",
+    "branch": "master",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "elastic/logstash",
+    "branch": "main",
+    "language": "Java",
+    "description": "Logstash - transport and process your logs, events, or other data"
+  },
+  {
+    "repo": "pmndrs/react-three-fiber",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "🇨🇭 A React renderer for Three.js"
+  },
+  {
+    "repo": "graphql/dataloader",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching."
+  },
+  {
+    "repo": "kubernetes/dashboard",
+    "branch": "master",
+    "language": "Go",
+    "description": "General-purpose web UI for Kubernetes clusters"
+  },
+  {
+    "repo": "mit-pdos/xv6-public",
+    "branch": "master",
+    "language": "C",
+    "description": "xv6 OS"
+  },
+  {
+    "repo": "falcosecurity/falco",
+    "branch": "master",
+    "language": "C++",
+    "description": "Cloud Native Runtime Security"
   }
 ]
