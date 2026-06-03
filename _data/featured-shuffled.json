@@ -1,146 +1,146 @@
 [
   {
-    "repo": "MarlinFirmware/Marlin",
-    "branch": "bugfix-2.1.x",
+    "repo": "neosigmaai/auto-harness",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "pedrohcgs/claude-code-my-workflow",
+    "branch": "main",
+    "language": "HTML",
+    "description": "A ready-to-fork Claude Code template for academics using LaTeX/Beamer + R. Multi-agent review, quality gates, adversarial QA, and replication protocols."
+  },
+  {
+    "repo": "infiniflow/ragflow",
+    "branch": "main",
+    "language": "Python",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
+  },
+  {
+    "repo": "GoogleContainerTools/jib",
+    "branch": "master",
+    "language": "Java",
+    "description": "🏗 Build container images for your Java applications."
+  },
+  {
+    "repo": "iCHAIT/awesome-macOS",
+    "branch": "master",
+    "language": "Other",
+    "description": " A curated list of awesome applications, softwares, tools and shiny things for macOS."
+  },
+  {
+    "repo": "deepmind/mujoco",
+    "branch": "main",
     "language": "C++",
-    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator."
   },
   {
-    "repo": "ray-project/ray",
+    "repo": "Prismer-AI/Prismer",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Source OpenAI Prism Alternative"
+  },
+  {
+    "repo": "crossplane/crossplane",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Cloud Native Control Plane"
+  },
+  {
+    "repo": "pypa/pip",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Python package installer"
+  },
+  {
+    "repo": "op7418/Document-illustrator-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
+  },
+  {
+    "repo": "matrix-org/synapse",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Synapse: Matrix homeserver written in Python/Twisted."
+  },
+  {
+    "repo": "fatedier/frp",
+    "branch": "dev",
+    "language": "Go",
+    "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet."
+  },
+  {
+    "repo": "plotly/plotly.py",
     "branch": "master",
     "language": "Python",
-    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
+    "description": "The interactive graphing library for Python :sparkles:"
   },
   {
-    "repo": "realm/SwiftLint",
+    "repo": "istio/istio",
+    "branch": "master",
+    "language": "Go",
+    "description": "Connect, secure, control, and observe services."
+  },
+  {
+    "repo": "vmware-tanzu/velero",
     "branch": "main",
-    "language": "Swift",
-    "description": "A tool to enforce Swift style and conventions."
+    "language": "Go",
+    "description": "Backup and migrate Kubernetes applications and their persistent volumes"
   },
   {
-    "repo": "pmndrs/zustand",
+    "repo": "bitcoin/bitcoin",
+    "branch": "master",
+    "language": "C++",
+    "description": "Bitcoin Core integration/staging tree"
+  },
+  {
+    "repo": "unjs/nitro",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🐻 Bear necessities for state management in React"
+    "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer."
   },
   {
-    "repo": "Tencent/wepy",
-    "branch": "master",
+    "repo": "dagger/dagger",
+    "branch": "main",
+    "language": "Go",
+    "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud"
+  },
+  {
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
     "language": "JavaScript",
-    "description": "小程序组件化开发框架"
+    "description": "✨ A Markdown Editor"
   },
   {
-    "repo": "davidhariri/life-system",
+    "repo": "PyCQA/bandit",
     "branch": "main",
-    "language": "Shell",
-    "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement."
-  },
-  {
-    "repo": "rq/rq",
-    "branch": "master",
     "language": "Python",
-    "description": "Simple job queues for Python"
+    "description": "Bandit is a tool designed to find common security issues in Python code."
   },
   {
-    "repo": "antfu/skills",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Anthony Fu's curated collection of agent skills."
-  },
-  {
-    "repo": "swc-project/swc",
+    "repo": "fermyon/spin",
     "branch": "main",
     "language": "Rust",
-    "description": "Rust-based platform for the Web"
+    "description": "Spin is the open source developer tool for building and running serverless applications powered by WebAssembly."
   },
   {
-    "repo": "EbookFoundation/free-programming-books",
-    "branch": "main",
-    "language": "Python",
-    "description": ":books: Freely available programming books"
-  },
-  {
-    "repo": "quarkusio/quarkus",
-    "branch": "main",
-    "language": "Java",
-    "description": "Quarkus: Supersonic Subatomic Java."
-  },
-  {
-    "repo": "avelino/awesome-go",
-    "branch": "main",
-    "language": "Go",
-    "description": "A curated list of awesome Go frameworks, libraries and software"
-  },
-  {
-    "repo": "actions/runner",
-    "branch": "main",
-    "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
-  },
-  {
-    "repo": "github/copilot-docs",
-    "branch": "main",
-    "language": "Other",
-    "description": "Documentation for GitHub Copilot"
-  },
-  {
-    "repo": "coleam00/excalidraw-diagram-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "Skill to give Claude Code (and any coding agent) the ability to generate beautiful and practical Excalidraw diagrams."
-  },
-  {
-    "repo": "charonviz/text2geo",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "zscole/model-hierarchy-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "OpenClaw skill for cost-optimized model routing based on task complexity"
-  },
-  {
-    "repo": "ringhyacinth/Star-Office-UI",
+    "repo": "kautukkundan/Awesome-Profile-README-templates",
     "branch": "master",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "elastic/logstash",
-    "branch": "main",
-    "language": "Java",
-    "description": "Logstash - transport and process your logs, events, or other data"
-  },
-  {
-    "repo": "pmndrs/react-three-fiber",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🇨🇭 A React renderer for Three.js"
-  },
-  {
-    "repo": "graphql/dataloader",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching."
+    "description": "A collection of awesome readme templates to display on your profile"
   },
   {
-    "repo": "kubernetes/dashboard",
-    "branch": "master",
+    "repo": "kyverno/kyverno",
+    "branch": "main",
     "language": "Go",
-    "description": "General-purpose web UI for Kubernetes clusters"
+    "description": "Cloud Native Policy Management"
   },
   {
-    "repo": "mit-pdos/xv6-public",
-    "branch": "master",
-    "language": "C",
-    "description": "xv6 OS"
-  },
-  {
-    "repo": "falcosecurity/falco",
+    "repo": "firebase/firebase-ios-sdk",
     "branch": "master",
     "language": "C++",
-    "description": "Cloud Native Runtime Security"
+    "description": "Firebase SDK for Apple App Development"
   }
 ]
