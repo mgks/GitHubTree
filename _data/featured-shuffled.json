@@ -1,146 +1,146 @@
 [
   {
-    "repo": "neosigmaai/auto-harness",
+    "repo": "zer0condition/Ophion",
+    "branch": "master",
+    "language": "C",
+    "description": "Stealth-focused Intel VT-x hypervisor base (EAC/BE/ACs/AVs)."
+  },
+  {
+    "repo": "spotipy-dev/spotipy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A light weight Python library for the Spotify Web API"
+  },
+  {
+    "repo": "stellarlinkco/myclaw",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "foundry-rs/foundry",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
+  },
+  {
+    "repo": "theonlyhennygod/zeroclaw",
+    "branch": "main",
+    "language": "Rust",
+    "description": "claw done right 🦀"
+  },
+  {
+    "repo": "TraderAlice/OpenAlice",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "File-driven AI trading agent engine for crypto and securities markets"
+  },
+  {
+    "repo": "depreciating/DoodleCloud",
+    "branch": "main",
+    "language": "Python",
+    "description": "Cloud Storage using Instagram."
+  },
+  {
+    "repo": "cs109/2015",
+    "branch": "master",
+    "language": "Other",
+    "description": "Public material for CS109"
+  },
+  {
+    "repo": "arpitg1304/robotics-agent-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "Agent skills that make AI coding assistants write production-grade robotics software. ROS1, ROS2, design patterns, SOLID principles, and testing — for Claude Code, Cursor, Copilot, and any SKILL.md-compatible agent."
+  },
+  {
+    "repo": "PeGasUsCHAkra/mevbot",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Ethereum Bot"
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-OCR-2",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "pedrohcgs/claude-code-my-workflow",
+    "repo": "v1ewp0rt/BAREBLOOD",
     "branch": "main",
-    "language": "HTML",
-    "description": "A ready-to-fork Claude Code template for academics using LaTeX/Beamer + R. Multi-agent review, quality gates, adversarial QA, and replication protocols."
+    "language": "QML",
+    "description": "Gothic maximalist linux theme for KDE plasma 6.5"
   },
   {
-    "repo": "infiniflow/ragflow",
-    "branch": "main",
-    "language": "Python",
-    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
-  },
-  {
-    "repo": "GoogleContainerTools/jib",
-    "branch": "master",
-    "language": "Java",
-    "description": "🏗 Build container images for your Java applications."
-  },
-  {
-    "repo": "iCHAIT/awesome-macOS",
+    "repo": "markets/awesome-ruby",
     "branch": "master",
     "language": "Other",
-    "description": " A curated list of awesome applications, softwares, tools and shiny things for macOS."
+    "description": "💎 A collection of awesome Ruby libraries, tools, frameworks and software"
   },
   {
-    "repo": "deepmind/mujoco",
-    "branch": "main",
-    "language": "C++",
-    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator."
-  },
-  {
-    "repo": "Prismer-AI/Prismer",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open Source OpenAI Prism Alternative"
-  },
-  {
-    "repo": "crossplane/crossplane",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Cloud Native Control Plane"
-  },
-  {
-    "repo": "pypa/pip",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Python package installer"
-  },
-  {
-    "repo": "op7418/Document-illustrator-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
-  },
-  {
-    "repo": "matrix-org/synapse",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Synapse: Matrix homeserver written in Python/Twisted."
-  },
-  {
-    "repo": "fatedier/frp",
-    "branch": "dev",
-    "language": "Go",
-    "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet."
-  },
-  {
-    "repo": "plotly/plotly.py",
-    "branch": "master",
-    "language": "Python",
-    "description": "The interactive graphing library for Python :sparkles:"
-  },
-  {
-    "repo": "istio/istio",
-    "branch": "master",
-    "language": "Go",
-    "description": "Connect, secure, control, and observe services."
-  },
-  {
-    "repo": "vmware-tanzu/velero",
-    "branch": "main",
-    "language": "Go",
-    "description": "Backup and migrate Kubernetes applications and their persistent volumes"
-  },
-  {
-    "repo": "bitcoin/bitcoin",
-    "branch": "master",
-    "language": "C++",
-    "description": "Bitcoin Core integration/staging tree"
-  },
-  {
-    "repo": "unjs/nitro",
+    "repo": "slidevjs/slidev",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer."
+    "description": "Presentation Slides for Developers"
   },
   {
-    "repo": "dagger/dagger",
-    "branch": "main",
-    "language": "Go",
-    "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud"
-  },
-  {
-    "repo": "Tencent/cherry-markdown",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "✨ A Markdown Editor"
-  },
-  {
-    "repo": "PyCQA/bandit",
-    "branch": "main",
-    "language": "Python",
-    "description": "Bandit is a tool designed to find common security issues in Python code."
-  },
-  {
-    "repo": "fermyon/spin",
+    "repo": "Polymarket/polymarket-cli",
     "branch": "main",
     "language": "Rust",
-    "description": "Spin is the open source developer tool for building and running serverless applications powered by WebAssembly."
+    "description": ""
   },
   {
-    "repo": "kautukkundan/Awesome-Profile-README-templates",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A collection of awesome readme templates to display on your profile"
+    "repo": "first-fluke/oh-my-ag",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The Ultimate Multi-Agent Framework for Google Antigravity. Orchestrate 6 specialized agents via Serena Memory. Parallel CLI execution, real-time observability, and zero-config skills."
   },
   {
-    "repo": "kyverno/kyverno",
+    "repo": "junevm/splathash",
     "branch": "main",
     "language": "Go",
-    "description": "Cloud Native Policy Management"
+    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
   },
   {
-    "repo": "firebase/firebase-ios-sdk",
+    "repo": "danielmiessler/fabric",
+    "branch": "main",
+    "language": "Go",
+    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
+  },
+  {
+    "repo": "TrendTechVista/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot"
+  },
+  {
+    "repo": "zuckermanai/zuckerman",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Ultra-minimal personal AI agent: starts small, self-modifies its code live, adapts by writing exactly the code & features you need"
+  },
+  {
+    "repo": "fluxcd/flux2",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
+  },
+  {
+    "repo": "thangchung/awesome-dotnet-core",
     "branch": "master",
-    "language": "C++",
-    "description": "Firebase SDK for Apple App Development"
+    "language": "C#",
+    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
+  },
+  {
+    "repo": "mindfold-ai/Trellis",
+    "branch": "main",
+    "language": "Shell",
+    "description": "All-in-one AI framework & toolkit for Claude Code & Cursor"
+  },
+  {
+    "repo": "bazelbuild/bazel",
+    "branch": "master",
+    "language": "Java",
+    "description": "a fast, scalable, multi-language and extensible build system"
   }
 ]
