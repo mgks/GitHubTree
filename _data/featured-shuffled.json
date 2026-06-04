@@ -1,146 +1,146 @@
 [
   {
-    "repo": "zer0condition/Ophion",
+    "repo": "fluent/fluent-bit",
     "branch": "master",
     "language": "C",
-    "description": "Stealth-focused Intel VT-x hypervisor base (EAC/BE/ACs/AVs)."
+    "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows"
   },
   {
-    "repo": "spotipy-dev/spotipy",
-    "branch": "master",
-    "language": "Python",
-    "description": "A light weight Python library for the Spotify Web API"
-  },
-  {
-    "repo": "stellarlinkco/myclaw",
+    "repo": "muxprotocol/kalshi-trading-bot",
     "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "foundry-rs/foundry",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
-  },
-  {
-    "repo": "theonlyhennygod/zeroclaw",
-    "branch": "main",
-    "language": "Rust",
-    "description": "claw done right 🦀"
-  },
-  {
-    "repo": "TraderAlice/OpenAlice",
-    "branch": "master",
     "language": "TypeScript",
-    "description": "File-driven AI trading agent engine for crypto and securities markets"
+    "description": "kalshi trading bot on prediction market autonomous kalshi trading bot that connects to the kalshi api via kalshi rest and kalshi websocket, runs a five-agent ai ensemble to analyze kalshi prediction markets, sizes positions with fractional kelly criterion against your kalshi balance, and executes kalshi orders in paper or live mode with hard daily"
   },
   {
-    "repo": "depreciating/DoodleCloud",
-    "branch": "main",
-    "language": "Python",
-    "description": "Cloud Storage using Instagram."
-  },
-  {
-    "repo": "cs109/2015",
+    "repo": "yearn/yearn-finance",
     "branch": "master",
-    "language": "Other",
-    "description": "Public material for CS109"
-  },
-  {
-    "repo": "arpitg1304/robotics-agent-skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "Agent skills that make AI coding assistants write production-grade robotics software. ROS1, ROS2, design patterns, SOLID principles, and testing — for Claude Code, Cursor, Copilot, and any SKILL.md-compatible agent."
-  },
-  {
-    "repo": "PeGasUsCHAkra/mevbot",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "Ethereum Bot"
+    "description": "🏦 yearn v2 web interface"
   },
   {
-    "repo": "deepseek-ai/DeepSeek-OCR-2",
+    "repo": "antirez/tgterm",
     "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "C",
+    "description": "Control your MacOS terminals via Telegram, for fun coding agents interaction and profit"
   },
   {
-    "repo": "v1ewp0rt/BAREBLOOD",
-    "branch": "main",
-    "language": "QML",
-    "description": "Gothic maximalist linux theme for KDE plasma 6.5"
-  },
-  {
-    "repo": "markets/awesome-ruby",
-    "branch": "master",
-    "language": "Other",
-    "description": "💎 A collection of awesome Ruby libraries, tools, frameworks and software"
-  },
-  {
-    "repo": "slidevjs/slidev",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Presentation Slides for Developers"
-  },
-  {
-    "repo": "Polymarket/polymarket-cli",
+    "repo": "bytecodealliance/wasmtime",
     "branch": "main",
     "language": "Rust",
-    "description": ""
+    "description": "A lightweight WebAssembly runtime that is fast, secure, and standards-compliant"
   },
   {
-    "repo": "first-fluke/oh-my-ag",
+    "repo": "zachlatta/freeflow",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "The Ultimate Multi-Agent Framework for Google Antigravity. Orchestrate 6 specialized agents via Serena Memory. Parallel CLI execution, real-time observability, and zero-config skills."
+    "language": "Swift",
+    "description": "Free and open source alternative to Wispr Flow / Superwhisper / Monologue / etc"
   },
   {
-    "repo": "junevm/splathash",
-    "branch": "main",
-    "language": "Go",
-    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
-  },
-  {
-    "repo": "danielmiessler/fabric",
-    "branch": "main",
-    "language": "Go",
-    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
-  },
-  {
-    "repo": "TrendTechVista/polymarket-copy-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot"
-  },
-  {
-    "repo": "zuckermanai/zuckerman",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Ultra-minimal personal AI agent: starts small, self-modifies its code live, adapts by writing exactly the code & features you need"
-  },
-  {
-    "repo": "fluxcd/flux2",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
-  },
-  {
-    "repo": "thangchung/awesome-dotnet-core",
+    "repo": "gin-gonic/gin",
     "branch": "master",
-    "language": "C#",
-    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
+    "language": "Go",
+    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
   },
   {
-    "repo": "mindfold-ai/Trellis",
+    "repo": "LeoYeAI/openclaw-guardian",
     "branch": "main",
     "language": "Shell",
-    "description": "All-in-one AI framework & toolkit for Claude Code & Cursor"
+    "description": "🛡️ Guardian watchdog for OpenClaw Gateway — auto-monitor, self-repair via doctor --fix, git-based rollback, daily snapshots, and Discord alerts. Powered by MyClaw.ai"
   },
   {
-    "repo": "bazelbuild/bazel",
+    "repo": "refinedev/refine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility."
+  },
+  {
+    "repo": "ghostvectoracademy/DLLHijackHunter",
+    "branch": "main",
+    "language": "C#",
+    "description": "Automated DLL Hijacking Detection Tool with Zero False Positives — Discovers, filters, and canary-confirms exploitable DLL hijacks on Windows with tiered confidence scoring"
+  },
+  {
+    "repo": "PowerShell/PowerShell",
+    "branch": "master",
+    "language": "C#",
+    "description": "PowerShell for every system!"
+  },
+  {
+    "repo": "vava-nessa/free-coding-models",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "shanselman/winget-tui",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A terminal UI for Windows Package Manager (winget) - search, install, upgrade, and manage packages"
+  },
+  {
+    "repo": "MariaDB/server",
+    "branch": "11.4",
+    "language": "C++",
+    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry."
+  },
+  {
+    "repo": "angular/angular",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Deliver web apps with confidence 🚀"
+  },
+  {
+    "repo": "brendanhogan/hermitclaw",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Dataherald/dataherald",
+    "branch": "main",
+    "language": "Python",
+    "description": "Interact with your SQL database, Natural Language to SQL using LLMs"
+  },
+  {
+    "repo": "confluentinc/schema-registry",
     "branch": "master",
     "language": "Java",
-    "description": "a fast, scalable, multi-language and extensible build system"
+    "description": "Confluent Schema Registry for Kafka"
+  },
+  {
+    "repo": "starship/starship",
+    "branch": "master",
+    "language": "Rust",
+    "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+  },
+  {
+    "repo": "GreatScott/enveil",
+    "branch": "main",
+    "language": "Rust",
+    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
+  },
+  {
+    "repo": "hantuzun/awesome-clojure",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff"
+  },
+  {
+    "repo": "alebcay/awesome-shell",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php."
+  },
+  {
+    "repo": "understudy-ai/understudy",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An understudy watches. Then performs."
+  },
+  {
+    "repo": "btahir/react-kino",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Cinematic scroll-driven storytelling for React"
   }
 ]
