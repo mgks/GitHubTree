@@ -1,146 +1,146 @@
 [
   {
-    "repo": "mudler/parakeet.cpp",
+    "repo": "ytdl-org/youtube-dl",
     "branch": "master",
+    "language": "Python",
+    "description": "Command-line program to download videos from YouTube.com and other video sites"
+  },
+  {
+    "repo": "elkimek/honcho-self-hosted",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Self-host Honcho memory layer for Hermes Agent — OpenRouter + Venice, no code changes"
+  },
+  {
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "language": "Go",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+  },
+  {
+    "repo": "MariaDB/server",
+    "branch": "11.4",
     "language": "C++",
-    "description": "Parakeet implementation in C++ with ggml"
+    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry."
   },
   {
-    "repo": "dayflow-js/BlossomColorPicker",
+    "repo": "eslint/eslint",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A beautiful, blooming color picker component build by Tailwind for Web.     🌟 If you like it, give it a star :)"
-  },
-  {
-    "repo": "lukilabs/beautiful-mermaid",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "react-native-device-info/react-native-device-info",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Device Information for React Native iOS and Android"
-  },
-  {
-    "repo": "ReactiveX/RxKotlin",
-    "branch": "3.x",
-    "language": "Kotlin",
-    "description": "RxJava bindings for Kotlin"
-  },
-  {
-    "repo": "PostgREST/postgrest",
-    "branch": "main",
-    "language": "Haskell",
-    "description": "REST API for any Postgres database"
-  },
-  {
-    "repo": "quasarframework/quasar",
-    "branch": "dev",
     "language": "JavaScript",
-    "description": "Quasar Framework - Build high-performance VueJS user interfaces in record time"
+    "description": "Find and fix problems in your JavaScript code."
   },
   {
-    "repo": "vitejs/vite",
+    "repo": "axios/axios",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Next generation frontend tooling. It's fast!"
-  },
-  {
-    "repo": "LazyVim/LazyVim",
-    "branch": "main",
-    "language": "Lua",
-    "description": "Neovim config for the lazy"
-  },
-  {
-    "repo": "prisma/graphql-yoga",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🧘 Rewrite of a fully-featured GraphQL Server with focus on easy setup, performance & great developer experience.  The core of Yoga implements WHATWG Fetch API and can run/deploy on any JS environment."
-  },
-  {
-    "repo": "TheAlgorithms/Python",
-    "branch": "master",
-    "language": "Python",
-    "description": "All Algorithms implemented in Python"
-  },
-  {
-    "repo": "npmx-dev/npmx.dev",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "a fast, modern browser for the npm registry"
-  },
-  {
-    "repo": "Semantic-Org/Semantic-UI",
-    "branch": "master",
     "language": "JavaScript",
-    "description": "Semantic is a UI component framework based around useful principles from natural language."
+    "description": "Promise based HTTP client for the browser and node.js"
   },
   {
-    "repo": "google/generative-ai-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
-  },
-  {
-    "repo": "op7418/Youtube-clipper-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "0Voice/Expert_Readed_Books",
+    "repo": "datavorous/sameshi",
     "branch": "master",
-    "language": "Other",
-    "description": "2021年最新总结，推荐工程师合适读本，计算机科学，软件技术，创业，思想类，数学类，人物传记书籍"
+    "language": "C",
+    "description": "a ~1200 Elo chess engine that fits within 2KB"
   },
   {
-    "repo": "ory/oathkeeper",
+    "repo": "linlay/zenmind",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "宅在家里的电脑，努力做一个openclaw"
+  },
+  {
+    "repo": "soloterm/screen",
+    "branch": "main",
+    "language": "PHP",
+    "description": "A terminal renderer written in pure PHP."
+  },
+  {
+    "repo": "paperclipai/paperclip",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Open-source orchestration for zero-human companies"
+  },
+  {
+    "repo": "facebook/create-react-app",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Set up a modern web app by running one command."
+  },
+  {
+    "repo": "lifo-sh/lifo",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A browser-native operating system. Unix/Linux reimagined where the browser IS the kernel and Web APIs ARE syscalls. 60+ commands, bash-like shell, virtual filesystem, and IndexedDB persistence."
+  },
+  {
+    "repo": "umijs/umi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A framework in react community ✨"
+  },
+  {
+    "repo": "kyutai-labs/hibiki-zero",
+    "branch": "main",
+    "language": "Python",
+    "description": "A real-time and multilingual speech translation model"
+  },
+  {
+    "repo": "gorilla/mux",
+    "branch": "main",
+    "language": "Go",
+    "description": "Package gorilla/mux is a powerful HTTP router and URL matcher for building Go web servers with 🦍"
+  },
+  {
+    "repo": "wader/fq",
     "branch": "master",
     "language": "Go",
-    "description": "A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. Inspired by the BeyondCorp / Zero Trust white paper. Written in Go."
+    "description": "jq for binary formats - tool, language and decoders for working with binary and text formats"
   },
   {
-    "repo": "hxu296/tariff",
+    "repo": "electron/electron",
+    "branch": "main",
+    "language": "C++",
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+  },
+  {
+    "repo": "zed-industries/zed",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+  },
+  {
+    "repo": "nj19257/FastSkills",
     "branch": "main",
     "language": "Python",
-    "description": "The official repository for tariff"
+    "description": "⚡ MCP server that brings Agent Skills (the open standard behind Claude Code, OpenClaw & nanobot) to any MCP-compatible agent. Discover, load, create & execute skills."
   },
   {
-    "repo": "letta-ai/lettabot",
+    "repo": "BuilderIO/qwik",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Your personal AI assistant that remembers everything across Telegram, Slack, WhatsApp, and Signal"
+    "description": "Instant-loading web apps, without effort"
   },
   {
-    "repo": "thesSmartApe/polymarket-copy-trading-bot-python",
+    "repo": "restic/restic",
+    "branch": "master",
+    "language": "Go",
+    "description": "Fast, secure, efficient backup program"
+  },
+  {
+    "repo": "hallucinogen/agent-viewer",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Kanban board for managing Claude Code agents in tmux"
+  },
+  {
+    "repo": "sigp/lighthouse",
+    "branch": "stable",
+    "language": "Rust",
+    "description": "Ethereum consensus client in Rust"
+  },
+  {
+    "repo": "SafeBreach-Labs/CVE-2026-24061",
     "branch": "main",
     "language": "Python",
-    "description": "Polymarket python copy trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "getsentry/sentry",
-    "branch": "master",
-    "language": "Python",
-    "description": "Developer-first error tracking and performance monitoring"
-  },
-  {
-    "repo": "nhevers/MoltBrain",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically."
-  },
-  {
-    "repo": "datasciencemasters/go",
-    "branch": "master",
-    "language": "Other",
-    "description": "The Open Source Data Science Masters"
-  },
-  {
-    "repo": "nvm-sh/nvm",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions"
+    "description": "Exploitation of CVE-2026-24061"
   }
 ]
