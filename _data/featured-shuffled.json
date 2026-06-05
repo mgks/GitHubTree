@@ -1,146 +1,146 @@
 [
   {
-    "repo": "EveryInc/proof-sdk",
+    "repo": "nuxt/nuxt",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Proof SDK: open-source collaborative editor, provenance model, and agent HTTP bridge"
+    "description": "The Full-Stack Vue Framework."
   },
   {
-    "repo": "huangserva/claude-code-cli",
+    "repo": "tophant-ai/ClawVault",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw Security Vault — Atomic claw control: every AI reach, within your sight."
+  },
+  {
+    "repo": "abhinavkale-dev/fynt",
     "branch": "master",
     "language": "TypeScript",
-    "description": "这是 Claude Code 的 CLI 客户端主体（src/ 目录），即整个终端交互层的源码。具体包含： 1. CLI 入口与命令解析 — main.tsx（4684行）、entrypoints/（CLI 模式、SDK 模式、MCP 模式） 2. 终端 UI 渲染 — components/（144 个组件，用 React + Ink 渲染终端界面） 3. 工具系统 — tools/（43 个工具，Bash、文件读写编辑、Grep、Glob、Web 搜索等） 4. API 通信层 — services/api/（与 Anthropic 后端通信） 5. MCP 协议  6. 多 Agent/Team 协作 l 7. 认证与策略 8. 辅助服务 等"
+    "description": "Self-hostable workflow automation platform"
   },
   {
-    "repo": "onecli/onecli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Open-source credential vault, give your AI agents access to services without exposing keys."
-  },
-  {
-    "repo": "AtomicBot-ai/Atomic-Chat",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "m1heng/claude-plugin-weixin",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "owenshuo/open-bounty-radar",
-    "branch": "main",
+    "repo": "resume/resume.github.com",
+    "branch": "master",
     "language": "JavaScript",
-    "description": "CLI radar for discovering and monitoring paid open-source issues and bounty opportunities"
+    "description": "Resumes generated using the GitHub informations"
   },
   {
-    "repo": "0xSero/turboquant",
-    "branch": "main",
-    "language": "Python",
-    "description": "TurboQuant: Near-optimal KV cache quantization for LLM inference (3-bit keys, 2-bit values) with Triton kernels + vLLM integration"
-  },
-  {
-    "repo": "jxnxts/mcp-brasil",
-    "branch": "main",
-    "language": "Python",
-    "description": "MCP Server para 27 APIs públicas brasileiras"
-  },
-  {
-    "repo": "larksuite/cli",
+    "repo": "cilium/cilium",
     "branch": "main",
     "language": "Go",
-    "description": "A command-line tool for Lark/Feishu Open Platform — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills."
+    "description": "eBPF-based Networking, Security, and Observability"
   },
   {
-    "repo": "Justineo/working-with-ai",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Working with AI - presentation slides"
-  },
-  {
-    "repo": "aaronjmars/MiroShark",
-    "branch": "main",
-    "language": "Python",
-    "description": "Universal Swarm Intelligence Engine"
-  },
-  {
-    "repo": "corespeed-io/wechatbot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "微信 iLink Bot SDK for OpenClaw/AI Agent"
-  },
-  {
-    "repo": "duriantaco/fyn",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Fyn is a privacy-first fork of uv for fast Python package management, dependency resolution, virtual environments, and pyproject.toml workflows."
-  },
-  {
-    "repo": "ahaodev/shadmin",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An Enterprise-Grade Full-Stack RBAC Permission Management System Built with Go + React"
-  },
-  {
-    "repo": "glommer/pgmicro",
+    "repo": "geoffreymcgill/react-native-collapsible",
     "branch": "master",
-    "language": "Rust",
-    "description": "An in-process reimplementation of PostgreSQL, backed by a SQLite-compatible storage engine"
+    "language": "Other",
+    "description": "Animated collapsible component for React Native, good for accordions, toggles etc"
   },
   {
-    "repo": "Nahuel990/ministack",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ministack: the free LocalStack replacement"
-  },
-  {
-    "repo": "dev-protocol/polymarket-arbitrage-trade-bot",
+    "repo": "deep-learning-indaba/GoodPracticesML",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot"
+    "language": "Other",
+    "description": "A repository of good practices for developing usable ML products in Africa."
   },
   {
-    "repo": "nashsu/opencli-rs",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Opencli-rs is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl)"
-  },
-  {
-    "repo": "joeseesun/lennys-podcast-newsletter",
-    "branch": "main",
-    "language": "Python",
-    "description": "Lenny Rachitsky 播客与 Newsletter 知识库。搜索、阅读、学习 Lenny 的 638 篇内容（289 播客转录 + 349 篇 Newsletter）。 涵盖产品管理、增长、设计、工程、AI、创业、领导力等 17 个主题。 触发词：Lenny、Lenny's Newslet"
-  },
-  {
-    "repo": "lukasHoel/video_to_world",
-    "branch": "main",
-    "language": "Python",
-    "description": "Our method reconstructs 3D worlds from video diffusion models using non-rigid alignment to resolve inherent 3D inconsistencies in the generated sequences."
-  },
-  {
-    "repo": "ShawnPana/aurl",
-    "branch": "main",
-    "language": "Go",
-    "description": "A command line tool for turning any API into a CLI command, supporting OpenAPI 3.0, OpenAPI 3.1, Swagger 2.0, and GraphQL. aurl auto-detects authentication, validates requests against the spec, and generates documentation from introspection."
-  },
-  {
-    "repo": "ynsmroztas/AndroHunter",
+    "repo": "spring-cloud/spring-cloud-gateway",
     "branch": "main",
     "language": "Java",
-    "description": "AndroHunter"
+    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
   },
   {
-    "repo": "wong2/weixin-agent-sdk",
+    "repo": "github/docs",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "The open-source repo for docs.github.com"
   },
   {
-    "repo": "infraform/polymarket-kalshi-arbitrage-bot",
-    "branch": "main",
+    "repo": "keras-team/keras-nlp",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pretrained model hub for Keras 3."
+  },
+  {
+    "repo": "rancher/rancher",
+    "branch": "master",
+    "language": "Go",
+    "description": "Complete container management platform"
+  },
+  {
+    "repo": "electron-userland/electron-builder",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "kalshi-polymarket arbitrage bot, kalshi bot,  kalshi arbitrage bot, kalshi trading bot - detecting arb opportunity between two platforms (or in just kalshi market) and placing orders instantly, locking pnl || kalshi bot || arbitrage bot || trading bot || kalshi-polymarket arbitrage bot, kalshi bot, arbitrage bot, kalshi trading bot"
+    "description": "A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box"
+  },
+  {
+    "repo": "kubernetes-sigs/kind",
+    "branch": "main",
+    "language": "Go",
+    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
+  },
+  {
+    "repo": "stylelint/stylelint",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A mighty CSS linter that helps you avoid errors and enforce conventions."
+  },
+  {
+    "repo": "koodo-reader/koodo-reader",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web"
+  },
+  {
+    "repo": "kubernetes-sigs/kustomize",
+    "branch": "master",
+    "language": "Go",
+    "description": "Customization of kubernetes YAML configurations"
+  },
+  {
+    "repo": "rook/rook",
+    "branch": "master",
+    "language": "Go",
+    "description": "Storage Orchestration for Kubernetes"
+  },
+  {
+    "repo": "jupyter/notebook",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Jupyter Interactive Notebook"
+  },
+  {
+    "repo": "kyverno/kyverno",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cloud Native Policy Management"
+  },
+  {
+    "repo": "sirupsen/logrus",
+    "branch": "master",
+    "language": "Go",
+    "description": "Structured, pluggable logging for Go."
+  },
+  {
+    "repo": "parcel-bundler/parcel",
+    "branch": "v2",
+    "language": "JavaScript",
+    "description": "The zero configuration build tool for the web. 📦🚀"
+  },
+  {
+    "repo": "rollup/rollup",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Next-generation ES module bundler"
+  },
+  {
+    "repo": "goharbor/harbor",
+    "branch": "main",
+    "language": "Go",
+    "description": "An open source trusted cloud native registry project that stores, signs, and scans content."
+  },
+  {
+    "repo": "go-sql-driver/mysql",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
   }
 ]
