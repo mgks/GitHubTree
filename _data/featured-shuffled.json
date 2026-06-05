@@ -1,146 +1,146 @@
 [
   {
-    "repo": "michelleoincx/genspark.ai-openclaw",
+    "repo": "EveryInc/proof-sdk",
     "branch": "main",
     "language": "TypeScript",
-    "description": "OpenClaw for genspark.ai — open-source extension that claws through every paywall and rate limit. Install in one command, run forever free."
+    "description": "Proof SDK: open-source collaborative editor, provenance model, and agent HTTP bridge"
   },
   {
-    "repo": "lzhgus/Capso",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI."
-  },
-  {
-    "repo": "codeany-ai/open-agent-sdk-typescript",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Agent-SDK without CLI dependencies, as an alternative to claude-agent-sdk, completely open source"
-  },
-  {
-    "repo": "imj01y/trace-ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "高性能 ARM64 执行 trace 可视化分析工具"
-  },
-  {
-    "repo": "codeninja/oauth-cli-coder",
-    "branch": "main",
-    "language": "Python",
-    "description": "Seamlessly interact with CLI coders (Claude, Gemini, Codex) via tmux TUI sessions."
-  },
-  {
-    "repo": "samber/cc-skills-golang",
-    "branch": "main",
-    "language": "Go",
-    "description": "🧑‍🎨 A collection of Golang agentic skills that works"
-  },
-  {
-    "repo": "livehl/aimirror",
-    "branch": "main",
-    "language": "Python",
-    "description": "🚀 200倍速！AI时代的下载神器 | Docker/PyPI/HuggingFace/CRAN 全加速 | 并行分片+智能缓存，让下载飞起来"
-  },
-  {
-    "repo": "trevin-creator/autoresearch-mlx",
-    "branch": "main",
-    "language": "Python",
-    "description": "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
-  },
-  {
-    "repo": "vigorX777/product-design-system",
-    "branch": "main",
-    "language": "HTML",
-    "description": "面向产品经理的 AI 辅助产品设计工作框架，可 fork 定制的通用产品设计系统"
-  },
-  {
-    "repo": "Kuberwastaken/claude-code",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code's Source Code & Breakdown from a leaked map file in their NPM registry"
-  },
-  {
-    "repo": "TheGreatGildo/nerv-ui",
-    "branch": "main",
-    "language": "HTML",
-    "description": "NERV Operations Console aesthetic for web interfaces — Evangelion-inspired instrumentation UI skill for Claude Code / OpenClaw"
-  },
-  {
-    "repo": "balancer/balancer-v2-monorepo",
+    "repo": "huangserva/claude-code-cli",
     "branch": "master",
     "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
+    "description": "这是 Claude Code 的 CLI 客户端主体（src/ 目录），即整个终端交互层的源码。具体包含： 1. CLI 入口与命令解析 — main.tsx（4684行）、entrypoints/（CLI 模式、SDK 模式、MCP 模式） 2. 终端 UI 渲染 — components/（144 个组件，用 React + Ink 渲染终端界面） 3. 工具系统 — tools/（43 个工具，Bash、文件读写编辑、Grep、Glob、Web 搜索等） 4. API 通信层 — services/api/（与 Anthropic 后端通信） 5. MCP 协议  6. 多 Agent/Team 协作 l 7. 认证与策略 8. 辅助服务 等"
   },
   {
-    "repo": "vercel/pkg",
+    "repo": "onecli/onecli",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Open-source credential vault, give your AI agents access to services without exposing keys."
+  },
+  {
+    "repo": "AtomicBot-ai/Atomic-Chat",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "m1heng/claude-plugin-weixin",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "owenshuo/open-bounty-radar",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Package your Node.js project into an executable"
+    "description": "CLI radar for discovering and monitoring paid open-source issues and bounty opportunities"
   },
   {
-    "repo": "software-mansion/react-native-reanimated",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "React Native's Animated library reimplemented"
-  },
-  {
-    "repo": "THUDM/ChatGLM-6B",
+    "repo": "0xSero/turboquant",
     "branch": "main",
     "language": "Python",
-    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
+    "description": "TurboQuant: Near-optimal KV cache quantization for LLM inference (3-bit keys, 2-bit values) with Triton kernels + vLLM integration"
   },
   {
-    "repo": "shenhao-stu/ohmycaptcha",
+    "repo": "jxnxts/mcp-brasil",
     "branch": "main",
     "language": "Python",
-    "description": "⚡ Self-hostable YesCaptcha-compatible captcha solver built with FastAPI, Playwright, and OpenAI-compatible multimodal models."
+    "description": "MCP Server para 27 APIs públicas brasileiras"
   },
   {
-    "repo": "tvytlx/claude-code-deep-dive",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code 源码深度研究报告"
-  },
-  {
-    "repo": "networkx/networkx",
-    "branch": "main",
-    "language": "Python",
-    "description": "Network Analysis in Python"
-  },
-  {
-    "repo": "imbue-bit/OpenClaw-PwnKit",
-    "branch": "main",
-    "language": "Python",
-    "description": "Get shell to almost any OpenClaw host machine."
-  },
-  {
-    "repo": "surrealdb/surrealdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web"
-  },
-  {
-    "repo": "0Voice/Expert_Readed_Books",
-    "branch": "master",
-    "language": "Other",
-    "description": "2021年最新总结，推荐工程师合适读本，计算机科学，软件技术，创业，思想类，数学类，人物传记书籍"
-  },
-  {
-    "repo": "NomicFoundation/hardhat",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software."
-  },
-  {
-    "repo": "moabukar/miniblue",
+    "repo": "larksuite/cli",
     "branch": "main",
     "language": "Go",
-    "description": "Local Azure development. One binary. No account needed. 20+ emulated services for testing, CI and local dev."
+    "description": "A command-line tool for Lark/Feishu Open Platform — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills."
   },
   {
-    "repo": "harrietteehisqu7759383/kms-pico-latest-april-2026",
+    "repo": "Justineo/working-with-ai",
     "branch": "main",
-    "language": "C#",
-    "description": "A secure, educational toolkit for understanding KMS activation, designed for lab environments."
+    "language": "HTML",
+    "description": "Working with AI - presentation slides"
+  },
+  {
+    "repo": "aaronjmars/MiroShark",
+    "branch": "main",
+    "language": "Python",
+    "description": "Universal Swarm Intelligence Engine"
+  },
+  {
+    "repo": "corespeed-io/wechatbot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "微信 iLink Bot SDK for OpenClaw/AI Agent"
+  },
+  {
+    "repo": "duriantaco/fyn",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Fyn is a privacy-first fork of uv for fast Python package management, dependency resolution, virtual environments, and pyproject.toml workflows."
+  },
+  {
+    "repo": "ahaodev/shadmin",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An Enterprise-Grade Full-Stack RBAC Permission Management System Built with Go + React"
+  },
+  {
+    "repo": "glommer/pgmicro",
+    "branch": "master",
+    "language": "Rust",
+    "description": "An in-process reimplementation of PostgreSQL, backed by a SQLite-compatible storage engine"
+  },
+  {
+    "repo": "Nahuel990/ministack",
+    "branch": "master",
+    "language": "Python",
+    "description": "Ministack: the free LocalStack replacement"
+  },
+  {
+    "repo": "dev-protocol/polymarket-arbitrage-trade-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot"
+  },
+  {
+    "repo": "nashsu/opencli-rs",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Opencli-rs is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl)"
+  },
+  {
+    "repo": "joeseesun/lennys-podcast-newsletter",
+    "branch": "main",
+    "language": "Python",
+    "description": "Lenny Rachitsky 播客与 Newsletter 知识库。搜索、阅读、学习 Lenny 的 638 篇内容（289 播客转录 + 349 篇 Newsletter）。 涵盖产品管理、增长、设计、工程、AI、创业、领导力等 17 个主题。 触发词：Lenny、Lenny's Newslet"
+  },
+  {
+    "repo": "lukasHoel/video_to_world",
+    "branch": "main",
+    "language": "Python",
+    "description": "Our method reconstructs 3D worlds from video diffusion models using non-rigid alignment to resolve inherent 3D inconsistencies in the generated sequences."
+  },
+  {
+    "repo": "ShawnPana/aurl",
+    "branch": "main",
+    "language": "Go",
+    "description": "A command line tool for turning any API into a CLI command, supporting OpenAPI 3.0, OpenAPI 3.1, Swagger 2.0, and GraphQL. aurl auto-detects authentication, validates requests against the spec, and generates documentation from introspection."
+  },
+  {
+    "repo": "ynsmroztas/AndroHunter",
+    "branch": "main",
+    "language": "Java",
+    "description": "AndroHunter"
+  },
+  {
+    "repo": "wong2/weixin-agent-sdk",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "infraform/polymarket-kalshi-arbitrage-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "kalshi-polymarket arbitrage bot, kalshi bot,  kalshi arbitrage bot, kalshi trading bot - detecting arb opportunity between two platforms (or in just kalshi market) and placing orders instantly, locking pnl || kalshi bot || arbitrage bot || trading bot || kalshi-polymarket arbitrage bot, kalshi bot, arbitrage bot, kalshi trading bot"
   }
 ]
