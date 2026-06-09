@@ -1,146 +1,146 @@
 [
   {
-    "repo": "avaco-cloud/Vercel-XHTTP",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "XHTTP relay for Xray/V2Ray on Vercel Edge — Complete Persian setup guide. Hide your origin server IP behind *.vercel.app"
-  },
-  {
-    "repo": "labstack/echo",
-    "branch": "master",
-    "language": "Go",
-    "description": "High performance, minimalist Go web framework"
-  },
-  {
-    "repo": "vercel/pkg",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Package your Node.js project into an executable"
-  },
-  {
-    "repo": "aio-libs/aiohttp",
-    "branch": "master",
-    "language": "Python",
-    "description": "Asynchronous HTTP client/server framework for asyncio and Python"
-  },
-  {
-    "repo": "psf/black",
+    "repo": "nekocode/filetree-skill",
     "branch": "main",
     "language": "Python",
-    "description": "The uncompromising Python code formatter"
+    "description": "A Claude Code plugin that maintains `FILETREE.md`."
   },
   {
-    "repo": "mrdoob/three.js",
-    "branch": "dev",
-    "language": "JavaScript",
-    "description": "JavaScript 3D Library."
-  },
-  {
-    "repo": "xiaguan/pegainfer",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Pure Rust + CUDA LLM inference engine"
-  },
-  {
-    "repo": "tendermint/tendermint",
-    "branch": "main",
-    "language": "Go",
-    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
-  },
-  {
-    "repo": "shadowsocks/shadowsocks-windows",
-    "branch": "master",
-    "language": "C#",
-    "description": "A C# port of shadowsocks"
-  },
-  {
-    "repo": "micronaut-projects/micronaut-core",
-    "branch": "4.3.x",
-    "language": "Java",
-    "description": "Micronaut Application Framework"
-  },
-  {
-    "repo": "chakra-ui/chakra-ui",
+    "repo": "SuperCmdLabs/SuperCmd",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
+    "description": "What Apple Intelligence should have been"
   },
   {
-    "repo": "encoredev/encore",
+    "repo": "earendil-works/gondolin",
     "branch": "main",
-    "language": "Go",
-    "description": "Open source framework for building robust type-safe distributed systems with declarative infrastructure"
-  },
-  {
-    "repo": "ipfs/js-ipfs",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "IPFS implementation in JavaScript"
-  },
-  {
-    "repo": "golangci/golangci-lint",
-    "branch": "master",
-    "language": "Go",
-    "description": "Fast linters runner for Go"
-  },
-  {
-    "repo": "CalyxOS/calyxos",
-    "branch": "main",
-    "language": "HTML",
-    "description": "CalyxOS - Google-free Android"
-  },
-  {
-    "repo": "operator-framework/operator-lifecycle-manager",
-    "branch": "master",
-    "language": "Go",
-    "description": "A management framework for extending Kubernetes with Operators"
-  },
-  {
-    "repo": "ant-design/ant-design",
-    "branch": "master",
     "language": "TypeScript",
-    "description": "An enterprise-class UI design language and React UI library"
+    "description": "Experimental Linux microvm setup with a TypeScript Control Plane"
   },
   {
-    "repo": "pallets/flask",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Python micro framework for building web applications."
-  },
-  {
-    "repo": "flairNLP/flair",
+    "repo": "gravitational/teleport",
     "branch": "master",
-    "language": "Python",
-    "description": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
+    "language": "Go",
+    "description": "The easiest, and most secure way to access and protect all of your infrastructure."
   },
   {
-    "repo": "tree-sitter/tree-sitter",
+    "repo": "datasciencemasters/go",
     "branch": "master",
-    "language": "Rust",
-    "description": "An incremental parsing system for programming tools"
-  },
-  {
-    "repo": "melonjs/melonJS",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "a fresh, modern & lightweight HTML5 game engine"
-  },
-  {
-    "repo": "LineageOS/android",
-    "branch": "lineage-21.0",
     "language": "Other",
-    "description": "Placeholder repository for LineageOS"
+    "description": "The Open Source Data Science Masters"
   },
   {
-    "repo": "google/ExoPlayer",
-    "branch": "release-v2",
+    "repo": "fspecii/HeartMuLa-Studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer"
+  },
+  {
+    "repo": "Uniswap/v3-core",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🦄 🦄 🦄 Core smart contracts of Uniswap v3"
+  },
+  {
+    "repo": "OWASP/CheatSheetSeries",
+    "branch": "master",
+    "language": "Python",
+    "description": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
+  },
+  {
+    "repo": "wenqingyu/ralphy-openspec",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Ralph loop + OpenSpec integration for Cursor, OpenCode and ClaudeCode heavy lifting."
+  },
+  {
+    "repo": "delta-io/delta",
+    "branch": "master",
+    "language": "Scala",
+    "description": "An open-source storage framework that enables building a Lakehouse architecture with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs"
+  },
+  {
+    "repo": "confluentinc/kafka-rest",
+    "branch": "master",
     "language": "Java",
-    "description": "This project is deprecated and stale. The latest ExoPlayer code is available in https://github.com/androidx/media"
+    "description": "Confluent REST Proxy for Kafka"
   },
   {
-    "repo": "jackc/pgx",
+    "repo": "fish-shell/fish-shell",
+    "branch": "master",
+    "language": "Rust",
+    "description": "The user-friendly command line shell."
+  },
+  {
+    "repo": "pointfreeco/swift-composable-architecture",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
+  },
+  {
+    "repo": "LeCoupa/awesome-cheatsheets",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "👩‍💻👨‍💻 Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file."
+  },
+  {
+    "repo": "pixijs/pixijs",
+    "branch": "dev",
+    "language": "TypeScript",
+    "description": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer."
+  },
+  {
+    "repo": "steven2358/awesome-generative-ai",
+    "branch": "main",
+    "language": "Other",
+    "description": "A curated list of modern Generative Artificial Intelligence projects and services"
+  },
+  {
+    "repo": "Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Real-time polymarket trading bot that combines monitoring with strategy logic for Polymarket's 15-minute prediction markets."
+  },
+  {
+    "repo": "github/hub",
     "branch": "master",
     "language": "Go",
-    "description": "PostgreSQL driver and toolkit for Go"
+    "description": "A command-line tool that makes git easier to use with GitHub."
+  },
+  {
+    "repo": "firewalld/firewalld",
+    "branch": "main",
+    "language": "Python",
+    "description": "Stateful zone based firewall daemon with D-Bus interface"
+  },
+  {
+    "repo": "seaweedfs/seaweedfs",
+    "branch": "master",
+    "language": "Go",
+    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, xDC replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding. Enterprise version is at seaweedfs.com."
+  },
+  {
+    "repo": "apple/swift-protobuf",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Plugin and runtime library for using protobuf with Swift"
+  },
+  {
+    "repo": "AThevon/TokenEater",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
+  },
+  {
+    "repo": "Blimp-Labs/claude-usage-bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
+  },
+  {
+    "repo": "nolenroyalty/yt-browse",
+    "branch": "main",
+    "language": "Go",
+    "description": "it's like search, but for youtube"
   }
 ]
