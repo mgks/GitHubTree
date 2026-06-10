@@ -1,146 +1,146 @@
 [
   {
-    "repo": "iampedii/WhiteDNS-Wizard",
-    "branch": "main",
-    "language": "Go",
-    "description": "Cloudflare-first WhiteDNS CLI/TUI for provisioning a managed 3x-ui/Xray VPN stack over SSH, with DNS, certificates, client import links, Tor-routed profiles, diagnostics, backups, and repair/reset flows."
-  },
-  {
-    "repo": "fluxcd/flux2",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
-  },
-  {
-    "repo": "geekjourneyx/jina-cli",
-    "branch": "main",
-    "language": "Go",
-    "description": "A lightweight CLI tool wrapping Jina AI Reader API for AI Agents. Fetch and parse any URL into LLM-friendly   formats (Markdown/Text/HTML). Perfect for reading X(Twitter), blogs, and news sites."
-  },
-  {
-    "repo": "kubernetes-sigs/metrics-server",
-    "branch": "master",
-    "language": "Go",
-    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
-  },
-  {
-    "repo": "actions/setup-python",
+    "repo": "jamiepine/voicebox",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Set up your GitHub Actions workflow with a specific version of Python"
+    "description": "The open-source voice synthesis studio powered by Qwen3-TTS."
   },
   {
-    "repo": "DangJin/pdf2video",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Transform PDF documents into engaging video presentations with smooth animations."
-  },
-  {
-    "repo": "https-deeplearning-ai/sc-agent-skills-files",
+    "repo": "martinez88668/MasterCryptoFarmBot",
     "branch": "main",
     "language": "Python",
+    "description": "MasterCryptoFarmBot CLI — Universal crypto farming bot manager with multi-bot orchestration, automated Telegram mini-app farming, session management, proxy support, scheduling system, Rich terminal dashboard, and one-click deployment for airdrop and DeFi yield farming"
+  },
+  {
+    "repo": "argoproj/argo-cd",
+    "branch": "master",
+    "language": "Go",
+    "description": "Declarative Continuous Deployment for Kubernetes"
+  },
+  {
+    "repo": "apache/arrow",
+    "branch": "main",
+    "language": "C++",
+    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+  },
+  {
+    "repo": "keras-team/keras",
+    "branch": "master",
+    "language": "Python",
+    "description": "Deep Learning for humans"
+  },
+  {
+    "repo": "primefaces/primereact",
+    "branch": "master",
+    "language": "CSS",
+    "description": "The Most Complete React UI Component Library"
+  },
+  {
+    "repo": "owenlejeune/ArrMatey",
+    "branch": "main",
+    "language": "Kotlin",
     "description": ""
   },
   {
-    "repo": "QwenLM/Qwen3-ASR",
+    "repo": "vaneenige/monochrome-ui",
     "branch": "main",
-    "language": "Python",
-    "description": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction."
+    "language": "TypeScript",
+    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
   },
   {
-    "repo": "paperjs/paper.js",
-    "branch": "develop",
+    "repo": "guidelabs/steerling",
+    "branch": "main",
+    "language": "Python",
+    "description": "Interpretable Causal Diffusion Language Models"
+  },
+  {
+    "repo": "extism/extism",
+    "branch": "main",
+    "language": "Rust",
+    "description": "The framework for building with WebAssembly (wasm). Easily & securely load wasm modules, move data, call functions, and build extensible apps."
+  },
+  {
+    "repo": "linlay/zenmind",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "宅在家里的电脑，努力做一个openclaw"
+  },
+  {
+    "repo": "xaskasdf/ntransformer",
+    "branch": "main",
+    "language": "C++",
+    "description": "High-efficiency LLM inference engine in C++/CUDA. Run Llama 70B on RTX 3090."
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
     "language": "JavaScript",
-    "description": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey"
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
   },
   {
-    "repo": "ory/hydra",
-    "branch": "master",
-    "language": "Go",
-    "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go."
-  },
-  {
-    "repo": "vapor/vapor",
+    "repo": "h5bp/html5-boilerplate",
     "branch": "main",
-    "language": "Swift",
-    "description": "💧 A server-side Swift HTTP web framework."
+    "language": "JavaScript",
+    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
   },
   {
-    "repo": "ReactiveX/RxJS",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A reactive programming library for JavaScript"
-  },
-  {
-    "repo": "paragonie/awesome-appsec",
-    "branch": "master",
-    "language": "PHP",
-    "description": "A curated list of resources for learning about application security"
-  },
-  {
-    "repo": "balancer/balancer-v2-monorepo",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
-  },
-  {
-    "repo": "wy51ai/moltbotCNAPP",
+    "repo": "goreleaser/goreleaser",
     "branch": "main",
     "language": "Go",
-    "description": ""
+    "description": "Release engineering, simplified"
   },
   {
-    "repo": "firebase/firebase-android-sdk",
-    "branch": "master",
-    "language": "Java",
-    "description": "Firebase Android SDK"
-  },
-  {
-    "repo": "terausss/15min-btc-polymarket-trading-bot",
+    "repo": "Rivflyyy/HappyTorch",
     "branch": "main",
-    "language": "Python",
-    "description": "15min btc polymarket arbitrage bot-polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+    "language": "Jupyter Notebook",
+    "description": "A PyTorch coding practice platform — covering LLM, Diffusion, PEFT, and more  A friendly environment to help you deeply understand deep learning components through hands-on practice.  Like LeetCode, but for tensors. Self-hosted. Supports both Jupyter and Web interfaces."
   },
   {
-    "repo": "TeamStuQ/skill-map",
-    "branch": "master",
-    "language": "HTML",
-    "description": "程序员技能图谱"
-  },
-  {
-    "repo": "nrwl/nx",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents."
-  },
-  {
-    "repo": "appsail/Gemini-in-Chrome",
-    "branch": "master",
+    "repo": "daniel3303/ClaudeCodeStatusLine",
+    "branch": "main",
     "language": "Shell",
     "description": ""
   },
   {
-    "repo": "playframework/playframework",
-    "branch": "main",
-    "language": "Scala",
-    "description": "The Community Maintained High Velocity Web Framework For Java and Scala."
+    "repo": "trekhleb/javascript-algorithms",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
   },
   {
-    "repo": "rome/tools",
+    "repo": "junevm/splathash",
+    "branch": "main",
+    "language": "Go",
+    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
+  },
+  {
+    "repo": "PanJiaChen/vue-element-admin",
+    "branch": "master",
+    "language": "Vue",
+    "description": ":tada: A magical vue admin                                                                https://panjiachen.github.io/vue-element-admin"
+  },
+  {
+    "repo": "d3/d3",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
+  },
+  {
+    "repo": "dev-protocol/polymarket-sports-trading-bot",
     "branch": "main",
     "language": "Rust",
-    "description": "Unified developer tools for JavaScript, TypeScript, and the web"
+    "description": "Polymarket Sports trading bot that bet on sport pool. polymarket sports trading | polymarket sport betting | polymarket sports bot"
   },
   {
-    "repo": "LedgerHQ/ledger-live",
-    "branch": "develop",
-    "language": "JavaScript",
-    "description": "Mono-repository for packages related to Ledger Live and its JavaScript ecosystem."
+    "repo": "donnemartin/system-design-primer",
+    "branch": "master",
+    "language": "Python",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards."
   },
   {
-    "repo": "jsdom/jsdom",
+    "repo": "btahir/react-kino",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A JavaScript implementation of various web standards, for use with Node.js"
+    "language": "TypeScript",
+    "description": "Cinematic scroll-driven storytelling for React"
   }
 ]
