@@ -1,146 +1,146 @@
 [
   {
-    "repo": "LeoYeAI/openclaw-master-skills",
+    "repo": "maaslalani/sheets",
+    "branch": "main",
+    "language": "Go",
+    "description": "Terminal based spreadsheet tool"
+  },
+  {
+    "repo": "scrapy/scrapy",
+    "branch": "master",
+    "language": "Python",
+    "description": "Scrapy, a fast high-level web crawling & scraping framework for Python."
+  },
+  {
+    "repo": "trufflesuite/truffle",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": ":warning: The Truffle Suite is being sunset. For information on ongoing support, migration options and FAQs, visit the Consensys blog. Thank you for all the support over the years."
+  },
+  {
+    "repo": "pytorch/pytorch",
     "branch": "main",
     "language": "Python",
-    "description": "🧠 Curated collection of 127+ best OpenClaw skills — weekly updated from skills.sh, GitHub & ClaWHub. Powered by MyClaw.ai"
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
   },
   {
-    "repo": "Binarylunanotice/blooket",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "blooket gui || blooket || blooket api"
-  },
-  {
-    "repo": "remotion-dev/remotion",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🎥      Make videos programmatically with React"
-  },
-  {
-    "repo": "junit-team/junit4",
-    "branch": "main",
+    "repo": "google/guava",
+    "branch": "master",
     "language": "Java",
-    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
+    "description": "Google core libraries for Java"
   },
   {
-    "repo": "kubernetes/client-go",
+    "repo": "supabase/supabase",
     "branch": "master",
-    "language": "Go",
-    "description": "Go client for Kubernetes."
+    "language": "TypeScript",
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications."
   },
   {
-    "repo": "surrealdb/surrealdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web"
-  },
-  {
-    "repo": "OpenMOSS/MOSS-TTS",
-    "branch": "main",
+    "repo": "pytest-dev/pytest-cov",
+    "branch": "master",
     "language": "Python",
-    "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    "description": "Coverage plugin for pytest."
   },
   {
-    "repo": "jkudish/librarium",
+    "repo": "koreader/koreader",
+    "branch": "master",
+    "language": "Lua",
+    "description": "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
+  },
+  {
+    "repo": "keepassxreboot/keepassxc",
+    "branch": "develop",
+    "language": "C++",
+    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
+  },
+  {
+    "repo": "microsoft/winget-pkgs",
+    "branch": "master",
+    "language": "PowerShell",
+    "description": "The Microsoft community Windows Package Manager manifest repository"
+  },
+  {
+    "repo": "formik/formik",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Multi-provider deep research CLI — fans out queries to multiple search/AI APIs in parallel"
+    "description": "Build forms in React, without the tears 😭"
   },
   {
-    "repo": "Pythagora-io/gpt-pilot",
-    "branch": "main",
-    "language": "Python",
-    "description": "The first real AI developer"
-  },
-  {
-    "repo": "apollographql/apollo-client",
-    "branch": "main",
+    "repo": "Uniswap/v2-core",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development."
+    "description": "🦄 🦄  Core smart contracts of Uniswap V2"
   },
   {
-    "repo": "bron1e/fnos-rce-chain",
+    "repo": "scikit-learn/scikit-learn",
     "branch": "main",
     "language": "Python",
-    "description": "飞牛系统（fnOS）远程代码执行链：认证绕过"
+    "description": "scikit-learn: machine learning in Python"
   },
   {
-    "repo": "itcaat/mtproto-installer",
+    "repo": "microsoft/wslg",
     "branch": "main",
-    "language": "Shell",
-    "description": "Ускоритель телеграм =)"
+    "language": "C++",
+    "description": "Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios"
   },
   {
-    "repo": "reinesana/Doomscroll-Skyrim-Edition",
-    "branch": "main",
+    "repo": "symfony/symfony",
+    "branch": "7.1",
+    "language": "PHP",
+    "description": "The Symfony PHP framework"
+  },
+  {
+    "repo": "home-assistant/core",
+    "branch": "dev",
     "language": "Python",
-    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
+    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
   },
   {
-    "repo": "google-gemini/generative-ai-swift",
-    "branch": "main",
-    "language": "Swift",
-    "description": "This SDK is now deprecated, use the unified Firebase SDK."
+    "repo": "micronaut-projects/micronaut-core",
+    "branch": "4.3.x",
+    "language": "Java",
+    "description": "Micronaut Application Framework"
   },
   {
-    "repo": "nepfaff/scenesmith",
-    "branch": "main",
+    "repo": "OpenZeppelin/openzeppelin-contracts",
+    "branch": "master",
+    "language": "Solidity",
+    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
+  },
+  {
+    "repo": "mlflow/mlflow",
+    "branch": "master",
     "language": "Python",
-    "description": "Code for SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes"
+    "description": "The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform."
   },
   {
-    "repo": "sliverp/qqbot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "qqbot"
-  },
-  {
-    "repo": "chef/chef",
-    "branch": "main",
-    "language": "Ruby",
-    "description": "Chef Infra, a powerful automation platform that transforms infrastructure into code automating how infrastructure is configured, deployed and managed across any environment, at any scale"
-  },
-  {
-    "repo": "AgriciDaniel/claude-seo",
-    "branch": "main",
+    "repo": "encode/httpx",
+    "branch": "master",
     "language": "Python",
-    "description": "Universal SEO skill for Claude Code. Comprehensive SEO analysis for any website or business type."
+    "description": "A next generation HTTP client for Python. 🦋"
   },
   {
-    "repo": "serverless/serverless",
+    "repo": "emotion-js/emotion",
     "branch": "main",
     "language": "JavaScript",
-    "description": "⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services."
+    "description": "👩‍🎤 CSS-in-JS library designed for high performance style composition"
   },
   {
-    "repo": "gravitational/teleport",
+    "repo": "square/retrofit",
     "branch": "master",
-    "language": "Go",
-    "description": "The easiest, and most secure way to access and protect all of your infrastructure."
+    "language": "HTML",
+    "description": "A type-safe HTTP client for Android and the JVM"
   },
   {
-    "repo": "yazinsai/quran-validator",
+    "repo": "nuxt/nuxt",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Validate and verify Quranic verses in LLM-generated text with high accuracy"
+    "description": "The Full-Stack Vue Framework."
   },
   {
-    "repo": "prometheus/node_exporter",
-    "branch": "master",
-    "language": "Go",
-    "description": "Exporter for machine metrics"
-  },
-  {
-    "repo": "gpasquero/voog",
+    "repo": "slidevjs/slidev",
     "branch": "main",
-    "language": "Python",
-    "description": "VOOG — Virtual Analog Synthesizer (Moog-style polyphonic synth with GUI)"
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-VL",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
+    "language": "TypeScript",
+    "description": "Presentation Slides for Developers"
   }
 ]
