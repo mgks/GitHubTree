@@ -1,146 +1,146 @@
 [
   {
-    "repo": "maaslalani/sheets",
-    "branch": "main",
+    "repo": "prometheus/node_exporter",
+    "branch": "master",
     "language": "Go",
-    "description": "Terminal based spreadsheet tool"
+    "description": "Exporter for machine metrics"
   },
   {
-    "repo": "scrapy/scrapy",
-    "branch": "master",
-    "language": "Python",
-    "description": "Scrapy, a fast high-level web crawling & scraping framework for Python."
-  },
-  {
-    "repo": "trufflesuite/truffle",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": ":warning: The Truffle Suite is being sunset. For information on ongoing support, migration options and FAQs, visit the Consensys blog. Thank you for all the support over the years."
-  },
-  {
-    "repo": "pytorch/pytorch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
-  },
-  {
-    "repo": "google/guava",
-    "branch": "master",
-    "language": "Java",
-    "description": "Google core libraries for Java"
-  },
-  {
-    "repo": "supabase/supabase",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications."
-  },
-  {
-    "repo": "pytest-dev/pytest-cov",
-    "branch": "master",
-    "language": "Python",
-    "description": "Coverage plugin for pytest."
-  },
-  {
-    "repo": "koreader/koreader",
-    "branch": "master",
-    "language": "Lua",
-    "description": "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
-  },
-  {
-    "repo": "keepassxreboot/keepassxc",
-    "branch": "develop",
-    "language": "C++",
-    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
-  },
-  {
-    "repo": "microsoft/winget-pkgs",
-    "branch": "master",
-    "language": "PowerShell",
-    "description": "The Microsoft community Windows Package Manager manifest repository"
-  },
-  {
-    "repo": "formik/formik",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Build forms in React, without the tears 😭"
-  },
-  {
-    "repo": "Uniswap/v2-core",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🦄 🦄  Core smart contracts of Uniswap V2"
-  },
-  {
-    "repo": "scikit-learn/scikit-learn",
-    "branch": "main",
-    "language": "Python",
-    "description": "scikit-learn: machine learning in Python"
-  },
-  {
-    "repo": "microsoft/wslg",
-    "branch": "main",
-    "language": "C++",
-    "description": "Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios"
-  },
-  {
-    "repo": "symfony/symfony",
-    "branch": "7.1",
-    "language": "PHP",
-    "description": "The Symfony PHP framework"
-  },
-  {
-    "repo": "home-assistant/core",
-    "branch": "dev",
-    "language": "Python",
-    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
-  },
-  {
-    "repo": "micronaut-projects/micronaut-core",
-    "branch": "4.3.x",
-    "language": "Java",
-    "description": "Micronaut Application Framework"
-  },
-  {
-    "repo": "OpenZeppelin/openzeppelin-contracts",
-    "branch": "master",
-    "language": "Solidity",
-    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
-  },
-  {
-    "repo": "mlflow/mlflow",
-    "branch": "master",
-    "language": "Python",
-    "description": "The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform."
-  },
-  {
-    "repo": "encode/httpx",
-    "branch": "master",
-    "language": "Python",
-    "description": "A next generation HTTP client for Python. 🦋"
-  },
-  {
-    "repo": "emotion-js/emotion",
+    "repo": "mumuyanjian-ui/caregiver",
     "branch": "main",
     "language": "JavaScript",
-    "description": "👩‍🎤 CSS-in-JS library designed for high performance style composition"
+    "description": "AI智能陪护"
   },
   {
-    "repo": "square/retrofit",
+    "repo": "rvm/rvm",
     "branch": "master",
-    "language": "HTML",
-    "description": "A type-safe HTTP client for Android and the JVM"
+    "language": "Shell",
+    "description": "Ruby enVironment Manager (RVM)"
   },
   {
-    "repo": "nuxt/nuxt",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Full-Stack Vue Framework."
+    "repo": "yarnpkg/yarn",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
   },
   {
-    "repo": "slidevjs/slidev",
+    "repo": "aquasecurity/trivy",
+    "branch": "main",
+    "language": "Go",
+    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+  },
+  {
+    "repo": "onevcat/Kingfisher",
+    "branch": "master",
+    "language": "Swift",
+    "description": "A lightweight, pure-Swift library for downloading and caching images from the web."
+  },
+  {
+    "repo": "quarkusio/quarkus",
+    "branch": "main",
+    "language": "Java",
+    "description": "Quarkus: Supersonic Subatomic Java."
+  },
+  {
+    "repo": "LadybirdBrowser/ladybird",
+    "branch": "master",
+    "language": "C++",
+    "description": "Truly independent web browser"
+  },
+  {
+    "repo": "30-seconds/30-seconds-of-code",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Coding articles to level up your development skills"
+  },
+  {
+    "repo": "OctoPrint/OctoPrint",
+    "branch": "master",
+    "language": "Python",
+    "description": "OctoPrint is the snappy web interface for your 3D printer!"
+  },
+  {
+    "repo": "electron-userland/electron-forge",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Presentation Slides for Developers"
+    "description": ":electron: A complete tool for building and publishing Electron applications"
+  },
+  {
+    "repo": "dandavison/delta",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+  },
+  {
+    "repo": "actions/virtual-environments",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "GitHub Actions runner images"
+  },
+  {
+    "repo": "netblue30/firejail",
+    "branch": "master",
+    "language": "C",
+    "description": "Linux namespaces and seccomp-bpf sandbox"
+  },
+  {
+    "repo": "vercel/ai",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents"
+  },
+  {
+    "repo": "tldraw/tldraw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "very good whiteboard infinite canvas SDK"
+  },
+  {
+    "repo": "espressif/arduino-esp32",
+    "branch": "master",
+    "language": "C++",
+    "description": "Arduino core for the ESP32"
+  },
+  {
+    "repo": "pyca/cryptography",
+    "branch": "main",
+    "language": "Python",
+    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
+  },
+  {
+    "repo": "fabricjs/fabric.js",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser"
+  },
+  {
+    "repo": "tendermint/tendermint",
+    "branch": "main",
+    "language": "Go",
+    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
+  },
+  {
+    "repo": "cloudflare/pingora",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A library for building fast, reliable and evolvable network services."
+  },
+  {
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "✨ A Markdown Editor"
+  },
+  {
+    "repo": "google/dopamine",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms."
+  },
+  {
+    "repo": "id-Software/DOOM",
+    "branch": "master",
+    "language": "C++",
+    "description": "DOOM Open Source Release"
   }
 ]

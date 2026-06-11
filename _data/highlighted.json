@@ -1,8 +1,8 @@
 {
-  "repo": "ForgetMeAI/FreeDeepseekAPI",
+  "repo": "myccarl/ai-shortVideo-pipeline",
   "branch": "main",
-  "language": "JavaScript",
-  "description": "Локальный API-прокси для DeepSeek Web Chat с поддержкой OpenAI/Anthropic API, streaming, tool calling, Responses API и Open WebUI",
-  "stars": 124,
-  "forks": 36
+  "language": "Python",
+  "description": "End-to-end AI short-video production pipeline. FastAPI orchestration + Spring Boot gateway with multi-model failover, circuit breaker, metering, and full-stack observability. AI quality gating: prompt anchoring, CLIP consistency, AV sync auto-rescue.",
+  "stars": 125,
+  "forks": 1
 }
