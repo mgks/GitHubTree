@@ -1,146 +1,146 @@
 [
   {
-    "repo": "prometheus/node_exporter",
-    "branch": "master",
-    "language": "Go",
-    "description": "Exporter for machine metrics"
-  },
-  {
-    "repo": "mumuyanjian-ui/caregiver",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "AI智能陪护"
-  },
-  {
-    "repo": "rvm/rvm",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Ruby enVironment Manager (RVM)"
-  },
-  {
-    "repo": "yarnpkg/yarn",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
-  },
-  {
-    "repo": "aquasecurity/trivy",
+    "repo": "anchore/grype",
     "branch": "main",
     "language": "Go",
-    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+    "description": "A vulnerability scanner for container images and filesystems"
   },
   {
-    "repo": "onevcat/Kingfisher",
-    "branch": "master",
-    "language": "Swift",
-    "description": "A lightweight, pure-Swift library for downloading and caching images from the web."
-  },
-  {
-    "repo": "quarkusio/quarkus",
+    "repo": "dair-ai/ML-YouTube-Courses",
     "branch": "main",
-    "language": "Java",
-    "description": "Quarkus: Supersonic Subatomic Java."
+    "language": "Other",
+    "description": "📺 Discover the latest machine learning / AI courses on YouTube."
   },
   {
-    "repo": "LadybirdBrowser/ladybird",
-    "branch": "master",
-    "language": "C++",
-    "description": "Truly independent web browser"
-  },
-  {
-    "repo": "30-seconds/30-seconds-of-code",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Coding articles to level up your development skills"
-  },
-  {
-    "repo": "OctoPrint/OctoPrint",
-    "branch": "master",
-    "language": "Python",
-    "description": "OctoPrint is the snappy web interface for your 3D printer!"
-  },
-  {
-    "repo": "electron-userland/electron-forge",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ":electron: A complete tool for building and publishing Electron applications"
-  },
-  {
-    "repo": "dandavison/delta",
+    "repo": "tanaer/WindowsClear",
     "branch": "main",
     "language": "Rust",
-    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+    "description": "Windows C盘清理工具/C盘瘦身工具，还你Appdata的大量硬盘空间 | Windows System disk cleanup, returning a large amount of hard drive space from your Appdata"
   },
   {
-    "repo": "actions/virtual-environments",
+    "repo": "maaslalani/sheets",
     "branch": "main",
-    "language": "PowerShell",
-    "description": "GitHub Actions runner images"
+    "language": "Go",
+    "description": "Terminal based spreadsheet tool"
   },
   {
-    "repo": "netblue30/firejail",
+    "repo": "Prismer-AI/Prismer",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Source OpenAI Prism Alternative"
+  },
+  {
+    "repo": "phuryn/pm-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "PM Skills Marketplace: An AI Operating System for Better Product Decisions. 65 PM skills and 36 chained workflows across 8 plugins — from discovery to strategy, execution, launch, and growth."
+  },
+  {
+    "repo": "coredns/coredns",
     "branch": "master",
+    "language": "Go",
+    "description": "CoreDNS is a DNS server that chains plugins"
+  },
+  {
+    "repo": "op7418/Video-Wrapper-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "为访谈视频添加综艺风格视觉特效的 Claude Skill。AI 分析字幕内容生成建议，用户审批后自动渲染，支持 4 种视觉主题。"
+  },
+  {
+    "repo": "joeseesun/word-root-workshop",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "📚 词根词缀记忆工坊 - 像搭积木一样记单词，掌握300个词根，解锁30,000+英语单词"
+  },
+  {
+    "repo": "arrow-kt/arrow",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
+  },
+  {
+    "repo": "virattt/ai-hedge-fund",
+    "branch": "main",
+    "language": "Python",
+    "description": "An AI Hedge Fund Team"
+  },
+  {
+    "repo": "antirez/qwen-asr",
+    "branch": "main",
     "language": "C",
-    "description": "Linux namespaces and seccomp-bpf sandbox"
+    "description": "C inference for Qwen3-ASR 0.6b and 1.7b transcriptions models"
   },
   {
-    "repo": "vercel/ai",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents"
-  },
-  {
-    "repo": "tldraw/tldraw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "very good whiteboard infinite canvas SDK"
-  },
-  {
-    "repo": "espressif/arduino-esp32",
-    "branch": "master",
-    "language": "C++",
-    "description": "Arduino core for the ESP32"
-  },
-  {
-    "repo": "pyca/cryptography",
+    "repo": "ultralytics/ultralytics",
     "branch": "main",
     "language": "Python",
-    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
+    "description": "Ultralytics YOLO 🚀"
   },
   {
-    "repo": "fabricjs/fabric.js",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser"
-  },
-  {
-    "repo": "tendermint/tendermint",
-    "branch": "main",
-    "language": "Go",
-    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
-  },
-  {
-    "repo": "cloudflare/pingora",
+    "repo": "vignesh07/babyshark",
     "branch": "main",
     "language": "Rust",
-    "description": "A library for building fast, reliable and evolvable network services."
+    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
   },
   {
-    "repo": "Tencent/cherry-markdown",
+    "repo": "Anduin2017/HowToCook",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only)."
+  },
+  {
+    "repo": "actions/setup-node",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Set up your GitHub Actions workflow with a specific version of node.js"
+  },
+  {
+    "repo": "FlowiseAI/Flowise",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Build AI Agents, Visually"
+  },
+  {
+    "repo": "RevylAI/greenlight",
+    "branch": "main",
+    "language": "Go",
+    "description": "Pre-submission compliance scanner for the Apple App Store"
+  },
+  {
+    "repo": "gogs/gogs",
+    "branch": "main",
+    "language": "Go",
+    "description": "Gogs is a painless self-hosted Git service"
+  },
+  {
+    "repo": "requestsession/IndexGPT",
     "branch": "main",
     "language": "JavaScript",
-    "description": "✨ A Markdown Editor"
+    "description": "IndexGPT: 本地科研助手（RAG + SFT + LoRA）| Local research assistant for PDF parsing, retrieval QA, SFT data generation, and LoRA training."
   },
   {
-    "repo": "google/dopamine",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms."
+    "repo": "linkerd/linkerd2",
+    "branch": "main",
+    "language": "Go",
+    "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x."
   },
   {
-    "repo": "id-Software/DOOM",
-    "branch": "master",
-    "language": "C++",
-    "description": "DOOM Open Source Release"
+    "repo": "fspecii/ace-step-ui",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 AI Music Generation. Free, local, unlimited. Stop paying for Suno!"
+  },
+  {
+    "repo": "hashicorp/consul",
+    "branch": "main",
+    "language": "Go",
+    "description": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure."
+  },
+  {
+    "repo": "raspberrypi/linux",
+    "branch": "rpi-6.6.y",
+    "language": "C",
+    "description": "Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/"
   }
 ]
