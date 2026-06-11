@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ngrx/platform",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Reactive State for Angular"
-  },
-  {
-    "repo": "CylinderChairman/aida64",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "aida64 unlocker extreme edition"
-  },
-  {
-    "repo": "3-JonWallis1993/HyperLiquid-Claw",
+    "repo": "anthropics/claudes-c-compiler",
     "branch": "main",
     "language": "Rust",
-    "description": ""
+    "description": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel."
   },
   {
-    "repo": "DegenSugarBoo/OpenBook",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Real-time Crypto Futures depth heatmap in Rust (egui/eframe) with live order flow and trade tape."
-  },
-  {
-    "repo": "Gentleatvice/seed-phrase-recover-BTC-ETH",
-    "branch": "main",
-    "language": "Rust",
-    "description": ""
-  },
-  {
-    "repo": "sqlalchemy/alembic",
-    "branch": "main",
-    "language": "Python",
-    "description": "A database migrations tool for SQLAlchemy."
-  },
-  {
-    "repo": "charonviz/text2geo",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "NVIDIA/cuda-samples",
-    "branch": "master",
-    "language": "C",
-    "description": "Samples for CUDA Developers which demonstrates features in CUDA Toolkit"
-  },
-  {
-    "repo": "androidx/media",
-    "branch": "main",
-    "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
-  },
-  {
-    "repo": "burpheart/cursor-tap",
+    "repo": "cri-o/cri-o",
     "branch": "main",
     "language": "Go",
-    "description": "Cursor gRPC 通信流量分析工具"
+    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
   },
   {
-    "repo": "Gen-Verse/OpenClaw-RL",
+    "repo": "torproject/tor",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "OpenClaw-RL: Personalize openclaw simply by talking to it"
-  },
-  {
-    "repo": "software-mansion/react-native-gesture-handler",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Declarative API exposing platform native touch and gesture system to React Native."
-  },
-  {
-    "repo": "redis/hiredis",
-    "branch": "master",
-    "language": "C",
-    "description": "Minimalistic C client for Redis >= 1.2"
-  },
-  {
-    "repo": "jaywcjlove/awesome-mac",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": " Now we have become very big, Different from the original idea. Collect premium software in various categories."
-  },
-  {
-    "repo": "redux-saga/redux-saga",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "An alternative side effect model for Redux apps"
-  },
-  {
-    "repo": "veggiemonk/awesome-docker",
-    "branch": "master",
     "language": "Other",
-    "description": ":whale: A curated list of Docker resources and projects"
+    "description": "unofficial git repo -- report bugs/issues/pull requests on https://gitlab.torproject.org/ --"
   },
   {
-    "repo": "ramitsurana/awesome-kubernetes",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A curated list for awesome kubernetes sources :ship::tada:"
-  },
-  {
-    "repo": "Lissy93/awesome-privacy",
+    "repo": "zkSync-Community-Hub/zksync-developers",
     "branch": "main",
-    "language": "Astro",
-    "description": "🦄  A curated list of privacy & security-focused software and services"
-  },
-  {
-    "repo": "timescale/timescaledb",
-    "branch": "main",
-    "language": "C",
-    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension"
-  },
-  {
-    "repo": "binhnguyennus/awesome-scalability",
-    "branch": "master",
     "language": "Other",
-    "description": "The Patterns of Scalable, Reliable, and Performant Large-Scale Systems"
+    "description": "Discussions and Support for the ZKsync Developer Community."
   },
   {
-    "repo": "MariaDB/server",
-    "branch": "11.4",
-    "language": "C++",
-    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry."
+    "repo": "element-hq/element-ios",
+    "branch": "develop",
+    "language": "Swift",
+    "description": "A glossy Matrix collaboration client for iOS"
   },
   {
-    "repo": "vllm-project/aibrix",
+    "repo": "code-yeongyu/not-claude-code-emulator",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "ULTRA DANGEROUS CLAUDE CODE EMULATOR; MAKING THE API REQUEST IDENTICAL TO CLAUDE CODE"
+  },
+  {
+    "repo": "opentofu/opentofu",
     "branch": "main",
     "language": "Go",
-    "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
+    "description": "OpenTofu lets you declaratively manage your cloud infrastructure."
   },
   {
-    "repo": "actions/runner-images",
+    "repo": "nats-io/nats.go",
     "branch": "main",
-    "language": "PowerShell",
-    "description": "GitHub Actions runner images"
+    "language": "Go",
+    "description": "Golang client for NATS, the cloud native messaging system."
   },
   {
-    "repo": "mage-ai/mage-ai",
-    "branch": "master",
+    "repo": "1837620622/cloudflare-bypass-2026",
+    "branch": "main",
     "language": "Python",
-    "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data."
+    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
+  },
+  {
+    "repo": "software-mansion/react-native-screens",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Native navigation primitives for your React Native app."
+  },
+  {
+    "repo": "ramsey/uuid",
+    "branch": "4.7",
+    "language": "PHP",
+    "description": ":snowflake: A PHP library for generating universally unique identifiers (UUIDs)."
+  },
+  {
+    "repo": "ReactiveX/RxSwift",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Reactive Programming in Swift"
+  },
+  {
+    "repo": "pypa/setuptools",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official project repository for the Setuptools build system"
+  },
+  {
+    "repo": "go-kit/kit",
+    "branch": "master",
+    "language": "Go",
+    "description": "A standard library for microservices."
+  },
+  {
+    "repo": "ethereum-optimism/optimism",
+    "branch": "develop",
+    "language": "Go",
+    "description": "Optimism is Ethereum, scaled."
+  },
+  {
+    "repo": "openai/glide-text2im",
+    "branch": "main",
+    "language": "Python",
+    "description": "GLIDE: a diffusion-based text-conditional image synthesis model"
+  },
+  {
+    "repo": "certbot/certbot",
+    "branch": "main",
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+  },
+  {
+    "repo": "elastic/beats",
+    "branch": "main",
+    "language": "Go",
+    "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash"
+  },
+  {
+    "repo": "qinwf/awesome-R",
+    "branch": "master",
+    "language": "R",
+    "description": "A curated list of awesome R packages, frameworks and software."
+  },
+  {
+    "repo": "mayfer/electrobun-macos-native-blur",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Enable background blur like a native app in Electrobun"
+  },
+  {
+    "repo": "anchore/syft",
+    "branch": "main",
+    "language": "Go",
+    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
+  },
+  {
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "facebook/create-react-app",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Set up a modern web app by running one command."
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "language": "Python",
+    "description": "A fast multimodal LLM for real-time voice"
   }
 ]
