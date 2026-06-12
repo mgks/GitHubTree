@@ -1,87 +1,81 @@
 [
   {
-    "repo": "Justi1980/Dawn-Validator-BOT",
+    "repo": "fasheartheater1853/kmspico-lol-2026",
+    "branch": "main",
+    "language": "C++",
+    "description": "A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance."
+  },
+  {
+    "repo": "Infatoshi/metal-mc-terrain",
+    "branch": "main",
+    "language": "Objective-C",
+    "description": "Native Metal terrain renderer for Minecraft 1.16.5 on Apple Silicon. 10x FPS by replacing macOS OpenGL with Metal."
+  },
+  {
+    "repo": "SamNet-dev/dnstm-setup",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Interactive setup wizard for dnstm — automated DNS-based network configuration"
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "pandas-dev/pandas",
     "branch": "main",
     "language": "Python",
-    "description": "Dawn Validator BOT — Automated node validation bot for Dawn Protocol testnet with multi-account support, proxy rotation, validator registration, keepalive pings, reward tracking, and Rich CLI interface for decentralized bandwidth network participation"
+    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
   },
   {
-    "repo": "matteyeux/coruna",
+    "repo": "animate-css/animate.css",
     "branch": "main",
-    "language": "Python",
-    "description": "deobfuscated JS and blobs from https://b27[.]icu, first attempt at using claude"
+    "language": "CSS",
+    "description": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
   },
   {
-    "repo": "godotengine/godot-docs",
+    "repo": "taf2/mdvi",
     "branch": "master",
-    "language": "reStructuredText",
-    "description": "Godot Engine official documentation"
+    "language": "Rust",
+    "description": "cli based Markdown viewer"
   },
   {
-    "repo": "stedolan/jq",
+    "repo": "tikv/tikv",
     "branch": "master",
-    "language": "C",
-    "description": "Command-line JSON processor"
+    "language": "Rust",
+    "description": "Distributed transactional key-value database, originally created to complement TiDB"
   },
   {
-    "repo": "go-sql-driver/mysql",
+    "repo": "golang-standards/project-layout",
+    "branch": "master",
+    "language": "Makefile",
+    "description": "Standard Go Project Layout"
+  },
+  {
+    "repo": "operator-framework/operator-sdk",
     "branch": "master",
     "language": "Go",
-    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
+    "description": "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding."
   },
   {
-    "repo": "wandb/wandb",
+    "repo": "google/styleguide",
+    "branch": "gh-pages",
+    "language": "HTML",
+    "description": "Style guides for Google-originated open-source projects"
+  },
+  {
+    "repo": "OpenBMB/ChatDev",
     "branch": "main",
     "language": "Python",
-    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
+    "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration"
   },
   {
-    "repo": "depthsecurity/RelayKing-Depth",
-    "branch": "master",
-    "language": "Python",
-    "description": "Dominate the domain. Relay to royalty."
-  },
-  {
-    "repo": "tox-dev/tox",
-    "branch": "main",
-    "language": "Python",
-    "description": "Command line driven CI frontend and development task automation tool."
-  },
-  {
-    "repo": "umijs/umi",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A framework in react community ✨"
-  },
-  {
-    "repo": "karpathy/nanoGPT",
-    "branch": "master",
-    "language": "Python",
-    "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
-  },
-  {
-    "repo": "microsoft/TypeScript",
+    "repo": "owengretzinger/constellagent",
     "branch": "main",
     "language": "TypeScript",
-    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output."
-  },
-  {
-    "repo": "mrdoob/three.js",
-    "branch": "dev",
-    "language": "JavaScript",
-    "description": "JavaScript 3D Library."
-  },
-  {
-    "repo": "Alamofire/Alamofire",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Elegant HTTP Networking in Swift"
-  },
-  {
-    "repo": "Robbyant/lingbot-va",
-    "branch": "main",
-    "language": "Python",
-    "description": "Causal video-action world model for generalist robot control"
+    "description": "Desktop app for running multiple AI agents in parallel. Each agent gets its own terminal, editor, and git worktree, all in one window."
   },
   {
     "repo": "zachlatta/freeflow",
@@ -90,57 +84,63 @@
     "description": "Free and open source alternative to Wispr Flow / Superwhisper / Monologue / etc"
   },
   {
-    "repo": "DovAmir/awesome-design-patterns",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of software and architecture related design patterns."
-  },
-  {
-    "repo": "vitejs/vite",
+    "repo": "freeCodeCamp/freeCodeCamp",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Next generation frontend tooling. It's fast!"
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "rawwerks/ypi",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A recursive coding agent inpired by RLMs"
-  },
-  {
-    "repo": "mayfer/electrobun-macos-native-blur",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Enable background blur like a native app in Electrobun"
-  },
-  {
-    "repo": "torvalds/linux",
-    "branch": "master",
-    "language": "C",
-    "description": "Linux kernel source tree"
-  },
-  {
-    "repo": "facebook/jest",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Delightful JavaScript Testing."
-  },
-  {
-    "repo": "mimurchison/claude-chief-of-staff",
-    "branch": "main",
-    "language": "Shell",
-    "description": "AI Chief of Staff — Your personal AI operating system built on Claude Code"
-  },
-  {
-    "repo": "zoontek/react-native-bootsplash",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🚀 Show a splash screen during app startup. Hide it when you are ready."
-  },
-  {
-    "repo": "https-deeplearning-ai/sc-agent-skills-files",
+    "repo": "HKUDS/FastCode",
     "branch": "main",
     "language": "Python",
+    "description": "FastCode: Accelerating and Streamlining Your Code Understanding"
+  },
+  {
+    "repo": "iamzifei/bookmark-is-learned",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "收藏到就是学到，解决光收藏不看的问题。收藏的当下立刻学习或者丢弃"
+  },
+  {
+    "repo": "honnibal/claude-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude skills I'm experimenting with. Please review carefully before use."
+  },
+  {
+    "repo": "iltekin/remove-local-temu",
+    "branch": "main",
+    "language": "JavaScript",
     "description": ""
+  },
+  {
+    "repo": "joeseesun/word-root-workshop",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "📚 词根词缀记忆工坊 - 像搭积木一样记单词，掌握300个词根，解锁30,000+英语单词"
+  },
+  {
+    "repo": "sanic-org/sanic",
+    "branch": "main",
+    "language": "Python",
+    "description": "Accelerate your web app development  | Build fast. Run fast."
+  },
+  {
+    "repo": "RightNow-AI/picolm",
+    "branch": "main",
+    "language": "C",
+    "description": "Run a 1-billion parameter LLM on a $10 board with 256MB RAM"
+  },
+  {
+    "repo": "tnm/zclaw",
+    "branch": "main",
+    "language": "C",
+    "description": "Your personal AI assistant in under 888 KB, running on an ESP32"
+  },
+  {
+    "repo": "spring-projects/spring-security",
+    "branch": "main",
+    "language": "Java",
+    "description": "Spring Security"
   }
 ]
