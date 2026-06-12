@@ -1,99 +1,27 @@
 [
   {
-    "repo": "anthropics/claudes-c-compiler",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel."
-  },
-  {
-    "repo": "cri-o/cri-o",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
-  },
-  {
-    "repo": "torproject/tor",
-    "branch": "main",
-    "language": "Other",
-    "description": "unofficial git repo -- report bugs/issues/pull requests on https://gitlab.torproject.org/ --"
-  },
-  {
-    "repo": "zkSync-Community-Hub/zksync-developers",
-    "branch": "main",
-    "language": "Other",
-    "description": "Discussions and Support for the ZKsync Developer Community."
-  },
-  {
-    "repo": "element-hq/element-ios",
-    "branch": "develop",
-    "language": "Swift",
-    "description": "A glossy Matrix collaboration client for iOS"
-  },
-  {
-    "repo": "code-yeongyu/not-claude-code-emulator",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "ULTRA DANGEROUS CLAUDE CODE EMULATOR; MAKING THE API REQUEST IDENTICAL TO CLAUDE CODE"
-  },
-  {
-    "repo": "opentofu/opentofu",
-    "branch": "main",
-    "language": "Go",
-    "description": "OpenTofu lets you declaratively manage your cloud infrastructure."
-  },
-  {
-    "repo": "nats-io/nats.go",
-    "branch": "main",
-    "language": "Go",
-    "description": "Golang client for NATS, the cloud native messaging system."
-  },
-  {
-    "repo": "1837620622/cloudflare-bypass-2026",
-    "branch": "main",
-    "language": "Python",
-    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
-  },
-  {
-    "repo": "software-mansion/react-native-screens",
+    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Native navigation primitives for your React Native app."
+    "description": "polymarket arbitrage trading bot"
   },
   {
-    "repo": "ramsey/uuid",
-    "branch": "4.7",
-    "language": "PHP",
-    "description": ":snowflake: A PHP library for generating universally unique identifiers (UUIDs)."
-  },
-  {
-    "repo": "ReactiveX/RxSwift",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Reactive Programming in Swift"
-  },
-  {
-    "repo": "pypa/setuptools",
-    "branch": "main",
+    "repo": "ShandaAI/AlayaRenderer",
+    "branch": "master",
     "language": "Python",
-    "description": "Official project repository for the Setuptools build system"
+    "description": "Generative World Renderer"
   },
   {
-    "repo": "go-kit/kit",
+    "repo": "github/hub",
     "branch": "master",
     "language": "Go",
-    "description": "A standard library for microservices."
+    "description": "A command-line tool that makes git easier to use with GitHub."
   },
   {
-    "repo": "ethereum-optimism/optimism",
-    "branch": "develop",
-    "language": "Go",
-    "description": "Optimism is Ethereum, scaled."
-  },
-  {
-    "repo": "openai/glide-text2im",
+    "repo": "openai/sora-prompt-engineering-guide",
     "branch": "main",
-    "language": "Python",
-    "description": "GLIDE: a diffusion-based text-conditional image synthesis model"
+    "language": "Other",
+    "description": "Guide for prompt engineering for video generation with Sora."
   },
   {
     "repo": "certbot/certbot",
@@ -102,45 +30,117 @@
     "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
   },
   {
-    "repo": "elastic/beats",
+    "repo": "microsoft/onnxruntime",
     "branch": "main",
-    "language": "Go",
-    "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash"
+    "language": "C++",
+    "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
   },
   {
-    "repo": "qinwf/awesome-R",
+    "repo": "phpmyadmin/phpmyadmin",
     "branch": "master",
-    "language": "R",
-    "description": "A curated list of awesome R packages, frameworks and software."
+    "language": "PHP",
+    "description": "A web interface for MySQL and MariaDB"
   },
   {
-    "repo": "mayfer/electrobun-macos-native-blur",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Enable background blur like a native app in Electrobun"
+    "repo": "tauri-apps/tauri",
+    "branch": "dev",
+    "language": "Rust",
+    "description": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend."
   },
   {
-    "repo": "anchore/syft",
-    "branch": "main",
-    "language": "Go",
-    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
-  },
-  {
-    "repo": "vuejs/vue",
+    "repo": "prisma/prisma",
     "branch": "main",
     "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB"
   },
   {
-    "repo": "facebook/create-react-app",
+    "repo": "docker/compose",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Set up a modern web app by running one command."
+    "language": "Go",
+    "description": "Define and run multi-container applications with Docker"
   },
   {
-    "repo": "Fixie-ai/Ultravox",
+    "repo": "ggerganov/llama.cpp",
+    "branch": "master",
+    "language": "C++",
+    "description": "LLM inference in C/C++"
+  },
+  {
+    "repo": "home-assistant/core",
+    "branch": "dev",
+    "language": "Python",
+    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
+  },
+  {
+    "repo": "EbookFoundation/free-programming-books",
     "branch": "main",
     "language": "Python",
-    "description": "A fast multimodal LLM for real-time voice"
+    "description": ":books: Freely available programming books"
+  },
+  {
+    "repo": "axios/axios",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Promise based HTTP client for the browser and node.js"
+  },
+  {
+    "repo": "bevyengine/bevy",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A refreshingly simple data-driven game engine built in Rust"
+  },
+  {
+    "repo": "donnemartin/system-design-primer",
+    "branch": "master",
+    "language": "Python",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards."
+  },
+  {
+    "repo": "Resinat/Resin",
+    "branch": "master",
+    "language": "Go",
+    "description": "A high-performance proxy pool gateway. Turn massive proxy subscriptions into a stable, smart, and observable network with sticky sessions."
+  },
+  {
+    "repo": "gitleaks/gitleaks",
+    "branch": "master",
+    "language": "Go",
+    "description": "Find secrets with Gitleaks 🔑"
+  },
+  {
+    "repo": "1Panel-dev/MaxKB",
+    "branch": "main",
+    "language": "Python",
+    "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。"
+  },
+  {
+    "repo": "Tencent/wepy",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "小程序组件化开发框架"
+  },
+  {
+    "repo": "planetscale/database-skills",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Skills for AI agents working with databases"
+  },
+  {
+    "repo": "LedgerHQ/ledger-live",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "Mono-repository for packages related to Ledger Live and its JavaScript ecosystem."
+  },
+  {
+    "repo": "ComposioHQ/secure-openclaw",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps."
+  },
+  {
+    "repo": "guzzle/guzzle",
+    "branch": "master",
+    "language": "PHP",
+    "description": "Guzzle, an extensible PHP HTTP client"
   }
 ]
