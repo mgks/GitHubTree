@@ -1,146 +1,146 @@
 [
   {
-    "repo": "nats-io/nats-server",
+    "repo": "silships/figma-cli",
     "branch": "main",
-    "language": "Go",
-    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
+    "language": "JavaScript",
+    "description": ""
   },
   {
-    "repo": "Thiago-code-lab/aws-certified-solutions-architect-associate-brasil",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Repositório com recursos em Português (PT-BR) para estudos da certificação AWS Certified Solutions Architect - Associate (SAA-C03)"
-  },
-  {
-    "repo": "D1a0y1bb/CloverSec-CTF-Build-Dockerizer-skill",
+    "repo": "fancyai-official/skills",
     "branch": "main",
     "language": "Python",
-    "description": "四叶草安全-创研中心竞赛专用题目容器构建Skills，面向 CTF Jeopardy 的容器交付引擎：自动探测栈、生成合规题目镜像构建文件、执行规则校验并给出可修复建议，实现标准化工作流程的质量对齐。"
+    "description": ""
   },
   {
-    "repo": "gvisor/gvisor",
-    "branch": "master",
-    "language": "Other",
-    "description": "Application Kernel for Containers."
+    "repo": "soloterm/screen",
+    "branch": "main",
+    "language": "PHP",
+    "description": "A terminal renderer written in pure PHP."
   },
   {
-    "repo": "timuronlinq/messari-crack",
+    "repo": "python-pillow/Pillow",
     "branch": "main",
     "language": "Python",
-    "description": "Messari crack"
+    "description": "Python Imaging Library (Fork)"
   },
   {
-    "repo": "pocketbase/pocketbase",
+    "repo": "expressjs/express",
     "branch": "master",
-    "language": "Go",
-    "description": "Open Source realtime backend in 1 file"
+    "language": "JavaScript",
+    "description": "Fast, unopinionated, minimalist web framework for node."
   },
   {
-    "repo": "ahmetb/kubectx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Faster way to switch between clusters and namespaces in kubectl"
-  },
-  {
-    "repo": "DovAmir/awesome-design-patterns",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of software and architecture related design patterns."
-  },
-  {
-    "repo": "lance0/xfr",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A modern iperf3 alternative with a live TUI, multi-client server, and QUIC support. Built in Rust."
-  },
-  {
-    "repo": "bregman-arie/devops-exercises",
-    "branch": "master",
-    "language": "Python",
-    "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions"
-  },
-  {
-    "repo": "Dataherald/dataherald",
-    "branch": "main",
-    "language": "Python",
-    "description": "Interact with your SQL database, Natural Language to SQL using LLMs"
-  },
-  {
-    "repo": "cube-js/cube",
-    "branch": "master",
-    "language": "Rust",
-    "description": "📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics"
-  },
-  {
-    "repo": "anthropics/claudes-c-compiler",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel."
-  },
-  {
-    "repo": "flutter/flutter",
-    "branch": "master",
-    "language": "Dart",
-    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
-  },
-  {
-    "repo": "nanostores/nanostores",
-    "branch": "main",
+    "repo": "getsentry/sentry-javascript",
+    "branch": "develop",
     "language": "TypeScript",
-    "description": "A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores"
+    "description": "Official Sentry SDKs for JavaScript"
   },
   {
-    "repo": "jnv/lists",
-    "branch": "master",
-    "language": "Other",
-    "description": "The definitive list of lists (of lists) curated on GitHub and elsewhere"
-  },
-  {
-    "repo": "josephmisiti/awesome-machine-learning",
-    "branch": "master",
-    "language": "Python",
-    "description": "A curated list of awesome Machine Learning frameworks, libraries and software."
-  },
-  {
-    "repo": "boostorg/boost",
+    "repo": "square/retrofit",
     "branch": "master",
     "language": "HTML",
-    "description": "Super-project for modularized Boost"
+    "description": "A type-safe HTTP client for Android and the JVM"
   },
   {
-    "repo": "ryanmcdermott/clean-code-javascript",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Clean Code concepts adapted for JavaScript"
+    "repo": "mermaid-js/mermaid",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
   },
   {
-    "repo": "dgreenheck/webgpu-claude-skill",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A Claude skill for developing WebGPU applications with Three.js"
-  },
-  {
-    "repo": "terausss/polymarket-copy-trading-bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "polymarket bot polymarket bot polymarket bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot"
-  },
-  {
-    "repo": "enaqx/awesome-react",
+    "repo": "996icu/996.ICU",
     "branch": "master",
     "language": "Other",
-    "description": "A collection of awesome things regarding React ecosystem"
+    "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
   },
   {
-    "repo": "tinygo-org/tinygo",
-    "branch": "release",
-    "language": "Go",
-    "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM."
+    "repo": "sympy/sympy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A computer algebra system written in pure Python"
   },
   {
-    "repo": "opencontainers/runc",
+    "repo": "tox-dev/tox",
     "branch": "main",
-    "language": "Go",
-    "description": "CLI tool for spawning and running containers according to the OCI specification"
+    "language": "Python",
+    "description": "Command line driven CI frontend and development task automation tool."
+  },
+  {
+    "repo": "androidx/media",
+    "branch": "main",
+    "language": "Java",
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+  },
+  {
+    "repo": "requests/requests",
+    "branch": "main",
+    "language": "Python",
+    "description": "A simple, yet elegant, HTTP library."
+  },
+  {
+    "repo": "home-assistant/core",
+    "branch": "dev",
+    "language": "Python",
+    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
+  },
+  {
+    "repo": "rust-lang/rust",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Empowering everyone to build reliable and efficient software."
+  },
+  {
+    "repo": "facebookresearch/fairseq",
+    "branch": "main",
+    "language": "Python",
+    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+  },
+  {
+    "repo": "airbnb/javascript",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "JavaScript Style Guide"
+  },
+  {
+    "repo": "nedbat/coveragepy",
+    "branch": "master",
+    "language": "Python",
+    "description": "The code coverage tool for Python"
+  },
+  {
+    "repo": "scrapy/scrapy",
+    "branch": "master",
+    "language": "Python",
+    "description": "Scrapy, a fast high-level web crawling & scraping framework for Python."
+  },
+  {
+    "repo": "explosion/spaCy",
+    "branch": "master",
+    "language": "Python",
+    "description": "💫 Industrial-strength Natural Language Processing (NLP) in Python"
+  },
+  {
+    "repo": "animate-css/animate.css",
+    "branch": "main",
+    "language": "CSS",
+    "description": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
+  },
+  {
+    "repo": "vim/vim",
+    "branch": "master",
+    "language": "Vim Script",
+    "description": "The official Vim repository"
+  },
+  {
+    "repo": "nocodb/nocodb",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
+  },
+  {
+    "repo": "mrdoob/draco.js",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A small, drop-in, pure-JavaScript Draco mesh loader for three.js."
   }
 ]
