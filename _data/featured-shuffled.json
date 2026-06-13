@@ -1,146 +1,146 @@
 [
   {
-    "repo": "silships/figma-cli",
+    "repo": "PHjont/Wallpaper-Engine-Live-wallpaper-engine",
     "branch": "main",
-    "language": "JavaScript",
-    "description": ""
+    "language": "C++",
+    "description": "Wallpaper Engine Steam: Live wallpaper engine. Features: 3D interactive scenes, audio visualizer, clock widgets. Android sync, mobile companion, playlist scheduler. Performance optimization, low CPU usage, LED hardware lighting, Razer Chroma, Corsair iCUE, Steam Workshop integration, SceneScript."
   },
   {
-    "repo": "fancyai-official/skills",
+    "repo": "YunjueTech/Yunjue-Agent",
+    "branch": "main",
+    "language": "Python",
+    "description": "Yunjue Agent: A Fully Reproducible, Zero-Start In-Situ Self-Evolving Agent System for Open-Ended Tasks"
+  },
+  {
+    "repo": "6551Team/opennews-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "Crypto News Aggregation · AI Ratings · Trading Signals · Real-time Updates"
+  },
+  {
+    "repo": "anthropics/claudes-c-compiler",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel."
+  },
+  {
+    "repo": "geekjourneyx/jina-cli",
+    "branch": "main",
+    "language": "Go",
+    "description": "A lightweight CLI tool wrapping Jina AI Reader API for AI Agents. Fetch and parse any URL into LLM-friendly   formats (Markdown/Text/HTML). Perfect for reading X(Twitter), blogs, and news sites."
+  },
+  {
+    "repo": "HenryXiaoYang/wechat-access-unqclawed",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄"
+  },
+  {
+    "repo": "roboflow/rf-detr",
+    "branch": "main",
+    "language": "Python",
+    "description": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO and designed for fine-tuning."
+  },
+  {
+    "repo": "brendanhogan/hermitclaw",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "soloterm/screen",
+    "repo": "antirez/tgterm",
     "branch": "main",
-    "language": "PHP",
-    "description": "A terminal renderer written in pure PHP."
+    "language": "C",
+    "description": "Control your MacOS terminals via Telegram, for fun coding agents interaction and profit"
   },
   {
-    "repo": "python-pillow/Pillow",
+    "repo": "MapleShaw/yt-dlp-downloader-skill",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Cursor Agent Skill for downloading videos using yt-dlp"
+  },
+  {
+    "repo": "openai/sora-prompt-engineering-guide",
     "branch": "main",
-    "language": "Python",
-    "description": "Python Imaging Library (Fork)"
-  },
-  {
-    "repo": "expressjs/express",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Fast, unopinionated, minimalist web framework for node."
-  },
-  {
-    "repo": "getsentry/sentry-javascript",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Official Sentry SDKs for JavaScript"
-  },
-  {
-    "repo": "square/retrofit",
-    "branch": "master",
-    "language": "HTML",
-    "description": "A type-safe HTTP client for Android and the JVM"
-  },
-  {
-    "repo": "mermaid-js/mermaid",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
-  },
-  {
-    "repo": "996icu/996.ICU",
-    "branch": "master",
     "language": "Other",
-    "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    "description": "Guide for prompt engineering for video generation with Sora."
   },
   {
-    "repo": "sympy/sympy",
+    "repo": "mroboff/vm-curator",
+    "branch": "main",
+    "language": "Rust",
+    "description": "vm-curator is a fast and friendly TUI to build and manage QEMU/KVM virtual machines in Linux. It does not rely on libvirt, which means 3D acceleration (para-virtualized, not pass-through) works for NVIDIA GPUs."
+  },
+  {
+    "repo": "goreleaser/goreleaser",
+    "branch": "main",
+    "language": "Go",
+    "description": "Release engineering, simplified"
+  },
+  {
+    "repo": "nektos/act",
     "branch": "master",
-    "language": "Python",
-    "description": "A computer algebra system written in pure Python"
+    "language": "Go",
+    "description": "Run your GitHub Actions locally 🚀"
   },
   {
-    "repo": "tox-dev/tox",
+    "repo": "atom/atom",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ":atom: The hackable text editor"
+  },
+  {
+    "repo": "L42ARO/Mercury-Transforming-Drone",
     "branch": "main",
     "language": "Python",
-    "description": "Command line driven CI frontend and development task automation tool."
+    "description": "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
   },
   {
-    "repo": "androidx/media",
+    "repo": "apache/iceberg",
     "branch": "main",
     "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+    "description": "Apache Iceberg"
   },
   {
-    "repo": "requests/requests",
+    "repo": "Perkins729/OmniXtreme",
     "branch": "main",
     "language": "Python",
-    "description": "A simple, yet elegant, HTTP library."
+    "description": ""
   },
   {
-    "repo": "home-assistant/core",
-    "branch": "dev",
-    "language": "Python",
-    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
-  },
-  {
-    "repo": "rust-lang/rust",
+    "repo": "trinodb/trino",
     "branch": "master",
-    "language": "Rust",
-    "description": "Empowering everyone to build reliable and efficient software."
+    "language": "Java",
+    "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)"
   },
   {
-    "repo": "facebookresearch/fairseq",
+    "repo": "AgriciDaniel/claude-seo",
     "branch": "main",
     "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    "description": "Universal SEO skill for Claude Code. Comprehensive SEO analysis for any website or business type."
   },
   {
-    "repo": "airbnb/javascript",
+    "repo": "nyanko3141592/remotion-voicevox-template",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "JavaScript Style Guide"
-  },
-  {
-    "repo": "nedbat/coveragepy",
-    "branch": "master",
-    "language": "Python",
-    "description": "The code coverage tool for Python"
-  },
-  {
-    "repo": "scrapy/scrapy",
-    "branch": "master",
-    "language": "Python",
-    "description": "Scrapy, a fast high-level web crawling & scraping framework for Python."
-  },
-  {
-    "repo": "explosion/spaCy",
-    "branch": "master",
-    "language": "Python",
-    "description": "💫 Industrial-strength Natural Language Processing (NLP) in Python"
-  },
-  {
-    "repo": "animate-css/animate.css",
-    "branch": "main",
-    "language": "CSS",
-    "description": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
-  },
-  {
-    "repo": "vim/vim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "The official Vim repository"
-  },
-  {
-    "repo": "nocodb/nocodb",
-    "branch": "develop",
     "language": "TypeScript",
-    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
+    "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）"
   },
   {
-    "repo": "mrdoob/draco.js",
+    "repo": "lukilabs/beautiful-mermaid",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "imxv/Pretty-mermaid-skills",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A small, drop-in, pure-JavaScript Draco mesh loader for three.js."
+    "description": "To provide AI with Mermaid chart rendering capability, supporting both SVG and ASCII output formats"
+  },
+  {
+    "repo": "mui/material-ui",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever."
   }
 ]
