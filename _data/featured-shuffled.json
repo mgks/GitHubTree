@@ -1,117 +1,21 @@
 [
   {
-    "repo": "peteromallet/dataclaw",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "zhu1090093659/spec_driven_develop",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Cross-platform AI agent skill for spec-driven development: analyze codebases, decompose large  transformations, and track long-running work."
-  },
-  {
-    "repo": "jackwener/twitter-cli",
-    "branch": "main",
-    "language": "Python",
-    "description": "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
-  },
-  {
-    "repo": "lapce/lapce",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Lightning-fast and Powerful Code Editor written in Rust"
-  },
-  {
-    "repo": "Karmacoke/chargen",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "AI-powered character generator built with React. Create detailed TRPG/Novel characters, NPC system prompts, and visual tags using Gemini, OpenAI, or Local LLMs."
-  },
-  {
-    "repo": "facebook/docusaurus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Easy to maintain open source documentation websites."
-  },
-  {
-    "repo": "microsoft/calculator",
-    "branch": "main",
-    "language": "C++",
-    "description": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
-  },
-  {
-    "repo": "matrix-org/synapse",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Synapse: Matrix homeserver written in Python/Twisted."
-  },
-  {
-    "repo": "AgriciDaniel/claude-seo",
-    "branch": "main",
-    "language": "Python",
-    "description": "Universal SEO skill for Claude Code. Comprehensive SEO analysis for any website or business type."
-  },
-  {
-    "repo": "fish-shell/fish-shell",
-    "branch": "master",
-    "language": "Rust",
-    "description": "The user-friendly command line shell."
-  },
-  {
-    "repo": "brunch/brunch",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🍴 Web applications made easy. Since 2011."
-  },
-  {
-    "repo": "tektoncd/cli",
-    "branch": "main",
-    "language": "Go",
-    "description": "A CLI for interacting with Tekton!"
-  },
-  {
-    "repo": "facebookresearch/fairseq",
-    "branch": "main",
-    "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
-  },
-  {
-    "repo": "vim/vim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "The official Vim repository"
-  },
-  {
-    "repo": "ComposioHQ/secure-openclaw",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps."
-  },
-  {
-    "repo": "hallucinogen/agent-viewer",
+    "repo": "microsoft/dotnet",
     "branch": "main",
     "language": "HTML",
-    "description": "Kanban board for managing Claude Code agents in tmux"
+    "description": "This repo is the official home of .NET on GitHub. It's a great starting point to find many .NET OSS projects from Microsoft and the community, including many that are part of the .NET Foundation."
   },
   {
-    "repo": "TsingmaoAI/xw-cli",
-    "branch": "main",
-    "language": "Go",
-    "description": "实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型"
-  },
-  {
-    "repo": "fastai/fastbook",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "The fastai book, published as Jupyter Notebooks"
-  },
-  {
-    "repo": "reinesana/Doomscroll-Skyrim-Edition",
+    "repo": "open-telemetry/opentelemetry-python",
     "branch": "main",
     "language": "Python",
-    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
+    "description": "OpenTelemetry Python API and SDK"
+  },
+  {
+    "repo": "juanceresa/sift-kg",
+    "branch": "main",
+    "language": "Python",
+    "description": "Turn any collection of documents into a knowledge graph. Domain-configurable entity extraction, human-in-the-loop dedup, and narrative generation — all from the CLI."
   },
   {
     "repo": "GokuMohandas/Made-With-ML",
@@ -120,27 +24,123 @@
     "description": "Learn how to design, develop, deploy and iterate on production-grade ML applications."
   },
   {
-    "repo": "tnm/zclaw",
-    "branch": "main",
-    "language": "C",
-    "description": "Your personal AI assistant in under 888 KB, running on an ESP32"
+    "repo": "shanselman/cert-inspector",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🔒 Web tool to inspect SSL certificates and DNS for all domains in a webpage's request tree. Captures full network footprint via headless browser."
   },
   {
-    "repo": "zscole/model-hierarchy-skill",
+    "repo": "aaviasulin123-design/kms-pico-latest-m6",
+    "branch": "main",
+    "language": "C#",
+    "description": "A secure, educational toolkit for understanding KMS activation, designed for lab environments."
+  },
+  {
+    "repo": "cv-cat/TaoBaoApis",
+    "branch": "master",
+    "language": "Python",
+    "description": "淘宝算法逆向，淘宝api，websockets自动运营，淘宝AI Agent基座"
+  },
+  {
+    "repo": "tolibear/goal-maker",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Supercharge Codex Goals"
+  },
+  {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "branch": "main",
+    "language": "TeX",
+    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
+  },
+  {
+    "repo": "Pika-Labs/Pika-Skills",
     "branch": "main",
     "language": "Python",
-    "description": "OpenClaw skill for cost-optimized model routing based on task complexity"
+    "description": ""
   },
   {
-    "repo": "vercel/swr",
+    "repo": "huggingface/nanowhale",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "React Hooks for Data Fetching"
+    "language": "Python",
+    "description": ""
   },
   {
-    "repo": "openhome-dev/abilities",
-    "branch": "dev",
+    "repo": "Viedie/BongoCat-Windows",
+    "branch": "main",
+    "language": "C++",
+    "description": "Free Bongo Cat download desktop app musical instruments piano drums keyboard guitar trumpet mouse tracking keyboard strokes OBS overlay streaming widget custom skins meme animation pixel art rhythm visualizer soundboard."
+  },
+  {
+    "repo": "lightseekorg/tokenspeed",
+    "branch": "main",
     "language": "Python",
-    "description": "Open-source abilities for OpenHome agents."
+    "description": "TokenSpeed is a speed-of-light LLM inference engine."
+  },
+  {
+    "repo": "xoai/sage-wiki",
+    "branch": "main",
+    "language": "Go",
+    "description": "An LLM-compiled personal knowledge base.  Drop in your papers, articles, and notes. sage-wiki compiles them into a structured, interlinked wiki — with concepts extracted, cross-references discovered, and everything searchable."
+  },
+  {
+    "repo": "Kylsky/chatgpt-team-helper",
+    "branch": "main",
+    "language": "Vue",
+    "description": "一站式Team账号管理"
+  },
+  {
+    "repo": "microsoft/cascadia-code",
+    "branch": "main",
+    "language": "Python",
+    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
+  },
+  {
+    "repo": "dou-jiang/codex-console",
+    "branch": "main",
+    "language": "Python",
+    "description": "codex-console 是一个集成化控制台项目，支持任务管理、批量处理、数据导出、自动上传、日志查看与打包支持。"
+  },
+  {
+    "repo": "flairNLP/flair",
+    "branch": "master",
+    "language": "Python",
+    "description": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
+  },
+  {
+    "repo": "tachikomared/character-animation-creator-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Character Animation Creator Skill for Codex and GPT Web Agent — generates game-ready animations and sprites from reference images or text prompts"
+  },
+  {
+    "repo": "facebook/folly",
+    "branch": "main",
+    "language": "C++",
+    "description": "An open-source C++ library developed and used at Facebook."
+  },
+  {
+    "repo": "fendouai/CodexSaver",
+    "branch": "main",
+    "language": "Python",
+    "description": "Make Codex cheaper without making it dumber with DeepSeek."
+  },
+  {
+    "repo": "ecto/vcad",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Parametric CAD in Rust — CSG modeling with multi-format export"
+  },
+  {
+    "repo": "Nuzair46/Monarch",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Detach, restore, and switch monitor layouts without touching cables."
+  },
+  {
+    "repo": "MasterAlanLab/Register",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   }
 ]
