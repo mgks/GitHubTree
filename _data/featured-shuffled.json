@@ -1,146 +1,146 @@
 [
   {
-    "repo": "runesleo/x-reader",
+    "repo": "anl331/goey-toast",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A gooey, morphing toast component built on Sonner with Framer Motion animations"
+  },
+  {
+    "repo": "XBuilderLAB/cheat-on-content",
     "branch": "main",
     "language": "Python",
-    "description": "Universal content reader — fetch, normalize, and digest content from 7+ platforms (WeChat, Telegram, X, YouTube, Bilibili, Xiaohongshu, RSS)"
+    "description": "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
   },
   {
-    "repo": "Aladdin-IT/MaaNTE",
+    "repo": "Higangssh/gitcredits",
     "branch": "main",
-    "language": "C++",
-    "description": "MaaNTE download Arknights automation assistant daily tasks infrastructure base management recruitment OCR scripts farming resource planner auto-deploy strategy helper open source tool."
-  },
-  {
-    "repo": "electron-userland/electron-forge",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ":electron: A complete tool for building and publishing Electron applications"
-  },
-  {
-    "repo": "raspberrypi/documentation",
-    "branch": "master",
-    "language": "Python",
-    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
-  },
-  {
-    "repo": "microsoft/guidance",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "A guidance language for controlling large language models."
-  },
-  {
-    "repo": "amplication/amplication",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams."
-  },
-  {
-    "repo": "elastic/kibana",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Your window into all of your data"
-  },
-  {
-    "repo": "gin-gonic/gin",
-    "branch": "master",
     "language": "Go",
-    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
+    "description": "Roll movie-style credits for your git repo — right in the terminal"
   },
   {
-    "repo": "tensorflow/models",
+    "repo": "celery/kombu",
+    "branch": "main",
+    "language": "Python",
+    "description": "Messaging library for Python."
+  },
+  {
+    "repo": "shenhao-stu/openclaw-agents",
+    "branch": "main",
+    "language": "Shell",
+    "description": "🐾 One-command multi-agent setup for OpenClaw — 9 specialized AI agents, group routing, safe config merge."
+  },
+  {
+    "repo": "prompt-toolkit/python-prompt-toolkit",
     "branch": "master",
     "language": "Python",
-    "description": "Models and examples built with TensorFlow"
+    "description": "Library for building powerful interactive command line applications in Python"
   },
   {
-    "repo": "realm/realm-swift",
-    "branch": "master",
-    "language": "Objective-C",
-    "description": "Realm is a mobile database: a replacement for Core Data & SQLite"
+    "repo": "anadim/AdderBoard",
+    "branch": "main",
+    "language": "Python",
+    "description": "Smallest transformer that can add two 10-digit numbers"
   },
   {
-    "repo": "Developer-Y/cs-video-courses",
-    "branch": "master",
-    "language": "Other",
-    "description": "List of Computer Science courses with video lectures."
-  },
-  {
-    "repo": "remix-run/remix",
+    "repo": "vaneenige/monochrome-ui",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Build Better Websites. Create modern, resilient user experiences with web fundamentals."
+    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
   },
   {
-    "repo": "jbhuang0604/awesome-computer-vision",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome computer vision resources"
-  },
-  {
-    "repo": "microsoft/autogen",
-    "branch": "main",
-    "language": "Python",
-    "description": "A programming framework for agentic AI"
-  },
-  {
-    "repo": "apache/groovy",
-    "branch": "master",
+    "repo": "SeleniumHQ/selenium",
+    "branch": "trunk",
     "language": "Java",
-    "description": "Apache Groovy: A powerful multi-faceted programming language for the JVM platform"
+    "description": "A browser automation framework and ecosystem."
   },
   {
-    "repo": "microsoft/LightGBM",
-    "branch": "master",
-    "language": "C++",
-    "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks."
-  },
-  {
-    "repo": "techwithtim/Flask-Web-App-Tutorial",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Code for the note storing flask web app made during a YouTube video."
-  },
-  {
-    "repo": "wasabeef/awesome-android-ui",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome Android UI/UX libraries"
-  },
-  {
-    "repo": "node-fetch/node-fetch",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A light-weight module that brings the Fetch API to Node.js"
-  },
-  {
-    "repo": "linkerd/linkerd2",
-    "branch": "main",
-    "language": "Go",
-    "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x."
-  },
-  {
-    "repo": "microsoft/PowerToys",
-    "branch": "main",
-    "language": "C#",
-    "description": "Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks"
-  },
-  {
-    "repo": "PaddlePaddle/PaddleOCR",
+    "repo": "sharonubsyq/trading-view-indicator-extension",
     "branch": "main",
     "language": "Python",
-    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+    "description": ""
   },
   {
-    "repo": "HBAI-Ltd/Toonflow-app",
-    "branch": "master",
-    "language": "HTML",
-    "description": "Toonflow 是一款 AI 短剧漫剧工具，能够利用 AI 技术将小说自动转化为剧本，并结合 AI 生成的图片和视频，实现高效的短剧创作。借助 Toonflow，可以轻松完成从文字到影像的全流程，让短剧制作变得更加智能与便捷。"
-  },
-  {
-    "repo": "tailwindcss/tailwindcss",
-    "branch": "master",
+    "repo": "cita-777/metapi",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "A utility-first CSS framework for rapid UI development."
+    "description": "把你在各处注册的 New API / One API / OneHub / DoneHub / Veloera / AnyRouter / Sub2API 等站点， 汇聚成 一个 API Key、一个入口，自动发现模型、智能路由、成本最优"
+  },
+  {
+    "repo": "tektoncd/pipeline",
+    "branch": "main",
+    "language": "Go",
+    "description": "A cloud-native Pipeline resource."
+  },
+  {
+    "repo": "apple/swift-algorithms",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Commonly used sequence and collection algorithms for Swift"
+  },
+  {
+    "repo": "ashleymills/Reachability.swift",
+    "branch": "master",
+    "language": "Swift",
+    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
+  },
+  {
+    "repo": "Blimp-Labs/claude-usage-bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
+  },
+  {
+    "repo": "XposeMarket/SmallClaw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "© 2026 Xpose Market. SmallClaw is a product of Xpose Market. All rights reserved."
+  },
+  {
+    "repo": "apple/swift-protobuf",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Plugin and runtime library for using protobuf with Swift"
+  },
+  {
+    "repo": "ipython/ipython",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc."
+  },
+  {
+    "repo": "great-expectations/great_expectations",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Always know what to expect from your data."
+  },
+  {
+    "repo": "ansible/awx",
+    "branch": "devel",
+    "language": "Python",
+    "description": "AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is one of the upstream projects for Red Hat Ansible Automation Platform."
+  },
+  {
+    "repo": "TinyAGI/fractals",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Fractals is a recursive task orchestrator for agent swarm"
+  },
+  {
+    "repo": "tanweai/pua",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
+  },
+  {
+    "repo": "marshmallow-code/apispec",
+    "branch": "dev",
+    "language": "Python",
+    "description": "A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. the Swagger specification).."
+  },
+  {
+    "repo": "UnrealXu/UnrealEngine5-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   }
 ]
