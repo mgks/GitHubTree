@@ -1,57 +1,81 @@
 [
   {
-    "repo": "anl331/goey-toast",
+    "repo": "ProjectKumo/KumoApp",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A gooey, morphing toast component built on Sonner with Framer Motion animations"
+    "language": "Swift",
+    "description": "A calm, native macOS client for the Mihomo proxy core, built with SwiftUI and a shared agent-friendly CLI."
   },
   {
-    "repo": "XBuilderLAB/cheat-on-content",
+    "repo": "zed-industries/zed",
     "branch": "main",
-    "language": "Python",
-    "description": "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
+    "language": "Rust",
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
   },
   {
-    "repo": "Higangssh/gitcredits",
-    "branch": "main",
-    "language": "Go",
-    "description": "Roll movie-style credits for your git repo — right in the terminal"
-  },
-  {
-    "repo": "celery/kombu",
+    "repo": "Rabrg/artificial-life",
     "branch": "main",
     "language": "Python",
-    "description": "Messaging library for Python."
+    "description": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"
   },
   {
-    "repo": "shenhao-stu/openclaw-agents",
+    "repo": "silships/figma-cli",
     "branch": "main",
-    "language": "Shell",
-    "description": "🐾 One-command multi-agent setup for OpenClaw — 9 specialized AI agents, group routing, safe config merge."
+    "language": "JavaScript",
+    "description": ""
   },
   {
-    "repo": "prompt-toolkit/python-prompt-toolkit",
+    "repo": "ClawBio/ClawBio",
+    "branch": "main",
+    "language": "Python",
+    "description": "🦖 ClawBio — The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Built on OpenClaw."
+  },
+  {
+    "repo": "golang-standards/project-layout",
     "branch": "master",
-    "language": "Python",
-    "description": "Library for building powerful interactive command line applications in Python"
+    "language": "Makefile",
+    "description": "Standard Go Project Layout"
   },
   {
-    "repo": "anadim/AdderBoard",
+    "repo": "Rivflyyy/HappyTorch",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "A PyTorch coding practice platform — covering LLM, Diffusion, PEFT, and more  A friendly environment to help you deeply understand deep learning components through hands-on practice.  Like LeetCode, but for tensors. Self-hosted. Supports both Jupyter and Web interfaces."
+  },
+  {
+    "repo": "Tencent-Hunyuan/HY-WU",
     "branch": "main",
     "language": "Python",
-    "description": "Smallest transformer that can add two 10-digit numbers"
+    "description": "HY-WU (Part I): An Extensible Functional Neural Memory Framework and An Instantiation in Text-Guided Image Editing"
   },
   {
-    "repo": "vaneenige/monochrome-ui",
+    "repo": "facebook/docusaurus",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
+    "description": "Easy to maintain open source documentation websites."
   },
   {
-    "repo": "SeleniumHQ/selenium",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "A browser automation framework and ecosystem."
+    "repo": "170-carry/codex-tools",
+    "branch": "main",
+    "language": "Rust",
+    "description": "快捷切换codex 账号以及监控codex用量的工具"
+  },
+  {
+    "repo": "marilyn4120shaz3/KiteAI",
+    "branch": "main",
+    "language": "Python",
+    "description": "Automated multi-account farming tool for Kite AI decentralized payment network with faucet claims, token staking, DEX swaps, daily quiz completion, cross-chain bridging, proxy rotation, and configurable task scheduling"
+  },
+  {
+    "repo": "tensorflow/probability",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Probabilistic reasoning and statistical analysis in TensorFlow"
+  },
+  {
+    "repo": "joshcirre/instruckt-laravel",
+    "branch": "main",
+    "language": "PHP",
+    "description": ""
   },
   {
     "repo": "sharonubsyq/trading-view-indicator-extension",
@@ -60,87 +84,63 @@
     "description": ""
   },
   {
-    "repo": "cita-777/metapi",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "把你在各处注册的 New API / One API / OneHub / DoneHub / Veloera / AnyRouter / Sub2API 等站点， 汇聚成 一个 API Key、一个入口，自动发现模型、智能路由、成本最优"
-  },
-  {
-    "repo": "tektoncd/pipeline",
+    "repo": "afumu/openlink",
     "branch": "main",
     "language": "Go",
-    "description": "A cloud-native Pipeline resource."
+    "description": "OpenLink让网页版 AI直接访问你的本地文件系统和执行命令。"
   },
   {
-    "repo": "apple/swift-algorithms",
+    "repo": "HackingDave/nightwire",
     "branch": "main",
-    "language": "Swift",
-    "description": "Commonly used sequence and collection algorithms for Swift"
+    "language": "Python",
+    "description": "A secure way to code via Signal. Integrates long-term memory, ralph-style looping for complex specifics, and more all from your phone."
   },
   {
-    "repo": "ashleymills/Reachability.swift",
+    "repo": "agarrharr/awesome-cli-apps",
+    "branch": "main",
+    "language": "Shell",
+    "description": "🖥 📊 🕹 🛠 A curated list of command line apps"
+  },
+  {
+    "repo": "JuliaLang/julia",
     "branch": "master",
-    "language": "Swift",
-    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
+    "language": "Julia",
+    "description": "The Julia Programming Language"
   },
   {
-    "repo": "Blimp-Labs/claude-usage-bar",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
-  },
-  {
-    "repo": "XposeMarket/SmallClaw",
+    "repo": "op7418/Claude-to-IM-skill",
     "branch": "main",
     "language": "TypeScript",
-    "description": "© 2026 Xpose Market. SmallClaw is a product of Xpose Market. All rights reserved."
+    "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
   },
   {
-    "repo": "apple/swift-protobuf",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Plugin and runtime library for using protobuf with Swift"
+    "repo": "bregman-arie/devops-resources",
+    "branch": "master",
+    "language": "Groovy",
+    "description": "DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP"
   },
   {
-    "repo": "ipython/ipython",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc."
+    "repo": "rubygems/rubygems",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "Library packaging and distribution for Ruby."
   },
   {
-    "repo": "great-expectations/great_expectations",
+    "repo": "humiaozuzu/awesome-flask",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome Flask resources and plugins"
+  },
+  {
+    "repo": "pocketbase/pocketbase",
+    "branch": "master",
+    "language": "Go",
+    "description": "Open Source realtime backend in 1 file"
+  },
+  {
+    "repo": "Tencent/tdesign-vue-next",
     "branch": "develop",
-    "language": "Python",
-    "description": "Always know what to expect from your data."
-  },
-  {
-    "repo": "ansible/awx",
-    "branch": "devel",
-    "language": "Python",
-    "description": "AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is one of the upstream projects for Red Hat Ansible Automation Platform."
-  },
-  {
-    "repo": "TinyAGI/fractals",
-    "branch": "main",
     "language": "TypeScript",
-    "description": "Fractals is a recursive task orchestrator for agent swarm"
-  },
-  {
-    "repo": "tanweai/pua",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
-  },
-  {
-    "repo": "marshmallow-code/apispec",
-    "branch": "dev",
-    "language": "Python",
-    "description": "A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. the Swagger specification).."
-  },
-  {
-    "repo": "UnrealXu/UnrealEngine5-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
+    "description": "A Vue3.x UI components lib for TDesign."
   }
 ]
