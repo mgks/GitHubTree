@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best TypeScript Repositories Directory - Page 12 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best TypeScript repositories - Page 12. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/typescript/12/">
+    <meta property="og:title" content="Best TypeScript Repositories Directory - Page 12 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best TypeScript repositories - Page 12. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/typescript/12/">
+    <meta property="twitter:title" content="Best TypeScript Repositories Directory - Page 12 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best TypeScript repositories - Page 12. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/typescript/12/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/typescript/11/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/typescript/13/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>TypeScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/avalontm/openpos/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">avalontm/openpos</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Sistema de punto de venta (POS) basado en terminal (TUI) de código abierto. Construido con Bun, Ink (React para terminal), Zustand y Drizzle ORM.</p>
+                </a>
+                <a href="/repo/earendil-works/pi-tutorial/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">earendil-works/pi-tutorial</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">An experimental tutorial mode for Pi</p>
+                </a>
+                <a href="/repo/millionco/claude-doctor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">millionco/claude-doctor</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Diagnose your Claude Code sessions</p>
+                </a>
+                <a href="/repo/Jakubantalik/border-beam/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Jakubantalik/border-beam</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Animated border beam effect for React</p>
+                </a>
+                <a href="/repo/amaancoderx/npxskillui/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">amaancoderx/npxskillui</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/coindesk-protocol/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">coindesk-protocol/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot</p>
+                </a>
+                <a href="/repo/GRVYDEV/marky/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GRVYDEV/marky</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight easy to use markdown viewer</p>
+                </a>
+                <a href="/repo/rexa-developer/tiks/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rexa-developer/tiks</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Procedural UI sounds for the web. Zero audio files. Pure synthesis.</p>
+                </a>
+                <a href="/repo/dashkit-protocol/polymarket-arbitrage-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dashkit-protocol/polymarket-arbitrage-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot</p>
+                </a>
+                <a href="/repo/cosmic-market/polymarket-copy-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cosmic-market/polymarket-copy-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrade</p>
+                </a>
+                <a href="/repo/akazwz/hostc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">akazwz/hostc</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Localhost to the edge. Secure, fast, and zero-config edge tunnels powered by Cloudflare Workers.</p>
+                </a>
+                <a href="/repo/RevylAI/app-explorer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">RevylAI/app-explorer</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Map every screen and user path in a mobile app — interactive navigation maps with screenshots</p>
+                </a>
+                <a href="/repo/skydoves/android-skills-mcp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skydoves/android-skills-mcp</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">An MCP server and CLI packager for official Android skills.</p>
+                </a>
+                <a href="/repo/Hainrixz/open-carrusel/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Hainrixz/open-carrusel</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI-powered Instagram carousel builder. Chat with Claude to design slides; export as PNGs at exact Instagram dimensions. Type /start in Claude Code to bootstrap.</p>
+                </a>
+                <a href="/repo/drasimwagan/mdv/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">drasimwagan/mdv</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">MDV — a Markdown superset for documents, dashboards, and slides with embedded data and visualizations. HTML + PDF export, live preview, VS Code extension.</p>
+                </a>
+                <a href="/repo/Ademking/MD-This-Page/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Ademking/MD-This-Page</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Convert any web page to clean, readable Markdown with just one click.</p>
+                </a>
+                <a href="/repo/sightflow-dev/sightflow-desktop-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sightflow-dev/sightflow-desktop-agent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/golbin/hop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golbin/hop</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/AERT-7Y/kiro-auto/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AERT-7Y/kiro-auto</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">kiro自动注册机</p>
+                </a>
+                <a href="/repo/basketikun/chatgpt2api/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">basketikun/chatgpt2api</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Eronred/expo-agent-spinners/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Eronred/expo-agent-spinners</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">54 terminal-style agent-like spinners for React Native & Expo. Lightweight, zero native dependencies — just Text. No heavy UI threads</p>
+                </a>
+                <a href="/repo/cosmicstack-labs/mercury-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cosmicstack-labs/mercury-agent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.</p>
+                </a>
+                <a href="/repo/OpenCoworkAI/open-codesign/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OpenCoworkAI/open-codesign</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini, Kimi, GLM, Ollama). BYOK, local-first, MIT.</p>
+                </a>
+                <a href="/repo/browser-use/browser-harness-js/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">browser-use/browser-harness-js</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Self-healing browser harness that enables LLMs to complete any task</p>
+                </a>
+                <a href="/repo/injaneity/pi-computer-use/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">injaneity/pi-computer-use</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">control your applications using pi-coding-agent. fully invisible.</p>
+                </a>
+                <a href="/repo/xiaochong/hi-kid/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xiaochong/hi-kid</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">HiKid - Your AI English Pal. An desktop app built with React and TypeScript, targeting children in non-English-speaking countries who want to practice English speaking and listening.</p>
+                </a>
+                <a href="/repo/leigest519/OpenGame/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">leigest519/OpenGame</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenGame: Open Agentic Coding for Games</p>
+                </a>
+                <a href="/repo/domye/Solace/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">domye/Solace</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Solace - 基于 Go + React + TypeScript + PostgreSQL 的全栈博客系统。支持 Markdown 编辑、相册管理、深色模式、SEO 优化、Docker 部署。采用整洁架构，适合个人博客、技术博客、开发者作品集。MIT 开源，生产就绪</p>
+                </a>
+                <a href="/repo/jasonkneen/agent-simulator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jasonkneen/agent-simulator</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">An iOS simulator in a browser you can inspect</p>
+                </a>
+                <a href="/repo/babar-mpire/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">babar-mpire/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot</p>
+                </a>
+                <a href="/repo/tashfeenahmed/freellmapi/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tashfeenahmed/freellmapi</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenAI-compatible proxy that aggregates free-tier keys from ~14 AI providers with automatic failover. For personal experimentation only.</p>
+                </a>
+                <a href="/repo/CoreGuideLab/polymarket-arbitrage-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CoreGuideLab/polymarket-arbitrage-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Polymarket arbitrage trading bot: Polymarket arbitrage trading bot Polymarket arbitrage bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket tradingbot</p>
+                </a>
+                <a href="/repo/AlgoInfraTech/polymarket-sports-betting-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AlgoInfraTech/polymarket-sports-betting-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Polymarket sports copy trading bot: polymarket sports trading bot polymarket copy trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket copytrading bot</p>
+                </a>
+                <a href="/repo/figure-markets/polymarket-copy-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">figure-markets/polymarket-copy-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot</p>
+                </a>
+                <a href="/repo/figure-markets/polymarket-arbitrage-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">figure-markets/polymarket-arbitrage-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot </p>
+                </a>
+                <a href="/repo/Axion-Trading-Labs/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Axion-Trading-Labs/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot </p>
+                </a>
+                <a href="/repo/joeseesun/qiaomu-blog-opensource/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">joeseesun/qiaomu-blog-opensource</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source Cloudflare blog template based on OpenNext, Next.js 16, D1, and R2</p>
+                </a>
+                <a href="/repo/FlowTrader-Labs/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">FlowTrader-Labs/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot </p>
+                </a>
+                <a href="/repo/YGYOOO/WorldX/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">YGYOOO/WorldX</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">One sentence creates an AI-driven world — generate maps, characters, and watch stories emerge on their own. 一句话生成一个AI自主驱动的世界.</p>
+                </a>
+                <a href="/repo/chrisnch/reADHD/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chrisnch/reADHD</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">为 ADHD 人群设计的 Obsidian 视觉强调阅读插件，支持中文智能分词（jieba-wasm）。基于 Boninall 的 Obsidian-Better-Reading-Mode 改进。</p>
+                </a>
+                <a href="/repo/JuliusBrussee/cavemem/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JuliusBrussee/cavemem</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cross-agent persistent memory for coding assistants. Stored compressed. Retrieved fast. Local by default.</p>
+                </a>
+                <a href="/repo/AlgoInfraTech/Hyperliquid-copy-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AlgoInfraTech/Hyperliquid-copy-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">hyperliquid copy trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading</p>
+                </a>
+                <a href="/repo/muxprotocol/kalshi-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">muxprotocol/kalshi-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">kalshi trading bot on prediction market autonomous kalshi trading bot that connects to the kalshi api via kalshi rest and kalshi websocket, runs a five-agent ai ensemble to analyze kalshi prediction markets, sizes positions with fractional kelly criterion against your kalshi balance, and executes kalshi orders in paper or live mode with hard daily </p>
+                </a>
+                <a href="/repo/muxprotocol/solana-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">muxprotocol/solana-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Solana trading bot, an automated Solana sniping bot that trades newly-listed tokens on Raydium AMM v4 and pump.fun bonding curves. Listens to on-chain events in real time, applies configurable safety filters, buys with your chosen quote token (WSOL / USDC), and auto-sells on take-profit / stop-loss.</p>
+                </a>
+                <a href="/repo/GumbyEnder/hermes-kanban/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GumbyEnder/hermes-kanban</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A dedicated Obsidian plugin + Hermes skill that turns Hermes into an autonomous project executor using Kanban boards inside your Obsidian vault.</p>
+                </a>
+                <a href="/repo/PolyEdgeLab/Web3-casino-game/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PolyEdgeLab/Web3-casino-game</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">This is casino game tool.</p>
+                </a>
+                <a href="/repo/pedronaldocr07/Solana-Meteora-Alpha-Vault/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pedronaldocr07/Solana-Meteora-Alpha-Vault</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">meteora alpha vault to create large marketcap, execute deposit, claim, withdraw across unlimited wallets</p>
+                </a>
+                <a href="/repo/chekusu/wanman/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chekusu/wanman</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">wanman is an open-source agent matrix runtime inspired by Japanese one-man trains. It lets human users step back into an observer role while local agent runtimes coordinate autonomous multi-agent workflows, task execution, and artifacts.</p>
+                </a>
+                <a href="/repo/hiteshchoudhary/gitbackup/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hiteshchoudhary/gitbackup</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">It was personal script but now it is a complete desktop application to take backup of your github account</p>
+                </a>
+                <a href="/repo/CookSleep/gpt_image_playground/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CookSleep/gpt_image_playground</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">基于 OpenAI gpt-image-2 接口的图片生成与编辑工具</p>
+                </a>
+                <a href="/repo/bubblesslayyer-cmd/Awesome-GPT-Image-2-OpenAi/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bubblesslayyer-cmd/Awesome-GPT-Image-2-OpenAi</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Definitive GPT Image 2 Prompt Vault — Master OpenAI's next-gen model with curated prompts for pixel-perfect text, consistent characters, and professional-grade assets. Optimized for creators and developers.</p>
+                </a>
+                <a href="/repo/SignalBot-Labs/aster-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SignalBot-Labs/aster-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp trading bot, asterDEX trading bot, perp tra</p>
+                </a>
+                <a href="/repo/limitless-org/crypto-engine/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">limitless-org/crypto-engine</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Crypto Engine</p>
+                </a>
+                <a href="/repo/alefinvest/polymarket-copy-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alefinvest/polymarket-copy-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket copy trading bot polymarket copy bot polymarket trading bot polymarket copy trading bot polymarket copy bot polymarket trading bot polymarket copy trading bot polymarket copy bot polymarket trading bot polymarket copy trading bot polymarket copy bot polymarket trading bot polymarket copy trading bot polymarket copy bot polymarket trading</p>
+                </a>
+                <a href="/repo/alefinvest/polymarket-arbitrage-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alefinvest/polymarket-arbitrage-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot</p>
+                </a>
+                <a href="/repo/sweriko/ai4anim-webgpu/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sweriko/ai4anim-webgpu</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/freshyman1/ChatGPT-5.5-OpenAI-Unlimited-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">freshyman1/ChatGPT-5.5-OpenAI-Unlimited-Desktop</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free ChatGPT 5.5 OpenAI Unlimited is a professional AI suite for advanced reasoning and automation. It features expanded context windows, multimodal support, and high-speed execution. Designed for power users, it ensures seamless AI integration and performance for complex 2026 workflows. Codex</p>
+                </a>
+                <a href="/repo/nexu-io/open-design/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nexu-io/open-design</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🎨 Local-first open replica of Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems · 🖼️ sandboxed preview · 📦 HTML/PDF/PPTX export. 🤖 Runs on Claude Code / Codex / Cursor / Gemini CLI / OpenCode / Qwen.</p>
+                </a>
+                <a href="/repo/machinepulse-ai/world2agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">machinepulse-ai/world2agent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">World2Agent(W2A) is an open protocol that standardizes how Al agents perceive the real world.</p>
+                </a>
+                <a href="/repo/CatsJuice/medal-forge/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CatsJuice/medal-forge</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/typescript/11/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 12 of 17</span>
+                        <a href="/language/typescript/13/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

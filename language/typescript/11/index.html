@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best TypeScript Repositories Directory - Page 11 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best TypeScript repositories - Page 11. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/typescript/11/">
+    <meta property="og:title" content="Best TypeScript Repositories Directory - Page 11 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best TypeScript repositories - Page 11. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/typescript/11/">
+    <meta property="twitter:title" content="Best TypeScript Repositories Directory - Page 11 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best TypeScript repositories - Page 11. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/typescript/11/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/typescript/10/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/typescript/12/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>TypeScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/777genius/claude-code-source-code-full/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">777genius/claude-code-source-code-full</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Full source repository for Claude Code source code</p>
+                </a>
+                <a href="/repo/T-Lab-CUHKSZ/claude-code/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">T-Lab-CUHKSZ/claude-code</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code Source - Buildable Research Fork. Reverse-engineered build system, runnable with Bun.</p>
+                </a>
+                <a href="/repo/hilash/cabinet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hilash/cabinet</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI-first knowledge base and startup OS</p>
+                </a>
+                <a href="/repo/afar1/fieldtheory-cli/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">afar1/fieldtheory-cli</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI for Mac.</p>
+                </a>
+                <a href="/repo/x1xhlol/better-clawd/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">x1xhlol/better-clawd</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code, but better: better performance, OpenAI/OpenRouter support, no telemetry, no lock-in.</p>
+                </a>
+                <a href="/repo/kessler/gemma-gem/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kessler/gemma-gem</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Gemma Gem runs Google's Gemma 4 model entirely on-device via WebGPU — no API keys, no cloud, no data leaving your machine.</p>
+                </a>
+                <a href="/repo/Austin1serb/anthropic-leaked-source-code/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Austin1serb/anthropic-leaked-source-code</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/JrCx7scC/claude-code-source/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JrCx7scC/claude-code-source</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code complete source restoration from npm package — all native modules, no features cut</p>
+                </a>
+                <a href="/repo/IyadhKhalfallah/clauditor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">IyadhKhalfallah/clauditor</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Stop Claude Code from burning through your quota in 20 minutes. Auto-rotates oversized sessions and preserves context.</p>
+                </a>
+                <a href="/repo/skibidiskib/ai-codex/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skibidiskib/ai-codex</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Generate a compact codebase index for AI assistants — saves 50K+ tokens per conversation</p>
+                </a>
+                <a href="/repo/frankykevin/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">frankykevin/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket trading bot, that mirrors a target polymarket trader's activity and places similar orders from your account, polymarket copytrading bot, polymarket trading bot</p>
+                </a>
+                <a href="/repo/zhangbo2008/claude_code_annotated/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zhangbo2008/claude_code_annotated</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">claudecode泄露部分的代码解析</p>
+                </a>
+                <a href="/repo/amadeusprotocol/polymarket-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">amadeusprotocol/polymarket-trading-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Housetan218/claude-code-haha/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Housetan218/claude-code-haha</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">claude-code-hahahhhhhhhhhhhhh</p>
+                </a>
+                <a href="/repo/win4r/free-code/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">win4r/free-code</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Published from https://github.com/paoloanzn/free-code; independent public mirror due GitHub fork-network limits.</p>
+                </a>
+                <a href="/repo/johnkf5-ops/the-dev-squad/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">johnkf5-ops/the-dev-squad</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Give Claude its own dev team: one supervisor, four specialists, and bulletproof plans/builds without losing context.</p>
+                </a>
+                <a href="/repo/atomicmemory/llm-wiki-compiler/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">atomicmemory/llm-wiki-compiler</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The knowledge compiler. Raw sources in, interlinked wiki out. Inspired by Karpathy's LLM Wiki pattern.</p>
+                </a>
+                <a href="/repo/orchetron/storm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">orchetron/storm</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A compositor-based terminal UI framework. Fast. Layered. Unstoppable.</p>
+                </a>
+                <a href="/repo/mohshomis/modo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mohshomis/modo</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Houseofmvps/codesight/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Houseofmvps/codesight</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Universal AI context generator. Saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex, and more.</p>
+                </a>
+                <a href="/repo/nashsu/llm_wiki/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nashsu/llm_wiki</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/kapishdima/remocn/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kapishdima/remocn</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Production-ready animations, transitions, backgrounds, and scenes for Remotion. A shadcn registry that lets you `npx shadcn add` polished video components into any Remotion project. Built for solo builders shipping demo videos fast</p>
+                </a>
+                <a href="/repo/garrytan/gbrain/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">garrytan/gbrain</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Garry's Opinionated OpenClaw Brain</p>
+                </a>
+                <a href="/repo/joyehuang/Learn-Open-Harness/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">joyehuang/Learn-Open-Harness</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🤖 Official Interactive Tutorial for OpenHarness – Zero to Hero in 12 Chapters | Learn OpenHarness like Claude Code: Agent Loop, Tools, Memory, Multi-Agent | 面向零基础的 AI Agent 交互式教程</p>
+                </a>
+                <a href="/repo/lucasastorian/llmwiki/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lucasastorian/llmwiki</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open Source Implementation of Karpathy's LLM Wiki. Upload documents, connect your Claude account via MCP, and have it write your wiki ! </p>
+                </a>
+                <a href="/repo/MagicCube/helixent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MagicCube/helixent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Helixent is a small library for building ReAct-style agent loops based on the Bun stack.</p>
+                </a>
+                <a href="/repo/onesuper/tui-use/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">onesuper/tui-use</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">tui-use lets agents interact with programs that expect a human at the keyboard — REPLs, debuggers, TUI apps, and anything else bash can't reach.</p>
+                </a>
+                <a href="/repo/bitjaru/styleseed/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bitjaru/styleseed</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Design engine that makes AI code like a UI/UX designer. Pick any brand skin, get professional UI.</p>
+                </a>
+                <a href="/repo/millionco/isolet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">millionco/isolet</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Package any component into a self-contained, isolated widget</p>
+                </a>
+                <a href="/repo/jure/webphysics/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jure/webphysics</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">WebGPU physics engine based on the AVBD solver</p>
+                </a>
+                <a href="/repo/cablate/banini-tracker/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cablate/banini-tracker</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">巴逆逆（8zz）反指標追蹤器 — Facebook 抓取 + 影片轉錄 + AI 分析 + Telegram 推送</p>
+                </a>
+                <a href="/repo/EvolutionAPI/evo-nexus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">EvolutionAPI/evo-nexus</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The open source operating system for AI-powered businesses — built on Claude Code</p>
+                </a>
+                <a href="/repo/klsf/codex-register/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">klsf/codex-register</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">用于批量注册 OpenAI 账号、登录生成 `auth` 授权文件，以及批量检查凭证剩余可用额度。</p>
+                </a>
+                <a href="/repo/KeploreAI-Lab/MindAct/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KeploreAI-Lab/MindAct</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI Agent + Specific Knowledge = A true Autonomous AI </p>
+                </a>
+                <a href="/repo/kargnas/damn-my-slow-kt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kargnas/damn-my-slow-kt</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">명령어 설치 한번으로 한달 KT 인터넷 요금을 무료로 쓸 수 있습니다. 귀찮은 공문 작성 필요 없습니다.</p>
+                </a>
+                <a href="/repo/ibelick/mesurer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ibelick/mesurer</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/imbue-ai/bouncer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">imbue-ai/bouncer</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Heal your social media feeds</p>
+                </a>
+                <a href="/repo/DIYgod/cloudflare-edge-tts/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DIYgod/cloudflare-edge-tts</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/swarmclawai/swarmvault/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">swarmclawai/swarmvault</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Inspired by Karpathy's LLM Wiki. Local-first LLM knowledge base compiler (Claude Code, Codex, OpenCode, OpenClaw). Turn raw research into a persistent markdown wiki, knowledge graph, and search index that compound over time.</p>
+                </a>
+                <a href="/repo/1270011/claude-buddy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">1270011/claude-buddy</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Keep Your Claude Code Buddy Forever — permanent coding companion that survives every update</p>
+                </a>
+                <a href="/repo/renatoworks/3dsvg/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">renatoworks/3dsvg</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The easiest way to turn SVGs into interactive React 3D components</p>
+                </a>
+                <a href="/repo/millionco/debug-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">millionco/debug-agent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Debugging skill for AI agents</p>
+                </a>
+                <a href="/repo/standardagents/sip/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">standardagents/sip</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Small Image Processor - Ultra memory-efficient image processing for Cloudflare Workers 🟠</p>
+                </a>
+                <a href="/repo/millionco/cli-to-js/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">millionco/cli-to-js</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Turn any CLI into a JavaScript API</p>
+                </a>
+                <a href="/repo/tianxingleo/ACGTI/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tianxingleo/ACGTI</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">ACG Type Indicator - MBTI inspired anime persona quiz</p>
+                </a>
+                <a href="/repo/antfu/tsnapi/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">antfu/tsnapi</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Library public API snapshot testing for runtime exports and type declarations.</p>
+                </a>
+                <a href="/repo/kothari-nikunj/llm-wiki/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kothari-nikunj/llm-wiki</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Personal Wiki</p>
+                </a>
+                <a href="/repo/Mouseww/anything-analyzer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mouseww/anything-analyzer</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">利用 browser + CDP capture + AI analysis  傻瓜式生成 注册机 | 2API | 其他浏览器行为 的协议分析文档</p>
+                </a>
+                <a href="/repo/ConardLi/easy-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ConardLi/easy-agent</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fully recreating Claude Code from scratch, so anyone can learn how it works.</p>
+                </a>
+                <a href="/repo/halfwhey/claudraband/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">halfwhey/claudraband</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code for the Power User</p>
+                </a>
+                <a href="/repo/JubaKitiashvili/expo-pretext/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JubaKitiashvili/expo-pretext</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Predict React Native text heights before rendering. Native TextKit/TextPaint measurement + ~0.0002ms JS layout. FlashList, streaming AI chat, typewriter, pinch-to-zoom, obstacle reflow, Dynamic Type, Expo Web. 386 tests. MIT.</p>
+                </a>
+                <a href="/repo/Ansub/wiki-os/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Ansub/wiki-os</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source web app for search, browsing, graphs, and local knowledge exploration.</p>
+                </a>
+                <a href="/repo/Backtthefuture/huangshu/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Backtthefuture/huangshu</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">黄叔开源的Skill集合</p>
+                </a>
+                <a href="/repo/AgentSeal/codeburn/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AgentSeal/codeburn</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">See where your AI coding tokens go. Interactive TUI dashboard for Claude Code and Codex cost observability.</p>
+                </a>
+                <a href="/repo/NatiCha/bunwv/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NatiCha/bunwv</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/wisher567/Portpal/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wisher567/Portpal</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">See exactly what’s using your ports — and kill it in one click.</p>
+                </a>
+                <a href="/repo/giusmarci/openwhisp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">giusmarci/openwhisp</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Voice to text, entirely on your machine. Hold Fn, speak, release — transcribed, polished, and pasted. No cloud, no account, no latency.</p>
+                </a>
+                <a href="/repo/Poly-Desk/polymarket-arbitrage-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Poly-Desk/polymarket-arbitrage-bot</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage bot</p>
+                </a>
+                <a href="/repo/vercel-labs/wterm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vercel-labs/wterm</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A terminal emulator for the web</p>
+                </a>
+                <a href="/repo/earendil-works/pi-review/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">earendil-works/pi-review</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A review extension for Pi</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/typescript/10/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 11 of 17</span>
+                        <a href="/language/typescript/12/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

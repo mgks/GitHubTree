@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best TypeScript Repositories Directory - Page 3 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best TypeScript repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/typescript/3/">
+    <meta property="og:title" content="Best TypeScript Repositories Directory - Page 3 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best TypeScript repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/typescript/3/">
+    <meta property="twitter:title" content="Best TypeScript Repositories Directory - Page 3 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best TypeScript repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/typescript/3/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/typescript/2/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/typescript/4/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>TypeScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/reduxjs/redux-toolkit/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">reduxjs/redux-toolkit</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The official, opinionated, batteries-included toolset for efficient Redux development</p>
+                </a>
+                <a href="/repo/react-hook-form/react-hook-form/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">react-hook-form/react-hook-form</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📋 React Hooks for form state management and validation (Web + React Native)</p>
+                </a>
+                <a href="/repo/formik/formik/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">formik/formik</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Build forms in React, without the tears 😭 </p>
+                </a>
+                <a href="/repo/faker-js/faker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">faker-js/faker</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Generate massive amounts of fake data in the browser and node.js</p>
+                </a>
+                <a href="/repo/uuidjs/uuid/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">uuidjs/uuid</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Generate RFC-compliant UUIDs in JavaScript</p>
+                </a>
+                <a href="/repo/puppeteer/puppeteer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">puppeteer/puppeteer</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">JavaScript API for Chrome and Firefox</p>
+                </a>
+                <a href="/repo/cheeriojs/cheerio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cheeriojs/cheerio</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The fast, flexible, and elegant library for parsing and manipulating HTML and XML.</p>
+                </a>
+                <a href="/repo/lerna/lerna/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lerna/lerna</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.</p>
+                </a>
+                <a href="/repo/nrwl/nx/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nrwl/nx</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.</p>
+                </a>
+                <a href="/repo/pnpm/pnpm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pnpm/pnpm</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast, disk space efficient package manager</p>
+                </a>
+                <a href="/repo/yarnpkg/berry/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yarnpkg/berry</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📦🐈 Active development trunk for Yarn ⚒</p>
+                </a>
+                <a href="/repo/open-telemetry/opentelemetry-js/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">open-telemetry/opentelemetry-js</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenTelemetry JavaScript Client</p>
+                </a>
+                <a href="/repo/elastic/kibana/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">elastic/kibana</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Your window into all of your data</p>
+                </a>
+                <a href="/repo/github/docs/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">github/docs</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The open-source repo for docs.github.com</p>
+                </a>
+                <a href="/repo/actions/checkout/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/checkout</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Action for checking out a repo</p>
+                </a>
+                <a href="/repo/actions/setup-node/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/setup-node</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Set up your GitHub Actions workflow with a specific version of node.js</p>
+                </a>
+                <a href="/repo/actions/setup-python/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/setup-python</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Set up your GitHub Actions workflow with a specific version of Python</p>
+                </a>
+                <a href="/repo/actions/cache/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/cache</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cache dependencies and build outputs in GitHub Actions</p>
+                </a>
+                <a href="/repo/actions/upload-artifact/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/upload-artifact</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Upload artifacts from your workflow</p>
+                </a>
+                <a href="/repo/actions/download-artifact/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/download-artifact</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download artifacts from your build</p>
+                </a>
+                <a href="/repo/material-components/material-components-web/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">material-components/material-components-web</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Modular and customizable Material Design UI components for the web</p>
+                </a>
+                <a href="/repo/PowerShell/vscode-powershell/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PowerShell/vscode-powershell</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Provides PowerShell language and debugging support for Visual Studio Code</p>
+                </a>
+                <a href="/repo/ReactiveX/RxJS/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ReactiveX/RxJS</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A reactive programming library for JavaScript</p>
+                </a>
+                <a href="/repo/cypress-io/cypress/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cypress-io/cypress</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast, easy and reliable testing for anything that runs in a browser.</p>
+                </a>
+                <a href="/repo/storybookjs/testing-react/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">storybookjs/testing-react</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Testing utilities that allow you to reuse your Storybook stories in your React unit tests!</p>
+                </a>
+                <a href="/repo/remotion-dev/remotion/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">remotion-dev/remotion</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🎥      Make videos programmatically with React</p>
+                </a>
+                <a href="/repo/electron-userland/electron-builder/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">electron-userland/electron-builder</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box</p>
+                </a>
+                <a href="/repo/electron-userland/electron-forge/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">electron-userland/electron-forge</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">:electron: A complete tool for building and publishing Electron applications</p>
+                </a>
+                <a href="/repo/nteract/nteract/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nteract/nteract</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📘 The interactive computing suite for you!  ✨</p>
+                </a>
+                <a href="/repo/standardnotes/app/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">standardnotes/app</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.</p>
+                </a>
+                <a href="/repo/signalapp/Signal-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">signalapp/Signal-Desktop</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A private messenger for Windows, macOS, and Linux.</p>
+                </a>
+                <a href="/repo/element-hq/element-web/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">element-hq/element-web</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A glossy Matrix collaboration client for the web.</p>
+                </a>
+                <a href="/repo/matrix-org/matrix-react-sdk/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">matrix-org/matrix-react-sdk</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Matrix SDK for React Javascript</p>
+                </a>
+                <a href="/repo/matrix-org/matrix-js-sdk/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">matrix-org/matrix-js-sdk</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Matrix Client-Server SDK for JavaScript</p>
+                </a>
+                <a href="/repo/vector-im/hydrogen-web/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vector-im/hydrogen-web</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lightweight matrix client with legacy and mobile browser support</p>
+                </a>
+                <a href="/repo/bitwarden/clients/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bitwarden/clients</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bitwarden client apps (web, browser extension, desktop, and cli).</p>
+                </a>
+                <a href="/repo/BabylonJS/Babylon.js/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">BabylonJS/Babylon.js</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.</p>
+                </a>
+                <a href="/repo/pixijs/pixijs/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pixijs/pixijs</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.</p>
+                </a>
+                <a href="/repo/lobehub/lobe-chat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lobehub/lobe-chat</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.</p>
+                </a>
+                <a href="/repo/langgenius/dify/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">langgenius/dify</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Production-ready platform for agentic workflow development.</p>
+                </a>
+                <a href="/repo/n8n-io/n8n/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">n8n-io/n8n</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</p>
+                </a>
+                <a href="/repo/activepieces/activepieces/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">activepieces/activepieces</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents</p>
+                </a>
+                <a href="/repo/fuma-nama/fumadocs/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fuma-nama/fumadocs</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The beautiful & flexible React.js docs framework.</p>
+                </a>
+                <a href="/repo/Aidenybai/React-Scan/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Aidenybai/React-Scan</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Scan for React performance issues and eliminate slow renders in your app</p>
+                </a>
+                <a href="/repo/emberjs/ember.js/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">emberjs/ember.js</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ember.js - A JavaScript framework for creating ambitious web applications</p>
+                </a>
+                <a href="/repo/honojs/hono/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">honojs/hono</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Web framework built on Web Standards</p>
+                </a>
+                <a href="/repo/leon-ai/leon/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">leon-ai/leon</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🧠 Leon is your open-source personal assistant.</p>
+                </a>
+                <a href="/repo/FlowiseAI/Flowise/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">FlowiseAI/Flowise</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Build AI Agents, Visually</p>
+                </a>
+                <a href="/repo/vercel/ai/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vercel/ai</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents </p>
+                </a>
+                <a href="/repo/yangshun/tech-interview-handbook/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yangshun/tech-interview-handbook</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Curated coding interview preparation materials for busy software engineers</p>
+                </a>
+                <a href="/repo/appwrite/appwrite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">appwrite/appwrite</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Appwrite® - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more</p>
+                </a>
+                <a href="/repo/vueuse/vueuse/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vueuse/vueuse</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Collection of essential Vue Composition Utilities for Vue 3</p>
+                </a>
+                <a href="/repo/slidevjs/slidev/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">slidevjs/slidev</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Presentation Slides for Developers</p>
+                </a>
+                <a href="/repo/quilljs/quill/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">quilljs/quill</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Quill is a modern WYSIWYG editor built for compatibility and extensibility</p>
+                </a>
+                <a href="/repo/directus/directus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">directus/directus</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.</p>
+                </a>
+                <a href="/repo/amplication/amplication/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">amplication/amplication</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams.</p>
+                </a>
+                <a href="/repo/nhost/nhost/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nhost/nhost</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Open Source Firebase Alternative with GraphQL.</p>
+                </a>
+                <a href="/repo/hasura/graphql-engine/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hasura/graphql-engine</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.</p>
+                </a>
+                <a href="/repo/langchain-ai/langchainjs/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">langchain-ai/langchainjs</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🦜🔗 Build context-aware reasoning applications</p>
+                </a>
+                <a href="/repo/excalidraw/excalidraw/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">excalidraw/excalidraw</span>
+                        <span class="mrc-lang">TypeScript <i class="fas fa-circle mrc-lang-dot lang-typescript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Virtual whiteboard for sketching hand-drawn like diagrams</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/typescript/2/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 3 of 17</span>
+                        <a href="/language/typescript/4/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

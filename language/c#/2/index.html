@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best C# Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best C# repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/c#/2/">
+    <meta property="og:title" content="Best C# Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best C# repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/c#/2/">
+    <meta property="twitter:title" content="Best C# Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best C# repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/c#/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/c#/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>C# Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/terry4369mika0464/CCLean-Latest-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">terry4369mika0464/CCLean-Latest-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A professional-grade system optimization and maintenance toolkit designed for automated workspace cleanup and performance orchestration.</p>
+                </a>
+                <a href="/repo/cortneymanieri50677828029/RBX-Executor-Version-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cortneymanieri50677828029/RBX-Executor-Version-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated collection of documentation and safe templates for understanding and analyzing Roblox execution environments in a controlled lab setting.</p>
+                </a>
+                <a href="/repo/hallieongibson4690/R6S-D-M-A-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hallieongibson4690/R6S-D-M-A-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A comprehensive open-source framework for analyzing Rainbow Six Siege game mechanics, operator interactions, and developing advanced defensive strategies.</p>
+                </a>
+                <a href="/repo/martawewqc7692530/MineCraft-Collection-C-Client/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">martawewqc7692530/MineCraft-Collection-C-Client</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated collection of tools and configurations for enhancing your Minecraft experience.</p>
+                </a>
+                <a href="/repo/Monke-Manager/MonkeModManager/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Monke-Manager/MonkeModManager</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">monkemodmanager download github gorilla tag mod installer manager bepinex cosmetics quest link steam vr custom maps utility tool windows 11 latest version 2026 free gameplay tutorial update guide fix error</p>
+                </a>
+                <a href="/repo/tanekaverd64170803960/Lossless-Scaling-Util-V3.0/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tanekaverd64170803960/Lossless-Scaling-Util-V3.0</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A standalone utility to configure, optimize, and unlock lossless frame generation and scaling features for any 3D application or game.</p>
+                </a>
+                <a href="/repo/odinsalazar964150/Gemini-Pro-Desktop-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">odinsalazar964150/Gemini-Pro-Desktop-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A free, locally runnable desktop application powered by Gemini Pro for enhanced productivity.</p>
+                </a>
+                <a href="/repo/adelaideacfalle50838568946/ChatGPT-Pro-Desktop-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">adelaideacfalle50838568946/ChatGPT-Pro-Desktop-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A comprehensive desktop application package for advanced ChatGPT interactions and management.</p>
+                </a>
+                <a href="/repo/beykantemel0702azfy8144/WorpGPT-Latest-2026-AllPrompts/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">beykantemel0702azfy8144/WorpGPT-Latest-2026-AllPrompts</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A comprehensive Red Teaming framework for testing Large Language Model (LLM) robustness against adversarial prompt engineering and jailbreak vectors.</p>
+                </a>
+                <a href="/repo/manuelageske58246958801/DeepFake-AI-2026-RealTime/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">manuelageske58246958801/DeepFake-AI-2026-RealTime</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">An advanced, LLM-powered toolkit providing comprehensive capabilities for ethical synthetic media detection, analysis, and responsible content generation.</p>
+                </a>
+                <a href="/repo/solomondurham854062/Cursor-AI-Pro-Download-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">solomondurham854062/Cursor-AI-Pro-Download-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A standalone utility designed to unlock and manage Pro features within the Cursor AI editor environment locally.</p>
+                </a>
+                <a href="/repo/Dharyen/ryujinx-emu/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Dharyen/ryujinx-emu</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">canary ryujinx emulator tomodachi life github ryubing nintendo switch emulator download</p>
+                </a>
+                <a href="/repo/Noahmusahdevs/roblox-account-manager/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Noahmusahdevs/roblox-account-manager</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">roblox account manager github Download  Multi Roblox Account ic3w0lf22 rbx account manager alt manager multi instance roblox alt accounts cookie extractor open source windows 11 windows 10 auto login private server developer api secure encryption script automation multi boxing free download</p>
+                </a>
+                <a href="/repo/tor-browsers/tor-browser/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tor-browsers/tor-browser</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">tor browser download official onion dark web privacy security anonymous vpn unblock windows 11 android apk latest version 2026 free setup guide fix</p>
+                </a>
+                <a href="/repo/Jadoox3/Mina-The-Hollower-Release/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Jadoox3/Mina-The-Hollower-Release</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">mina the hollower release date download steam pc nintendo switch switch 2 ps5 xbox yacht club games crack free gameplay walkthrough torrent 2026</p>
+                </a>
+                <a href="/repo/Beam-NG-Drive/BeamMP/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Beam-NG-Drive/BeamMP</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">beammp server beamng drive multiplayer mod download launcher</p>
+                </a>
+                <a href="/repo/malk190/Romestead-Game-Release/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">malk190/Romestead-Game-Release</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">romestead game release date steam review homestead early access download survival townbuilder coop multiplayer pc crack torrent gameplay free latest version 2026</p>
+                </a>
+                <a href="/repo/anthropic-claude-code-ai/free-claude-code-ai-desktop-app/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">anthropic-claude-code-ai/free-claude-code-ai-desktop-app</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026</p>
+                </a>
+                <a href="/repo/Allanlv5324F/Lossless-Scaling-Github/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Allanlv5324F/Lossless-Scaling-Github</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">lossless scaling steam github lsfg frame generation</p>
+                </a>
+                <a href="/repo/yuyefeiyu/yt-downloader/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yuyefeiyu/yt-downloader</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">youtube downloader yt downloader mp3 converter 4k video download yt-dlp github free download windows 11 android apk</p>
+                </a>
+                <a href="/repo/luolangaga/tubatool/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">luolangaga/tubatool</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/BoundingBoxSoftware/CharacterController/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">BoundingBoxSoftware/CharacterController</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A character controller for Unity that covers many edge cases.</p>
+                </a>
+                <a href="/repo/TaiwanBoss/DualSenseX-Steam-PC-Controller/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TaiwanBoss/DualSenseX-Steam-PC-Controller</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">dsx steam dualsensex download free ps5 dualsens controller pc adaptive triggers haptic feedback ds4windows emulation windows 11 fix 2026</p>
+                </a>
+                <a href="/repo/paralives-free/Paralives-Money-Cheats/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">paralives-free/Paralives-Money-Cheats</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">paralives mod cheats money console commands money hack trainer steam  game download free steam pc paramaker unlimited money needs mod</p>
+                </a>
+                <a href="/repo/optiscalerclient/optiscaler-client/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">optiscalerclient/optiscaler-client</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">optiscaler client fsr4  github download 007 first light optiscaler  dlss enabler forza horizon 6 optiscaler  lossless scaling manager upscaling tool dlss fsr xess frame generation nukemfg fakenvapi steam mod installation guide tutorial linux </p>
+                </a>
+                <a href="/repo/turbodragonecholegend2914353/Roblox-Exec-Collection-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">turbodragonecholegend2914353/Roblox-Exec-Collection-Desktop</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated collection of documentation and safe templates for understanding and analyzing Roblox execution environments in a controlled lab setting.</p>
+                </a>
+                <a href="/repo/teresiapeetz53968036169/WallpaperDownloader-Version-Pro-2/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">teresiapeetz53968036169/WallpaperDownloader-Version-Pro-2</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A comprehensive community toolkit for organizing, creating, and managing dynamic wallpaper projects and assets, enhancing your Wallpaper Engine experience.</p>
+                </a>
+                <a href="/repo/pattieatengco27671636211/kms-pico-latest-m4/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pattieatengco27671636211/kms-pico-latest-m4</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A secure, educational toolkit for understanding KMS activation, designed for lab environments.</p>
+                </a>
+                <a href="/repo/knackstedtlivia3560/Gemini-Pro-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">knackstedtlivia3560/Gemini-Pro-Desktop</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A free, locally runnable desktop application powered by Gemini Pro for enhanced productivity.</p>
+                </a>
+                <a href="/repo/stormneonnightraven4640692/DeepFake-AI-RealTime/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">stormneonnightraven4640692/DeepFake-AI-RealTime</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">An advanced, LLM-powered toolkit providing comprehensive capabilities for ethical synthetic media detection, analysis, and responsible content generation.</p>
+                </a>
+                <a href="/repo/c873089902979/NS-FW-AI-Image-and-Video-Generator-Uncens/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">c873089902979/NS-FW-AI-Image-and-Video-Generator-Uncens</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A foundational toolkit for AI-driven image generation, focusing on creative expression and content creation.</p>
+                </a>
+                <a href="/repo/tools-lua/steam-tools/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tools-lua/steam-tools</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">steam tools steamtools github download  lua tools manifest  official client backup mirror beyonddimension archive proxy lua manifest generator Watt Toolkit」是一个开源跨平台的多功能 Steam 工具箱。</p>
+                </a>
+                <a href="/repo/aaviasulin123-design/kms-pico-latest-m6/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aaviasulin123-design/kms-pico-latest-m6</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A secure, educational toolkit for understanding KMS activation, designed for lab environments.</p>
+                </a>
+                <a href="/repo/IvanSobolev/Neo3dEngine/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">IvanSobolev/Neo3dEngine</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A minimalist CPU-based 3D console engine in C# (.NET 8) built from scratch. Features Raycasting/Raytracing, dynamic lighting & shadows, .obj loader, and custom TCP-based multiplayer with real-time chat. No external graphics APIs.</p>
+                </a>
+                <a href="/repo/opengram-server/opengram/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">opengram-server/opengram</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/TwoSevenOneT/EDRChoker/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TwoSevenOneT/EDRChoker</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A tool uses the QoS Policy (Pacer.sys) to throttle Endpoint Detection and Response (EDR) agents from connecting to the server.</p>
+                </a>
+                <a href="/repo/alfhamdy515-svg/NS-FW-AI-Image-and-Video-Generator-Uncensd/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alfhamdy515-svg/NS-FW-AI-Image-and-Video-Generator-Uncensd</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A foundational toolkit for AI-driven image generation, focusing on creative expression and content creation.</p>
+                </a>
+                <a href="/repo/synacktiv/DCOMIllusionist/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">synacktiv/DCOMIllusionist</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">DCOM in memory and fileless lateral movement techniques through .Net deserilization</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/c#/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 2</span>
+                        <a href="/language/c#/3/" class="pagination-btn disabled">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

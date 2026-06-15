@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Swift Repositories Directory | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Swift repositories. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/swift/">
+    <meta property="og:title" content="Best Swift Repositories Directory | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Swift repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/swift/">
+    <meta property="twitter:title" content="Best Swift Repositories Directory | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Swift repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/swift/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/swift/2/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Swift Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/ReactiveX/RxSwift/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ReactiveX/RxSwift</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reactive Programming in Swift</p>
+                </a>
+                <a href="/repo/Alamofire/Alamofire/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Alamofire/Alamofire</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Elegant HTTP Networking in Swift</p>
+                </a>
+                <a href="/repo/google-gemini/generative-ai-swift/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">google-gemini/generative-ai-swift</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">This SDK is now deprecated, use the unified Firebase SDK.</p>
+                </a>
+                <a href="/repo/airbnb/lottie-ios/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">airbnb/lottie-ios</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">An iOS library to natively render After Effects vector animations</p>
+                </a>
+                <a href="/repo/apple/swift-nio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apple/swift-nio</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Event-driven network application framework for high performance protocol servers & clients, non-blocking.</p>
+                </a>
+                <a href="/repo/apple/swift-argument-parser/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apple/swift-argument-parser</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Straightforward, type-safe argument parsing for Swift</p>
+                </a>
+                <a href="/repo/apple/swift-log/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apple/swift-log</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Logging API for Swift</p>
+                </a>
+                <a href="/repo/apple/swift-protobuf/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apple/swift-protobuf</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Plugin and runtime library for using protobuf with Swift</p>
+                </a>
+                <a href="/repo/apple/swift-algorithms/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apple/swift-algorithms</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Commonly used sequence and collection algorithms for Swift</p>
+                </a>
+                <a href="/repo/vapor/vapor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vapor/vapor</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">💧 A server-side Swift HTTP web framework.</p>
+                </a>
+                <a href="/repo/pointfreeco/swift-composable-architecture/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pointfreeco/swift-composable-architecture</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind.</p>
+                </a>
+                <a href="/repo/pointfreeco/swift-snapshot-testing/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pointfreeco/swift-snapshot-testing</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">📸 Delightful Swift snapshot testing.</p>
+                </a>
+                <a href="/repo/Quick/Quick/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Quick/Quick</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Swift (and Objective-C) testing framework.</p>
+                </a>
+                <a href="/repo/Quick/Nimble/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Quick/Nimble</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Matcher Framework for Swift and Objective-C</p>
+                </a>
+                <a href="/repo/realm/SwiftLint/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">realm/SwiftLint</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A tool to enforce Swift style and conventions.</p>
+                </a>
+                <a href="/repo/SwiftyJSON/SwiftyJSON/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SwiftyJSON/SwiftyJSON</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">The better way to deal with JSON data in Swift.</p>
+                </a>
+                <a href="/repo/daltoniam/Starscream/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">daltoniam/Starscream</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Websockets in swift for iOS and OSX</p>
+                </a>
+                <a href="/repo/ashleymills/Reachability.swift/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ashleymills/Reachability.swift</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Replacement for Apple's Reachability re-written in Swift with closures</p>
+                </a>
+                <a href="/repo/devicekit/DeviceKit/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">devicekit/DeviceKit</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeviceKit is a value-type replacement of UIDevice.</p>
+                </a>
+                <a href="/repo/SnapKit/SnapKit/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SnapKit/SnapKit</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Swift Autolayout DSL for iOS & OS X</p>
+                </a>
+                <a href="/repo/onevcat/Kingfisher/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">onevcat/Kingfisher</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight, pure-Swift library for downloading and caching images from the web.</p>
+                </a>
+                <a href="/repo/scalessec/Toast-Swift/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">scalessec/Toast-Swift</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Swift extension that adds toast notifications to the UIView object class.</p>
+                </a>
+                <a href="/repo/signalapp/Signal-iOS/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">signalapp/Signal-iOS</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A private messenger for iOS.</p>
+                </a>
+                <a href="/repo/element-hq/element-ios/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">element-hq/element-ios</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A glossy Matrix collaboration client for iOS</p>
+                </a>
+                <a href="/repo/nextcloud/ios/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nextcloud/ios</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">📱 Nextcloud iOS App</p>
+                </a>
+                <a href="/repo/vsouza/awesome-ios/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vsouza/awesome-ios</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects </p>
+                </a>
+                <a href="/repo/tldev/posturr/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tldev/posturr</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A macOS app that blurs your screen when you slouch. Uses Vision framework for real-time posture detection.</p>
+                </a>
+                <a href="/repo/bluewave-labs/dodopulse/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bluewave-labs/dodopulse</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight, native macOS menu bar app for real-time system monitoring with beautiful mini graphs</p>
+                </a>
+                <a href="/repo/iad1tya/Net-Bar/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">iad1tya/Net-Bar</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar.</p>
+                </a>
+                <a href="/repo/stonerl/Thaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">stonerl/Thaw</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Menu bar manager for macOS</p>
+                </a>
+                <a href="/repo/nickustinov/itsytv-macos/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nickustinov/itsytv-macos</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">The missing Apple TV remote app for macOS</p>
+                </a>
+                <a href="/repo/f/textream/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">f/textream</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay.</p>
+                </a>
+                <a href="/repo/nickustinov/itsypad-macos/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nickustinov/itsypad-macos</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A tiny, fast scratchpad and clipboard manager for Mac</p>
+                </a>
+                <a href="/repo/lukilabs/beautiful-mermaid-swift/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lukilabs/beautiful-mermaid-swift</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Native Mermaid diagram renderer for Swift</p>
+                </a>
+                <a href="/repo/rebornix/Agmente/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rebornix/Agmente</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Geek-1001/arcmark/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Geek-1001/arcmark</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">macOS bookmark manager that attaches to any browser window as a sidebar</p>
+                </a>
+                <a href="/repo/zachlatta/freeflow/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zachlatta/freeflow</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free and open source alternative to Wispr Flow / Superwhisper / Monologue / etc</p>
+                </a>
+                <a href="/repo/saif0200/notchprompt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">saif0200/notchprompt</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/IronsideXXVI/Hacker-News/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">IronsideXXVI/Hacker-News</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/dnakov/litter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dnakov/litter</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/AThevon/TokenEater/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AThevon/TokenEater</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Native macOS widget to monitor your Claude AI usage limits in real-time</p>
+                </a>
+                <a href="/repo/wh1te4ever/super-tart-vphone-writeup/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wh1te4ever/super-tart-vphone-writeup</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/edwardsanchez/MotionEyes/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">edwardsanchez/MotionEyes</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/scienceLabwork/Stable-Action/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">scienceLabwork/Stable-Action</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Samsung Super Steady Horizon Lock - rebuilt for iPhone.</p>
+                </a>
+                <a href="/repo/hehehai/voxt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hehehai/voxt</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">[Beta] Voice input and translation app for macOS. Press to talk, release to paste.</p>
+                </a>
+                <a href="/repo/r1cA18/screen-commentator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">r1cA18/screen-commentator</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">macOS app that captures your screen and generates scrolling AI comments overlay</p>
+                </a>
+                <a href="/repo/langwatch/kanban-code/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">langwatch/kanban-code</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Blimp-Labs/claude-usage-bar/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Blimp-Labs/claude-usage-bar</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A macOS menu bar app that shows your Claude API usage at a glance</p>
+                </a>
+                <a href="/repo/mikewang817/MacBar/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mikewang817/MacBar</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight macOS menu bar clipboard manager with OCR, file support, and global hotkey</p>
+                </a>
+                <a href="/repo/lardissone/ansi-saver/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lardissone/ansi-saver</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">ANSI art screensaver for macOS — streams art from 16colo.rs BBS archive packs</p>
+                </a>
+                <a href="/repo/Emanuele-web04/remodex/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Emanuele-web04/remodex</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Remote Control for Codex. 24/7 version on the way</p>
+                </a>
+                <a href="/repo/EthanLipnik/Loom/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">EthanLipnik/Loom</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Easy peer to peer networking for Apple devices</p>
+                </a>
+                <a href="/repo/BitrigApp/XCDocs/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">BitrigApp/XCDocs</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Apple's developer docs as a Swift package and CLI.</p>
+                </a>
+                <a href="/repo/ClawdisAI/ClawdisAI/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ClawdisAI/ClawdisAI</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Always on. Always local. Always listening. A personal AI assistant that lives on your devices and meets you on every surface you already use.</p>
+                </a>
+                <a href="/repo/lifedever/TaskTick/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lifedever/TaskTick</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A native macOS app for managing scheduled tasks. Built with SwiftUI + SwiftData. Menu bar resident, cron expressions, script execution, and more.</p>
+                </a>
+                <a href="/repo/Shpigford/clearly/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shpigford/clearly</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A clean, native markdown editor for macOS.</p>
+                </a>
+                <a href="/repo/Shpigford/chops/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shpigford/chops</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp.</p>
+                </a>
+                <a href="/repo/marswaveai/TypeNo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">marswaveai/TypeNo</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">A free, open source, privacy-first voice input app for macOS.</p>
+                </a>
+                <a href="/repo/ryanstephen/lil-agents/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryanstephen/lil-agents</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">tiny AI companions that live on your macOS dock</p>
+                </a>
+                <a href="/repo/joewongjc/type4me/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">joewongjc/type4me</span>
+                        <span class="mrc-lang">Swift <i class="fas fa-circle mrc-lang-dot lang-swift"></i></span>
+                    </div>
+                    <p class="mrc-desc">MacOS语音输入工具，实时识别、大模型文本优化、全本地存储</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/swift/0/" class="pagination-btn disabled">← Previous</a>
+                        <span class="pagination-info">Page 1 of 2</span>
+                        <a href="/language/swift/2/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

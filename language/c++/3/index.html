@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best C++ Repositories Directory - Page 3 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best C++ repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/c++/3/">
+    <meta property="og:title" content="Best C++ Repositories Directory - Page 3 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best C++ repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/c++/3/">
+    <meta property="twitter:title" content="Best C++ Repositories Directory - Page 3 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best C++ repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/c++/3/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/c++/2/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/c++/4/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>C++ Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/CITGuru/openduck/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CITGuru/openduck</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Distributed DuckDB - dual execution and differential storage</p>
+                </a>
+                <a href="/repo/adanto/EtwTiViewer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">adanto/EtwTiViewer</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Live ETW-TI event viewer for Windows kernel threat-intelligence telemetry. Research tool for exploring the same signals commercial EDRs rely on. </p>
+                </a>
+                <a href="/repo/Nightmare-Eclipse/RedSun/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nightmare-Eclipse/RedSun</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Red Sun vulnerability repository</p>
+                </a>
+                <a href="/repo/Nightmare-Eclipse/UnDefend/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nightmare-Eclipse/UnDefend</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Repository hosting windows defender DOS tool</p>
+                </a>
+                <a href="/repo/Noteshagutter/Best-Fortnite-Cheats-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Noteshagutter/Best-Fortnite-Cheats-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">⭐️ Fortnite Cheats 2026 Download – Aimbot, ESP, Wallhack, Triggerbot, Multihack, Recoil Control, Bunnyhop | Silent Aim, Radarhack, Loader, Injector, Undetected Bypass ⭐️ </p>
+                </a>
+                <a href="/repo/reiazevedo/Tomodachi-Life-Living-the-Dream-Desktop-Version/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">reiazevedo/Tomodachi-Life-Living-the-Dream-Desktop-Version</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life: Living the Dream Desktop Version is the optimized PC edition of the popular life simulation game. Create Miis, build friendships, host concerts, and enjoy island life in high resolution with smooth performance and modern controls on Windows.</p>
+                </a>
+                <a href="/repo/chabba1234/Claude-Design-By-Anthropic/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chabba1234/Claude-Design-By-Anthropic</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Free Claude Desktop - Designed by Anthropic is a beautiful and free desktop application for Claude AI. Enjoy fast chatting, advanced coding, writing assistance, and a modern elegant interface optimized for Windows users.</p>
+                </a>
+                <a href="/repo/nizarlbogos/Windrose-Game-Server-Docker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nizarlbogos/Windrose-Game-Server-Docker</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Docker container for running a Windrose dedicated server. Easy self-hosting solution with Wine and SteamCMD for the pirate survival game Windrose.</p>
+                </a>
+                <a href="/repo/aidanBoi123/AutoDesk-AutoCad-2026-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aidanBoi123/AutoDesk-AutoCad-2026-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free CAD 2026 PC Desktop Version is the latest optimized edition of professional CAD software. Offers powerful 2D and 3D design tools with improved performance and modern interface for Windows.</p>
+                </a>
+                <a href="/repo/infixity24/Extreme-Injector-v3.7.3-Dll-Injector/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">infixity24/Extreme-Injector-v3.7.3-Dll-Injector</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Extreme Injector v3.7.3 is a powerful and easy-to-use DLL injector for Windows. Supports Manual Map, Stealth mode, Auto-Inject, and multiple injection methods. Ideal for developers and single-player game modding.</p>
+                </a>
+                <a href="/repo/Shakir2021/Delta-for-Roblox-PC-Edition/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shakir2021/Delta-for-Roblox-PC-Edition</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Delta for Roblox PC Edition is a lightweight and optimized Roblox client for Windows. Enjoy higher FPS, reduced input lag, better graphics, and smoother gameplay. The best desktop edition for playing Roblox with enhanced performance and modern features.</p>
+                </a>
+                <a href="/repo/trsno/Lossless-Scaling-FPS-Upscale-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">trsno/Lossless-Scaling-FPS-Upscale-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lossless Scaling is a powerful Windows tool for lossless upscaling and AI frame generation. Optimize FPS with LSFG, enjoy crisp integer scaling, and improve image quality in any game or app. Perfect for retro games, emulators, and modern titles on 1440p, 4K, and ultrawide monitors.</p>
+                </a>
+                <a href="/repo/vbhwlvbn/FL-Production-25.2.5-For-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vbhwlvbn/FL-Production-25.2.5-For-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">FL Production 25.2.5 For PC is the Producer Edition of 25.2.5. Professional DAW for music production, beatmaking, and mastering. Includes all plugins, improved performance, and low latency. Optimized for Windows 10/11.</p>
+                </a>
+                <a href="/repo/SaikoNadiro13/MOUSE-P.I.-For-Hire-Release-Game-Desktop-Version/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SaikoNadiro13/MOUSE-P.I.-For-Hire-Release-Game-Desktop-Version</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">MOUSE PI For Hire is a fun hand-drawn point-and-click detective adventure game for PC. Play as a clever mouse private investigator solving funny and challenging cases in a colorful cartoon world. Optimized desktop release with widescreen support, smooth controls, and high-resolution graphics.</p>
+                </a>
+                <a href="/repo/vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">esp32-s3-touch-amoled-1.8</p>
+                </a>
+                <a href="/repo/op7418/m5-paper-buddy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">op7418/m5-paper-buddy</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">📟 Claude Code physical companion on M5Paper V1.1 e-ink. Multi-session dashboard, hardware approval (buttons + touch), AskUserQuestion option cards, CJK, USB/BLE, installable as a Claude Code plugin. / Claude Code 实体搭档，把 M5Paper 变成 Claude Code 的多会话看板 + 硬件审批面板。</p>
+                </a>
+                <a href="/repo/furukola/Create-Aeronautics-Minecraft-Mod-ALL-Versions/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">furukola/Create-Aeronautics-Minecraft-Mod-ALL-Versions</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Create Aeronautics is an advanced aviation expansion for the Create Mod. It introduces real-world physics and aerodynamics to Minecraft. Build functional airships and planes with realistic lift and mechanical integration. Experience the ultimate engineering challenge in the skies of 2026.</p>
+                </a>
+                <a href="/repo/dadi1921/Tomodachi-Life-Living-The-Dream-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dadi1921/Tomodachi-Life-Living-The-Dream-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life: Living the Dream PC Version is an optimized Windows port of the popular life simulation game. Create unique Miis, develop relationships, host concerts and events on your own island in high resolution. Features improved performance, widescreen support, smooth FPS</p>
+                </a>
+                <a href="/repo/GamingOddyseyYT/Splatoon-Raiders-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GamingOddyseyYT/Splatoon-Raiders-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Splatoon Raiders PC —  Windows version of the fast-paced ink-shooting action game. Vibrant turf wars, new weapons, maps, and smooth gameplay with full ultrawide and high-resolution support.</p>
+                </a>
+                <a href="/repo/m-schuetz/CuRast/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">m-schuetz/CuRast</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cuda-Based Software Rasterization for Billions of Triangles</p>
+                </a>
+                <a href="/repo/janhas1993/Tomodachi-Share-Discover-and-share-Mii/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">janhas1993/Tomodachi-Share-Discover-and-share-Mii</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life 2026 Save Data Sync Mii Creator Switch Emulator Performance Mii QR Codes Vulkan Support High FPS Social Simulator PC Mii Rendering Save Editor Profile Management Virtual Life Resource Data Preservation Metadata Tool 2026 Desktop Utility</p>
+                </a>
+                <a href="/repo/Ghesse-p/Free-Nintendo-Switch-GameCube-Games-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Ghesse-p/Free-Nintendo-Switch-GameCube-Games-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Nintendo Switch & GameCube Games PC Resource is a high-performance suite for software preservation. It features 4K upscaling, 60+ FPS support, and optimized shaders for Windows. Designed for stability, it ensures a seamless desktop experience for classic and modern titles in 2026.</p>
+                </a>
+                <a href="/repo/MentalPrism42/FL-Production-25.2.5-DAW/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MentalPrism42/FL-Production-25.2.5-DAW</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">25.2.5 Music Production DAW 2026 Beatmaking AI Mastering Stems Separation PluggnB Organic Sounds MIDI Support VST3 Plugins Audio Recording Low Latency Mixing Mastering Windows 11 Sound Design Virtual Instruments Producer Edition Professional Audio Resource</p>
+                </a>
+                <a href="/repo/Mike04ylno/Pokemon-Pokopia-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mike04ylno/Pokemon-Pokopia-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pokemon Pokopia For PC is an optimized desktop version of the popular adventure game. It features high-resolution support, uncapped FPS, and enhanced controls for Windows. Designed for stability and performance, it offers a seamless experience for creature collection and exploration in 2026.</p>
+                </a>
+                <a href="/repo/vivek772/Lossless-Scaling-FPS-Upcaler-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vivek772/Lossless-Scaling-FPS-Upcaler-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lossless Scaling is a professional Windows utility for universal frame generation and spatial upscaling. Featuring LSFG 3.1 (X2/X3/X4) and LS1 algorithms, it ensures high-fidelity motion and sharp visuals on any GPU. Designed for stability and low latency in modern 2026 gaming environments.</p>
+                </a>
+                <a href="/repo/GHOST-227/Auto-2026-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GHOST-227/Auto-2026-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Resource is a professional suite for advanced 2D/3D drafting. It features optimized toolsets, AI-assisted design, and high-performance libraries. Designed for engineers and architects, it ensures precision and seamless workflow integration for modern industrial projects in 2026.</p>
+                </a>
+                <a href="/repo/saltpi/Aria.X/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">saltpi/Aria.X</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">AriaX: The Ultimate Download Manager for Apple Users</p>
+                </a>
+                <a href="/repo/Alfattah07/Acrobat-Editor-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Alfattah07/Acrobat-Editor-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Acrobat AI Assistant PDF Editor Desktop Windows 11 Acrobat DC 2026 Full Version Electronic Signature Tool OCR PDF to Word Document Cloud Sync PDF Security Redaction Tool Fill and Sign Professional PDF Utility 2026 High Performance Adobe Document Intelligence 24h Trend Download</p>
+                </a>
+                <a href="/repo/aresthehacker/Assassin-s-Creed-Black-Flag/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aresthehacker/Assassin-s-Creed-Black-Flag</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Assassin's Creed Black Flag Resynced Collector's Edition 2026 Edward Kenway Statue PS5 Pro PSSR Ray Tracing High FPS Anvil Engine Caribbean Open World Pirate Simulator PC Download Steam Deck Performance Save Editor Gameplay Reveal July 9 Release Official Roadmap Ubisoft 2026</p>
+                </a>
+                <a href="/repo/shriddha/LEGO-Batman-Legacy-of-the-Dark-Knight/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shriddha/LEGO-Batman-Legacy-of-the-Dark-Knight</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">LEGO Batman Legacy of the Dark Knight PC Release Date May 22 2026 Deluxe Edition Early Access Download LEGO Batman 4 PC Gameplay System Requirements 16GB RAM Gotham City Open World Trailer Joker Boss Fight Batmobile Unlocks Batman Day 2026 PC Version Steam Epic Games Store High Performance Resource</p>
+                </a>
+                <a href="/repo/bitvoxing/Tomodachi-Life-Living-the-Dream-PC-Port/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bitvoxing/Tomodachi-Life-Living-the-Dream-PC-Port</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Tomodachi Life: Living the Dream PC — optimized Windows version of the popular life simulation game. Create Miis, build relationships, host concerts and live your dream island life with improved performance and modern display support.</p>
+                </a>
+                <a href="/repo/Nareshkkkk/Lossless-Scaling-LSFG/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nareshkkkk/Lossless-Scaling-LSFG</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Lossless Scaling — Windows tool for upscaling and frame generation with LSFG and integer scaling. Helps achieve sharper visuals and smoother gameplay in games and applications.</p>
+                </a>
+                <a href="/repo/Jafta-September/Diablo-IV-Lord-of-Hatred-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Jafta-September/Diablo-IV-Lord-of-Hatred-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Diablo IV Lord of Hatred PC Download April 28 2026 Release Date Warlock Class Build Guide Season of Slaughter Be The Butcher Overwatch 2 Collab Skins Diablo 4 Expansion Early Access US Release Warlock Shadowform Eviscerate Hex Skill Tree Tower Mode Tile Sets Fix Diablo 4 4K 144FPS Windows 11 24H2 Optimization Battle.net Login Error Fix Free</p>
+                </a>
+                <a href="/repo/mostafamo123/Pragmata-Reframework/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mostafamo123/Pragmata-Reframework</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pragmata REFramework/RenoDX/Optiscaler Download April 2026 Nightly Build Pragmata FOV Fix Ultrawide Black Bars Solution Pragmata D3D Device Removed Error Fix Optiscaler DXGI.DLL Pragmata VR Mod Status Diana Amiibo PC Rewards Pragmata Steam Deck Performance Guide NVIDIA Reflex Stutter Fix RTX 5090 HDR Tonemapping RenoDX Pragmata Trainer</p>
+                </a>
+                <a href="/repo/antirez/llama.cpp-deepseek-v4-flash/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">antirez/llama.cpp-deepseek-v4-flash</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Experimental implementation of DeepSeek v4 flaash in llama.cpp</p>
+                </a>
+                <a href="/repo/homer66/Windows-Xbox-Mode/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">homer66/Windows-Xbox-Mode</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Windows 11 Xbox Mode Download April 2026 Project Helix Console News Advanced Shader Delivery ASD Stutter Fix Gaming Copilot Windows 11 Features ROG Xbox Ally Specs May 2026 Security Update Windows 11 24H2 Gaming Optimization Free 2GB RAM PC Mode DirectStorage zStandard Support Xbox Cloud Sync Fix Windows Xbox Mode Release Date Controller</p>
+                </a>
+                <a href="/repo/Reyhankunlah/Yuzu-Emulator-Nintendo-Switch/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Reyhankunlah/Yuzu-Emulator-Nintendo-Switch</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Yuzu Emulator Download April 2026 Eden Citron Switch Performance Fix Sudachi Update Suyu Legacy Archive Ryujinx vs Nuzu Best Android Emulator Snapdragon Mali GPU Game Preservation Tutorial High FPS Low Latency Shader Cache Firmware Keys 18.0.0 Pro Controller Support Steam Deck Optimization Free Full Version Latest Build</p>
+                </a>
+                <a href="/repo/Dav777000/Create-Aeronautics-Minecraft-Mod/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Dav777000/Create-Aeronautics-Minecraft-Mod</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Create Aeronautics Minecraft Mod Download April 2026 Release  Physics Engine NeoForge 1.21.1 Airship Build Guide Propeller Bearings Survival SMP Modrinth CurseForge Tutorial Gameplay Trailer Reddit Hype Bug Fix Optimization Crafting Vehicles Fly Machines Hot Air Balloons Fabric Version Latest Update High Performance Mechanics</p>
+                </a>
+                <a href="/repo/VoctorX/All-the-Mods-11-Minecraft/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">VoctorX/All-the-Mods-11-Minecraft</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">All the Mods 11 Download Minecraft 1.21 Release ATM11 GregTech Modern Questing Server Pack Performance Optimization Productive Bees Ad Astra Allthemodium Guide Multiplayer Gameplay Tutorial CurseForge Modrinth Latest Update Stable Build</p>
+                </a>
+                <a href="/repo/Julpygo/Claude-Code-AI-Design/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Julpygo/Claude-Code-AI-Design</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Design Anthropic Tool Download April 2026 Figma to Code AI Agent Research Preview Claude Code CLI Integration React 19 Tailwind v4 Support Model Context Protocol MCP Server Setup Design Systems Automation UI UX Prototyping Next.js Component Generation Best Developer Tools 2026 Free Tutorial</p>
+                </a>
+                <a href="/repo/Senabayu08989/Stable-Diffusion-AI-Free/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Senabayu08989/Stable-Diffusion-AI-Free</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Stable Diffusion Free AI Image Generator Flux 2 Local Deployment Real-time Video Character Consistency Identity Anchoring SDXL Turbo LoRA Training ControlNet Open Source Art Studio Hyperrealistic Cinematic Styles Prompt Engineering Python Pytorch Forge ComfyUI 2026 Release High Resolution Desktop Tool</p>
+                </a>
+                <a href="/repo/WL-DF/Legend-OF-Zelda-Twilight-Princess-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">WL-DF/Legend-OF-Zelda-Twilight-Princess-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Legend Zelda Twilight Princess PC Download April 2026 High Performance 4K 60FPS Enhancement Suite Midna Shadow Shaders Texture Pack Ultra Wide Support High Refresh Rate Emulation Fix Gaming Utility Stable Build Free Project Preservation Tutorial Guide</p>
+                </a>
+                <a href="/repo/Edosaqw/Tomodachi-Life-Living-The-Dream-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Edosaqw/Tomodachi-Life-Living-The-Dream-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life Living The Dream PC Download April 2026 Sequel Release Switch Emulator Eden Ryujinx Performance Fix Mii Maker HD Same Sex Marriage Guide Shop Lock Solution Time Travel Bypass 4K Textures Free Full Version Save Transfer Tutorial Latest Build Gaming Utility</p>
+                </a>
+                <a href="/repo/hamzerbug-wq/Animal-Crossing-New-Horizons-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hamzerbug-wq/Animal-Crossing-New-Horizons-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Animal Crossing New Horizons PC Download April 2026 Version 3.0.2 Patch Notes Switch 2 Edition Resort Hotel Bulk Crafting Update Free High Performance 4K 60FPS Shader Fix Horizon Zero Texture Pack Mii Maker 25th Anniversary Event Guide NookLink Bridge Tutorial Stable Build Latest Emulator Eden Ryujinx</p>
+                </a>
+                <a href="/repo/lucas831029/Heroes-of-Might-and-Magic-Olden-Era-Release/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lucas831029/Heroes-of-Might-and-Magic-Olden-Era-Release</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Heroes Might and Magic Olden Era Download April 30 2026 Release Early Access PC Game Pass Strategy Guide Factions Temple Dungeon Necropolis Hive Schism Grove Best Heroes Motley Gameplay Tutorial Fix Stutter DX12 Error Random Map Generator RMG Performance Utility Multiplayer Ranked Matchmaking Latest Build Free Full Version</p>
+                </a>
+                <a href="/repo/MasnoNi/Invincible-VS-Game-Release-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MasnoNi/Invincible-VS-Game-Release-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Invincible VS Game Download April 30 2026 Release Date Skybound 3v3 Tag Fighter Omni-Man Gameplay Guide Best Characters Combo List Day One Patch Notes Fix Stutter D3D Error Character Pass Universa Immortal DLC Zero Suit Skin Xbox PC PS5 Performance Utility Latest Build Free Full Version Pro Arcade Sticks Support</p>
+                </a>
+                <a href="/repo/cH1LLa/Photoshop-v27.6/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cH1LLa/Photoshop-v27.6</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Adobe Photoshop v27.6 Download April 2026 Release New Features AI Rotate Object Reflection Removal Tool Firefly Image 5 Gemini 3.1 Integration Generative Fill Multi Reference Images Fix Stutter Remove Distractions Tutorial 4K Upscaling Creative Cloud Update Photography Plan Best Photo Editor 2026 Free Trial Latest Build</p>
+                </a>
+                <a href="/repo/ridha61/Lossless-Scaling-Upscaler-FPS/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ridha61/Lossless-Scaling-Upscaler-FPS</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lossless Scaling Free Download May 2026 LSFG 3 Frame Generation Tool Universal AI Upscaler LS1 FSR 3.1 Guide High FPS Gaming Utility Desktop Performance Booster Low Latency Smooth Motion Handheld Optimization Steam Deck ROG Ally Pro Version Latest Build Tutorial No Lag</p>
+                </a>
+                <a href="/repo/ayoub11233/Zelda-Twilight-Princess-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ayoub11233/Zelda-Twilight-Princess-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Legend of Zelda Twilight Princess PC Download May 2026 Native Port Project 4K 60FPS 120FPS Path Tracing RTX Shaders Texture Pack Ultra Wide Support High Refresh Rate Physics Fix Steam Deck Optimized Best Settings Tutorial Guide Low Latency Vulkan 1.4 Latest Build Free Tool Digital Preservation</p>
+                </a>
+                <a href="/repo/ryrylliee/Super-Smash-Bros-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryrylliee/Super-Smash-Bros-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Super Smash Bros PC Download May 2026 Ultimate Performance Fix Eden Citron Emulator Smash Remix v2.0.1 Update Tug of War Mode Rollback Netplay Guide 4K Texture Pack High FPS Low Latency GameCube Adapter Setup Project Plus Slippi Melee Online Tutorial Free Full Version Latest Build</p>
+                </a>
+                <a href="/repo/OpenYSM/YSMParser/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OpenYSM/YSMParser</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Parser to recover Yes-Steve-Model Encrypted Binaries.</p>
+                </a>
+                <a href="/repo/gaspar-ds/Tomodachi-Living-The-Dream-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gaspar-ds/Tomodachi-Living-The-Dream-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life Living The Dream PC Mii island life-sim social logic relationships behavior personality apartments dreams marriage concerts food clothing</p>
+                </a>
+                <a href="/repo/nikolinakovacevic1/MLB-The-Show-26-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nikolinakovacevic1/MLB-The-Show-26-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">MLB The Show 26 PC: Modding tools, roster editors & Diamond Dynasty API. Automation scripts, market analytics, and save utilities for ultimate gameplay.</p>
+                </a>
+                <a href="/repo/MrMilenko/Theseus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MrMilenko/Theseus</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reverse-engineered reconstruction of the original Xbox 5960 dashboard. Runs on Xbox hardware and on desktop (macOS, Linux, Windows) via SDL2/OpenGL.</p>
+                </a>
+                <a href="/repo/CamTheBun/KMS-Auto-Tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CamTheBun/KMS-Auto-Tool</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tool KMSAuto Net Tutorial Permanent License HWID Gen VL Converter Retail to Volume Fix Error 0xc004f074 System Administration Utility 2026 Build</p>
+                </a>
+                <a href="/repo/aidenboomhero/Subnautica-2-PS5-Port/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aidenboomhero/Subnautica-2-PS5-Port</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Subnautica 2 PS5 Port download sequel underwater survival ocean base building crafting leviathans co-op multiplayer exploration biomes creatures sea submarines planet blueprints oxygen resources vehicles equipment abyss scuba ecosystem alien technology flora fauna deep sea diving.</p>
+                </a>
+                <a href="/repo/Ajai53200/DeepSeek-V4-Pro-App/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Ajai53200/DeepSeek-V4-Pro-App</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek V4 Pro download MoE architecture 1.6T parameters 1M context window reasoning modes Think Max sparse attention coding agent agentic AI benchmarks API pricing open weights MIT license.</p>
+                </a>
+                <a href="/repo/Viedie/BongoCat-Windows/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Viedie/BongoCat-Windows</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free Bongo Cat download desktop app musical instruments piano drums keyboard guitar trumpet mouse tracking keyboard strokes OBS overlay streaming widget custom skins meme animation pixel art rhythm visualizer soundboard.</p>
+                </a>
+                <a href="/repo/Mathifygaming/OpenGOAL-Jak-PC-Port/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mathifygaming/OpenGOAL-Jak-PC-Port</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Jak 3 PC Port download OpenGOAL native port Jak Daxter Wasteland Haven City Precursor Light Dark Eco vehicles desert combat missions platformer.</p>
+                </a>
+                <a href="/repo/Deesama22/FiveM-Steam-Edition/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Deesama22/FiveM-Steam-Edition</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">FiveM download GTA 5 RP roleplay scripts ESX QB-Core client launcher MLO EUP custom cars maps mods servers assets resources multiplayer gameplay.</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/c++/2/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 3 of 4</span>
+                        <a href="/language/c++/4/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
