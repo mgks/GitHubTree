@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Mondo-Robotics/DiT4DiT",
+    "repo": "romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version",
+    "branch": "main",
+    "language": "C++",
+    "description": "Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events"
+  },
+  {
+    "repo": "xgen-universe/Capybara",
     "branch": "main",
     "language": "Python",
-    "description": "This is the official code repo for DiT4DiT, a Vision-Action-Model (VAM) framework that combines video generation model with flow-matching-based action prediction for generalizable robotic manipulation."
-  },
-  {
-    "repo": "TeleHuman/humanoid_skateboarding",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official implementation of HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control"
-  },
-  {
-    "repo": "colinhacks/zod",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "TypeScript-first schema validation with static type inference"
-  },
-  {
-    "repo": "stong/gradscii-art",
-    "branch": "master",
-    "language": "Python",
-    "description": "An extremely good ASCII art generator, based on machine learning"
-  },
-  {
-    "repo": "michelleoincx/Bunkr-Downloader-Python",
-    "branch": "main",
-    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "apache/arrow",
-    "branch": "main",
-    "language": "C++",
-    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+    "repo": "raspberrypi/documentation",
+    "branch": "master",
+    "language": "Python",
+    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
   },
   {
-    "repo": "joeseesun/knowledge-site-creator",
+    "repo": "ReactiveX/RxAndroid",
+    "branch": "3.x",
+    "language": "Java",
+    "description": "RxJava bindings for Android"
+  },
+  {
+    "repo": "OmniSVG/OmniSVG",
     "branch": "main",
+    "language": "Python",
+    "description": "[NeurIPS 2025] OmniSVG is the first family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language Models (VLMs), capable of generating complex and detailed SVGs, from simple icons to intricate anime characters."
+  },
+  {
+    "repo": "slidevjs/slidev",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Presentation Slides for Developers"
+  },
+  {
+    "repo": "open-policy-agent/opa",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine."
+  },
+  {
+    "repo": "alibaba/FunASR",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Recognition, Voice Activity Detection, Text Post-processing etc."
+  },
+  {
+    "repo": "termux/termux-packages",
+    "branch": "master",
     "language": "Shell",
-    "description": "一句话生成任何领域的知识学习网站 - AI 理解主题，自动创作内容，生成页面，一键部署"
+    "description": "A package build system for Termux."
   },
   {
-    "repo": "AnkitNayak-eth/EpsteinFiles-RAG",
-    "branch": "main",
-    "language": "Python",
-    "description": "A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler)."
-  },
-  {
-    "repo": "browserable/browserable",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source and self-hostable browser automation library for AI agents"
-  },
-  {
-    "repo": "pyinvoke/invoke",
-    "branch": "main",
-    "language": "Python",
-    "description": "Pythonic task management & command execution."
-  },
-  {
-    "repo": "jina-ai/jina",
-    "branch": "main",
-    "language": "Python",
-    "description": "☁️ Build multimodal AI applications with cloud-native stack"
-  },
-  {
-    "repo": "bottlerocket-os/bottlerocket",
-    "branch": "develop",
-    "language": "Rust",
-    "description": "An operating system designed for hosting containers"
-  },
-  {
-    "repo": "ford26321works003/sora2API",
-    "branch": "main",
-    "language": "Python",
-    "description": "SORA v2 API Wrapper — Python interface for the SORA decentralized economy platform, providing balance queries, token swaps via Polkaswap DEX, liquidity pool inspection, and network status monitoring"
-  },
-  {
-    "repo": "zornade/visura-api",
-    "branch": "main",
-    "language": "Python",
-    "description": "Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER"
-  },
-  {
-    "repo": "typicode/json-server",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
-  },
-  {
-    "repo": "ant-design/ant-design-pro",
+    "repo": "bitwarden/clients",
     "branch": "master",
     "language": "TypeScript",
-    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
+    "description": "Bitwarden client apps (web, browser extension, desktop, and cli)."
   },
   {
-    "repo": "keithnull/TeachYourselfCS-CN",
-    "branch": "master",
-    "language": "Other",
-    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
+    "repo": "gogs/gogs",
+    "branch": "main",
+    "language": "Go",
+    "description": "Gogs is a painless self-hosted Git service"
   },
   {
-    "repo": "microsoft/fast",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The adaptive interface system for modern web experiences."
-  },
-  {
-    "repo": "go-micro/go-micro",
+    "repo": "operator-framework/operator-lifecycle-manager",
     "branch": "master",
     "language": "Go",
-    "description": "A Go microservices framework"
+    "description": "A management framework for extending Kubernetes with Operators"
   },
   {
-    "repo": "cookiecutter/cookiecutter",
+    "repo": "Unclecode/Crawl4AI",
+    "branch": "main",
+    "language": "Python",
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
+  },
+  {
+    "repo": "flame-engine/flame",
+    "branch": "main",
+    "language": "Dart",
+    "description": "A Flutter based game engine."
+  },
+  {
+    "repo": "quilljs/quill",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
+  },
+  {
+    "repo": "testcontainers/testcontainers-java",
+    "branch": "main",
+    "language": "Java",
+    "description": "Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container."
+  },
+  {
+    "repo": "ByteDance-Seed/Seed-Thinking-v1.5",
+    "branch": "main",
+    "language": "Other",
+    "description": "Seed-Thinking-v1.5 Model Release."
+  },
+  {
+    "repo": "kyverno/kyverno",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cloud Native Policy Management"
+  },
+  {
+    "repo": "Stability-AI/generative-models",
+    "branch": "main",
+    "language": "Python",
+    "description": "Generative Models by Stability AI"
+  },
+  {
+    "repo": "vmware-tanzu/velero",
+    "branch": "main",
+    "language": "Go",
+    "description": "Backup and migrate Kubernetes applications and their persistent volumes"
+  },
+  {
+    "repo": "nextcloud/server",
+    "branch": "master",
+    "language": "PHP",
+    "description": "☁️ Nextcloud server, a safe home for all your data"
+  },
+  {
+    "repo": "encode/django-rest-framework",
     "branch": "master",
     "language": "Python",
-    "description": "A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects."
+    "description": "Web APIs for Django. 🎸"
   },
   {
-    "repo": "HKUDS/nanobot",
+    "repo": "Zephkek/XStoreUnlocker",
     "branch": "main",
-    "language": "Python",
-    "description": "🐈 nanobot: The Ultra-Lightweight Clawdbot"
+    "language": "C++",
+    "description": "DLC unlocker for Microsoft Store and Xbox PC games."
   },
   {
-    "repo": "labuladong/fucking-algorithm",
+    "repo": "encode/uvicorn",
     "branch": "master",
-    "language": "Markdown",
-    "description": "刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why."
-  },
-  {
-    "repo": "kristelTech/make_me_a_meme",
-    "branch": "main",
     "language": "Python",
-    "description": "This repository detects your facial expressions and matches you with a famous meme."
-  },
-  {
-    "repo": "Pythagora-io/gpt-pilot",
-    "branch": "main",
-    "language": "Python",
-    "description": "The first real AI developer"
+    "description": "An ASGI web server, for Python. 🦄"
   }
 ]
