@@ -1,129 +1,21 @@
 [
   {
-    "repo": "nikvpn-iran/nikvpn-codespace",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Free VLESS proxy using GitHub Codespaces - NikVPN for Iran"
-  },
-  {
-    "repo": "Mrack/TInjector_Symbi",
-    "branch": "master",
-    "language": "C++",
-    "description": "更稳定的劫持Zygote在App启动前注入so"
-  },
-  {
-    "repo": "npmx-dev/npmx.dev",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "a fast, modern browser for the npm registry"
-  },
-  {
-    "repo": "ory/oathkeeper",
-    "branch": "master",
-    "language": "Go",
-    "description": "A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. Inspired by the BeyondCorp / Zero Trust white paper. Written in Go."
-  },
-  {
-    "repo": "cortexproject/cortex",
-    "branch": "master",
-    "language": "Go",
-    "description": "A horizontally scalable, highly available, multi-tenant, long term Prometheus."
-  },
-  {
-    "repo": "WebAssembly/spec",
-    "branch": "main",
-    "language": "WebAssembly",
-    "description": "WebAssembly specification, reference interpreter, and test suite."
-  },
-  {
-    "repo": "agno-agi/dash",
+    "repo": "Mondo-Robotics/DiT4DiT",
     "branch": "main",
     "language": "Python",
-    "description": "Self-learning data agent that grounds its answers in 6 layers of context and improves with every run. Inspired by OpenAI's in-house implementation."
+    "description": "This is the official code repo for DiT4DiT, a Vision-Action-Model (VAM) framework that combines video generation model with flow-matching-based action prediction for generalizable robotic manipulation."
   },
   {
-    "repo": "vueuse/skills",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Agent Skills for VueUse"
-  },
-  {
-    "repo": "louisho5/picobot",
-    "branch": "main",
-    "language": "Go",
-    "description": "A lightweight self-hosted bot in a single binary, written in Go."
-  },
-  {
-    "repo": "slackhq/nebula",
-    "branch": "master",
-    "language": "Go",
-    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security"
-  },
-  {
-    "repo": "mvanhorn/last30days-skill",
+    "repo": "TeleHuman/humanoid_skateboarding",
     "branch": "main",
     "language": "Python",
-    "description": "Claude Code skill that researches any topic across Reddit + X from the last 30 days, then writes copy-paste-ready prompts"
+    "description": "Official implementation of HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control"
   },
   {
-    "repo": "devicekit/DeviceKit",
+    "repo": "colinhacks/zod",
     "branch": "master",
-    "language": "Swift",
-    "description": "DeviceKit is a value-type replacement of UIDevice."
-  },
-  {
-    "repo": "gfx-rs/wgpu",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A cross-platform, safe, pure-Rust graphics API."
-  },
-  {
-    "repo": "antfu/skills-npm",
-    "branch": "main",
     "language": "TypeScript",
-    "description": "Install agent skills from npm"
-  },
-  {
-    "repo": "google/zx",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A tool for writing better scripts"
-  },
-  {
-    "repo": "yarnpkg/yarn",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
-  },
-  {
-    "repo": "hakimel/reveal.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "The HTML Presentation Framework"
-  },
-  {
-    "repo": "pypa/setuptools",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official project repository for the Setuptools build system"
-  },
-  {
-    "repo": "mandel-macaque/memento",
-    "branch": "main",
-    "language": "F#",
-    "description": "Keep track of you codex sessions per commit"
-  },
-  {
-    "repo": "select2/select2",
-    "branch": "develop",
-    "language": "JavaScript",
-    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results."
-  },
-  {
-    "repo": "miuda-ai/lele",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Bare-Metal Rust Audio AI Framework"
+    "description": "TypeScript-first schema validation with static type inference"
   },
   {
     "repo": "stong/gradscii-art",
@@ -132,15 +24,123 @@
     "description": "An extremely good ASCII art generator, based on machine learning"
   },
   {
-    "repo": "github/copilot-docs",
+    "repo": "michelleoincx/Bunkr-Downloader-Python",
     "branch": "main",
-    "language": "Other",
-    "description": "Documentation for GitHub Copilot"
+    "language": "HTML",
+    "description": ""
   },
   {
-    "repo": "antfu/skills",
+    "repo": "apache/arrow",
     "branch": "main",
+    "language": "C++",
+    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+  },
+  {
+    "repo": "joeseesun/knowledge-site-creator",
+    "branch": "main",
+    "language": "Shell",
+    "description": "一句话生成任何领域的知识学习网站 - AI 理解主题，自动创作内容，生成页面，一键部署"
+  },
+  {
+    "repo": "AnkitNayak-eth/EpsteinFiles-RAG",
+    "branch": "main",
+    "language": "Python",
+    "description": "A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler)."
+  },
+  {
+    "repo": "browserable/browserable",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source and self-hostable browser automation library for AI agents"
+  },
+  {
+    "repo": "pyinvoke/invoke",
+    "branch": "main",
+    "language": "Python",
+    "description": "Pythonic task management & command execution."
+  },
+  {
+    "repo": "jina-ai/jina",
+    "branch": "main",
+    "language": "Python",
+    "description": "☁️ Build multimodal AI applications with cloud-native stack"
+  },
+  {
+    "repo": "bottlerocket-os/bottlerocket",
+    "branch": "develop",
+    "language": "Rust",
+    "description": "An operating system designed for hosting containers"
+  },
+  {
+    "repo": "ford26321works003/sora2API",
+    "branch": "main",
+    "language": "Python",
+    "description": "SORA v2 API Wrapper — Python interface for the SORA decentralized economy platform, providing balance queries, token swaps via Polkaswap DEX, liquidity pool inspection, and network status monitoring"
+  },
+  {
+    "repo": "zornade/visura-api",
+    "branch": "main",
+    "language": "Python",
+    "description": "Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER"
+  },
+  {
+    "repo": "typicode/json-server",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
+  },
+  {
+    "repo": "ant-design/ant-design-pro",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "Anthony Fu's curated collection of agent skills."
+    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
+  },
+  {
+    "repo": "keithnull/TeachYourselfCS-CN",
+    "branch": "master",
+    "language": "Other",
+    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
+  },
+  {
+    "repo": "microsoft/fast",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The adaptive interface system for modern web experiences."
+  },
+  {
+    "repo": "go-micro/go-micro",
+    "branch": "master",
+    "language": "Go",
+    "description": "A Go microservices framework"
+  },
+  {
+    "repo": "cookiecutter/cookiecutter",
+    "branch": "master",
+    "language": "Python",
+    "description": "A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects."
+  },
+  {
+    "repo": "HKUDS/nanobot",
+    "branch": "main",
+    "language": "Python",
+    "description": "🐈 nanobot: The Ultra-Lightweight Clawdbot"
+  },
+  {
+    "repo": "labuladong/fucking-algorithm",
+    "branch": "master",
+    "language": "Markdown",
+    "description": "刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why."
+  },
+  {
+    "repo": "kristelTech/make_me_a_meme",
+    "branch": "main",
+    "language": "Python",
+    "description": "This repository detects your facial expressions and matches you with a famous meme."
+  },
+  {
+    "repo": "Pythagora-io/gpt-pilot",
+    "branch": "main",
+    "language": "Python",
+    "description": "The first real AI developer"
   }
 ]
