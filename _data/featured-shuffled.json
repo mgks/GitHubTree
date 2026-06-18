@@ -1,57 +1,111 @@
 [
   {
-    "repo": "zornade/visura-api",
-    "branch": "main",
-    "language": "Python",
-    "description": "Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER"
-  },
-  {
-    "repo": "ggerganov/llama.cpp",
-    "branch": "master",
-    "language": "C++",
-    "description": "LLM inference in C/C++"
-  },
-  {
-    "repo": "limitless-org/crypto-engine",
+    "repo": "The-Vibe-Company/claude-code-controller",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Crypto Engine"
+    "description": "Programmatic TypeScript API to pilot Claude Code agents via the internal teams/inbox/tasks filesystem protocol"
   },
   {
-    "repo": "tailwindlabs/headlessui",
+    "repo": "bababuyyy/unity-isometric-pixel-pipeline",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS."
+    "language": "ShaderLab",
+    "description": "Pixel art isometric render pipeline for Unity 6 URP — toon shading, GPU grass, outline, sharp upscale"
   },
   {
-    "repo": "react-navigation/react-navigation",
+    "repo": "Emanuele-web04/remodex",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Routing and navigation for React Native and Web apps"
+    "language": "Swift",
+    "description": "Remote Control for Codex. 24/7 version on the way"
   },
   {
-    "repo": "ensdomains/ens-contracts",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The core contracts of the ENS protocol"
-  },
-  {
-    "repo": "Rabrg/artificial-life",
+    "repo": "bitman09/Rust-Politics-Sports-Polymarket-Trading-Bot",
     "branch": "main",
-    "language": "Python",
-    "description": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"
-  },
-  {
-    "repo": "moby/moby",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems"
-  },
-  {
-    "repo": "akitaonrails/FrankSherlock",
-    "branch": "master",
     "language": "Rust",
-    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
+    "description": "A Rust bot for Polymarket that trades sports and politics (binary) markets by slug using a trailing stop strategy only."
+  },
+  {
+    "repo": "NoobyGains/claude-pulse",
+    "branch": "master",
+    "language": "Python",
+    "description": "Real-time usage monitor for Claude Code — session limits, weekly limits, and plan tier with colour-coded progress bars"
+  },
+  {
+    "repo": "ryan26craf/Hbar-Wallet-Desktop",
+    "branch": "main",
+    "language": "C++",
+    "description": "A secure, open-source desktop wallet for Hedera HBAR cryptocurrency built with C++ and Qt6."
+  },
+  {
+    "repo": "benjitaylor/liveline",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Real-time animated line chart for React."
+  },
+  {
+    "repo": "PeonPing/peon-ping",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Warcraft III Peon voice notifications for Claude Code. Stop babysitting your terminal."
+  },
+  {
+    "repo": "dazzyddos/lsawhisper-bof",
+    "branch": "main",
+    "language": "C",
+    "description": "A Beacon Object File (BOF) that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory."
+  },
+  {
+    "repo": "CleverCloud/mdr",
+    "branch": "main",
+    "language": "Rust",
+    "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded"
+  },
+  {
+    "repo": "jarodise/XQuery",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "krajekisbtc/PolymarketBTC15mAssistant",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekisbtc"
+  },
+  {
+    "repo": "matem6/P2JB-Y2JB-Porting",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "PS5 jailbreak via the Y2JB. Ports Gezine's p2jb kqueueex cr_ref overflow"
+  },
+  {
+    "repo": "jackwener/wechat-article-to-markdown",
+    "branch": "main",
+    "language": "Python",
+    "description": "微信公众号文章抓取 & Markdown 转换工具 (cheerio + axios + turndown)"
+  },
+  {
+    "repo": "seulee26/mckinsey-pptx",
+    "branch": "main",
+    "language": "Python",
+    "description": "McKinsey-style PPTX generator — Claude Code plugin with 40 slide templates + subagent that picks the right template and defends its choice. Built by AX Labs (이승필)."
+  },
+  {
+    "repo": "ResearAI/AutoFigure-Edit",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "bron1e/fnos-rce-chain",
+    "branch": "main",
+    "language": "Python",
+    "description": "飞牛系统（fnOS）远程代码执行链：认证绕过"
+  },
+  {
+    "repo": "nepfaff/scenesmith",
+    "branch": "main",
+    "language": "Python",
+    "description": "Code for SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes"
   },
   {
     "repo": "afumu/openlink",
@@ -60,87 +114,33 @@
     "description": "OpenLink让网页版 AI直接访问你的本地文件系统和执行命令。"
   },
   {
-    "repo": "rohanarun/phoneclaw",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A version of openClaw/Clawdbot that automates android phones entirely without root, including all apps from a side-loaded APK. Acts as your 24/7 personal assistant on your phone."
-  },
-  {
-    "repo": "nocodb/nocodb",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
-  },
-  {
-    "repo": "Shopify/react-native-skia",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "High-performance React Native Graphics using Skia"
-  },
-  {
-    "repo": "scienceLabwork/Stable-Action",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Samsung Super Steady Horizon Lock - rebuilt for iPhone."
-  },
-  {
-    "repo": "rs/zerolog",
-    "branch": "master",
-    "language": "Go",
-    "description": "Zero Allocation JSON Logger"
-  },
-  {
-    "repo": "mverschu/adwsdomaindump",
+    "repo": "AndrewVos/endless-toil",
     "branch": "main",
     "language": "Python",
-    "description": "Active Directory information dumper via ADWS for evasion purposes."
+    "description": "Hear your agent suffer through your code"
   },
   {
-    "repo": "sirupsen/logrus",
-    "branch": "master",
-    "language": "Go",
-    "description": "Structured, pluggable logging for Go."
-  },
-  {
-    "repo": "NativeScript/NativeScript",
+    "repo": "Parallax-Trading/polymarket-copy-trading-bot",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love ❤️ Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Flutter and you name it compatible."
+    "language": "JavaScript",
+    "description": "polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,"
   },
   {
-    "repo": "apache/tvm",
+    "repo": "dadi1921/Tomodachi-Life-Living-The-Dream-PC",
+    "branch": "main",
+    "language": "C++",
+    "description": "Tomodachi Life: Living the Dream PC Version is an optimized Windows port of the popular life simulation game. Create unique Miis, develop relationships, host concerts and events on your own island in high resolution. Features improved performance, widescreen support, smooth FPS"
+  },
+  {
+    "repo": "JinGuYuan/jinguyuan-dumpling-skill",
     "branch": "main",
     "language": "Python",
-    "description": "Open Machine Learning Compiler Framework"
+    "description": "金谷园饺子馆 AI Skill - 北邮边上的饺子馆"
   },
   {
-    "repo": "nullclaw/nullclaw",
+    "repo": "PlamenTSV/plamen",
     "branch": "main",
-    "language": "Zig",
-    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
-  },
-  {
-    "repo": "3-JonWallis1993/HyperLiquid-Claw",
-    "branch": "main",
-    "language": "Rust",
-    "description": ""
-  },
-  {
-    "repo": "ChainSafe/lodestar",
-    "branch": "stable",
-    "language": "TypeScript",
-    "description": "🌟 Ethereum Consensus client for the Zig and TypeScript ecosystem"
-  },
-  {
-    "repo": "primefaces/primeng",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The Most Complete Angular UI Component Library"
-  },
-  {
-    "repo": "r1cA18/screen-commentator",
-    "branch": "main",
-    "language": "Swift",
-    "description": "macOS app that captures your screen and generates scrolling AI comments overlay"
+    "language": "Python",
+    "description": "Autonomous Web3 security audit agent for Claude Code"
   }
 ]
