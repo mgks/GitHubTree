@@ -1,146 +1,146 @@
 [
   {
-    "repo": "suborbital/sat",
+    "repo": "microsoft/Web-Dev-For-Beginners",
     "branch": "main",
-    "language": "Go",
-    "description": "Tiny & fast WebAssembly edge compute server"
+    "language": "JavaScript",
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
   },
   {
-    "repo": "imbue-ai/bouncer",
+    "repo": "orange2ai/openclaw-killer",
+    "branch": "main",
+    "language": "Shell",
+    "description": "一键完美卸载 OpenClaw，让这只龙虾体面告别 🦞"
+  },
+  {
+    "repo": "midudev/alg0.dev",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Heal your social media feeds"
+    "description": "alg0.dev is an interactive algorithm visualizer where classic algorithms come to life through step by step animations, controls to pause or advance, and access to the underlying code."
   },
   {
-    "repo": "juliangarnier/anime",
+    "repo": "CleverCloud/mdr",
+    "branch": "main",
+    "language": "Rust",
+    "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded"
+  },
+  {
+    "repo": "eli-labz/Third-Eye",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains."
+  },
+  {
+    "repo": "traefik/traefik",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "JavaScript animation engine"
+    "language": "Go",
+    "description": "The Cloud Native Application Proxy"
   },
   {
-    "repo": "spring-projects/spring-framework",
+    "repo": "prisma/graphql-yoga",
     "branch": "main",
-    "language": "Java",
-    "description": "Spring Framework"
+    "language": "TypeScript",
+    "description": "🧘 Rewrite of a fully-featured GraphQL Server with focus on easy setup, performance & great developer experience.  The core of Yoga implements WHATWG Fetch API and can run/deploy on any JS environment."
   },
   {
-    "repo": "nickustinov/itsypad-macos",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A tiny, fast scratchpad and clipboard manager for Mac"
-  },
-  {
-    "repo": "Zehong-Ma/PixelGen",
+    "repo": "huggingface/datasets",
     "branch": "main",
     "language": "Python",
-    "description": "Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”"
+    "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
   },
   {
-    "repo": "androidx/media",
-    "branch": "main",
-    "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+    "repo": "react-native-device-info/react-native-device-info",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Device Information for React Native iOS and Android"
   },
   {
-    "repo": "v4nsh0x/InstaTrace",
-    "branch": "main",
-    "language": "Python",
-    "description": "Private Instagram Post URL Extractor (Research POC)"
-  },
-  {
-    "repo": "stanford-oval/storm",
-    "branch": "main",
-    "language": "Python",
-    "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations."
-  },
-  {
-    "repo": "ninja-build/ninja",
+    "repo": "google/flatbuffers",
     "branch": "master",
     "language": "C++",
-    "description": "a small build system with a focus on speed"
+    "description": "FlatBuffers: Memory Efficient Serialization Library"
   },
   {
-    "repo": "wader/fq",
+    "repo": "microsoft/DeepSpeed",
     "branch": "master",
-    "language": "Go",
-    "description": "jq for binary formats - tool, language and decoders for working with binary and text formats"
+    "language": "Python",
+    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
   },
   {
-    "repo": "cri-o/cri-o",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
-  },
-  {
-    "repo": "lencx/ChatGPT",
-    "branch": "main",
-    "language": "Rust",
-    "description": "🔮 ChatGPT Desktop Application (Mac, Windows and Linux)"
-  },
-  {
-    "repo": "AssemblyScript/assemblyscript",
-    "branch": "main",
-    "language": "WebAssembly",
-    "description": "A TypeScript-like language for WebAssembly."
-  },
-  {
-    "repo": "wsargent/docker-cheat-sheet",
+    "repo": "ashleymills/Reachability.swift",
     "branch": "master",
-    "language": "Other",
-    "description": "Docker Cheat Sheet"
+    "language": "Swift",
+    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
   },
   {
-    "repo": "WhiskeyCoder/Qwen3-Audiobook-Converter",
+    "repo": "sweetalert2/sweetalert2",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "✨ A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies. 🇺🇦🇪🇺"
+  },
+  {
+    "repo": "phioranex/openclaw-docker",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "microsoft/AI",
+    "branch": "master",
+    "language": "Python",
+    "description": "Microsoft AI"
+  },
+  {
+    "repo": "datawhalechina/hello-claw",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "哈喽！龙虾，首个体系化 openclaw 中文开源教程 ｜ Adopt from scratch and build your first claw 🦞 一起来零基础领养、构建你的第一只龙虾"
+  },
+  {
+    "repo": "cisco-ai-defense/skill-scanner",
     "branch": "main",
     "language": "Python",
-    "description": "Convert PDFs, EPUBs, DOCX, DOC, and TXT files into high-quality audiobooks using **Qwen3 TTS Voice Model** - an open-source voice synthesis system that excels at natural speech generation and voice cloning."
+    "description": "Security Scanner for Agent Skills"
   },
   {
-    "repo": "actions/download-artifact",
+    "repo": "chef/chef",
+    "branch": "main",
+    "language": "Ruby",
+    "description": "Chef Infra, a powerful automation platform that transforms infrastructure into code automating how infrastructure is configured, deployed and managed across any environment, at any scale"
+  },
+  {
+    "repo": "flybirdxx/ComfyUI-Qwen-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Simple Implementation of Qwen3-TTS's ComfyUI"
+  },
+  {
+    "repo": "frankykevin/polymarket-trading-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Download artifacts from your build"
+    "description": "polymarket trading bot, that mirrors a target polymarket trader's activity and places similar orders from your account, polymarket copytrading bot, polymarket trading bot"
   },
   {
-    "repo": "dwzhu-pku/PaperBanana",
+    "repo": "cpaczek/any-buddy",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "PaperBanana: Automating Academic Illustration For AI Scientists"
+    "language": "TypeScript",
+    "description": "Hack Claude Code to get any buddy you want"
   },
   {
-    "repo": "marktext/marktext",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows."
-  },
-  {
-    "repo": "whatwg/html",
-    "branch": "main",
-    "language": "HTML",
-    "description": "HTML Standard"
-  },
-  {
-    "repo": "iCHAIT/awesome-macOS",
+    "repo": "ForrestKnight/open-source-cs",
     "branch": "master",
     "language": "Other",
-    "description": " A curated list of awesome applications, softwares, tools and shiny things for macOS."
+    "description": "Video discussing this curriculum:"
   },
   {
-    "repo": "clockworklabs/SpacetimeDB",
+    "repo": "tensorflow/agents",
     "branch": "master",
-    "language": "Rust",
-    "description": "Multiplayer at the speed of light"
+    "language": "Python",
+    "description": "TF-Agents: A reliable, scalable and easy to use TensorFlow library for Contextual Bandits and Reinforcement Learning."
   },
   {
-    "repo": "iad1tya/Net-Bar",
+    "repo": "lcoutodemos/clui-cc",
     "branch": "main",
-    "language": "Swift",
-    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
-  },
-  {
-    "repo": "guardrailsio/awesome-python-security",
-    "branch": "master",
-    "language": "Other",
-    "description": "Awesome Python Security resources 🕶🐍🔐"
+    "language": "TypeScript",
+    "description": "Clui CC — Command Line User Interface for Claude Code"
   }
 ]
