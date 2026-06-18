@@ -1,146 +1,146 @@
 [
   {
-    "repo": "BuluBulugege/Free-BAI",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "MuhammadHananAsghar/wormhole",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open-source ngrok alternative. Expose your localhost to the internet with one command. Built with Go + Cloudflare Workers."
-  },
-  {
-    "repo": "Danm72/home-assistant-automation-suggestions",
+    "repo": "zornade/visura-api",
     "branch": "main",
     "language": "Python",
-    "description": "A Home Assistant integration that analyzes your manual actions and suggests automations to create"
+    "description": "Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER"
   },
   {
-    "repo": "tompftampffern/polyseed-monero",
-    "branch": "main",
-    "language": "C",
-    "description": "Polyseed Monero"
-  },
-  {
-    "repo": "userland-run/nano",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "nano — Run real Node.js and other statically linked Linux binaries directly in the browser via a tiny RISC-V user-mode Linux interpreter compiled to WebAssembly. No containers. No servers. Pure client-side execution."
-  },
-  {
-    "repo": "zeroclaw-labs/zeroclaw",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀"
-  },
-  {
-    "repo": "xiaguan/pegainfer",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Pure Rust + CUDA LLM inference engine"
-  },
-  {
-    "repo": "tomascupr/sandstorm",
-    "branch": "main",
-    "language": "Python",
-    "description": "One API call. Full Claude agent. Completely sandboxed."
-  },
-  {
-    "repo": "jarodise/XQuery",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "ryan26craf/polymarket-kalshi-arbitrage-bot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Kalshi open source trading bot to automate copy trading and arbitrage strategies on crypto prediction markets for free, with simple interface."
-  },
-  {
-    "repo": "bregman-arie/devops-resources",
-    "branch": "master",
-    "language": "Groovy",
-    "description": "DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP"
-  },
-  {
-    "repo": "godagoo/claude-telegram-relay",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included."
-  },
-  {
-    "repo": "NikkeTryHard/zerogravity",
-    "branch": "main",
-    "language": "Shell",
-    "description": "OpenAI, Anthropic, and Gemini-compatible proxy"
-  },
-  {
-    "repo": "uedk9p/sora2-watermark-remover",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 watermark remover"
-  },
-  {
-    "repo": "curvefi/curve-contract",
-    "branch": "master",
-    "language": "Python",
-    "description": "Vyper contracts used in Curve.fi exchange pools."
-  },
-  {
-    "repo": "pinchtab/pinchtab",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "Infatoshi/metal-mc-terrain",
-    "branch": "main",
-    "language": "Objective-C",
-    "description": "Native Metal terrain renderer for Minecraft 1.16.5 on Apple Silicon. 10x FPS by replacing macOS OpenGL with Metal."
-  },
-  {
-    "repo": "f/textream",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay."
-  },
-  {
-    "repo": "Mrack/TInjector_Symbi",
+    "repo": "ggerganov/llama.cpp",
     "branch": "master",
     "language": "C++",
-    "description": "更稳定的劫持Zygote在App启动前注入so"
+    "description": "LLM inference in C/C++"
   },
   {
-    "repo": "uhub/awesome-cpp",
+    "repo": "limitless-org/crypto-engine",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Crypto Engine"
+  },
+  {
+    "repo": "tailwindlabs/headlessui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS."
+  },
+  {
+    "repo": "react-navigation/react-navigation",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Routing and navigation for React Native and Web apps"
+  },
+  {
+    "repo": "ensdomains/ens-contracts",
     "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome C++ frameworks, libraries and software."
+    "language": "TypeScript",
+    "description": "The core contracts of the ENS protocol"
   },
   {
-    "repo": "eval-exec/neomacs",
+    "repo": "Rabrg/artificial-life",
     "branch": "main",
-    "language": "Emacs Lisp",
-    "description": "🚀 NEO Emacs — A GPU-powered Emacs written in 🦀Rust with a modern display engine.     Effortlessly render tons of  🖼️4K images, 🎥4K videos, and 🌐WPEWebKit using GPU acceleration, DMA-BUF, ZERO-COPY and rich animation effects support for a super-level blazing-fast Emacs experience. 🎉"
+    "language": "Python",
+    "description": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"
   },
   {
-    "repo": "foru17/clash-master",
+    "repo": "moby/moby",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems"
+  },
+  {
+    "repo": "akitaonrails/FrankSherlock",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
+  },
+  {
+    "repo": "afumu/openlink",
+    "branch": "main",
+    "language": "Go",
+    "description": "OpenLink让网页版 AI直接访问你的本地文件系统和执行命令。"
+  },
+  {
+    "repo": "rohanarun/phoneclaw",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "A version of openClaw/Clawdbot that automates android phones entirely without root, including all apps from a side-loaded APK. Acts as your 24/7 personal assistant on your phone."
+  },
+  {
+    "repo": "nocodb/nocodb",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
+  },
+  {
+    "repo": "Shopify/react-native-skia",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A modern and elegant dashboard for visualizing and managing Clash network traffic."
+    "description": "High-performance React Native Graphics using Skia"
   },
   {
-    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
+    "repo": "scienceLabwork/Stable-Action",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage trading bot"
+    "language": "Swift",
+    "description": "Samsung Super Steady Horizon Lock - rebuilt for iPhone."
   },
   {
-    "repo": "junaid-mahmood/nlsh",
+    "repo": "rs/zerolog",
+    "branch": "master",
+    "language": "Go",
+    "description": "Zero Allocation JSON Logger"
+  },
+  {
+    "repo": "mverschu/adwsdomaindump",
+    "branch": "main",
+    "language": "Python",
+    "description": "Active Directory information dumper via ADWS for evasion purposes."
+  },
+  {
+    "repo": "sirupsen/logrus",
+    "branch": "master",
+    "language": "Go",
+    "description": "Structured, pluggable logging for Go."
+  },
+  {
+    "repo": "NativeScript/NativeScript",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Turn natural language to terminal commands"
+    "description": "⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love ❤️ Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Flutter and you name it compatible."
+  },
+  {
+    "repo": "apache/tvm",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Machine Learning Compiler Framework"
+  },
+  {
+    "repo": "nullclaw/nullclaw",
+    "branch": "main",
+    "language": "Zig",
+    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
+  },
+  {
+    "repo": "3-JonWallis1993/HyperLiquid-Claw",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "ChainSafe/lodestar",
+    "branch": "stable",
+    "language": "TypeScript",
+    "description": "🌟 Ethereum Consensus client for the Zig and TypeScript ecosystem"
+  },
+  {
+    "repo": "primefaces/primeng",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The Most Complete Angular UI Component Library"
+  },
+  {
+    "repo": "r1cA18/screen-commentator",
+    "branch": "main",
+    "language": "Swift",
+    "description": "macOS app that captures your screen and generates scrolling AI comments overlay"
   }
 ]
