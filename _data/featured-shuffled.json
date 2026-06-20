@@ -1,146 +1,146 @@
 [
   {
-    "repo": "lodash/lodash",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+    "repo": "apkclaw-team/ApkClaw",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": ""
   },
   {
-    "repo": "ethereumjs/ethereumjs-monorepo",
-    "branch": "master",
+    "repo": "steven2358/awesome-generative-ai",
+    "branch": "main",
+    "language": "Other",
+    "description": "A curated list of modern Generative Artificial Intelligence projects and services"
+  },
+  {
+    "repo": "rust-lang/rustlings",
+    "branch": "main",
+    "language": "Rust",
+    "description": ":crab: Small exercises to get you used to reading and writing Rust code!"
+  },
+  {
+    "repo": "MarlinFirmware/Marlin",
+    "branch": "bugfix-2.1.x",
+    "language": "C++",
+    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
+  },
+  {
+    "repo": "KKKKhazix/Khazix-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "better-auth/better-icons",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
+    "description": "Skill and MCP server for searching and retrieving icons"
   },
   {
-    "repo": "torvalds/linux",
+    "repo": "pixijs/pixijs",
+    "branch": "dev",
+    "language": "TypeScript",
+    "description": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer."
+  },
+  {
+    "repo": "facebookresearch/actionmesh",
+    "branch": "main",
+    "language": "Python",
+    "description": "🎬ActionMesh: A fast video to animated mesh model with unprecedented quality. Generate animated mesh seamlessly importable into any 3D software in less than a minute."
+  },
+  {
+    "repo": "plotly/dash",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
+  },
+  {
+    "repo": "mit-pdos/xv6-public",
     "branch": "master",
     "language": "C",
-    "description": "Linux kernel source tree"
+    "description": "xv6 OS"
   },
   {
-    "repo": "apple/swift",
+    "repo": "miaoxworld/OpenClawInstaller",
     "branch": "main",
-    "language": "C++",
-    "description": "The Swift Programming Language"
+    "language": "Shell",
+    "description": "ClawdBot 一键部署工具"
   },
   {
-    "repo": "google/or-tools",
-    "branch": "stable",
-    "language": "C++",
-    "description": "Google's Operations Research tools:"
-  },
-  {
-    "repo": "nuxt/nuxt",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Full-Stack Vue Framework."
-  },
-  {
-    "repo": "certbot/certbot",
+    "repo": "zulip/zulip",
     "branch": "main",
     "language": "Python",
-    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+    "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused."
   },
   {
-    "repo": "microsoft/LlamaSharp",
+    "repo": "edwardsanchez/MotionEyes",
     "branch": "main",
-    "language": "Other",
-    "description": ".NET library for Llama model inference."
+    "language": "Swift",
+    "description": ""
   },
   {
-    "repo": "huggingface/diffusers",
-    "branch": "main",
-    "language": "Python",
-    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
-  },
-  {
-    "repo": "apache/spark",
-    "branch": "master",
-    "language": "Scala",
-    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
-  },
-  {
-    "repo": "apache/superset",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Apache Superset is a Data Visualization and Data Exploration Platform"
-  },
-  {
-    "repo": "bitcoin/bitcoin",
-    "branch": "master",
-    "language": "C++",
-    "description": "Bitcoin Core integration/staging tree"
-  },
-  {
-    "repo": "pytorch/audio",
-    "branch": "main",
-    "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
-  },
-  {
-    "repo": "Tencent/tdesign-vue-next",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "A Vue3.x UI components lib for TDesign."
-  },
-  {
-    "repo": "go-gorm/gorm",
-    "branch": "master",
-    "language": "Go",
-    "description": "The fantastic ORM library for Golang, aims to be developer friendly"
-  },
-  {
-    "repo": "microsoft/playwright",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
-  },
-  {
-    "repo": "wagmi-dev/wagmi",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Reactive primitives for Ethereum apps"
-  },
-  {
-    "repo": "bytedance/semi-design",
-    "branch": "main",
-    "language": "Other",
-    "description": "A modern, comprehensive, flexible design system and React UI library."
-  },
-  {
-    "repo": "react-native-webview/react-native-webview",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "React Native Cross-Platform WebView"
-  },
-  {
-    "repo": "qdrant/qdrant",
+    "repo": "fish-shell/fish-shell",
     "branch": "master",
     "language": "Rust",
-    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+    "description": "The user-friendly command line shell."
   },
   {
-    "repo": "tendermint/tendermint",
-    "branch": "main",
-    "language": "Go",
-    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
-  },
-  {
-    "repo": "actix/actix-web",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust."
-  },
-  {
-    "repo": "traefik/traefik",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Cloud Native Application Proxy"
-  },
-  {
-    "repo": "AnkitNayak-eth/EpsteinFiles-RAG",
+    "repo": "pypa/pipx",
     "branch": "main",
     "language": "Python",
-    "description": "A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler)."
+    "description": "Install and Run Python Applications in Isolated Environments"
+  },
+  {
+    "repo": "GrapheneOS/Camera",
+    "branch": "main",
+    "language": "Java",
+    "description": "Modern camera app focused on privacy and security with QR & barcode scanning."
+  },
+  {
+    "repo": "gorhill/uBlock",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean."
+  },
+  {
+    "repo": "google/flax",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Flax is a neural network library for JAX that is designed for flexibility."
+  },
+  {
+    "repo": "doocs/leetcode",
+    "branch": "main",
+    "language": "Java",
+    "description": "🔥LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解"
+  },
+  {
+    "repo": "Eronred/aso-skills",
+    "branch": "main",
+    "language": "Shell",
+    "description": "AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth."
+  },
+  {
+    "repo": "agentscope-ai/CoPaw",
+    "branch": "main",
+    "language": "Python",
+    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
+  },
+  {
+    "repo": "THUDM/ChatGLM-6B",
+    "branch": "main",
+    "language": "Python",
+    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
+  },
+  {
+    "repo": "erikdarlingdata/PerformanceMonitor",
+    "branch": "main",
+    "language": "C#",
+    "description": "Free, open-source SQL Server performance monitoring. Full Edition (server-installed, 30 collectors) and Lite Edition (standalone, DuckDB). Built-in MCP server for AI integration."
+  },
+  {
+    "repo": "web3-storage/web3.storage",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "DEPRECATED ⁂ The simple file storage service for IPFS & Filecoin"
   }
 ]
