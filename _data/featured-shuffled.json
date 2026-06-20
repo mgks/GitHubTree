@@ -1,146 +1,146 @@
 [
   {
-    "repo": "apache/tvm",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open Machine Learning Compiler Framework"
-  },
-  {
-    "repo": "ggerganov/llama.cpp",
-    "branch": "master",
-    "language": "C++",
-    "description": "LLM inference in C/C++"
-  },
-  {
-    "repo": "xw7872081123/wallpaper-engine-steam",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Free Wallpaper Engine Steam: download PC windows 11, steam workshop downloader bypass, high CPU RAM usage fix, android apk mobile sync. 4k anime live wallpaper, black screen crash on startup, corsair icue razer chroma integration, ui32.exe error solution, scene web wallpaper, mobile connection pin, custom playlist screensaver,"
-  },
-  {
-    "repo": "RasaHQ/rasa",
-    "branch": "main",
-    "language": "Python",
-    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
-  },
-  {
-    "repo": "microsoft/LightGBM",
-    "branch": "master",
-    "language": "C++",
-    "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks."
-  },
-  {
-    "repo": "1354427059/orchids-api",
-    "branch": "main",
-    "language": "Go",
-    "description": "1111"
-  },
-  {
-    "repo": "ForrestKnight/open-source-cs",
-    "branch": "master",
-    "language": "Other",
-    "description": "Video discussing this curriculum:"
-  },
-  {
-    "repo": "jbhuang0604/awesome-computer-vision",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome computer vision resources"
-  },
-  {
-    "repo": "deepmind/mujoco",
-    "branch": "main",
-    "language": "C++",
-    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator."
-  },
-  {
-    "repo": "prompt-toolkit/python-prompt-toolkit",
-    "branch": "master",
-    "language": "Python",
-    "description": "Library for building powerful interactive command line applications in Python"
-  },
-  {
-    "repo": "kysely-org/kysely",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A type-safe TypeScript SQL query builder"
-  },
-  {
-    "repo": "go-micro/go-micro",
-    "branch": "master",
-    "language": "Go",
-    "description": "A Go microservices framework"
-  },
-  {
-    "repo": "ajeetdsouza/zoxide",
+    "repo": "Shopify/javy",
     "branch": "main",
     "language": "Rust",
-    "description": "A smarter cd command. Supports all major shells."
+    "description": "JS to WebAssembly toolchain"
   },
   {
-    "repo": "tensorflow/tensorflow",
-    "branch": "master",
-    "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
-  },
-  {
-    "repo": "ory/oathkeeper",
-    "branch": "master",
-    "language": "Go",
-    "description": "A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. Inspired by the BeyondCorp / Zero Trust white paper. Written in Go."
-  },
-  {
-    "repo": "ReactiveX/RxSwift",
+    "repo": "PeonPing/peon-ping",
     "branch": "main",
-    "language": "Swift",
-    "description": "Reactive Programming in Swift"
+    "language": "Shell",
+    "description": "Warcraft III Peon voice notifications for Claude Code. Stop babysitting your terminal."
   },
   {
-    "repo": "h5bp/html5-boilerplate",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
-  },
-  {
-    "repo": "keithnull/TeachYourselfCS-CN",
-    "branch": "master",
-    "language": "Other",
-    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
-  },
-  {
-    "repo": "azl397985856/leetcode",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
-  },
-  {
-    "repo": "spring-projects/spring-data-jpa",
-    "branch": "main",
-    "language": "Java",
-    "description": "Simplifies the development of creating a JPA-based data access layer."
-  },
-  {
-    "repo": "ReactiveX/RxJava",
-    "branch": "3.x",
-    "language": "Java",
-    "description": "RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM."
-  },
-  {
-    "repo": "prisma/prisma",
+    "repo": "shuaiplus/NodeWarden",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB"
+    "description": "Minimal Bitwarden-compatible server on Cloudflare Workers for personal use"
   },
   {
-    "repo": "PeGasUsCHAkra/mevbot",
+    "repo": "kelseyhightower/kubernetes-the-hard-way",
+    "branch": "master",
+    "language": "Other",
+    "description": "Bootstrap Kubernetes the hard way. No scripts."
+  },
+  {
+    "repo": "joeseesun/anything-to-notebooklm",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Ethereum Bot"
+    "language": "Python",
+    "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc."
   },
   {
-    "repo": "saltstack/salt",
+    "repo": "YuJunZhiXue/github-skill-forge",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "inputsh/awesome-linux",
+    "branch": "master",
+    "language": "Other",
+    "description": ":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:"
+  },
+  {
+    "repo": "TheOdinProject/css-exercises",
+    "branch": "main",
+    "language": "HTML",
+    "description": "A repository for practicing CSS concepts."
+  },
+  {
+    "repo": "Jane-xiaoer/x-fetcher",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "op7418/Youtube-clipper-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "autoclaw-cc/xiaohongshu-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "xiaohongshu-skills"
+  },
+  {
+    "repo": "schibsted/videofy_minimal",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "jamiepine/voicebox",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The open-source voice synthesis studio powered by Qwen3-TTS."
+  },
+  {
+    "repo": "xoai/sage-wiki",
+    "branch": "main",
+    "language": "Go",
+    "description": "An LLM-compiled personal knowledge base.  Drop in your papers, articles, and notes. sage-wiki compiles them into a structured, interlinked wiki — with concepts extracted, cross-references discovered, and everything searchable."
+  },
+  {
+    "repo": "jackquelineheth08161673473/discord-server-booster-2",
+    "branch": "main",
+    "language": "C++",
+    "description": "Discord Nexus Booster 2026 — Advanced Community Scaling & Engagement Automation Suite. High-speed Server Boosting via Token Synchronization, Automated Reward Management, and Infinite Invite Tracking. Cloud-based Infrastructure for Rapid Community Growth."
+  },
+  {
+    "repo": "mizchi/skills",
+    "branch": "main",
+    "language": "Nix",
+    "description": "Agent skills by mizchi, distributed via APM"
+  },
+  {
+    "repo": "Russell-cell/PPT-Design-Prompt",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "KlingAIResearch/X-Dub",
     "branch": "master",
     "language": "Python",
-    "description": "Software to automate the management and configuration of infrastructure and applications at scale."
+    "description": "Try X-Dub to sync any character in a video with any audio you like | Official repository for From Inpainting to Editing: Unlocking Robust Mask-Free Visual Dubbing via Generative Bootstrapping"
+  },
+  {
+    "repo": "epiral/weixin-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "WeChat iLink Bot SDK for Node.js and Python — zero-config agent integration"
+  },
+  {
+    "repo": "cosmicstack-labs/mercury-agent",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
+  },
+  {
+    "repo": "icebear0828/clio",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A Claude Code clone CLI - agentic coding assistant in your terminal"
+  },
+  {
+    "repo": "verialabs/ctf-agent",
+    "branch": "main",
+    "language": "Python",
+    "description": "Autonomous CTF solver that races multiple AI models in parallel. 1st place BSidesSF 2026."
+  },
+  {
+    "repo": "URLab-Sim/UnrealRoboticsLab",
+    "branch": "main",
+    "language": "C++",
+    "description": "A high-fidelity, open-source robotics simulator integrating Unreal Engine's photorealistic rendering with MuJoCo's precision physics."
+  },
+  {
+    "repo": "xixu-me/awesome-persona-distill-skills",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "同事.skill、前任.skill、女娲.skill、自己.skill、乔布斯.skill……"
   }
 ]
