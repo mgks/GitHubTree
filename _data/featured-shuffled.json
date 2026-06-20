@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Shopify/javy",
-    "branch": "main",
-    "language": "Rust",
-    "description": "JS to WebAssembly toolchain"
-  },
-  {
-    "repo": "PeonPing/peon-ping",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Warcraft III Peon voice notifications for Claude Code. Stop babysitting your terminal."
-  },
-  {
-    "repo": "shuaiplus/NodeWarden",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Minimal Bitwarden-compatible server on Cloudflare Workers for personal use"
-  },
-  {
-    "repo": "kelseyhightower/kubernetes-the-hard-way",
+    "repo": "stormzhang/token-tracker",
     "branch": "master",
-    "language": "Other",
-    "description": "Bootstrap Kubernetes the hard way. No scripts."
+    "language": "Python",
+    "description": "Track token usage across local AI agents (Claude Code, Codex) — CLI dashboard with cost analysis, rate limit monitoring, and session tracking"
   },
   {
-    "repo": "joeseesun/anything-to-notebooklm",
+    "repo": "HKUSTDial/Supervisor-Skills",
     "branch": "main",
     "language": "Python",
-    "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc."
+    "description": "将博导十年科研经验炼化为可直接调用的 AI 技能。从 Idea 构思到论文投稿，你的 AI 科研副导师。"
   },
   {
-    "repo": "YuJunZhiXue/github-skill-forge",
+    "repo": "JuliusBrussee/caveman",
     "branch": "main",
     "language": "Python",
-    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 75% of tokens by talking like caveman"
   },
   {
-    "repo": "inputsh/awesome-linux",
-    "branch": "master",
-    "language": "Other",
-    "description": ":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:"
-  },
-  {
-    "repo": "TheOdinProject/css-exercises",
+    "repo": "MarioGalindoQ/Modern-CPP-Design-Patterns",
     "branch": "main",
-    "language": "HTML",
-    "description": "A repository for practicing CSS concepts."
+    "language": "C++",
+    "description": "32 Design Patterns and C++ Idioms implemented in Modern C++"
   },
   {
-    "repo": "Jane-xiaoer/x-fetcher",
+    "repo": "ByteDance-Seed/In-Place-TTT",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "op7418/Youtube-clipper-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "autoclaw-cc/xiaohongshu-skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "xiaohongshu-skills"
-  },
-  {
-    "repo": "schibsted/videofy_minimal",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "jamiepine/voicebox",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The open-source voice synthesis studio powered by Qwen3-TTS."
-  },
-  {
-    "repo": "xoai/sage-wiki",
+    "repo": "james-6-23/codex2api",
     "branch": "main",
     "language": "Go",
-    "description": "An LLM-compiled personal knowledge base.  Drop in your papers, articles, and notes. sage-wiki compiles them into a structured, interlinked wiki — with concepts extracted, cross-references discovered, and everything searchable."
-  },
-  {
-    "repo": "jackquelineheth08161673473/discord-server-booster-2",
-    "branch": "main",
-    "language": "C++",
-    "description": "Discord Nexus Booster 2026 — Advanced Community Scaling & Engagement Automation Suite. High-speed Server Boosting via Token Synchronization, Automated Reward Management, and Infinite Invite Tracking. Cloud-based Infrastructure for Rapid Community Growth."
-  },
-  {
-    "repo": "mizchi/skills",
-    "branch": "main",
-    "language": "Nix",
-    "description": "Agent skills by mizchi, distributed via APM"
-  },
-  {
-    "repo": "Russell-cell/PPT-Design-Prompt",
-    "branch": "main",
-    "language": "Python",
     "description": ""
   },
   {
-    "repo": "KlingAIResearch/X-Dub",
-    "branch": "master",
-    "language": "Python",
-    "description": "Try X-Dub to sync any character in a video with any audio you like | Official repository for From Inpainting to Editing: Unlocking Robust Mask-Free Visual Dubbing via Generative Bootstrapping"
-  },
-  {
-    "repo": "epiral/weixin-bot",
+    "repo": "planetscale/database-skills",
     "branch": "main",
-    "language": "Python",
-    "description": "WeChat iLink Bot SDK for Node.js and Python — zero-config agent integration"
+    "language": "HTML",
+    "description": "Skills for AI agents working with databases"
   },
   {
-    "repo": "cosmicstack-labs/mercury-agent",
+    "repo": "daymonio/daymon",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
+    "description": "Daymon puts your favorite AI to work 24/7. It schedules, remembers, and orchestrates your own virtual team. Free."
   },
   {
-    "repo": "icebear0828/clio",
-    "branch": "master",
+    "repo": "payloadcms/payload",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "A Claude Code clone CLI - agentic coding assistant in your terminal"
+    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
   },
   {
-    "repo": "verialabs/ctf-agent",
+    "repo": "buckle42/claude-code-remote",
+    "branch": "master",
+    "language": "Python",
+    "description": "Use Claude Code from your phone — or anywhere — over a secure VPN connection."
+  },
+  {
+    "repo": "theNetworkChuck/axios-attack-guide",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Axios npm supply chain attack — detection scripts, IOCs, and protection guide"
+  },
+  {
+    "repo": "cisco-ai-defense/defenseclaw",
     "branch": "main",
     "language": "Python",
-    "description": "Autonomous CTF solver that races multiple AI models in parallel. 1st place BSidesSF 2026."
+    "description": "Security Governance for Agentic AI"
   },
   {
-    "repo": "URLab-Sim/UnrealRoboticsLab",
+    "repo": "garagon/nanostack",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Minimal AI coding agent team skills for the full engineering workflow."
+  },
+  {
+    "repo": "nltk/nltk",
+    "branch": "develop",
+    "language": "Python",
+    "description": "NLTK Source"
+  },
+  {
+    "repo": "uber-go/zap",
+    "branch": "master",
+    "language": "Go",
+    "description": "Blazing fast, structured, leveled logging in Go."
+  },
+  {
+    "repo": "NVIDIA/cudnn-frontend",
     "branch": "main",
     "language": "C++",
-    "description": "A high-fidelity, open-source robotics simulator integrating Unreal Engine's photorealistic rendering with MuJoCo's precision physics."
+    "description": "cudnn_frontend provides a c++ wrapper for the cudnn backend API and samples on how to use it"
   },
   {
-    "repo": "xixu-me/awesome-persona-distill-skills",
+    "repo": "fastai/course-v3",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "The 3rd edition of course.fast.ai"
+  },
+  {
+    "repo": "Web3CZ/Web3Hermes",
     "branch": "main",
     "language": "JavaScript",
-    "description": "同事.skill、前任.skill、女娲.skill、自己.skill、乔布斯.skill……"
+    "description": "【Hermes WebUI】Hermes-Agent 中文版 WebUI，便于中国用户使用"
+  },
+  {
+    "repo": "louisho5/picobot",
+    "branch": "main",
+    "language": "Go",
+    "description": "A lightweight self-hosted bot in a single binary, written in Go."
+  },
+  {
+    "repo": "TristanH/wikiwise",
+    "branch": "main",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "shanselman/openclaw-windows-hub",
+    "branch": "master",
+    "language": "C#",
+    "description": "Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension"
+  },
+  {
+    "repo": "jupyterlab/jupyterlab",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "JupyterLab computational environment."
+  },
+  {
+    "repo": "Noteshagutter/Best-Fortnite-Cheats-2026",
+    "branch": "main",
+    "language": "C++",
+    "description": "⭐️ Fortnite Cheats 2026 Download – Aimbot, ESP, Wallhack, Triggerbot, Multihack, Recoil Control, Bunnyhop | Silent Aim, Radarhack, Loader, Injector, Undetected Bypass ⭐️"
+  },
+  {
+    "repo": "h9zdev/WireTapper",
+    "branch": "main",
+    "language": "HTML",
+    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
   }
 ]
