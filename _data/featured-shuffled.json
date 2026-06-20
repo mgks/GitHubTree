@@ -1,146 +1,146 @@
 [
   {
-    "repo": "stormzhang/token-tracker",
+    "repo": "lodash/lodash",
     "branch": "master",
-    "language": "Python",
-    "description": "Track token usage across local AI agents (Claude Code, Codex) — CLI dashboard with cost analysis, rate limit monitoring, and session tracking"
-  },
-  {
-    "repo": "HKUSTDial/Supervisor-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "将博导十年科研经验炼化为可直接调用的 AI 技能。从 Idea 构思到论文投稿，你的 AI 科研副导师。"
-  },
-  {
-    "repo": "JuliusBrussee/caveman",
-    "branch": "main",
-    "language": "Python",
-    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 75% of tokens by talking like caveman"
-  },
-  {
-    "repo": "MarioGalindoQ/Modern-CPP-Design-Patterns",
-    "branch": "main",
-    "language": "C++",
-    "description": "32 Design Patterns and C++ Idioms implemented in Modern C++"
-  },
-  {
-    "repo": "ByteDance-Seed/In-Place-TTT",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "james-6-23/codex2api",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "planetscale/database-skills",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Skills for AI agents working with databases"
-  },
-  {
-    "repo": "daymonio/daymon",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Daymon puts your favorite AI to work 24/7. It schedules, remembers, and orchestrates your own virtual team. Free."
-  },
-  {
-    "repo": "payloadcms/payload",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
-  },
-  {
-    "repo": "buckle42/claude-code-remote",
-    "branch": "master",
-    "language": "Python",
-    "description": "Use Claude Code from your phone — or anywhere — over a secure VPN connection."
-  },
-  {
-    "repo": "theNetworkChuck/axios-attack-guide",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Axios npm supply chain attack — detection scripts, IOCs, and protection guide"
-  },
-  {
-    "repo": "cisco-ai-defense/defenseclaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "Security Governance for Agentic AI"
-  },
-  {
-    "repo": "garagon/nanostack",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Minimal AI coding agent team skills for the full engineering workflow."
-  },
-  {
-    "repo": "nltk/nltk",
-    "branch": "develop",
-    "language": "Python",
-    "description": "NLTK Source"
-  },
-  {
-    "repo": "uber-go/zap",
-    "branch": "master",
-    "language": "Go",
-    "description": "Blazing fast, structured, leveled logging in Go."
-  },
-  {
-    "repo": "NVIDIA/cudnn-frontend",
-    "branch": "main",
-    "language": "C++",
-    "description": "cudnn_frontend provides a c++ wrapper for the cudnn backend API and samples on how to use it"
-  },
-  {
-    "repo": "fastai/course-v3",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "The 3rd edition of course.fast.ai"
-  },
-  {
-    "repo": "Web3CZ/Web3Hermes",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "【Hermes WebUI】Hermes-Agent 中文版 WebUI，便于中国用户使用"
+    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
   },
   {
-    "repo": "louisho5/picobot",
-    "branch": "main",
-    "language": "Go",
-    "description": "A lightweight self-hosted bot in a single binary, written in Go."
-  },
-  {
-    "repo": "TristanH/wikiwise",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "shanselman/openclaw-windows-hub",
+    "repo": "ethereumjs/ethereumjs-monorepo",
     "branch": "master",
-    "language": "C#",
-    "description": "Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension"
-  },
-  {
-    "repo": "jupyterlab/jupyterlab",
-    "branch": "main",
     "language": "TypeScript",
-    "description": "JupyterLab computational environment."
+    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
   },
   {
-    "repo": "Noteshagutter/Best-Fortnite-Cheats-2026",
+    "repo": "torvalds/linux",
+    "branch": "master",
+    "language": "C",
+    "description": "Linux kernel source tree"
+  },
+  {
+    "repo": "apple/swift",
     "branch": "main",
     "language": "C++",
-    "description": "⭐️ Fortnite Cheats 2026 Download – Aimbot, ESP, Wallhack, Triggerbot, Multihack, Recoil Control, Bunnyhop | Silent Aim, Radarhack, Loader, Injector, Undetected Bypass ⭐️"
+    "description": "The Swift Programming Language"
   },
   {
-    "repo": "h9zdev/WireTapper",
+    "repo": "google/or-tools",
+    "branch": "stable",
+    "language": "C++",
+    "description": "Google's Operations Research tools:"
+  },
+  {
+    "repo": "nuxt/nuxt",
     "branch": "main",
-    "language": "HTML",
-    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
+    "language": "TypeScript",
+    "description": "The Full-Stack Vue Framework."
+  },
+  {
+    "repo": "certbot/certbot",
+    "branch": "main",
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+  },
+  {
+    "repo": "microsoft/LlamaSharp",
+    "branch": "main",
+    "language": "Other",
+    "description": ".NET library for Llama model inference."
+  },
+  {
+    "repo": "huggingface/diffusers",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+  },
+  {
+    "repo": "apache/spark",
+    "branch": "master",
+    "language": "Scala",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
+  },
+  {
+    "repo": "apache/superset",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Apache Superset is a Data Visualization and Data Exploration Platform"
+  },
+  {
+    "repo": "bitcoin/bitcoin",
+    "branch": "master",
+    "language": "C++",
+    "description": "Bitcoin Core integration/staging tree"
+  },
+  {
+    "repo": "pytorch/audio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+  },
+  {
+    "repo": "Tencent/tdesign-vue-next",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "A Vue3.x UI components lib for TDesign."
+  },
+  {
+    "repo": "go-gorm/gorm",
+    "branch": "master",
+    "language": "Go",
+    "description": "The fantastic ORM library for Golang, aims to be developer friendly"
+  },
+  {
+    "repo": "microsoft/playwright",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
+  },
+  {
+    "repo": "wagmi-dev/wagmi",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Reactive primitives for Ethereum apps"
+  },
+  {
+    "repo": "bytedance/semi-design",
+    "branch": "main",
+    "language": "Other",
+    "description": "A modern, comprehensive, flexible design system and React UI library."
+  },
+  {
+    "repo": "react-native-webview/react-native-webview",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "React Native Cross-Platform WebView"
+  },
+  {
+    "repo": "qdrant/qdrant",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+  },
+  {
+    "repo": "tendermint/tendermint",
+    "branch": "main",
+    "language": "Go",
+    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
+  },
+  {
+    "repo": "actix/actix-web",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust."
+  },
+  {
+    "repo": "traefik/traefik",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Cloud Native Application Proxy"
+  },
+  {
+    "repo": "AnkitNayak-eth/EpsteinFiles-RAG",
+    "branch": "main",
+    "language": "Python",
+    "description": "A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler)."
   }
 ]
