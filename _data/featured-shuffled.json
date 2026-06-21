@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Quorinex/Freebuff2API",
+    "repo": "steven2358/awesome-generative-ai",
+    "branch": "main",
+    "language": "Other",
+    "description": "A curated list of modern Generative Artificial Intelligence projects and services"
+  },
+  {
+    "repo": "JudyaiLab/ai-night-shift",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Multi-agent autonomous framework — let your AI work while you sleep 🌙"
+  },
+  {
+    "repo": "phioranex/openclaw-docker",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "justlovemaki/OpenClaw-Docker-CN-IM",
+    "branch": "main",
+    "language": "Shell",
+    "description": "OpenClaw 的中国IM平台整合Docker版本，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国IM软件的插件，让您可以快速部署一个支持多个中国IM平台的 AI 机器人网关"
+  },
+  {
+    "repo": "openai/openai-python",
+    "branch": "main",
+    "language": "Python",
+    "description": "The official Python library for the OpenAI API"
+  },
+  {
+    "repo": "SamNet-dev/conduit-manager",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution"
+  },
+  {
+    "repo": "first-fluke/oh-my-ag",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The Ultimate Multi-Agent Framework for Google Antigravity. Orchestrate 6 specialized agents via Serena Memory. Parallel CLI execution, real-time observability, and zero-config skills."
+  },
+  {
+    "repo": "google/zx",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A tool for writing better scripts"
+  },
+  {
+    "repo": "ory/hydra",
+    "branch": "master",
+    "language": "Go",
+    "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go."
+  },
+  {
+    "repo": "coollabsio/jean",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Run AI agents parallel in isolated workspaces."
+  },
+  {
+    "repo": "huggingface/peft",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+  },
+  {
+    "repo": "google-deepmind/alphageometry",
+    "branch": "main",
+    "language": "Python",
+    "description": "Solving olympiad geometry without human demonstrations."
+  },
+  {
+    "repo": "hashicorp/terraform",
     "branch": "main",
     "language": "Go",
-    "description": "🚀 OpenAI-compatible Freebuff proxy with dynamic free-agent tracking, token rotation, and ready-to-use Docker deployment."
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
   },
   {
-    "repo": "shreyashankar/plain-writing-skill",
+    "repo": "ReactiveX/RxSwift",
     "branch": "main",
-    "language": "HTML",
-    "description": "A plain-language writing skill for AI agents, with a revision view that shows what changed."
+    "language": "Swift",
+    "description": "Reactive Programming in Swift"
   },
   {
-    "repo": "AdeleZhu/teacher-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "蒸馏你的老师 —— 把老师的教学方式、性格特点和学科知识提取成 AI 技能文件，让 AI 像你的老师一样给你讲题。Inspired by colleague-skill（同事skill）。"
-  },
-  {
-    "repo": "superturtlee/gbl_root_canoe",
-    "branch": "main",
-    "language": "C",
-    "description": "凭什么ROOT就不给用指纹支付？？？"
-  },
-  {
-    "repo": "omnimind-ai/OmniInfer",
-    "branch": "main",
-    "language": "C++",
-    "description": "Cross-platform LLM inference framework for efficient edge deployment"
-  },
-  {
-    "repo": "cv-cat/TaoBaoApis",
-    "branch": "master",
-    "language": "Python",
-    "description": "淘宝算法逆向，淘宝api，websockets自动运营，淘宝AI Agent基座"
-  },
-  {
-    "repo": "atomicmemory/llm-wiki-compiler",
+    "repo": "uuidjs/uuid",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The knowledge compiler. Raw sources in, interlinked wiki out. Inspired by Karpathy's LLM Wiki pattern."
+    "description": "Generate RFC-compliant UUIDs in JavaScript"
   },
   {
-    "repo": "CodMughees/envradar",
+    "repo": "composer/composer",
     "branch": "main",
-    "language": "Python",
-    "description": "Catch undocumented, unused, and drifting environment variables in your repo"
+    "language": "PHP",
+    "description": "Dependency Manager for PHP"
   },
   {
-    "repo": "ryanhcode/sable",
+    "repo": "vitejs/vite",
     "branch": "main",
-    "language": "Java",
-    "description": "Interactive physics moving block structures!"
+    "language": "TypeScript",
+    "description": "Next generation frontend tooling. It's fast!"
   },
   {
-    "repo": "LeDat98/NexusRAG",
-    "branch": "main",
-    "language": "Python",
-    "description": "Hybrid RAG system combining vector search, knowledge graph (LightRAG), and cross-encoder reranking — with Docling document parsing, visual intelligence (image/table captioning), agentic streaming chat, and inline citations. Powered by Gemini or local Ollama models."
-  },
-  {
-    "repo": "robertorobotics/Nextis-AIRA-3D",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open-source 7DoF 3D-printable robotic arm with LeRobot integration."
-  },
-  {
-    "repo": "deepcon3/Binance-Claw",
+    "repo": "huggingface/tokenizers",
     "branch": "main",
     "language": "Rust",
-    "description": "Binance-Claw Lightning-fast Binance price sniper, real-time monitor & OpenClaw skill — written in Rust"
+    "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production"
   },
   {
-    "repo": "browser-use/browser-harness",
-    "branch": "main",
-    "language": "Python",
-    "description": "Self-healing browser harness that enables LLMs to complete any task."
-  },
-  {
-    "repo": "akseolabs-seo/AK-Threads-booster",
-    "branch": "main",
-    "language": "Python",
-    "description": "AK體 · 數據驅動的 Threads 寫文決策系統。用你的歷史貼文、演算法與社媒心理學，協助選題、起草、發文前診斷、表現預估與復盤。Data-driven Threads writing advisor — topic selection, drafting, diagnosis, prediction & review based on your own post history."
-  },
-  {
-    "repo": "swarmclawai/swarmvault",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Inspired by Karpathy's LLM Wiki. Local-first LLM knowledge base compiler (Claude Code, Codex, OpenCode, OpenClaw). Turn raw research into a persistent markdown wiki, knowledge graph, and search index that compound over time."
-  },
-  {
-    "repo": "SteveTheKiller/KillerPDF",
+    "repo": "gorhom/react-native-bottom-sheet",
     "branch": "master",
-    "language": "C#",
-    "description": "Portable PDF editor for Windows. GPLv3. No installer, no account, no subscription, no telemetry."
+    "language": "TypeScript",
+    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
   },
   {
-    "repo": "iamlukethedev/Claw3D",
+    "repo": "anchore/syft",
+    "branch": "main",
+    "language": "Go",
+    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
+  },
+  {
+    "repo": "wagmi-dev/wagmi",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Claw3D is an open source 3D engine built on OpenClaw for creating games, simulations, and high-performance 3D applications."
+    "description": "Reactive primitives for Ethereum apps"
   },
   {
-    "repo": "AIScientists-Dev/WorldSeed",
+    "repo": "huggingface/transformers",
     "branch": "main",
     "language": "Python",
-    "description": "A world engine where AI agents live autonomously — physical rules, information asymmetry, any agent can plug in. Define scenarios in YAML, watch stories emerge."
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
   },
   {
-    "repo": "KAOPU-XiaoPu/web-design",
+    "repo": "idanshen/Self-Distillation",
     "branch": "main",
     "language": "Python",
-    "description": "A Claude Code SKILL for designing beautiful, consistent web pages — spec first, code second."
+    "description": ""
   },
   {
-    "repo": "6551Team/daily-news",
+    "repo": "op7418/Video-Wrapper-Skills",
     "branch": "main",
     "language": "Python",
-    "description": "Daily news and hot topics via the 6551 API. Supports news categories, hot news articles, and trending tweets by category."
-  },
-  {
-    "repo": "Outcome-Signal-Forge/trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "DoomVoss/BASpark",
-    "branch": "main",
-    "language": "C#",
-    "description": "基于 HTML5/Canvas 深度复刻《蔚蓝档案》UI 风格动效的 Windows 鼠标特效工具 || A Windows mouse effect tool reconstructing Blue Archive UI style using HTML5/Canvas"
-  },
-  {
-    "repo": "harrietteehisqu7759383/kms-pico-latest-april-2026",
-    "branch": "main",
-    "language": "C#",
-    "description": "A secure, educational toolkit for understanding KMS activation, designed for lab environments."
-  },
-  {
-    "repo": "BarneyD66/open-warehouse-system",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Chinese-first open-source WMS starter for cross-border warehouse, fulfillment, inventory, billing, returns, and 3PL operations."
+    "description": "为访谈视频添加综艺风格视觉特效的 Claude Skill。AI 分析字幕内容生成建议，用户审批后自动渲染，支持 4 种视觉主题。"
   }
 ]
