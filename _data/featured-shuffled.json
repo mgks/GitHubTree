@@ -1,146 +1,146 @@
 [
   {
-    "repo": "material-components/material-components-ios",
-    "branch": "develop",
-    "language": "Objective-C",
-    "description": "[In maintenance mode] Modular and customizable Material Design UI components for iOS"
-  },
-  {
-    "repo": "tokio-rs/tokio",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
-  },
-  {
-    "repo": "angular/components",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Component infrastructure and Material Design components for Angular"
-  },
-  {
-    "repo": "GrapheneOS/Camera",
-    "branch": "main",
-    "language": "Java",
-    "description": "Modern camera app focused on privacy and security with QR & barcode scanning."
-  },
-  {
-    "repo": "openscad/openscad",
-    "branch": "master",
-    "language": "C++",
-    "description": "OpenSCAD - The Programmers Solid 3D CAD Modeller"
-  },
-  {
-    "repo": "v2ray/v2ray-core",
-    "branch": "master",
-    "language": "Go",
-    "description": "A platform for building proxies to bypass network restrictions."
-  },
-  {
-    "repo": "github/docs",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The open-source repo for docs.github.com"
-  },
-  {
-    "repo": "anthropic-claude-code-ai/free-claude-code-ai-desktop-app",
-    "branch": "main",
-    "language": "C#",
-    "description": "claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026"
-  },
-  {
-    "repo": "actuallyepic/background-computer-use",
-    "branch": "main",
-    "language": "Swift",
-    "description": ""
-  },
-  {
-    "repo": "diepvantien/Tiktok-Pro-Tools",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "TylerBoni/headless-airplay-screen-mirror",
+    "repo": "gemini-cli-extensions/ralph",
     "branch": "main",
     "language": "Shell",
-    "description": ""
+    "description": "Gemini CLI extension for Ralph loops"
   },
   {
-    "repo": "liranringel/ddtree",
+    "repo": "ussumant/llm-wiki-compiler",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Claude Code plugin that compiles markdown knowledge files into a topic-based wiki. Implements Karpathy's LLM Knowledge Base pattern."
+  },
+  {
+    "repo": "zsh-users/zsh-syntax-highlighting",
     "branch": "master",
-    "language": "Python",
-    "description": ""
+    "language": "Shell",
+    "description": "Fish shell like syntax highlighting for Zsh."
   },
   {
-    "repo": "Myhhub/Stock",
-    "branch": "main",
-    "language": "Python",
-    "description": "stock股票.获取股票数据,计算股票指标,筹码分布,识别股票形态,综合选股,选股策略,股票验证回测,股票自动交易,支持PC及移动设备。"
-  },
-  {
-    "repo": "BitrigApp/XCDocs",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Apple's developer docs as a Swift package and CLI."
-  },
-  {
-    "repo": "apache/flink",
-    "branch": "master",
-    "language": "Java",
-    "description": "Apache Flink"
-  },
-  {
-    "repo": "FortAwesome/Font-Awesome",
-    "branch": "6.x",
-    "language": "JavaScript",
-    "description": "The iconic SVG, font, and CSS toolkit"
-  },
-  {
-    "repo": "joeynyc/hermes-hudui",
-    "branch": "main",
-    "language": "Python",
-    "description": "Web UI consciousness monitor for Hermes — the AI agent with persistent memory"
-  },
-  {
-    "repo": "Okyumi/OverTrack",
+    "repo": "freeCodeCamp/freeCodeCamp",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Overland travel route planner — from Tokyo to Antarctica, no flights required."
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "bytedance-deerflow/deer-flow-installer",
+    "repo": "microsoft/generative-ai-for-beginners",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "21 Lessons, Get Started Building with Generative AI"
+  },
+  {
+    "repo": "openclarity/kubeclarity",
+    "branch": "main",
+    "language": "Go",
+    "description": "KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems"
+  },
+  {
+    "repo": "jina-ai/jina",
     "branch": "main",
     "language": "Python",
-    "description": "🦌 DeerFlow 2.0 installer - open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours."
+    "description": "☁️ Build multimodal AI applications with cloud-native stack"
   },
   {
-    "repo": "pithings/coderaft",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🛶 Run VS Code on any machine anywhere and access it in the browser (25MB npm pkg)"
-  },
-  {
-    "repo": "mpiorowski/late-sh",
+    "repo": "ajeetdsouza/zoxide",
     "branch": "main",
     "language": "Rust",
-    "description": "A cozy terminal clubhouse for developers. Lofi beats, casual games, chat, and tech news, all via SSH."
+    "description": "A smarter cd command. Supports all major shells."
   },
   {
-    "repo": "restic/restic",
+    "repo": "jquery/jquery",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "jQuery JavaScript Library"
+  },
+  {
+    "repo": "Zackriya-Solutions/meeting-minutes",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows."
+  },
+  {
+    "repo": "google/or-tools",
+    "branch": "stable",
+    "language": "C++",
+    "description": "Google's Operations Research tools:"
+  },
+  {
+    "repo": "quilljs/quill",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
+  },
+  {
+    "repo": "google/benchmark",
+    "branch": "main",
+    "language": "C++",
+    "description": "A microbenchmark support library"
+  },
+  {
+    "repo": "angular/angular",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Deliver web apps with confidence 🚀"
+  },
+  {
+    "repo": "ramsey/uuid",
+    "branch": "4.7",
+    "language": "PHP",
+    "description": ":snowflake: A PHP library for generating universally unique identifiers (UUIDs)."
+  },
+  {
+    "repo": "amplication/amplication",
     "branch": "master",
+    "language": "TypeScript",
+    "description": "Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams."
+  },
+  {
+    "repo": "ziglang/zig",
+    "branch": "master",
+    "language": "Zig",
+    "description": "Moved to Codeberg"
+  },
+  {
+    "repo": "emberjs/ember.js",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Ember.js - A JavaScript framework for creating ambitious web applications"
+  },
+  {
+    "repo": "OpenBMB/MiniCPM-o",
+    "branch": "main",
+    "language": "Python",
+    "description": "MiniCPM-V 4.5: A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone"
+  },
+  {
+    "repo": "kyverno/kyverno",
+    "branch": "main",
     "language": "Go",
-    "description": "Fast, secure, efficient backup program"
+    "description": "Cloud Native Policy Management"
   },
   {
-    "repo": "celery/kombu",
-    "branch": "main",
+    "repo": "keras-team/keras",
+    "branch": "master",
     "language": "Python",
-    "description": "Messaging library for Python."
+    "description": "Deep Learning for humans"
   },
   {
-    "repo": "walter-grace/mac-code",
-    "branch": "main",
+    "repo": "SeleniumHQ/selenium",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "A browser automation framework and ecosystem."
+  },
+  {
+    "repo": "Kotlin/kotlinx.coroutines",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Library support for Kotlin coroutines"
+  },
+  {
+    "repo": "spotipy-dev/spotipy",
+    "branch": "master",
     "language": "Python",
-    "description": "mac code — Claude Code, but it runs on your Mac for free.   35B AI agent at 30 tok/s via Apple Silicon flash-paging. $0/month."
+    "description": "A light weight Python library for the Spotify Web API"
   }
 ]
