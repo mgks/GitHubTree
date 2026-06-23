@@ -1,146 +1,146 @@
 [
   {
-    "repo": "gemini-cli-extensions/ralph",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Gemini CLI extension for Ralph loops"
+    "repo": "ReactiveX/RxKotlin",
+    "branch": "3.x",
+    "language": "Kotlin",
+    "description": "RxJava bindings for Kotlin"
   },
   {
-    "repo": "ussumant/llm-wiki-compiler",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Claude Code plugin that compiles markdown knowledge files into a topic-based wiki. Implements Karpathy's LLM Knowledge Base pattern."
-  },
-  {
-    "repo": "zsh-users/zsh-syntax-highlighting",
+    "repo": "val1813/kwcode",
     "branch": "master",
-    "language": "Shell",
-    "description": "Fish shell like syntax highlighting for Zsh."
+    "language": "Python",
+    "description": "一个能持续增强本地开源模型的cli，专门为本地部署模型优化的coding窗口。目前仍然处于mvp未能大规模测试和端到端跑通，欢迎指正🙏🏻🙏🏻🙏🏻"
   },
   {
-    "repo": "freeCodeCamp/freeCodeCamp",
+    "repo": "trimstray/the-book-of-secret-knowledge",
+    "branch": "master",
+    "language": "Other",
+    "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+  },
+  {
+    "repo": "apple/swift",
+    "branch": "main",
+    "language": "C++",
+    "description": "The Swift Programming Language"
+  },
+  {
+    "repo": "supermemoryai/clawdbot-supermemory",
     "branch": "main",
     "language": "TypeScript",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
+    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
   },
   {
-    "repo": "microsoft/generative-ai-for-beginners",
+    "repo": "mysqljs/mysql",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A pure node.js JavaScript Client implementing the MySQL protocol."
+  },
+  {
+    "repo": "babel/babel",
     "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "21 Lessons, Get Started Building with Generative AI"
+    "language": "TypeScript",
+    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
   },
   {
-    "repo": "openclarity/kubeclarity",
-    "branch": "main",
-    "language": "Go",
-    "description": "KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems"
-  },
-  {
-    "repo": "jina-ai/jina",
-    "branch": "main",
-    "language": "Python",
-    "description": "☁️ Build multimodal AI applications with cloud-native stack"
-  },
-  {
-    "repo": "ajeetdsouza/zoxide",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A smarter cd command. Supports all major shells."
-  },
-  {
-    "repo": "jquery/jquery",
+    "repo": "Vasco0x4/AIDA",
     "branch": "main",
     "language": "JavaScript",
-    "description": "jQuery JavaScript Library"
+    "description": "AI-Driven Security Assessment - Connect AI to 400+ pentesting tools via MCP"
   },
   {
-    "repo": "Zackriya-Solutions/meeting-minutes",
+    "repo": "electron/electron",
+    "branch": "main",
+    "language": "C++",
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+  },
+  {
+    "repo": "vinta/awesome-python",
+    "branch": "master",
+    "language": "Python",
+    "description": "An opinionated list of awesome Python frameworks, libraries, software and resources."
+  },
+  {
+    "repo": "alebcay/awesome-shell",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php."
+  },
+  {
+    "repo": "openhome-dev/abilities",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Open-source abilities for OpenHome agents."
+  },
+  {
+    "repo": "vibeforge1111/dexscreener-cli-mcp-tool",
+    "branch": "main",
+    "language": "Python",
+    "description": "Visual Dexscreener terminal CLI + MCP scanner"
+  },
+  {
+    "repo": "ethereumjs/ethereumjs-monorepo",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
+  },
+  {
+    "repo": "Tencent/omi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Web Components Framework - Web组件框架"
+  },
+  {
+    "repo": "jayminwest/overstory",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Project-agnostic swarm system for Claude Code agent orchestration"
+  },
+  {
+    "repo": "nyanko3141592/remotion-voicevox-template",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）"
+  },
+  {
+    "repo": "mfornos/awesome-microservices",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of Microservice Architecture related principles and technologies."
+  },
+  {
+    "repo": "brackets-cont/brackets",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An open source code editor for the web, written in JavaScript, HTML and CSS."
+  },
+  {
+    "repo": "knostic/OpenAnt",
+    "branch": "master",
+    "language": "Python",
+    "description": "OpenAnt from Knostic is an open source LLM-based vulnerability discovery product that helps defenders proactively find verified security flaws while minimizing both false positives and false negatives. Stage 1 detects. Stage 2 attacks. What survives is real."
+  },
+  {
+    "repo": "krajekisbtc/PolymarketBTC15mAssistant",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekisbtc"
+  },
+  {
+    "repo": "nullclaw/nullclaw",
+    "branch": "main",
+    "language": "Zig",
+    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
+  },
+  {
+    "repo": "airbnb/lottie-web",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
+  },
+  {
+    "repo": "chroma-core/chroma",
     "branch": "main",
     "language": "Rust",
-    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows."
-  },
-  {
-    "repo": "google/or-tools",
-    "branch": "stable",
-    "language": "C++",
-    "description": "Google's Operations Research tools:"
-  },
-  {
-    "repo": "quilljs/quill",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
-  },
-  {
-    "repo": "google/benchmark",
-    "branch": "main",
-    "language": "C++",
-    "description": "A microbenchmark support library"
-  },
-  {
-    "repo": "angular/angular",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Deliver web apps with confidence 🚀"
-  },
-  {
-    "repo": "ramsey/uuid",
-    "branch": "4.7",
-    "language": "PHP",
-    "description": ":snowflake: A PHP library for generating universally unique identifiers (UUIDs)."
-  },
-  {
-    "repo": "amplication/amplication",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams."
-  },
-  {
-    "repo": "ziglang/zig",
-    "branch": "master",
-    "language": "Zig",
-    "description": "Moved to Codeberg"
-  },
-  {
-    "repo": "emberjs/ember.js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Ember.js - A JavaScript framework for creating ambitious web applications"
-  },
-  {
-    "repo": "OpenBMB/MiniCPM-o",
-    "branch": "main",
-    "language": "Python",
-    "description": "MiniCPM-V 4.5: A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone"
-  },
-  {
-    "repo": "kyverno/kyverno",
-    "branch": "main",
-    "language": "Go",
-    "description": "Cloud Native Policy Management"
-  },
-  {
-    "repo": "keras-team/keras",
-    "branch": "master",
-    "language": "Python",
-    "description": "Deep Learning for humans"
-  },
-  {
-    "repo": "SeleniumHQ/selenium",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "A browser automation framework and ecosystem."
-  },
-  {
-    "repo": "Kotlin/kotlinx.coroutines",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "Library support for Kotlin coroutines"
-  },
-  {
-    "repo": "spotipy-dev/spotipy",
-    "branch": "master",
-    "language": "Python",
-    "description": "A light weight Python library for the Spotify Web API"
+    "description": "Open-source search and retrieval database for AI applications."
   }
 ]
