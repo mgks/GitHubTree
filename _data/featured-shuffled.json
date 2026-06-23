@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ReactiveX/RxKotlin",
-    "branch": "3.x",
+    "repo": "facebookresearch/atlas-lean",
+    "branch": "main",
+    "language": "Lean",
+    "description": "ATLAS Autoformalized Textbook Library At Scale"
+  },
+  {
+    "repo": "WerWolv/ImHex",
+    "branch": "master",
+    "language": "C++",
+    "description": "🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM."
+  },
+  {
+    "repo": "react-native-video/react-native-video",
+    "branch": "master",
     "language": "Kotlin",
-    "description": "RxJava bindings for Kotlin"
+    "description": "A <Video /> component for react-native"
   },
   {
-    "repo": "val1813/kwcode",
+    "repo": "NoobyGains/claude-pulse",
     "branch": "master",
     "language": "Python",
-    "description": "一个能持续增强本地开源模型的cli，专门为本地部署模型优化的coding窗口。目前仍然处于mvp未能大规模测试和端到端跑通，欢迎指正🙏🏻🙏🏻🙏🏻"
+    "description": "Real-time usage monitor for Claude Code — session limits, weekly limits, and plan tier with colour-coded progress bars"
   },
   {
-    "repo": "trimstray/the-book-of-secret-knowledge",
-    "branch": "master",
-    "language": "Other",
-    "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
-  },
-  {
-    "repo": "apple/swift",
-    "branch": "main",
-    "language": "C++",
-    "description": "The Swift Programming Language"
-  },
-  {
-    "repo": "supermemoryai/clawdbot-supermemory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
-  },
-  {
-    "repo": "mysqljs/mysql",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A pure node.js JavaScript Client implementing the MySQL protocol."
-  },
-  {
-    "repo": "babel/babel",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
-  },
-  {
-    "repo": "Vasco0x4/AIDA",
+    "repo": "fastify/fastify",
     "branch": "main",
     "language": "JavaScript",
-    "description": "AI-Driven Security Assessment - Connect AI to 400+ pentesting tools via MCP"
+    "description": "Fast and low overhead web framework, for Node.js"
   },
   {
-    "repo": "electron/electron",
+    "repo": "freeCodeCamp/freeCodeCamp",
     "branch": "main",
-    "language": "C++",
-    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+    "language": "TypeScript",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "vinta/awesome-python",
+    "repo": "kubernetes/kubernetes",
     "branch": "master",
-    "language": "Python",
-    "description": "An opinionated list of awesome Python frameworks, libraries, software and resources."
+    "language": "Go",
+    "description": "Production-Grade Container Scheduling and Management"
   },
   {
-    "repo": "alebcay/awesome-shell",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php."
+    "repo": "getsentry/sentry-javascript",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Official Sentry SDKs for JavaScript"
   },
   {
-    "repo": "openhome-dev/abilities",
-    "branch": "dev",
-    "language": "Python",
-    "description": "Open-source abilities for OpenHome agents."
-  },
-  {
-    "repo": "vibeforge1111/dexscreener-cli-mcp-tool",
+    "repo": "apache/tvm",
     "branch": "main",
     "language": "Python",
-    "description": "Visual Dexscreener terminal CLI + MCP scanner"
+    "description": "Open Machine Learning Compiler Framework"
   },
   {
-    "repo": "ethereumjs/ethereumjs-monorepo",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
-  },
-  {
-    "repo": "Tencent/omi",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Web Components Framework - Web组件框架"
-  },
-  {
-    "repo": "jayminwest/overstory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Project-agnostic swarm system for Claude Code agent orchestration"
-  },
-  {
-    "repo": "nyanko3141592/remotion-voicevox-template",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）"
-  },
-  {
-    "repo": "mfornos/awesome-microservices",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of Microservice Architecture related principles and technologies."
-  },
-  {
-    "repo": "brackets-cont/brackets",
+    "repo": "react-native-picker/picker",
     "branch": "master",
     "language": "JavaScript",
-    "description": "An open source code editor for the web, written in JavaScript, HTML and CSS."
+    "description": "Picker is a cross-platform UI component for selecting an item from a list of options."
   },
   {
-    "repo": "knostic/OpenAnt",
-    "branch": "master",
-    "language": "Python",
-    "description": "OpenAnt from Knostic is an open source LLM-based vulnerability discovery product that helps defenders proactively find verified security flaws while minimizing both false positives and false negatives. Stage 1 detects. Stage 2 attacks. What survives is real."
-  },
-  {
-    "repo": "krajekisbtc/PolymarketBTC15mAssistant",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekisbtc"
-  },
-  {
-    "repo": "nullclaw/nullclaw",
-    "branch": "main",
-    "language": "Zig",
-    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
-  },
-  {
-    "repo": "airbnb/lottie-web",
+    "repo": "atom/atom",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
+    "description": ":atom: The hackable text editor"
   },
   {
-    "repo": "chroma-core/chroma",
-    "branch": "main",
+    "repo": "LightTable/LightTable",
+    "branch": "master",
+    "language": "Clojure",
+    "description": "The Light Table IDE ⛺"
+  },
+  {
+    "repo": "ohmyzsh/ohmyzsh",
+    "branch": "master",
+    "language": "Shell",
+    "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
+  },
+  {
+    "repo": "alacritty/alacritty",
+    "branch": "master",
     "language": "Rust",
-    "description": "Open-source search and retrieval database for AI applications."
+    "description": "A cross-platform, OpenGL terminal emulator."
+  },
+  {
+    "repo": "apache/iceberg",
+    "branch": "main",
+    "language": "Java",
+    "description": "Apache Iceberg"
+  },
+  {
+    "repo": "vercel/ai-chatbot-svelte",
+    "branch": "main",
+    "language": "Svelte",
+    "description": "A full-featured, hackable SvelteKit AI chatbot built by Vercel"
+  },
+  {
+    "repo": "sindresorhus/awesome",
+    "branch": "main",
+    "language": "Other",
+    "description": "😎 Awesome lists about all kinds of interesting topics"
+  },
+  {
+    "repo": "redux-saga/redux-saga",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An alternative side effect model for Redux apps"
+  },
+  {
+    "repo": "angular/angular",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Deliver web apps with confidence 🚀"
+  },
+  {
+    "repo": "airbnb/javascript",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "JavaScript Style Guide"
+  },
+  {
+    "repo": "square/picasso",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "A powerful image downloading and caching library for Android"
+  },
+  {
+    "repo": "torvalds/linux",
+    "branch": "master",
+    "language": "C",
+    "description": "Linux kernel source tree"
+  },
+  {
+    "repo": "esphome/esphome",
+    "branch": "dev",
+    "language": "C++",
+    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
+  },
+  {
+    "repo": "tqdm/tqdm",
+    "branch": "master",
+    "language": "Python",
+    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
   }
 ]
