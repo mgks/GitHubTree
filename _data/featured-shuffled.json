@@ -1,33 +1,135 @@
 [
   {
-    "repo": "facebookresearch/atlas-lean",
+    "repo": "shenhao-stu/openclaw-agents",
     "branch": "main",
-    "language": "Lean",
-    "description": "ATLAS Autoformalized Textbook Library At Scale"
+    "language": "Shell",
+    "description": "🐾 One-command multi-agent setup for OpenClaw — 9 specialized AI agents, group routing, safe config merge."
   },
   {
-    "repo": "WerWolv/ImHex",
+    "repo": "louislva/claude-peers-mcp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Allow all your Claude Codes to message each other ad-hoc!"
+  },
+  {
+    "repo": "CocoaPods/CocoaPods",
     "branch": "master",
-    "language": "C++",
-    "description": "🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM."
+    "language": "Ruby",
+    "description": "The Cocoa Dependency Manager."
   },
   {
-    "repo": "react-native-video/react-native-video",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A <Video /> component for react-native"
+    "repo": "sonpiaz/evox",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
   },
   {
-    "repo": "NoobyGains/claude-pulse",
-    "branch": "master",
-    "language": "Python",
-    "description": "Real-time usage monitor for Claude Code — session limits, weekly limits, and plan tier with colour-coded progress bars"
+    "repo": "denoland/deno",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A modern runtime for JavaScript and TypeScript."
   },
   {
-    "repo": "fastify/fastify",
+    "repo": "BigBodyCobain/Shadowbroker",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
+  },
+  {
+    "repo": "simonw/rodney",
+    "branch": "main",
+    "language": "Go",
+    "description": "CLI tool for interacting with the web"
+  },
+  {
+    "repo": "PeGasUsCHAkra/mevbot",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Fast and low overhead web framework, for Node.js"
+    "description": "Ethereum Bot"
+  },
+  {
+    "repo": "google/styleguide",
+    "branch": "gh-pages",
+    "language": "HTML",
+    "description": "Style guides for Google-originated open-source projects"
+  },
+  {
+    "repo": "rust-embedded/discovery",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Discover the world of microcontrollers through Rust!"
+  },
+  {
+    "repo": "HugoRCD/evlog",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Logging that makes sense. Wide events, structured errors, zero chaos."
+  },
+  {
+    "repo": "foru17/clash-master",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A modern and elegant dashboard for visualizing and managing Clash network traffic."
+  },
+  {
+    "repo": "ZimoLiao/scholaraio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Scholar All-In-One: AI agent-powered research terminal"
+  },
+  {
+    "repo": "Zackriya-Solutions/meeting-minutes",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows."
+  },
+  {
+    "repo": "Pylons/pyramid",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pyramid - A Python web framework"
+  },
+  {
+    "repo": "airbnb/knowledge-repo",
+    "branch": "master",
+    "language": "Python",
+    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions."
+  },
+  {
+    "repo": "stretchr/testify",
+    "branch": "master",
+    "language": "Go",
+    "description": "A toolkit with common assertions and mocks that plays nicely with the standard library"
+  },
+  {
+    "repo": "vibe-music/vibe-music-web",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open-source cloud music player with a bring-your-own-music model. Local control, optional sync, zero platform dependency."
+  },
+  {
+    "repo": "ray-project/ray",
+    "branch": "master",
+    "language": "Python",
+    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
+  },
+  {
+    "repo": "xbhatsmymom39/tradingview-full-version-unlocker",
+    "branch": "main",
+    "language": "Python",
+    "description": "TradingView Full version unlocker"
+  },
+  {
+    "repo": "nektos/act",
+    "branch": "master",
+    "language": "Go",
+    "description": "Run your GitHub Actions locally 🚀"
+  },
+  {
+    "repo": "schibsted/videofy_minimal",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
   },
   {
     "repo": "freeCodeCamp/freeCodeCamp",
@@ -36,111 +138,9 @@
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "kubernetes/kubernetes",
-    "branch": "master",
-    "language": "Go",
-    "description": "Production-Grade Container Scheduling and Management"
-  },
-  {
-    "repo": "getsentry/sentry-javascript",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Official Sentry SDKs for JavaScript"
-  },
-  {
-    "repo": "apache/tvm",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open Machine Learning Compiler Framework"
-  },
-  {
-    "repo": "react-native-picker/picker",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Picker is a cross-platform UI component for selecting an item from a list of options."
-  },
-  {
-    "repo": "atom/atom",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":atom: The hackable text editor"
-  },
-  {
-    "repo": "LightTable/LightTable",
-    "branch": "master",
-    "language": "Clojure",
-    "description": "The Light Table IDE ⛺"
-  },
-  {
-    "repo": "ohmyzsh/ohmyzsh",
-    "branch": "master",
-    "language": "Shell",
-    "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
-  },
-  {
-    "repo": "alacritty/alacritty",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A cross-platform, OpenGL terminal emulator."
-  },
-  {
-    "repo": "apache/iceberg",
-    "branch": "main",
-    "language": "Java",
-    "description": "Apache Iceberg"
-  },
-  {
-    "repo": "vercel/ai-chatbot-svelte",
-    "branch": "main",
-    "language": "Svelte",
-    "description": "A full-featured, hackable SvelteKit AI chatbot built by Vercel"
-  },
-  {
-    "repo": "sindresorhus/awesome",
-    "branch": "main",
-    "language": "Other",
-    "description": "😎 Awesome lists about all kinds of interesting topics"
-  },
-  {
-    "repo": "redux-saga/redux-saga",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "An alternative side effect model for Redux apps"
-  },
-  {
-    "repo": "angular/angular",
+    "repo": "socketio/socket.io",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Deliver web apps with confidence 🚀"
-  },
-  {
-    "repo": "airbnb/javascript",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "JavaScript Style Guide"
-  },
-  {
-    "repo": "square/picasso",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A powerful image downloading and caching library for Android"
-  },
-  {
-    "repo": "torvalds/linux",
-    "branch": "master",
-    "language": "C",
-    "description": "Linux kernel source tree"
-  },
-  {
-    "repo": "esphome/esphome",
-    "branch": "dev",
-    "language": "C++",
-    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
-  },
-  {
-    "repo": "tqdm/tqdm",
-    "branch": "master",
-    "language": "Python",
-    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
+    "description": "Realtime application framework (Node.JS server)"
   }
 ]
