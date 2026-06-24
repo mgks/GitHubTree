@@ -1,45 +1,93 @@
 [
   {
-    "repo": "fabro-sh/fabro",
-    "branch": "main",
-    "language": "Rust",
-    "description": "⚒️ The open source dark software factory for expert engineers."
-  },
-  {
-    "repo": "Blimp-Labs/claude-usage-bar",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
-  },
-  {
-    "repo": "hamelsmu/claude-review-loop",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Claude Code plugin: automated code review loop with Codex"
-  },
-  {
-    "repo": "antfu/skills",
-    "branch": "main",
+    "repo": "Janlaywss/cloud-code",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "Anthony Fu's curated collection of agent skills."
+    "description": "cloud-code"
   },
   {
-    "repo": "openperf/brief",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agent Service Agreement"
+    "repo": "karpathy/nanoGPT",
+    "branch": "master",
+    "language": "Python",
+    "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
   },
   {
-    "repo": "nullclaw/nullclaw",
-    "branch": "main",
-    "language": "Zig",
-    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
+    "repo": "pyg-team/pytorch_geometric",
+    "branch": "master",
+    "language": "Python",
+    "description": "Graph Neural Network Library for PyTorch"
   },
   {
-    "repo": "sqlalchemy/sqlalchemy",
+    "repo": "python-attrs/attrs",
     "branch": "main",
     "language": "Python",
-    "description": "The Database Toolkit for Python"
+    "description": "Python Classes Without Boilerplate"
+  },
+  {
+    "repo": "tailwindlabs/headlessui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS."
+  },
+  {
+    "repo": "ggerganov/llama.cpp",
+    "branch": "master",
+    "language": "C++",
+    "description": "LLM inference in C/C++"
+  },
+  {
+    "repo": "dotnet/roslyn",
+    "branch": "main",
+    "language": "C#",
+    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
+  },
+  {
+    "repo": "ansible/ansible",
+    "branch": "devel",
+    "language": "Python",
+    "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com."
+  },
+  {
+    "repo": "hasura/graphql-engine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events."
+  },
+  {
+    "repo": "aio-libs/aiohttp",
+    "branch": "master",
+    "language": "Python",
+    "description": "Asynchronous HTTP client/server framework for asyncio and Python"
+  },
+  {
+    "repo": "webpack/webpack",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through loaders, modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff."
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "github/docs",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The open-source repo for docs.github.com"
+  },
+  {
+    "repo": "microsoft/AI",
+    "branch": "master",
+    "language": "Python",
+    "description": "Microsoft AI"
+  },
+  {
+    "repo": "rabbitmq/rabbitmq-server",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
   },
   {
     "repo": "typicode/json-server",
@@ -48,99 +96,51 @@
     "description": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
   },
   {
-    "repo": "meteor/meteor",
-    "branch": "devel",
-    "language": "JavaScript",
-    "description": "Meteor, the JavaScript App Platform"
-  },
-  {
-    "repo": "andyhuo520/rf-detr-detection",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "基于 RF-DETR 的浏览器端实时目标检测应用"
-  },
-  {
-    "repo": "MichMich/MagicMirror",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant."
-  },
-  {
-    "repo": "labuladong/fucking-algorithm",
-    "branch": "master",
-    "language": "Markdown",
-    "description": "刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why."
-  },
-  {
-    "repo": "stepfun-ai/Step-3.5-Flash",
-    "branch": "main",
-    "language": "C++",
-    "description": "Fast, Sharp & Reliable Agentic Intelligence"
-  },
-  {
-    "repo": "aosabook/500lines",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "500 Lines or Less"
-  },
-  {
-    "repo": "mosaxiv/clawlet",
+    "repo": "grafana/mimir",
     "branch": "main",
     "language": "Go",
-    "description": "Lightweight Personal AI Assistant"
+    "description": "Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus."
   },
   {
-    "repo": "yeuxuan/openclaw-docs",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "openclaw 剖析、拆解、教程在线文档"
-  },
-  {
-    "repo": "quoroom-ai/room",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet."
-  },
-  {
-    "repo": "MooseGoose0701/skill-compose",
-    "branch": "main",
-    "language": "Python",
-    "description": "Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI."
-  },
-  {
-    "repo": "agarrharr/awesome-cli-apps",
-    "branch": "main",
-    "language": "Shell",
-    "description": "🖥 📊 🕹 🛠 A curated list of command line apps"
-  },
-  {
-    "repo": "portainer/portainer",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Making Docker and Kubernetes management easy."
-  },
-  {
-    "repo": "elder-plinius/GLOSSOPETRAE",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "LINGUISTIC ENGINE FOR AI"
-  },
-  {
-    "repo": "tldev/posturr",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A macOS app that blurs your screen when you slouch. Uses Vision framework for real-time posture detection."
-  },
-  {
-    "repo": "dododook/FlowZ",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "ysharma3501/LuxTTS",
+    "repo": "massgravel/Microsoft-Activation-Scripts",
     "branch": "master",
+    "language": "Batchfile",
+    "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting."
+  },
+  {
+    "repo": "pyenv/pyenv",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Simple Python version management"
+  },
+  {
+    "repo": "nginx/nginx",
+    "branch": "master",
+    "language": "C",
+    "description": "The official NGINX Open Source repository."
+  },
+  {
+    "repo": "NVlabs/Sana",
+    "branch": "main",
     "language": "Python",
-    "description": "A high-quality rapid TTS voice cloning model that reaches speeds of 150x realtime."
+    "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer"
+  },
+  {
+    "repo": "pocketbase/pocketbase",
+    "branch": "master",
+    "language": "Go",
+    "description": "Open Source realtime backend in 1 file"
+  },
+  {
+    "repo": "jimuzhe/tiez-clipboard",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "TieZ 是一款基于 Tauri 的跨平台剪贴板管理器 / A cross-platform clipboard manager with history, tags, sync, privacy protection, and fast daily workflows."
+  },
+  {
+    "repo": "primefaces/primevue",
+    "branch": "master",
+    "language": "Vue",
+    "description": "Next Generation Vue UI Component Library"
   }
 ]
