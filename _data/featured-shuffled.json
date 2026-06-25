@@ -1,69 +1,45 @@
 [
   {
-    "repo": "DotNetRussell/BloodBash",
+    "repo": "mizuamedesu/ReportSkills",
     "branch": "main",
-    "language": "Python",
-    "description": "A Bloodhound alternative. BloodBash will ingest the same files bloodhound does but no server is required to use this tool. It's great for quick AD enumeration."
+    "language": "Shell",
+    "description": ""
   },
   {
-    "repo": "facebook/folly",
-    "branch": "main",
-    "language": "C++",
-    "description": "An open-source C++ library developed and used at Facebook."
-  },
-  {
-    "repo": "nicedreamzapp/claude-code-local",
-    "branch": "main",
-    "language": "Python",
-    "description": "Run Claude Code with local AI on Apple Silicon. 122B model at 41 tok/s with Google TurboQuant. No cloud, no API fees."
-  },
-  {
-    "repo": "borkdude/cream",
-    "branch": "main",
-    "language": "Clojure",
-    "description": "Fast starting Clojure runtime built with GraalVM native-image + Crema"
-  },
-  {
-    "repo": "nodejs/node",
-    "branch": "main",
+    "repo": "Synthetixio/synthetix",
+    "branch": "develop",
     "language": "JavaScript",
-    "description": "Node.js JavaScript runtime ✨🐢🚀✨"
+    "description": "Synthetix Solidity smart contracts"
   },
   {
-    "repo": "vercel/next.js",
-    "branch": "main",
+    "repo": "resume/resume.github.com",
+    "branch": "master",
     "language": "JavaScript",
-    "description": "The React Framework"
+    "description": "Resumes generated using the GitHub informations"
   },
   {
-    "repo": "django/django",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Web framework for perfectionists with deadlines."
-  },
-  {
-    "repo": "storybookjs/storybook",
-    "branch": "next",
-    "language": "TypeScript",
-    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
-  },
-  {
-    "repo": "tailwindcss/tailwindcss",
+    "repo": "ant-design/ant-design",
     "branch": "master",
     "language": "TypeScript",
-    "description": "A utility-first CSS framework for rapid UI development."
+    "description": "An enterprise-class UI design language and React UI library"
   },
   {
-    "repo": "donnemartin/system-design-primer",
-    "branch": "master",
-    "language": "Python",
-    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards."
-  },
-  {
-    "repo": "twbs/bootstrap",
+    "repo": "open-telemetry/opentelemetry-python",
     "branch": "main",
-    "language": "MDX",
-    "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web."
+    "language": "Python",
+    "description": "OpenTelemetry Python API and SDK"
+  },
+  {
+    "repo": "reduxjs/redux-toolkit",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The official, opinionated, batteries-included toolset for efficient Redux development"
+  },
+  {
+    "repo": "kubevirt/kubevirt",
+    "branch": "main",
+    "language": "Go",
+    "description": "Kubernetes Virtualization API and runtime in order to define and manage virtual machines."
   },
   {
     "repo": "neovim/neovim",
@@ -72,75 +48,99 @@
     "description": "Vim-fork focused on extensibility and usability"
   },
   {
-    "repo": "934050259/BrowserCluster",
-    "branch": "main",
-    "language": "Python",
-    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
-  },
-  {
-    "repo": "mco-org/mco",
-    "branch": "main",
-    "language": "Python",
-    "description": "Orchestrate AI coding agents. Any prompt. Any agent. Any IDE. Neutral orchestration layer for Claude Code, Codex CLI, Gemini CLI, OpenCode, Qwen Code — works from Cursor, Trae, Copilot, Windsurf, or plain shell."
-  },
-  {
-    "repo": "tensorflow/tensorflow",
+    "repo": "airbnb/lottie-ios",
     "branch": "master",
-    "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
+    "language": "Swift",
+    "description": "An iOS library to natively render After Effects vector animations"
   },
   {
-    "repo": "Sir-Scuzza/gluetun-webui",
+    "repo": "apple/swift-algorithms",
     "branch": "main",
+    "language": "Swift",
+    "description": "Commonly used sequence and collection algorithms for Swift"
+  },
+  {
+    "repo": "freeCodeCamp/freeCodeCamp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
+  },
+  {
+    "repo": "androidx/media",
+    "branch": "main",
+    "language": "Java",
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+  },
+  {
+    "repo": "trekhleb/javascript-algorithms",
+    "branch": "master",
     "language": "JavaScript",
-    "description": ""
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
   },
   {
-    "repo": "blader/taskmaster",
+    "repo": "keepassxreboot/keepassxc",
+    "branch": "develop",
+    "language": "C++",
+    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
+  },
+  {
+    "repo": "apple/swift-protobuf",
     "branch": "main",
-    "language": "Shell",
-    "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete"
+    "language": "Swift",
+    "description": "Plugin and runtime library for using protobuf with Swift"
   },
   {
-    "repo": "avbiswas/fast-rlm",
+    "repo": "torvalds/linux",
+    "branch": "master",
+    "language": "C",
+    "description": "Linux kernel source tree"
+  },
+  {
+    "repo": "spring-projects/spring-data-jpa",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Recursive Language Models (https://arxiv.org/abs/2512.24601)"
+    "language": "Java",
+    "description": "Simplifies the development of creating a JPA-based data access layer."
   },
   {
-    "repo": "microsoft/playwright",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
-  },
-  {
-    "repo": "docker/compose",
+    "repo": "tektoncd/pipeline",
     "branch": "main",
     "language": "Go",
-    "description": "Define and run multi-container applications with Docker"
+    "description": "A cloud-native Pipeline resource."
   },
   {
-    "repo": "rustwasm/wasm-bindgen",
+    "repo": "SVProgressHUD/SVProgressHUD",
+    "branch": "master",
+    "language": "Objective-C",
+    "description": "A clean and lightweight progress HUD for your iOS and tvOS app."
+  },
+  {
+    "repo": "google/benchmark",
     "branch": "main",
-    "language": "Rust",
-    "description": "Facilitating high-level interactions between Wasm modules and JavaScript"
+    "language": "C++",
+    "description": "A microbenchmark support library"
   },
   {
-    "repo": "EleutherAI/gpt-neox",
+    "repo": "facebook/create-react-app",
     "branch": "main",
-    "language": "Python",
-    "description": "An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries"
+    "language": "JavaScript",
+    "description": "Set up a modern web app by running one command."
   },
   {
-    "repo": "triggerdotdev/trigger.dev",
+    "repo": "Automattic/mongoose",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "MongoDB object modeling designed to work in an asynchronous environment."
+  },
+  {
+    "repo": "facebook/docusaurus",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Trigger.dev – build and deploy fully‑managed AI agents and workflows"
+    "description": "Easy to maintain open source documentation websites."
   },
   {
-    "repo": "google-research/vision_transformer",
+    "repo": "extism/extism",
     "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Vision Transformer in JAX."
+    "language": "Rust",
+    "description": "The framework for building with WebAssembly (wasm). Easily & securely load wasm modules, move data, call functions, and build extensible apps."
   }
 ]
