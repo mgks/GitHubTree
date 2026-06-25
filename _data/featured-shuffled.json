@@ -1,135 +1,15 @@
 [
   {
-    "repo": "mizuamedesu/ReportSkills",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "Synthetixio/synthetix",
-    "branch": "develop",
-    "language": "JavaScript",
-    "description": "Synthetix Solidity smart contracts"
-  },
-  {
-    "repo": "resume/resume.github.com",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Resumes generated using the GitHub informations"
-  },
-  {
-    "repo": "ant-design/ant-design",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "An enterprise-class UI design language and React UI library"
-  },
-  {
-    "repo": "open-telemetry/opentelemetry-python",
+    "repo": "russellromney/honker",
     "branch": "main",
     "language": "Python",
-    "description": "OpenTelemetry Python API and SDK"
+    "description": "SQLite extension + bindings for Postgres NOTIFY/LISTEN semantics with durable queues, streams, pub/sub, and scheduler"
   },
   {
-    "repo": "reduxjs/redux-toolkit",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The official, opinionated, batteries-included toolset for efficient Redux development"
-  },
-  {
-    "repo": "kubevirt/kubevirt",
+    "repo": "zeroclaw-labs/zeroclaw",
     "branch": "main",
-    "language": "Go",
-    "description": "Kubernetes Virtualization API and runtime in order to define and manage virtual machines."
-  },
-  {
-    "repo": "neovim/neovim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "Vim-fork focused on extensibility and usability"
-  },
-  {
-    "repo": "airbnb/lottie-ios",
-    "branch": "master",
-    "language": "Swift",
-    "description": "An iOS library to natively render After Effects vector animations"
-  },
-  {
-    "repo": "apple/swift-algorithms",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Commonly used sequence and collection algorithms for Swift"
-  },
-  {
-    "repo": "freeCodeCamp/freeCodeCamp",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
-  },
-  {
-    "repo": "androidx/media",
-    "branch": "main",
-    "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
-  },
-  {
-    "repo": "trekhleb/javascript-algorithms",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
-  },
-  {
-    "repo": "keepassxreboot/keepassxc",
-    "branch": "develop",
-    "language": "C++",
-    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
-  },
-  {
-    "repo": "apple/swift-protobuf",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Plugin and runtime library for using protobuf with Swift"
-  },
-  {
-    "repo": "torvalds/linux",
-    "branch": "master",
-    "language": "C",
-    "description": "Linux kernel source tree"
-  },
-  {
-    "repo": "spring-projects/spring-data-jpa",
-    "branch": "main",
-    "language": "Java",
-    "description": "Simplifies the development of creating a JPA-based data access layer."
-  },
-  {
-    "repo": "tektoncd/pipeline",
-    "branch": "main",
-    "language": "Go",
-    "description": "A cloud-native Pipeline resource."
-  },
-  {
-    "repo": "SVProgressHUD/SVProgressHUD",
-    "branch": "master",
-    "language": "Objective-C",
-    "description": "A clean and lightweight progress HUD for your iOS and tvOS app."
-  },
-  {
-    "repo": "google/benchmark",
-    "branch": "main",
-    "language": "C++",
-    "description": "A microbenchmark support library"
-  },
-  {
-    "repo": "facebook/create-react-app",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Set up a modern web app by running one command."
-  },
-  {
-    "repo": "Automattic/mongoose",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MongoDB object modeling designed to work in an asynchronous environment."
+    "language": "Rust",
+    "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀"
   },
   {
     "repo": "facebook/docusaurus",
@@ -138,9 +18,129 @@
     "description": "Easy to maintain open source documentation websites."
   },
   {
-    "repo": "extism/extism",
+    "repo": "thedaviddias/Front-End-Checklist",
+    "branch": "master",
+    "language": "Other",
+    "description": "🗂 The perfect Front-End Checklist for modern websites and meticulous developers"
+  },
+  {
+    "repo": "ReactiveX/RxKotlin",
+    "branch": "3.x",
+    "language": "Kotlin",
+    "description": "RxJava bindings for Kotlin"
+  },
+  {
+    "repo": "openai/openai-cookbook",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Examples and guides for using the OpenAI API"
+  },
+  {
+    "repo": "dev-protocol/polymarket-trading-bot-new",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Polymarket trading bot,Polymarket trading bot, Polymarket trading bot, Polymarket trading bot, Polymarket trading bot, Polymarket trading bot, Polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot,Polymarket trading bot,Polymarket trading bot, Polymarket trading bot, Polymarket trading bot, Polymarket tradin"
+  },
+  {
+    "repo": "opencontainers/image-spec",
+    "branch": "main",
+    "language": "Go",
+    "description": "OCI Image Format"
+  },
+  {
+    "repo": "BuilderIO/mitosis",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelte, and more."
+  },
+  {
+    "repo": "Dokhacgiakhoa/google-antigravity",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "chakra-ui/chakra-ui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
+  },
+  {
+    "repo": "louisho5/picobot",
+    "branch": "main",
+    "language": "Go",
+    "description": "A lightweight self-hosted bot in a single binary, written in Go."
+  },
+  {
+    "repo": "twbs/bootstrap",
+    "branch": "main",
+    "language": "MDX",
+    "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web."
+  },
+  {
+    "repo": "pytorch/audio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+  },
+  {
+    "repo": "olucasandrade/youjustneedpostgres",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "karpathy/nanoGPT",
+    "branch": "master",
+    "language": "Python",
+    "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
+  },
+  {
+    "repo": "gvisor/gvisor",
+    "branch": "master",
+    "language": "Other",
+    "description": "Application Kernel for Containers."
+  },
+  {
+    "repo": "trimstray/the-book-of-secret-knowledge",
+    "branch": "master",
+    "language": "Other",
+    "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+  },
+  {
+    "repo": "yohey-w/multi-agent-shogun",
+    "branch": "main",
+    "language": "Shell",
+    "description": ""
+  },
+  {
+    "repo": "facebook/react",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The library for web and native user interfaces."
+  },
+  {
+    "repo": "T3-Content/quipslop",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "zed-industries/zed",
     "branch": "main",
     "language": "Rust",
-    "description": "The framework for building with WebAssembly (wasm). Easily & securely load wasm modules, move data, call functions, and build extensible apps."
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+  },
+  {
+    "repo": "apple/swift",
+    "branch": "main",
+    "language": "C++",
+    "description": "The Swift Programming Language"
+  },
+  {
+    "repo": "erenjugs/OpenGork",
+    "branch": "main",
+    "language": "Shell",
+    "description": "🧠 Uncensored AI agent powered by xAI's Grok - no filters, no limits"
   }
 ]
