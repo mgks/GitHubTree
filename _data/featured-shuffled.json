@@ -1,146 +1,146 @@
 [
   {
-    "repo": "borkdude/cream",
-    "branch": "main",
-    "language": "Clojure",
-    "description": "Fast starting Clojure runtime built with GraalVM native-image + Crema"
-  },
-  {
-    "repo": "TristanH/wikiwise",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "tokoroten/prompt-review",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "jwasham/coding-interview-university",
-    "branch": "main",
-    "language": "Other",
-    "description": "A complete computer science study plan to become a software engineer."
-  },
-  {
-    "repo": "HenryXiaoYang/wechat-access-unqclawed",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄"
-  },
-  {
-    "repo": "raxx21/rajesh-portfolio",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "embedding-shapes/one-agent-one-browser",
-    "branch": "master",
-    "language": "Rust",
-    "description": "One from scratch browser built by one human and one agent, working hand in hand"
-  },
-  {
-    "repo": "andyhuo520/openclaw-assistant-mvp",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech"
-  },
-  {
-    "repo": "yarnpkg/berry",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "📦🐈 Active development trunk for Yarn ⚒"
-  },
-  {
-    "repo": "needle-tools/md-browse",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Markdown Browser – See the web like an AI does"
-  },
-  {
-    "repo": "PaddlePaddle/PaddleSpeech",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award."
-  },
-  {
-    "repo": "Tencent-Hunyuan/HY3D-Bench",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "bitwarden/server",
-    "branch": "master",
-    "language": "C#",
-    "description": "Bitwarden infrastructure/backend (API, database, Docker, etc)."
-  },
-  {
-    "repo": "ansible-collections/community.general",
-    "branch": "main",
-    "language": "Python",
-    "description": "Ansible Community General Collection"
-  },
-  {
-    "repo": "cncf/toc",
+    "repo": "kubernetes-sigs/kind",
     "branch": "main",
     "language": "Go",
-    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
+    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
   },
   {
-    "repo": "HKUDS/CLI-Anything",
+    "repo": "furukola/Create-Aeronautics-Minecraft-Mod-ALL-Versions",
     "branch": "main",
-    "language": "Python",
-    "description": "CLI-Anything: Making ALL Software Agent-Native"
+    "language": "C++",
+    "description": "Create Aeronautics is an advanced aviation expansion for the Create Mod. It introduces real-world physics and aerodynamics to Minecraft. Build functional airships and planes with realistic lift and mechanical integration. Experience the ultimate engineering challenge in the skies of 2026."
   },
   {
-    "repo": "mem9-ai/mem9",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "hakimel/reveal.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "The HTML Presentation Framework"
-  },
-  {
-    "repo": "jnv/lists",
-    "branch": "master",
-    "language": "Other",
-    "description": "The definitive list of lists (of lists) curated on GitHub and elsewhere"
-  },
-  {
-    "repo": "elastic/kibana",
+    "repo": "actions/setup-python",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Your window into all of your data"
+    "description": "Set up your GitHub Actions workflow with a specific version of Python"
   },
   {
-    "repo": "yearn/yearn-finance",
+    "repo": "burpheart/cursor-tap",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cursor gRPC 通信流量分析工具"
+  },
+  {
+    "repo": "spf13/viper",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go configuration with fangs"
+  },
+  {
+    "repo": "guzzle/guzzle",
+    "branch": "master",
+    "language": "PHP",
+    "description": "Guzzle, an extensible PHP HTTP client"
+  },
+  {
+    "repo": "flutter/flutter",
+    "branch": "master",
+    "language": "Dart",
+    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
+  },
+  {
+    "repo": "FortAwesome/Font-Awesome",
+    "branch": "6.x",
+    "language": "JavaScript",
+    "description": "The iconic SVG, font, and CSS toolkit"
+  },
+  {
+    "repo": "actions/cache",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Cache dependencies and build outputs in GitHub Actions"
+  },
+  {
+    "repo": "onevcat/Kingfisher",
+    "branch": "master",
+    "language": "Swift",
+    "description": "A lightweight, pure-Swift library for downloading and caching images from the web."
+  },
+  {
+    "repo": "mysqljs/mysql",
     "branch": "master",
     "language": "JavaScript",
-    "description": "🏦 yearn v2 web interface"
+    "description": "A pure node.js JavaScript Client implementing the MySQL protocol."
   },
   {
-    "repo": "metric-anything/metric-anything",
+    "repo": "SwiftyJSON/SwiftyJSON",
+    "branch": "master",
+    "language": "Swift",
+    "description": "The better way to deal with JSON data in Swift."
+  },
+  {
+    "repo": "deepset-ai/haystack",
+    "branch": "main",
+    "language": "MDX",
+    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
+  },
+  {
+    "repo": "sindresorhus/awesome",
+    "branch": "main",
+    "language": "Other",
+    "description": "😎 Awesome lists about all kinds of interesting topics"
+  },
+  {
+    "repo": "slidevjs/slidev",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Presentation Slides for Developers"
+  },
+  {
+    "repo": "apollographql/graphql-subscriptions",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ":newspaper: A small module that implements GraphQL subscriptions for Node.js"
+  },
+  {
+    "repo": "vercel/ai",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents"
+  },
+  {
+    "repo": "jquery-validation/jquery-validation",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "jQuery Validation Plugin library sources"
+  },
+  {
+    "repo": "vuetifyjs/vuetify",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "🐉 Vue Component Framework"
+  },
+  {
+    "repo": "actions/upload-artifact",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Upload artifacts from your workflow"
+  },
+  {
+    "repo": "paramiko/paramiko",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "The leading native Python SSHv2 protocol library."
   },
   {
-    "repo": "pyinstaller/pyinstaller",
-    "branch": "develop",
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
     "language": "Python",
-    "description": "Freeze (package) Python programs into stand-alone executables"
+    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
   },
   {
-    "repo": "androidx/androidx",
-    "branch": "androidx-main",
-    "language": "Kotlin",
-    "description": "Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP."
+    "repo": "tamagui/tamagui",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Style React fast with 100% parity on React Native, an optional UI kit, and optimizing compiler."
+  },
+  {
+    "repo": "Kanaries/pygwalker",
+    "branch": "main",
+    "language": "Python",
+    "description": "PyGWalker: Turn your dataframe into an interactive UI for visual analysis"
   }
 ]
