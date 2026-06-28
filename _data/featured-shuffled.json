@@ -1,146 +1,146 @@
 [
   {
-    "repo": "balancer/balancer-v2-monorepo",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
+    "repo": "microsoft/semantic-kernel",
+    "branch": "main",
+    "language": "C#",
+    "description": "Integrate cutting-edge LLM technology quickly and easily into your apps"
   },
   {
-    "repo": "sindresorhus/type-fest",
+    "repo": "ni5arga/deanonymizer",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A collection of essential TypeScript types"
+    "description": "Deanonymize anyone based on their public commenting or posting history & pattern."
   },
   {
-    "repo": "sass/sass",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Sass makes CSS fun!"
-  },
-  {
-    "repo": "socketio/socket.io",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Realtime application framework (Node.JS server)"
-  },
-  {
-    "repo": "pocketbase/pocketbase",
-    "branch": "master",
-    "language": "Go",
-    "description": "Open Source realtime backend in 1 file"
-  },
-  {
-    "repo": "safe-global/safe-contracts",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Safe allows secure management of blockchain assets."
-  },
-  {
-    "repo": "glommer/codemogger",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Codemogger is a code indexing library and MCP server for AI coding agents"
-  },
-  {
-    "repo": "tiangolo/fastapi",
-    "branch": "master",
-    "language": "Python",
-    "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-  },
-  {
-    "repo": "stellarlinkco/myclaw",
+    "repo": "vllm-project/aibrix",
     "branch": "main",
     "language": "Go",
-    "description": ""
+    "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
   },
   {
-    "repo": "iterative/dvc",
-    "branch": "main",
-    "language": "Python",
-    "description": "🦉 Data Versioning and ML Experiments"
-  },
-  {
-    "repo": "supabase/supabase",
+    "repo": "gorhom/react-native-bottom-sheet",
     "branch": "master",
     "language": "TypeScript",
-    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications."
+    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
   },
   {
-    "repo": "microsoft/guidance",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "A guidance language for controlling large language models."
-  },
-  {
-    "repo": "payloadcms/payload",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
-  },
-  {
-    "repo": "erenjugs/OpenGork",
-    "branch": "main",
-    "language": "Shell",
-    "description": "🧠 Uncensored AI agent powered by xAI's Grok - no filters, no limits"
-  },
-  {
-    "repo": "OldJobobo/omarchy-lumon-theme",
-    "branch": "master",
-    "language": "CSS",
-    "description": "A cold corporate Omarchy theme inspired by Lumon Industries and the terminal palettes of *Severance*"
-  },
-  {
-    "repo": "Zephkek/XStoreUnlocker",
-    "branch": "main",
+    "repo": "keepassxreboot/keepassxc",
+    "branch": "develop",
     "language": "C++",
-    "description": "DLC unlocker for Microsoft Store and Xbox PC games."
+    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
   },
   {
-    "repo": "LanRhyme/MicYou",
+    "repo": "go-sql-driver/mysql",
     "branch": "master",
-    "language": "Kotlin",
-    "description": "MicYou is a powerful tool that turns your Android device into a high-quality wireless microphone for your PC."
+    "language": "Go",
+    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
   },
   {
-    "repo": "kevinho/clawfeed",
-    "branch": "main",
-    "language": "HTML",
-    "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard"
+    "repo": "minio/minio",
+    "branch": "master",
+    "language": "Go",
+    "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license."
   },
   {
-    "repo": "pynecone-io/pynecone",
-    "branch": "main",
+    "repo": "ansible/awx",
+    "branch": "devel",
     "language": "Python",
-    "description": "🕸️ Web apps in pure Python 🐍"
+    "description": "AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is one of the upstream projects for Red Hat Ansible Automation Platform."
   },
   {
-    "repo": "markets/awesome-ruby",
+    "repo": "pyenv/pyenv",
     "branch": "master",
-    "language": "Other",
-    "description": "💎 A collection of awesome Ruby libraries, tools, frameworks and software"
+    "language": "Shell",
+    "description": "Simple Python version management"
   },
   {
-    "repo": "elastic/elasticsearch",
+    "repo": "cilium/cilium",
+    "branch": "main",
+    "language": "Go",
+    "description": "eBPF-based Networking, Security, and Observability"
+  },
+  {
+    "repo": "aquasecurity/kube-bench",
+    "branch": "main",
+    "language": "Go",
+    "description": "Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark"
+  },
+  {
+    "repo": "bufbuild/buf",
+    "branch": "main",
+    "language": "Go",
+    "description": "The best way of working with Protocol Buffers."
+  },
+  {
+    "repo": "linkerd/linkerd2",
+    "branch": "main",
+    "language": "Go",
+    "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x."
+  },
+  {
+    "repo": "aave/aave-v3-core",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "This repository contains the core smart contracts of the Aave V3 protocol."
+  },
+  {
+    "repo": "redis/redis",
+    "branch": "unstable",
+    "language": "C",
+    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
+  },
+  {
+    "repo": "spf13/cobra",
+    "branch": "main",
+    "language": "Go",
+    "description": "A Commander for modern Go CLI interactions"
+  },
+  {
+    "repo": "elastic/logstash",
     "branch": "main",
     "language": "Java",
-    "description": "Free and Open Source, Distributed, RESTful Search Engine"
+    "description": "Logstash - transport and process your logs, events, or other data"
   },
   {
-    "repo": "BabylonJS/Babylon.js",
+    "repo": "open-telemetry/opentelemetry-collector",
+    "branch": "main",
+    "language": "Go",
+    "description": "OpenTelemetry Collector"
+  },
+  {
+    "repo": "deepinfra/deepinfra",
+    "branch": "main",
+    "language": "Other",
+    "description": "Run popular AI models like Llama-3, Mistral on DeepInfra's platform."
+  },
+  {
+    "repo": "golang/go",
     "branch": "master",
+    "language": "Go",
+    "description": "The Go programming language"
+  },
+  {
+    "repo": "pinterest/ktlint",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "An anti-bikeshedding Kotlin linter with built-in formatter"
+  },
+  {
+    "repo": "vitejs/vite",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."
+    "description": "Next generation frontend tooling. It's fast!"
   },
   {
-    "repo": "abhinavkale-dev/fynt",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Self-hostable workflow automation platform"
+    "repo": "bytedance/semi-design",
+    "branch": "main",
+    "language": "Other",
+    "description": "A modern, comprehensive, flexible design system and React UI library."
   },
   {
-    "repo": "neovim/neovim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "Vim-fork focused on extensibility and usability"
+    "repo": "immerjs/immer",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Create the next immutable state by mutating the current one"
   }
 ]
