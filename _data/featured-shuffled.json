@@ -1,146 +1,146 @@
 [
   {
-    "repo": "nuxt/nuxt",
+    "repo": "borkdude/cream",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "The Full-Stack Vue Framework."
+    "language": "Clojure",
+    "description": "Fast starting Clojure runtime built with GraalVM native-image + Crema"
   },
   {
-    "repo": "edwardsanchez/MotionEyes",
+    "repo": "TristanH/wikiwise",
     "branch": "main",
-    "language": "Swift",
+    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "laravel/laravel",
-    "branch": "11.x",
-    "language": "Blade",
-    "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation for your next big idea — freeing you to create without sweating the small things."
+    "repo": "tokoroten/prompt-review",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   },
   {
-    "repo": "prompt-security/clawsec",
+    "repo": "jwasham/coding-interview-university",
+    "branch": "main",
+    "language": "Other",
+    "description": "A complete computer science study plan to become a software engineer."
+  },
+  {
+    "repo": "HenryXiaoYang/wechat-access-unqclawed",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A complete security skill suite for OpenClaw's family of agents. Protect your SOUL.md (etc') with drift detection, live security recommendations, automated audits, and skill integrity verification. All from one installable suite."
+    "description": "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄"
   },
   {
-    "repo": "h5bp/html5-boilerplate",
+    "repo": "raxx21/rajesh-portfolio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "embedding-shapes/one-agent-one-browser",
+    "branch": "master",
+    "language": "Rust",
+    "description": "One from scratch browser built by one human and one agent, working hand in hand"
+  },
+  {
+    "repo": "andyhuo520/openclaw-assistant-mvp",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
+    "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech"
   },
   {
-    "repo": "SamNet-dev/dnstm-setup",
+    "repo": "yarnpkg/berry",
     "branch": "master",
-    "language": "Shell",
-    "description": "Interactive setup wizard for dnstm — automated DNS-based network configuration"
+    "language": "TypeScript",
+    "description": "📦🐈 Active development trunk for Yarn ⚒"
   },
   {
-    "repo": "dask/dask",
+    "repo": "needle-tools/md-browse",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Markdown Browser – See the web like an AI does"
+  },
+  {
+    "repo": "PaddlePaddle/PaddleSpeech",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award."
+  },
+  {
+    "repo": "Tencent-Hunyuan/HY3D-Bench",
     "branch": "main",
     "language": "Python",
-    "description": "Parallel computing with task scheduling"
+    "description": ""
   },
   {
-    "repo": "Blimp-Labs/claude-usage-bar",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
+    "repo": "bitwarden/server",
+    "branch": "master",
+    "language": "C#",
+    "description": "Bitwarden infrastructure/backend (API, database, Docker, etc)."
   },
   {
-    "repo": "android-bench/android-bench",
-    "branch": "main",
-    "language": "Python",
-    "description": "Android Bench is a framework for benchmarking Large Language Models (LLMs) on Android development tasks. It evaluates an AI model's ability to understand mobile codebases, generate accurate patches, and solve Android-specific engineering problems."
-  },
-  {
-    "repo": "sqlalchemy/alembic",
+    "repo": "ansible-collections/community.general",
     "branch": "main",
     "language": "Python",
-    "description": "A database migrations tool for SQLAlchemy."
+    "description": "Ansible Community General Collection"
   },
   {
-    "repo": "qazbnm456/awesome-web-security",
+    "repo": "cncf/toc",
+    "branch": "main",
+    "language": "Go",
+    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
+  },
+  {
+    "repo": "HKUDS/CLI-Anything",
+    "branch": "main",
+    "language": "Python",
+    "description": "CLI-Anything: Making ALL Software Agent-Native"
+  },
+  {
+    "repo": "mem9-ai/mem9",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "hakimel/reveal.js",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "The HTML Presentation Framework"
+  },
+  {
+    "repo": "jnv/lists",
     "branch": "master",
     "language": "Other",
-    "description": "🐶 A curated list of Web Security materials and resources."
+    "description": "The definitive list of lists (of lists) curated on GitHub and elsewhere"
   },
   {
-    "repo": "aws/aws-cli",
-    "branch": "v2",
-    "language": "Python",
-    "description": "Universal Command Line Interface for Amazon Web Services"
-  },
-  {
-    "repo": "wolffcatskyy/crowdsec-blocklist-import",
+    "repo": "elastic/kibana",
     "branch": "main",
-    "language": "Shell",
-    "description": "Dockerized tool to import public threat feeds into CrowdSec - 28+ free blocklists, 60k+ IPs"
+    "language": "TypeScript",
+    "description": "Your window into all of your data"
   },
   {
-    "repo": "facebook/create-react-app",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Set up a modern web app by running one command."
-  },
-  {
-    "repo": "python-attrs/attrs",
-    "branch": "main",
-    "language": "Python",
-    "description": "Python Classes Without Boilerplate"
-  },
-  {
-    "repo": "doocs/leetcode",
-    "branch": "main",
-    "language": "Java",
-    "description": "🔥LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解"
-  },
-  {
-    "repo": "emacs-mirror/emacs",
-    "branch": "master",
-    "language": "Emacs Lisp",
-    "description": "Mirror of GNU Emacs"
-  },
-  {
-    "repo": "facebook/react-native",
-    "branch": "main",
-    "language": "C++",
-    "description": "A framework for building native applications using React"
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "pyca/cryptography",
-    "branch": "main",
-    "language": "Python",
-    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
-  },
-  {
-    "repo": "localstack/localstack",
-    "branch": "master",
-    "language": "Python",
-    "description": "💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline"
-  },
-  {
-    "repo": "pyg-team/pytorch_geometric",
-    "branch": "master",
-    "language": "Python",
-    "description": "Graph Neural Network Library for PyTorch"
-  },
-  {
-    "repo": "HubSpot/messenger",
+    "repo": "yearn/yearn-finance",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Growl-style alerts and messages for your app. #hubspot-open-source"
+    "description": "🏦 yearn v2 web interface"
   },
   {
-    "repo": "pytube/pytube",
-    "branch": "master",
+    "repo": "metric-anything/metric-anything",
+    "branch": "main",
     "language": "Python",
-    "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos."
+    "description": ""
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
+  },
+  {
+    "repo": "androidx/androidx",
+    "branch": "androidx-main",
+    "language": "Kotlin",
+    "description": "Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP."
   }
 ]
