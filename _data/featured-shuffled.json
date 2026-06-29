@@ -1,135 +1,93 @@
 [
   {
-    "repo": "CRYPTO-BLACKSKY/Polymarket-sports-copy-trading-bot",
-    "branch": "work",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket copy trading bot polymarket copy trading bot polymarket copytradingbot polymarket copytrading bot"
+    "repo": "google/dopamine",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms."
   },
   {
-    "repo": "evo-design/proto-language",
+    "repo": "intave/intave",
+    "branch": "master",
+    "language": "Java",
+    "description": "Intave is an enterprise, high-performance anticheat for Minecraft built on years of experience protecting the world's largest servers"
+  },
+  {
+    "repo": "googleapis/google-cloud-python",
     "branch": "main",
     "language": "Python",
-    "description": "A high-level programming language for generative biology"
+    "description": "Google Cloud Client Library for Python"
   },
   {
-    "repo": "CodeSeven/toastr",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Simple javascript toast notifications"
+    "repo": "firecracker-microvm/firecracker",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Secure and fast microVMs for serverless computing."
   },
   {
-    "repo": "krisrice/oracle-db-skills",
+    "repo": "skottrun/extrateto",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Dashboard público que expõe supersalários do Judiciário brasileiro acima do teto constitucional"
+  },
+  {
+    "repo": "behzadea12/Paqet-Tunnel-Manager",
     "branch": "main",
     "language": "Shell",
-    "description": "Oracle DB Skills is a curated library of 100+ practical, documentation-backed guides for working with Oracle Database, organized by domain"
+    "description": "Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations."
   },
   {
-    "repo": "nuxt/nuxt",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Full-Stack Vue Framework."
-  },
-  {
-    "repo": "armadasvc/armada",
+    "repo": "go-pg/pg",
     "branch": "master",
-    "language": "Python",
-    "description": "Kubernetes-native framework for bot and scraper orchestration"
-  },
-  {
-    "repo": "bufbuild/buf",
-    "branch": "main",
     "language": "Go",
-    "description": "The best way of working with Protocol Buffers."
+    "description": "Golang ORM with focus on PostgreSQL features and performance"
   },
   {
-    "repo": "apollographql/apollo-server",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🌍  Spec-compliant and production ready JavaScript GraphQL server that lets you develop in a schema-first way. Built for Express, Connect, Hapi, Koa, and more."
-  },
-  {
-    "repo": "bc-dunia/qwen3-TTS-studio",
-    "branch": "main",
-    "language": "Python",
-    "description": "A professional-grade interface for Qwen3-TTS, designed to unlock the model's full potential with fine-grained control and intuitive workflows."
-  },
-  {
-    "repo": "aquasecurity/trivy",
-    "branch": "main",
-    "language": "Go",
-    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
-  },
-  {
-    "repo": "wesm/msgvault",
-    "branch": "main",
-    "language": "Go",
-    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
-  },
-  {
-    "repo": "TQZHR/grok2api",
-    "branch": "main",
-    "language": "Python",
-    "description": "Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning"
-  },
-  {
-    "repo": "mem9-ai/mem9",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "ierror/synaps-cad",
+    "repo": "Follow-Gabagool22/5min-btc-polymarket-trading-bot",
     "branch": "main",
     "language": "Rust",
-    "description": "The AI-powered 3D CAD IDE — edit code, visualize in 3D, and reshape your designs with natural language."
+    "description": "5min btc polymarket trading bot that is polymarket trading bot that trade in 5 btc market polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
   },
   {
-    "repo": "metric-anything/metric-anything",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "faker-js/faker",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Generate massive amounts of fake data in the browser and node.js"
-  },
-  {
-    "repo": "miuda-ai/lele",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Bare-Metal Rust Audio AI Framework"
-  },
-  {
-    "repo": "ReconWorldLab/godot-gaussian-splatting",
-    "branch": "main",
-    "language": "GDScript",
-    "description": "[GDGS] A real-time 3D Gaussian Splatting (3DGS) rendering plugin for the Godot Engine. Godot引擎的实时3DGS渲染插件"
-  },
-  {
-    "repo": "vigorX777/product-design-system",
-    "branch": "main",
-    "language": "HTML",
-    "description": "面向产品经理的 AI 辅助产品设计工作框架，可 fork 定制的通用产品设计系统"
-  },
-  {
-    "repo": "AlexAnys/feishu-openclaw",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Connect 飞书Feishu/Lark bot to openclaw (formerly Clawdbot) — no public server, no domain, no ngrok needed. 稳定免安装、共需5 分钟"
-  },
-  {
-    "repo": "suborbital/sat",
+    "repo": "kubevirt/kubevirt",
     "branch": "main",
     "language": "Go",
-    "description": "Tiny & fast WebAssembly edge compute server"
+    "description": "Kubernetes Virtualization API and runtime in order to define and manage virtual machines."
   },
   {
-    "repo": "AI45Lab/TrinityGuard",
+    "repo": "HugoRCD/evlog",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Logging that makes sense. Wide events, structured errors, zero chaos."
+  },
+  {
+    "repo": "bazelbuild/bazel",
     "branch": "master",
-    "language": "Python",
-    "description": "TrinityGuard: A Unified Framework for Safeguarding Multi-Agent System Safety"
+    "language": "Java",
+    "description": "a fast, scalable, multi-language and extensible build system"
+  },
+  {
+    "repo": "FuelLabs/fuel-core",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Rust full node implementation of the Fuel v2 protocol."
+  },
+  {
+    "repo": "junegunn/fzf",
+    "branch": "master",
+    "language": "Go",
+    "description": ":cherry_blossom: A command-line fuzzy finder"
+  },
+  {
+    "repo": "kysely-org/kysely",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A type-safe TypeScript SQL query builder"
+  },
+  {
+    "repo": "facebook/docusaurus",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Easy to maintain open source documentation websites."
   },
   {
     "repo": "cncf/toc",
@@ -138,9 +96,51 @@
     "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
   },
   {
-    "repo": "avelino/awesome-go",
+    "repo": "harrymunro/nelson",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons."
+  },
+  {
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "language": "Go",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-VL",
+    "branch": "main",
+    "language": "Python",
+    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
+  },
+  {
+    "repo": "vikingmute/better-wechatpay",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "现代化的微信支付 Node.js SDK - ESM、TypeScript、全支付方式支持"
+  },
+  {
+    "repo": "fabriciotrinndade/ats-resume-generator-html",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Generate ATS-friendly resumes using structured JSON and HTML"
+  },
+  {
+    "repo": "google/cadvisor",
+    "branch": "master",
+    "language": "Go",
+    "description": "Analyzes resource usage and performance characteristics of running containers."
+  },
+  {
+    "repo": "certbot/certbot",
+    "branch": "main",
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+  },
+  {
+    "repo": "wesm/msgvault",
     "branch": "main",
     "language": "Go",
-    "description": "A curated list of awesome Go frameworks, libraries and software"
+    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
   }
 ]
