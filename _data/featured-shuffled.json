@@ -1,146 +1,146 @@
 [
   {
-    "repo": "viperrcrypto/Siftly",
+    "repo": "NyxTides/SimpleAuthFlow",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
+    "language": "JavaScript",
+    "description": "A streamlined Chrome extension for the ChatGPT OAuth flow"
   },
   {
-    "repo": "ultraworkers/claw-code-parity",
+    "repo": "newrelic/newrelic-python-agent",
     "branch": "main",
-    "language": "Rust",
-    "description": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration"
+    "language": "Python",
+    "description": "New Relic Python Agent"
   },
   {
-    "repo": "GoAdminGroup/go-admin",
-    "branch": "master",
+    "repo": "cncf/toc",
+    "branch": "main",
     "language": "Go",
-    "description": "A golang framework helps gopher to build a data visualization and admin panel in ten minutes"
+    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
   },
   {
-    "repo": "OpenCV/opencv_contrib",
-    "branch": "4.x",
-    "language": "C++",
-    "description": "Repository for OpenCV's extra modules"
-  },
-  {
-    "repo": "async-rs/async-std",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Async version of the Rust standard library"
-  },
-  {
-    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-tool",
+    "repo": "actions/runner-images",
     "branch": "main",
-    "language": "Rust",
-    "description": ""
+    "language": "PowerShell",
+    "description": "GitHub Actions runner images"
   },
   {
-    "repo": "facebookresearch/detectron2",
+    "repo": "apache/airflow",
     "branch": "main",
     "language": "Python",
-    "description": "Detectron2 is a platform for object detection, segmentation and other visual recognition tasks."
+    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
   },
   {
-    "repo": "poteto/brainmaxxing",
+    "repo": "facebook/hermes",
     "branch": "main",
-    "language": "Python",
-    "description": "stupid simple persistent memory and skill improvement"
+    "language": "JavaScript",
+    "description": "A JavaScript engine optimized for running React Native."
   },
   {
-    "repo": "stablyai/agent-slack",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Slack automation CLI for AI agents"
-  },
-  {
-    "repo": "D1a0y1bb/CloverSec-CTF-Build-Dockerizer-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "四叶草安全-创研中心竞赛专用题目容器构建Skills，面向 CTF Jeopardy 的容器交付引擎：自动探测栈、生成合规题目镜像构建文件、执行规则校验并给出可修复建议，实现标准化工作流程的质量对齐。"
-  },
-  {
-    "repo": "lailoo/butcher-wiki",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Agent engineering knowledge base — dissects open-source projects into portable engineering components"
-  },
-  {
-    "repo": "0xMH/fichero-printer",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Fichero D11s thermal label printer - BLE protocol reverse engineering and Python CLI tool"
-  },
-  {
-    "repo": "ierror/synaps-cad",
-    "branch": "main",
-    "language": "Rust",
-    "description": "The AI-powered 3D CAD IDE — edit code, visualize in 3D, and reshape your designs with natural language."
-  },
-  {
-    "repo": "Frikallo/parakeet.cpp",
-    "branch": "main",
-    "language": "C++",
-    "description": "Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support"
-  },
-  {
-    "repo": "huggingface/transformers",
-    "branch": "main",
-    "language": "Python",
-    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
-  },
-  {
-    "repo": "amplication/amplication",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Amplication brings order to the chaos of large-scale software development by creating Golden Paths for developers - streamlined workflows that drive consistency, enable high-quality code practices, simplify onboarding, and accelerate standardized delivery across teams."
-  },
-  {
-    "repo": "guardrailsio/awesome-python-security",
-    "branch": "master",
-    "language": "Other",
-    "description": "Awesome Python Security resources 🕶🐍🔐"
-  },
-  {
-    "repo": "FireRedTeam/FireRed-Image-Edit",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "GreenSheep01201/claw-empire",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company."
-  },
-  {
-    "repo": "30-seconds/30-seconds-of-code",
+    "repo": "Automattic/mongoose",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Coding articles to level up your development skills"
+    "description": "MongoDB object modeling designed to work in an asynchronous environment."
   },
   {
-    "repo": "theforeveriris/simulated-12306-view",
+    "repo": "operator-framework/operator-sdk",
+    "branch": "master",
+    "language": "Go",
+    "description": "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding."
+  },
+  {
+    "repo": "google/generative-ai-python",
     "branch": "main",
-    "language": "HTML",
-    "description": "简易的12306购票模拟器.用于应急应付对方请求看购票截图的无理要求"
+    "language": "Python",
+    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
   },
   {
-    "repo": "quoroom-ai/room",
+    "repo": "rust-lang/mdBook",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Create book from markdown files. Like Gitbook but implemented in Rust"
+  },
+  {
+    "repo": "kdn251/interviews",
+    "branch": "master",
+    "language": "Java",
+    "description": "Everything you need to know to get the job."
+  },
+  {
+    "repo": "Alamofire/Alamofire",
+    "branch": "master",
+    "language": "Swift",
+    "description": "Elegant HTTP Networking in Swift"
+  },
+  {
+    "repo": "shadowsocks/shadowsocks-windows",
+    "branch": "master",
+    "language": "C#",
+    "description": "A C# port of shadowsocks"
+  },
+  {
+    "repo": "etcd-io/etcd",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet."
+    "language": "Go",
+    "description": "Distributed reliable key-value store for the most critical data of a distributed system"
   },
   {
-    "repo": "yt-dlp/yt-dlp",
+    "repo": "vmware-tanzu/velero",
+    "branch": "main",
+    "language": "Go",
+    "description": "Backup and migrate Kubernetes applications and their persistent volumes"
+  },
+  {
+    "repo": "microsoft/LightGBM",
+    "branch": "master",
+    "language": "C++",
+    "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks."
+  },
+  {
+    "repo": "falcosecurity/falco",
+    "branch": "master",
+    "language": "C++",
+    "description": "Cloud Native Runtime Security"
+  },
+  {
+    "repo": "psycopg/psycopg",
     "branch": "master",
     "language": "Python",
-    "description": "A feature-rich command-line audio/video downloader"
+    "description": "New generation PostgreSQL database adapter for the Python programming language"
   },
   {
-    "repo": "lukilabs/beautiful-mermaid",
+    "repo": "beeware/toga",
     "branch": "main",
-    "language": "TypeScript",
-    "description": ""
+    "language": "Python",
+    "description": "A Python native, OS native GUI toolkit."
+  },
+  {
+    "repo": "GoogleContainerTools/jib",
+    "branch": "master",
+    "language": "Java",
+    "description": "🏗 Build container images for your Java applications."
+  },
+  {
+    "repo": "getify/You-Dont-Know-JS",
+    "branch": "master",
+    "language": "Other",
+    "description": "A book series (2 published editions) on the JS language."
+  },
+  {
+    "repo": "plotly/dash",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
+  },
+  {
+    "repo": "huggingface/peft",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+  },
+  {
+    "repo": "public-apis/public-apis",
+    "branch": "master",
+    "language": "Python",
+    "description": "A collective list of free APIs"
   }
 ]
