@@ -1,99 +1,9 @@
 [
   {
-    "repo": "sneakers-the-rat/ImportantCode",
-    "branch": "main",
-    "language": "Python",
-    "description": "This is a repository with a lot of high profile, high prestige code in it that new programmers can make pull requests to and build their reputation"
-  },
-  {
-    "repo": "sass/sass",
+    "repo": "vueuse/skills",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Sass makes CSS fun!"
-  },
-  {
-    "repo": "AThevon/TokenEater",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
-  },
-  {
-    "repo": "crossplane/crossplane",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Cloud Native Control Plane"
-  },
-  {
-    "repo": "dev-protocol/polymarket-sports-trading-bot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Polymarket Sports trading bot that bet on sport pool. polymarket sports trading | polymarket sport betting | polymarket sports bot"
-  },
-  {
-    "repo": "OpenCV/opencv_contrib",
-    "branch": "4.x",
-    "language": "C++",
-    "description": "Repository for OpenCV's extra modules"
-  },
-  {
-    "repo": "krahets/hello-algo",
-    "branch": "main",
-    "language": "Java",
-    "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现"
-  },
-  {
-    "repo": "prometheus/client_python",
-    "branch": "master",
-    "language": "Python",
-    "description": "Prometheus instrumentation library for Python applications"
-  },
-  {
-    "repo": "flame-engine/flame",
-    "branch": "main",
-    "language": "Dart",
-    "description": "A Flutter based game engine."
-  },
-  {
-    "repo": "Lightricks/LTX-Desktop",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source desktop app for generating videos with LTX models"
-  },
-  {
-    "repo": "GreenSheep01201/claw-empire",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company."
-  },
-  {
-    "repo": "grafana/mimir",
-    "branch": "main",
-    "language": "Go",
-    "description": "Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus."
-  },
-  {
-    "repo": "xaskasdf/ntransformer",
-    "branch": "main",
-    "language": "C++",
-    "description": "High-efficiency LLM inference engine in C++/CUDA. Run Llama 70B on RTX 3090."
-  },
-  {
-    "repo": "letmutex/gitas",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Git Account Switch"
-  },
-  {
-    "repo": "xgen-universe/Capybara",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "actions/runner",
-    "branch": "main",
-    "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
+    "description": "Agent Skills for VueUse"
   },
   {
     "repo": "puppetlabs/puppet",
@@ -102,45 +12,135 @@
     "description": "Server automation framework and application"
   },
   {
-    "repo": "hiragram/agent-workspace",
+    "repo": "fjh1997/Linux.do-Accelerator",
     "branch": "main",
-    "language": "Go",
+    "language": "Rust",
+    "description": "一个原生 Rust 的 linux.do 专属加速器，基于本地 ECH/DoH 处理，支持 CLI + 桌面 GUI。 Native Rust accelerator for linux.do with local ECH/DoH-assisted access, CLI + desktop GUI."
+  },
+  {
+    "repo": "Anuken/Mindustry",
+    "branch": "master",
+    "language": "Java",
+    "description": "The automation tower defense RTS"
+  },
+  {
+    "repo": "denoland/ronly",
+    "branch": "main",
+    "language": "Rust",
     "description": ""
   },
   {
-    "repo": "micropython/micropython",
-    "branch": "master",
-    "language": "C",
-    "description": "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
+    "repo": "helenigtxu/blooket",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
   },
   {
-    "repo": "storybookjs/testing-react",
+    "repo": "LedgerHQ/ledger-live",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "Mono-repository for packages related to Ledger Live and its JavaScript ecosystem."
+  },
+  {
+    "repo": "amirshaker000/netlify-relay",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "zeroclaw-labs/zeroclaw",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀"
+  },
+  {
+    "repo": "nooncheetahstart/Kahoot-tools-AI",
+    "branch": "main",
+    "language": "Python",
+    "description": "Kahoot || Kahoot helper || Kahoot tools || Kahoot ai"
+  },
+  {
+    "repo": "mrdoob/three.js",
+    "branch": "dev",
+    "language": "JavaScript",
+    "description": "JavaScript 3D Library."
+  },
+  {
+    "repo": "AICoderTudou/claude-code-tudou",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Testing utilities that allow you to reuse your Storybook stories in your React unit tests!"
+    "description": ""
   },
   {
-    "repo": "Cranot/agi-in-md",
-    "branch": "master",
-    "language": "Python",
-    "description": "System prompts as cognitive lenses. 13 compression levels, 650+ experiments. Haiku + a 332-word prompt beats Opus vanilla on structural code analysis at 5x less cost. Includes Prism: a lens-powered CLI tool."
-  },
-  {
-    "repo": "imxv/Pretty-mermaid-skills",
+    "repo": "avacocloud/netlify-XHHTP",
     "branch": "main",
     "language": "JavaScript",
-    "description": "To provide AI with Mermaid chart rendering capability, supporting both SVG and ASCII output formats"
+    "description": ""
   },
   {
-    "repo": "nteract/nteract",
-    "branch": "master",
+    "repo": "codetrybe/polymarket-arbitrage-bot",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "📘 The interactive computing suite for you!  ✨"
+    "description": "polymarket arbitrage bot polymarket arbitrage bot"
   },
   {
-    "repo": "google/flatbuffers",
+    "repo": "sightflow-dev/sightflow-desktop-agent",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "hallucinogen/agent-viewer",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Kanban board for managing Claude Code agents in tmux"
+  },
+  {
+    "repo": "sterlingcrispin/nothing-ever-happens",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "foyzulkarim/claude-lens",
+    "branch": "main",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "XBuilderLAB/cheat-on-content",
+    "branch": "main",
+    "language": "Python",
+    "description": "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
+  },
+  {
+    "repo": "bregman-arie/devops-resources",
     "branch": "master",
-    "language": "C++",
-    "description": "FlatBuffers: Memory Efficient Serialization Library"
+    "language": "Groovy",
+    "description": "DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP"
+  },
+  {
+    "repo": "xaspx/hermes-control-interface",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A self-hosted web dashboard for the Hermes AI agent stack. Provides a browser-based terminal, file explorer, session overview, cron management, system metrics, and an agent status panel — all behind a single password gate."
+  },
+  {
+    "repo": "Synthetixio/synthetix",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "Synthetix Solidity smart contracts"
+  },
+  {
+    "repo": "cosmic-market/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrade"
+  },
+  {
+    "repo": "libp2p/go-libp2p",
+    "branch": "master",
+    "language": "Go",
+    "description": "libp2p implementation in Go"
   }
 ]
