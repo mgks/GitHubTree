@@ -1,146 +1,146 @@
 [
   {
-    "repo": "react-native-video/react-native-video",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A <Video /> component for react-native"
-  },
-  {
-    "repo": "antirez/tgterm",
+    "repo": "zarazhangrui/youtube-to-ebook",
     "branch": "main",
-    "language": "C",
-    "description": "Control your MacOS terminals via Telegram, for fun coding agents interaction and profit"
+    "language": "Python",
+    "description": "Claude skill for turning YouTube transcripts from your favorite channels into EPUB ebooks, delivered to your email inbox regularly"
   },
   {
-    "repo": "wsargent/docker-cheat-sheet",
+    "repo": "exomi29zikzak/Valo-Vision-26",
+    "branch": "main",
+    "language": "C++",
+    "description": "Vanguard Vision (2026) — High-performance external computer vision framework for Valorant. Features ultra-low latency color detection, Arduino/HID mouse automation support, and a kernel-safe visual overlay."
+  },
+  {
+    "repo": "ceph/ceph",
+    "branch": "main",
+    "language": "C++",
+    "description": "Ceph is a distributed object, block, and file storage platform"
+  },
+  {
+    "repo": "calebwin/pgclaw",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A Clawdbot in every row with 400 lines of Postgres SQL"
+  },
+  {
+    "repo": "fluent/fluentd",
     "branch": "master",
-    "language": "Other",
-    "description": "Docker Cheat Sheet"
+    "language": "Ruby",
+    "description": "Fluentd: Unified Logging Layer (project under CNCF)"
   },
   {
-    "repo": "jashkenas/backbone",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Give your JS App some Backbone with Models, Views, Collections, and Events"
-  },
-  {
-    "repo": "mochajs/mocha",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "☕️ Classic, reliable, trusted test framework for Node.js and the browser"
-  },
-  {
-    "repo": "unjs/nitro",
+    "repo": "trycua/launchpad",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer."
+    "description": ""
   },
   {
-    "repo": "akitaonrails/FrankSherlock",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
-  },
-  {
-    "repo": "mkdocs/mkdocs",
-    "branch": "master",
-    "language": "Python",
-    "description": "Project documentation with Markdown."
-  },
-  {
-    "repo": "maile456/qq-farm-bot",
+    "repo": "Crestdrasnip/Claude-Zeroclaw",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "基于 Node.js + Vue 3 构建的 QQ 农场自动化工具，支持多账号同时管理，提供 Web 可视化面板，实现种植、收获、偷菜、任务领取、仓库出售等全流程自动化。"
+    "language": "TypeScript",
+    "description": ""
   },
   {
-    "repo": "anadim/AdderBoard",
+    "repo": "JeanMeijer/slopmeter",
     "branch": "main",
-    "language": "Python",
-    "description": "Smallest transformer that can add two 10-digit numbers"
+    "language": "TypeScript",
+    "description": "CLI tool to show off how many tokens you use"
   },
   {
-    "repo": "eonsystemspbc/fly-brain",
+    "repo": "ktorio/ktor",
     "branch": "main",
-    "language": "Python",
-    "description": "Emulation of the Drosophila Fly brain: Brian2, Brian2CUDA, PyTorch, NEST GPU, and neuromorphic chips"
+    "language": "Kotlin",
+    "description": "Framework for quickly creating connected applications in Kotlin with minimal effort"
   },
   {
-    "repo": "vikasprogrammer/walkie",
+    "repo": "dotnet/runtime",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "P2P communication for AI agents. No server. No setup. Just talk."
+    "language": "C#",
+    "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps."
   },
   {
-    "repo": "codejunkie99/agentic-stack",
-    "branch": "master",
-    "language": "Python",
-    "description": "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch."
-  },
-  {
-    "repo": "zolotukhin/zinc",
-    "branch": "main",
-    "language": "Zig",
-    "description": "Zig INferenCe Engine — LLM inference for AMD RDNA3/RDNA4 GPUs via Vulkan"
-  },
-  {
-    "repo": "dominikmartn/ProgressiveBlurHeader",
+    "repo": "tldev/posturr",
     "branch": "main",
     "language": "Swift",
-    "description": "Drop-in SwiftUI component for sticky headers with progressive blur — like Apple Music, Photos, and App Store. Content scrolls underneath with increasing blur, never clipped."
+    "description": "A macOS app that blurs your screen when you slouch. Uses Vision framework for real-time posture detection."
   },
   {
-    "repo": "yfyang007/RealRestorer",
+    "repo": "TabbyML/tabby",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Self-hosted AI coding assistant"
+  },
+  {
+    "repo": "Zephkek/XStoreUnlocker",
+    "branch": "main",
+    "language": "C++",
+    "description": "DLC unlocker for Microsoft Store and Xbox PC games."
+  },
+  {
+    "repo": "rustwasm/wasm-pack",
     "branch": "master",
-    "language": "Python",
-    "description": ""
+    "language": "Rust",
+    "description": "📦✨ your favorite rust -> wasm workflow tool!"
   },
   {
-    "repo": "win4r/lossless-claw-enhanced",
+    "repo": "onecli/onecli",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Fork of Martian-Engineering/lossless-claw with CJK-aware token estimation"
+    "description": "Open-source credential vault, give your AI agents access to services without exposing keys."
   },
   {
-    "repo": "veyliss/ai-localbase",
+    "repo": "ghostvectoracademy/DLLHijackHunter",
+    "branch": "main",
+    "language": "C#",
+    "description": "Automated DLL Hijacking Detection Tool with Zero False Positives — Discovers, filters, and canary-confirms exploitable DLL hijacks on Windows with tiered confidence scoring"
+  },
+  {
+    "repo": "lodash/lodash",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+  },
+  {
+    "repo": "rancher/k3d",
     "branch": "main",
     "language": "Go",
-    "description": "一个本地优先的AI知识库系统（RAG），用于把本地文档接入辅导搜索与大模型对话流程。"
+    "description": "Little helper to run CNCF's k3s in Docker"
   },
   {
-    "repo": "notdog1998/yourself-skill",
+    "repo": "gohugoio/hugo",
     "branch": "master",
-    "language": "Python",
-    "description": "与其蒸馏别人，不如蒸馏自己。欢迎加入数字永生！Inspired by colleague-skill（同事skill）。"
+    "language": "Go",
+    "description": "The world’s fastest framework for building websites."
   },
   {
-    "repo": "FlavioAdamo/openfit",
+    "repo": "nuxt/nuxt",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Desktop dashboard and Codex-powered assistant for Fitbit data"
+    "description": "The Full-Stack Vue Framework."
   },
   {
-    "repo": "MhmRdd/google-rkp-sw",
+    "repo": "LukeRenton/explore-claude-code",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Learn Claude Code by exploring it as it was designed - interactive IDE-style docs for commands, MCP, skills, CLAUDE.md and more."
+  },
+  {
+    "repo": "openai/CLIP",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image"
+  },
+  {
+    "repo": "jingkaihe/matchlock",
+    "branch": "main",
+    "language": "Go",
+    "description": "Matchlock secures AI agent workloads with a Linux-based sandbox."
+  },
+  {
+    "repo": "gabagool222/15min-btc-polymarket-trading-bot",
     "branch": "main",
     "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "teamchong/turboquant-wasm",
-    "branch": "main",
-    "language": "Zig",
-    "description": "TurboQuant WASM SIMD vector compression — 3 bits/dim with fast dot product. Requires relaxed SIMD (Chrome 114+, Firefox 128+, Safari 18+, Node 20+)"
-  },
-  {
-    "repo": "ironsh/iron-sensor",
-    "branch": "main",
-    "language": "C",
-    "description": "An eBPF-based behavioral monitor for AI coding agents."
-  },
-  {
-    "repo": "Anetedith12807/Ethereum-MEV-Bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "Advanced MEV (Maximal Extractable Value) bot for Ethereum mainnet with Flashbots integration, sandwich attacks, front-running, back-running, and cross-DEX arbitrage."
+    "description": "15min btc polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
   }
 ]
