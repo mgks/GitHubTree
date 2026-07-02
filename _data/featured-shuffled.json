@@ -1,105 +1,81 @@
 [
   {
-    "repo": "KeyAI/calculusmadeeasy-zh",
+    "repo": "cybertronai/schmidhuber-problems",
     "branch": "main",
-    "language": "HTML",
-    "description": "Calculus Made Easy 非官方简体中文翻译"
+    "language": "Python",
+    "description": "58 implementations of synthetic learning problems from Jürgen Schmidhuber's papers (1989-2025). Pure numpy, laptop-runnable, paper-comparison metrics per stub. Algorithmic-lineage companion to hinton-problems."
   },
   {
-    "repo": "spotipy-dev/spotipy",
+    "repo": "vignesh07/babyshark",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
+  },
+  {
+    "repo": "cs109/2015",
     "branch": "master",
-    "language": "Python",
-    "description": "A light weight Python library for the Spotify Web API"
+    "language": "Other",
+    "description": "Public material for CS109"
   },
   {
-    "repo": "PyCQA/isort",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Python utility / library to sort imports."
-  },
-  {
-    "repo": "kyutai-labs/hibiki-zero",
-    "branch": "main",
-    "language": "Python",
-    "description": "A real-time and multilingual speech translation model"
-  },
-  {
-    "repo": "qntrade1/polymarket-arbitrage-trading-bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "deepseek-ai/deepseek-coder",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeek Coder: Let the Code Write Itself"
-  },
-  {
-    "repo": "rubygems/rubygems",
+    "repo": "MunGell/awesome-for-beginners",
     "branch": "master",
-    "language": "Ruby",
-    "description": "Library packaging and distribution for Ruby."
+    "language": "Other",
+    "description": "A list of awesome beginners-friendly projects."
   },
   {
-    "repo": "stretchr/testify",
-    "branch": "master",
-    "language": "Go",
-    "description": "A toolkit with common assertions and mocks that plays nicely with the standard library"
-  },
-  {
-    "repo": "nikmcfly/MiroFish-Offline",
+    "repo": "adithya-s-k/manim_skill",
     "branch": "main",
     "language": "Python",
-    "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
+    "description": "Agent skills for Manim to create 3Blue1Brown style animations."
   },
   {
-    "repo": "AlexAnys/feishu-openclaw",
+    "repo": "BytePioneer-AI/moltbot-china",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Connect 飞书Feishu/Lark bot to openclaw (formerly Clawdbot) — no public server, no domain, no ngrok needed. 稳定免安装、共需5 分钟"
+    "language": "TypeScript",
+    "description": "Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信"
   },
   {
-    "repo": "Karmacoke/chargen",
+    "repo": "934050259/BrowserCluster",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "AI-powered character generator built with React. Create detailed TRPG/Novel characters, NPC system prompts, and visual tags using Gemini, OpenAI, or Local LLMs."
+    "language": "Python",
+    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
   },
   {
-    "repo": "XyhTender/qq-farm-automation-bot",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "QQ农场全自动脚本"
-  },
-  {
-    "repo": "cert-manager/cert-manager",
-    "branch": "master",
-    "language": "Go",
-    "description": "Automatically provision and manage TLS certificates in Kubernetes"
-  },
-  {
-    "repo": "blader/taskmaster",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete"
-  },
-  {
-    "repo": "saimon4u/Drive-Pool",
+    "repo": "grp06/openclaw-studio",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "apache/flink",
+    "repo": "checkcheckzz/system-design-interview",
     "branch": "master",
-    "language": "Java",
-    "description": "Apache Flink"
+    "language": "Other",
+    "description": "System design interview for IT companies"
   },
   {
-    "repo": "Robbyant/lingbot-depth",
+    "repo": "glommer/cachebro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
+  },
+  {
+    "repo": "openhome-dev/abilities",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Open-source abilities for OpenHome agents."
+  },
+  {
+    "repo": "stepfun-ai/Step-3.5-Flash",
+    "branch": "main",
+    "language": "C++",
+    "description": "Fast, Sharp & Reliable Agentic Intelligence"
+  },
+  {
+    "repo": "HKUDS/nanobot",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "🐈 nanobot: The Ultra-Lightweight Clawdbot"
   },
   {
     "repo": "nicepkg/ctxport",
@@ -108,39 +84,63 @@
     "description": "Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source."
   },
   {
-    "repo": "nolimits4web/swiper",
-    "branch": "master",
+    "repo": "africa1207/AWS-BuildID-Auto-For-Ext",
+    "branch": "main",
     "language": "JavaScript",
-    "description": "Most modern mobile touch slider with hardware accelerated transitions"
-  },
-  {
-    "repo": "PaddlePaddle/PaddleOCR",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
-  },
-  {
-    "repo": "prof-oguzergin/bilgisayar-mimarisi",
-    "branch": "main",
-    "language": "TeX",
-    "description": "Bilgisayar Mimarisi: RISC-V Tabanlı Yaklaşım — Açık kaynak Türkçe ders kitabı (CC BY-NC-ND 4.0)"
-  },
-  {
-    "repo": "devanshulakhani/val",
-    "branch": "main",
-    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "vasilytrofimchuk/domainsearcher-app",
+    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Score and choose the best domain name for your startup — AI-powered generation, real-time availability, and multi-dimensional scoring (LEN, PRO, MEM, BRD, FIT). Free, no signup."
+    "language": "TypeScript",
+    "description": "polymarket arbitrage trading bot"
   },
   {
-    "repo": "caddyserver/caddy",
+    "repo": "Mrack/TInjector_Symbi",
     "branch": "master",
+    "language": "C++",
+    "description": "更稳定的劫持Zygote在App启动前注入so"
+  },
+  {
+    "repo": "TeamStuQ/skill-map",
+    "branch": "master",
+    "language": "HTML",
+    "description": "程序员技能图谱"
+  },
+  {
+    "repo": "wesm/msgvault",
+    "branch": "main",
     "language": "Go",
-    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS"
+    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
+  },
+  {
+    "repo": "jmuncor/tokentap",
+    "branch": "main",
+    "language": "Python",
+    "description": "Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions."
+  },
+  {
+    "repo": "f/textream",
+    "branch": "master",
+    "language": "Swift",
+    "description": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay."
+  },
+  {
+    "repo": "iad1tya/Net-Bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
+  },
+  {
+    "repo": "kdn251/interviews",
+    "branch": "master",
+    "language": "Java",
+    "description": "Everything you need to know to get the job."
+  },
+  {
+    "repo": "zscole/model-hierarchy-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw skill for cost-optimized model routing based on task complexity"
   }
 ]
