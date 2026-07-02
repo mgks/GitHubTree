@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Rust Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Rust repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/rust/2/">
+    <meta property="og:title" content="Best Rust Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Rust repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/rust/2/">
+    <meta property="twitter:title" content="Best Rust Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Rust repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/rust/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/rust/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/rust/3/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Rust Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/rayon-rs/rayon/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rayon-rs/rayon</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Rayon: A data parallelism library for Rust</p>
+                </a>
+                <a href="/repo/actix/actix/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actix/actix</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Actor framework for Rust.</p>
+                </a>
+                <a href="/repo/cube-js/cube/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cube-js/cube</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics</p>
+                </a>
+                <a href="/repo/xi-editor/xi-editor/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xi-editor/xi-editor</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A modern editor with a backend written in Rust.</p>
+                </a>
+                <a href="/repo/cloudflare/quiche/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cloudflare/quiche</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">🥧 Savoury implementation of the QUIC transport protocol and HTTP/3</p>
+                </a>
+                <a href="/repo/paritytech/polkadot-sdk/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">paritytech/polkadot-sdk</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Parity Polkadot Blockchain SDK</p>
+                </a>
+                <a href="/repo/solana-labs/solana-program-library/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">solana-labs/solana-program-library</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A collection of Solana programs maintained by Solana Labs</p>
+                </a>
+                <a href="/repo/tikv/tikv/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tikv/tikv</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Distributed transactional key-value database, originally created to complement TiDB</p>
+                </a>
+                <a href="/repo/vectordotdev/vector/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vectordotdev/vector</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A high-performance observability data pipeline.</p>
+                </a>
+                <a href="/repo/BurntSushi/xsv/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">BurntSushi/xsv</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A fast CSV command line toolkit written in Rust.</p>
+                </a>
+                <a href="/repo/async-rs/async-std/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">async-rs/async-std</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Async version of the Rust standard library</p>
+                </a>
+                <a href="/repo/rust-lang/mdBook/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rust-lang/mdBook</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Create book from markdown files. Like Gitbook but implemented in Rust</p>
+                </a>
+                <a href="/repo/bottlerocket-os/bottlerocket/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bottlerocket-os/bottlerocket</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">An operating system designed for hosting containers</p>
+                </a>
+                <a href="/repo/esp-rs/esp-idf-hal/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">esp-rs/esp-idf-hal</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">embedded-hal implementation for Rust on ESP32 and ESP-IDF</p>
+                </a>
+                <a href="/repo/dandavison/delta/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dandavison/delta</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A syntax-highlighting pager for git, diff, grep, and blame output</p>
+                </a>
+                <a href="/repo/rust-embedded/discovery/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rust-embedded/discovery</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Discover the world of microcontrollers through Rust!</p>
+                </a>
+                <a href="/repo/valeriansaliou/sonic/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">valeriansaliou/sonic</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.</p>
+                </a>
+                <a href="/repo/gleam-lang/gleam/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gleam-lang/gleam</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">⭐️ A friendly language for building type-safe, scalable systems!</p>
+                </a>
+                <a href="/repo/ajeetdsouza/zoxide/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ajeetdsouza/zoxide</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A smarter cd command. Supports all major shells.</p>
+                </a>
+                <a href="/repo/ogham/exa/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ogham/exa</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A modern replacement for ‘ls’.</p>
+                </a>
+                <a href="/repo/bytecodealliance/wasmtime/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bytecodealliance/wasmtime</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight WebAssembly runtime that is fast, secure, and standards-compliant</p>
+                </a>
+                <a href="/repo/rustwasm/wasm-bindgen/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rustwasm/wasm-bindgen</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Facilitating high-level interactions between Wasm modules and JavaScript</p>
+                </a>
+                <a href="/repo/rustwasm/wasm-pack/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rustwasm/wasm-pack</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">📦✨ your favorite rust -> wasm workflow tool!</p>
+                </a>
+                <a href="/repo/fermyon/spin/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fermyon/spin</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.</p>
+                </a>
+                <a href="/repo/Shopify/javy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shopify/javy</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">JS to WebAssembly toolchain</p>
+                </a>
+                <a href="/repo/chroma-core/chroma/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chroma-core/chroma</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source search and retrieval database for AI applications.</p>
+                </a>
+                <a href="/repo/foundry-rs/foundry/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">foundry-rs/foundry</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.</p>
+                </a>
+                <a href="/repo/graphprotocol/graph-node/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">graphprotocol/graph-node</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Graph Node indexes data from blockchains such as Ethereum and serves it over GraphQL</p>
+                </a>
+                <a href="/repo/FuelLabs/fuel-core/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">FuelLabs/fuel-core</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Rust full node implementation of the Fuel v2 protocol.</p>
+                </a>
+                <a href="/repo/starkware-libs/cairo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">starkware-libs/cairo</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+                </a>
+                <a href="/repo/rust-lang/book/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rust-lang/book</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Rust Programming Language</p>
+                </a>
+                <a href="/repo/mre/awesome-static-analysis/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mre/awesome-static-analysis</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality.</p>
+                </a>
+                <a href="/repo/1jehuang/mermaid-rs-renderer/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">1jehuang/mermaid-rs-renderer</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A fast native Rust Mermaid diagram renderer. No browser required. 500-1000x faster than mermaid-cli.</p>
+                </a>
+                <a href="/repo/tanaer/WindowsClear/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tanaer/WindowsClear</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Windows C盘清理工具/C盘瘦身工具，还你Appdata的大量硬盘空间 | Windows System disk cleanup, returning a large amount of hard drive space from your Appdata</p>
+                </a>
+                <a href="/repo/samvallad33/vestige/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">samvallad33/vestige</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cognitive memory MCP server for Claude - FSRS-6, spreading activation, synaptic tagging, and 130 years of memory research</p>
+                </a>
+                <a href="/repo/terausss/Polymarket-Kalshi-Arbitrage-Bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">terausss/Polymarket-Kalshi-Arbitrage-Bot</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket-kalshi-arbitrage-bot polymarket arbitrage bot kalshi-arbitrage bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot </p>
+                </a>
+                <a href="/repo/qufei1993/skills-hub/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">qufei1993/skills-hub</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.</p>
+                </a>
+                <a href="/repo/mroboff/vm-curator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mroboff/vm-curator</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">vm-curator is a fast and friendly TUI to build and manage QEMU/KVM virtual machines in Linux. It does not rely on libvirt, which means 3D acceleration (para-virtualized, not pass-through) works for NVIDIA GPUs.</p>
+                </a>
+                <a href="/repo/embedding-shapes/one-agent-one-browser/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">embedding-shapes/one-agent-one-browser</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">One from scratch browser built by one human and one agent, working hand in hand</p>
+                </a>
+                <a href="/repo/alecthomas/t/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alecthomas/t</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">`t` is a concise language for manipulating text, replacing common usage patterns of Unix utilities like grep, sed, cut, awk, sort, and uniq.</p>
+                </a>
+                <a href="/repo/ecto/vcad/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ecto/vcad</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Parametric CAD in Rust — CSG modeling with multi-format export</p>
+                </a>
+                <a href="/repo/rivet-dev/sandbox-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rivet-dev/sandbox-agent</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp.</p>
+                </a>
+                <a href="/repo/thesSmartApe/polymarket-copy-trading-bot-rust/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thesSmartApe/polymarket-copy-trading-bot-rust</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">polymarket rust copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot</p>
+                </a>
+                <a href="/repo/lynaghk/vibe/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lynaghk/vibe</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Easy Linux virtual machine on MacOS to sandbox LLM agents.</p>
+                </a>
+                <a href="/repo/liuxiaopai-ai/ralph-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">liuxiaopai-ai/ralph-desktop</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ralph Desktop -  Start vague. Ralph Loop until perfect.  A visual controller for AI coding agents that helps you brainstorm requirements and execute tasks through persistent iteration.</p>
+                </a>
+                <a href="/repo/miuda-ai/lele/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">miuda-ai/lele</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bare-Metal Rust Audio AI Framework</p>
+                </a>
+                <a href="/repo/sheeki03/tirith/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sheeki03/tirith</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Your browser catches homograph attacks. Your terminal doesn't. Tirith guards the gate — intercepts suspicious URLs, ANSI injection, and pipe-to-shell attacks before they execute.</p>
+                </a>
+                <a href="/repo/lukehinds/nono/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lukehinds/nono</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">OS-Level Isolation for AI Agents.</p>
+                </a>
+                <a href="/repo/lance0/xfr/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lance0/xfr</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A modern iperf3 alternative with a live TUI, multi-client server, and QUIC support. Built in Rust.</p>
+                </a>
+                <a href="/repo/anthropics/claudes-c-compiler/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">anthropics/claudes-c-compiler</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.</p>
+                </a>
+                <a href="/repo/ryan26craf/polymarket-kalshi-arbitrage-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryan26craf/polymarket-kalshi-arbitrage-bot</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Kalshi open source trading bot to automate copy trading and arbitrage strategies on crypto prediction markets for free, with simple interface.</p>
+                </a>
+                <a href="/repo/tw93/Kaku/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tw93/Kaku</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">☄️ A fast, out-of-the-box terminal built for AI coding.</p>
+                </a>
+                <a href="/repo/taf2/mdvi/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">taf2/mdvi</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">cli based Markdown viewer</p>
+                </a>
+                <a href="/repo/Veirt/weathr/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Veirt/weathr</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">a terminal weather app with ascii animation</p>
+                </a>
+                <a href="/repo/JaredStewart/coderlm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JaredStewart/coderlm</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tree-sitter-powered code indexing server that gives LLM agents precise, on-demand access to symbols, implementations, callers, tests, and grep across multi-language projects - so they explore codebases through targeted queries instead of loading everything into context.</p>
+                </a>
+                <a href="/repo/shanselman/winget-tui/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shanselman/winget-tui</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A terminal UI for Windows Package Manager (winget) - search, install, upgrade, and manage packages</p>
+                </a>
+                <a href="/repo/calebwin/pgclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">calebwin/pgclaw</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">A ""Clawdbot"" in every row with 400 lines of Postgres SQL</p>
+                </a>
+                <a href="/repo/theonlyhennygod/zeroclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">theonlyhennygod/zeroclaw</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">claw done right 🦀</p>
+                </a>
+                <a href="/repo/0xsouravm/oxichrome/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">0xsouravm/oxichrome</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">Framework to build Chrome extensions entirely in Rust with proc macros, type-safe Chrome API bindings, and Leptos for reactive UI. Compiles to WebAssembly with zero hand-written JavaScript.</p>
+                </a>
+                <a href="/repo/dev-protocol/polymarket-trading-tools-telegram-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dev-protocol/polymarket-trading-tools-telegram-bot</span>
+                        <span class="mrc-lang">Rust <i class="fas fa-circle mrc-lang-dot lang-rust"></i></span>
+                    </div>
+                    <p class="mrc-desc">🚀polymarket copy trading bot polymarket arbitrage bot polymarket market maker bot polymarket copy trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/rust/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 5</span>
+                        <a href="/language/rust/3/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

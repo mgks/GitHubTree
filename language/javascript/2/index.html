@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best JavaScript Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best JavaScript repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/javascript/2/">
+    <meta property="og:title" content="Best JavaScript Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best JavaScript repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/javascript/2/">
+    <meta property="twitter:title" content="Best JavaScript Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best JavaScript repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/javascript/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/javascript/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/javascript/3/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>JavaScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/webpack-contrib/style-loader/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">webpack-contrib/style-loader</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Style Loader</p>
+                </a>
+                <a href="/repo/webpack/webpack-dev-server/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">webpack/webpack-dev-server</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Serves a webpack app. Updates the browser on changes. Documentation https://webpack.js.org/configuration/dev-server/.</p>
+                </a>
+                <a href="/repo/babel/babel-loader/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">babel/babel-loader</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📦 Babel loader for webpack</p>
+                </a>
+                <a href="/repo/babel/babel-preset-env/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">babel/babel-preset-env</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">PSA: this repo has been moved into babel/babel --></p>
+                </a>
+                <a href="/repo/rollup/rollup/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rollup/rollup</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Next-generation ES module bundler</p>
+                </a>
+                <a href="/repo/parcel-bundler/parcel/v2/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">parcel-bundler/parcel</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The zero configuration build tool for the web. 📦🚀</p>
+                </a>
+                <a href="/repo/yarnpkg/yarn/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yarnpkg/yarn</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry</p>
+                </a>
+                <a href="/repo/npm/cli/latest/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">npm/cli</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">the package manager for JavaScript</p>
+                </a>
+                <a href="/repo/grpc/grpc-web/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grpc/grpc-web</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">gRPC for Web Clients</p>
+                </a>
+                <a href="/repo/appium/appium/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">appium/appium</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol</p>
+                </a>
+                <a href="/repo/koodo-reader/koodo-reader/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">koodo-reader/koodo-reader</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web</p>
+                </a>
+                <a href="/repo/gorhill/uBlock/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gorhill/uBlock</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean.</p>
+                </a>
+                <a href="/repo/photonstorm/phaser/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">photonstorm/phaser</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.</p>
+                </a>
+                <a href="/repo/melonjs/melonJS/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">melonjs/melonJS</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">a fresh, modern & lightweight HTML5 game engine</p>
+                </a>
+                <a href="/repo/jamez-bondos/awesome-gpt4o-images/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jamez-bondos/awesome-gpt4o-images</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1. Explore AI generated visuals created with ChatGPT and Sora, showcasing OpenAI’s advanced image generation capabilities.</p>
+                </a>
+                <a href="/repo/browserable/browserable/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">browserable/browserable</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open source and self-hostable browser automation library for AI agents</p>
+                </a>
+                <a href="/repo/juliangarnier/anime/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">juliangarnier/anime</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">JavaScript animation engine</p>
+                </a>
+                <a href="/repo/preactjs/preact/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">preactjs/preact</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.</p>
+                </a>
+                <a href="/repo/jorgebucaran/hyperapp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jorgebucaran/hyperapp</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">1kB-ish JavaScript framework for building hypertext applications</p>
+                </a>
+                <a href="/repo/jashkenas/backbone/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jashkenas/backbone</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Give your JS App some Backbone with Models, Views, Collections, and Events</p>
+                </a>
+                <a href="/repo/leonardomso/33-js-concepts/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">leonardomso/33-js-concepts</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📜 33 JavaScript concepts every developer should know.</p>
+                </a>
+                <a href="/repo/30-seconds/30-seconds-of-code/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">30-seconds/30-seconds-of-code</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Coding articles to level up your development skills</p>
+                </a>
+                <a href="/repo/ryanmcdermott/clean-code-javascript/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryanmcdermott/clean-code-javascript</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Clean Code concepts adapted for JavaScript</p>
+                </a>
+                <a href="/repo/Tencent/cherry-markdown/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Tencent/cherry-markdown</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">✨ A Markdown Editor</p>
+                </a>
+                <a href="/repo/meteor/meteor/devel/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">meteor/meteor</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Meteor, the JavaScript App Platform</p>
+                </a>
+                <a href="/repo/jgraph/drawio/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jgraph/drawio</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">draw.io is a JavaScript, client-side editor for general diagramming.</p>
+                </a>
+                <a href="/repo/quasarframework/quasar/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">quasarframework/quasar</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Quasar Framework - Build high-performance VueJS user interfaces in record time</p>
+                </a>
+                <a href="/repo/facebook/stylex/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">facebook/stylex</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">StyleX is the styling system for ambitious user interfaces.</p>
+                </a>
+                <a href="/repo/gluon-framework/gluon/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gluon-framework/gluon</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A new framework for creating desktop apps from websites, using system installed browsers and NodeJS</p>
+                </a>
+                <a href="/repo/serverless/serverless/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">serverless/serverless</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.</p>
+                </a>
+                <a href="/repo/MichMich/MagicMirror/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MichMich/MagicMirror</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant.</p>
+                </a>
+                <a href="/repo/marktext/marktext/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">marktext/marktext</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">📝A simple and elegant markdown editor, available for Linux, macOS and Windows.</p>
+                </a>
+                <a href="/repo/TryGhost/Ghost/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TryGhost/Ghost</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Independent technology for modern publishing, memberships, subscriptions and newsletters.</p>
+                </a>
+                <a href="/repo/resume/resume.github.com/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">resume/resume.github.com</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Resumes generated using the GitHub informations</p>
+                </a>
+                <a href="/repo/Semantic-Org/Semantic-UI/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Semantic-Org/Semantic-UI</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Semantic is a UI component framework based around useful principles from natural language.</p>
+                </a>
+                <a href="/repo/kautukkundan/Awesome-Profile-README-templates/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kautukkundan/Awesome-Profile-README-templates</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A collection of awesome readme templates to display on your profile</p>
+                </a>
+                <a href="/repo/SortableJS/Sortable/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SortableJS/Sortable</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.</p>
+                </a>
+                <a href="/repo/nolimits4web/swiper/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nolimits4web/swiper</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Most modern mobile touch slider with hardware accelerated transitions</p>
+                </a>
+                <a href="/repo/hakimel/reveal.js/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hakimel/reveal.js</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The HTML Presentation Framework</p>
+                </a>
+                <a href="/repo/typicode/json-server/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">typicode/json-server</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Get a full fake REST API with zero coding in less than 30 seconds (seriously)</p>
+                </a>
+                <a href="/repo/videojs/video.js/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">videojs/video.js</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Video.js - open source HTML5 video player</p>
+                </a>
+                <a href="/repo/aosabook/500lines/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aosabook/500lines</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">500 Lines or Less</p>
+                </a>
+                <a href="/repo/atomiks/tippyjs/v6/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">atomiks/tippyjs</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tooltip, popover, dropdown, and menu library</p>
+                </a>
+                <a href="/repo/gulpjs/gulp/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gulpjs/gulp</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A toolkit to automate & enhance your workflow</p>
+                </a>
+                <a href="/repo/websockets/ws/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">websockets/ws</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Simple to use, blazing fast and thoroughly tested WebSocket client and server for Node.js</p>
+                </a>
+                <a href="/repo/mochajs/mocha/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mochajs/mocha</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">☕️ Classic, reliable, trusted test framework for Node.js and the browser</p>
+                </a>
+                <a href="/repo/Leaflet/Leaflet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Leaflet/Leaflet</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦</p>
+                </a>
+                <a href="/repo/aframevr/aframe/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aframevr/aframe</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">:a: Web framework for building virtual reality experiences.</p>
+                </a>
+                <a href="/repo/hammerjs/hammer.js/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hammerjs/hammer.js</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A javascript library for multi-touch gestures :// You can touch this</p>
+                </a>
+                <a href="/repo/select2/select2/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">select2/select2</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p>
+                </a>
+                <a href="/repo/jasmine/jasmine/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jasmine/jasmine</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Simple JavaScript testing framework for browsers and node.js</p>
+                </a>
+                <a href="/repo/pugjs/pug/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pugjs/pug</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pug – robust, elegant, feature rich template engine for Node.js</p>
+                </a>
+                <a href="/repo/less/less.js/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">less/less.js</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Less. The dynamic stylesheet language.</p>
+                </a>
+                <a href="/repo/requirejs/requirejs/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">requirejs/requirejs</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A file and module loader for JavaScript</p>
+                </a>
+                <a href="/repo/CodeSeven/toastr/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CodeSeven/toastr</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Simple javascript toast notifications</p>
+                </a>
+                <a href="/repo/sweetalert2/sweetalert2/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sweetalert2/sweetalert2</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">✨ A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies. 🇺🇦🇪🇺</p>
+                </a>
+                <a href="/repo/jquery-validation/jquery-validation/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jquery-validation/jquery-validation</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">jQuery Validation Plugin library sources</p>
+                </a>
+                <a href="/repo/jquery/jquery-ui/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jquery/jquery-ui</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The official jQuery user interface library.</p>
+                </a>
+                <a href="/repo/paperjs/paper.js/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">paperjs/paper.js</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey</p>
+                </a>
+                <a href="/repo/HubSpot/messenger/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">HubSpot/messenger</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Growl-style alerts and messages for your app. #hubspot-open-source</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/javascript/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 7</span>
+                        <a href="/language/javascript/3/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

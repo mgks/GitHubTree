@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Java Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Java repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/java/2/">
+    <meta property="og:title" content="Best Java Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Java repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/java/2/">
+    <meta property="twitter:title" content="Best Java Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Java repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/java/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/java/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Java Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/confluentinc/kafka-rest/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">confluentinc/kafka-rest</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Confluent REST Proxy for Kafka</p>
+                </a>
+                <a href="/repo/confluentinc/schema-registry/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">confluentinc/schema-registry</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Confluent Schema Registry for Kafka</p>
+                </a>
+                <a href="/repo/zaproxy/zaproxy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zaproxy/zaproxy</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">The ZAP by Checkmarx Core project</p>
+                </a>
+                <a href="/repo/Anuken/Mindustry/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Anuken/Mindustry</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">The automation tower defense RTS</p>
+                </a>
+                <a href="/repo/kdn251/interviews/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kdn251/interviews</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Everything you need to know to get the job.</p>
+                </a>
+                <a href="/repo/doocs/leetcode/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">doocs/leetcode</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">🔥LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解</p>
+                </a>
+                <a href="/repo/bazelbuild/bazel/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bazelbuild/bazel</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">a fast, scalable, multi-language and extensible build system</p>
+                </a>
+                <a href="/repo/doocs/advanced-java/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">doocs/advanced-java</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识</p>
+                </a>
+                <a href="/repo/KXJ-WQL/PortalWebsiteSystem/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KXJ-WQL/PortalWebsiteSystem</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">☃企业门户系统，基于Springboot和Thymeleaf🎪，使用layui前后端分离</p>
+                </a>
+                <a href="/repo/ynsmroztas/AndroHunter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ynsmroztas/AndroHunter</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">AndroHunter</p>
+                </a>
+                <a href="/repo/iflytek/skillhub/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">iflytek/skillhub</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Self-hosted, open-source agent skill registry for enterprises. Publish & version skill packages, govern with RBAC and audit logs, deploy   on-premise with Docker or Kubernetes.</p>
+                </a>
+                <a href="/repo/andforce/Andclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">andforce/Andclaw</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">无需ROOT，无需连电脑，像Openclaw控制电脑一样，让Andclaw控制你的安卓手机</p>
+                </a>
+                <a href="/repo/grimmory-tools/grimmory/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grimmory-tools/grimmory</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Grimmory is the successor of booklore.</p>
+                </a>
+                <a href="/repo/jobrunr/JavaClaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jobrunr/JavaClaw</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">JavaClaw, a Java version of OpenClaw built on Spring Boot, Spring AI and JobRunr</p>
+                </a>
+                <a href="/repo/TACOWASA059/katamariio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TACOWASA059/katamariio</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">[Forge1.20.1] 球体を操作して周囲のブロックを巻き込み大きくなれるMOD</p>
+                </a>
+                <a href="/repo/fluentlc/claude-code-java/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fluentlc/claude-code-java</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">claude-code-java 是一个可嵌入任何 Java 应用的 AI Agent 引擎。claude-code-java is an embeddable AI Agent engine for Java applications.</p>
+                </a>
+                <a href="/repo/Creators-of-Aeronautics/Simulated-Project/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Creators-of-Aeronautics/Simulated-Project</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Build anything from airships to planes and cars!</p>
+                </a>
+                <a href="/repo/ryanhcode/sable/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryanhcode/sable</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Interactive physics moving block structures!</p>
+                </a>
+                <a href="/repo/supermalparit/Towns/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">supermalparit/Towns</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Repository for the Towns game</p>
+                </a>
+                <a href="/repo/intave/intave/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">intave/intave</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Intave is an enterprise, high-performance anticheat for Minecraft built on years of experience protecting the world's largest servers </p>
+                </a>
+                <a href="/repo/wangyingqi-x/workflow-showcase-platform/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wangyingqi-x/workflow-showcase-platform</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/rodrigojpgamer2022/JourneyMap-Minecraft-Modpack/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rodrigojpgamer2022/JourneyMap-Minecraft-Modpack</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Journeymap Minecraft Modpack download minimap waypoints fullscreen map cartography Forge Fabric world map mobs tracking caves biomes teleport markers.</p>
+                </a>
+                <a href="/repo/OpenYSM/OpenYSM/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OpenYSM/OpenYSM</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Yes-Steve-Model idea ready.</p>
+                </a>
+                <a href="/repo/LSPosed/DirtySepolicy/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LSPosed/DirtySepolicy</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/zoyluoblue/mc_aiplayer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zoyluoblue/mc_aiplayer</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/AnythingForTheTrustRank/Jenny-Mod-All-Versions/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AnythingForTheTrustRank/Jenny-Mod-All-Versions</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">Jenny Mod Minecraft: Interactive virtual companion system. Jenny, Ellie, Bia social interactions, gift giving, friendship levels. Minecraft Java 1.12.2, Bedrock Edition addon, MCPE compatibility. Custom character animations, NPC dialogue, house building, social simulator, quests.</p>
+                </a>
+                <a href="/repo/AppleOnFire/JennyMod-All-Versions/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AppleOnFire/JennyMod-All-Versions</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">jenny mod minecraft pe mc video download pc java curseforge forge fabric  girlfriend addon pocket edition download .jar mediafire link realistic animations render pass bed interaction companion skin texture bedrock edition mcpack free portable zip apk mobile character custom dialogue chat adult content</p>
+                </a>
+                <a href="/repo/OpenYSMDev/OpenYSM/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OpenYSMDev/OpenYSM</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">A mod that modifies the vanilla player model</p>
+                </a>
+                <a href="/repo/Margele/OpenZen/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Margele/OpenZen</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">打得过Zen</p>
+                </a>
+                <a href="/repo/6537445/jenny-mod-minecraft-/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">6537445/jenny-mod-minecraft-</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">jenny mod minecraft mod de jenny download video curseforge 1.21 forge fabric tlauncher java edition bedrock mcpe virtual girlfriend addon skins gameplay setup guide latest version 26.1.2 windows 11 free update config tutorial</p>
+                </a>
+                <a href="/repo/Szili1994/create-aeronautics-minecraft-mod/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Szili1994/create-aeronautics-minecraft-mod</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">aeronautics create minecraft mod github modrinth curseforge create addon sable physics engine simulated offroad airships planes drones vehicles contraptions neoforge forge 1.21.1 1.20.1 download latest version 2026 setup guide tutorial release free multiplayer server performance optimization fps fix error crash**</p>
+                </a>
+                <a href="/repo/worenbudaoni/rag-study-helper/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">worenbudaoni/rag-study-helper</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">一个学习检索增强生成的全流程助手</p>
+                </a>
+                <a href="/repo/cha0upup/LeoAI/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cha0upup/LeoAI</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI 驱动的后渗透综合管理平台，深度集成 LLM Agent，开箱即用。</p>
+                </a>
+                <a href="/repo/ingriddaleusag-dotcom/PickTV/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ingriddaleusag-dotcom/PickTV</span>
+                        <span class="mrc-lang">Java <i class="fas fa-circle mrc-lang-dot lang-java"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/java/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 2</span>
+                        <a href="/language/java/3/" class="pagination-btn disabled">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

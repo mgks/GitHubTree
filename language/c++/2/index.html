@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best C++ Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best C++ repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/c++/2/">
+    <meta property="og:title" content="Best C++ Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best C++ repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/c++/2/">
+    <meta property="twitter:title" content="Best C++ Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best C++ repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/c++/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/c++/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/c++/3/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>C++ Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/duckdb/duckdb/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">duckdb/duckdb</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">DuckDB is an analytical in-process SQL database management system</p>
+                </a>
+                <a href="/repo/typesense/typesense/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">typesense/typesense</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences</p>
+                </a>
+                <a href="/repo/nomic-ai/gpt4all/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nomic-ai/gpt4all</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.</p>
+                </a>
+                <a href="/repo/sass/libsass/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sass/libsass</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A C/C++ implementation of a Sass compiler</p>
+                </a>
+                <a href="/repo/ninja-build/ninja/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ninja-build/ninja</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">a small build system with a focus on speed</p>
+                </a>
+                <a href="/repo/id-Software/DOOM/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">id-Software/DOOM</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">DOOM Open Source Release</p>
+                </a>
+                <a href="/repo/CMU-Perceptual-Computing-Lab/openpose/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CMU-Perceptual-Computing-Lab/openpose</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenPose: Real-time multi-person keypoint detection library for body, face, hands, and foot estimation</p>
+                </a>
+                <a href="/repo/Mrack/TInjector_Symbi/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mrack/TInjector_Symbi</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">更稳定的劫持Zygote在App启动前注入so</p>
+                </a>
+                <a href="/repo/stepfun-ai/Step-3.5-Flash/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">stepfun-ai/Step-3.5-Flash</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast, Sharp & Reliable Agentic Intelligence</p>
+                </a>
+                <a href="/repo/johnBuffer/StableIndexVector/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">johnBuffer/StableIndexVector</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/ryan26craf/Hbar-Wallet-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryan26craf/Hbar-Wallet-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A secure, open-source desktop wallet for Hedera HBAR cryptocurrency built with C++ and Qt6.</p>
+                </a>
+                <a href="/repo/wbenny/scfw/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wbenny/scfw</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A cross-platform C++ framework for building Windows shellcode</p>
+                </a>
+                <a href="/repo/SulfurNitride/Fluorine-Manager/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SulfurNitride/Fluorine-Manager</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">An attempt at recreating all MO2 functions in linux with NaK integration and FUSE based VFS. Comes with Root Builder support by default. It's in alpha and needs a lot of testing to be done.</p>
+                </a>
+                <a href="/repo/Zephkek/XStoreUnlocker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Zephkek/XStoreUnlocker</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">DLC unlocker for Microsoft Store and Xbox PC games.</p>
+                </a>
+                <a href="/repo/Atrix256/Thirteen/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Atrix256/Thirteen</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Header only minimalist interface to graphics, inspired by the olden days of mode 13h</p>
+                </a>
+                <a href="/repo/Eul45/omni-search/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Eul45/omni-search</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">High-performance Windows file indexer/search app using NTFS USN/MFT (Tauri + Rust + C++).</p>
+                </a>
+                <a href="/repo/xaskasdf/ntransformer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xaskasdf/ntransformer</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">High-efficiency LLM inference engine in C++/CUDA. Run Llama 70B on RTX 3090.</p>
+                </a>
+                <a href="/repo/Frikallo/parakeet.cpp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Frikallo/parakeet.cpp</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ultra fast and portable Parakeet implementation for on-device inference in C++ using Axiom with MPS+Unified Memory and Cuda support</p>
+                </a>
+                <a href="/repo/smartcmd/MinecraftConsoles/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">smartcmd/MinecraftConsoles</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A certain block game</p>
+                </a>
+                <a href="/repo/LCEMP/LCEMP/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LCEMP/LCEMP</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A fork of minecraft LCE with LAN multiplayer support and other fixes.</p>
+                </a>
+                <a href="/repo/4jcraft/4jcraft/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">4jcraft/4jcraft</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Leaked version of Minecraft Legacy Console Edition. Not for commercial purposes</p>
+                </a>
+                <a href="/repo/johnmai-dev/ANE-LM/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">johnmai-dev/ANE-LM</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">LLM inference on Apple Neural Engine (ANE) </p>
+                </a>
+                <a href="/repo/Minecraft-Community-Edition/client/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Minecraft-Community-Edition/client</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Whispers LCE Client</p>
+                </a>
+                <a href="/repo/Guid-Lab/kdecrypt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Guid-Lab/kdecrypt</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">PGP/GPG file encryption and decryption manager for KDE Plasma</p>
+                </a>
+                <a href="/repo/vulhunt-re/vulhunt/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vulhunt-re/vulhunt</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Vulnerability detection framework by Binarly's REsearch team</p>
+                </a>
+                <a href="/repo/neroundimasamp64/Stabilized-Internet-Connection/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">neroundimasamp64/Stabilized-Internet-Connection</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Full Version Accelerator with Lifetime Integration & High-Speed Unlocking.</p>
+                </a>
+                <a href="/repo/weeseezios/kms-pico-emulator-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">weeseezios/kms-pico-emulator-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">The most reliable KMS emulator for 2026. Manage and validate Windows 10/11 and Office 2016-2024 instances instantly. Pure, open-source, and offline-ready.</p>
+                </a>
+                <a href="/repo/bambinamoldranz1/Skeet.cc_CS2_Cheat_2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bambinamoldranz1/Skeet.cc_CS2_Cheat_2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">High-Performance CS2 Enhancement Suite - Premium Internal Utility with Precision Assistance, ESP, and Visuals.</p>
+                </a>
+                <a href="/repo/Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bongo Cat program – adorable animated cat desktop pet that reacts to keystrokes, mouse clicks & gaming. Collect hats, enjoy reactive bongo animations, perfect overlay for streams, typing motivation & fun virtual pet on Windows PC! Cute meme cat companion app.</p>
+                </a>
+                <a href="/repo/trailofbits/CoBRA/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">trailofbits/CoBRA</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Coefficient-Based Reconstruction of Arithmetic — a Mixed Boolean-Arithmetic (MBA) expression simplifier for deobfuscation</p>
+                </a>
+                <a href="/repo/omnimind-ai/OmniInfer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">omnimind-ai/OmniInfer</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cross-platform LLM inference framework for efficient edge deployment</p>
+                </a>
+                <a href="/repo/kiberkingyammee7/Awp-gg-Roblox-Executor-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kiberkingyammee7/Awp-gg-Roblox-Executor-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">The most advanced, high-performance V3 execution engine for Roblox. Experience seamless Luau scripting, unparalleled 100% UNC bypass mechanisms, and maximum thread stability.</p>
+                </a>
+                <a href="/repo/MarioGalindoQ/Modern-CPP-Design-Patterns/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MarioGalindoQ/Modern-CPP-Design-Patterns</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">32 Design Patterns and C++ Idioms implemented in Modern C++</p>
+                </a>
+                <a href="/repo/sadsadsasdasadsadsadsadsa/Crimson-Desert-Optiscaler-Fsr-4/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sadsadsasdasadsadsadsadsa/Crimson-Desert-Optiscaler-Fsr-4</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Crimson Desert Optiscaler FSR 4 Full Version 2026 – Advanced Graphics Mod featuring OptiScaler + AMD FSR 4. Significantly increases FPS while improving image sharpness and reducing ghosting in Crimson Desert. Perfect for low-end and high-end PCs. Includes multiple FSR 4 presets. Best performance and upscaling solution for Crimson Desert in 2026!</p>
+                </a>
+                <a href="/repo/zipperiron5/kms-pico-port-version-26/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zipperiron5/kms-pico-port-version-26</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance.</p>
+                </a>
+                <a href="/repo/fasheartheater1853/kmspico-lol-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fasheartheater1853/kmspico-lol-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance.</p>
+                </a>
+                <a href="/repo/asdsadasdasdasdsd121/Crimson-Desert-RenoDX/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">asdsadasdasdasdsd121/Crimson-Desert-RenoDX</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Crimson Desert RenoDX Full Version 2026 – Advanced Graphics Rendering Mod for Crimson Desert. Enhances lighting, dynamic shadows, realistic reflections, ambient occlusion and post-processing using RenoDX. Delivers significantly better visual fidelity and cinematic quality.</p>
+                </a>
+                <a href="/repo/krishnaop/Adobe-CS6-Photoshop-For-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">krishnaop/Adobe-CS6-Photoshop-For-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Adobe Photoshop CS6 Extended Full Version 2026 for PC – Professional photo editing software with all advanced tools. Includes layers, masks, brushes, filters, 3D editing, and powerful image manipulation features. Full unlocked Extended edition with no restrictions. Offline installer for Windows 10/11. The best classic Photoshop CS6</p>
+                </a>
+                <a href="/repo/Plingvivin/Ableton-Live-12-Windows/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Plingvivin/Ableton-Live-12-Windows</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ableton Live Free 12 Windows 2026 – Professional Digital Audio Workstation (DAW) for music production, live performance and sound design. Includes powerful MIDI & Audio tools, Session View, Arrangement View, Max for Live, new AI features, advanced warping and mixing tools. Full unlocked Suite edition with all plugins and sound packs. </p>
+                </a>
+                <a href="/repo/fafathops152/Pokemon-Pokopia-For-PC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fafathops152/Pokemon-Pokopia-For-PC</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pokémon Pokopia For PC 2026 is the complete Windows edition of the beloved creature-collecting adventure game. Explore the beautiful Pokopia region, catch and train unique Pokémon, battle powerful trainers, and become the ultimate Champion. Now fully playable on PC with enhanced graphics, smooth performance</p>
+                </a>
+                <a href="/repo/PabloLopezParada/RACCOIN-Coin-Pusher-Roguelike-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PabloLopezParada/RACCOIN-Coin-Pusher-Roguelike-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">RACCOIN: Coin Pusher Roguelike Full Version 2026 is an addictive blend of classic coin pusher machines and roguelike gameplay. Push coins, collect epic rewards, upgrade your raccoon, unlock powerful relics and new machines across endless runs. Deep progression, high replayability, and satisfying coin mechanics. 🦝</p>
+                </a>
+                <a href="/repo/AFahim02/House-Flipper-2-Multiplayer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AFahim02/House-Flipper-2-Multiplayer</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">House Flipper Free For PC Multiplayer 2026 is the complete unlocked Windows version of the popular house renovation simulator with full multiplayer support. Buy, renovate, decorate and sell houses with unlimited money and all DLCs included. Now you can flip houses together with friends in co-op mode. </p>
+                </a>
+                <a href="/repo/romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events</p>
+                </a>
+                <a href="/repo/tsoding/ht.h/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tsoding/ht.h</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Hash Table in C but with a nice Generic API</p>
+                </a>
+                <a href="/repo/j3h4ck/PoisonKiller/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">j3h4ck/PoisonKiller</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Another BYOVD process killer. works on CrowdStrike. fully signed.</p>
+                </a>
+                <a href="/repo/LaurieWired/tailslayer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LaurieWired/tailslayer</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Library for reducing tail latency in RAM reads</p>
+                </a>
+                <a href="/repo/URLab-Sim/UnrealRoboticsLab/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">URLab-Sim/UnrealRoboticsLab</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A high-fidelity, open-source robotics simulator integrating Unreal Engine's photorealistic rendering with MuJoCo's precision physics.</p>
+                </a>
+                <a href="/repo/mrT4ntr4/NtWarden/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mrT4ntr4/NtWarden</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Windows Analysis and Research Toolkit</p>
+                </a>
+                <a href="/repo/ProjectPhysX/hw-smi/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ProjectPhysX/hw-smi</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">A minimal, cross-compatible CPU/GPU telemetry monitor with accurate data directly from vendor APIs and beautiful ASCII visualization.</p>
+                </a>
+                <a href="/repo/ingegroeneveld0620/fps-tweaks-26/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ingegroeneveld0620/fps-tweaks-26</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">fps-tweaks (2026) — Ultimate low-level system optimization suite for maximum gaming performance. Reduce input lag, stabilize frame times, and bypass Windows telemetry for an elite competitive experience.</p>
+                </a>
+                <a href="/repo/exomi29zikzak/Valo-Vision-26/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">exomi29zikzak/Valo-Vision-26</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Vanguard Vision (2026) — High-performance external computer vision framework for Valorant. Features ultra-low latency color detection, Arduino/HID mouse automation support, and a kernel-safe visual overlay.</p>
+                </a>
+                <a href="/repo/opidora2245/Skeetcc-CS2-Cheat-DMA-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">opidora2245/Skeetcc-CS2-Cheat-DMA-2026</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Skeet-CS2 (2026) — The most sophisticated internal framework for CS2. Featuring low-latency ESP rendering, advanced hitscan telemetry, and a legendary UI. Experience the gold standard of game analytics and visual modification.</p>
+                </a>
+                <a href="/repo/ListerOvO1211/LazyEnv/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ListerOvO1211/LazyEnv</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/bhh-4209/Crimson-Desert-OptiScaler-FSR-4-Mod/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bhh-4209/Crimson-Desert-OptiScaler-FSR-4-Mod</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Crimson Desert OptiScaler FSR 4 Mod brings the latest AMD FSR 4 upscaling and OptiScaler technology to Crimson Desert. Significantly improves image quality, sharpness, and performance with higher FPS and excellent visual clarity on any GPU.</p>
+                </a>
+                <a href="/repo/akanksh13/Crimson-Desert-RenoDX-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">akanksh13/Crimson-Desert-RenoDX-Desktop</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Crimson Desert RenoDX PC Edition delivers enhanced graphics, improved performance, and modern rendering for Crimson Desert on Windows. Better lighting, textures, draw distance and optimized visuals for a more immersive desert adventure.</p>
+                </a>
+                <a href="/repo/ciroxcode/Tomodachi-Life-Living-in-the-Dream-PC-Edition/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ciroxcode/Tomodachi-Life-Living-in-the-Dream-PC-Edition</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tomodachi Life Living in the Dream PC Edition brings the popular life simulation game to Windows. Create Miis, build friendships and relationships, and enjoy funny everyday moments on your own island. Optimized for modern PCs with widescreen support, smooth performance and relaxing gameplay.</p>
+                </a>
+                <a href="/repo/HzWeta/Delta-For-Roblox-PC-Edition/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">HzWeta/Delta-For-Roblox-PC-Edition</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Delta For Roblox PC Edition delivers a smooth and optimized Roblox experience on Windows. Enjoy better performance, higher FPS, widescreen support, and enhanced stability while playing your favorite Roblox games on desktop.</p>
+                </a>
+                <a href="/repo/ArielMartinezz/Character-Creator-Female-Crimson-Desert-Mod/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ArielMartinezz/Character-Creator-Female-Crimson-Desert-Mod</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download Character Creator Female mod for Crimson Desert. Expanded customization with new hairstyles, faces, body morphs, outfits, and accessories. Create more beautiful and diverse female characters with high-quality textures and presets.</p>
+                </a>
+                <a href="/repo/Joefix2010/Jenny-Mod-Minecraft-ALL-Versions/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Joefix2010/Jenny-Mod-Minecraft-ALL-Versions</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Jenny Mod Minecraft ALL Versions — complete collection of Jenny Mod for every Minecraft version from 1.8 to 1.21.5. Add a fully customizable interactive companion character with animations, outfits, and multiplayer support.</p>
+                </a>
+                <a href="/repo/hussennader/JSON-Mod-Manager-For-Crimson-Desert/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hussennader/JSON-Mod-Manager-For-Crimson-Desert</span>
+                        <span class="mrc-lang">C++ <i class="fas fa-circle mrc-lang-dot lang-cpp"></i></span>
+                    </div>
+                    <p class="mrc-desc">Download JSON Mod Manager for Crimson Desert - the easiest way to install, organize, and manage mods. Create and switch mod profiles using JSON files, automatic conflict detection, backups, and one-click installation for .pak mods.</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/c++/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 5</span>
+                        <a href="/language/c++/3/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

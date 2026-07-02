@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Kotlin Repositories Directory | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Kotlin repositories. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/kotlin/">
+    <meta property="og:title" content="Best Kotlin Repositories Directory | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Kotlin repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/kotlin/">
+    <meta property="twitter:title" content="Best Kotlin Repositories Directory | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Kotlin repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/kotlin/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Kotlin Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/square/okhttp/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">square/okhttp</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Square’s meticulous HTTP client for the JVM, Android, and GraalVM.</p>
+                </a>
+                <a href="/repo/JetBrains/kotlin/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JetBrains/kotlin</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Kotlin Programming Language. </p>
+                </a>
+                <a href="/repo/react-native-video/react-native-video/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">react-native-video/react-native-video</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A <Video /> component for react-native</p>
+                </a>
+                <a href="/repo/square/picasso/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">square/picasso</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A powerful image downloading and caching library for Android</p>
+                </a>
+                <a href="/repo/facebook/litho/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">facebook/litho</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A declarative framework for building efficient UIs on Android.</p>
+                </a>
+                <a href="/repo/androidx/androidx/androidx-main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">androidx/androidx</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP.</p>
+                </a>
+                <a href="/repo/Kotlin/kotlinx.coroutines/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Kotlin/kotlinx.coroutines</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Library support for Kotlin coroutines </p>
+                </a>
+                <a href="/repo/Kotlin/kotlinx.serialization/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Kotlin/kotlinx.serialization</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Kotlin multiplatform / multi-format serialization </p>
+                </a>
+                <a href="/repo/ktorio/ktor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ktorio/ktor</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Framework for quickly creating connected applications in Kotlin with minimal effort</p>
+                </a>
+                <a href="/repo/arrow-kt/arrow/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">arrow-kt/arrow</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming</p>
+                </a>
+                <a href="/repo/mockk/mockk/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mockk/mockk</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">mocking library for Kotlin</p>
+                </a>
+                <a href="/repo/detekt/detekt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">detekt/detekt</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Static code analysis for Kotlin</p>
+                </a>
+                <a href="/repo/pinterest/ktlint/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pinterest/ktlint</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">An anti-bikeshedding Kotlin linter with built-in formatter</p>
+                </a>
+                <a href="/repo/ReactiveX/RxKotlin/3.x/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ReactiveX/RxKotlin</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">RxJava bindings for Kotlin</p>
+                </a>
+                <a href="/repo/signalapp/Signal-Android/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">signalapp/Signal-Android</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A private messenger for Android.</p>
+                </a>
+                <a href="/repo/element-hq/element-android/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">element-hq/element-android</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Matrix collaboration client for Android.</p>
+                </a>
+                <a href="/repo/nextcloud/android/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nextcloud/android</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">📱 Nextcloud Android app</p>
+                </a>
+                <a href="/repo/KotlinBy/awesome-kotlin/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KotlinBy/awesome-kotlin</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated list of awesome Kotlin related stuff Inspired by awesome-java. </p>
+                </a>
+                <a href="/repo/six2dez/burp-ai-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">six2dez/burp-ai-agent</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more</p>
+                </a>
+                <a href="/repo/LanRhyme/MicYou/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LanRhyme/MicYou</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">MicYou is a powerful tool that turns your Android device into a high-quality wireless microphone for your PC.</p>
+                </a>
+                <a href="/repo/rohanarun/phoneclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rohanarun/phoneclaw</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A version of openClaw/Clawdbot that automates android phones entirely without root, including all apps from a side-loaded APK. Acts as your 24/7 personal assistant on your phone. </p>
+                </a>
+                <a href="/repo/Aliothmoon/MAA-Meow/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Aliothmoon/MAA-Meow</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">《明日方舟》小助手Android版，全日常一键长草！| A one-click tool for the daily tasks of Arknights, supporting all clients.</p>
+                </a>
+                <a href="/repo/owenlejeune/ArrMatey/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">owenlejeune/ArrMatey</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/whisperbit-labs/zemzeme-android/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">whisperbit-labs/zemzeme-android</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Private, serverless messaging for Android - offline Bluetooth mesh, peer-to-peer, and Nostr relay. No accounts, no internet required.</p>
+                </a>
+                <a href="/repo/Trooped/QuickBars/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Trooped/QuickBars</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Official QuickBars for Home Assistant Repository</p>
+                </a>
+                <a href="/repo/Kindness-Kismet/One-Player/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Kindness-Kismet/One-Player</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">增强的 Android 视频播放器</p>
+                </a>
+                <a href="/repo/apkclaw-team/ApkClaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">apkclaw-team/ApkClaw</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/agents-io/PokeClaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">agents-io/PokeClaw</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">PokeClaw (PocketClaw) — first on-device AI that controls your Android phone. Gemma 4, no cloud, no API key. Poke is short for Pocket.</p>
+                </a>
+                <a href="/repo/xtclovver/RKNHardering/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xtclovver/RKNHardering</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/cherepavel/VPN-Detector/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cherepavel/VPN-Detector</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Android app for detecting VPN usage and network tunneling signals.</p>
+                </a>
+                <a href="/repo/loop-uh/yourvpndead/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">loop-uh/yourvpndead</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Детекция и обнаружение айпи у ВПН серверов VLESS/xray/sing-box через локальный SOCKS5 уязвимость</p>
+                </a>
+                <a href="/repo/sogonov/anubis/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sogonov/anubis</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Android app manager with VPN integration. Manages groups of apps by freezing/unfreezing them based on VPN connection state.</p>
+                </a>
+                <a href="/repo/iad1tya/EchoTube/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">iad1tya/EchoTube</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source YouTube client - enjoy an ad-free experience in a lightweight app, no account required.</p>
+                </a>
+                <a href="/repo/skydoves/compose-animations/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skydoves/compose-animations</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚡️ A collection of Jetpack Compose animations for the best practices. Tweak literals at the top of any file, save, and watch the motion morph in real-time.</p>
+                </a>
+                <a href="/repo/iampedii/WhiteDNS/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">iampedii/WhiteDNS</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Source-available Android DNS tunneling client with VPN and proxy modes, backed by MasterDNS & StormDNS.</p>
+                </a>
+                <a href="/repo/amrdoh/ClockMaster/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">amrdoh/ClockMaster</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">Material Expressive clock app for android 🕛⏰</p>
+                </a>
+                <a href="/repo/NuvioMedia/NuvioDesktop/Dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NuvioMedia/NuvioDesktop</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/skydoves/compose-nav-graph/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skydoves/compose-nav-graph</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments, and transitions.</p>
+                </a>
+                <a href="/repo/Iwanian/Iwana-Proxy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Iwanian/Iwana-Proxy</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">for telegram</p>
+                </a>
+                <a href="/repo/flebonan/WeatherMaster/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">flebonan/WeatherMaster</span>
+                        <span class="mrc-lang">Kotlin <i class="fas fa-circle mrc-lang-dot lang-kotlin"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Weather app for android with multiple sources 🌦🌞☔</p>
+                </a></div>
+                    
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
