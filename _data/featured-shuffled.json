@@ -1,146 +1,146 @@
 [
   {
-    "repo": "apache/httpcomponents-client",
-    "branch": "master",
-    "language": "Java",
-    "description": "Mirror of Apache HttpClient"
-  },
-  {
-    "repo": "codetrybe/polymarket-trading-bot",
+    "repo": "open-telemetry/opentelemetry-collector",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "surrealdb/surrealdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web"
-  },
-  {
-    "repo": "StreisandEffect/streisand",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists."
-  },
-  {
-    "repo": "operator-framework/operator-sdk",
-    "branch": "master",
     "language": "Go",
-    "description": "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding."
+    "description": "OpenTelemetry Collector"
   },
   {
-    "repo": "docker/docker-py",
+    "repo": "Work-Fisher/openclaw-ai-assistant-framework",
     "branch": "main",
     "language": "Python",
-    "description": "A Python library for the Docker Engine API"
+    "description": "OpenClaw AI助手完整框架 - 7步深度使用法 + 回溯清理机制"
   },
   {
-    "repo": "RhysSullivan/fastergh",
+    "repo": "webpack-contrib/style-loader",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Style Loader"
+  },
+  {
+    "repo": "graphql/graphql-js",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "A reference implementation of GraphQL for JavaScript"
   },
   {
-    "repo": "nats-io/nats-server",
-    "branch": "main",
-    "language": "Go",
-    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
-  },
-  {
-    "repo": "miuda-ai/lele",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Bare-Metal Rust Audio AI Framework"
-  },
-  {
-    "repo": "element-plus/element-plus",
-    "branch": "dev",
-    "language": "TypeScript",
-    "description": "🎉 A Vue.js 3 UI Library made by Element team"
-  },
-  {
-    "repo": "btseytlin/hr-breaker",
+    "repo": "pandas-dev/pandas",
     "branch": "main",
     "language": "Python",
-    "description": "Optimize resume for jobs, now with AI"
+    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
   },
   {
-    "repo": "quarkusio/quarkus",
+    "repo": "prettier/eslint-config-prettier",
     "branch": "main",
-    "language": "Java",
-    "description": "Quarkus: Supersonic Subatomic Java."
+    "language": "JavaScript",
+    "description": "Turns off all rules that are unnecessary or might conflict with Prettier."
   },
   {
-    "repo": "LeoChen-CoreMind/VMPacker",
-    "branch": "master",
-    "language": "Go",
-    "description": "ARM64 ELF Virtual Machine Protection System"
-  },
-  {
-    "repo": "zkSync-Community-Hub/zksync-developers",
+    "repo": "styled-components/styled-components",
     "branch": "main",
-    "language": "Other",
-    "description": "Discussions and Support for the ZKsync Developer Community."
+    "language": "TypeScript",
+    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅"
   },
   {
-    "repo": "SnapKit/SnapKit",
-    "branch": "develop",
-    "language": "Swift",
-    "description": "A Swift Autolayout DSL for iOS & OS X"
-  },
-  {
-    "repo": "inputsh/awesome-linux",
-    "branch": "master",
-    "language": "Other",
-    "description": ":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:"
-  },
-  {
-    "repo": "qazbnm456/awesome-web-security",
-    "branch": "master",
-    "language": "Other",
-    "description": "🐶 A curated list of Web Security materials and resources."
-  },
-  {
-    "repo": "spinnaker/spinnaker",
-    "branch": "master",
-    "language": "Java",
-    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
-  },
-  {
-    "repo": "argoproj/argo-workflows",
-    "branch": "master",
-    "language": "Go",
-    "description": "Workflow Engine for Kubernetes"
-  },
-  {
-    "repo": "elastic/logstash",
-    "branch": "main",
-    "language": "Java",
-    "description": "Logstash - transport and process your logs, events, or other data"
-  },
-  {
-    "repo": "rook/rook",
-    "branch": "master",
-    "language": "Go",
-    "description": "Storage Orchestration for Kubernetes"
-  },
-  {
-    "repo": "envoyproxy/envoy",
+    "repo": "electron/electron",
     "branch": "main",
     "language": "C++",
-    "description": "Cloud-native high-performance edge/middle/service proxy"
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
   },
   {
-    "repo": "qinwf/awesome-R",
-    "branch": "master",
-    "language": "R",
-    "description": "A curated list of awesome R packages, frameworks and software."
+    "repo": "MetaMask/metamask-extension",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites"
   },
   {
-    "repo": "dropwizard/dropwizard",
+    "repo": "swc-project/swc",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Rust-based platform for the Web"
+  },
+  {
+    "repo": "fastlane/supply",
     "branch": "master",
-    "language": "Java",
-    "description": "A damn simple library for building production-ready RESTful web services."
+    "language": "Other",
+    "description": "Command line tool for updating Android apps and their metadata on the Google Play Store"
+  },
+  {
+    "repo": "pallets/click",
+    "branch": "main",
+    "language": "Python",
+    "description": "Python composable command line interface toolkit"
+  },
+  {
+    "repo": "alicankiraz1/CodexQB",
+    "branch": "main",
+    "language": "Python",
+    "description": "CodexQB is a Codex plugin for evidence-backed repo comprehension, planning, QA audit, and gated implementation handoffs."
+  },
+  {
+    "repo": "boto/boto3",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Boto3, an AWS SDK for Python"
+  },
+  {
+    "repo": "prisma/prisma",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB"
+  },
+  {
+    "repo": "tqdm/tqdm",
+    "branch": "master",
+    "language": "Python",
+    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
+  },
+  {
+    "repo": "google/or-tools",
+    "branch": "stable",
+    "language": "C++",
+    "description": "Google's Operations Research tools:"
+  },
+  {
+    "repo": "auth0/node-jsonwebtoken",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "JsonWebToken implementation for node.js http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html"
+  },
+  {
+    "repo": "protocolbuffers/protobuf",
+    "branch": "main",
+    "language": "C++",
+    "description": "Protocol Buffers - Google's data interchange format"
+  },
+  {
+    "repo": "babel/babel-preset-env",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "PSA: this repo has been moved into babel/babel -->"
+  },
+  {
+    "repo": "avelino/awesome-go",
+    "branch": "main",
+    "language": "Go",
+    "description": "A curated list of awesome Go frameworks, libraries and software"
+  },
+  {
+    "repo": "google-research/google-research",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "Google Research"
+  },
+  {
+    "repo": "prometheus/node_exporter",
+    "branch": "master",
+    "language": "Go",
+    "description": "Exporter for machine metrics"
+  },
+  {
+    "repo": "TabbyML/tabby",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Self-hosted AI coding assistant"
   }
 ]
