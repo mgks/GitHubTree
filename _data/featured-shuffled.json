@@ -1,146 +1,146 @@
 [
   {
-    "repo": "cybertronai/schmidhuber-problems",
-    "branch": "main",
-    "language": "Python",
-    "description": "58 implementations of synthetic learning problems from Jürgen Schmidhuber's papers (1989-2025). Pure numpy, laptop-runnable, paper-comparison metrics per stub. Algorithmic-lineage companion to hinton-problems."
-  },
-  {
-    "repo": "vignesh07/babyshark",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
-  },
-  {
-    "repo": "cs109/2015",
-    "branch": "master",
-    "language": "Other",
-    "description": "Public material for CS109"
-  },
-  {
-    "repo": "MunGell/awesome-for-beginners",
-    "branch": "master",
-    "language": "Other",
-    "description": "A list of awesome beginners-friendly projects."
-  },
-  {
-    "repo": "adithya-s-k/manim_skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "Agent skills for Manim to create 3Blue1Brown style animations."
-  },
-  {
-    "repo": "BytePioneer-AI/moltbot-china",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信"
-  },
-  {
-    "repo": "934050259/BrowserCluster",
-    "branch": "main",
-    "language": "Python",
-    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
-  },
-  {
-    "repo": "grp06/openclaw-studio",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "checkcheckzz/system-design-interview",
-    "branch": "master",
-    "language": "Other",
-    "description": "System design interview for IT companies"
-  },
-  {
-    "repo": "glommer/cachebro",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
-  },
-  {
-    "repo": "openhome-dev/abilities",
-    "branch": "dev",
-    "language": "Python",
-    "description": "Open-source abilities for OpenHome agents."
-  },
-  {
-    "repo": "stepfun-ai/Step-3.5-Flash",
-    "branch": "main",
-    "language": "C++",
-    "description": "Fast, Sharp & Reliable Agentic Intelligence"
-  },
-  {
-    "repo": "HKUDS/nanobot",
-    "branch": "main",
-    "language": "Python",
-    "description": "🐈 nanobot: The Ultra-Lightweight Clawdbot"
-  },
-  {
-    "repo": "nicepkg/ctxport",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source."
-  },
-  {
-    "repo": "africa1207/AWS-BuildID-Auto-For-Ext",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage trading bot"
-  },
-  {
-    "repo": "Mrack/TInjector_Symbi",
-    "branch": "master",
-    "language": "C++",
-    "description": "更稳定的劫持Zygote在App启动前注入so"
-  },
-  {
-    "repo": "TeamStuQ/skill-map",
-    "branch": "master",
-    "language": "HTML",
-    "description": "程序员技能图谱"
-  },
-  {
-    "repo": "wesm/msgvault",
+    "repo": "syncthing/syncthing",
     "branch": "main",
     "language": "Go",
-    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
+    "description": "Open Source Continuous File Synchronization"
   },
   {
-    "repo": "jmuncor/tokentap",
+    "repo": "theartistscut1-uig/Metro_Last_Light_Unlimited_Ammo___Filters",
+    "branch": "main",
+    "language": "Python",
+    "description": "Unlimited ammo, filters, and health for Metro Last Light. Never run out of oxygen, infinite military-grade rounds, and god mode."
+  },
+  {
+    "repo": "marshmallow-code/marshmallow",
+    "branch": "dev",
+    "language": "Python",
+    "description": "A lightweight library for converting complex objects to and from simple Python datatypes."
+  },
+  {
+    "repo": "wbenny/scfw",
+    "branch": "master",
+    "language": "C++",
+    "description": "A cross-platform C++ framework for building Windows shellcode"
+  },
+  {
+    "repo": "pytorch/pytorch",
+    "branch": "main",
+    "language": "Python",
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+  },
+  {
+    "repo": "Polymarket/polymarket-cli",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "hashicorp/terraform",
+    "branch": "main",
+    "language": "Go",
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
+  },
+  {
+    "repo": "jmuncor/sherlock",
     "branch": "main",
     "language": "Python",
     "description": "Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions."
   },
   {
-    "repo": "f/textream",
+    "repo": "sbilly/awesome-security",
     "branch": "master",
-    "language": "Swift",
-    "description": "Textream is a free macOS teleprompter app for streamers, interviewers, and presenters. It highlights your script in real-time as you speak, displayed in a beautiful Dynamic Island overlay."
+    "language": "Other",
+    "description": "A collection of awesome software, libraries, documents, books, resources and cools stuffs about security."
   },
   {
-    "repo": "iad1tya/Net-Bar",
+    "repo": "GokuMohandas/Made-With-ML",
     "branch": "main",
-    "language": "Swift",
-    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
+    "language": "Jupyter Notebook",
+    "description": "Learn how to design, develop, deploy and iterate on production-grade ML applications."
   },
   {
-    "repo": "kdn251/interviews",
+    "repo": "tiangolo/fastapi",
     "branch": "master",
-    "language": "Java",
-    "description": "Everything you need to know to get the job."
+    "language": "Python",
+    "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
   },
   {
-    "repo": "zscole/model-hierarchy-skill",
+    "repo": "tiimgreen/github-cheat-sheet",
+    "branch": "master",
+    "language": "Other",
+    "description": "A list of cool features of Git and GitHub."
+  },
+  {
+    "repo": "mit-pdos/xv6-public",
+    "branch": "master",
+    "language": "C",
+    "description": "xv6 OS"
+  },
+  {
+    "repo": "YuJunZhiXue/github-skill-forge",
     "branch": "main",
     "language": "Python",
-    "description": "OpenClaw skill for cost-optimized model routing based on task complexity"
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "keithnull/TeachYourselfCS-CN",
+    "branch": "master",
+    "language": "Other",
+    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
+  },
+  {
+    "repo": "dimartarmizi/map-to-poster",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "MapToPoster JS is a client-side web app that turns any location into a high-resolution, customizable map poster with various themes, layouts, and export options."
+  },
+  {
+    "repo": "herrbischoff/awesome-macos-command-line",
+    "branch": "master",
+    "language": "Other",
+    "description": "Use your macOS terminal shell to do awesome things."
+  },
+  {
+    "repo": "win4r/memory-lancedb-pro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI"
+  },
+  {
+    "repo": "PinchToDebug/EverythingQuickSearch",
+    "branch": "master",
+    "language": "C#",
+    "description": ""
+  },
+  {
+    "repo": "nats-io/nats.go",
+    "branch": "main",
+    "language": "Go",
+    "description": "Golang client for NATS, the cloud native messaging system."
+  },
+  {
+    "repo": "zhixianio/clawpal",
+    "branch": "main",
+    "language": "Rust",
+    "description": "ClawPal - Manage OpenClaw agents, models, and configs with a visual interface. Stop editing JSON by hand."
+  },
+  {
+    "repo": "spotipy-dev/spotipy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A light weight Python library for the Spotify Web API"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Free, open source crypto trading bot"
+  },
+  {
+    "repo": "anchore/grype",
+    "branch": "main",
+    "language": "Go",
+    "description": "A vulnerability scanner for container images and filesystems"
   }
 ]
