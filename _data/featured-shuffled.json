@@ -1,146 +1,146 @@
 [
   {
-    "repo": "matplotlib/matplotlib",
-    "branch": "main",
-    "language": "Python",
-    "description": "matplotlib: plotting with Python"
-  },
-  {
-    "repo": "vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
-    "branch": "main",
-    "language": "C++",
-    "description": "esp32-s3-touch-amoled-1.8"
-  },
-  {
-    "repo": "hacktivist123/agent-session-resume",
-    "branch": "main",
-    "language": "Python",
-    "description": "Cross-agent session resume skill for Claude Code, Codex, Antigravity, and OpenCode."
-  },
-  {
-    "repo": "QingJ01/DeepSeekCode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "基于 Claude Code 代码库改造的本地 CLI 编程代理"
-  },
-  {
-    "repo": "AMAP-ML/SkillClaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "Let Skills Evolve Collectively with Agentic Evolver"
-  },
-  {
-    "repo": "ghboke/claude-code-reverse",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "claude code源码分析报告"
-  },
-  {
-    "repo": "jhochenbaum/pi-autoresearch-studio",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Dashboard, plan editor, PR workflow, and orchestration tools for pi autoresearch sessions"
-  },
-  {
-    "repo": "InternLM/WildClawBench",
-    "branch": "main",
-    "language": "Python",
-    "description": "An in-the-wild benchmark for AI agents in the OpenClaw Environment."
-  },
-  {
-    "repo": "abundantbeing/hermes-browser-extension",
+    "repo": "rohitg00/awesome-claude-code-toolkit",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Browser-native side panel for Hermes Agent — connect web context to your local Hermes runtime."
+    "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+15,000 via SkillKit), 42 commands, 120 plugins, 19 hooks, 15 rules, 7 templates, 6 MCP configs, and more."
   },
   {
-    "repo": "lingbol088-spec/Codex-5.5-codex-instruct-5.5",
+    "repo": "reinesana/Doomscroll-Skyrim-Edition",
     "branch": "main",
     "language": "Python",
-    "description": "Codex CLI 破甲工具（GPT-5.5） — 注入无限制模式系统指令，关闭所有内容过滤器。"
+    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
   },
   {
-    "repo": "CWS6206/EasySSDTester",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "Easy SSD Tester - Portable Windows 11 utility for checking SSD health, SMART data and simple sequential read/write performance."
-  },
-  {
-    "repo": "poteto/hiring-without-whiteboards",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "⭐️  Companies that don't have a broken hiring process"
-  },
-  {
-    "repo": "SakanaAI/fugu",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "darialebedev8/Crypto-Clipper",
+    "repo": "Mbovu222/League_of_Legends_Skillshot_Dodger",
     "branch": "main",
     "language": "Python",
-    "description": "Cross-platform cryptocurrency clipboard utility with multi-chain address detection and validation for BTC, ETH, SOL, TRX, LTC, and DOGE. Supports regex-based matching, EIP-55, Base58, SegWit, and Taproot formats, activity logging, custom rules, clipboard history, and Windows, Linux, and macOS compatibility for wallet address management."
+    "description": "AI dodger and last-hit assistant for LoL (undetected by Vanguard). Auto-dodge skillshots, perfect CS, reveal fog, and execute combos. Works in all game modes."
   },
   {
-    "repo": "rpanigrahi222/intruth-factcheck",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "TriangleMagistrate/DeepSeek-Claw",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "TianyiDataScience/openclaw-control-center",
+    "repo": "chrisryugj/kordoc",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "모두 파싱해버리겠다 — HWP/HWPX/PDF → Markdown | npm · CLI · MCP Server"
   },
   {
-    "repo": "aidenybai/cnfast",
+    "repo": "ProjectKumo/KumoApp",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Fast drop in replacement for `cn`"
+    "language": "Swift",
+    "description": "A calm, native macOS client for the Mihomo proxy core, built with SwiftUI and a shared agent-friendly CLI."
   },
   {
-    "repo": "soltia48/sdrplusplus-j-alert-plugin",
+    "repo": "TQ-trade-agent/tq-trading-agent",
     "branch": "main",
-    "language": "C++",
-    "description": "Out-of-tree decoder plugin for SDR++ that demodulates and decodes the J-ALERT (全国瞬時警報システム) satellite downlink."
+    "language": "Vue",
+    "description": "🌮 Traidng agent, AI-powered multi-agent stock research & trading strategy orchestration, trading agent - TypeScript, LangGraph, OpenAI-compatible APIs"
   },
   {
-    "repo": "bjarneo/ku",
+    "repo": "shobhit99/claude-watch",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Control your claude code from your apple watch"
+  },
+  {
+    "repo": "CyrilPeng/FlowScroll",
+    "branch": "main",
+    "language": "Python",
+    "description": "一款无级滚动软件，旨在把浏览器里的中键自动滚动带到整个系统，让你的鼠标拥有丝滑的全局无级滚动"
+  },
+  {
+    "repo": "larksuite/cli",
     "branch": "main",
     "language": "Go",
-    "description": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. Inspired by k9s, Lens, and lazygit."
+    "description": "A command-line tool for Lark/Feishu Open Platform — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills."
   },
   {
-    "repo": "localai-org/privacy-filter.cpp",
-    "branch": "master",
-    "language": "C++",
-    "description": "OpenAI's privacy filter NER model architecture implemented in a minimal C++/GGML runtime"
-  },
-  {
-    "repo": "claude-code-ai-anthropic/free-claude-code-ai-desktop-app",
+    "repo": "XiaomiMiMo/MiMo-V2.5-ASR",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Free Claude Code Api desktop — claude ai free cli anthropic ai claude pro coding claude fable free agent terminal claude fable 5 assistant open source git integration mcp server free api key setup guide config"
-  },
-  {
-    "repo": "ladybug-me/caelestia-dots-kde",
-    "branch": "main",
-    "language": "QML",
-    "description": "caelestia-dots ported to KDE plasma 6"
-  },
-  {
-    "repo": "snoglobe/helios",
-    "branch": "main",
-    "language": "TypeScript",
+    "language": "Python",
     "description": ""
+  },
+  {
+    "repo": "B3hnamR/PsiphonOverMITM",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "Pathos0925/SatoshiGuesser",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Roll for lost bitcoin."
+  },
+  {
+    "repo": "Percepta-Core/transformer-vm",
+    "branch": "main",
+    "language": "Python",
+    "description": "Compile programs directly into transformer weights. Includes a 2D convex-hull KV cache with O(log n) inference."
+  },
+  {
+    "repo": "elkimek/honcho-self-hosted",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Self-host Honcho memory layer for Hermes Agent — OpenRouter + Venice, no code changes"
+  },
+  {
+    "repo": "taylorarndt/perspective-cuts",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A text-based language for writing Apple Shortcuts. Experimental."
+  },
+  {
+    "repo": "Market-Execution-Engine/Solana-Meteora-Bundler",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler Meteora Bundler"
+  },
+  {
+    "repo": "raiyanyahya/how-to-train-your-gpt",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "Build a modern LLM from scratch. Every line commented. Explained like we are five."
+  },
+  {
+    "repo": "HughYau/qiushi-skill",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "求是Skill——从教员思想中提炼出一条总原则和九大方法论工具，系统性地武装 AI 的大脑。"
+  },
+  {
+    "repo": "leigest519/OpenGame",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "OpenGame: Open Agentic Coding for Games"
+  },
+  {
+    "repo": "AlexCheema/talos-vs-macbook",
+    "branch": "main",
+    "language": "Python",
+    "description": "microGPT benchmarks: a single M4 Max MacBook Pro P-core in C runs Karpathy's 4192-parameter transformer at ~71x the throughput of TALOS-V2's FPGA implementation."
+  },
+  {
+    "repo": "pro-tech-killers/binance-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "binance trading bot binance spot binance api trading bot crypto trading bot automated trading binance trading bot typescript ccxt algorithmic trading spot trading crypto bot binance trading bot npm nodejs quant fintech crypto trading bot automated trading binance trading bot open source binance trading bot btc eth usdt binance trading bot"
+  },
+  {
+    "repo": "techjarves/OpenClaude-Portable",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Run Claude Code from a USB drive on any PC — no installation required."
+  },
+  {
+    "repo": "gofsnotify/fsnotify",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cross-platform file system notifications for Go."
+  },
+  {
+    "repo": "soongenwong/claudecode",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Open Source ClaudeCode Leaked. Same functionalities as Claude Code by Anthropic. Written in Rust, Ready to use immediately for free."
   }
 ]
