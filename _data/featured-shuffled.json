@@ -1,33 +1,69 @@
 [
   {
-    "repo": "immich-app/immich",
+    "repo": "matplotlib/matplotlib",
+    "branch": "main",
+    "language": "Python",
+    "description": "matplotlib: plotting with Python"
+  },
+  {
+    "repo": "vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
+    "branch": "main",
+    "language": "C++",
+    "description": "esp32-s3-touch-amoled-1.8"
+  },
+  {
+    "repo": "hacktivist123/agent-session-resume",
+    "branch": "main",
+    "language": "Python",
+    "description": "Cross-agent session resume skill for Claude Code, Codex, Antigravity, and OpenCode."
+  },
+  {
+    "repo": "QingJ01/DeepSeekCode",
     "branch": "main",
     "language": "TypeScript",
-    "description": "High performance self-hosted photo and video management solution."
+    "description": "基于 Claude Code 代码库改造的本地 CLI 编程代理"
   },
   {
-    "repo": "jasonkneen/agent-simulator",
+    "repo": "AMAP-ML/SkillClaw",
+    "branch": "main",
+    "language": "Python",
+    "description": "Let Skills Evolve Collectively with Agentic Evolver"
+  },
+  {
+    "repo": "ghboke/claude-code-reverse",
     "branch": "main",
     "language": "TypeScript",
-    "description": "An iOS simulator in a browser you can inspect"
+    "description": "claude code源码分析报告"
   },
   {
-    "repo": "promptpirate-x/discord-id-bypass-tool",
+    "repo": "jhochenbaum/pi-autoresearch-studio",
     "branch": "main",
-    "language": "HTML",
-    "description": "A verified tool that works on any potato computer that will let you bypass discord verification"
-  },
-  {
-    "repo": "videolan/vlc",
-    "branch": "master",
-    "language": "C",
-    "description": "VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc"
-  },
-  {
-    "repo": "matrix-org/matrix-js-sdk",
-    "branch": "develop",
     "language": "TypeScript",
-    "description": "Matrix Client-Server SDK for JavaScript"
+    "description": "Dashboard, plan editor, PR workflow, and orchestration tools for pi autoresearch sessions"
+  },
+  {
+    "repo": "InternLM/WildClawBench",
+    "branch": "main",
+    "language": "Python",
+    "description": "An in-the-wild benchmark for AI agents in the OpenClaw Environment."
+  },
+  {
+    "repo": "abundantbeing/hermes-browser-extension",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Browser-native side panel for Hermes Agent — connect web context to your local Hermes runtime."
+  },
+  {
+    "repo": "lingbol088-spec/Codex-5.5-codex-instruct-5.5",
+    "branch": "main",
+    "language": "Python",
+    "description": "Codex CLI 破甲工具（GPT-5.5） — 注入无限制模式系统指令，关闭所有内容过滤器。"
+  },
+  {
+    "repo": "CWS6206/EasySSDTester",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "Easy SSD Tester - Portable Windows 11 utility for checking SSD health, SMART data and simple sequential read/write performance."
   },
   {
     "repo": "poteto/hiring-without-whiteboards",
@@ -36,111 +72,75 @@
     "description": "⭐️  Companies that don't have a broken hiring process"
   },
   {
-    "repo": "newrelic/newrelic-java-agent",
+    "repo": "SakanaAI/fugu",
     "branch": "main",
-    "language": "Java",
-    "description": "The New Relic Java agent"
+    "language": "Shell",
+    "description": ""
   },
   {
-    "repo": "SeleniumHQ/selenium",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "A browser automation framework and ecosystem."
-  },
-  {
-    "repo": "GreatScott/enveil",
-    "branch": "main",
-    "language": "Rust",
-    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
-  },
-  {
-    "repo": "zilliztech/memsearch",
+    "repo": "darialebedev8/Crypto-Clipper",
     "branch": "main",
     "language": "Python",
-    "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw."
+    "description": "Cross-platform cryptocurrency clipboard utility with multi-chain address detection and validation for BTC, ETH, SOL, TRX, LTC, and DOGE. Supports regex-based matching, EIP-55, Base58, SegWit, and Taproot formats, activity logging, custom rules, clipboard history, and Windows, Linux, and macOS compatibility for wallet address management."
   },
   {
-    "repo": "NomicFoundation/hardhat",
+    "repo": "rpanigrahi222/intruth-factcheck",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software."
+    "language": "JavaScript",
+    "description": ""
   },
   {
-    "repo": "liuxiaopai-ai/ralph-desktop",
+    "repo": "TriangleMagistrate/DeepSeek-Claw",
     "branch": "main",
-    "language": "Rust",
-    "description": "Ralph Desktop -  Start vague. Ralph Loop until perfect.  A visual controller for AI coding agents that helps you brainstorm requirements and execute tasks through persistent iteration."
+    "language": "Shell",
+    "description": ""
   },
   {
-    "repo": "chekusu/shipkey",
+    "repo": "TianyiDataScience/openclaw-control-center",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "The-Vibe-Company/companion",
+    "repo": "aidenybai/cnfast",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Web UI for Claude Code built on a reverse-engineered WebSocket protocol. Launch sessions, stream responses, approve tools.  All from your browser / mobile"
+    "description": "Fast drop in replacement for `cn`"
   },
   {
-    "repo": "spring-cloud/spring-cloud-gateway",
+    "repo": "soltia48/sdrplusplus-j-alert-plugin",
     "branch": "main",
-    "language": "Java",
-    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
+    "language": "C++",
+    "description": "Out-of-tree decoder plugin for SDR++ that demodulates and decodes the J-ALERT (全国瞬時警報システム) satellite downlink."
   },
   {
-    "repo": "pinterest/ktlint",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "An anti-bikeshedding Kotlin linter with built-in formatter"
-  },
-  {
-    "repo": "actions/runner",
+    "repo": "bjarneo/ku",
     "branch": "main",
-    "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
-  },
-  {
-    "repo": "ant-design/ant-design-mobile",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Essential UI blocks for building mobile web apps."
-  },
-  {
-    "repo": "supermemoryai/clawdbot-supermemory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
-  },
-  {
-    "repo": "oblador/react-native-vector-icons",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Customizable Icons for React Native with support for image source and full styling."
-  },
-  {
-    "repo": "actions/download-artifact",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Download artifacts from your build"
-  },
-  {
-    "repo": "gohugoio/hugo",
-    "branch": "master",
     "language": "Go",
-    "description": "The world’s fastest framework for building websites."
+    "description": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. Inspired by k9s, Lens, and lazygit."
   },
   {
-    "repo": "micropython/micropython",
+    "repo": "localai-org/privacy-filter.cpp",
     "branch": "master",
-    "language": "C",
-    "description": "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
+    "language": "C++",
+    "description": "OpenAI's privacy filter NER model architecture implemented in a minimal C++/GGML runtime"
   },
   {
-    "repo": "gulpjs/gulp",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A toolkit to automate & enhance your workflow"
+    "repo": "claude-code-ai-anthropic/free-claude-code-ai-desktop-app",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Free Claude Code Api desktop — claude ai free cli anthropic ai claude pro coding claude fable free agent terminal claude fable 5 assistant open source git integration mcp server free api key setup guide config"
+  },
+  {
+    "repo": "ladybug-me/caelestia-dots-kde",
+    "branch": "main",
+    "language": "QML",
+    "description": "caelestia-dots ported to KDE plasma 6"
+  },
+  {
+    "repo": "snoglobe/helios",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
   }
 ]
