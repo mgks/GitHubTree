@@ -1,146 +1,146 @@
 [
   {
-    "repo": "itz-rynx/Disk_Space_Visualizer",
+    "repo": "danielmiessler/fabric",
+    "branch": "main",
+    "language": "Go",
+    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
+  },
+  {
+    "repo": "wxtsky/byob",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Bring Your Own Browser — let your AI agent use the Chrome you already have open"
+  },
+  {
+    "repo": "shadcn-ui/ui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
+  },
+  {
+    "repo": "github/hub",
+    "branch": "master",
+    "language": "Go",
+    "description": "A command-line tool that makes git easier to use with GitHub."
+  },
+  {
+    "repo": "element-hq/element-android",
+    "branch": "develop",
+    "language": "Kotlin",
+    "description": "A Matrix collaboration client for Android."
+  },
+  {
+    "repo": "actions/setup-node",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Set up your GitHub Actions workflow with a specific version of node.js"
+  },
+  {
+    "repo": "grafana/tempo",
+    "branch": "main",
+    "language": "Go",
+    "description": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend."
+  },
+  {
+    "repo": "ClawdisAI/ClawdisAI",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Always on. Always local. Always listening. A personal AI assistant that lives on your devices and meets you on every surface you already use."
+  },
+  {
+    "repo": "AgriciDaniel/claude-ads",
     "branch": "main",
     "language": "Python",
-    "description": "Visualize disk space usage with interactive charts and maps. Quickly identify space hogs."
+    "description": "Comprehensive paid advertising audit & optimization skill for Claude Code. 186 checks across Google, Meta, YouTube, LinkedIn, TikTok & Microsoft Ads with weighted scoring, parallel agents, and industry templates."
   },
   {
-    "repo": "getsentry/sentry-javascript",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Official Sentry SDKs for JavaScript"
-  },
-  {
-    "repo": "liandu2024/AnGe-ClashBoard",
+    "repo": "arrow-kt/arrow",
     "branch": "main",
-    "language": "Vue",
-    "description": "AnGe-ClashBoard - zashboard 完整体"
+    "language": "Kotlin",
+    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
   },
   {
-    "repo": "ionic-team/capacitor",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️"
+    "repo": "esphome/esphome",
+    "branch": "dev",
+    "language": "C++",
+    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
   },
   {
-    "repo": "dagster-io/dagster",
+    "repo": "ReactiveX/RxPY",
     "branch": "master",
     "language": "Python",
-    "description": "An orchestration platform for the development, production, and observation of data assets."
+    "description": "ReactiveX for Python"
   },
   {
-    "repo": "invertase/react-native-firebase",
+    "repo": "lijigang/ljg-skill-explain-words",
+    "branch": "master",
+    "language": "HTML",
+    "description": "单词灵魂解剖师 — Claude Code Skill，深度解构英文单词，生成博物馆级 HTML 卡片"
+  },
+  {
+    "repo": "CMU-Perceptual-Computing-Lab/openpose",
+    "branch": "master",
+    "language": "C++",
+    "description": "OpenPose: Real-time multi-person keypoint detection library for body, face, hands, and foot estimation"
+  },
+  {
+    "repo": "spring-cloud/spring-cloud-kubernetes",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "🔥 A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services."
+    "language": "Java",
+    "description": "Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc..."
   },
   {
-    "repo": "Okyumi/OverTrack",
+    "repo": "junit-team/junit4",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Overland travel route planner — from Tokyo to Antarctica, no flights required."
+    "language": "Java",
+    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
   },
   {
-    "repo": "chartist/chartist",
-    "branch": "develop",
-    "language": "Ruby",
-    "description": "Final Project @ Makers Academy"
+    "repo": "longhorn/longhorn",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Cloud-Native distributed storage built on and for Kubernetes"
   },
   {
-    "repo": "test-time-training/ttt-video-dit",
+    "repo": "apache/camel",
+    "branch": "main",
+    "language": "Java",
+    "description": "Apache Camel is an open source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data."
+  },
+  {
+    "repo": "iamzifei/bookmark-is-learned",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "收藏到就是学到，解决光收藏不看的问题。收藏的当下立刻学习或者丢弃"
+  },
+  {
+    "repo": "ConardLi/rag-skill",
     "branch": "main",
     "language": "Python",
-    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
+    "description": "A Skill dedicated to local knowledge base retrieval"
   },
   {
-    "repo": "GreatScott/enveil",
+    "repo": "redux-saga/redux-saga",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An alternative side effect model for Redux apps"
+  },
+  {
+    "repo": "m1heng/clawdbot-feishu",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "matrix-org/matrix-react-sdk",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Matrix SDK for React Javascript"
+  },
+  {
+    "repo": "thepartly/gatehouse",
     "branch": "main",
     "language": "Rust",
-    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
-  },
-  {
-    "repo": "voocel/openclaw-mini",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制"
-  },
-  {
-    "repo": "tensorflow/tensorboard",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "TensorFlow's Visualization Toolkit"
-  },
-  {
-    "repo": "google/flax",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Flax is a neural network library for JAX that is designed for flexibility."
-  },
-  {
-    "repo": "pytube/pytube",
-    "branch": "master",
-    "language": "Python",
-    "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos."
-  },
-  {
-    "repo": "MuhammadHananAsghar/wormhole",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open-source ngrok alternative. Expose your localhost to the internet with one command. Built with Go + Cloudflare Workers."
-  },
-  {
-    "repo": "craigsc/cmux",
-    "branch": "main",
-    "language": "Shell",
-    "description": "cmux: tmux for Claude Code"
-  },
-  {
-    "repo": "yt-dlp/yt-dlp",
-    "branch": "master",
-    "language": "Python",
-    "description": "A feature-rich command-line audio/video downloader"
-  },
-  {
-    "repo": "openai/point-e",
-    "branch": "main",
-    "language": "Python",
-    "description": "Point cloud diffusion for 3D model synthesis"
-  },
-  {
-    "repo": "ohmyzsh/ohmyzsh",
-    "branch": "master",
-    "language": "Shell",
-    "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
-  },
-  {
-    "repo": "Textualize/textual",
-    "branch": "main",
-    "language": "Python",
-    "description": "The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser."
-  },
-  {
-    "repo": "ExpondoEgirl/felca-reporter",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Extensão Chrome/Edge que automatiza denúncias de conteúdo inadequado para menores no YouTube, conforme a Lei nº 15.211/2025 (Lei Felca / ECA Digital)"
-  },
-  {
-    "repo": "quasarframework/quasar",
-    "branch": "dev",
-    "language": "JavaScript",
-    "description": "Quasar Framework - Build high-performance VueJS user interfaces in record time"
-  },
-  {
-    "repo": "pytorch/audio",
-    "branch": "main",
-    "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
-  },
-  {
-    "repo": "nats-io/nats.go",
-    "branch": "main",
-    "language": "Go",
-    "description": "Golang client for NATS, the cloud native messaging system."
+    "description": "A flexible authorization library that combines role-based (RBAC), attribute-based (ABAC), and relationship-based (ReBAC) access control policies."
   }
 ]
