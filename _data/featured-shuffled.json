@@ -1,146 +1,146 @@
 [
   {
-    "repo": "danielmiessler/fabric",
-    "branch": "main",
-    "language": "Go",
-    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
-  },
-  {
-    "repo": "wxtsky/byob",
+    "repo": "pi0/skillman",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Bring Your Own Browser — let your AI agent use the Chrome you already have open"
+    "description": "🤹 Manage project skills and lock them in skills.json"
   },
   {
-    "repo": "shadcn-ui/ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
-  },
-  {
-    "repo": "github/hub",
-    "branch": "master",
-    "language": "Go",
-    "description": "A command-line tool that makes git easier to use with GitHub."
-  },
-  {
-    "repo": "element-hq/element-android",
-    "branch": "develop",
-    "language": "Kotlin",
-    "description": "A Matrix collaboration client for Android."
-  },
-  {
-    "repo": "actions/setup-node",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Set up your GitHub Actions workflow with a specific version of node.js"
-  },
-  {
-    "repo": "grafana/tempo",
+    "repo": "sipeed/picoclaw",
     "branch": "main",
     "language": "Go",
-    "description": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend."
+    "description": "picoclaw"
   },
   {
-    "repo": "ClawdisAI/ClawdisAI",
+    "repo": "avihaymenahem/velo",
     "branch": "main",
-    "language": "Swift",
-    "description": "Always on. Always local. Always listening. A personal AI assistant that lives on your devices and meets you on every surface you already use."
+    "language": "TypeScript",
+    "description": "Open source desktop email client for Gmail"
   },
   {
-    "repo": "AgriciDaniel/claude-ads",
+    "repo": "cporter202/openclaw-api-list",
     "branch": "main",
-    "language": "Python",
-    "description": "Comprehensive paid advertising audit & optimization skill for Claude Code. 186 checks across Google, Meta, YouTube, LinkedIn, TikTok & Microsoft Ads with weighted scoring, parallel agents, and industry templates."
+    "language": "JavaScript",
+    "description": "This GitHub repo is a list of APIs you can plug into your OpenClaw bot to make it run like a powerhouse!"
   },
   {
-    "repo": "arrow-kt/arrow",
+    "repo": "Adityaraj0421/design-studio",
     "branch": "main",
-    "language": "Kotlin",
-    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
-  },
-  {
-    "repo": "esphome/esphome",
-    "branch": "dev",
-    "language": "C++",
-    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
-  },
-  {
-    "repo": "ReactiveX/RxPY",
-    "branch": "master",
-    "language": "Python",
-    "description": "ReactiveX for Python"
-  },
-  {
-    "repo": "lijigang/ljg-skill-explain-words",
-    "branch": "master",
-    "language": "HTML",
-    "description": "单词灵魂解剖师 — Claude Code Skill，深度解构英文单词，生成博物馆级 HTML 卡片"
-  },
-  {
-    "repo": "CMU-Perceptual-Computing-Lab/openpose",
-    "branch": "master",
-    "language": "C++",
-    "description": "OpenPose: Real-time multi-person keypoint detection library for body, face, hands, and foot estimation"
-  },
-  {
-    "repo": "spring-cloud/spring-cloud-kubernetes",
-    "branch": "main",
-    "language": "Java",
-    "description": "Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc..."
-  },
-  {
-    "repo": "junit-team/junit4",
-    "branch": "main",
-    "language": "Java",
-    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
-  },
-  {
-    "repo": "longhorn/longhorn",
-    "branch": "master",
     "language": "Shell",
-    "description": "Cloud-Native distributed storage built on and for Kubernetes"
+    "description": "A virtual design team for Claude Code — 9 specialist roles, 16 commands, 5 agents"
   },
   {
-    "repo": "apache/camel",
+    "repo": "sb-ocr/cmdeck",
     "branch": "main",
-    "language": "Java",
-    "description": "Apache Camel is an open source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data."
+    "language": "HTML",
+    "description": ""
   },
   {
-    "repo": "iamzifei/bookmark-is-learned",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "收藏到就是学到，解决光收藏不看的问题。收藏的当下立刻学习或者丢弃"
-  },
-  {
-    "repo": "ConardLi/rag-skill",
+    "repo": "99Ayush/iPhone_Backup_Tool",
     "branch": "main",
     "language": "Python",
-    "description": "A Skill dedicated to local knowledge base retrieval"
+    "description": "Auto-backup photos, messages, and settings to PC. Backup when connected, export photos, save messages, and backup over Wi-Fi. Secure your iPhone data."
   },
   {
-    "repo": "redux-saga/redux-saga",
+    "repo": "LanRhyme/MicYou",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "An alternative side effect model for Redux apps"
+    "language": "Kotlin",
+    "description": "MicYou is a powerful tool that turns your Android device into a high-quality wireless microphone for your PC."
   },
   {
-    "repo": "m1heng/clawdbot-feishu",
+    "repo": "Cranot/agi-in-md",
+    "branch": "master",
+    "language": "Python",
+    "description": "System prompts as cognitive lenses. 13 compression levels, 650+ experiments. Haiku + a 332-word prompt beats Opus vanilla on structural code analysis at 5x less cost. Includes Prism: a lens-powered CLI tool."
+  },
+  {
+    "repo": "praetorian-inc/augustus",
+    "branch": "main",
+    "language": "Go",
+    "description": "LLM security testing framework for detecting prompt injection, jailbreaks, and adversarial attacks — 190+ probes, 28 providers, single Go binary"
+  },
+  {
+    "repo": "nikmcfly/MiroFish-Offline",
+    "branch": "main",
+    "language": "Python",
+    "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
+  },
+  {
+    "repo": "THU-SI/Spatial-TTT",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official Implementation of Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training"
+  },
+  {
+    "repo": "simonw/showboat",
+    "branch": "main",
+    "language": "Go",
+    "description": "Create executable documents that demonstrate an agent's work"
+  },
+  {
+    "repo": "cnlimiter/codex-register",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "flamestro/deff",
+    "branch": "main",
+    "language": "Rust",
+    "description": "interactive, side-by-side file review for git diffs with per-file navigation, vertical and horizontal scrolling, syntax highlighting, and added/deleted line tinting"
+  },
+  {
+    "repo": "openhome-dev/abilities",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Open-source abilities for OpenHome agents."
+  },
+  {
+    "repo": "win4r/team-tasks",
+    "branch": "master",
+    "language": "Python",
+    "description": "Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration"
+  },
+  {
+    "repo": "frederikemmer/MediaLyze",
+    "branch": "main",
+    "language": "Python",
+    "description": "Self-hosted media library analysis for large video collections"
+  },
+  {
+    "repo": "blader/taskmaster",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete"
+  },
+  {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "branch": "main",
+    "language": "TeX",
+    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
+  },
+  {
+    "repo": "taf2/mdvi",
+    "branch": "master",
+    "language": "Rust",
+    "description": "cli based Markdown viewer"
+  },
+  {
+    "repo": "TermiX-official/cryptoclaw",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "matrix-org/matrix-react-sdk",
-    "branch": "develop",
+    "repo": "MistKailorg/Polymarket-trading-bot",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Matrix SDK for React Javascript"
+    "description": "Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket copy trading bot | Polymarket copy trading bot | Polymarket copy trading bot | Polymarket copy trading bot"
   },
   {
-    "repo": "thepartly/gatehouse",
+    "repo": "samuelfaj/distill",
     "branch": "main",
-    "language": "Rust",
-    "description": "A flexible authorization library that combines role-based (RBAC), attribute-based (ABAC), and relationship-based (ReBAC) access control policies."
+    "language": "TypeScript",
+    "description": "Distill large CLI outputs into small answers for LLMs and save tokens!"
   }
 ]
