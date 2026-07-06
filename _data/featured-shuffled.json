@@ -1,146 +1,146 @@
 [
   {
-    "repo": "johnkf5-ops/the-dev-squad",
+    "repo": "pedrohcgs/claude-code-my-workflow",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Give Claude its own dev team: one supervisor, four specialists, and bulletproof plans/builds without losing context."
+    "language": "HTML",
+    "description": "A ready-to-fork Claude Code template for academics using LaTeX/Beamer + R. Multi-agent review, quality gates, adversarial QA, and replication protocols."
   },
   {
-    "repo": "StreisandEffect/streisand",
-    "branch": "master",
+    "repo": "humblebanana/open-record-replay",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Open-source macOS record-and-replay workflow recorder for computer use agents. Captures mouse, keyboard, and UI events as structured traces so agents can learn, replay, and automate real desktop tasks."
+  },
+  {
+    "repo": "eval-exec/neomacs",
+    "branch": "main",
+    "language": "Emacs Lisp",
+    "description": "🚀 NEO Emacs — A GPU-powered Emacs written in 🦀Rust with a modern display engine.     Effortlessly render tons of  🖼️4K images, 🎥4K videos, and 🌐WPEWebKit using GPU acceleration, DMA-BUF, ZERO-COPY and rich animation effects support for a super-level blazing-fast Emacs experience. 🎉"
+  },
+  {
+    "repo": "mindfold-ai/Trellis",
+    "branch": "main",
     "language": "Shell",
-    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists."
+    "description": "All-in-one AI framework & toolkit for Claude Code & Cursor"
   },
   {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "altair-viz/altair",
-    "branch": "main",
-    "language": "Python",
-    "description": "Declarative visualization library for Python"
-  },
-  {
-    "repo": "ExpondoEgirl/felca-reporter",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Extensão Chrome/Edge que automatiza denúncias de conteúdo inadequado para menores no YouTube, conforme a Lei nº 15.211/2025 (Lei Felca / ECA Digital)"
-  },
-  {
-    "repo": "by-sonic/unblock-pro",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Обход блокировок Discord и YouTube — автоматический DPI bypass для macOS и Windows | Unblock Discord & YouTube in Russia"
-  },
-  {
-    "repo": "chakra-ui/chakra-ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
-  },
-  {
-    "repo": "PyCQA/pylint",
-    "branch": "main",
-    "language": "Python",
-    "description": "It's not just a linter that annoys you!"
-  },
-  {
-    "repo": "miantiao-me/cloud-code",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent"
-  },
-  {
-    "repo": "celery/celery",
-    "branch": "master",
-    "language": "Python",
-    "description": "Distributed Task Queue (development branch)"
-  },
-  {
-    "repo": "umijs/umi",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A framework in react community ✨"
-  },
-  {
-    "repo": "apache/flink",
-    "branch": "master",
-    "language": "Java",
-    "description": "Apache Flink"
-  },
-  {
-    "repo": "FrondEnt/PolymarketBTC15mAssistant",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekis"
-  },
-  {
-    "repo": "psf/requests-html",
-    "branch": "master",
-    "language": "Python",
-    "description": "Pythonic HTML Parsing for Humans™"
-  },
-  {
-    "repo": "TQZHR/grok2api",
-    "branch": "main",
-    "language": "Python",
-    "description": "Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning"
-  },
-  {
-    "repo": "nhevers/MoltBrain",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically."
-  },
-  {
-    "repo": "facebookresearch/segment-anything",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model."
-  },
-  {
-    "repo": "DefinitelyTyped/DefinitelyTyped",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The repository for high quality TypeScript type definitions."
-  },
-  {
-    "repo": "pytorch/vision",
-    "branch": "main",
-    "language": "Python",
-    "description": "Datasets, Transforms and Models specific to Computer Vision"
-  },
-  {
-    "repo": "ziglang/zig",
-    "branch": "master",
-    "language": "Zig",
-    "description": "Moved to Codeberg"
-  },
-  {
-    "repo": "Shopify/react-native-skia",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "High-performance React Native Graphics using Skia"
-  },
-  {
-    "repo": "asdf-vm/asdf",
-    "branch": "master",
-    "language": "Go",
-    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
-  },
-  {
-    "repo": "JStumpp/awesome-android",
+    "repo": "ziadoz/awesome-php",
     "branch": "master",
     "language": "Other",
-    "description": "A curated list of awesome Android packages and resources."
+    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things."
   },
   {
-    "repo": "Homebrew/brew",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "🍺 The missing package manager for macOS (or Linux)"
+    "repo": "dgreenheck/webgpu-claude-skill",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A Claude skill for developing WebGPU applications with Three.js"
+  },
+  {
+    "repo": "cft0808/edict",
+    "branch": "main",
+    "language": "HTML",
+    "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails"
+  },
+  {
+    "repo": "sparkyniner/Netryx-OpenSource-Next-Gen-Street-Level-Geolocation",
+    "branch": "main",
+    "language": "Python",
+    "description": "Netryx is a powerful, locally-hosted geolocation tool that uses state-of-the-art computer vision to identify the exact coordinates of a street-level image. It replicates the core pipeline of high-end geolocation SaaS platforms but runs entirely on your local hardware."
+  },
+  {
+    "repo": "eooce/python-ws",
+    "branch": "main",
+    "language": "Python",
+    "description": "build vless / trojan /shadowsocks  proxies on python server,no need core"
+  },
+  {
+    "repo": "wavyrai/tmux-ide",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Turn any project into a tmux-powered terminal IDE with a simple ide.yml"
+  },
+  {
+    "repo": "FrankDavis236869/spyder-osint",
+    "branch": "main",
+    "language": "Python",
+    "description": "Spyder OSINT GUI — Graphical open-source intelligence research tool for phone number lookup, IP geolocation, social media reconnaissance, email validation, domain WHOIS, username search, with multi-module architecture and Tkinter-based interface for digital forensics"
+  },
+  {
+    "repo": "pretyflaco/meetscribe",
+    "branch": "main",
+    "language": "Python",
+    "description": "Fully local meeting transcription with speaker diarization, AI summaries, and PDF output"
+  },
+  {
+    "repo": "nj19257/FastSkills",
+    "branch": "main",
+    "language": "Python",
+    "description": "⚡ MCP server that brings Agent Skills (the open standard behind Claude Code, OpenClaw & nanobot) to any MCP-compatible agent. Discover, load, create & execute skills."
+  },
+  {
+    "repo": "elder-plinius/GLOSSOPETRAE",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "LINGUISTIC ENGINE FOR AI"
+  },
+  {
+    "repo": "Zehong-Ma/PixelGen",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”"
+  },
+  {
+    "repo": "QwenLM/Qwen3-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+  },
+  {
+    "repo": "ZimoLiao/scholaraio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Scholar All-In-One: AI agent-powered research terminal"
+  },
+  {
+    "repo": "YuJunZhiXue/github-skill-forge",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "microsoft/Data-Science-For-Beginners",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "10 Weeks, 20 Lessons, Data Science for All!"
+  },
+  {
+    "repo": "actions/runner",
+    "branch": "main",
+    "language": "C#",
+    "description": "The Runner for GitHub Actions :rocket:"
+  },
+  {
+    "repo": "cursor/agent-trace",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A standard format for tracing AI-generated code."
+  },
+  {
+    "repo": "microsoft/cascadia-code",
+    "branch": "main",
+    "language": "Python",
+    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
+  },
+  {
+    "repo": "jarodise/pdf2epub-paddle",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "unicodeveloper/globalthreatmap",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Global threat map. Learn wars, conflicts, military bases and history of nations."
   }
 ]
