@@ -1,146 +1,146 @@
 [
   {
-    "repo": "pi0/skillman",
+    "repo": "johnkf5-ops/the-dev-squad",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🤹 Manage project skills and lock them in skills.json"
+    "description": "Give Claude its own dev team: one supervisor, four specialists, and bulletproof plans/builds without losing context."
   },
   {
-    "repo": "sipeed/picoclaw",
-    "branch": "main",
-    "language": "Go",
-    "description": "picoclaw"
+    "repo": "StreisandEffect/streisand",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists."
   },
   {
-    "repo": "avihaymenahem/velo",
-    "branch": "main",
+    "repo": "web3/web3.js",
+    "branch": "1.x",
     "language": "TypeScript",
-    "description": "Open source desktop email client for Gmail"
+    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
   },
   {
-    "repo": "cporter202/openclaw-api-list",
+    "repo": "altair-viz/altair",
+    "branch": "main",
+    "language": "Python",
+    "description": "Declarative visualization library for Python"
+  },
+  {
+    "repo": "ExpondoEgirl/felca-reporter",
     "branch": "main",
     "language": "JavaScript",
-    "description": "This GitHub repo is a list of APIs you can plug into your OpenClaw bot to make it run like a powerhouse!"
+    "description": "Extensão Chrome/Edge que automatiza denúncias de conteúdo inadequado para menores no YouTube, conforme a Lei nº 15.211/2025 (Lei Felca / ECA Digital)"
   },
   {
-    "repo": "Adityaraj0421/design-studio",
+    "repo": "by-sonic/unblock-pro",
     "branch": "main",
-    "language": "Shell",
-    "description": "A virtual design team for Claude Code — 9 specialist roles, 16 commands, 5 agents"
+    "language": "JavaScript",
+    "description": "Обход блокировок Discord и YouTube — автоматический DPI bypass для macOS и Windows | Unblock Discord & YouTube in Russia"
   },
   {
-    "repo": "sb-ocr/cmdeck",
+    "repo": "chakra-ui/chakra-ui",
     "branch": "main",
-    "language": "HTML",
-    "description": ""
+    "language": "TypeScript",
+    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
   },
   {
-    "repo": "99Ayush/iPhone_Backup_Tool",
+    "repo": "PyCQA/pylint",
     "branch": "main",
     "language": "Python",
-    "description": "Auto-backup photos, messages, and settings to PC. Backup when connected, export photos, save messages, and backup over Wi-Fi. Secure your iPhone data."
+    "description": "It's not just a linter that annoys you!"
   },
   {
-    "repo": "LanRhyme/MicYou",
+    "repo": "miantiao-me/cloud-code",
     "branch": "master",
-    "language": "Kotlin",
-    "description": "MicYou is a powerful tool that turns your Android device into a high-quality wireless microphone for your PC."
+    "language": "TypeScript",
+    "description": "Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent"
   },
   {
-    "repo": "Cranot/agi-in-md",
+    "repo": "celery/celery",
     "branch": "master",
     "language": "Python",
-    "description": "System prompts as cognitive lenses. 13 compression levels, 650+ experiments. Haiku + a 332-word prompt beats Opus vanilla on structural code analysis at 5x less cost. Includes Prism: a lens-powered CLI tool."
+    "description": "Distributed Task Queue (development branch)"
   },
   {
-    "repo": "praetorian-inc/augustus",
+    "repo": "umijs/umi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A framework in react community ✨"
+  },
+  {
+    "repo": "apache/flink",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Flink"
+  },
+  {
+    "repo": "FrondEnt/PolymarketBTC15mAssistant",
     "branch": "main",
+    "language": "JavaScript",
+    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekis"
+  },
+  {
+    "repo": "psf/requests-html",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pythonic HTML Parsing for Humans™"
+  },
+  {
+    "repo": "TQZHR/grok2api",
+    "branch": "main",
+    "language": "Python",
+    "description": "Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning"
+  },
+  {
+    "repo": "nhevers/MoltBrain",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically."
+  },
+  {
+    "repo": "facebookresearch/segment-anything",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model."
+  },
+  {
+    "repo": "DefinitelyTyped/DefinitelyTyped",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The repository for high quality TypeScript type definitions."
+  },
+  {
+    "repo": "pytorch/vision",
+    "branch": "main",
+    "language": "Python",
+    "description": "Datasets, Transforms and Models specific to Computer Vision"
+  },
+  {
+    "repo": "ziglang/zig",
+    "branch": "master",
+    "language": "Zig",
+    "description": "Moved to Codeberg"
+  },
+  {
+    "repo": "Shopify/react-native-skia",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "High-performance React Native Graphics using Skia"
+  },
+  {
+    "repo": "asdf-vm/asdf",
+    "branch": "master",
     "language": "Go",
-    "description": "LLM security testing framework for detecting prompt injection, jailbreaks, and adversarial attacks — 190+ probes, 28 providers, single Go binary"
+    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
   },
   {
-    "repo": "nikmcfly/MiroFish-Offline",
-    "branch": "main",
-    "language": "Python",
-    "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
-  },
-  {
-    "repo": "THU-SI/Spatial-TTT",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official Implementation of Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training"
-  },
-  {
-    "repo": "simonw/showboat",
-    "branch": "main",
-    "language": "Go",
-    "description": "Create executable documents that demonstrate an agent's work"
-  },
-  {
-    "repo": "cnlimiter/codex-register",
+    "repo": "JStumpp/awesome-android",
     "branch": "master",
-    "language": "Python",
-    "description": ""
+    "language": "Other",
+    "description": "A curated list of awesome Android packages and resources."
   },
   {
-    "repo": "flamestro/deff",
-    "branch": "main",
-    "language": "Rust",
-    "description": "interactive, side-by-side file review for git diffs with per-file navigation, vertical and horizontal scrolling, syntax highlighting, and added/deleted line tinting"
-  },
-  {
-    "repo": "openhome-dev/abilities",
-    "branch": "dev",
-    "language": "Python",
-    "description": "Open-source abilities for OpenHome agents."
-  },
-  {
-    "repo": "win4r/team-tasks",
+    "repo": "Homebrew/brew",
     "branch": "master",
-    "language": "Python",
-    "description": "Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration"
-  },
-  {
-    "repo": "frederikemmer/MediaLyze",
-    "branch": "main",
-    "language": "Python",
-    "description": "Self-hosted media library analysis for large video collections"
-  },
-  {
-    "repo": "blader/taskmaster",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete"
-  },
-  {
-    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
-    "branch": "main",
-    "language": "TeX",
-    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
-  },
-  {
-    "repo": "taf2/mdvi",
-    "branch": "master",
-    "language": "Rust",
-    "description": "cli based Markdown viewer"
-  },
-  {
-    "repo": "TermiX-official/cryptoclaw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "MistKailorg/Polymarket-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket trading bot | Polymarket copy trading bot | Polymarket copy trading bot | Polymarket copy trading bot | Polymarket copy trading bot"
-  },
-  {
-    "repo": "samuelfaj/distill",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Distill large CLI outputs into small answers for LLMs and save tokens!"
+    "language": "Ruby",
+    "description": "🍺 The missing package manager for macOS (or Linux)"
   }
 ]
