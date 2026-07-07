@@ -1,146 +1,146 @@
 [
   {
-    "repo": "pedrohcgs/claude-code-my-workflow",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A ready-to-fork Claude Code template for academics using LaTeX/Beamer + R. Multi-agent review, quality gates, adversarial QA, and replication protocols."
+    "repo": "golang-standards/project-layout",
+    "branch": "master",
+    "language": "Makefile",
+    "description": "Standard Go Project Layout"
   },
   {
-    "repo": "humblebanana/open-record-replay",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Open-source macOS record-and-replay workflow recorder for computer use agents. Captures mouse, keyboard, and UI events as structured traces so agents can learn, replay, and automate real desktop tasks."
+    "repo": "portainer/portainer",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Making Docker and Kubernetes management easy."
   },
   {
-    "repo": "eval-exec/neomacs",
+    "repo": "XyhTender/qq-farm-automation-bot",
     "branch": "main",
-    "language": "Emacs Lisp",
-    "description": "🚀 NEO Emacs — A GPU-powered Emacs written in 🦀Rust with a modern display engine.     Effortlessly render tons of  🖼️4K images, 🎥4K videos, and 🌐WPEWebKit using GPU acceleration, DMA-BUF, ZERO-COPY and rich animation effects support for a super-level blazing-fast Emacs experience. 🎉"
+    "language": "JavaScript",
+    "description": "QQ农场全自动脚本"
   },
   {
-    "repo": "mindfold-ai/Trellis",
+    "repo": "SakanaAI/fugu",
     "branch": "main",
     "language": "Shell",
-    "description": "All-in-one AI framework & toolkit for Claude Code & Cursor"
+    "description": ""
   },
   {
-    "repo": "ziadoz/awesome-php",
+    "repo": "kubeedge/kubeedge",
+    "branch": "master",
+    "language": "Go",
+    "description": "Kubernetes Native Edge Computing Framework (project under CNCF)"
+  },
+  {
+    "repo": "aave/aave-v2",
     "branch": "master",
     "language": "Other",
-    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things."
+    "description": "Aave Protocol V2"
   },
   {
-    "repo": "dgreenheck/webgpu-claude-skill",
+    "repo": "slackhq/nebula",
+    "branch": "master",
+    "language": "Go",
+    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security"
+  },
+  {
+    "repo": "dateutil/dateutil",
+    "branch": "master",
+    "language": "Python",
+    "description": "Useful extensions to the standard Python datetime features"
+  },
+  {
+    "repo": "kubernetes-sigs/kind",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A Claude skill for developing WebGPU applications with Three.js"
+    "language": "Go",
+    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
   },
   {
-    "repo": "cft0808/edict",
-    "branch": "main",
-    "language": "HTML",
-    "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails"
-  },
-  {
-    "repo": "sparkyniner/Netryx-OpenSource-Next-Gen-Street-Level-Geolocation",
+    "repo": "apple/python-apple-fm-sdk",
     "branch": "main",
     "language": "Python",
-    "description": "Netryx is a powerful, locally-hosted geolocation tool that uses state-of-the-art computer vision to identify the exact coordinates of a street-level image. It replicates the core pipeline of high-end geolocation SaaS platforms but runs entirely on your local hardware."
+    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
   },
   {
-    "repo": "eooce/python-ws",
+    "repo": "spacedriveapp/spacedrive",
     "branch": "main",
+    "language": "Rust",
+    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
+  },
+  {
+    "repo": "PenglongHuang/chinese-novelist-skill",
+    "branch": "master",
     "language": "Python",
-    "description": "build vless / trojan /shadowsocks  proxies on python server,no need core"
+    "description": "让 AI 为你写一部完整的中文小说 - AI 驱动的中文小说创作助手 - 超过20章的小说，几分钟全稿完成    Claude Code Skill：自动创作分章节中文小说，每章悬念钩子"
   },
   {
-    "repo": "wavyrai/tmux-ide",
+    "repo": "yohey-w/multi-agent-shogun",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Turn any project into a tmux-powered terminal IDE with a simple ide.yml"
+    "language": "Shell",
+    "description": ""
   },
   {
-    "repo": "FrankDavis236869/spyder-osint",
-    "branch": "main",
-    "language": "Python",
-    "description": "Spyder OSINT GUI — Graphical open-source intelligence research tool for phone number lookup, IP geolocation, social media reconnaissance, email validation, domain WHOIS, username search, with multi-module architecture and Tkinter-based interface for digital forensics"
-  },
-  {
-    "repo": "pretyflaco/meetscribe",
-    "branch": "main",
-    "language": "Python",
-    "description": "Fully local meeting transcription with speaker diarization, AI summaries, and PDF output"
-  },
-  {
-    "repo": "nj19257/FastSkills",
-    "branch": "main",
-    "language": "Python",
-    "description": "⚡ MCP server that brings Agent Skills (the open standard behind Claude Code, OpenClaw & nanobot) to any MCP-compatible agent. Discover, load, create & execute skills."
-  },
-  {
-    "repo": "elder-plinius/GLOSSOPETRAE",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "LINGUISTIC ENGINE FOR AI"
-  },
-  {
-    "repo": "Zehong-Ma/PixelGen",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”"
-  },
-  {
-    "repo": "QwenLM/Qwen3-TTS",
-    "branch": "main",
-    "language": "Python",
-    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
-  },
-  {
-    "repo": "ZimoLiao/scholaraio",
-    "branch": "main",
-    "language": "Python",
-    "description": "Scholar All-In-One: AI agent-powered research terminal"
-  },
-  {
-    "repo": "YuJunZhiXue/github-skill-forge",
-    "branch": "main",
-    "language": "Python",
-    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
-  },
-  {
-    "repo": "microsoft/Data-Science-For-Beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "10 Weeks, 20 Lessons, Data Science for All!"
-  },
-  {
-    "repo": "actions/runner",
-    "branch": "main",
-    "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
-  },
-  {
-    "repo": "cursor/agent-trace",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A standard format for tracing AI-generated code."
-  },
-  {
-    "repo": "microsoft/cascadia-code",
-    "branch": "main",
-    "language": "Python",
-    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
-  },
-  {
-    "repo": "jarodise/pdf2epub-paddle",
+    "repo": "rainzz-512/Mewgenics-Chinese-Translation",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "unicodeveloper/globalthreatmap",
+    "repo": "jlia0/tinyclaw",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "TinyClaw is a tiny wrapper of Claude Code that acts as your 24/7 personal assistant"
+  },
+  {
+    "repo": "OffchainLabs/arbitrum",
+    "branch": "master",
+    "language": "Other",
+    "description": "Arbitrum is a Layer 2 scaling solution for Ethereum."
+  },
+  {
+    "repo": "apache/airflow",
+    "branch": "main",
+    "language": "Python",
+    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
+  },
+  {
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
+    "language": "Python",
+    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+  },
+  {
+    "repo": "Solido/awesome-flutter",
+    "branch": "master",
+    "language": "Dart",
+    "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
+  },
+  {
+    "repo": "sympy/sympy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A computer algebra system written in pure Python"
+  },
+  {
+    "repo": "nikopueringer/CorridorKey",
+    "branch": "main",
+    "language": "Python",
+    "description": "Perfect Green Screen Keys"
+  },
+  {
+    "repo": "tanweai/pua",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Global threat map. Learn wars, conflicts, military bases and history of nations."
+    "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
+  },
+  {
+    "repo": "rayon-rs/rayon",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Rayon: A data parallelism library for Rust"
+  },
+  {
+    "repo": "vercel/swr",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "React Hooks for Data Fetching"
   }
 ]
