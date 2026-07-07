@@ -1,87 +1,93 @@
 [
   {
-    "repo": "golang-standards/project-layout",
+    "repo": "Solido/awesome-flutter",
     "branch": "master",
-    "language": "Makefile",
-    "description": "Standard Go Project Layout"
+    "language": "Dart",
+    "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
   },
   {
-    "repo": "portainer/portainer",
-    "branch": "develop",
+    "repo": "supabase/supabase",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "Making Docker and Kubernetes management easy."
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications."
   },
   {
-    "repo": "XyhTender/qq-farm-automation-bot",
+    "repo": "bozhouDev/14days-build-claude-code-cli",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "QQ农场全自动脚本"
+    "language": "MDX",
+    "description": "网页版教程，看起来会舒服一点"
   },
   {
-    "repo": "SakanaAI/fugu",
+    "repo": "audacity/audacity",
+    "branch": "master",
+    "language": "C++",
+    "description": "Audio Editor"
+  },
+  {
+    "repo": "microsoft/onnxruntime",
     "branch": "main",
-    "language": "Shell",
-    "description": ""
+    "language": "C++",
+    "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
   },
   {
-    "repo": "kubeedge/kubeedge",
+    "repo": "Shpigford/clearly",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A clean, native markdown editor for macOS."
+  },
+  {
+    "repo": "goharbor/harbor",
+    "branch": "main",
+    "language": "Go",
+    "description": "An open source trusted cloud native registry project that stores, signs, and scans content."
+  },
+  {
+    "repo": "sdkman/sdkman-cli",
+    "branch": "master",
+    "language": "Gherkin",
+    "description": "The SDKMAN! Command Line Interface"
+  },
+  {
+    "repo": "encode/starlette",
+    "branch": "master",
+    "language": "Python",
+    "description": "The little ASGI framework that shines. 🌟"
+  },
+  {
+    "repo": "kubernetes-sigs/kustomize",
     "branch": "master",
     "language": "Go",
-    "description": "Kubernetes Native Edge Computing Framework (project under CNCF)"
+    "description": "Customization of kubernetes YAML configurations"
   },
   {
-    "repo": "aave/aave-v2",
+    "repo": "Developer-Y/cs-video-courses",
     "branch": "master",
     "language": "Other",
-    "description": "Aave Protocol V2"
+    "description": "List of Computer Science courses with video lectures."
   },
   {
-    "repo": "slackhq/nebula",
+    "repo": "cisco-ai-defense/skill-scanner",
+    "branch": "main",
+    "language": "Python",
+    "description": "Security Scanner for Agent Skills"
+  },
+  {
+    "repo": "kubernetes-sigs/external-dns",
     "branch": "master",
     "language": "Go",
-    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security"
+    "description": "Configure external DNS servers dynamically from Kubernetes resources"
   },
   {
-    "repo": "dateutil/dateutil",
-    "branch": "master",
-    "language": "Python",
-    "description": "Useful extensions to the standard Python datetime features"
+    "repo": "oven-sh/bun",
+    "branch": "main",
+    "language": "Zig",
+    "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one"
   },
   {
-    "repo": "kubernetes-sigs/kind",
+    "repo": "rancher/k3d",
     "branch": "main",
     "language": "Go",
-    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
-  },
-  {
-    "repo": "apple/python-apple-fm-sdk",
-    "branch": "main",
-    "language": "Python",
-    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
-  },
-  {
-    "repo": "spacedriveapp/spacedrive",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
-  },
-  {
-    "repo": "PenglongHuang/chinese-novelist-skill",
-    "branch": "master",
-    "language": "Python",
-    "description": "让 AI 为你写一部完整的中文小说 - AI 驱动的中文小说创作助手 - 超过20章的小说，几分钟全稿完成    Claude Code Skill：自动创作分章节中文小说，每章悬念钩子"
-  },
-  {
-    "repo": "yohey-w/multi-agent-shogun",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "rainzz-512/Mewgenics-Chinese-Translation",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
+    "description": "Little helper to run CNCF's k3s in Docker"
   },
   {
     "repo": "jlia0/tinyclaw",
@@ -90,57 +96,51 @@
     "description": "TinyClaw is a tiny wrapper of Claude Code that acts as your 24/7 personal assistant"
   },
   {
-    "repo": "OffchainLabs/arbitrum",
-    "branch": "master",
-    "language": "Other",
-    "description": "Arbitrum is a Layer 2 scaling solution for Ethereum."
+    "repo": "DaveMoudy/SalesforceDocGen",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "This package contains all the parts and moving pieces needed to run the DocGen app in Salesforce."
   },
   {
-    "repo": "apache/airflow",
+    "repo": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "language": "C",
+    "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
+  },
+  {
+    "repo": "anthropics/financial-services-plugins",
     "branch": "main",
     "language": "Python",
-    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
+    "description": ""
   },
   {
-    "repo": "RasaHQ/rasa",
-    "branch": "main",
-    "language": "Python",
-    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
-  },
-  {
-    "repo": "Solido/awesome-flutter",
-    "branch": "master",
-    "language": "Dart",
-    "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
-  },
-  {
-    "repo": "sympy/sympy",
+    "repo": "LearnPrompt/ai-news-radar",
     "branch": "master",
     "language": "Python",
-    "description": "A computer algebra system written in pure Python"
+    "description": ""
   },
   {
-    "repo": "nikopueringer/CorridorKey",
+    "repo": "vercel/ai-chatbot-svelte",
+    "branch": "main",
+    "language": "Svelte",
+    "description": "A full-featured, hackable SvelteKit AI chatbot built by Vercel"
+  },
+  {
+    "repo": "apple/swift-protobuf",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Plugin and runtime library for using protobuf with Swift"
+  },
+  {
+    "repo": "allenai/allennlp",
     "branch": "main",
     "language": "Python",
-    "description": "Perfect Green Screen Keys"
+    "description": "An open-source NLP research library, built on PyTorch."
   },
   {
-    "repo": "tanweai/pua",
+    "repo": "xyzeva/k-id-age-verifier",
     "branch": "main",
     "language": "TypeScript",
-    "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
-  },
-  {
-    "repo": "rayon-rs/rayon",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Rayon: A data parallelism library for Rust"
-  },
-  {
-    "repo": "vercel/swr",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "React Hooks for Data Fetching"
+    "description": "automatically verify your age on discord, twitch, kick, quora and more (k-id)"
   }
 ]
