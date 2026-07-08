@@ -1,146 +1,146 @@
 [
   {
-    "repo": "laravel/laravel",
-    "branch": "11.x",
-    "language": "Blade",
-    "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation for your next big idea — freeing you to create without sweating the small things."
+    "repo": "serder8866/Universal_USB_Boot_Maker",
+    "branch": "main",
+    "language": "Python",
+    "description": "Create bootable USB drives for Windows, Linux, etc. Write ISO to USB, multiple OS on one USB, format USB drive, and verify files. Install OS easily."
   },
   {
-    "repo": "Noumena-Network/code",
+    "repo": "atomiks/tippyjs",
+    "branch": "v6",
+    "language": "JavaScript",
+    "description": "Tooltip, popover, dropdown, and menu library"
+  },
+  {
+    "repo": "J-Pster/Psters_AI_Workflow",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "An anti-vibe-coding, agentic AI workflow that improves results with engineering rigor in any project, language, and framework."
+  },
+  {
+    "repo": "depreciating/DoodleCloud",
+    "branch": "main",
+    "language": "Python",
+    "description": "Cloud Storage using Instagram."
+  },
+  {
+    "repo": "hzm0321/real-time-fund",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "基金实时估值查看"
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "cri-o/cri-o",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
+  },
+  {
+    "repo": "Leaflet/Leaflet",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦"
+  },
+  {
+    "repo": "huggingface/peft",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+  },
+  {
+    "repo": "eddyson-B/AI-Pumpfun-Copy-Trading-Bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Noumena's internal version of your favorite coding tui but improved and optimized for our inference stack"
+    "description": "A simulation and execution script for tracking top wallet trades on PumpFun and analyzing profit opportunities with AI modeling."
   },
   {
-    "repo": "stylelint/stylelint",
+    "repo": "pytorch/pytorch",
     "branch": "main",
+    "language": "Python",
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+  },
+  {
+    "repo": "requirejs/requirejs",
+    "branch": "master",
     "language": "JavaScript",
-    "description": "A mighty CSS linter that helps you avoid errors and enforce conventions."
+    "description": "A file and module loader for JavaScript"
   },
   {
-    "repo": "holysheep123/holysheep-cli",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🐑 One command to configure all AI coding tools — Claude Code, Codex, Gemini CLI, Cursor, Aider & more"
-  },
-  {
-    "repo": "boostorg/boost",
-    "branch": "master",
-    "language": "HTML",
-    "description": "Super-project for modularized Boost"
-  },
-  {
-    "repo": "uber-go/fx",
-    "branch": "master",
-    "language": "Go",
-    "description": "A dependency injection based application framework for Go."
-  },
-  {
-    "repo": "slackhq/nebula",
-    "branch": "master",
-    "language": "Go",
-    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security"
-  },
-  {
-    "repo": "pyinvoke/invoke",
+    "repo": "jina-ai/jina",
     "branch": "main",
     "language": "Python",
-    "description": "Pythonic task management & command execution."
+    "description": "☁️ Build multimodal AI applications with cloud-native stack"
   },
   {
-    "repo": "tensorflow/models",
+    "repo": "clap-rs/clap",
     "branch": "master",
-    "language": "Python",
-    "description": "Models and examples built with TensorFlow"
+    "language": "Rust",
+    "description": "A full featured, fast Command Line Argument Parser for Rust"
   },
   {
-    "repo": "AUTOMATIC1111/stable-diffusion-webui",
-    "branch": "master",
-    "language": "Python",
-    "description": "Stable Diffusion web UI"
-  },
-  {
-    "repo": "pandas-dev/pandas",
+    "repo": "Unclecode/Crawl4AI",
     "branch": "main",
     "language": "Python",
-    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
   },
   {
-    "repo": "antonmedv/fx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Terminal JSON viewer & processor"
-  },
-  {
-    "repo": "sindresorhus/awesome",
+    "repo": "protocolbuffers/protobuf",
     "branch": "main",
-    "language": "Other",
-    "description": "😎 Awesome lists about all kinds of interesting topics"
+    "language": "C++",
+    "description": "Protocol Buffers - Google's data interchange format"
   },
   {
-    "repo": "cilium/hubble",
-    "branch": "main",
-    "language": "Makefile",
-    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF"
-  },
-  {
-    "repo": "paperjs/paper.js",
-    "branch": "develop",
-    "language": "JavaScript",
-    "description": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey"
-  },
-  {
-    "repo": "raspberrypi/linux",
-    "branch": "rpi-6.6.y",
-    "language": "C",
-    "description": "Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/"
-  },
-  {
-    "repo": "google/dopamine",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms."
-  },
-  {
-    "repo": "danielmiessler/fabric",
-    "branch": "main",
-    "language": "Go",
-    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
-  },
-  {
-    "repo": "swc-project/swc",
+    "repo": "letmutex/gitas",
     "branch": "main",
     "language": "Rust",
-    "description": "Rust-based platform for the Web"
+    "description": "Git Account Switch"
   },
   {
-    "repo": "LightTable/LightTable",
+    "repo": "kamranahmedse/developer-roadmap",
     "branch": "master",
-    "language": "Clojure",
-    "description": "The Light Table IDE ⛺"
-  },
-  {
-    "repo": "suborbital/sat",
-    "branch": "main",
-    "language": "Go",
-    "description": "Tiny & fast WebAssembly edge compute server"
-  },
-  {
-    "repo": "vercel/hyper",
-    "branch": "main",
     "language": "TypeScript",
-    "description": "A terminal built on web technologies"
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
   },
   {
-    "repo": "safe-global/safe-contracts",
+    "repo": "amlalabs/amla-sandbox",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Safe allows secure management of blockchain assets."
+    "language": "Python",
+    "description": ""
   },
   {
-    "repo": "espressif/esp-idf",
+    "repo": "phioranex/openclaw-docker",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "lardissone/ansi-saver",
+    "branch": "main",
+    "language": "Swift",
+    "description": "ANSI art screensaver for macOS — streams art from 16colo.rs BBS archive packs"
+  },
+  {
+    "repo": "Emanuele-web04/remodex",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Remote Control for Codex. 24/7 version on the way"
+  },
+  {
+    "repo": "tnbeznlacut/sora2-watermark-deleter-windows-macos",
+    "branch": "main",
+    "language": "Python",
+    "description": "sora2 watermark deleter windows macos"
+  },
+  {
+    "repo": "marktext/marktext",
     "branch": "master",
-    "language": "C",
-    "description": "Espressif IoT Development Framework. Official development framework for Espressif SoCs."
+    "language": "JavaScript",
+    "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows."
   }
 ]
