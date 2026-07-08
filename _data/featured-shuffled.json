@@ -1,27 +1,9 @@
 [
   {
-    "repo": "deepmind/alphafold",
+    "repo": "viitor-ai/viitor-voice-nar",
     "branch": "main",
     "language": "Python",
-    "description": "Open source code for AlphaFold 2."
-  },
-  {
-    "repo": "miantiao-me/cloud-code",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent"
-  },
-  {
-    "repo": "spf13/viper",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go configuration with fangs"
-  },
-  {
-    "repo": "jmerelnyc/Talos",
-    "branch": "main",
-    "language": "Python",
-    "description": "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts."
+    "description": ""
   },
   {
     "repo": "ethers-io/ethers.js",
@@ -30,117 +12,135 @@
     "description": "Complete Ethereum library and wallet implementation in JavaScript."
   },
   {
-    "repo": "upper-up/meta-lobbying-and-other-findings",
+    "repo": "milanm/AutoGrad-Engine",
     "branch": "main",
-    "language": "HTML",
+    "language": "C#",
+    "description": "A complete GPT language model (training and inference) in pure C# with zero dependencies."
+  },
+  {
+    "repo": "0xSero/moe-compress",
+    "branch": "main",
+    "language": "Python",
+    "description": "Model-agnostic MoE compression automation: build calibration bundles, run REAP/quantization/benchmark/publish stages, and render auditable reports."
+  },
+  {
+    "repo": "samuelfaj/distill",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Distill large CLI outputs into small answers for LLMs and save tokens!"
+  },
+  {
+    "repo": "RhysSullivan/fastergh",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "apache/httpcomponents-client",
+    "repo": "GuDaStudio/commands",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "nginx/nginx",
     "branch": "master",
+    "language": "C",
+    "description": "The official NGINX Open Source repository."
+  },
+  {
+    "repo": "zachlatta/freeflow",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Free and open source alternative to Wispr Flow / Superwhisper / Monologue / etc"
+  },
+  {
+    "repo": "xywml/PaperGrid",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "执笔为剑  - 一款基于NEXT.js的轻量化博客"
+  },
+  {
+    "repo": "spring-projects/spring-boot",
+    "branch": "main",
     "language": "Java",
-    "description": "Mirror of Apache HttpClient"
+    "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss."
   },
   {
-    "repo": "vercel/next.js",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "The React Framework"
-  },
-  {
-    "repo": "Significant-Gravitas/AutoGPT",
-    "branch": "master",
-    "language": "Python",
-    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
-  },
-  {
-    "repo": "istio/istio",
-    "branch": "master",
-    "language": "Go",
-    "description": "Connect, secure, control, and observe services."
-  },
-  {
-    "repo": "cornel-pe/online-casino-platform-backend",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This backend powers a modern crypto-enabled betting platform. It is designed for fast gameplay, real-time community, and serious risk control – without sacrificing developer friendliness."
-  },
-  {
-    "repo": "hengfengliya/imgood",
-    "branch": "main",
-    "language": "CSS",
-    "description": ""
-  },
-  {
-    "repo": "czl9707/build-your-own-openclaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "A step-by-step guide to build your own AI agent."
-  },
-  {
-    "repo": "tokoroten/prompt-review",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "skernelx/tavily-key-generator",
-    "branch": "main",
-    "language": "Python",
-    "description": "Auto batch register Tavily API Keys with pluggable email backends"
-  },
-  {
-    "repo": "RuizeLyu/paper-dl",
-    "branch": "main",
-    "language": "Python",
-    "description": "Download arxiv PDFs from PaSa search results for local AI-powered literature analysis."
-  },
-  {
-    "repo": "viplismism/rlm-cli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI for Recursive Language Models (arXiv:2512.24601)"
-  },
-  {
-    "repo": "verssache/chatgpt-creator",
-    "branch": "main",
-    "language": "Go",
-    "description": "A high-performance Go bot for automated bulk ChatGPT account creation, featuring TLS fingerprint spoofing and auto email OTP verification."
-  },
-  {
-    "repo": "xodn348/han",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A compiled programming language with Korean keywords, written in Rust"
-  },
-  {
-    "repo": "Unclecode/Crawl4AI",
-    "branch": "main",
-    "language": "Python",
-    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
-  },
-  {
-    "repo": "collaborator-ai/collab-public",
+    "repo": "itcaat/mtproto-installer",
     "branch": "main",
     "language": "Shell",
-    "description": "Collaborator is a place to build with agents."
+    "description": "Ускоритель телеграм =)"
   },
   {
-    "repo": "zevorn/rt-claw",
+    "repo": "EricEsquivel/CobaltStrike-Linux-Beacon",
     "branch": "main",
     "language": "C",
-    "description": "Making AI Assistants Cheap Again!"
+    "description": "Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons"
   },
   {
-    "repo": "EurekaClaw/EurekaClaw",
+    "repo": "Intrect-io/OpenSwarm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "OpenSwarm, CLI Code Agent Orchstrator"
+  },
+  {
+    "repo": "securo-finance/securo",
     "branch": "main",
     "language": "Python",
-    "description": "The official repo of EurekaClaw"
+    "description": "Open-source personal finance manager. Self-hosted, privacy-first."
   },
   {
-    "repo": "second-state/kitten_tts_rs",
+    "repo": "go-resty/resty",
+    "branch": "master",
+    "language": "Go",
+    "description": "Simple HTTP, REST, and SSE client library for Go"
+  },
+  {
+    "repo": "LoseNine/ruyipage",
+    "branch": "main",
+    "language": "Python",
+    "description": "RuyiPage is a Python-based Firefox automation framework built on the next-generation WebDriver BiDi protocol."
+  },
+  {
+    "repo": "argentlabs/argent-contracts",
+    "branch": "develop",
+    "language": "Solidity",
+    "description": "Smart Contracts for Argent Wallet"
+  },
+  {
+    "repo": "flamestro/deff",
     "branch": "main",
     "language": "Rust",
-    "description": "A Rust port of KittenTTS — ultra-lightweight ONNX-based text-to-speech."
+    "description": "interactive, side-by-side file review for git diffs with per-file navigation, vertical and horizontal scrolling, syntax highlighting, and added/deleted line tinting"
+  },
+  {
+    "repo": "Janlaywss/hu-chenfeng-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "户晨风Skill"
+  },
+  {
+    "repo": "herrbischoff/awesome-macos-command-line",
+    "branch": "master",
+    "language": "Other",
+    "description": "Use your macOS terminal shell to do awesome things."
+  },
+  {
+    "repo": "dev-protocoI/polymarket-copytrading-bot-sport",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "🥇Polymarket Copytrading Bot Sport🥇Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket"
+  },
+  {
+    "repo": "Tremorfitzapplaud/1tamilmv-telegram-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "1tamilmv || 1tamilmv telegram || 1tamilmv bot || WD_1tamilmv_v2_bot"
+  },
+  {
+    "repo": "hellowind777/hello2cc",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Native-first Claude Code plugin for third-party models with silent Agent model injection and output styles."
   }
 ]
