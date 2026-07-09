@@ -1,146 +1,146 @@
 [
   {
-    "repo": "vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
+    "repo": "shenhao-stu/ohmycaptcha",
     "branch": "main",
-    "language": "C++",
-    "description": "esp32-s3-touch-amoled-1.8"
+    "language": "Python",
+    "description": "⚡ Self-hostable YesCaptcha-compatible captcha solver built with FastAPI, Playwright, and OpenAI-compatible multimodal models."
   },
   {
-    "repo": "mtdvio/every-programmer-should-know",
+    "repo": "bschoepke/ableton-live-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "General-purpose MCP bridge for Ableton Live"
+  },
+  {
+    "repo": "libgdx/libgdx",
     "branch": "master",
+    "language": "Java",
+    "description": "Desktop/Android/HTML5/iOS Java game development framework"
+  },
+  {
+    "repo": "taf2/mdvi",
+    "branch": "master",
+    "language": "Rust",
+    "description": "cli based Markdown viewer"
+  },
+  {
+    "repo": "eooce/python-ws",
+    "branch": "main",
+    "language": "Python",
+    "description": "build vless / trojan /shadowsocks  proxies on python server,no need core"
+  },
+  {
+    "repo": "Shubhamsaboo/awesome-llm-apps",
+    "branch": "main",
+    "language": "Python",
+    "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models."
+  },
+  {
+    "repo": "junevm/splathash",
+    "branch": "main",
+    "language": "Go",
+    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
+  },
+  {
+    "repo": "deepinfra/deepinfra",
+    "branch": "main",
     "language": "Other",
-    "description": "A collection of (mostly) technical things every software developer should know about"
+    "description": "Run popular AI models like Llama-3, Mistral on DeepInfra's platform."
   },
   {
-    "repo": "imbue-bit/OpenClaw-PwnKit",
-    "branch": "main",
-    "language": "Python",
-    "description": "Get shell to almost any OpenClaw host machine."
-  },
-  {
-    "repo": "ferrolho/VL53L5CX-BNO08X-viewer",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn a Time-of-Flight sensor into a 3D Scanner"
-  },
-  {
-    "repo": "Wechat-ggGitHub/wechat-claude-code",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Chat with Claude Code from WeChat - a Claude Code Skill"
-  },
-  {
-    "repo": "collaborator-ai/collab-public",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Collaborator is a place to build with agents."
-  },
-  {
-    "repo": "keepassxreboot/keepassxc",
-    "branch": "develop",
-    "language": "C++",
-    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
-  },
-  {
-    "repo": "onevcat/Kingfisher",
+    "repo": "pmndrs/drei",
     "branch": "master",
-    "language": "Swift",
-    "description": "A lightweight, pure-Swift library for downloading and caching images from the web."
-  },
-  {
-    "repo": "linkerd/linkerd2",
-    "branch": "main",
-    "language": "Go",
-    "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x."
-  },
-  {
-    "repo": "helix-editor/helix",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A post-modern modal text editor."
-  },
-  {
-    "repo": "510myRday/Cursor-Toolbox",
-    "branch": "main",
     "language": "JavaScript",
-    "description": ""
+    "description": "🥉 useful helpers for react-three-fiber"
   },
   {
-    "repo": "dotnet/roslyn",
-    "branch": "main",
-    "language": "C#",
-    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
-  },
-  {
-    "repo": "vuetifyjs/vuetify",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🐉 Vue Component Framework"
-  },
-  {
-    "repo": "joeseesun/knowledge-site-creator",
-    "branch": "main",
-    "language": "Shell",
-    "description": "一句话生成任何领域的知识学习网站 - AI 理解主题，自动创作内容，生成页面，一键部署"
-  },
-  {
-    "repo": "boostorg/boost",
-    "branch": "master",
-    "language": "HTML",
-    "description": "Super-project for modularized Boost"
-  },
-  {
-    "repo": "op7418/Document-illustrator-skill",
+    "repo": "altair-viz/altair",
     "branch": "main",
     "language": "Python",
-    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
+    "description": "Declarative visualization library for Python"
   },
   {
-    "repo": "wenqingyu/ralphy-openspec",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Ralph loop + OpenSpec integration for Cursor, OpenCode and ClaudeCode heavy lifting."
-  },
-  {
-    "repo": "lukilabs/beautiful-mermaid",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "verssache/chatgpt-creator",
+    "repo": "cilium/cilium",
     "branch": "main",
     "language": "Go",
-    "description": "A high-performance Go bot for automated bulk ChatGPT account creation, featuring TLS fingerprint spoofing and auto email OTP verification."
+    "description": "eBPF-based Networking, Security, and Observability"
   },
   {
-    "repo": "alibaba/FunASR",
+    "repo": "mickamy/sql-tap",
     "branch": "main",
-    "language": "Python",
-    "description": "A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Recognition, Voice Activity Detection, Text Post-processing etc."
+    "language": "Go",
+    "description": "Watch SQL traffic in real-time with a TUI"
   },
   {
-    "repo": "InfinityLoop1308/PipePipe-X",
+    "repo": "shenhao-stu/openclaw-agents",
     "branch": "main",
     "language": "Shell",
-    "description": "Modern designed PipePipe"
+    "description": "🐾 One-command multi-agent setup for OpenClaw — 9 specialized AI agents, group routing, safe config merge."
   },
   {
-    "repo": "serde-rs/serde",
-    "branch": "master",
+    "repo": "behzadea12/Paqet-Tunnel-Manager",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations."
+  },
+  {
+    "repo": "typst/typst",
+    "branch": "main",
     "language": "Rust",
-    "description": "Serialization framework for Rust"
+    "description": "A markup-based typesetting system that is powerful and easy to learn."
   },
   {
-    "repo": "yizhiyanhua-ai/skills-updater",
+    "repo": "Prismer-AI/Prismer",
     "branch": "main",
     "language": "Python",
-    "description": "Manage, update, and discover Claude Code skills. 管理、更新和发现 Claude Code 技能。"
+    "description": "Open Source OpenAI Prism Alternative"
   },
   {
-    "repo": "ReactiveX/RxKotlin",
-    "branch": "3.x",
-    "language": "Kotlin",
-    "description": "RxJava bindings for Kotlin"
+    "repo": "tanaer/WindowsClear",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Windows C盘清理工具/C盘瘦身工具，还你Appdata的大量硬盘空间 | Windows System disk cleanup, returning a large amount of hard drive space from your Appdata"
+  },
+  {
+    "repo": "microsoft/vscode",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Visual Studio Code"
+  },
+  {
+    "repo": "apple/python-apple-fm-sdk",
+    "branch": "main",
+    "language": "Python",
+    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
+  },
+  {
+    "repo": "SulfurNitride/Fluorine-Manager",
+    "branch": "main",
+    "language": "C++",
+    "description": "An attempt at recreating all MO2 functions in linux with NaK integration and FUSE based VFS. Comes with Root Builder support by default. It's in alpha and needs a lot of testing to be done."
+  },
+  {
+    "repo": "GHJJ123/brainrotguard",
+    "branch": "main",
+    "language": "Python",
+    "description": "YouTube approval system for kids — parent approves via Telegram, kid watches via web UI"
+  },
+  {
+    "repo": "dayflow-js/BlossomColorPicker",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A beautiful, blooming color picker component build by Tailwind for Web.     🌟 If you like it, give it a star :)"
+  },
+  {
+    "repo": "ByteDance/monolith",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Lightweight Recommendation System"
+  },
+  {
+    "repo": "sagarbabu9/Docker_Container_Manager",
+    "branch": "main",
+    "language": "Python",
+    "description": "Manage Docker containers, images, volumes, and networks with a simple GUI. Start, stop, restart, and view logs. Perfect for local development."
   }
 ]
