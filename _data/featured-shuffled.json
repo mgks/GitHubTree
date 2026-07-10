@@ -1,15 +1,105 @@
 [
   {
-    "repo": "ShandaAI/AlayaRenderer",
-    "branch": "master",
-    "language": "Python",
-    "description": "Generative World Renderer"
-  },
-  {
-    "repo": "actions/cache",
+    "repo": "tantara/openbrief",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Cache dependencies and build outputs in GitHub Actions"
+    "description": ""
+  },
+  {
+    "repo": "zai-org/GLM-OCR",
+    "branch": "main",
+    "language": "Python",
+    "description": "GLM-OCR: Accurate ×  Fast × Comprehensive"
+  },
+  {
+    "repo": "cosmos/cosmos-sdk",
+    "branch": "main",
+    "language": "Go",
+    "description": ":chains: A Framework for Building High Value Public Blockchains :sparkles:"
+  },
+  {
+    "repo": "microsoft/cascadia-code",
+    "branch": "main",
+    "language": "Python",
+    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
+  },
+  {
+    "repo": "prettier/eslint-plugin-prettier",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "ESLint plugin for Prettier formatting"
+  },
+  {
+    "repo": "microsoft/DeepSpeed",
+    "branch": "master",
+    "language": "Python",
+    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
+  },
+  {
+    "repo": "lens-protocol/lens-protocol",
+    "branch": "main",
+    "language": "Solidity",
+    "description": "The Lens Protocol"
+  },
+  {
+    "repo": "serenity-bdd/serenity-core",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Serenity BDD is a test automation library designed to make writing automated acceptance tests easier, and more fun."
+  },
+  {
+    "repo": "wagoodman/dive",
+    "branch": "master",
+    "language": "Go",
+    "description": "A tool for exploring each layer in a docker image"
+  },
+  {
+    "repo": "ahmetb/kubectx",
+    "branch": "master",
+    "language": "Go",
+    "description": "Faster way to switch between clusters and namespaces in kubectl"
+  },
+  {
+    "repo": "veggiemonk/awesome-docker",
+    "branch": "master",
+    "language": "Other",
+    "description": ":whale: A curated list of Docker resources and projects"
+  },
+  {
+    "repo": "tailwindlabs/headlessui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS."
+  },
+  {
+    "repo": "expo/expo",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web."
+  },
+  {
+    "repo": "wader/fq",
+    "branch": "master",
+    "language": "Go",
+    "description": "jq for binary formats - tool, language and decoders for working with binary and text formats"
+  },
+  {
+    "repo": "fastai/course-v3",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "The 3rd edition of course.fast.ai"
+  },
+  {
+    "repo": "hashicorp/raft",
+    "branch": "main",
+    "language": "Go",
+    "description": "Golang implementation of the Raft consensus protocol"
+  },
+  {
+    "repo": "Pylons/pyramid",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pyramid - A Python web framework"
   },
   {
     "repo": "ImageMagick/ImageMagick",
@@ -18,129 +108,39 @@
     "description": "ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms."
   },
   {
-    "repo": "react-navigation/react-navigation",
+    "repo": "primefaces/primevue",
+    "branch": "master",
+    "language": "Vue",
+    "description": "Next Generation Vue UI Component Library"
+  },
+  {
+    "repo": "nextui-org/nextui",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Routing and navigation for React Native and Web apps"
+    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
   },
   {
-    "repo": "rainzz-512/Mewgenics-Chinese-Translation",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "epiral/agent-clip",
-    "branch": "main",
-    "language": "Go",
-    "description": "AI Agent as a Pinix Clip — agentic loop with memory, tools, and vision"
-  },
-  {
-    "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "The largest open-source medical AI skills library for OpenClaw🦞."
-  },
-  {
-    "repo": "gorhom/react-native-bottom-sheet",
+    "repo": "alibaba/ice",
     "branch": "master",
     "language": "TypeScript",
-    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
+    "description": "🚀 ice.js: The Progressive App Framework Based On React（基于 React 的渐进式应用框架）"
   },
   {
-    "repo": "hashicorp/packer",
+    "repo": "cilium/hubble",
     "branch": "main",
-    "language": "Go",
-    "description": "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration."
+    "language": "Makefile",
+    "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF"
   },
   {
-    "repo": "ecto/vcad",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Parametric CAD in Rust — CSG modeling with multi-format export"
-  },
-  {
-    "repo": "actions/checkout",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Action for checking out a repo"
-  },
-  {
-    "repo": "mem9-ai/mem9",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "op7418/Video-Wrapper-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "为访谈视频添加综艺风格视觉特效的 Claude Skill。AI 分析字幕内容生成建议，用户审批后自动渲染，支持 4 种视觉主题。"
-  },
-  {
-    "repo": "pinterest/ktlint",
+    "repo": "docker/awesome-compose",
     "branch": "master",
-    "language": "Kotlin",
-    "description": "An anti-bikeshedding Kotlin linter with built-in formatter"
+    "language": "HTML",
+    "description": "Awesome Docker Compose samples"
   },
   {
-    "repo": "aave/aave-v2",
+    "repo": "guardrailsio/awesome-python-security",
     "branch": "master",
     "language": "Other",
-    "description": "Aave Protocol V2"
-  },
-  {
-    "repo": "terausss/15min-btc-polymarket-trading-bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "15min btc polymarket arbitrage bot-polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "software-mansion/react-native-reanimated",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "React Native's Animated library reimplemented"
-  },
-  {
-    "repo": "shadcn-ui/ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
-  },
-  {
-    "repo": "apple/swift-argument-parser",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Straightforward, type-safe argument parsing for Swift"
-  },
-  {
-    "repo": "android-bench/android-bench",
-    "branch": "main",
-    "language": "Python",
-    "description": "Android Bench is a framework for benchmarking Large Language Models (LLMs) on Android development tasks. It evaluates an AI model's ability to understand mobile codebases, generate accurate patches, and solve Android-specific engineering problems."
-  },
-  {
-    "repo": "OpusDelta/opusdelta",
-    "branch": "main",
-    "language": "Python",
-    "description": "The first expression of machine emotion, a living delta of perpetual evolution."
-  },
-  {
-    "repo": "rivet-dev/sandbox-agent",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp."
-  },
-  {
-    "repo": "bokeh/bokeh",
-    "branch": "branch-3.4",
-    "language": "TypeScript",
-    "description": "Interactive Data Visualization in the browser, from  Python"
-  },
-  {
-    "repo": "ayush-that/jiang-clips",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Automated pipeline that converts long-form YouTube videos into viral-ready vertical clips"
+    "description": "Awesome Python Security resources 🕶🐍🔐"
   }
 ]
