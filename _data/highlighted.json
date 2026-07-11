@@ -1,8 +1,8 @@
 {
-  "repo": "SirBlondieDK/HADocs",
+  "repo": "gnomeria/usbtree",
   "branch": "main",
-  "language": "HTML",
-  "description": "HADocs automatically documents, analyzes, and visualizes your Home Assistant installation. Generate comprehensive documentation, calculate a meaningful Health Score, discover configuration issues, detect unused entities, and gain deep insights into your smart home architecture.",
-  "stars": 105,
+  "language": "Rust",
+  "description": "Live USB device tree in your terminal. Rust TUI, no root, no libusb. Full activity metrics on Linux; device tree on macOS/Windows.",
+  "stars": 107,
   "forks": 5
 }

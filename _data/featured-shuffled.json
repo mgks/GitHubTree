@@ -1,63 +1,33 @@
 [
   {
-    "repo": "SAGAR-TAMANG/friday-tony-stark-demo",
+    "repo": "ChristianJR19/byteview",
     "branch": "main",
     "language": "Python",
-    "description": "Demo of tools of capabilities of Tony Stark."
+    "description": "a modern hex/binary file inspector for the terminal with color-coded output and entropy analysis"
   },
   {
-    "repo": "skottrun/extrateto",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Dashboard público que expõe supersalários do Judiciário brasileiro acima do teto constitucional"
-  },
-  {
-    "repo": "activepieces/activepieces",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
-  },
-  {
-    "repo": "NVIDIA/cudnn-frontend",
-    "branch": "main",
-    "language": "C++",
-    "description": "cudnn_frontend provides a c++ wrapper for the cudnn backend API and samples on how to use it"
-  },
-  {
-    "repo": "qufei1993/skills-hub",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”."
-  },
-  {
-    "repo": "lodash/lodash",
+    "repo": "wsargent/docker-cheat-sheet",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+    "language": "Other",
+    "description": "Docker Cheat Sheet"
   },
   {
-    "repo": "Robbyant/lingbot-va",
+    "repo": "GoogleContainerTools/kaniko",
     "branch": "main",
-    "language": "Python",
-    "description": "Causal video-action world model for generalist robot control"
-  },
-  {
-    "repo": "microsoft/ML-For-Beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all"
-  },
-  {
-    "repo": "istio/istio",
-    "branch": "master",
     "language": "Go",
-    "description": "Connect, secure, control, and observe services."
+    "description": "Build Container Images In Kubernetes"
   },
   {
-    "repo": "unslop-xyz/noodles",
+    "repo": "termux/termux-packages",
+    "branch": "master",
+    "language": "Shell",
+    "description": "A package build system for Termux."
+  },
+  {
+    "repo": "docker/docker-py",
     "branch": "main",
     "language": "Python",
-    "description": "Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line."
+    "description": "A Python library for the Docker Engine API"
   },
   {
     "repo": "realm/SwiftLint",
@@ -66,81 +36,111 @@
     "description": "A tool to enforce Swift style and conventions."
   },
   {
-    "repo": "rivet-dev/sandbox-agent",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp."
+    "repo": "ossu/computer-science",
+    "branch": "master",
+    "language": "HTML",
+    "description": "🎓 Path to a free self-taught education in Computer Science!"
   },
   {
-    "repo": "obsproject/obs-studio",
+    "repo": "aave/aave-v2",
+    "branch": "master",
+    "language": "Other",
+    "description": "Aave Protocol V2"
+  },
+  {
+    "repo": "SVProgressHUD/SVProgressHUD",
+    "branch": "master",
+    "language": "Objective-C",
+    "description": "A clean and lightweight progress HUD for your iOS and tvOS app."
+  },
+  {
+    "repo": "radix-ui/primitives",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos."
+  },
+  {
+    "repo": "sqlite/sqlite",
     "branch": "master",
     "language": "C",
-    "description": "OBS Studio - Free and open source software for live streaming and screen recording"
+    "description": "Official Git mirror of the SQLite source tree"
   },
   {
-    "repo": "SeleniumHQ/selenium",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "A browser automation framework and ecosystem."
-  },
-  {
-    "repo": "TabbyML/tabby",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Self-hosted AI coding assistant"
-  },
-  {
-    "repo": "https-deeplearning-ai/sc-agent-skills-files",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "marshmallow-code/apispec",
-    "branch": "dev",
-    "language": "Python",
-    "description": "A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. the Swagger specification).."
-  },
-  {
-    "repo": "ok-oldking/ok-end-field",
-    "branch": "master",
-    "language": "Python",
-    "description": "终末地 End Field Automation 基于ok-script开发的自动化"
-  },
-  {
-    "repo": "drwetter/testssl.sh",
-    "branch": "3.2",
-    "language": "Shell",
-    "description": "Testing TLS/SSL encryption anywhere on any port"
-  },
-  {
-    "repo": "uber-go/zap",
-    "branch": "master",
-    "language": "Go",
-    "description": "Blazing fast, structured, leveled logging in Go."
-  },
-  {
-    "repo": "mrdoob/three-quake",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A port of Quake (1996) to Three.js."
-  },
-  {
-    "repo": "home-assistant/core",
-    "branch": "dev",
-    "language": "Python",
-    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
-  },
-  {
-    "repo": "luccast/crabwalk",
+    "repo": "oblador/react-native-vector-icons",
     "branch": "master",
     "language": "TypeScript",
-    "description": "🦀 Crabwalk 🦀 Real-time companion monitor for Clawdbot agents."
+    "description": "Customizable Icons for React Native with support for image source and full styling."
   },
   {
-    "repo": "ImageMagick/ImageMagick",
+    "repo": "ensdomains/ens-contracts",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The core contracts of the ENS protocol"
+  },
+  {
+    "repo": "react-native-device-info/react-native-device-info",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Device Information for React Native iOS and Android"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
     "branch": "main",
-    "language": "C",
-    "description": "ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms."
+    "language": "Python",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
+  },
+  {
+    "repo": "Tencent/omi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Web Components Framework - Web组件框架"
+  },
+  {
+    "repo": "umijs/umi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A framework in react community ✨"
+  },
+  {
+    "repo": "tailwindlabs/heroicons",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A set of free MIT-licensed high-quality SVG icons for UI development."
+  },
+  {
+    "repo": "meilisearch/meilisearch",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
+  },
+  {
+    "repo": "paperjs/paper.js",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey"
+  },
+  {
+    "repo": "angular/angular-cli",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "CLI tool for Angular"
+  },
+  {
+    "repo": "vercel/hyper",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A terminal built on web technologies"
+  },
+  {
+    "repo": "alacritty/alacritty",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A cross-platform, OpenGL terminal emulator."
+  },
+  {
+    "repo": "rabbitmq/rabbitmq-server",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
   }
 ]
