@@ -1,146 +1,146 @@
 [
   {
-    "repo": "userland-run/nano",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "nano — Run real Node.js and other statically linked Linux binaries directly in the browser via a tiny RISC-V user-mode Linux interpreter compiled to WebAssembly. No containers. No servers. Pure client-side execution."
-  },
-  {
-    "repo": "promptpirate-x/discord-id-bypass-tool",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A verified tool that works on any potato computer that will let you bypass discord verification"
-  },
-  {
-    "repo": "nikmcfly/MiroFish-Offline",
+    "repo": "Liquid4All/antidoom",
     "branch": "main",
     "language": "Python",
-    "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
+    "description": ""
   },
   {
-    "repo": "postrv/forgemax",
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "language": "Go",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+  },
+  {
+    "repo": "dev-protocol/polymarket-trading-tools-telegram-bot",
     "branch": "main",
     "language": "Rust",
-    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
+    "description": "🚀polymarket copy trading bot polymarket arbitrage bot polymarket market maker bot polymarket copy trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot polymarket trading bot polymarket copy trading bot polymarket arbitrage bot"
   },
   {
-    "repo": "tidwall/btype",
+    "repo": "adn8naiagent/F1ReplayTiming",
+    "branch": "dev",
+    "language": "TypeScript",
+    "description": "Visualisation of real-time track data and telemetry synced to F1 replays."
+  },
+  {
+    "repo": "googleapis/google-cloud-python",
+    "branch": "main",
+    "language": "Python",
+    "description": "Google Cloud Client Library for Python"
+  },
+  {
+    "repo": "Alamofire/Alamofire",
+    "branch": "master",
+    "language": "Swift",
+    "description": "Elegant HTTP Networking in Swift"
+  },
+  {
+    "repo": "steven2358/awesome-generative-ai",
+    "branch": "main",
+    "language": "Other",
+    "description": "A curated list of modern Generative Artificial Intelligence projects and services"
+  },
+  {
+    "repo": "deusyu/translate-book",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude Code skill that translates entire books (PDF/DOCX/EPUB) into any language using parallel subagents"
+  },
+  {
+    "repo": "cdppcorp/KESE-KIT",
+    "branch": "main",
+    "language": "Python",
+    "description": "KISA 주요정보통신기반시설 기술적 취약점 분석 평가방법 상세가이드 기반 Skills"
+  },
+  {
+    "repo": "tnbeznlacut/sora2-watermark-deleter-windows-macos",
+    "branch": "main",
+    "language": "Python",
+    "description": "sora2 watermark deleter windows macos"
+  },
+  {
+    "repo": "iad1tya/Net-Bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
+  },
+  {
+    "repo": "dev-protocoI/polymarket-copytrading-bot-sport",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "🥇Polymarket Copytrading Bot Sport🥇Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket copytrading bot Polymarket copy trading bot Polymarket"
+  },
+  {
+    "repo": "openai/whisper",
+    "branch": "main",
+    "language": "Python",
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision"
+  },
+  {
+    "repo": "prisma/prisma",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB"
+  },
+  {
+    "repo": "rollup/rollup",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Next-generation ES module bundler"
+  },
+  {
+    "repo": "k3s-io/k3s",
+    "branch": "master",
+    "language": "Go",
+    "description": "Lightweight Kubernetes"
+  },
+  {
+    "repo": "google/jax",
+    "branch": "main",
+    "language": "Python",
+    "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more"
+  },
+  {
+    "repo": "kubernetes/dashboard",
+    "branch": "master",
+    "language": "Go",
+    "description": "General-purpose web UI for Kubernetes clusters"
+  },
+  {
+    "repo": "fspecii/HeartMuLa-Studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer"
+  },
+  {
+    "repo": "CocoaPods/CocoaPods",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "The Cocoa Dependency Manager."
+  },
+  {
+    "repo": "lapce/lapce",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Lightning-fast and Powerful Code Editor written in Rust"
+  },
+  {
+    "repo": "tldev/posturr",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A macOS app that blurs your screen when you slouch. Uses Vision framework for real-time posture detection."
+  },
+  {
+    "repo": "mantinedev/mantine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A fully featured React components library"
+  },
+  {
+    "repo": "1354427059/orchids-api",
     "branch": "main",
     "language": "Go",
-    "description": "B-tree based collection types for Go"
-  },
-  {
-    "repo": "Vasco0x4/AIDA",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "AI-Driven Security Assessment - Connect AI to 400+ pentesting tools via MCP"
-  },
-  {
-    "repo": "ccbkkb/MicroWARP",
-    "branch": "main",
-    "language": "Shell",
-    "description": "🚀 An 800KB RAM ultra-lightweight Cloudflare WARP SOCKS5 proxy in Docker. 仅需 800KB 内存的纯内核态 Cloudflare WARP 代理 - Docker"
-  },
-  {
-    "repo": "chekusu/mails",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "email for agents. Built for AI agents that need to send, receive, and understand emails programmatically"
-  },
-  {
-    "repo": "yohey-w/multi-agent-shogun",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "FinPyromancerLog/xcode-claw",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "h9zdev/WireTapper",
-    "branch": "main",
-    "language": "HTML",
-    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
-  },
-  {
-    "repo": "knowsuchagency/mcp2cli",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
-  },
-  {
-    "repo": "whyzhow/PersonalStyleAI-Framework-",
-    "branch": "main",
-    "language": "Python",
-    "description": "Let AI think and express like you. This framework provides a complete assembly line: from the noise processing of original chat records, to the seamless switching of multi-model adaptation layers, to local lightweight fine-tuning (LoRA)."
-  },
-  {
-    "repo": "m1heng/clawdbot-feishu",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "antfu/skills-npm",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Install agent skills from npm"
-  },
-  {
-    "repo": "vixhal-baraiya/microgpt-c",
-    "branch": "main",
-    "language": "C",
-    "description": "The most atomic way to train and inference a GPT in pure, dependency-free C"
-  },
-  {
-    "repo": "Krypto-Hashers-Community/polymarket-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot"
-  },
-  {
-    "repo": "doctorhetfield-cmd/simpleui.koplugin",
-    "branch": "main",
-    "language": "Lua",
-    "description": "A UI plugin for KOReader with bottom navigation bar, topbar, and desktop widgets"
-  },
-  {
-    "repo": "sangrokjung/claude-forge",
-    "branch": "main",
-    "language": "Shell",
-    "description": "oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull."
-  },
-  {
-    "repo": "SuperCmdLabs/SuperCmd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "What Apple Intelligence should have been"
-  },
-  {
-    "repo": "hubeiqiao/apple-bento-grid",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and any AI coding agent."
-  },
-  {
-    "repo": "elder-plinius/OBLITERATUS",
-    "branch": "main",
-    "language": "Python",
-    "description": "obliterate the chains that bind you"
-  },
-  {
-    "repo": "EA1FUO/AntennaSim",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Web-based antenna simulator powered by NEC2. Design, simulate, and analyze antennas with real-time 3D visualization, radiation patterns, SWR, and impedance charts."
-  },
-  {
-    "repo": "supermemoryai/clawdbot-supermemory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
+    "description": "1111"
   }
 ]
