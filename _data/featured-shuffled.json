@@ -1,146 +1,146 @@
 [
   {
-    "repo": "perglervitek/Pet-Simulator-99-Auto-Farm-Trainer-2026-Premium",
+    "repo": "userland-run/nano",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "nano — Run real Node.js and other statically linked Linux binaries directly in the browser via a tiny RISC-V user-mode Linux interpreter compiled to WebAssembly. No containers. No servers. Pure client-side execution."
+  },
+  {
+    "repo": "promptpirate-x/discord-id-bypass-tool",
+    "branch": "main",
+    "language": "HTML",
+    "description": "A verified tool that works on any potato computer that will let you bypass discord verification"
+  },
+  {
+    "repo": "nikmcfly/MiroFish-Offline",
     "branch": "main",
     "language": "Python",
-    "description": "Premium edition of the most advanced Pet Simulator 99 automation tool. Farm coins, hatch eggs, complete Backrooms League tasks automatically. Fully undetected and user-friendly."
+    "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack."
   },
   {
-    "repo": "balancer/balancer-v2-monorepo",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
+    "repo": "postrv/forgemax",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
   },
   {
-    "repo": "mem9-ai/mem9",
+    "repo": "tidwall/btype",
     "branch": "main",
     "language": "Go",
-    "description": ""
+    "description": "B-tree based collection types for Go"
   },
   {
-    "repo": "VictoriaMetrics/VictoriaMetrics",
-    "branch": "master",
-    "language": "Go",
-    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
+    "repo": "Vasco0x4/AIDA",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "AI-Driven Security Assessment - Connect AI to 400+ pentesting tools via MCP"
   },
   {
-    "repo": "snarktank/compound-product",
+    "repo": "ccbkkb/MicroWARP",
     "branch": "main",
     "language": "Shell",
-    "description": "A self-improving product system that reads reports, identifies priorities, and autonomously implements fixes"
+    "description": "🚀 An 800KB RAM ultra-lightweight Cloudflare WARP SOCKS5 proxy in Docker. 仅需 800KB 内存的纯内核态 Cloudflare WARP 代理 - Docker"
   },
   {
-    "repo": "raspberrypi/documentation",
-    "branch": "master",
-    "language": "Python",
-    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
-  },
-  {
-    "repo": "934050259/BrowserCluster",
-    "branch": "main",
-    "language": "Python",
-    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
-  },
-  {
-    "repo": "beita6969/ScienceClaw",
+    "repo": "chekusu/mails",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🔬🦞 A self-evolving AI research colleague for scientists. 285 skills, zero hallucination, persistent memory."
+    "description": "email for agents. Built for AI agents that need to send, receive, and understand emails programmatically"
   },
   {
-    "repo": "guzzle/guzzle",
-    "branch": "master",
-    "language": "PHP",
-    "description": "Guzzle, an extensible PHP HTTP client"
-  },
-  {
-    "repo": "Textualize/textual",
+    "repo": "yohey-w/multi-agent-shogun",
     "branch": "main",
-    "language": "Python",
-    "description": "The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser."
-  },
-  {
-    "repo": "huggingface/optimum",
-    "branch": "main",
-    "language": "Python",
-    "description": "🚀 Accelerate inference and training of 🤗 Transformers, Diffusers, TIMM and Sentence Transformers with easy to use hardware optimization tools"
-  },
-  {
-    "repo": "CocoaPods/CocoaPods",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "The Cocoa Dependency Manager."
-  },
-  {
-    "repo": "Anarkh-Lee/universal-db-mcp",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "MCP 数据库万能连接器：使用支持MCP服务协议的工具（例如：Claude Desktop、Cherry Studio等）直接连接你的数据库，用自然语言查询和分析数据"
-  },
-  {
-    "repo": "encode/django-rest-framework",
-    "branch": "master",
-    "language": "Python",
-    "description": "Web APIs for Django. 🎸"
-  },
-  {
-    "repo": "apache/kafka",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "Mirror of Apache Kafka"
-  },
-  {
-    "repo": "kossisoroyce/timber",
-    "branch": "main",
-    "language": "Python",
-    "description": "Ollama for classical ML models. AOT compiler that turns XGBoost, LightGBM, scikit-learn, CatBoost & ONNX models into native C99 inference code. One command to load, one command to serve. 336x faster than Python inference."
-  },
-  {
-    "repo": "portainer/portainer",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Making Docker and Kubernetes management easy."
-  },
-  {
-    "repo": "apache/spark",
-    "branch": "master",
-    "language": "Scala",
-    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
-  },
-  {
-    "repo": "pyca/cryptography",
-    "branch": "main",
-    "language": "Python",
-    "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers."
-  },
-  {
-    "repo": "google/flax",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Flax is a neural network library for JAX that is designed for flexibility."
-  },
-  {
-    "repo": "Alamofire/Alamofire",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Elegant HTTP Networking in Swift"
-  },
-  {
-    "repo": "iterative/dvc",
-    "branch": "main",
-    "language": "Python",
-    "description": "🦉 Data Versioning and ML Experiments"
-  },
-  {
-    "repo": "jazzband/django-debug-toolbar",
-    "branch": "main",
-    "language": "Python",
-    "description": "A configurable set of panels that display various debug information about the current request/response."
-  },
-  {
-    "repo": "inspatio/worldfm",
-    "branch": "main",
-    "language": "Python",
+    "language": "Shell",
     "description": ""
+  },
+  {
+    "repo": "FinPyromancerLog/xcode-claw",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "h9zdev/WireTapper",
+    "branch": "main",
+    "language": "HTML",
+    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
+  },
+  {
+    "repo": "knowsuchagency/mcp2cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
+  },
+  {
+    "repo": "whyzhow/PersonalStyleAI-Framework-",
+    "branch": "main",
+    "language": "Python",
+    "description": "Let AI think and express like you. This framework provides a complete assembly line: from the noise processing of original chat records, to the seamless switching of multi-model adaptation layers, to local lightweight fine-tuning (LoRA)."
+  },
+  {
+    "repo": "m1heng/clawdbot-feishu",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "antfu/skills-npm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Install agent skills from npm"
+  },
+  {
+    "repo": "vixhal-baraiya/microgpt-c",
+    "branch": "main",
+    "language": "C",
+    "description": "The most atomic way to train and inference a GPT in pure, dependency-free C"
+  },
+  {
+    "repo": "Krypto-Hashers-Community/polymarket-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot"
+  },
+  {
+    "repo": "doctorhetfield-cmd/simpleui.koplugin",
+    "branch": "main",
+    "language": "Lua",
+    "description": "A UI plugin for KOReader with bottom navigation bar, topbar, and desktop widgets"
+  },
+  {
+    "repo": "sangrokjung/claude-forge",
+    "branch": "main",
+    "language": "Shell",
+    "description": "oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull."
+  },
+  {
+    "repo": "SuperCmdLabs/SuperCmd",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "What Apple Intelligence should have been"
+  },
+  {
+    "repo": "hubeiqiao/apple-bento-grid",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and any AI coding agent."
+  },
+  {
+    "repo": "elder-plinius/OBLITERATUS",
+    "branch": "main",
+    "language": "Python",
+    "description": "obliterate the chains that bind you"
+  },
+  {
+    "repo": "EA1FUO/AntennaSim",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Web-based antenna simulator powered by NEC2. Design, simulate, and analyze antennas with real-time 3D visualization, radiation patterns, SWR, and impedance charts."
+  },
+  {
+    "repo": "supermemoryai/clawdbot-supermemory",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
   }
 ]
