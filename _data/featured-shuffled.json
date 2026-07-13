@@ -1,146 +1,146 @@
 [
   {
-    "repo": "DovAmir/awesome-design-patterns",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of software and architecture related design patterns."
-  },
-  {
-    "repo": "ghboke/claude-code-reverse",
+    "repo": "pandas-dev/pandas",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "claude code源码分析报告"
-  },
-  {
-    "repo": "jdrhyne/agent-skills",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A collection of AI agent skills for Clawdbot, Claude Code, Codex"
-  },
-  {
-    "repo": "labstack/echo",
-    "branch": "master",
-    "language": "Go",
-    "description": "High performance, minimalist Go web framework"
-  },
-  {
-    "repo": "homebridge/homebridge",
-    "branch": "latest",
-    "language": "TypeScript",
-    "description": "HomeKit support for the impatient."
-  },
-  {
-    "repo": "boto/boto3",
-    "branch": "develop",
     "language": "Python",
-    "description": "Boto3, an AWS SDK for Python"
+    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
   },
   {
-    "repo": "shadcn-ui/ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
-  },
-  {
-    "repo": "twbs/bootstrap",
-    "branch": "main",
-    "language": "MDX",
-    "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web."
-  },
-  {
-    "repo": "primefaces/primevue",
+    "repo": "Doorman11991/smallcode",
     "branch": "master",
-    "language": "Vue",
-    "description": "Next Generation Vue UI Component Library"
+    "language": "JavaScript",
+    "description": "AI coding agent optimized for small LLMs. 87% benchmark with 4B-active model."
   },
   {
-    "repo": "liorwn/claudetop",
-    "branch": "main",
-    "language": "Shell",
-    "description": "htop for your Claude Code sessions — real-time cost, cache efficiency, model comparison, and smart alerts"
-  },
-  {
-    "repo": "jae-jae/fetcher-mcp",
-    "branch": "main",
+    "repo": "matrix-org/matrix-js-sdk",
+    "branch": "develop",
     "language": "TypeScript",
-    "description": "MCP server for fetch web page content using Playwright headless browser."
+    "description": "Matrix Client-Server SDK for JavaScript"
   },
   {
-    "repo": "typst/typst",
+    "repo": "TabbyML/tabby",
     "branch": "main",
     "language": "Rust",
-    "description": "A markup-based typesetting system that is powerful and easy to learn."
+    "description": "Self-hosted AI coding assistant"
   },
   {
-    "repo": "buynao/aipath",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Interactive AI General Education Course — 30 Lessons, Zero Math"
-  },
-  {
-    "repo": "qwikverse/qwik",
-    "branch": "main",
-    "language": "Other",
-    "description": "The HTML-first framework. Instant apps of any size with ~ 1kb JS"
-  },
-  {
-    "repo": "AFahim02/House-Flipper-2-Multiplayer",
-    "branch": "main",
-    "language": "C++",
-    "description": "House Flipper Free For PC Multiplayer 2026 is the complete unlocked Windows version of the popular house renovation simulator with full multiplayer support. Buy, renovate, decorate and sell houses with unlimited money and all DLCs included. Now you can flip houses together with friends in co-op mode."
-  },
-  {
-    "repo": "nesaminua/claude-code-lsp-enforcement-kit",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Hooks that force Claude Code to use LSP instead of Grep for code navigation. Saves   ~80% tokens"
-  },
-  {
-    "repo": "sandroandric/clime",
+    "repo": "creationix/rx",
     "branch": "main",
     "language": "TypeScript",
-    "description": "One CLI to find every CLI"
+    "description": "RX encoder, decoder, and CLI data tool"
   },
   {
-    "repo": "Stability-AI/stablediffusion",
-    "branch": "main",
-    "language": "Other",
-    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
+    "repo": "storybookjs/storybook",
+    "branch": "next",
+    "language": "TypeScript",
+    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
   },
   {
-    "repo": "DadsMmoLab/dads-mmo-lab",
+    "repo": "robinebers/openusage",
     "branch": "main",
+    "language": "TypeScript",
+    "description": "A plugin-based menu bar app for tracking AI coding tool subscriptions like Cursor, Claude, Codex and more, all in one place with a heavy focus user experience, speed, and stability."
+  },
+  {
+    "repo": "ohmyzsh/ohmyzsh",
+    "branch": "master",
     "language": "Shell",
-    "description": "Offline MMO private servers on Steam Deck. Free guides, Docker scripts & shell installers for classic MMOs. No subscription. No internet. Forever. Visibility:       ✅ Public"
+    "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
   },
   {
-    "repo": "benqi-finance/legalmarkdown",
-    "branch": "master",
+    "repo": "ajeetdsouza/zoxide",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A smarter cd command. Supports all major shells."
+  },
+  {
+    "repo": "prometheus-operator/prometheus-operator",
+    "branch": "main",
     "language": "Go",
-    "description": "Eris Legal Markdown -- Putting the Contract in Smart Contracts"
+    "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes"
   },
   {
-    "repo": "DuskMosquito/Lossless-Scaling-Desktop-2026",
+    "repo": "klawsh/klaw.sh",
     "branch": "main",
-    "language": "C",
-    "description": "⭐️ Lossless Scaling Desktop 2026 | Setup Installer v1.0 | Patch Activator Keygen | License Key Pre-Activated | Full Version Latest Build Pro | Optimize Resolution Scaling | Enhance Performance Graphics | Get Desktop App Windows 10/11 PC | Direct Genuine Original x64 | Download Install Loader Mod ⭐️"
+    "language": "Go",
+    "description": "kubectl for AI Agents"
   },
   {
-    "repo": "OpenMOSS/MOSS-VL",
-    "branch": "main",
-    "language": "Python",
-    "description": "MOSS-VL is the core multimodal model series within the OpenMOSS ecosystem, dedicated to visual understanding."
-  },
-  {
-    "repo": "Backtthefuture/huangshu",
+    "repo": "TermiX-official/cryptoclaw",
     "branch": "main",
     "language": "TypeScript",
-    "description": "黄叔开源的Skill集合"
+    "description": ""
   },
   {
-    "repo": "mochajs/mocha",
+    "repo": "cncf/landscape",
+    "branch": "master",
+    "language": "Other",
+    "description": "🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location."
+  },
+  {
+    "repo": "chartjs/Chart.js",
     "branch": "master",
     "language": "JavaScript",
-    "description": "☕️ Classic, reliable, trusted test framework for Node.js and the browser"
+    "description": "Simple HTML5 Charts using the <canvas> tag"
+  },
+  {
+    "repo": "owncloud/core",
+    "branch": "master",
+    "language": "PHP",
+    "description": ":cloud: ownCloud web server core (Files, DAV, etc.)"
+  },
+  {
+    "repo": "linkedin/school-of-sre",
+    "branch": "main",
+    "language": "HTML",
+    "description": "At LinkedIn, we are using this curriculum for onboarding our entry-level talents into the SRE role."
+  },
+  {
+    "repo": "iluwatar/java-design-patterns",
+    "branch": "master",
+    "language": "Java",
+    "description": "Design patterns implemented in Java"
+  },
+  {
+    "repo": "Quick/Quick",
+    "branch": "main",
+    "language": "Swift",
+    "description": "The Swift (and Objective-C) testing framework."
+  },
+  {
+    "repo": "six2dez/burp-ai-agent",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more"
+  },
+  {
+    "repo": "react-native-picker/picker",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Picker is a cross-platform UI component for selecting an item from a list of options."
+  },
+  {
+    "repo": "RaidOwl/homelab-hub",
+    "branch": "main",
+    "language": "Svelte",
+    "description": ""
+  },
+  {
+    "repo": "by-sonic/unblock-pro",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Обход блокировок Discord и YouTube — автоматический DPI bypass для macOS и Windows | Unblock Discord & YouTube in Russia"
+  },
+  {
+    "repo": "nicepkg/ctxport",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source."
+  },
+  {
+    "repo": "fspecii/HeartMuLa-Studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer"
   }
 ]
