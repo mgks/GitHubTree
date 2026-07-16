@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Ansub/wiki-os",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Open-source web app for search, browsing, graphs, and local knowledge exploration."
-  },
-  {
-    "repo": "0din-ai/ai-scanner",
-    "branch": "main",
-    "language": "Ruby",
-    "description": "AI model safety scanner built on NVIDIA garak"
-  },
-  {
-    "repo": "traefik/traefik",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Cloud Native Application Proxy"
-  },
-  {
-    "repo": "Y-Peng-Dev/Watchdog",
-    "branch": "master",
-    "language": "C#",
-    "description": "Watchdog for Grasshopper Prevent Rhino & Grasshopper from freezing due to accidental massive computations or cascading calculation chains."
-  },
-  {
-    "repo": "defold/defold",
-    "branch": "dev",
-    "language": "C++",
-    "description": "Defold is a completely free to use game engine for development of desktop, mobile and web games."
-  },
-  {
-    "repo": "go-micro/go-micro",
-    "branch": "master",
-    "language": "Go",
-    "description": "A Go microservices framework"
-  },
-  {
-    "repo": "better-auth/better-icons",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Skill and MCP server for searching and retrieving icons"
-  },
-  {
-    "repo": "gravitational/teleport",
-    "branch": "master",
-    "language": "Go",
-    "description": "The easiest, and most secure way to access and protect all of your infrastructure."
-  },
-  {
-    "repo": "zeromicro/go-zero",
-    "branch": "master",
-    "language": "Go",
-    "description": "A cloud-native Go microservices framework with cli tool for productivity."
-  },
-  {
-    "repo": "pierceboggan/primer",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Get your repo ready for AI."
-  },
-  {
-    "repo": "aquasecurity/trivy",
-    "branch": "main",
-    "language": "Go",
-    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
-  },
-  {
-    "repo": "Rabrg/artificial-life",
+    "repo": "VILA-Lab/FigMirror",
     "branch": "main",
     "language": "Python",
-    "description": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"
+    "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style."
   },
   {
-    "repo": "cncf/toc",
-    "branch": "main",
-    "language": "Go",
-    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
-  },
-  {
-    "repo": "gradle/gradle",
+    "repo": "istio/istio.io",
     "branch": "master",
-    "language": "Groovy",
-    "description": "Adaptable, fast automation for all"
-  },
-  {
-    "repo": "cloudwego/kitex",
-    "branch": "main",
-    "language": "Go",
-    "description": "Go RPC framework with high-performance and strong-extensibility for building micro-services."
-  },
-  {
-    "repo": "wesm/msgvault",
-    "branch": "main",
-    "language": "Go",
-    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
-  },
-  {
-    "repo": "serenity-bdd/serenity-core",
-    "branch": "main",
     "language": "HTML",
-    "description": "Serenity BDD is a test automation library designed to make writing automated acceptance tests easier, and more fun."
+    "description": "Source for the istio.io site"
   },
   {
-    "repo": "jmuncor/sherlock",
+    "repo": "1354427059/orchids-api",
+    "branch": "main",
+    "language": "Go",
+    "description": "1111"
+  },
+  {
+    "repo": "cosmiciron/vmprint",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A pure-JS, zero-dependency typesetting engine that yields bit-perfect PDF output across any runtime—from Cloudflare Workers to the browser. Stop using Headless Chrome to print text."
+  },
+  {
+    "repo": "SL0ANE/TheMoldsmalPlugin",
+    "branch": "main",
+    "language": "Lua",
+    "description": "a plugin for boil effect for aseprite maybe"
+  },
+  {
+    "repo": "zubair-trabzada/ai-legal-claude",
     "branch": "main",
     "language": "Python",
-    "description": "Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions."
+    "description": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out the Skool community"
   },
   {
-    "repo": "AMAP-ML/RL3DEdit",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "metallb/metallb",
-    "branch": "main",
-    "language": "Go",
-    "description": "A network load-balancer implementation for Kubernetes using standard routing protocols"
-  },
-  {
-    "repo": "dapr/dapr",
-    "branch": "master",
-    "language": "Go",
-    "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration."
-  },
-  {
-    "repo": "510myRday/Cursor-Toolbox",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-bot",
+    "repo": "xiaguan/pegainfer",
     "branch": "main",
     "language": "Rust",
+    "description": "Pure Rust + CUDA LLM inference engine"
+  },
+  {
+    "repo": "bhope/hedge",
+    "branch": "main",
+    "language": "Go",
+    "description": "Adaptive hedged requests for Go. Cut your p99 latency with zero configuration. Based on Google's The Tail at Scale paper."
+  },
+  {
+    "repo": "CraftyGeezer/Kalshi-Polymarket-Ai-bot",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "spring-cloud/spring-cloud-gateway",
+    "repo": "carlosazaustre/tenacitOS",
     "branch": "main",
-    "language": "Java",
-    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
+    "language": "TypeScript",
+    "description": "OpenClaw Mission Control Dashboard"
+  },
+  {
+    "repo": "dseditor/QwenASRMiniTool",
+    "branch": "main",
+    "language": "Python",
+    "description": "基於OpenVino-int8權重，精簡的QwenASR小工具，用於即時辨識以及字幕轉換使用"
+  },
+  {
+    "repo": "DarioFT/ComfyUI-Qwen3-TTS",
+    "branch": "main",
+    "language": "Python",
+    "description": "A ComfyUI custom node suite for Qwen3-TTS, supporting 1.7B and 0.6B models, Custom Voice, Voice Design, Voice Cloning and Fine-Tuning."
+  },
+  {
+    "repo": "test-time-training/discover",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "TheCSir/TerminalStart",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Chromium Extension for Tech Bros"
+  },
+  {
+    "repo": "patoles/agent-flow",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Real-time visualization of Claude Code agent orchestration — see your agents think, branch, and coordinate as they work."
+  },
+  {
+    "repo": "AAAAAAAJ/slides",
+    "branch": "main",
+    "language": "Python",
+    "description": "slides generates prompts for various expression styles"
+  },
+  {
+    "repo": "parcadei/ouros",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A sandboxed Python runtime for AI agents, written in Rust."
+  },
+  {
+    "repo": "imxv/Pretty-mermaid-skills",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "To provide AI with Mermaid chart rendering capability, supporting both SVG and ASCII output formats"
+  },
+  {
+    "repo": "Justi1980/Dawn-Validator-BOT",
+    "branch": "main",
+    "language": "Python",
+    "description": "Dawn Validator BOT — Automated node validation bot for Dawn Protocol testnet with multi-account support, proxy rotation, validator registration, keepalive pings, reward tracking, and Rich CLI interface for decentralized bandwidth network participation"
+  },
+  {
+    "repo": "blendi-remade/sprite-sheet-creator",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "IronsideXXVI/Hacker-News",
+    "branch": "main",
+    "language": "Swift",
+    "description": ""
+  },
+  {
+    "repo": "Krypto-Hashers-Community/polymarket-copytrading-bot-rust-sport-crypto",
+    "branch": "main",
+    "language": "Rust",
+    "description": "The ultimate Polymarket CopyTrading Bot in Rust. AI-powered Polymarket CopyTrading Bot for smarter trades. Self-hosted Polymarket CopyTrading Bot with dashboard. Real-time Polymarket CopyTrading Bot for top traders. Reliable Polymarket CopyTrading Bot for prediction markets. Fast Polymarket CopyTrading Bot. Try Polymarket CopyTrading Bot now."
+  },
+  {
+    "repo": "jzOcb/writing-style-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Writing style skill template with built-in auto-learning. AI writes → you edit → rules auto-extracted → SKILL.md improves. Works with Claude Code + OpenClaw."
+  },
+  {
+    "repo": "itcaat/mtproto-installer",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Ускоритель телеграм =)"
   }
 ]
