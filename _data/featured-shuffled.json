@@ -1,146 +1,146 @@
 [
   {
-    "repo": "cloudflare/moltworker",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Run Moltbot (formely Clawdbot) on Cloudflare Workers"
-  },
-  {
-    "repo": "vuejs/vue",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
-  },
-  {
-    "repo": "chen2he/orange-cloud",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A native iOS client for Cloudflare — sign in with OAuth"
-  },
-  {
-    "repo": "pshycodr/airctl",
-    "branch": "main",
-    "language": "Python",
-    "description": "AIRCTL, a modern WiFi management tool for Linux built with GTK4 and Python. It provides a clean interface to scan, connect, and manage wireless networks."
-  },
-  {
-    "repo": "ripienaar/free-for-dev",
-    "branch": "master",
-    "language": "HTML",
-    "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
-  },
-  {
-    "repo": "honnibal/claude-skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "Claude skills I'm experimenting with. Please review carefully before use."
-  },
-  {
-    "repo": "ToolSeRF/TaHa-Direct-Reverse-Tunnel-Runner",
-    "branch": "main",
-    "language": "Shell",
-    "description": "راه اندازی و مدیریت تانل مستقیم و معکوس(ریورس) با بیش از 150 پروتو برای عبور از فیلترینگ و پاسخگو برای سرورهایی با محدودیت بسیار شدید، راه اندازی بین یک یا چند سرور، به یاد طاها هوشیار کودک 12 ساله جان فدای میهن"
-  },
-  {
-    "repo": "ochyai/open-japan-politech-platform",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "政党・企業によらない政治のデジタル化オープンソース基盤"
-  },
-  {
-    "repo": "go-delve/delve",
-    "branch": "master",
-    "language": "Go",
-    "description": "Delve is a debugger for the Go programming language."
-  },
-  {
-    "repo": "pytest-dev/pytest-cov",
-    "branch": "master",
-    "language": "Python",
-    "description": "Coverage plugin for pytest."
-  },
-  {
-    "repo": "herrbischoff/awesome-macos-command-line",
-    "branch": "master",
-    "language": "Other",
-    "description": "Use your macOS terminal shell to do awesome things."
-  },
-  {
-    "repo": "junevm/splathash",
+    "repo": "hashicorp/raft",
     "branch": "main",
     "language": "Go",
-    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
+    "description": "Golang implementation of the Raft consensus protocol"
   },
   {
-    "repo": "EricEsquivel/CobaltStrike-Linux-Beacon",
-    "branch": "main",
-    "language": "C",
-    "description": "Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons"
-  },
-  {
-    "repo": "guzzle/guzzle",
-    "branch": "master",
-    "language": "PHP",
-    "description": "Guzzle, an extensible PHP HTTP client"
-  },
-  {
-    "repo": "ryanstephen/lil-agents",
-    "branch": "main",
-    "language": "Swift",
-    "description": "tiny AI companions that live on your macOS dock"
-  },
-  {
-    "repo": "sqlmapproject/sqlmap",
-    "branch": "master",
-    "language": "Python",
-    "description": "Automatic SQL injection and database takeover tool"
-  },
-  {
-    "repo": "facebook/docusaurus",
+    "repo": "millionco/react-doctor",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Easy to maintain open source documentation websites."
+    "description": "Let coding agents diagnose and fix your React code"
   },
   {
-    "repo": "komunite/kalfa",
+    "repo": "ultralytics/ultralytics",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ultralytics YOLO 🚀"
+  },
+  {
+    "repo": "beeware/toga",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Python native, OS native GUI toolkit."
+  },
+  {
+    "repo": "Jakubantalik/border-beam",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Animated border beam effect for React"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Free, open source crypto trading bot"
+  },
+  {
+    "repo": "Semantic-Org/Semantic-UI",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Semantic is a UI component framework based around useful principles from natural language."
+  },
+  {
+    "repo": "quilljs/quill",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
+  },
+  {
+    "repo": "d3/d3",
     "branch": "main",
     "language": "Shell",
-    "description": "Claude Code için Türkçe profesyonel işletim sistemi — 10 uzman agent, 22 komut, 993 skill, 6 katmanlı hafıza"
+    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
   },
   {
-    "repo": "typeorm/typeorm",
+    "repo": "react-native-maps/react-native-maps",
     "branch": "master",
     "language": "TypeScript",
-    "description": "ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms."
+    "description": "React Native Mapview component for iOS + Android"
   },
   {
-    "repo": "OffchainLabs/arbitrum",
-    "branch": "master",
-    "language": "Other",
-    "description": "Arbitrum is a Layer 2 scaling solution for Ethereum."
-  },
-  {
-    "repo": "nguyenduchoai/bizclaw",
-    "branch": "master",
-    "language": "Rust",
-    "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp, và công cụ thông qua kiến trúc thống nhất, hoán đổi được."
-  },
-  {
-    "repo": "huggingface/datasets",
+    "repo": "beeware/briefcase",
     "branch": "main",
     "language": "Python",
-    "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
+    "description": "Tools to support converting a Python project into a standalone native application."
   },
   {
-    "repo": "arduino/Arduino",
+    "repo": "allenai/allennlp",
+    "branch": "main",
+    "language": "Python",
+    "description": "An open-source NLP research library, built on PyTorch."
+  },
+  {
+    "repo": "jazzband/pip-tools",
+    "branch": "main",
+    "language": "Python",
+    "description": "A set of tools to keep your pinned Python dependencies fresh."
+  },
+  {
+    "repo": "NVIDIA/cuda-python",
+    "branch": "main",
+    "language": "Cython",
+    "description": "CUDA Python: Performance meets Productivity"
+  },
+  {
+    "repo": "terausss/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "polymarket bot polymarket bot polymarket bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot"
+  },
+  {
+    "repo": "angular/components",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Component infrastructure and Material Design components for Angular"
+  },
+  {
+    "repo": "react-native-camera/react-native-camera",
     "branch": "master",
     "language": "Java",
-    "description": "Arduino IDE 1.x"
+    "description": "A Camera component for React Native. Also supports barcode scanning!"
   },
   {
-    "repo": "DefinitelyTyped/DefinitelyTyped",
+    "repo": "getsentry/sentry-javascript",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Official Sentry SDKs for JavaScript"
+  },
+  {
+    "repo": "OpenBMB/ChatDev",
+    "branch": "main",
+    "language": "Python",
+    "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration"
+  },
+  {
+    "repo": "mui/mui-x",
     "branch": "master",
     "language": "TypeScript",
-    "description": "The repository for high quality TypeScript type definitions."
+    "description": "MUI X: Build complex and data-rich applications using a growing list of advanced React components, like the Data Grid, Date and Time Pickers, Charts, and more!"
+  },
+  {
+    "repo": "AUTOMATIC1111/stable-diffusion-webui",
+    "branch": "master",
+    "language": "Python",
+    "description": "Stable Diffusion web UI"
+  },
+  {
+    "repo": "date-fns/date-fns",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "⏳ Modern JavaScript date utility library ⌛️"
+  },
+  {
+    "repo": "rq/rq",
+    "branch": "master",
+    "language": "Python",
+    "description": "Simple job queues for Python"
   }
 ]
