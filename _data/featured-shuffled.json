@@ -1,146 +1,146 @@
 [
   {
-    "repo": "JuliaLang/julia",
+    "repo": "Eul45/omni-search",
+    "branch": "main",
+    "language": "C++",
+    "description": "High-performance Windows file indexer/search app using NTFS USN/MFT (Tauri + Rust + C++)."
+  },
+  {
+    "repo": "clockworklabs/SpacetimeDB",
     "branch": "master",
-    "language": "Julia",
-    "description": "The Julia Programming Language"
+    "language": "Rust",
+    "description": "Multiplayer at the speed of light"
   },
   {
-    "repo": "CrewSX/polymarket-esports-trading-bot",
+    "repo": "formulahendry/wechat-acp",
     "branch": "main",
-    "language": "Python",
-    "description": "Automated prediction market trading bot for Polymarket esports markets — LoL, Dota 2, CS2, Valorant, Rainbow Six, Call of Duty, Mobile Legends, StarCraft II & Overwatch."
+    "language": "TypeScript",
+    "description": "Bridge WeChat chat messages to any ACP-compatible AI agent"
   },
   {
-    "repo": "IronsideXXVI/Hacker-News",
+    "repo": "glommer/cachebro",
     "branch": "main",
-    "language": "Swift",
+    "language": "TypeScript",
+    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
+  },
+  {
+    "repo": "spring-projects/spring-data-jpa",
+    "branch": "main",
+    "language": "Java",
+    "description": "Simplifies the development of creating a JPA-based data access layer."
+  },
+  {
+    "repo": "JoshKale/jobs",
+    "branch": "master",
+    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "miantiao-me/cloud-code",
+    "repo": "pytest-dev/pytest-cov",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent"
+    "language": "Python",
+    "description": "Coverage plugin for pytest."
   },
   {
-    "repo": "mongodb/mongo",
+    "repo": "async-rs/async-std",
     "branch": "master",
-    "language": "C++",
-    "description": "The MongoDB Database"
+    "language": "Rust",
+    "description": "Async version of the Rust standard library"
   },
   {
-    "repo": "moby/moby",
-    "branch": "master",
+    "repo": "opentofu/opentofu",
+    "branch": "main",
     "language": "Go",
-    "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems"
+    "description": "OpenTofu lets you declaratively manage your cloud infrastructure."
   },
   {
-    "repo": "Lucent-Snow/style-extractor",
+    "repo": "vikasprogrammer/walkie",
     "branch": "main",
     "language": "JavaScript",
-    "description": "一个能够提取最大化提取网页风格的skill"
+    "description": "P2P communication for AI agents. No server. No setup. Just talk."
   },
   {
-    "repo": "memovai/mimiclaw",
+    "repo": "steipete/birdclaw",
     "branch": "main",
-    "language": "C",
-    "description": "MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS.😗Local-first memory. Shareable. Portable. Privacy-first."
+    "language": "TypeScript",
+    "description": "Stores all your tweets nicely claw-able for agents."
   },
   {
-    "repo": "argoproj/argo-workflows",
+    "repo": "chakra-ui/chakra-ui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
+  },
+  {
+    "repo": "guzzle/guzzle",
     "branch": "master",
-    "language": "Go",
-    "description": "Workflow Engine for Kubernetes"
+    "language": "PHP",
+    "description": "Guzzle, an extensible PHP HTTP client"
   },
   {
-    "repo": "bron1e/fnos-rce-chain",
+    "repo": "HMAKT99/UnTouchID",
     "branch": "main",
-    "language": "Python",
-    "description": "飞牛系统（fnOS）远程代码执行链：认证绕过"
+    "language": "Swift",
+    "description": "Use your phone's fingerprint to authenticate on any Mac — sudo, screensaver, App Store. No $199 Magic Keyboard needed. Works with iPhone, Android, Apple Watch, Wear OS, or any browser. Ready for MacBook Neo."
   },
   {
-    "repo": "thesSmartApe/polymarket-copy-trading-bot-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "Polymarket python copy trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "hapijs/hapi",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "The Simple, Secure Framework Developers Trust"
-  },
-  {
-    "repo": "apache/arrow",
-    "branch": "main",
-    "language": "C++",
-    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
-  },
-  {
-    "repo": "wesm/msgvault",
+    "repo": "chenhg5/cc-connect",
     "branch": "main",
     "language": "Go",
-    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
+    "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms."
   },
   {
-    "repo": "tompftampffern/polyseed-monero",
+    "repo": "ythx-101/ask-search",
+    "branch": "master",
+    "language": "Python",
+    "description": "Self-hosted web search skill for AI agents (OpenClaw/Claude Code/Antigravity) via SearxNG"
+  },
+  {
+    "repo": "shenhao-stu/ohmycaptcha",
     "branch": "main",
-    "language": "C",
-    "description": "Polyseed Monero"
+    "language": "Python",
+    "description": "⚡ Self-hostable YesCaptcha-compatible captcha solver built with FastAPI, Playwright, and OpenAI-compatible multimodal models."
   },
   {
-    "repo": "PostgREST/postgrest",
+    "repo": "apkclaw-team/ApkClaw",
     "branch": "main",
-    "language": "Haskell",
-    "description": "REST API for any Postgres database"
+    "language": "Kotlin",
+    "description": ""
   },
   {
-    "repo": "TheCaspianAI/Caspian",
+    "repo": "trycua/launchpad",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Caspian is a control plane for running multiple AI coding agents in parallel, using curated workflows that fit your team."
+    "description": ""
   },
   {
-    "repo": "hashicorp/packer",
-    "branch": "main",
-    "language": "Go",
-    "description": "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration."
-  },
-  {
-    "repo": "xbhatsmymom39/tradingview-full-version-unlocker",
+    "repo": "Stability-AI/generative-models",
     "branch": "main",
     "language": "Python",
-    "description": "TradingView Full version unlocker"
+    "description": "Generative Models by Stability AI"
   },
   {
-    "repo": "hashicorp/vagrant",
-    "branch": "main",
-    "language": "Ruby",
-    "description": "Vagrant is a tool for building and distributing development environments."
-  },
-  {
-    "repo": "grafana/tempo",
-    "branch": "main",
-    "language": "Go",
-    "description": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend."
-  },
-  {
-    "repo": "mikeyobrien/rho",
-    "branch": "main",
+    "repo": "polkadot-js/apps",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi."
+    "description": "Basic Polkadot/Substrate UI for interacting with a Polkadot and Substrate node. This is the main user-facing application, allowing access to all features available on Substrate chains."
   },
   {
-    "repo": "miaoxworld/OpenClawInstaller",
+    "repo": "TriangleMagistrate/DeepSeek-Claw",
     "branch": "main",
     "language": "Shell",
-    "description": "ClawdBot 一键部署工具"
+    "description": ""
   },
   {
-    "repo": "kubernetes-sigs/kind",
+    "repo": "bytedance/semi-design",
     "branch": "main",
-    "language": "Go",
-    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
+    "language": "Other",
+    "description": "A modern, comprehensive, flexible design system and React UI library."
+  },
+  {
+    "repo": "Shudesu/line-harness-oss",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Open-source LINE Official Account CRM — free alternative to paid tools. Step delivery, broadcasts, forms, rich menus, scoring, automation, and more."
   }
 ]
