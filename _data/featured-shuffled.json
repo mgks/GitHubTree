@@ -1,146 +1,146 @@
 [
   {
-    "repo": "wagoodman/dive",
+    "repo": "microsoft/winget-pkgs",
     "branch": "master",
-    "language": "Go",
-    "description": "A tool for exploring each layer in a docker image"
+    "language": "PowerShell",
+    "description": "The Microsoft community Windows Package Manager manifest repository"
   },
   {
-    "repo": "TanStack/table",
+    "repo": "POLYMARKET-TRADER-LAB/Polymarket-trading-bot",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket  bot,"
+  },
+  {
+    "repo": "nepfaff/scenesmith",
+    "branch": "main",
+    "language": "Python",
+    "description": "Code for SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes"
+  },
+  {
+    "repo": "openai/shap-e",
+    "branch": "main",
+    "language": "Python",
+    "description": "Generate 3D objects conditioned on text or images"
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-VL",
+    "branch": "main",
+    "language": "Python",
+    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
+  },
+  {
+    "repo": "yizhiyanhua-ai/skills-updater",
+    "branch": "main",
+    "language": "Python",
+    "description": "Manage, update, and discover Claude Code skills. 管理、更新和发现 Claude Code 技能。"
+  },
+  {
+    "repo": "johannesjo/parallel-code",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table"
+    "description": "Run Claude Code, Codex, and Gemini side by side — each in      its own git worktree"
   },
   {
-    "repo": "google/flatbuffers",
-    "branch": "master",
-    "language": "C++",
-    "description": "FlatBuffers: Memory Efficient Serialization Library"
-  },
-  {
-    "repo": "34306/vphone-aio",
+    "repo": "apple/swift",
     "branch": "main",
-    "language": "Shell",
-    "description": "1 script run the vphone"
+    "language": "C++",
+    "description": "The Swift Programming Language"
   },
   {
-    "repo": "tqdm/tqdm",
+    "repo": "celery/celery",
     "branch": "master",
     "language": "Python",
-    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
+    "description": "Distributed Task Queue (development branch)"
   },
   {
-    "repo": "avacocloud/XHTTP-Installer",
+    "repo": "microsoft/PowerToys",
     "branch": "main",
-    "language": "HTML",
-    "description": "VLESS+XHTTP+TLS Auto-Installer for Ubuntu — Vercel / Netlify relay"
+    "language": "C#",
+    "description": "Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks"
   },
   {
-    "repo": "eval-exec/neomacs",
-    "branch": "main",
-    "language": "Emacs Lisp",
-    "description": "🚀 NEO Emacs — A GPU-powered Emacs written in 🦀Rust with a modern display engine.     Effortlessly render tons of  🖼️4K images, 🎥4K videos, and 🌐WPEWebKit using GPU acceleration, DMA-BUF, ZERO-COPY and rich animation effects support for a super-level blazing-fast Emacs experience. 🎉"
-  },
-  {
-    "repo": "Alamofire/Alamofire",
+    "repo": "nginx/nginx",
     "branch": "master",
-    "language": "Swift",
-    "description": "Elegant HTTP Networking in Swift"
+    "language": "C",
+    "description": "The official NGINX Open Source repository."
   },
   {
-    "repo": "langwatch/kanban-code",
+    "repo": "vercel-labs/portless",
     "branch": "main",
-    "language": "Swift",
+    "language": "TypeScript",
+    "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents."
+  },
+  {
+    "repo": "asdf-vm/asdf",
+    "branch": "master",
+    "language": "Go",
+    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
+  },
+  {
+    "repo": "facebookresearch/xformers",
+    "branch": "main",
+    "language": "Python",
+    "description": "Hackable and optimized Transformers building blocks, supporting a composable construction."
+  },
+  {
+    "repo": "antfu/skills-npm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Install agent skills from npm"
+  },
+  {
+    "repo": "kitlangton/tailcode",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "triggerdotdev/trigger.dev",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Trigger.dev – build and deploy fully‑managed AI agents and workflows"
-  },
-  {
-    "repo": "Maoleio/CPA-Codex-Manager",
-    "branch": "main",
-    "language": "Python",
-    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
-  },
-  {
-    "repo": "boto/boto3",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Boto3, an AWS SDK for Python"
-  },
-  {
-    "repo": "taigrr/spank",
-    "branch": "master",
-    "language": "Go",
-    "description": "Slap your MacBook, it yells back. Uses Apple Silicon accelerometer via IOKit HID."
-  },
-  {
-    "repo": "gvisor/gvisor",
-    "branch": "master",
-    "language": "Other",
-    "description": "Application Kernel for Containers."
-  },
-  {
-    "repo": "zed-industries/zed",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
-  },
-  {
-    "repo": "javaevolved/javaevolved.github.io",
+    "repo": "PsiACE/skills",
     "branch": "main",
     "language": "HTML",
-    "description": "Java Evolved. Your Code Can Evolve Too!"
+    "description": "A small, shared skill library by builders, for builders."
   },
   {
-    "repo": "edinetdb/dexter-jp",
+    "repo": "openai/openai-python",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "日本株の自律型リサーチAIエージェント｜AI agent for deep financial research on Japanese listed companies. Powered by EDINET DB + J-Quants."
+    "language": "Python",
+    "description": "The official Python library for the OpenAI API"
   },
   {
-    "repo": "homielab/giapha-os",
+    "repo": "certbot/certbot",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Đây là mã nguồn mở cho ứng dụng quản lý gia phả dòng họ, cung cấp giao diện trực quan để xem sơ đồ phả hệ, quản lý thành viên, tìm kiếm và lọc danh sách thành viên."
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
   },
   {
-    "repo": "langchain-ai/langchain",
+    "repo": "phioranex/openclaw-docker",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": ""
+  },
+  {
+    "repo": "johnBuffer/StableIndexVector",
+    "branch": "main",
+    "language": "C++",
+    "description": ""
+  },
+  {
+    "repo": "Kotlin/kotlinx.serialization",
     "branch": "master",
-    "language": "Python",
-    "description": "🦜🔗 The platform for reliable agents."
+    "language": "Kotlin",
+    "description": "Kotlin multiplatform / multi-format serialization"
   },
   {
-    "repo": "mwaskom/seaborn",
-    "branch": "master",
-    "language": "Python",
-    "description": "Statistical data visualization in Python"
+    "repo": "spf13/cobra",
+    "branch": "main",
+    "language": "Go",
+    "description": "A Commander for modern Go CLI interactions"
   },
   {
-    "repo": "Vacutagin/GameEnhancementSuite",
+    "repo": "roboflow/rf-detr",
     "branch": "main",
     "language": "Python",
-    "description": "Advanced Gaming Enhancement Platform for Modern Titles.Enhance your gaming experience with performance optimization, visual improvements, and quality-of-life features"
-  },
-  {
-    "repo": "Prismer-AI/Prismer",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open Source OpenAI Prism Alternative"
-  },
-  {
-    "repo": "0xSero/turboquant",
-    "branch": "main",
-    "language": "Python",
-    "description": "TurboQuant: Near-optimal KV cache quantization for LLM inference (3-bit keys, 2-bit values) with Triton kernels + vLLM integration"
-  },
-  {
-    "repo": "fullcalendar/fullcalendar",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Full-sized drag & drop event calendar in JavaScript"
+    "description": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO and designed for fine-tuning."
   }
 ]
