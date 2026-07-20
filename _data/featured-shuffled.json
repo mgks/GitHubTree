@@ -1,146 +1,146 @@
 [
   {
-    "repo": "can1357/pon",
+    "repo": "hoangnb24/harness-experimental",
+    "branch": "main",
+    "language": "Shell",
+    "description": ""
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-VL",
+    "branch": "main",
+    "language": "Python",
+    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
+  },
+  {
+    "repo": "J-Pster/Psters_AI_Workflow",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "An anti-vibe-coding, agentic AI workflow that improves results with engineering rigor in any project, language, and framework."
+  },
+  {
+    "repo": "ericosiu/ai-marketing-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open-source AI marketing skills for Claude Code — growth experiments, sales pipeline, content ops, outbound, SEO, and finance automation"
+  },
+  {
+    "repo": "penso/arbor",
     "branch": "main",
     "language": "Rust",
-    "description": "Python 3.14, compiled to metal — JIT & AoT native compiler and runtime in Rust. Cranelift backend, ruff parser, Green Tea GC, byte-exact differential testing against CPython."
+    "description": "Desktop Git worktree manager in Rust (arbor-core + GPUI app)."
   },
   {
-    "repo": "koodo-reader/koodo-reader",
+    "repo": "slackhq/nebula",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web"
+    "language": "Go",
+    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security"
   },
   {
-    "repo": "dimasarestuprasmanto/Pet-Simulator-99-Auto-Farm-Trainer-2026-Gold",
+    "repo": "grimmory-tools/grimmory",
     "branch": "main",
-    "language": "Python",
-    "description": "Maximize your efficiency in Pet Simulator 99 with the Gold auto trainer. From coin collection to Backrooms League rewards, everything is automated. Safe and undetectable."
-  },
-  {
-    "repo": "apache/maven",
-    "branch": "master",
     "language": "Java",
-    "description": "Apache Maven core"
+    "description": "Grimmory is the successor of booklore."
   },
   {
-    "repo": "UnrealXu/UnrealEngine5-Skills",
+    "repo": "kayba-ai/recursive-improve",
     "branch": "main",
     "language": "Python",
+    "description": "🪞 Make your agents recursively self-improve"
+  },
+  {
+    "repo": "expressjs/express",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Fast, unopinionated, minimalist web framework for node."
+  },
+  {
+    "repo": "tophant-ai/ClawVault",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw Security Vault — Atomic claw control: every AI reach, within your sight."
+  },
+  {
+    "repo": "qwikverse/qwik",
+    "branch": "main",
+    "language": "Other",
+    "description": "The HTML-first framework. Instant apps of any size with ~ 1kb JS"
+  },
+  {
+    "repo": "vxcozy/flappyboards",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Turn any TV into a retro split-flap display. Free & open source."
+  },
+  {
+    "repo": "ankitects/anki",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Anki is a smart spaced repetition flashcard program"
+  },
+  {
+    "repo": "TylerBoni/headless-airplay-screen-mirror",
+    "branch": "main",
+    "language": "Shell",
     "description": ""
   },
   {
-    "repo": "tutusagi/ai-fishing-game",
-    "branch": "main",
-    "language": "Python",
-    "description": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼"
-  },
-  {
-    "repo": "signalapp/Signal-Android",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A private messenger for Android."
-  },
-  {
-    "repo": "Iwanian/Iwana-Proxy",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "for telegram"
-  },
-  {
-    "repo": "win4r/team-tasks",
-    "branch": "master",
-    "language": "Python",
-    "description": "Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration"
-  },
-  {
-    "repo": "element-hq/element-ios",
-    "branch": "develop",
-    "language": "Swift",
-    "description": "A glossy Matrix collaboration client for iOS"
-  },
-  {
-    "repo": "ktorio/ktor",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "Framework for quickly creating connected applications in Kotlin with minimal effort"
-  },
-  {
-    "repo": "crshdn/mission-control",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway."
-  },
-  {
-    "repo": "microsoft/DeepSpeed",
-    "branch": "master",
-    "language": "Python",
-    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
-  },
-  {
-    "repo": "antirez/voxtral.c",
-    "branch": "main",
-    "language": "C",
-    "description": "Pure C inference of Mistral Voxtral Realtime 4B speech to text model"
-  },
-  {
-    "repo": "fancydirty/mediary-scout",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Agent-driven media library for your cloud drives (115 / Quark)."
-  },
-  {
-    "repo": "Hatari130/map-creator",
-    "branch": "main",
-    "language": "Python",
-    "description": "结合gis+gpt，用自然语言生成可商用城市打卡地图"
-  },
-  {
-    "repo": "quailyquaily/aqua",
+    "repo": "jmoiron/sqlx",
     "branch": "master",
     "language": "Go",
-    "description": "Aqua, a cli message tool for AI agents"
+    "description": "general purpose extensions to golang's database/sql"
   },
   {
-    "repo": "lidge-jun/opencodex",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Universal provider proxy for OpenAI Codex — use any LLM with Codex CLI, App, and SDK"
-  },
-  {
-    "repo": "mo1app/pipemagic",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Visual image processing pipeline editor"
-  },
-  {
-    "repo": "requests/requests",
+    "repo": "HKUDS/CLI-Anything",
     "branch": "main",
     "language": "Python",
-    "description": "A simple, yet elegant, HTTP library."
+    "description": "CLI-Anything: Making ALL Software Agent-Native"
   },
   {
-    "repo": "godagoo/claude-telegram-relay",
+    "repo": "facebookresearch/llama",
+    "branch": "main",
+    "language": "Python",
+    "description": "Inference code for Llama models"
+  },
+  {
+    "repo": "appium/appium",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included."
+    "language": "JavaScript",
+    "description": "Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol"
   },
   {
-    "repo": "FFF686868/proxypin-wloc-spoofer",
+    "repo": "axios/axios",
     "branch": "main",
     "language": "JavaScript",
-    "description": "ProxyPin script for authorized iOS Apple WLOC response rewriting tests"
+    "description": "Promise based HTTP client for the browser and node.js"
   },
   {
-    "repo": "Tencent-Hunyuan/HY3D-Bench",
+    "repo": "ahmadawais/chartli",
     "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "TypeScript",
+    "description": "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg."
   },
   {
-    "repo": "junevm/splathash",
+    "repo": "PowerShell/vscode-powershell",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Provides PowerShell language and debugging support for Visual Studio Code"
+  },
+  {
+    "repo": "goreleaser/goreleaser",
     "branch": "main",
     "language": "Go",
-    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
+    "description": "Release engineering, simplified"
+  },
+  {
+    "repo": "khoj-ai/khoj",
+    "branch": "main",
+    "language": "Python",
+    "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free."
+  },
+  {
+    "repo": "argoproj/argo-cd",
+    "branch": "master",
+    "language": "Go",
+    "description": "Declarative Continuous Deployment for Kubernetes"
   }
 ]
