@@ -1,146 +1,146 @@
 [
   {
-    "repo": "apache/commons-lang",
+    "repo": "rivet-dev/sandbox-agent",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp."
+  },
+  {
+    "repo": "Automattic/mongoose",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "MongoDB object modeling designed to work in an asynchronous environment."
+  },
+  {
+    "repo": "Alchemz/solana-pumpfun-token-bundler",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler"
+  },
+  {
+    "repo": "docker/buildx",
+    "branch": "master",
+    "language": "Go",
+    "description": "Docker CLI plugin for extended build capabilities with BuildKit"
+  },
+  {
+    "repo": "storybookjs/testing-react",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Testing utilities that allow you to reuse your Storybook stories in your React unit tests!"
+  },
+  {
+    "repo": "kubernetes/minikube",
+    "branch": "master",
+    "language": "Go",
+    "description": "Run Kubernetes locally"
+  },
+  {
+    "repo": "spacedriveapp/spacedrive",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
+  },
+  {
+    "repo": "grpc/grpc-java",
     "branch": "master",
     "language": "Java",
-    "description": "Apache Commons Lang"
+    "description": "The Java gRPC implementation. HTTP/2 based RPC"
   },
   {
-    "repo": "metauto-ai/NeuralComputer",
-    "branch": "main",
-    "language": "Python",
-    "description": "🖥 Neural Computers' Data Engine"
-  },
-  {
-    "repo": "JoshKale/jobs",
+    "repo": "kubernetes-sigs/kustomize",
     "branch": "master",
-    "language": "HTML",
-    "description": ""
+    "language": "Go",
+    "description": "Customization of kubernetes YAML configurations"
   },
   {
-    "repo": "NVIDIA/cuda-python",
-    "branch": "main",
-    "language": "Cython",
-    "description": "CUDA Python: Performance meets Productivity"
-  },
-  {
-    "repo": "ygwyg/agent-experience",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A visual reference to the patterns, surfaces, and infrastructure behind AI agents."
-  },
-  {
-    "repo": "sharkdp/hyperfine",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A command-line benchmarking tool"
-  },
-  {
-    "repo": "bentoml/BentoML",
-    "branch": "main",
-    "language": "Python",
-    "description": "The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Multi-model pipelines, and more!"
-  },
-  {
-    "repo": "wasmerio/wasmer",
-    "branch": "master",
-    "language": "Rust",
-    "description": "🚀 Fast, secure, lightweight containers based on WebAssembly"
-  },
-  {
-    "repo": "wquguru/harness-books",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "privacyguides/privacyguides.org",
-    "branch": "main",
-    "language": "Markdown",
-    "description": "Protect your data against global mass surveillance programs."
-  },
-  {
-    "repo": "LeoYeAI/openclaw-auto-dream",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Automatic memory consolidation for OpenClaw agents — like sleep for your AI. Powered by MyClaw.ai"
-  },
-  {
-    "repo": "Trooped/QuickBars",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "The Official QuickBars for Home Assistant Repository"
-  },
-  {
-    "repo": "pypa/pip",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Python package installer"
-  },
-  {
-    "repo": "yfyang007/RealRestorer",
-    "branch": "master",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-Math",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
-  },
-  {
-    "repo": "zerobootdev/zeroboot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking"
-  },
-  {
-    "repo": "Junyi42/LoGeR",
-    "branch": "main",
-    "language": "Python",
-    "description": "Reimplementation of LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory"
-  },
-  {
-    "repo": "Nahuel990/ministack",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ministack: the free LocalStack replacement"
-  },
-  {
-    "repo": "allenai/allennlp",
-    "branch": "main",
-    "language": "Python",
-    "description": "An open-source NLP research library, built on PyTorch."
-  },
-  {
-    "repo": "sliverp/qqbot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "qqbot"
-  },
-  {
-    "repo": "goharbor/harbor",
+    "repo": "syncthing/syncthing",
     "branch": "main",
     "language": "Go",
-    "description": "An open source trusted cloud native registry project that stores, signs, and scans content."
+    "description": "Open Source Continuous File Synchronization"
   },
   {
-    "repo": "ColeMurray/background-agents",
+    "repo": "golangci/golangci-lint",
+    "branch": "master",
+    "language": "Go",
+    "description": "Fast linters runner for Go"
+  },
+  {
+    "repo": "tensorflow/serving",
+    "branch": "master",
+    "language": "C++",
+    "description": "A flexible, high-performance serving system for machine learning models"
+  },
+  {
+    "repo": "labstack/echo",
+    "branch": "master",
+    "language": "Go",
+    "description": "High performance, minimalist Go web framework"
+  },
+  {
+    "repo": "arrow-kt/arrow",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source background agent coding system"
+    "language": "Kotlin",
+    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
   },
   {
-    "repo": "Lightricks/LTX-Desktop",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source desktop app for generating videos with LTX models"
+    "repo": "zsh-users/zsh-autosuggestions",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Fish-like autosuggestions for zsh"
   },
   {
-    "repo": "agno-agi/dash",
+    "repo": "pytorch/audio",
     "branch": "main",
     "language": "Python",
-    "description": "Self-learning data agent that grounds its answers in 6 layers of context and improves with every run. Inspired by OpenAI's in-house implementation."
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+  },
+  {
+    "repo": "go-delve/delve",
+    "branch": "master",
+    "language": "Go",
+    "description": "Delve is a debugger for the Go programming language."
+  },
+  {
+    "repo": "kamranahmedse/developer-roadmap",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
+  },
+  {
+    "repo": "kubernetes-sigs/kind",
+    "branch": "main",
+    "language": "Go",
+    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
+  },
+  {
+    "repo": "tensorflow/tensorflow",
+    "branch": "master",
+    "language": "C++",
+    "description": "An Open Source Machine Learning Framework for Everyone"
+  },
+  {
+    "repo": "matrix-org/matrix-js-sdk",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Matrix Client-Server SDK for JavaScript"
+  },
+  {
+    "repo": "kubernetes-sigs/metrics-server",
+    "branch": "master",
+    "language": "Go",
+    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
+  },
+  {
+    "repo": "refinedev/refine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility."
+  },
+  {
+    "repo": "yearn/yearn-finance",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🏦 yearn v2 web interface"
   }
 ]
