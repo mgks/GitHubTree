@@ -1,146 +1,146 @@
 [
   {
-    "repo": "jenkinsci/jenkins",
-    "branch": "master",
-    "language": "Java",
-    "description": "Jenkins automation server"
-  },
-  {
-    "repo": "aquasecurity/kube-bench",
-    "branch": "main",
-    "language": "Go",
-    "description": "Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark"
-  },
-  {
-    "repo": "WtxwNs/RepoCheck",
+    "repo": "google/jax",
     "branch": "main",
     "language": "Python",
-    "description": "A tool for analyzing and checking open-source repositories, especially when you are unsure whether they are truly open source."
+    "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more"
   },
   {
-    "repo": "dazzyddos/ClickOnceBlobber",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "stargazerwh/RAG-Lighter",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "xuanxuan321/xuanxuan-prompts",
-    "branch": "main",
-    "language": "Shell",
-    "description": "AI Agent 复刻精美网页的提示词合集：每个目录一份 prompt.md + 效果图截图，丢给 Claude/Codex/Kimi 即可生成对应网站"
-  },
-  {
-    "repo": "santifer/career-ops",
-    "branch": "main",
-    "language": "Go",
-    "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
-  },
-  {
-    "repo": "tgies/copy-fail-c",
-    "branch": "main",
-    "language": "C",
-    "description": "Cross-platform C port of the Copy Fail Linux LPE (CVE-2026-31431). Disclosed 2026-04-29 by Theori / Xint."
-  },
-  {
-    "repo": "TraderAlice/Auto-Quant",
+    "repo": "cnlimiter/codex-manager",
     "branch": "master",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "openyuanrong-project/yuanrong",
-    "branch": "master",
-    "language": "Go",
-    "description": "openyuanrong project"
-  },
-  {
-    "repo": "arvohealth-ai/OpenVitals",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Your health never sleeps."
-  },
-  {
-    "repo": "openclaw/crabbox",
+    "repo": "Fox-Fig/phoenix",
     "branch": "main",
     "language": "Go",
-    "description": "Crabbox: warm a box, sync the diff, run the suite."
+    "description": "Phoenix is a high-performance, resilient tunneling tool designed to bypass DPI and severe network censorship using HTTP/2 (h2/h2c) multiplexing."
   },
   {
-    "repo": "Leonxlnx/claw-dev",
+    "repo": "xiaguan/pegainfer",
     "branch": "main",
-    "language": "TypeScript",
+    "language": "Rust",
+    "description": "Pure Rust + CUDA LLM inference engine"
+  },
+  {
+    "repo": "perglervitek/Blox-Fruits-Dragon-Update-Auto-Farm-Script-2026-Elite",
+    "branch": "main",
+    "language": "Python",
+    "description": "Auto farm, ESP, and raid script for Blox Fruits Dragon Update 2026 – Elite edition. Level up, farm bosses, and dominate PvP with this undetected trainer."
+  },
+  {
+    "repo": "romus204/tree-sitter-manager.nvim",
+    "branch": "main",
+    "language": "Tree-sitter Query",
+    "description": "A lightweight Tree-sitter parser manager for Neovim."
+  },
+  {
+    "repo": "zqbxdev/webchat2api",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenAI-compatible Web Chat API proxy with GPT/Grok account management"
+  },
+  {
+    "repo": "nesaminua/claude-code-lsp-enforcement-kit",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Hooks that force Claude Code to use LSP instead of Grep for code navigation. Saves   ~80% tokens"
+  },
+  {
+    "repo": "scosman/cursed_browser",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A web browser with no rendering engine — the VLM reads the HTML and hallucinates the page."
+  },
+  {
+    "repo": "aresyn/codex-control-plane-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "Durable MCP control plane for long-running Codex Desktop tasks"
+  },
+  {
+    "repo": "zhongerxin/Cowart",
+    "branch": "main",
+    "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "notdog1998/yourself-skill",
-    "branch": "master",
+    "repo": "boratanrikulu/gecit",
+    "branch": "main",
+    "language": "Go",
+    "description": "DPI bypass tool - eBPF on Linux, TUN on macOS/Windows."
+  },
+  {
+    "repo": "jasonkneen/agent-simulator",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An iOS simulator in a browser you can inspect"
+  },
+  {
+    "repo": "dama-cyber/Casting-Workflow",
+    "branch": "main",
     "language": "Python",
-    "description": "与其蒸馏别人，不如蒸馏自己。欢迎加入数字永生！Inspired by colleague-skill（同事skill）。"
+    "description": ""
   },
   {
-    "repo": "evanklem/evanflow",
-    "branch": "main",
-    "language": "Shell",
-    "description": "A TDD-driven iterative feedback loop for software development. 16 cohesive Claude Code skills walk an idea from brainstorm → plan → execute → iterate, with checkpoints throughout."
-  },
-  {
-    "repo": "bubblesslayyer-cmd/Awesome-GPT-Image-2-OpenAi",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Definitive GPT Image 2 Prompt Vault — Master OpenAI's next-gen model with curated prompts for pixel-perfect text, consistent characters, and professional-grade assets. Optimized for creators and developers."
-  },
-  {
-    "repo": "noonghunna/club-3090",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Community recipes for serving LLMs on RTX 3090. Multi-engine (vLLM, llama.cpp, SGLang) and model-agnostic. Currently shipping Qwen3.6-27B configs for 1× and 2× cards."
-  },
-  {
-    "repo": "chatgptprojects/clear-code",
-    "branch": "main",
-    "language": "Shell",
-    "description": "See your claude code logs in clear details in your dashboard"
-  },
-  {
-    "repo": "freshyman1/ChatGPT-5.5-OpenAI-Unlimited-Desktop",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Free ChatGPT 5.5 OpenAI Unlimited is a professional AI suite for advanced reasoning and automation. It features expanded context windows, multimodal support, and high-speed execution. Designed for power users, it ensures seamless AI integration and performance for complex 2026 workflows. Codex"
-  },
-  {
-    "repo": "theNetworkChuck/axios-attack-guide",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Axios npm supply chain attack — detection scripts, IOCs, and protection guide"
-  },
-  {
-    "repo": "wxtsky/byob",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Bring Your Own Browser — let your AI agent use the Chrome you already have open"
-  },
-  {
-    "repo": "pedronaldocr07/Solana-Meteora-Alpha-Vault",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "meteora alpha vault to create large marketcap, execute deposit, claim, withdraw across unlimited wallets"
-  },
-  {
-    "repo": "AprilNEA/claude-code-source",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code source code recovered from source map"
-  },
-  {
-    "repo": "cv-cat/XHS_ALL_IN_ONE",
+    "repo": "FossPrime/Steam-Controller-Auto-Charge",
     "branch": "master",
     "language": "JavaScript",
-    "description": "XHS_ALL_IN_ONE 小红书全域运营"
+    "description": "Slam the controller into the magnetic puck until it charges"
+  },
+  {
+    "repo": "raheemxghumman/DBD-AutoGrind-Trainer-2026-Pro",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ultimate Dead by Daylight auto-grind trainer Pro edition with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
+  },
+  {
+    "repo": "gatelynch/llm-knowledge-base",
+    "branch": "main",
+    "language": "Python",
+    "description": "參考自Andrej Kapathy的llm-wiki概念，把原始素材、LLM 編譯後的知識、   探索中的思考，以及最終作品明確分層管理   的個人知識庫系統。"
+  },
+  {
+    "repo": "mohshomis/modo",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "Dangerous-hole/Pumpfun_AI_Trading_Bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Pump.fun Pump.fun Solana Solana TypeScript TypeScript trading bot trading bot AI trading AI trading OpenAI OpenAI CLI automation meme coin meme coin cryptocurrency cryptocurrency token token comment bot comment bot Solana bot Solana bot web3 web3"
+  },
+  {
+    "repo": "texsellix/polymarket-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket from your terminal. Copy whales, run autonomous strategies, place orders with one command. CLI-only, no dashboard, no setup."
+  },
+  {
+    "repo": "Tyxy-R/codex-referral-risk-research",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "liyown/marknative",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A Markdown rendering engine that generates paginated PNG and SVG output — no browser, no Chromium, no DOM."
+  },
+  {
+    "repo": "0xShug0/audio.cpp",
+    "branch": "release-0.1",
+    "language": "C++",
+    "description": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency."
+  },
+  {
+    "repo": "yin-yizhen/sonic-topography",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "随音乐产生交互的棋盘式海浪，支持网易云搜索"
   }
 ]
