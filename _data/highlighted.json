@@ -1,8 +1,8 @@
 {
-  "repo": "AdelanSupport/adelan-support",
-  "branch": "main",
+  "repo": "dinosn/fastjson-jsontype-rce-lab",
+  "branch": "master",
   "language": "Python",
-  "description": "A featured project on GitHubTree.",
-  "stars": 250,
-  "forks": 0
+  "description": "Docker lab + one-payload exploit + defensive scanner for the fastjson 1.2.66-1.2.83 @JSONType remote-class-load RCE (SSRF->defineClass under Spring Boot LaunchedURLClassLoader; autoType OFF; parseObject binding is not a mitigation)",
+  "stars": 147,
+  "forks": 80
 }
