@@ -1,146 +1,146 @@
 [
   {
-    "repo": "rivet-dev/sandbox-agent",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Universal API for automatic coding agents in sandboxes. Supports Claude Code, Codex, OpenCode, and Amp."
-  },
-  {
-    "repo": "Automattic/mongoose",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MongoDB object modeling designed to work in an asynchronous environment."
-  },
-  {
-    "repo": "Alchemz/solana-pumpfun-token-bundler",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler pumpfun bundler solana bundler token bundler"
-  },
-  {
-    "repo": "docker/buildx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Docker CLI plugin for extended build capabilities with BuildKit"
-  },
-  {
-    "repo": "storybookjs/testing-react",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Testing utilities that allow you to reuse your Storybook stories in your React unit tests!"
-  },
-  {
-    "repo": "kubernetes/minikube",
-    "branch": "master",
-    "language": "Go",
-    "description": "Run Kubernetes locally"
-  },
-  {
-    "repo": "spacedriveapp/spacedrive",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
-  },
-  {
-    "repo": "grpc/grpc-java",
+    "repo": "intave/intave",
     "branch": "master",
     "language": "Java",
-    "description": "The Java gRPC implementation. HTTP/2 based RPC"
+    "description": "Intave is an enterprise, high-performance anticheat for Minecraft built on years of experience protecting the world's largest servers"
   },
   {
-    "repo": "kubernetes-sigs/kustomize",
-    "branch": "master",
-    "language": "Go",
-    "description": "Customization of kubernetes YAML configurations"
-  },
-  {
-    "repo": "syncthing/syncthing",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Source Continuous File Synchronization"
-  },
-  {
-    "repo": "golangci/golangci-lint",
-    "branch": "master",
-    "language": "Go",
-    "description": "Fast linters runner for Go"
-  },
-  {
-    "repo": "tensorflow/serving",
-    "branch": "master",
-    "language": "C++",
-    "description": "A flexible, high-performance serving system for machine learning models"
-  },
-  {
-    "repo": "labstack/echo",
-    "branch": "master",
-    "language": "Go",
-    "description": "High performance, minimalist Go web framework"
-  },
-  {
-    "repo": "arrow-kt/arrow",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "The perfect companion for your Kotlin journey - Inspired by functional, data-oriented and concurrent programming"
-  },
-  {
-    "repo": "zsh-users/zsh-autosuggestions",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Fish-like autosuggestions for zsh"
-  },
-  {
-    "repo": "pytorch/audio",
+    "repo": "matteorigodanza/cryto-trading-ai-assistant",
     "branch": "main",
     "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+    "description": "AI guardian for manual crypto traders — risk monitoring, strategy validation & emotional trading detection. No trade execution."
   },
   {
-    "repo": "go-delve/delve",
-    "branch": "master",
-    "language": "Go",
-    "description": "Delve is a debugger for the Go programming language."
-  },
-  {
-    "repo": "kamranahmedse/developer-roadmap",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
-  },
-  {
-    "repo": "kubernetes-sigs/kind",
+    "repo": "andyhuo520/rf-detr-detection",
     "branch": "main",
-    "language": "Go",
-    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
+    "language": "JavaScript",
+    "description": "基于 RF-DETR 的浏览器端实时目标检测应用"
   },
   {
-    "repo": "tensorflow/tensorflow",
+    "repo": "kellyclaudeai/openclaw-deck",
     "branch": "master",
+    "language": "TypeScript",
+    "description": "Multi-column chat interface for OpenClaw agents"
+  },
+  {
+    "repo": "kristelTech/make_me_a_meme",
+    "branch": "main",
+    "language": "Python",
+    "description": "This repository detects your facial expressions and matches you with a famous meme."
+  },
+  {
+    "repo": "erikdarlingdata/PerformanceMonitor",
+    "branch": "main",
+    "language": "C#",
+    "description": "Free, open-source SQL Server performance monitoring. Full Edition (server-installed, 30 collectors) and Lite Edition (standalone, DuckDB). Built-in MCP server for AI integration."
+  },
+  {
+    "repo": "gabagool222/15min-btc-polymarket-trading-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "15min btc polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+  },
+  {
+    "repo": "hmmhmmhm/daiso-mcp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "내 주변 다이소/올리브영 매장을 찾고, 재고를 확인하는 기능을 AI에게 부여합니다."
+  },
+  {
+    "repo": "iad1tya/Net-Bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
+  },
+  {
+    "repo": "ahmadawais/terminui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Super fast double buffered toolkit for building terminal UIs."
+  },
+  {
+    "repo": "itcaat/mtproto-installer",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Ускоритель телеграм =)"
+  },
+  {
+    "repo": "Robbyant/lingbot-depth",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Atrix256/Thirteen",
+    "branch": "main",
     "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
+    "description": "Header only minimalist interface to graphics, inspired by the olden days of mode 13h"
   },
   {
-    "repo": "matrix-org/matrix-js-sdk",
-    "branch": "develop",
+    "repo": "amlalabs/amla-sandbox",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "xvhuan/xiaoi",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "小爱音箱语音通知工具：提供 CLI/TUI/MCP/Webhook 一键播报与控制音量，支持 PM2 常驻部署，支持docker部署。"
+  },
+  {
+    "repo": "gavrielc/nanoclaw",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Matrix Client-Server SDK for JavaScript"
+    "description": "My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs."
   },
   {
-    "repo": "kubernetes-sigs/metrics-server",
-    "branch": "master",
-    "language": "Go",
-    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
-  },
-  {
-    "repo": "refinedev/refine",
+    "repo": "backstage/backstage",
     "branch": "master",
     "language": "TypeScript",
-    "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility."
+    "description": "Backstage is an open framework for building developer portals"
   },
   {
-    "repo": "yearn/yearn-finance",
+    "repo": "mindfold-ai/Trellis",
+    "branch": "main",
+    "language": "Shell",
+    "description": "All-in-one AI framework & toolkit for Claude Code & Cursor"
+  },
+  {
+    "repo": "sdkman/sdkman-cli",
+    "branch": "master",
+    "language": "Gherkin",
+    "description": "The SDKMAN! Command Line Interface"
+  },
+  {
+    "repo": "ClawBio/ClawBio",
+    "branch": "main",
+    "language": "Python",
+    "description": "🦖 ClawBio — The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Built on OpenClaw."
+  },
+  {
+    "repo": "khalildh/garment-notation",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "lodash/lodash",
     "branch": "master",
     "language": "JavaScript",
-    "description": "🏦 yearn v2 web interface"
+    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+  },
+  {
+    "repo": "microsoft/LightGBM",
+    "branch": "master",
+    "language": "C++",
+    "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks."
+  },
+  {
+    "repo": "square/okhttp",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM."
   }
 ]
