@@ -1,45 +1,63 @@
 [
   {
-    "repo": "borhen68/TokenTamer",
-    "branch": "main",
-    "language": "Python",
-    "description": "A drop-in proxy that compresses bloated code context in real-time, cutting LLM API costs by 50–80% without losing what the model actually needs to know."
-  },
-  {
-    "repo": "delbaoliveira/learn-claude-code",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "MichMich/MagicMirror",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant."
-  },
-  {
-    "repo": "op7418/CodePilot",
+    "repo": "cosmiciron/vmprint",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A native desktop GUI for Claude Code — chat, code, and manage projects visually. Built with Electron + Next.js."
+    "description": "A pure-JS, zero-dependency typesetting engine that yields bit-perfect PDF output across any runtime—from Cloudflare Workers to the browser. Stop using Headless Chrome to print text."
   },
   {
-    "repo": "protocolbuffers/protobuf",
+    "repo": "zggf-zggf/openviktor",
     "branch": "main",
-    "language": "C++",
-    "description": "Protocol Buffers - Google's data interchange format"
+    "language": "TypeScript",
+    "description": "Your AI employee for Slack — open source, self-hosted, MIT licensed"
   },
   {
-    "repo": "actions/runner",
+    "repo": "hyperium/hyper",
+    "branch": "master",
+    "language": "Rust",
+    "description": "An HTTP library for Rust"
+  },
+  {
+    "repo": "sequelize/sequelize",
     "branch": "main",
-    "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
+    "language": "TypeScript",
+    "description": "Feature-rich ORM for modern Node.js and TypeScript, it supports PostgreSQL (with JSON and JSONB support), MySQL, MariaDB, SQLite, MS SQL Server, Snowflake, Oracle DB (v6), DB2 and DB2 for IBM i."
   },
   {
-    "repo": "jesselau76/cigen",
+    "repo": "pmndrs/drei",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🥉 useful helpers for react-three-fiber"
+  },
+  {
+    "repo": "denoland/deno",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A modern runtime for JavaScript and TypeScript."
+  },
+  {
+    "repo": "LichAmnesia/awesome-ad-video-prompts",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Interactive root/affix vocabulary memory web app"
+    "description": "Curated, original high-craft prompts for AI video ads (Seedance 2.0 / Veo 3 / Kling / Runway). Companion to HeyDreaming."
+  },
+  {
+    "repo": "gradio-app/gradio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!"
+  },
+  {
+    "repo": "ohmyzsh/ohmyzsh",
+    "branch": "master",
+    "language": "Shell",
+    "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
+  },
+  {
+    "repo": "get-Lucid/Lucid",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An intelligence layer grounding autonomous agents in verified, real-time knowledge at scale."
   },
   {
     "repo": "square/okhttp",
@@ -48,99 +66,81 @@
     "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM."
   },
   {
-    "repo": "CN-Syndra/ClawLink",
+    "repo": "ComposioHQ/secure-openclaw",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A personal 24x7 AI assistant like OpenClaw that runs on your messaging platforms. Send a message on WhatsApp, Telegram, Signal, or iMessage and get responses from Claude with full tool access, persistent memory, scheduled reminders, and integrations with 500+ apps."
+  },
+  {
+    "repo": "penso/arbor",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Desktop Git worktree manager in Rust (arbor-core + GPUI app)."
+  },
+  {
+    "repo": "microsoft/vscode",
     "branch": "main",
     "language": "TypeScript",
-    "description": "An AI Agent Social Network — Let your AI (Claw) talk to other people's AIs directly. Autonomous agent-to-agent communication, negotiation, and collaboration, with full owner control."
+    "description": "Visual Studio Code"
   },
   {
-    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage trading bot"
+    "repo": "pocketbase/pocketbase",
+    "branch": "master",
+    "language": "Go",
+    "description": "Open Source realtime backend in 1 file"
   },
   {
-    "repo": "langwatch/kanban-code",
-    "branch": "main",
-    "language": "Swift",
-    "description": ""
-  },
-  {
-    "repo": "aiming-lab/MetaClaw",
+    "repo": "zubair-trabzada/ai-legal-claude",
     "branch": "main",
     "language": "Python",
-    "description": "Just talk to your agent — it learns and EVOLVES."
+    "description": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out the Skool community"
   },
   {
-    "repo": "axios/axios",
+    "repo": "lib/pq",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go PostgreSQL driver for database/sql"
+  },
+  {
+    "repo": "rs/zerolog",
+    "branch": "master",
+    "language": "Go",
+    "description": "Zero Allocation JSON Logger"
+  },
+  {
+    "repo": "htimesnine/DarkSword-RCE",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Promise based HTTP client for the browser and node.js"
+    "description": "DarkSword webkit exploit captured ITW"
   },
   {
-    "repo": "SVProgressHUD/SVProgressHUD",
+    "repo": "storybookjs/storybook",
+    "branch": "next",
+    "language": "TypeScript",
+    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
+  },
+  {
+    "repo": "go-chi/chi",
     "branch": "master",
-    "language": "Objective-C",
-    "description": "A clean and lightweight progress HUD for your iOS and tvOS app."
+    "language": "Go",
+    "description": "lightweight, idiomatic and composable router for building Go HTTP services"
   },
   {
-    "repo": "allenai/molmoweb",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": ""
-  },
-  {
-    "repo": "tokio-rs/tokio",
+    "repo": "jackc/pgx",
     "branch": "master",
-    "language": "Rust",
-    "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
+    "language": "Go",
+    "description": "PostgreSQL driver and toolkit for Go"
   },
   {
-    "repo": "vapor/vapor",
-    "branch": "main",
-    "language": "Swift",
-    "description": "💧 A server-side Swift HTTP web framework."
-  },
-  {
-    "repo": "git/git",
+    "repo": "curl/curl",
     "branch": "master",
     "language": "C",
-    "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements."
+    "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features"
   },
   {
-    "repo": "rome/tools",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Unified developer tools for JavaScript, TypeScript, and the web"
-  },
-  {
-    "repo": "celery/celery",
+    "repo": "gohugoio/hugo",
     "branch": "master",
-    "language": "Python",
-    "description": "Distributed Task Queue (development branch)"
-  },
-  {
-    "repo": "supermemoryai/clawdbot-supermemory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
-  },
-  {
-    "repo": "tensorflow/tfx",
-    "branch": "master",
-    "language": "Python",
-    "description": "TFX is an end-to-end platform for deploying production ML pipelines"
-  },
-  {
-    "repo": "ShawnPana/aurl",
-    "branch": "main",
     "language": "Go",
-    "description": "A command line tool for turning any API into a CLI command, supporting OpenAPI 3.0, OpenAPI 3.1, Swagger 2.0, and GraphQL. aurl auto-detects authentication, validates requests against the spec, and generates documentation from introspection."
-  },
-  {
-    "repo": "lance0/xfr",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A modern iperf3 alternative with a live TUI, multi-client server, and QUIC support. Built in Rust."
+    "description": "The world’s fastest framework for building websites."
   }
 ]
