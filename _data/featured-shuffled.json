@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Doryoku1223/lunwen-skill",
+    "repo": "gradle/gradle",
+    "branch": "master",
+    "language": "Groovy",
+    "description": "Adaptable, fast automation for all"
+  },
+  {
+    "repo": "Octoberfest7/SilentHarvest_BOF",
+    "branch": "main",
+    "language": "C",
+    "description": "A Cobalt Strike BOF implementation of the SilentHarvest registry dumping technique"
+  },
+  {
+    "repo": "elastic/elasticsearch",
+    "branch": "main",
+    "language": "Java",
+    "description": "Free and Open Source, Distributed, RESTful Search Engine"
+  },
+  {
+    "repo": "v2ray/v2ray-core",
+    "branch": "master",
+    "language": "Go",
+    "description": "A platform for building proxies to bypass network restrictions."
+  },
+  {
+    "repo": "2417467487-hub/WorldCupROI",
     "branch": "main",
     "language": "Python",
-    "description": "面向本科计科学生的一键论文初稿 Skill，支持样文/开题报告/模板驱动生成，并补全流程图、ER 图和项目截图"
+    "description": "Sports sponsorship intelligence platform for World Cup match data, real-source text signals, ROI prediction, uncertainty analysis, and scenario recommendations."
   },
   {
-    "repo": "esp-rs/esp-idf-hal",
+    "repo": "antfu/ghfs",
     "branch": "main",
-    "language": "Rust",
-    "description": "embedded-hal implementation for Rust on ESP32 and ESP-IDF"
+    "language": "TypeScript",
+    "description": "GitHub issues/PRs as filesystem, for offline view and operations in batch. Designed for human and agents."
   },
   {
-    "repo": "actions/runner",
+    "repo": "renatoworks/3dsvg",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The easiest way to turn SVGs into interactive React 3D components"
+  },
+  {
+    "repo": "paradigmxyz/evmbench",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A benchmark and harness for finding and exploiting smart contract bugs"
+  },
+  {
+    "repo": "TQZHR/grok2api",
+    "branch": "main",
+    "language": "Python",
+    "description": "Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning"
+  },
+  {
+    "repo": "Sophomoresty/gemini-web2api",
+    "branch": "main",
+    "language": "Python",
+    "description": "Convert Google Gemini web into OpenAI-compatible API. Zero auth, cross-platform, single file."
+  },
+  {
+    "repo": "kubernetes-sigs/metrics-server",
+    "branch": "master",
+    "language": "Go",
+    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
+  },
+  {
+    "repo": "open-policy-agent/opa",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine."
+  },
+  {
+    "repo": "ByteDance-Seed/Cola-DLM",
+    "branch": "main",
+    "language": "Python",
+    "description": "The codebase of Cola DLM"
+  },
+  {
+    "repo": "ayoub11233/Zelda-Twilight-Princess-PC",
+    "branch": "main",
+    "language": "C++",
+    "description": "Legend of Zelda Twilight Princess PC Download May 2026 Native Port Project 4K 60FPS 120FPS Path Tracing RTX Shaders Texture Pack Ultra Wide Support High Refresh Rate Physics Fix Steam Deck Optimized Best Settings Tutorial Guide Low Latency Vulkan 1.4 Latest Build Free Tool Digital Preservation"
+  },
+  {
+    "repo": "dotnet/roslyn",
     "branch": "main",
     "language": "C#",
-    "description": "The Runner for GitHub Actions :rocket:"
+    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
   },
   {
-    "repo": "TryGhost/Ghost",
+    "repo": "zy-zmc/tianming-novel-ai-writer",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Independent technology for modern publishing, memberships, subscriptions and newsletters."
+    "language": "C#",
+    "description": "天命 — AI网文创作系统 | 12维事实快照 · 9类变更声明 · 6道生成门禁 | 写到3000章依然连贯，不靠模型记忆，靠每章状态回写"
   },
   {
-    "repo": "pointfreeco/swift-snapshot-testing",
-    "branch": "main",
-    "language": "Swift",
-    "description": "📸 Delightful Swift snapshot testing."
-  },
-  {
-    "repo": "30-seconds/30-seconds-of-code",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Coding articles to level up your development skills"
-  },
-  {
-    "repo": "Ultimaker/Cura",
-    "branch": "main",
-    "language": "Python",
-    "description": "3D printer / slicing GUI built on top of the Uranium framework"
-  },
-  {
-    "repo": "elastic/beats",
-    "branch": "main",
-    "language": "Go",
-    "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash"
-  },
-  {
-    "repo": "influxdata/influxdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Scalable datastore for metrics, events, and real-time analytics"
-  },
-  {
-    "repo": "mkdocs/mkdocs",
+    "repo": "Lightning-AI/lightning",
     "branch": "master",
     "language": "Python",
-    "description": "Project documentation with Markdown."
+    "description": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes."
   },
   {
-    "repo": "codecrafters-io/build-your-own-x",
-    "branch": "master",
-    "language": "Markdown",
-    "description": "Master programming by recreating your favorite technologies from scratch."
-  },
-  {
-    "repo": "quilljs/quill",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
-  },
-  {
-    "repo": "Kotlin/kotlinx.coroutines",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "Library support for Kotlin coroutines"
-  },
-  {
-    "repo": "formik/formik",
+    "repo": "nicepkg/ctxport",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Build forms in React, without the tears 😭"
+    "description": "Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source."
   },
   {
-    "repo": "datasciencemasters/go",
-    "branch": "master",
-    "language": "Other",
-    "description": "The Open Source Data Science Masters"
+    "repo": "disintegr8te/teams-policy-export",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "PowerShell tool to export Microsoft Teams policies and generate stakeholder decision workbooks"
   },
   {
-    "repo": "Tencent/tdesign-react",
+    "repo": "strapi/strapi",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A React UI components lib for TDesign."
+    "description": "🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first."
   },
   {
-    "repo": "libgdx/libgdx",
-    "branch": "master",
-    "language": "Java",
-    "description": "Desktop/Android/HTML5/iOS Java game development framework"
-  },
-  {
-    "repo": "sqlite/sqlite",
-    "branch": "master",
+    "repo": "Unclecheng-li/poc-lab",
+    "branch": "main",
     "language": "C",
-    "description": "Official Git mirror of the SQLite source tree"
+    "description": "Recent CVE PoC & reproduction scripts. Focused on high-severity vulnerabilities across Linux kernel, Windows, macOS and more."
   },
   {
-    "repo": "rustwasm/wasm-bindgen",
+    "repo": "deepmind/alphafold",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open source code for AlphaFold 2."
+  },
+  {
+    "repo": "Novaquant-labs/hyperliquid-trading-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "hyperliquid trading bot, perp trading bot, hyperliquid profitable trading bot, hyperliquid trading bot, perp trading bot, hyperliquid profitable trading bot, hyperliquid trading bot, perp trading bot, hyperliquid profitable trading bot, hyperliquid trading bot, perp trading bot, hyperliquid profitable trading bot,"
+  },
+  {
+    "repo": "Krypto-Hashers-Community/polymarket-copytrading-bot-rust-sport-crypto",
     "branch": "main",
     "language": "Rust",
-    "description": "Facilitating high-level interactions between Wasm modules and JavaScript"
-  },
-  {
-    "repo": "asdf-vm/asdf",
-    "branch": "master",
-    "language": "Go",
-    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
-  },
-  {
-    "repo": "infiniflow/ragflow",
-    "branch": "main",
-    "language": "Python",
-    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
-  },
-  {
-    "repo": "StreisandEffect/streisand",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists."
-  },
-  {
-    "repo": "actions/download-artifact",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Download artifacts from your build"
-  },
-  {
-    "repo": "Myhhub/Stock",
-    "branch": "main",
-    "language": "Python",
-    "description": "stock股票.获取股票数据,计算股票指标,筹码分布,识别股票形态,综合选股,选股策略,股票验证回测,股票自动交易,支持PC及移动设备。"
+    "description": "The ultimate Polymarket CopyTrading Bot in Rust. AI-powered Polymarket CopyTrading Bot for smarter trades. Self-hosted Polymarket CopyTrading Bot with dashboard. Real-time Polymarket CopyTrading Bot for top traders. Reliable Polymarket CopyTrading Bot for prediction markets. Fast Polymarket CopyTrading Bot. Try Polymarket CopyTrading Bot now."
   }
 ]
