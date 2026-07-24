@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Go Repositories Directory | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Go repositories. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/go/">
+    <meta property="og:title" content="Best Go Repositories Directory | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Go repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/go/">
+    <meta property="twitter:title" content="Best Go Repositories Directory | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Go repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/go/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/go/2/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Go Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/golang/go/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golang/go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Go programming language</p>
+                </a>
+                <a href="/repo/kubernetes/kubernetes/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/kubernetes</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Production-Grade Container Scheduling and Management</p>
+                </a>
+                <a href="/repo/avelino/awesome-go/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">avelino/awesome-go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A curated list of awesome Go frameworks, libraries and software</p>
+                </a>
+                <a href="/repo/docker/compose/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">docker/compose</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Define and run multi-container applications with Docker</p>
+                </a>
+                <a href="/repo/gohugoio/hugo/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gohugoio/hugo</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The world’s fastest framework for building websites.</p>
+                </a>
+                <a href="/repo/gin-gonic/gin/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gin-gonic/gin</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices.</p>
+                </a>
+                <a href="/repo/prometheus/prometheus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">prometheus/prometheus</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Prometheus monitoring system and time series database.</p>
+                </a>
+                <a href="/repo/hashicorp/terraform/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hashicorp/terraform</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.</p>
+                </a>
+                <a href="/repo/helm/helm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">helm/helm</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Kubernetes Package Manager</p>
+                </a>
+                <a href="/repo/istio/istio/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">istio/istio</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Connect, secure, control, and observe services.</p>
+                </a>
+                <a href="/repo/pocketbase/pocketbase/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pocketbase/pocketbase</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open Source realtime backend in 1 file</p>
+                </a>
+                <a href="/repo/ethereum/go-ethereum/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ethereum/go-ethereum</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go implementation of the Ethereum protocol</p>
+                </a>
+                <a href="/repo/hashicorp/vault/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hashicorp/vault</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A tool for secrets management, encryption as a service, and privileged access management</p>
+                </a>
+                <a href="/repo/etcd-io/etcd/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">etcd-io/etcd</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Distributed reliable key-value store for the most critical data of a distributed system</p>
+                </a>
+                <a href="/repo/nats-io/nats-server/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nats-io/nats-server</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">High-Performance server for NATS.io, the cloud and edge native messaging system.</p>
+                </a>
+                <a href="/repo/opencontainers/runc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">opencontainers/runc</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CLI tool for spawning and running containers according to the OCI specification</p>
+                </a>
+                <a href="/repo/opencontainers/image-spec/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">opencontainers/image-spec</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">OCI Image Format</p>
+                </a>
+                <a href="/repo/goharbor/harbor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">goharbor/harbor</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">An open source trusted cloud native registry project that stores, signs, and scans content.</p>
+                </a>
+                <a href="/repo/junegunn/fzf/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">junegunn/fzf</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">:cherry_blossom: A command-line fuzzy finder</p>
+                </a>
+                <a href="/repo/nektos/act/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nektos/act</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Run your GitHub Actions locally 🚀</p>
+                </a>
+                <a href="/repo/goreleaser/goreleaser/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">goreleaser/goreleaser</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Release engineering, simplified</p>
+                </a>
+                <a href="/repo/golangci/golangci-lint/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golangci/golangci-lint</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast linters runner for Go</p>
+                </a>
+                <a href="/repo/go-delve/delve/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">go-delve/delve</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Delve is a debugger for the Go programming language.</p>
+                </a>
+                <a href="/repo/golang/tools/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golang/tools</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">[mirror] Go Tools</p>
+                </a>
+                <a href="/repo/golang/mock/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golang/mock</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">GoMock is a mocking framework for the Go programming language.</p>
+                </a>
+                <a href="/repo/stretchr/testify/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">stretchr/testify</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A toolkit with common assertions and mocks that plays nicely with the standard library</p>
+                </a>
+                <a href="/repo/uber-go/zap/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">uber-go/zap</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Blazing fast, structured, leveled logging in Go.</p>
+                </a>
+                <a href="/repo/rs/zerolog/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rs/zerolog</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Zero Allocation JSON Logger</p>
+                </a>
+                <a href="/repo/sirupsen/logrus/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sirupsen/logrus</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Structured, pluggable logging for Go.</p>
+                </a>
+                <a href="/repo/spf13/cobra/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">spf13/cobra</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Commander for modern Go CLI interactions</p>
+                </a>
+                <a href="/repo/spf13/viper/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">spf13/viper</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go configuration with fangs</p>
+                </a>
+                <a href="/repo/go-chi/chi/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">go-chi/chi</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">lightweight, idiomatic and composable router for building Go HTTP services</p>
+                </a>
+                <a href="/repo/gorilla/mux/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gorilla/mux</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Package gorilla/mux is a powerful HTTP router and URL matcher for building Go web servers with 🦍</p>
+                </a>
+                <a href="/repo/labstack/echo/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">labstack/echo</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">High performance, minimalist Go web framework</p>
+                </a>
+                <a href="/repo/go-gorm/gorm/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">go-gorm/gorm</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The fantastic ORM library for Golang, aims to be developer friendly</p>
+                </a>
+                <a href="/repo/go-pg/pg/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">go-pg/pg</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Golang ORM with focus on PostgreSQL features and performance</p>
+                </a>
+                <a href="/repo/jmoiron/sqlx/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jmoiron/sqlx</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">general purpose extensions to golang's database/sql</p>
+                </a>
+                <a href="/repo/go-sql-driver/mysql/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">go-sql-driver/mysql</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package</p>
+                </a>
+                <a href="/repo/lib/pq/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lib/pq</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go PostgreSQL driver for database/sql</p>
+                </a>
+                <a href="/repo/jackc/pgx/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jackc/pgx</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">PostgreSQL driver and toolkit for Go</p>
+                </a>
+                <a href="/repo/minio/minio/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">minio/minio</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.</p>
+                </a>
+                <a href="/repo/caddyserver/caddy/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">caddyserver/caddy</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS</p>
+                </a>
+                <a href="/repo/traefik/traefik/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">traefik/traefik</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Cloud Native Application Proxy</p>
+                </a>
+                <a href="/repo/syncthing/syncthing/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">syncthing/syncthing</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open Source Continuous File Synchronization</p>
+                </a>
+                <a href="/repo/restic/restic/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">restic/restic</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast, secure, efficient backup program</p>
+                </a>
+                <a href="/repo/rclone/rclone/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rclone/rclone</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">"rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files</p>
+                </a>
+                <a href="/repo/ipfs/kubo/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ipfs/kubo</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">An IPFS implementation in Go</p>
+                </a>
+                <a href="/repo/libp2p/go-libp2p/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">libp2p/go-libp2p</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">libp2p implementation in Go</p>
+                </a>
+                <a href="/repo/filecoin-project/lotus/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">filecoin-project/lotus</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reference implementation of the Filecoin protocol, written in Go</p>
+                </a>
+                <a href="/repo/cosmos/cosmos-sdk/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cosmos/cosmos-sdk</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">:chains: A Framework for Building High Value Public Blockchains :sparkles:</p>
+                </a>
+                <a href="/repo/tendermint/tendermint/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tendermint/tendermint</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">⟁ Tendermint Core (BFT Consensus) in Go</p>
+                </a>
+                <a href="/repo/prysmaticlabs/prysm/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">prysmaticlabs/prysm</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go implementation of Ethereum proof of stake</p>
+                </a>
+                <a href="/repo/weaviate/weaviate/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">weaviate/weaviate</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database​.</p>
+                </a>
+                <a href="/repo/cockroachdb/cockroach/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cockroachdb/cockroach</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement.</p>
+                </a>
+                <a href="/repo/nsqio/nsq/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nsqio/nsq</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A realtime distributed messaging platform</p>
+                </a>
+                <a href="/repo/DataDog/datadog-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DataDog/datadog-agent</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Main repository for Datadog Agent</p>
+                </a>
+                <a href="/repo/encoredev/encore/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">encoredev/encore</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open source framework for building robust type-safe distributed systems with declarative infrastructure</p>
+                </a>
+                <a href="/repo/vllm-project/aibrix/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vllm-project/aibrix</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cost-efficient and pluggable Infrastructure components for GenAI inference</p>
+                </a>
+                <a href="/repo/Zouuup/landrun/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Zouuup/landrun</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Run any Linux process in a secure, unprivileged sandbox using Landlock. Think firejail, but lightweight, user-friendly, and baked into the kernel.</p>
+                </a>
+                <a href="/repo/asdf-vm/asdf/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">asdf-vm/asdf</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/go/0/" class="pagination-btn disabled">← Previous</a>
+                        <span class="pagination-info">Page 1 of 6</span>
+                        <a href="/language/go/2/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best C# Repositories Directory | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best C# repositories. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/c#/">
+    <meta property="og:title" content="Best C# Repositories Directory | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best C# repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/c#/">
+    <meta property="twitter:title" content="Best C# Repositories Directory | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best C# repositories. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/c#/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/c#/2/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>C# Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/shadowsocks/shadowsocks-windows/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shadowsocks/shadowsocks-windows</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A C# port of shadowsocks</p>
+                </a>
+                <a href="/repo/PowerShell/PowerShell/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PowerShell/PowerShell</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">PowerShell for every system!</p>
+                </a>
+                <a href="/repo/microsoft/semantic-kernel/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">microsoft/semantic-kernel</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Integrate cutting-edge LLM technology quickly and easily into your apps</p>
+                </a>
+                <a href="/repo/microsoft/PowerToys/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">microsoft/PowerToys</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks</p>
+                </a>
+                <a href="/repo/actions/runner/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">actions/runner</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Runner for GitHub Actions :rocket:</p>
+                </a>
+                <a href="/repo/dotnet/runtime/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotnet/runtime</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">.NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps.</p>
+                </a>
+                <a href="/repo/dotnet/aspnetcore/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotnet/aspnetcore</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.</p>
+                </a>
+                <a href="/repo/dotnet/efcore/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotnet/efcore</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">EF Core is a modern object-database mapper for .NET. It supports LINQ queries, change tracking, updates, and schema migrations.</p>
+                </a>
+                <a href="/repo/dotnet/maui/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotnet/maui</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">.NET MAUI is the .NET Multi-platform App UI, a framework for building native device applications spanning mobile, tablet, and desktop.</p>
+                </a>
+                <a href="/repo/dotnet/roslyn/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotnet/roslyn</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.</p>
+                </a>
+                <a href="/repo/bitwarden/server/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bitwarden/server</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bitwarden infrastructure/backend (API, database, Docker, etc).</p>
+                </a>
+                <a href="/repo/thangchung/awesome-dotnet-core/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thangchung/awesome-dotnet-core</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">:honeybee: A collection of awesome .NET core libraries, tools, frameworks and software</p>
+                </a>
+                <a href="/repo/shanselman/openclaw-windows-hub/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shanselman/openclaw-windows-hub</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension</p>
+                </a>
+                <a href="/repo/Y-Peng-Dev/Watchdog/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Y-Peng-Dev/Watchdog</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Watchdog for Grasshopper Prevent Rhino & Grasshopper from freezing due to accidental massive computations or cascading calculation chains.</p>
+                </a>
+                <a href="/repo/shanselman/MaximizeToVirtualDesktop/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shanselman/MaximizeToVirtualDesktop</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">macOS green-button behavior for Windows 11 — maximize any window to its own virtual desktop</p>
+                </a>
+                <a href="/repo/milanm/AutoGrad-Engine/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">milanm/AutoGrad-Engine</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A complete GPT language model (training and inference) in pure C# with zero dependencies. </p>
+                </a>
+                <a href="/repo/erikdarlingdata/PerformanceMonitor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">erikdarlingdata/PerformanceMonitor</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free, open-source SQL Server performance monitoring. Full Edition (server-installed, 30 collectors) and Lite Edition (standalone, DuckDB). Built-in MCP server for AI integration.</p>
+                </a>
+                <a href="/repo/PinchToDebug/EverythingQuickSearch/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PinchToDebug/EverythingQuickSearch</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/ghostvectoracademy/DLLHijackHunter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ghostvectoracademy/DLLHijackHunter</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Automated DLL Hijacking Detection Tool with Zero False Positives — Discovers, filters, and canary-confirms exploitable DLL hijacks on Windows with tiered confidence scoring</p>
+                </a>
+                <a href="/repo/diandianti/clawInstaller/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">diandianti/clawInstaller</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Garume/Manifold/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Garume/Manifold</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Operation-first .NET foundation for generating fast CLI and MCP surfaces from a single definition.</p>
+                </a>
+                <a href="/repo/DoomVoss/BASpark/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DoomVoss/BASpark</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">基于 HTML5/Canvas 深度复刻《蔚蓝档案》UI 风格动效的 Windows 鼠标特效工具 || A Windows mouse effect tool reconstructing Blue Archive UI style using HTML5/Canvas</p>
+                </a>
+                <a href="/repo/akeit0/okojo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">akeit0/okojo</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Okojo is an experimental low allocation managed JavaScript engine for .NET</p>
+                </a>
+                <a href="/repo/shanselman/PeekDesktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shanselman/PeekDesktop</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Click your desktop to peek at it - just like macOS Sonoma.</p>
+                </a>
+                <a href="/repo/SteveTheKiller/KillerPDF/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SteveTheKiller/KillerPDF</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Portable PDF editor for Windows. GPLv3. No installer, no account, no subscription, no telemetry.</p>
+                </a>
+                <a href="/repo/StartupHakk/OpenMonoAgent.ai/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">StartupHakk/OpenMonoAgent.ai</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription.</p>
+                </a>
+                <a href="/repo/sinanata/unity-ui-document-design-system/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sinanata/unity-ui-document-design-system</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A drop-in design system for Unity 6 UI Toolkit (UIDocument + UXML + USS). Tokens, components, icons, mobile responsiveness, and a runtime helper — all themed dark, all keyboard-and-touch-ready, all editable from one stylesheet.</p>
+                </a>
+                <a href="/repo/dotcl/dotcl/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dotcl/dotcl</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/L1v1ng0ffTh3L4N/EdgeSavedPasswordsDumper/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">L1v1ng0ffTh3L4N/EdgeSavedPasswordsDumper</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Security related proof of concepts</p>
+                </a>
+                <a href="/repo/NamKhoa-07/Voidstrap/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NamKhoa-07/Voidstrap</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Voidstrap is a simple yet advanced fork of Bloxstrap, advanced customization and improvements.</p>
+                </a>
+                <a href="/repo/hoaibaone/OP-Auto-Clicker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hoaibaone/OP-Auto-Clicker</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">OP Auto Clicker download automatic mouse clicker automation utility gaming Roblox Minecraft Cookie Clicker fast clicking intervals hotkeys macro mouse button record playback free open source portable PC mobile script trigger settings single double triple.</p>
+                </a>
+                <a href="/repo/zy-zmc/tianming-novel-ai-writer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zy-zmc/tianming-novel-ai-writer</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">天命 — AI网文创作系统 | 12维事实快照 · 9类变更声明 · 6道生成门禁 | 写到3000章依然连贯，不靠模型记忆，靠每章状态回写</p>
+                </a>
+                <a href="/repo/limesupporterdoor/LockDown-Browser-Bypass-Tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">limesupporterdoor/LockDown-Browser-Bypass-Tool</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Enables window switching and tab navigation in restricted browser environments</p>
+                </a>
+                <a href="/repo/MaxiFan/TunnelX/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MaxiFan/TunnelX</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">TunnelX - Windows split-tunneling VPN manager | مدیریت تونل و Split Tunneling برای ویندوز</p>
+                </a>
+                <a href="/repo/DARKHOLEUM/VoidStrap-For-Roblox/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DARKHOLEUM/VoidStrap-For-Roblox</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">VoidStrap: Roblox bootstrapper, launcher utility. FFlag Editor, FastFlags, FPS Unlocker, memory trimmer, CPU watcher. UI customization, Aero theme, AniWatch layout, Nvidia Profile Inspector, .NET 10. Font sharpening, skybox changer, Join-Game Notify, AppSettings JSON, client optimization.</p>
+                </a>
+                <a href="/repo/jiaoyanming0-bot/OPAutoClicker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jiaoyanming0-bot/OPAutoClicker</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">OP Auto Clicker: Fast click interval, milliseconds, seconds. Left, right, middle button. keyboard auto clicker Single, double, triple click. Repeat until stopped, fixed count. Current location, pick coordinates. Hotkey trigger, start stop shortcut. Record playback, macro, Roblox AFK, Minecraft, mouse emulator, portable. </p>
+                </a>
+                <a href="/repo/CometBisonCrack/LockDown-Browser-Bypass-Tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">CometBisonCrack/LockDown-Browser-Bypass-Tool</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Windows utility that restores standard keyboard shortcuts and window management capabilities during restricted browser sessions.</p>
+                </a>
+                <a href="/repo/Alkih/Nightlight-Game-Launcher/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Alkih/Nightlight-Game-Launcher</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Nightlight Game Launcher: NLGL download, Rockstar Social Club bypass, GTA V Epic Games launch error, RDR2 offline play, GTA IV Social Club fix. Steam account switcher, Epic Online Services bypass, EOS SDK. dll, -nobattleye, -scOfflineMode, launch options, account manager, local backup, source code GitHub, onajlikezz, open source tool.</p>
+                </a>
+                <a href="/repo/Nightmare-Eclipse/MiniPlasma/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nightmare-Eclipse/MiniPlasma</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">CVE-2020-17103 supposedly still works </p>
+                </a>
+                <a href="/repo/cdanielc293/Jenny-Mod-All-Versions/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cdanielc293/Jenny-Mod-All-Versions</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Jenny Mod: Minecraft 1.12.2 Java download, Bedrock addon, Pocket Edition PE mcpack, Android APK. SchnuriTV original, Ellie companion, Slime Girl. Forge loader setup, Fabric port, custom animations, interactive skins. Installation guide, dependency files, .jar download, crash fix, portable.</p>
+                </a>
+                <a href="/repo/thongthaibm/Lossless-Scaling-LSFG/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thongthaibm/Lossless-Scaling-LSFG</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lossless Scaling github steam android: LSFG 3 frame generation steam, uncap FPS low end PC, AMD FSR NIS scaling, cursor lag fix. Double FPS laptop guide, windowed to borderless fullscreen, ghosting artifact solution, capture API DXGI GDI, half refresh rate VSync. Crack free bypass, anime4k setup, steam version latest release, latency reduction</p>
+                </a>
+                <a href="/repo/AbhishekK130804/Claude-Mythos-AI-Anthropic-App/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AbhishekK130804/Claude-Mythos-AI-Anthropic-App</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude pro free Mythos design Opus Cowork  Sonnet AI Anthropic App: download free PC android apk iOS, Anthropic Claude API key setup, Claude roleplay mythos client, SillyTavern Claude prompt formatting, custom system prompt jailbreak, Mythos AI creative writing app, Claude 3.5 Sonnet Opus API cost, open source LLM frontend, Claude reverse proxy </p>
+                </a>
+                <a href="/repo/haiddrrs/Steam-Tools/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">haiddrrs/Steam-Tools</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lua Steam Tools: SteamTools download free PC latest version, lua manifest generator github, steamtools safe to use account ban risk, BeyondDimension SteamTools source code, unlock free steam games dlc unlocker, watt toolkit alternative, steamtools exe local ticket bypass, lua tools manifest downloader, st-setup virus total malware scan, steamtools</p>
+                </a>
+                <a href="/repo/uktrash/LSFG-Desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">uktrash/LSFG-Desktop</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lossless Scaling github steam reddit LSFG 3 frame generation  v3.22, uncap FPS low end PC, AMD FSR NIS scaling, cursor lag fix. Double FPS laptop guide, windowed to borderless fullscreen, ghosting artifact solution, capture API DXGI GDI, half refresh rate VSync. anime4k ,  version , latency reduction, lsfg</p>
+                </a>
+                <a href="/repo/ZettPW/KMSTools/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ZettPW/KMSTools</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">windows tool, office 2026 perpetual license command, net download, digital entitlement permanent custom host </p>
+                </a>
+                <a href="/repo/KNG7-P/Se7en-Pro/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KNG7-P/Se7en-Pro</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/LUPUL64348/NTE-cheat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LUPUL64348/NTE-cheat</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">nte Neverness To Everness cheat download pc auto fish ray tracing bot teleport esp speedhack  macro script unlocker config windows 11</p>
+                </a>
+                <a href="/repo/aayan555/DS4Windows/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aayan555/DS4Windows</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">ds4windows ps4 ps5 download pc windows 11 xbox controller mapper forza horizon 6 dualshock 4 dualsense ps5 ps4 xbox 360 emulation bluetooth low latency inputmapper profile config driver vigem ryochan7 free</p>
+                </a>
+                <a href="/repo/Qwilxy/paralives-release/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Qwilxy/paralives-release</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">paralives release date early access steam download pc windows 11 gameplay trailer paramaker life simulation sims alternative free updates system requirements character creator build mode </p>
+                </a>
+                <a href="/repo/BlueSharks-apps/Gemini-app-windows/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">BlueSharks-apps/Gemini-app-windows</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">chatgpt google gemini pro ai flash 3.5 app windows  download pc google ai desktop client windows 11 10 official application free exe install shortcut workspace chat assistant</p>
+                </a>
+                <a href="/repo/mrgummy007/Yoshi-pc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mrgummy007/Yoshi-pc</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">yoshi and the mysterious book free pc review switch 2 download gameplay walkthrough ryujinx yuzu emulator installation</p>
+                </a>
+                <a href="/repo/AresLeVrai/celestial-launcher-releases/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AresLeVrai/celestial-launcher-releases</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">celestial launcher releases league of legends  download custom skins mod manager lol client windows 11 config profile</p>
+                </a>
+                <a href="/repo/RayceAnderson/tomodachi-pc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">RayceAnderson/tomodachi-pc</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">tomodachi life pc living  the dream windows  free patch notes update ryujinx emulator rom nsp xci mii creator life simulator 60fps mod graphics config save file setup guide fix crash</p>
+                </a>
+                <a href="/repo/anjelisembiring651624/Lossless-Scaling-Util-V2.0/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">anjelisembiring651624/Lossless-Scaling-Util-V2.0</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A standalone utility to configure, optimize, and unlock lossless frame generation and scaling features for any 3D application or game.</p>
+                </a>
+                <a href="/repo/Biplobsarker/Umbrella-HWID/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Biplobsarker/Umbrella-HWID</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">hwid spoofer bypass pc , valorant vanguard ban fix, apex legends eac spoof, fivem cfx re unban tool, battleye registry cleaner. motherboard serial changer, mac address modifier, disk drive volume id clone, bios serial flash utility, permanent clean log files, windows 11 tpm bypass github, portable zip release, kernel driver level hook</p>
+                </a>
+                <a href="/repo/osulazerdownload/osulazer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">osulazerdownload/osulazer</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">osu mania download skin lazer map open source rhythm game windows 11 macos linux android ios mobile default client latest version 2026 download beatmaps skins custom rulesets multiplayer free</p>
+                </a>
+                <a href="/repo/OldenEraTemplateGenerator/Olden-Era-Template-Generator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OldenEraTemplateGenerator/Olden-Era-Template-Generator</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">olden era template generator github Download heroes of might and magic homm random map rmg json custom map editor templates utility tool windows 11 latest version free preview zone layout multiplayer</p>
+                </a>
+                <a href="/repo/brulagi731069/Warzone-2026-DMA-Version/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">brulagi731069/Warzone-2026-DMA-Version</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">Professional performance optimization, telemetry overlays, and tactical awareness framework for competitive Warzone environments in 2026.</p>
+                </a>
+                <a href="/repo/matildagrahamgraham5131/FN-Panel-D-M-A-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">matildagrahamgraham5131/FN-Panel-D-M-A-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A foundational toolkit and documentation base for analyzing game client behavior, enhancing security, and developing fair-play countermeasures.</p>
+                </a>
+                <a href="/repo/harrietteehisqu7759383/kms-pico-latest-april-2026/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">harrietteehisqu7759383/kms-pico-latest-april-2026</span>
+                        <span class="mrc-lang">C# <i class="fas fa-circle mrc-lang-dot lang-cs"></i></span>
+                    </div>
+                    <p class="mrc-desc">A secure, educational toolkit for understanding KMS activation, designed for lab environments.</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/c#/0/" class="pagination-btn disabled">← Previous</a>
+                        <span class="pagination-info">Page 1 of 3</span>
+                        <a href="/language/c#/2/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
