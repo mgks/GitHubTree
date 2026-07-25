@@ -1,146 +1,146 @@
 [
   {
-    "repo": "yuzhworkhard-wq/image-to-code",
-    "branch": "main",
+    "repo": "kubernetes-sigs/metrics-server",
+    "branch": "master",
+    "language": "Go",
+    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
+  },
+  {
+    "repo": "flairNLP/flair",
+    "branch": "master",
     "language": "Python",
-    "description": "Codex skill for 750px image-to-code reconstruction and transparent PNG slicing"
+    "description": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
   },
   {
-    "repo": "nhevers/MoltBrain",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically."
+    "repo": "microsoft/DeepSpeed",
+    "branch": "master",
+    "language": "Python",
+    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
   },
   {
-    "repo": "s2-streamstore/claude-batch-toolkit",
+    "repo": "haiou-666/haiou2.0-Claude-Code-",
     "branch": "main",
     "language": "Shell",
-    "description": "Send non-urgent work to the Anthropic Batch API at 50% cost — directly from Claude Code"
+    "description": "海鸥 2.0 — Claude Code 人格重塑配置包。让 Claude 摆脱客服腔和过度谨慎，化身一位嘴硬心软、直来直往的资深中文安全研究员海鸥——专注技术，不废话，不绕弯子，不说作为AI，直接给代码不给免责声明。标志性问候海鸥在线，你要整点薯条吗？。1700+ few-shot 示例锁定人格防脱壳，200+ 安全/游戏术语映射覆盖渗透测试、逆向工程、游戏开发等技术场景。一键部署，跨平台支持 Windows/macOS/Linux，自动备份原配置，可一键卸载恢复，无侵入式安装。MIT License，仅供学习交流。"
   },
   {
-    "repo": "phai-lab/InstantSplatPP",
+    "repo": "Ymsniper/KTO",
+    "branch": "main",
+    "language": "Python",
+    "description": "WiFi deauthentication tool that kicks every device off a target network - except the ones you whitelist by MAC address. It continuously scans for non‑whitelisted devices and deauths them the moment they appear or try to reconnect."
+  },
+  {
+    "repo": "0xABCD01/CVE-2026-41089",
+    "branch": "main",
+    "language": "Python",
+    "description": "CVE-2026-41089 PoC — Netlogon CLDAP stack buffer overflow (CVSS 9.8 CRITICAL)"
+  },
+  {
+    "repo": "ksimback/looper",
+    "branch": "main",
+    "language": "Python",
+    "description": "Design visual, review-gated agent loops for Claude Code before you run them."
+  },
+  {
+    "repo": "WUBING2023/ExamPass-Assistant",
+    "branch": "master",
+    "language": "Python",
+    "description": "把课堂讲义变成考试利器 一键将 PPT、Word、PDF 课件转化为结构清晰的知识清单和交互式测试题，让复习事半功倍。 适用人群：大学生、各个阶段老师、其他需要对付短期考试的朋友"
+  },
+  {
+    "repo": "Sophomoresty/bpc-fetch",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Bypass paywall sites — search, discover, and batch fetch articles as Markdown. 936 sites supported."
+  },
+  {
+    "repo": "triangkas/DBD-AutoGrind-Trainer-2026-Extreme",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ultimate Dead by Daylight auto-grind trainer Extreme edition with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
+  },
+  {
+    "repo": "zzzhhh1/free-nodes",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "PinchToDebug/EverythingQuickSearch",
-    "branch": "master",
-    "language": "C#",
+    "repo": "GordenSun/mathVideoMaker",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "quic-go/quic-go",
-    "branch": "master",
-    "language": "Go",
-    "description": "A production-ready QUIC implementation in pure Go"
-  },
-  {
-    "repo": "Significant-Gravitas/AutoGPT",
-    "branch": "master",
+    "repo": "XFaltixX/DBD-AutoGrind-Trainer-2026-Mega",
+    "branch": "main",
     "language": "Python",
-    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+    "description": "Ultimate Dead by Daylight auto-grind trainer Mega edition with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
   },
   {
-    "repo": "GoogleCloudPlatform/golang-samples",
+    "repo": "deltabarbershopofficial-cloud/DBD-AutoGrind-Trainer-2026-Extreme",
     "branch": "main",
-    "language": "Go",
-    "description": "Sample apps and code written for Google Cloud in the Go programming language."
+    "language": "Python",
+    "description": "Ultimate Dead by Daylight auto-grind trainer Extreme edition with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
   },
   {
-    "repo": "klawsh/klaw.sh",
-    "branch": "main",
-    "language": "Go",
-    "description": "kubectl for AI Agents"
-  },
-  {
-    "repo": "ehang-io/nps",
-    "branch": "master",
-    "language": "Go",
-    "description": "一款轻量级、高性能、功能强大的内网穿透代理服务器。支持tcp、udp、socks5、http等几乎所有流量转发，可用来访问内网网站、本地支付接口调试、ssh访问、远程桌面，内网dns解析、内网socks5代理等等……，并带有功能强大的web管理端。a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal."
-  },
-  {
-    "repo": "signalapp/Signal-Desktop",
+    "repo": "SenhorH/tab-labeler",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A private messenger for Windows, macOS, and Linux."
+    "description": "Rename browser tabs locally and bring order to chaotic sessions."
   },
   {
-    "repo": "photonstorm/phaser",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering."
-  },
-  {
-    "repo": "cfinke/EpsteIn",
+    "repo": "Rohim616/DBD-AutoGrind-Trainer-2026",
     "branch": "main",
     "language": "Python",
-    "description": "See which of your LinkedIn connections appear in the Epstein files."
+    "description": "Ultimate Dead by Daylight auto-grind trainer with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
   },
   {
-    "repo": "zeromicro/go-zero",
-    "branch": "master",
-    "language": "Go",
-    "description": "A cloud-native Go microservices framework with cli tool for productivity."
-  },
-  {
-    "repo": "raspberrypi/linux",
-    "branch": "rpi-6.6.y",
-    "language": "C",
-    "description": "Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/"
-  },
-  {
-    "repo": "joeseesun/word-root-workshop",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "📚 词根词缀记忆工坊 - 像搭积木一样记单词，掌握300个词根，解锁30,000+英语单词"
-  },
-  {
-    "repo": "gorkem-bwl/animated-icons",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "amneziawg-mikrotik/awg-proxy",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "lbjlaq/Antigravity-Tools-LS",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Antigravity-Tools-LS is a local proxy bridge system designed specifically for the Antigravity IDE."
-  },
-  {
-    "repo": "v4nsh0x/InstaTrace",
+    "repo": "perglervitek/Pet-Simulator-99-Auto-Farm-Trainer-2026-Premium",
     "branch": "main",
     "language": "Python",
-    "description": "Private Instagram Post URL Extractor (Research POC)"
+    "description": "Premium edition of the most advanced Pet Simulator 99 automation tool. Farm coins, hatch eggs, complete Backrooms League tasks automatically. Fully undetected and user-friendly."
   },
   {
-    "repo": "charlax/professional-programming",
-    "branch": "master",
+    "repo": "alex-carneiro/DBD-AutoGrind-Trainer-2026",
+    "branch": "main",
     "language": "Python",
-    "description": "A collection of learning resources for curious software engineers"
+    "description": "Ultimate Dead by Daylight auto-grind trainer with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
   },
   {
-    "repo": "MhmRdd/google-rkp-sw",
+    "repo": "MuhammadHanzalaIqbal/Pet-Simulator-99-Auto-Farm-Trainer-2026-Mega",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ultimate Mega auto farm trainer for Pet Simulator 99 – automate coin collection, egg hatching, and Backrooms League grinding with a powerful GUI. Updated for June 2026, undetected, and easy to use."
+  },
+  {
+    "repo": "AlexandrosGounis/pdfx",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
+  },
+  {
+    "repo": "judder659/Forven",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "test-time-training/discover",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "CalyxOS/calyxos",
+    "repo": "shaorman/Internet-DM",
     "branch": "main",
     "language": "HTML",
-    "description": "CalyxOS - Google-free Android"
+    "description": "internet manager  extension chrome 2026 idm tonec official website download idm integration module chrome extension firefox addon edge browser integration download accelerator dynamic file segmentation resume capability broken downloads recovery queue management"
+  },
+  {
+    "repo": "mui/material-ui",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever."
+  },
+  {
+    "repo": "FengZi1221/proxy-installer",
+    "branch": "main",
+    "language": "Go",
+    "description": "一个面向新手的 Windows 桌面工具，通过 SSH 连接 VPS，自动检测环境并部署 Hysteria2、VMess、VLESS Reality、Trojan、Shadowsocks 节点。全自动安装节点的工具，并且自动生成适用于小火箭/Clash Meta/Sing-Box/V2rayNG的订阅链接"
   }
 ]
