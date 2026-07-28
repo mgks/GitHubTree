@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import { createRequire } from 'module';
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 
 const require = createRequire(import.meta.url);
 const pkg = require('../package.json');
@@ -77,7 +77,7 @@ const cacheDir = path.join(os.homedir(), '.gh-tree', 'cache');
 if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
 
 function getCache(repo, branch) {
-    const file = path.join(cacheDir, `${repo.replace(/\//g, '_')}_${branch}.json`);
+    const file = path.join(cacheDir, `${repo.replace(/[^a-zA-Z0-9._-]/g, '_')}_${branch.replace(/[^a-zA-Z0-9._-]/g, '_')}.json`);
     try {
         const stats = fs.statSync(file);
         const hours24 = 24 * 60 * 60 * 1000;
@@ -87,7 +87,7 @@ function getCache(repo, branch) {
 }
 
 function saveCache(repo, branch, data) {
-    const file = path.join(cacheDir, `${repo.replace(/\//g, '_')}_${branch}.json`);
+    const file = path.join(cacheDir, `${repo.replace(/[^a-zA-Z0-9._-]/g, '_')}_${branch.replace(/[^a-zA-Z0-9._-]/g, '_')}.json`);
     fs.writeFileSync(file, JSON.stringify(data));
 }
 
@@ -159,13 +159,13 @@ async function run() {
 }
 
 function copyToClipboard(text) {
-    // Zero-dependency clipboard logic
+    // Zero-dependency clipboard logic (use execFileSync to avoid shell injection)
     if (process.platform === 'darwin') {
-        execSync('pbcopy', { input: text });
+        execFileSync('pbcopy', [], { input: text });
     } else if (process.platform === 'win32') {
-        execSync('clip', { input: text });
+        execFileSync('clip', [], { input: text });
     } else {
-        execSync('xclip -selection clipboard', { input: text });
+        execFileSync('xclip', ['-selection', 'clipboard'], { input: text });
     }
 }
 
