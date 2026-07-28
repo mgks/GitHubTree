@@ -1,146 +1,146 @@
 [
   {
-    "repo": "google/sentencepiece",
+    "repo": "wandb/wandb",
+    "branch": "main",
+    "language": "Python",
+    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
+  },
+  {
+    "repo": "asz798838958/FrciblyK12",
+    "branch": "main",
+    "language": "Python",
+    "description": "多线程全自动注册free 强上K12空间"
+  },
+  {
+    "repo": "rohunvora/x-research-skill",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "X/Twitter research skill for Claude Code and OpenClaw. Agentic search, thread following, deep-dives, sourced briefings."
+  },
+  {
+    "repo": "postrv/forgemax",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
+  },
+  {
+    "repo": "dappuniversity/starter_kit",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Start building full stack dApps fast with this starter kit!"
+  },
+  {
+    "repo": "huggingface/datasets",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
+  },
+  {
+    "repo": "brendanhogan/loophole",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "AThevon/TokenEater",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
+  },
+  {
+    "repo": "deepmind/mujoco",
+    "branch": "main",
+    "language": "C++",
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator."
+  },
+  {
+    "repo": "yangdongchao/UniAudio2",
+    "branch": "main",
+    "language": "Python",
+    "description": "UniAudio 2.0: An audio fundation model for text, speech, sound, and music"
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "language": "Python",
+    "description": "A fast multimodal LLM for real-time voice"
+  },
+  {
+    "repo": "nextlevelbuilder/goclaw",
+    "branch": "main",
+    "language": "Go",
+    "description": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels."
+  },
+  {
+    "repo": "tensorflow/tensorflow",
     "branch": "master",
     "language": "C++",
-    "description": "Unsupervised text tokenizer for Neural Network-based text generation."
+    "description": "An Open Source Machine Learning Framework for Everyone"
   },
   {
-    "repo": "hanxiao/claudecode-telegram",
+    "repo": "cisco-ai-defense/skill-scanner",
     "branch": "main",
     "language": "Python",
-    "description": "Telegram bridge for Claude Code"
+    "description": "Security Scanner for Agent Skills"
   },
   {
-    "repo": "nader0913/ocpp-rag",
+    "repo": "RaidOwl/homelab-hub",
     "branch": "main",
-    "language": "Python",
-    "description": "MCP server with RAG knowledge base for OCPP 1.6, OCPP 2.0.1, and EV charging standards"
+    "language": "Svelte",
+    "description": ""
   },
   {
-    "repo": "balancer/balancer-v2-monorepo",
+    "repo": "hashicorp/terraform",
+    "branch": "main",
+    "language": "Go",
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
+  },
+  {
+    "repo": "Veirt/weathr",
+    "branch": "main",
+    "language": "Rust",
+    "description": "a terminal weather app with ascii animation"
+  },
+  {
+    "repo": "ReactiveX/RxAndroid",
+    "branch": "3.x",
+    "language": "Java",
+    "description": "RxJava bindings for Android"
+  },
+  {
+    "repo": "Automattic/mongoose",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Balancer V2 Monorepo"
-  },
-  {
-    "repo": "adysec/CForum",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CForum — A modern, serverless forum built on Cloudflare Workers + Pages + D1 + R2, featuring posts, threaded comments, image uploads, 2FA authentication, and a hybrid deployment architecture optimized through smart edge routing."
-  },
-  {
-    "repo": "google/zx",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "A tool for writing better scripts"
+    "description": "MongoDB object modeling designed to work in an asynchronous environment."
   },
   {
-    "repo": "wader/fq",
-    "branch": "master",
-    "language": "Go",
-    "description": "jq for binary formats - tool, language and decoders for working with binary and text formats"
-  },
-  {
-    "repo": "ahmetb/kubectx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Faster way to switch between clusters and namespaces in kubectl"
-  },
-  {
-    "repo": "actions/runner-images",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "GitHub Actions runner images"
-  },
-  {
-    "repo": "chroma-core/chroma",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Open-source search and retrieval database for AI applications."
-  },
-  {
-    "repo": "suborbital/sat",
-    "branch": "main",
-    "language": "Go",
-    "description": "Tiny & fast WebAssembly edge compute server"
-  },
-  {
-    "repo": "VictoriaMetrics/VictoriaMetrics",
-    "branch": "master",
-    "language": "Go",
-    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
-  },
-  {
-    "repo": "zaproxy/zaproxy",
-    "branch": "main",
-    "language": "Java",
-    "description": "The ZAP by Checkmarx Core project"
-  },
-  {
-    "repo": "quic-go/quic-go",
-    "branch": "master",
-    "language": "Go",
-    "description": "A production-ready QUIC implementation in pure Go"
-  },
-  {
-    "repo": "sigstore/cosign",
-    "branch": "main",
-    "language": "Go",
-    "description": "Code signing and transparency for containers and binaries"
-  },
-  {
-    "repo": "confluentinc/kafka-rest",
-    "branch": "master",
-    "language": "Java",
-    "description": "Confluent REST Proxy for Kafka"
-  },
-  {
-    "repo": "ogham/exa",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A modern replacement for ‘ls’."
-  },
-  {
-    "repo": "antonmedv/fx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Terminal JSON viewer & processor"
-  },
-  {
-    "repo": "OWASP/CheatSheetSeries",
+    "repo": "ray-project/ray",
     "branch": "master",
     "language": "Python",
-    "description": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
+    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
   },
   {
-    "repo": "go-gitea/gitea",
+    "repo": "homielab/giapha-os",
     "branch": "main",
-    "language": "Go",
-    "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD"
+    "language": "TypeScript",
+    "description": "Đây là mã nguồn mở cho ứng dụng quản lý gia phả dòng họ, cung cấp giao diện trực quan để xem sơ đồ phả hệ, quản lý thành viên, tìm kiếm và lọc danh sách thành viên."
   },
   {
-    "repo": "techwithtim/Flask-Web-App-Tutorial",
+    "repo": "freeCodeCamp/freeCodeCamp",
     "branch": "main",
-    "language": "HTML",
-    "description": "Code for the note storing flask web app made during a YouTube video."
+    "language": "TypeScript",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
   },
   {
-    "repo": "golang-migrate/migrate",
+    "repo": "vuejs/awesome-vue",
+    "branch": "master",
+    "language": "Other",
+    "description": "🎉 A curated list of awesome things related to Vue.js"
+  },
+  {
+    "repo": "argoproj/argo-events",
     "branch": "master",
     "language": "Go",
-    "description": "Database migrations. CLI and Golang library."
-  },
-  {
-    "repo": "thangchung/awesome-dotnet-core",
-    "branch": "master",
-    "language": "C#",
-    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
-  },
-  {
-    "repo": "KotlinBy/awesome-kotlin",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
+    "description": "Event-driven Automation Framework for Kubernetes"
   }
 ]
