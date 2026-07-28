@@ -1,146 +1,146 @@
 [
   {
-    "repo": "XyhTender/qq-farm-automation-bot",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "QQ农场全自动脚本"
+    "repo": "google/sentencepiece",
+    "branch": "master",
+    "language": "C++",
+    "description": "Unsupervised text tokenizer for Neural Network-based text generation."
   },
   {
-    "repo": "shorwood/slopc",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A proc macro that uses an hallucination machine to write your function bodies at compile time."
-  },
-  {
-    "repo": "AgentSeal/codeburn",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code and Codex cost observability."
-  },
-  {
-    "repo": "v0id4real/Void-Tools",
+    "repo": "hanxiao/claudecode-telegram",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "Telegram bridge for Claude Code"
   },
   {
-    "repo": "SubBoost/subboost",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Clash/Mihomo 订阅转换、增强和管理工具。通过 UI 可视化，一键实现链式代理、精确分流、防 DNS 泄露和多订阅聚合等高级功能。"
-  },
-  {
-    "repo": "mattpocock/dictionary-of-ai-coding",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI coding jargon, explained in plain English."
-  },
-  {
-    "repo": "alefinvest/polymarket-arbitrage-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot"
-  },
-  {
-    "repo": "deepseek-ai/TileKernels",
+    "repo": "nader0913/ocpp-rag",
     "branch": "main",
     "language": "Python",
-    "description": "A kernel library written in tilelang"
+    "description": "MCP server with RAG knowledge base for OCPP 1.6, OCPP 2.0.1, and EV charging standards"
   },
   {
-    "repo": "ProjectBarks/gopher-code",
-    "branch": "main",
-    "language": "Go",
-    "description": "Claude Code, rewritten from scratch in Go. Zero Node.js. Zero Electron. One binary."
-  },
-  {
-    "repo": "openclaw/clawsweeper",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week."
-  },
-  {
-    "repo": "stainlu/hermes-labyrinth",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "samyns/Unit-3",
-    "branch": "main",
-    "language": "QML",
-    "description": "Hyprland + Quickshell + Waybar rice for Arch Linux, NieR:Automata themed"
-  },
-  {
-    "repo": "orchetron/storm",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A compositor-based terminal UI framework. Fast. Layered. Unstoppable."
-  },
-  {
-    "repo": "bcefghj/ai-agent-interview-guide",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI Agent 面试全攻略：从零到Offer，包含200+面试题、企业级项目(Python/Java/Go)、简历模板、STAR面试稿、哆啦A梦漫画图解"
-  },
-  {
-    "repo": "YeQing17-2026/OmniAgent",
-    "branch": "main",
-    "language": "Python",
-    "description": "An agent capable of self-evolving and dynamically hardening security"
-  },
-  {
-    "repo": "GumbyEnder/hermes-kanban",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A dedicated Obsidian plugin + Hermes skill that turns Hermes into an autonomous project executor using Kanban boards inside your Obsidian vault."
-  },
-  {
-    "repo": "ywnd1144/Gopay_plus_automatic",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "keanucz/detour",
+    "repo": "balancer/balancer-v2-monorepo",
     "branch": "master",
     "language": "TypeScript",
-    "description": "On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026"
+    "description": "Balancer V2 Monorepo"
   },
   {
-    "repo": "VonHoltenCodes/SlowBooks-Pro-2026",
+    "repo": "adysec/CForum",
     "branch": "main",
-    "language": "Python",
-    "description": "Personal bookkeeping app - a QuickBooks 2003 Pro replacement, decompiled from the ashes of QBW32.EXE. Free for personal and enterprise use."
+    "language": "TypeScript",
+    "description": "CForum — A modern, serverless forum built on Cloudflare Workers + Pages + D1 + R2, featuring posts, threaded comments, image uploads, 2FA authentication, and a hybrid deployment architecture optimized through smart edge routing."
   },
   {
-    "repo": "TencentYoutuResearch/T2I-L2P",
+    "repo": "google/zx",
     "branch": "main",
-    "language": "Python",
-    "description": "Code for L2P: Unlocking Latent Potential for Pixel Generation"
+    "language": "JavaScript",
+    "description": "A tool for writing better scripts"
   },
   {
-    "repo": "heyderekj/dinky",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Dinky makes files smaller."
+    "repo": "wader/fq",
+    "branch": "master",
+    "language": "Go",
+    "description": "jq for binary formats - tool, language and decoders for working with binary and text formats"
   },
   {
-    "repo": "0xdeadbeefnetwork/ssh-keysign-pwn",
-    "branch": "main",
-    "language": "C",
-    "description": "Steal SSH host private keys and /etc/shadow via the ptrace_may_access mm-NULL bypass + pidfd_getfd. Pre-31e62c2ebbfd kernels."
+    "repo": "ahmetb/kubectx",
+    "branch": "master",
+    "language": "Go",
+    "description": "Faster way to switch between clusters and namespaces in kubectl"
   },
   {
-    "repo": "phioranex/openclaw-docker",
+    "repo": "actions/runner-images",
     "branch": "main",
     "language": "PowerShell",
-    "description": ""
+    "description": "GitHub Actions runner images"
   },
   {
-    "repo": "GHOST-227/Auto-2026-Desktop",
+    "repo": "chroma-core/chroma",
     "branch": "main",
-    "language": "C++",
-    "description": "Resource is a professional suite for advanced 2D/3D drafting. It features optimized toolsets, AI-assisted design, and high-performance libraries. Designed for engineers and architects, it ensures precision and seamless workflow integration for modern industrial projects in 2026."
+    "language": "Rust",
+    "description": "Open-source search and retrieval database for AI applications."
+  },
+  {
+    "repo": "suborbital/sat",
+    "branch": "main",
+    "language": "Go",
+    "description": "Tiny & fast WebAssembly edge compute server"
+  },
+  {
+    "repo": "VictoriaMetrics/VictoriaMetrics",
+    "branch": "master",
+    "language": "Go",
+    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
+  },
+  {
+    "repo": "zaproxy/zaproxy",
+    "branch": "main",
+    "language": "Java",
+    "description": "The ZAP by Checkmarx Core project"
+  },
+  {
+    "repo": "quic-go/quic-go",
+    "branch": "master",
+    "language": "Go",
+    "description": "A production-ready QUIC implementation in pure Go"
+  },
+  {
+    "repo": "sigstore/cosign",
+    "branch": "main",
+    "language": "Go",
+    "description": "Code signing and transparency for containers and binaries"
+  },
+  {
+    "repo": "confluentinc/kafka-rest",
+    "branch": "master",
+    "language": "Java",
+    "description": "Confluent REST Proxy for Kafka"
+  },
+  {
+    "repo": "ogham/exa",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A modern replacement for ‘ls’."
+  },
+  {
+    "repo": "antonmedv/fx",
+    "branch": "master",
+    "language": "Go",
+    "description": "Terminal JSON viewer & processor"
+  },
+  {
+    "repo": "OWASP/CheatSheetSeries",
+    "branch": "master",
+    "language": "Python",
+    "description": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
+  },
+  {
+    "repo": "go-gitea/gitea",
+    "branch": "main",
+    "language": "Go",
+    "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD"
+  },
+  {
+    "repo": "techwithtim/Flask-Web-App-Tutorial",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Code for the note storing flask web app made during a YouTube video."
+  },
+  {
+    "repo": "golang-migrate/migrate",
+    "branch": "master",
+    "language": "Go",
+    "description": "Database migrations. CLI and Golang library."
+  },
+  {
+    "repo": "thangchung/awesome-dotnet-core",
+    "branch": "master",
+    "language": "C#",
+    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
+  },
+  {
+    "repo": "KotlinBy/awesome-kotlin",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
   }
 ]
