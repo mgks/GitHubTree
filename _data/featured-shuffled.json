@@ -1,146 +1,146 @@
 [
   {
-    "repo": "rabbitmq/rabbitmq-server",
+    "repo": "claude-code-best/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code 可运行版; Typescript 类型全修复;企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
+  },
+  {
+    "repo": "pallets/flask",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Python micro framework for building web applications."
+  },
+  {
+    "repo": "c0deJedi/nbd-vram",
+    "branch": "main",
+    "language": "C",
+    "description": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there with 8GB of VRAM and you're getting swapped to SSD, this puts that VRAM to work"
+  },
+  {
+    "repo": "cornel-pe/online-casino-platform-backend",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This backend powers a modern crypto-enabled betting platform. It is designed for fast gameplay, real-time community, and serious risk control – without sacrificing developer friendliness."
+  },
+  {
+    "repo": "openai/codex-plugin-cc",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
+    "description": "Use Codex from Claude Code to review code or delegate tasks."
   },
   {
-    "repo": "safishamsi/graphify",
-    "branch": "v3",
-    "language": "Python",
-    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw). Turn any folder of code, docs, papers, or images into a queryable knowledge graph"
-  },
-  {
-    "repo": "pmndrs/jotai",
+    "repo": "graphql/graphql-js",
     "branch": "main",
     "language": "TypeScript",
-    "description": "👻 Primitive and flexible state management for React"
+    "description": "A reference implementation of GraphQL for JavaScript"
   },
   {
-    "repo": "avalontm/openpos",
+    "repo": "Garume/Manifold",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Sistema de punto de venta (POS) basado en terminal (TUI) de código abierto. Construido con Bun, Ink (React para terminal), Zustand y Drizzle ORM."
-  },
-  {
-    "repo": "liuup/claude-code-analysis",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The analysis of Claude Code"
-  },
-  {
-    "repo": "ethereumjs/ethereumjs-monorepo",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
-  },
-  {
-    "repo": "shadowsocks/shadowsocks-windows",
-    "branch": "master",
     "language": "C#",
-    "description": "A C# port of shadowsocks"
+    "description": "Operation-first .NET foundation for generating fast CLI and MCP surfaces from a single definition."
   },
   {
-    "repo": "pynecone-io/pynecone",
-    "branch": "main",
-    "language": "Python",
-    "description": "🕸️ Web apps in pure Python 🐍"
-  },
-  {
-    "repo": "pierceboggan/primer",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Get your repo ready for AI."
-  },
-  {
-    "repo": "qdrant/qdrant",
+    "repo": "zsh-users/zsh-syntax-highlighting",
     "branch": "master",
-    "language": "Rust",
-    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+    "language": "Shell",
+    "description": "Fish shell like syntax highlighting for Zsh."
   },
   {
-    "repo": "react-navigation/react-navigation",
+    "repo": "cncf/toc",
+    "branch": "main",
+    "language": "Go",
+    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
+  },
+  {
+    "repo": "codeaashu/claude-code",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Routing and navigation for React Native and Web apps"
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands."
   },
   {
-    "repo": "onnx/onnx",
+    "repo": "shipany-ai/open-agent-sdk",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Agent-SDK without CLI dependencies, as an alternative to claude-agent-sdk, completely open source"
+  },
+  {
+    "repo": "mshumer/unslop",
     "branch": "main",
     "language": "Python",
-    "description": "Open standard for machine learning interoperability"
-  },
-  {
-    "repo": "rails/rails",
-    "branch": "main",
-    "language": "Ruby",
-    "description": "Ruby on Rails"
-  },
-  {
-    "repo": "Johnixr/claude-code-wechat-channel",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code Channel plugin for WeChat — bridge WeChat messages into Claude Code sessions via the official ClawBot ilink API"
-  },
-  {
-    "repo": "CrewSX/pumpfun-bubblemap-bypass-bundler",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "pumpfun bubblemap bypass bundler is Launch tokens on Pump.fun with zero Bubblemap trace. Zero bundle detection. Maximum stealth."
-  },
-  {
-    "repo": "vikingmute/better-wechatpay",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "现代化的微信支付 Node.js SDK - ESM、TypeScript、全支付方式支持"
-  },
-  {
-    "repo": "sheeki03/tirith",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Your browser catches homograph attacks. Your terminal doesn't. Tirith guards the gate — intercepts suspicious URLs, ANSI injection, and pipe-to-shell attacks before they execute."
-  },
-  {
-    "repo": "microsoft/vscode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Visual Studio Code"
-  },
-  {
-    "repo": "devanshulakhani/val",
-    "branch": "main",
-    "language": "HTML",
     "description": ""
   },
   {
-    "repo": "vuejs/vue",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+    "repo": "BurntSushi/ripgrep",
+    "branch": "master",
+    "language": "Rust",
+    "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore"
   },
   {
-    "repo": "herrbischoff/awesome-macos-command-line",
+    "repo": "ironsh/iron-sensor",
+    "branch": "main",
+    "language": "C",
+    "description": "An eBPF-based behavioral monitor for AI coding agents."
+  },
+  {
+    "repo": "mmazzarolo/react-native-modal-datetime-picker",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A React-Native datetime-picker for Android and iOS"
+  },
+  {
+    "repo": "LightTable/LightTable",
+    "branch": "master",
+    "language": "Clojure",
+    "description": "The Light Table IDE ⛺"
+  },
+  {
+    "repo": "go-pg/pg",
+    "branch": "master",
+    "language": "Go",
+    "description": "Golang ORM with focus on PostgreSQL features and performance"
+  },
+  {
+    "repo": "chrisryugj/kordoc",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "모두 파싱해버리겠다 — HWP/HWPX/PDF → Markdown | npm · CLI · MCP Server"
+  },
+  {
+    "repo": "software-mansion/react-native-reanimated",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "React Native's Animated library reimplemented"
+  },
+  {
+    "repo": "OpenRaiser/NanoResearch",
+    "branch": "main",
+    "language": "Python",
+    "description": "🦞+🔬: NanoResearch: The Autonomous AI Research Assistant"
+  },
+  {
+    "repo": "alaeelhariri/sqlite-python-app",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "gvisor/gvisor",
     "branch": "master",
     "language": "Other",
-    "description": "Use your macOS terminal shell to do awesome things."
+    "description": "Application Kernel for Containers."
   },
   {
-    "repo": "kellyclaudeai/openclaw-deck",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Multi-column chat interface for OpenClaw agents"
-  },
-  {
-    "repo": "atom/atom",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":atom: The hackable text editor"
-  },
-  {
-    "repo": "MhmRdd/google-rkp-sw",
+    "repo": "infraform/polymarket-arbitrage-trading-bot",
     "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "TypeScript",
+    "description": "polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot"
+  },
+  {
+    "repo": "chauncygu/collection-claude-code-source-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🔥 A collection of the newest Claude Code open source"
   }
 ]
