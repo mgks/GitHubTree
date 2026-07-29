@@ -1,81 +1,135 @@
 [
   {
-    "repo": "sums001/Windows-Copilot-API",
-    "branch": "master",
-    "language": "Python",
-    "description": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing."
-  },
-  {
-    "repo": "langchain-ai/langchainjs",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🦜🔗 Build context-aware reasoning applications"
-  },
-  {
-    "repo": "javaevolved/javaevolved.github.io",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Java Evolved. Your Code Can Evolve Too!"
-  },
-  {
-    "repo": "callstackincubator/agent-device",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI to control iOS and Android devices for AI agents"
-  },
-  {
-    "repo": "supermemoryai/openclaw-supermemory",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
-  },
-  {
-    "repo": "jnv/lists",
-    "branch": "master",
-    "language": "Other",
-    "description": "The definitive list of lists (of lists) curated on GitHub and elsewhere"
-  },
-  {
-    "repo": "skernelx/tavily-key-generator",
-    "branch": "main",
-    "language": "Python",
-    "description": "Auto batch register Tavily API Keys with pluggable email backends"
-  },
-  {
-    "repo": "openyak/desktop",
-    "branch": "main",
-    "language": "Python",
-    "description": "Yak is all you need"
-  },
-  {
-    "repo": "rustwasm/wasm-bindgen",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Facilitating high-level interactions between Wasm modules and JavaScript"
-  },
-  {
-    "repo": "viplismism/rlm-cli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI for Recursive Language Models (arXiv:2512.24601)"
-  },
-  {
-    "repo": "1186258278/OpenClawChineseTranslation",
-    "branch": "main",
-    "language": "Shell",
-    "description": "🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中文版 | Claude/ChatGPT LLM 接入 | WhatsApp/Telegram/Discord 多平台 | 每小时自动同步 | CLI + Dashboard 全中文 | 全流程搭建教程，以及排错指南！"
-  },
-  {
-    "repo": "simonw/showboat",
-    "branch": "main",
-    "language": "Go",
-    "description": "Create executable documents that demonstrate an agent's work"
-  },
-  {
-    "repo": "sweetalert2/sweetalert2",
+    "repo": "rabbitmq/rabbitmq-server",
     "branch": "main",
     "language": "JavaScript",
-    "description": "✨ A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies. 🇺🇦🇪🇺"
+    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
+  },
+  {
+    "repo": "safishamsi/graphify",
+    "branch": "v3",
+    "language": "Python",
+    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw). Turn any folder of code, docs, papers, or images into a queryable knowledge graph"
+  },
+  {
+    "repo": "pmndrs/jotai",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "👻 Primitive and flexible state management for React"
+  },
+  {
+    "repo": "avalontm/openpos",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Sistema de punto de venta (POS) basado en terminal (TUI) de código abierto. Construido con Bun, Ink (React para terminal), Zustand y Drizzle ORM."
+  },
+  {
+    "repo": "liuup/claude-code-analysis",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The analysis of Claude Code"
+  },
+  {
+    "repo": "ethereumjs/ethereumjs-monorepo",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
+  },
+  {
+    "repo": "shadowsocks/shadowsocks-windows",
+    "branch": "master",
+    "language": "C#",
+    "description": "A C# port of shadowsocks"
+  },
+  {
+    "repo": "pynecone-io/pynecone",
+    "branch": "main",
+    "language": "Python",
+    "description": "🕸️ Web apps in pure Python 🐍"
+  },
+  {
+    "repo": "pierceboggan/primer",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Get your repo ready for AI."
+  },
+  {
+    "repo": "qdrant/qdrant",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+  },
+  {
+    "repo": "react-navigation/react-navigation",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Routing and navigation for React Native and Web apps"
+  },
+  {
+    "repo": "onnx/onnx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open standard for machine learning interoperability"
+  },
+  {
+    "repo": "rails/rails",
+    "branch": "main",
+    "language": "Ruby",
+    "description": "Ruby on Rails"
+  },
+  {
+    "repo": "Johnixr/claude-code-wechat-channel",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code Channel plugin for WeChat — bridge WeChat messages into Claude Code sessions via the official ClawBot ilink API"
+  },
+  {
+    "repo": "CrewSX/pumpfun-bubblemap-bypass-bundler",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "pumpfun bubblemap bypass bundler is Launch tokens on Pump.fun with zero Bubblemap trace. Zero bundle detection. Maximum stealth."
+  },
+  {
+    "repo": "vikingmute/better-wechatpay",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "现代化的微信支付 Node.js SDK - ESM、TypeScript、全支付方式支持"
+  },
+  {
+    "repo": "sheeki03/tirith",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Your browser catches homograph attacks. Your terminal doesn't. Tirith guards the gate — intercepts suspicious URLs, ANSI injection, and pipe-to-shell attacks before they execute."
+  },
+  {
+    "repo": "microsoft/vscode",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Visual Studio Code"
+  },
+  {
+    "repo": "devanshulakhani/val",
+    "branch": "main",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "herrbischoff/awesome-macos-command-line",
+    "branch": "master",
+    "language": "Other",
+    "description": "Use your macOS terminal shell to do awesome things."
+  },
+  {
+    "repo": "kellyclaudeai/openclaw-deck",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Multi-column chat interface for OpenClaw agents"
   },
   {
     "repo": "atom/atom",
@@ -84,63 +138,9 @@
     "description": ":atom: The hackable text editor"
   },
   {
-    "repo": "viperrcrypto/Siftly",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
-  },
-  {
-    "repo": "Fixie-ai/Ultravox",
+    "repo": "MhmRdd/google-rkp-sw",
     "branch": "main",
     "language": "Python",
-    "description": "A fast multimodal LLM for real-time voice"
-  },
-  {
-    "repo": "YunjueTech/Yunjue-Agent",
-    "branch": "main",
-    "language": "Python",
-    "description": "Yunjue Agent: A Fully Reproducible, Zero-Start In-Situ Self-Evolving Agent System for Open-Ended Tasks"
-  },
-  {
-    "repo": "zkSync-Community-Hub/zksync-developers",
-    "branch": "main",
-    "language": "Other",
-    "description": "Discussions and Support for the ZKsync Developer Community."
-  },
-  {
-    "repo": "lens-protocol/lens-protocol",
-    "branch": "main",
-    "language": "Solidity",
-    "description": "The Lens Protocol"
-  },
-  {
-    "repo": "scikit-learn/scikit-learn",
-    "branch": "main",
-    "language": "Python",
-    "description": "scikit-learn: machine learning in Python"
-  },
-  {
-    "repo": "orange2ai/openclaw-killer",
-    "branch": "main",
-    "language": "Shell",
-    "description": "一键完美卸载 OpenClaw，让这只龙虾体面告别 🦞"
-  },
-  {
-    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
-    "branch": "main",
-    "language": "TeX",
-    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
-  },
-  {
-    "repo": "Willis404/Professional-Polymarket-Trading-Bots-Suite-AI-Powered-Arbitrage-Copy-Trading",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Polymarket Trading Bot, Polymarket Arbitrage Bot, Polymarket Copy Trading, Automated Polymarket Trading, Polymarket Bot Rust, Synth AI Trading, Bittensor Trading Bot, Polymarket Prediction Markets, Crypto Trading Bot, DeFi Trading Automation"
-  },
-  {
-    "repo": "cri-o/cri-o",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
+    "description": ""
   }
 ]
