@@ -1,135 +1,69 @@
 [
   {
-    "repo": "WebAssembly/wabt",
+    "repo": "kernelstub/Nox",
     "branch": "main",
-    "language": "C++",
-    "description": "The WebAssembly Binary Toolkit"
+    "language": "Go",
+    "description": "Modular Go framework for attack surface management, reconnaissance, and vulnerability scanning."
   },
   {
-    "repo": "dabberman456/coinbase-trading-api",
+    "repo": "logseq/logseq",
     "branch": "master",
+    "language": "Clojure",
+    "description": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://discuss.logseq.com/t/logseq-product-roadmap/34267"
+  },
+  {
+    "repo": "CrewSX/pumpfun-bubblemap-bypass-bundler",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "coinbase trading api of systematic EMA bot"
+    "description": "pumpfun bubblemap bypass bundler is Launch tokens on Pump.fun with zero Bubblemap trace. Zero bundle detection. Maximum stealth."
   },
   {
-    "repo": "blacksiders/SkillPointer",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "mit-pdos/xv6-public",
-    "branch": "master",
-    "language": "C",
-    "description": "xv6 OS"
-  },
-  {
-    "repo": "LeCoupa/awesome-cheatsheets",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "👩‍💻👨‍💻 Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file."
-  },
-  {
-    "repo": "kubernetes/kompose",
+    "repo": "grpc/grpc-go",
     "branch": "master",
     "language": "Go",
-    "description": "Convert Compose to Kubernetes"
+    "description": "The Go language implementation of gRPC. HTTP/2 based RPC"
   },
   {
-    "repo": "sdmg15/Best-websites-a-programmer-should-visit",
-    "branch": "master",
-    "language": "Other",
-    "description": ":link: Some useful websites for programmers."
-  },
-  {
-    "repo": "marshmallow-code/apispec",
-    "branch": "dev",
-    "language": "Python",
-    "description": "A pluggable API specification generator. Currently supports the OpenAPI Specification (f.k.a. the Swagger specification).."
-  },
-  {
-    "repo": "Dokhacgiakhoa/google-antigravity",
+    "repo": "Saganaki22/ComfyUI-OmniVoice-TTS",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "OmniVoice TTS nodes for ComfyUI - Zero-shot multilingual text-to-speech with voice cloning, voice design, and multi-speaker dialogue"
   },
   {
-    "repo": "sqlalchemy/sqlalchemy",
+    "repo": "ckckck/UltimateSearchSkill",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Dual-engine web search Skill for OpenClaw/Pi: Grok AI + Tavily + FireCrawl"
+  },
+  {
+    "repo": "ysharma3501/LavaSR",
     "branch": "main",
     "language": "Python",
-    "description": "The Database Toolkit for Python"
+    "description": "🌋LavaSR: Fast Speech restoration and enhancement"
   },
   {
-    "repo": "react-native-webview/react-native-webview",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "React Native Cross-Platform WebView"
-  },
-  {
-    "repo": "alibaba-damo-academy/RynnBrain",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "RynnBrain: Open Embodied Foundation Models"
-  },
-  {
-    "repo": "PenglongHuang/chinese-novelist-skill",
-    "branch": "master",
-    "language": "Python",
-    "description": "让 AI 为你写一部完整的中文小说 - AI 驱动的中文小说创作助手 - 超过20章的小说，几分钟全稿完成    Claude Code Skill：自动创作分章节中文小说，每章悬念钩子"
-  },
-  {
-    "repo": "tj/commander.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "node.js command-line interfaces made easy"
-  },
-  {
-    "repo": "facebook/stylex",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "StyleX is the styling system for ambitious user interfaces."
-  },
-  {
-    "repo": "mnemox-ai/idea-reality-mcp",
-    "branch": "main",
-    "language": "Python",
-    "description": "MCP server that reality-checks your AI project idea against GitHub, Hacker News, npm, PyPI & Product Hunt. Returns a 0-100 reality signal."
-  },
-  {
-    "repo": "wailsapp/wails",
-    "branch": "master",
-    "language": "Go",
-    "description": "Create beautiful applications using Go"
-  },
-  {
-    "repo": "serenity-bdd/serenity-core",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Serenity BDD is a test automation library designed to make writing automated acceptance tests easier, and more fun."
-  },
-  {
-    "repo": "win4r/memory-lancedb-pro",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI"
-  },
-  {
-    "repo": "bluewave-labs/dodopulse",
+    "repo": "apple/swift-log",
     "branch": "main",
     "language": "Swift",
-    "description": "A lightweight, native macOS menu bar app for real-time system monitoring with beautiful mini graphs"
+    "description": "A Logging API for Swift"
   },
   {
-    "repo": "rustdesk/rustdesk",
-    "branch": "master",
-    "language": "Rust",
-    "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer."
+    "repo": "facebookresearch/llama",
+    "branch": "main",
+    "language": "Python",
+    "description": "Inference code for Llama models"
   },
   {
-    "repo": "cursor/agent-trace",
+    "repo": "avelino/awesome-go",
+    "branch": "main",
+    "language": "Go",
+    "description": "A curated list of awesome Go frameworks, libraries and software"
+  },
+  {
+    "repo": "wesbos/JSON-Alexander",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A standard format for tracing AI-generated code."
+    "description": "A really good JSON viewer browser Extension"
   },
   {
     "repo": "acedef/SynthAPT",
@@ -138,9 +72,75 @@
     "description": "Generate malware with AI"
   },
   {
-    "repo": "karanb192/claude-code-hooks",
+    "repo": "krisrice/oracle-db-skills",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Oracle DB Skills is a curated library of 100+ practical, documentation-backed guides for working with Oracle Database, organized by domain"
+  },
+  {
+    "repo": "chekusu/mails",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "email for agents. Built for AI agents that need to send, receive, and understand emails programmatically"
+  },
+  {
+    "repo": "vibe-music/vibe-music-web",
     "branch": "main",
     "language": "JavaScript",
-    "description": "🪝 A growing collection of useful Claude Code hooks. Copy, paste, customize."
+    "description": "Open-source cloud music player with a bring-your-own-music model. Local control, optional sync, zero platform dependency."
+  },
+  {
+    "repo": "ytdl-org/youtube-dl",
+    "branch": "master",
+    "language": "Python",
+    "description": "Command-line program to download videos from YouTube.com and other video sites"
+  },
+  {
+    "repo": "Prismer-AI/Prismer",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Source OpenAI Prism Alternative"
+  },
+  {
+    "repo": "gothinkster/realworld",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The mother of all demo apps — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more"
+  },
+  {
+    "repo": "vaneenige/monochrome-ui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Accessible UI component library. Best performance out of the box. HTML first, React supported."
+  },
+  {
+    "repo": "WtxwNs/RepoCheck",
+    "branch": "main",
+    "language": "Python",
+    "description": "A tool for analyzing and checking open-source repositories, especially when you are unsure whether they are truly open source."
+  },
+  {
+    "repo": "jyoung105/frouter",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Free model router CLI to discover, benchmark, and configure free AI models for OpenCode and OpenClaw"
+  },
+  {
+    "repo": "moment/moment",
+    "branch": "develop",
+    "language": "JavaScript",
+    "description": "Parse, validate, manipulate, and display dates in javascript."
+  },
+  {
+    "repo": "grafana/mimir",
+    "branch": "main",
+    "language": "Go",
+    "description": "Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus."
+  },
+  {
+    "repo": "reduxjs/reselect",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Selector library for Redux"
   }
 ]
