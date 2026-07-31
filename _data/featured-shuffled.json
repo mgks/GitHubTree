@@ -1,15 +1,129 @@
 [
   {
-    "repo": "Tencent-Hunyuan/Hy-MT2",
+    "repo": "disintegr8te/teams-policy-export",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "PowerShell tool to export Microsoft Teams policies and generate stakeholder decision workbooks"
+  },
+  {
+    "repo": "google/styleguide",
+    "branch": "gh-pages",
+    "language": "HTML",
+    "description": "Style guides for Google-originated open-source projects"
+  },
+  {
+    "repo": "justlovemaki/OpenClaw-Docker-CN-IM",
+    "branch": "main",
+    "language": "Shell",
+    "description": "OpenClaw 的中国IM平台整合Docker版本，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国IM软件的插件，让您可以快速部署一个支持多个中国IM平台的 AI 机器人网关"
+  },
+  {
+    "repo": "mastodon/mastodon",
+    "branch": "main",
+    "language": "Ruby",
+    "description": "Your self-hosted, globally interconnected microblogging community"
+  },
+  {
+    "repo": "behzadea12/Paqet-Tunnel-Manager",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations."
+  },
+  {
+    "repo": "vercel-labs/portless",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents."
+  },
+  {
+    "repo": "graphprotocol/graph-node",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Graph Node indexes data from blockchains such as Ethereum and serves it over GraphQL"
+  },
+  {
+    "repo": "antfu/ghfs",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "GitHub issues/PRs as filesystem, for offline view and operations in batch. Designed for human and agents."
+  },
+  {
+    "repo": "NirDiamant/GenAI_Agents",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems."
+  },
+  {
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "cosmiciron/vmprint",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A pure-JS, zero-dependency typesetting engine that yields bit-perfect PDF output across any runtime—from Cloudflare Workers to the browser. Stop using Headless Chrome to print text."
+  },
+  {
+    "repo": "glommer/cachebro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
+  },
+  {
+    "repo": "james-6-23/codex2api",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "mrconter1/rustc-php",
+    "branch": "main",
+    "language": "PHP",
+    "description": "A Rust compiler with ownership checking, written in PHP"
+  },
+  {
+    "repo": "marswei/seaseed-clawerse",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration."
+  },
+  {
+    "repo": "mikeyobrien/rho",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi."
+  },
+  {
+    "repo": "YuJunZhiXue/github-skill-forge",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "dazzyddos/ClickOnceBlobber",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "pulsemindcover/Polymarket-AI-Trading-Bot",
+    "repo": "lllyasviel/VCC",
     "branch": "main",
     "language": "Python",
-    "description": "AI-powered macOS trading script for Polymarket. Automatically analyzes markets, generates intelligent trade decisions, and executes orders using configurable risk management and strategy parameters. One-command installation, lightweight setup, and optimized performance for automated prediction market trading."
+    "description": "Compile agent conversations!"
+  },
+  {
+    "repo": "microsoft/react-native-code-push",
+    "branch": "master",
+    "language": "C",
+    "description": "React Native module for CodePush"
+  },
+  {
+    "repo": "viperrcrypto/Siftly",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
   },
   {
     "repo": "graphql/dataloader",
@@ -18,129 +132,15 @@
     "description": "DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching."
   },
   {
-    "repo": "ericosiu/ai-marketing-skills",
+    "repo": "diandianti/clawInstaller",
     "branch": "main",
-    "language": "Python",
-    "description": "Open-source AI marketing skills for Claude Code — growth experiments, sales pipeline, content ops, outbound, SEO, and finance automation"
-  },
-  {
-    "repo": "kata-containers/kata-containers",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. https://katacontainers.io/"
-  },
-  {
-    "repo": "T3-Content/quipslop",
-    "branch": "main",
-    "language": "TypeScript",
+    "language": "C#",
     "description": ""
   },
   {
-    "repo": "brackets-cont/brackets",
+    "repo": "gin-gonic/gin",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "An open source code editor for the web, written in JavaScript, HTML and CSS."
-  },
-  {
-    "repo": "tox-dev/tox",
-    "branch": "main",
-    "language": "Python",
-    "description": "Command line driven CI frontend and development task automation tool."
-  },
-  {
-    "repo": "nomic-ai/gpt4all",
-    "branch": "main",
-    "language": "C++",
-    "description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use."
-  },
-  {
-    "repo": "unslop-xyz/noodles",
-    "branch": "main",
-    "language": "Python",
-    "description": "Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line."
-  },
-  {
-    "repo": "gogs/gogs",
-    "branch": "main",
     "language": "Go",
-    "description": "Gogs is a painless self-hosted Git service"
-  },
-  {
-    "repo": "k2-fsa/OmniVoice",
-    "branch": "master",
-    "language": "Python",
-    "description": "High-Quality Voice Cloning TTS for 600+ Languages"
-  },
-  {
-    "repo": "facebookresearch/segment-anything",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model."
-  },
-  {
-    "repo": "microsoft/wslg",
-    "branch": "main",
-    "language": "C++",
-    "description": "Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios"
-  },
-  {
-    "repo": "sndrec/WebMonkeyBall",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Super Monkey Ball on Web Broser."
-  },
-  {
-    "repo": "rust-lang/book",
-    "branch": "main",
-    "language": "Rust",
-    "description": "The Rust Programming Language"
-  },
-  {
-    "repo": "tutusagi/ai-fishing-game",
-    "branch": "main",
-    "language": "Python",
-    "description": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼"
-  },
-  {
-    "repo": "twwch/AIComicBuilder",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI-powered animated comic generator — transform scripts into fully animated videos with AI-driven character design,    storyboarding, and video synthesis."
-  },
-  {
-    "repo": "TencentARC/Pixal3D",
-    "branch": "master",
-    "language": "Python",
-    "description": "[SIGGRAPH 2026] Pixal3D: Pixel-Aligned 3D Generation from Images"
-  },
-  {
-    "repo": "PentHertz/LUKSbox",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Store sensitive files in the cloud, or on shared media without trusting the host. LUKSbox is a Rust-based encrypted-container tool with passphrase, FIDO2 (YubiKey, Titan, Nitrokey, Windows Hello), TPM 2.0, and hybrid post-quantum (ML-KEM-768 / 1024) keyslots. Mounts as a real drive on Linux, macOS, and Windows."
-  },
-  {
-    "repo": "ankitvgupta/mail-app",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code for your Inbox"
-  },
-  {
-    "repo": "GALIAIS/k_i_r_o-register",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "lightseekorg/tokenspeed",
-    "branch": "main",
-    "language": "Python",
-    "description": "TokenSpeed is a speed-of-light LLM inference engine."
-  },
-  {
-    "repo": "fastai/fastbook",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "The fastai book, published as Jupyter Notebooks"
+    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
   }
 ]
