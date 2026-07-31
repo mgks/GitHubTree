@@ -1,146 +1,146 @@
 [
   {
-    "repo": "disintegr8te/teams-policy-export",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "PowerShell tool to export Microsoft Teams policies and generate stakeholder decision workbooks"
+    "repo": "ramda/ramda",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ":ram: Practical functional Javascript"
   },
   {
-    "repo": "google/styleguide",
-    "branch": "gh-pages",
+    "repo": "NyxTides/ppt-image-first",
+    "branch": "master",
+    "language": "Python",
+    "description": "PPT image-first skill for Codex CLI"
+  },
+  {
+    "repo": "dabberman456/coinbase-trading-api",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "coinbase trading api of systematic EMA bot"
+  },
+  {
+    "repo": "tinbase/tinbase",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Supabase-compatible backend in a single binary — real Postgres with RLS, no Docker. Works with supabase-js unchanged."
+  },
+  {
+    "repo": "yaojingang/TokHub",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI API 中转站监控、推荐运营与 OpenAI 兼容专属网关系统，支持分层探测、健康评分、用量计量、告警审计和 Docker 自托管。"
+  },
+  {
+    "repo": "KORAYTEACHER/fintech-advisor",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "ai fintech financial advisor for your portfolio"
+  },
+  {
+    "repo": "waybarrios/opencode-power-pack",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Eleven Claude Code skills ported to OpenCode: code-review, security-review, feature-dev, frontend-design + 7 more. One config line, one plugin."
+  },
+  {
+    "repo": "zengxiao-he/triton-llm-kernel-lab",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Unclecheng-li/AI-Animation-Skill",
+    "branch": "main",
     "language": "HTML",
-    "description": "Style guides for Google-originated open-source projects"
+    "description": "使用 AI 生成 HTML 演示动画的工具集，让视频创作者能够快速将科普文本转换为炫酷的演示动画。"
   },
   {
-    "repo": "justlovemaki/OpenClaw-Docker-CN-IM",
+    "repo": "infinition/waveshare-watch-rs",
     "branch": "main",
-    "language": "Shell",
-    "description": "OpenClaw 的中国IM平台整合Docker版本，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国IM软件的插件，让您可以快速部署一个支持多个中国IM平台的 AI 机器人网关"
-  },
-  {
-    "repo": "mastodon/mastodon",
-    "branch": "main",
-    "language": "Ruby",
-    "description": "Your self-hosted, globally interconnected microblogging community"
-  },
-  {
-    "repo": "behzadea12/Paqet-Tunnel-Manager",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations."
-  },
-  {
-    "repo": "vercel-labs/portless",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents."
-  },
-  {
-    "repo": "graphprotocol/graph-node",
-    "branch": "master",
     "language": "Rust",
-    "description": "Graph Node indexes data from blockchains such as Ethereum and serves it over GraphQL"
+    "description": "100% Rust `no_std` smartwatch firmware for the Waveshare ESP32-S3-Touch-AMOLED-2.06"
   },
   {
-    "repo": "antfu/ghfs",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "GitHub issues/PRs as filesystem, for offline view and operations in batch. Designed for human and agents."
-  },
-  {
-    "repo": "NirDiamant/GenAI_Agents",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems."
-  },
-  {
-    "repo": "vuejs/vue",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
-  },
-  {
-    "repo": "cosmiciron/vmprint",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A pure-JS, zero-dependency typesetting engine that yields bit-perfect PDF output across any runtime—from Cloudflare Workers to the browser. Stop using Headless Chrome to print text."
-  },
-  {
-    "repo": "glommer/cachebro",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
-  },
-  {
-    "repo": "james-6-23/codex2api",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "mrconter1/rustc-php",
-    "branch": "main",
-    "language": "PHP",
-    "description": "A Rust compiler with ownership checking, written in PHP"
-  },
-  {
-    "repo": "marswei/seaseed-clawerse",
+    "repo": "Sahir619/fable-method",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration."
+    "description": "The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove."
   },
   {
-    "repo": "mikeyobrien/rho",
+    "repo": "WenXiaoWendy/timeline-for-agent",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi."
+    "language": "JavaScript",
+    "description": "Kill Tomato Clock"
   },
   {
-    "repo": "YuJunZhiXue/github-skill-forge",
-    "branch": "main",
-    "language": "Python",
-    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
-  },
-  {
-    "repo": "dazzyddos/ClickOnceBlobber",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "lllyasviel/VCC",
-    "branch": "main",
-    "language": "Python",
-    "description": "Compile agent conversations!"
-  },
-  {
-    "repo": "microsoft/react-native-code-push",
+    "repo": "stormzhang/token-tracker",
     "branch": "master",
-    "language": "C",
-    "description": "React Native module for CodePush"
+    "language": "Python",
+    "description": "Track token usage across local AI agents (Claude Code, Codex) — CLI dashboard with cost analysis, rate limit monitoring, and session tracking"
   },
   {
-    "repo": "viperrcrypto/Siftly",
+    "repo": "wikidjon/personal-finance-skill",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
+    "description": ""
   },
   {
-    "repo": "graphql/dataloader",
+    "repo": "Subhan-code/Amicro--Micro-transitions-",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "anthropics/cwc-long-running-agents",
+    "branch": "main",
+    "language": "Shell",
+    "description": ""
+  },
+  {
+    "repo": "adamholter/hive-mind-landing-page",
+    "branch": "main",
+    "language": "CSS",
+    "description": "CHORUS Hive Mind landing page — source, prompts, frontend skills, generated design reference, and sanitized Codex build trace"
+  },
+  {
+    "repo": "antirez/ds4",
+    "branch": "main",
+    "language": "C",
+    "description": "DeepSeek 4 Flash local inference engine for Metal"
+  },
+  {
+    "repo": "Haleclipse/cscience",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Claude Science Rebuild"
+  },
+  {
+    "repo": "squadassurancevoid/fl-studio-premium-release",
     "branch": "main",
     "language": "JavaScript",
-    "description": "DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching."
+    "description": "FL Studio 2026 Premium Release: Official Desktop Installer for Windows - Full Version. Experience studio-quality sound production."
   },
   {
-    "repo": "diandianti/clawInstaller",
+    "repo": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
     "branch": "main",
     "language": "C#",
-    "description": ""
+    "description": "Enables window switching and tab navigation in restricted browser environments"
   },
   {
-    "repo": "gin-gonic/gin",
-    "branch": "master",
-    "language": "Go",
-    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
+    "repo": "Xingyu-Zheng/MrFlow",
+    "branch": "main",
+    "language": "Python",
+    "description": "Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration via Staged Sampling"
+  },
+  {
+    "repo": "SethGammon/Citadel",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Agent orchestration harness for Claude Code. Four-tier routing (/do), campaign persistence across sessions, parallel agents in isolated worktrees, discovery relay between waves, lifecycle hooks, circuit breaker, and 6 production-quality skills. From solo developer to institutional scale."
+  },
+  {
+    "repo": "jasmine/jasmine",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Simple JavaScript testing framework for browsers and node.js"
   }
 ]
