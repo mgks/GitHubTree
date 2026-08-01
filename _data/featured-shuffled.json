@@ -1,15 +1,27 @@
 [
   {
-    "repo": "xaspx/hermes-control-interface",
+    "repo": "nkzw-tech/codiff",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A self-hosted web dashboard for the Hermes AI agent stack. Provides a browser-based terminal, file explorer, session overview, cron management, system metrics, and an agent status panel — all behind a single password gate."
+    "language": "TypeScript",
+    "description": "a fast local diff viewer"
   },
   {
-    "repo": "vinta/awesome-python",
+    "repo": "lich0821/wcfLink",
     "branch": "master",
-    "language": "Python",
-    "description": "An opinionated list of awesome Python frameworks, libraries, software and resources."
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "dandavison/delta",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+  },
+  {
+    "repo": "jesseduffield/lazydocker",
+    "branch": "master",
+    "language": "Go",
+    "description": "The lazier way to manage everything docker"
   },
   {
     "repo": "go-task/task",
@@ -18,129 +30,117 @@
     "description": "A task runner / simpler Make alternative written in Go"
   },
   {
-    "repo": "BabylonJS/Babylon.js",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."
-  },
-  {
-    "repo": "wong2/weixin-agent-sdk",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "code-yeongyu/not-claude-code-emulator",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "ULTRA DANGEROUS CLAUDE CODE EMULATOR; MAKING THE API REQUEST IDENTICAL TO CLAUDE CODE"
-  },
-  {
-    "repo": "SulfurNitride/Fluorine-Manager",
-    "branch": "main",
-    "language": "C++",
-    "description": "An attempt at recreating all MO2 functions in linux with NaK integration and FUSE based VFS. Comes with Root Builder support by default. It's in alpha and needs a lot of testing to be done."
-  },
-  {
-    "repo": "PrathamLearnsToCode/paper2code",
+    "repo": "bigcode-project/starcoder",
     "branch": "main",
     "language": "Python",
-    "description": "Agent skill to turn any arxiv paper into a working implementation"
+    "description": "Home of StarCoder: fine-tuning & inference!"
   },
   {
-    "repo": "kulikov0/whitelist-bypass",
+    "repo": "graphql-rust/juniper",
+    "branch": "master",
+    "language": "Rust",
+    "description": "GraphQL server library for Rust"
+  },
+  {
+    "repo": "reinesana/Doomscroll-Skyrim-Edition",
     "branch": "main",
-    "language": "JavaScript",
-    "description": ""
+    "language": "Python",
+    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
   },
   {
-    "repo": "liuxiaopai-ai/ralph-desktop",
+    "repo": "istio/istio",
+    "branch": "master",
+    "language": "Go",
+    "description": "Connect, secure, control, and observe services."
+  },
+  {
+    "repo": "realm/SwiftLint",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A tool to enforce Swift style and conventions."
+  },
+  {
+    "repo": "tonbistudio/turboquant-pytorch",
+    "branch": "master",
+    "language": "Python",
+    "description": "From-scratch PyTorch implementation of Google's TurboQuant (ICLR 2026) for LLM KV cache compression. 5x compression at 3-bit with 99.5% attention fidelity."
+  },
+  {
+    "repo": "jupyterlab/jupyterlab",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "JupyterLab computational environment."
+  },
+  {
+    "repo": "home-assistant/core",
+    "branch": "dev",
+    "language": "Python",
+    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
+  },
+  {
+    "repo": "total-typescript/ts-reset",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A 'CSS reset' for TypeScript, improving types for common JavaScript API's"
+  },
+  {
+    "repo": "liu-ziting/ThinkFlowAI",
+    "branch": "main",
+    "language": "Vue",
+    "description": "ThinkFlow AI 是一个轻量级“从想法到结构化图谱”的工作台：输入一个核心想法，应用会把它扩展为可浏览的知识图谱（模块/子模块）。每个节点支持继续追问扩展、深挖详情，以及可选的配图生成。"
+  },
+  {
+    "repo": "D1a0y1bb/CloverSec-CTF-Build-Dockerizer-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "四叶草安全-创研中心竞赛专用题目容器构建Skills，面向 CTF Jeopardy 的容器交付引擎：自动探测栈、生成合规题目镜像构建文件、执行规则校验并给出可修复建议，实现标准化工作流程的质量对齐。"
+  },
+  {
+    "repo": "Nahuel990/ministack",
+    "branch": "master",
+    "language": "Python",
+    "description": "Ministack: the free LocalStack replacement"
+  },
+  {
+    "repo": "yt-dlp/yt-dlp",
+    "branch": "master",
+    "language": "Python",
+    "description": "A feature-rich command-line audio/video downloader"
+  },
+  {
+    "repo": "llmsresearch/paperbanana",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new domains like slide generation."
+  },
+  {
+    "repo": "sharkdp/fd",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A simple, fast and user-friendly alternative to 'find'"
+  },
+  {
+    "repo": "polymarket-dev/Polymarket-Arbitrage-Bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket arbitrage bot"
+  },
+  {
+    "repo": "silverstein/minutes",
     "branch": "main",
     "language": "Rust",
-    "description": "Ralph Desktop -  Start vague. Ralph Loop until perfect.  A visual controller for AI coding agents that helps you brainstorm requirements and execute tasks through persistent iteration."
+    "description": "Every meeting, every idea, every voice note — searchable by your AI. Open-source, privacy-first conversation memory layer."
   },
   {
-    "repo": "marshallrichards/ClawPhone",
+    "repo": "hilash/cabinet",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI-first knowledge base and startup OS"
+  },
+  {
+    "repo": "ferrolho/VL53L5CX-BNO08X-viewer",
     "branch": "main",
     "language": "Python",
-    "description": "Tweaks for running OpenClaw on a Android smartphone"
-  },
-  {
-    "repo": "apache/iceberg",
-    "branch": "main",
-    "language": "Java",
-    "description": "Apache Iceberg"
-  },
-  {
-    "repo": "microsoft/PowerToys",
-    "branch": "main",
-    "language": "C#",
-    "description": "Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks"
-  },
-  {
-    "repo": "borkdude/cream",
-    "branch": "main",
-    "language": "Clojure",
-    "description": "Fast starting Clojure runtime built with GraalVM native-image + Crema"
-  },
-  {
-    "repo": "matrix-org/matrix-react-sdk",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Matrix SDK for React Javascript"
-  },
-  {
-    "repo": "TsingmaoAI/xw-cli",
-    "branch": "main",
-    "language": "Go",
-    "description": "实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型"
-  },
-  {
-    "repo": "privacyguides/privacyguides.org",
-    "branch": "main",
-    "language": "Markdown",
-    "description": "Protect your data against global mass surveillance programs."
-  },
-  {
-    "repo": "honojs/hono",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Web framework built on Web Standards"
-  },
-  {
-    "repo": "bc-dunia/qwen3-TTS-studio",
-    "branch": "main",
-    "language": "Python",
-    "description": "A professional-grade interface for Qwen3-TTS, designed to unlock the model's full potential with fine-grained control and intuitive workflows."
-  },
-  {
-    "repo": "Adityaraj0421/design-studio",
-    "branch": "main",
-    "language": "Shell",
-    "description": "A virtual design team for Claude Code — 9 specialist roles, 16 commands, 5 agents"
-  },
-  {
-    "repo": "facebook/docusaurus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Easy to maintain open source documentation websites."
-  },
-  {
-    "repo": "timescale/timescaledb",
-    "branch": "main",
-    "language": "C",
-    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension"
-  },
-  {
-    "repo": "LightTable/LightTable",
-    "branch": "master",
-    "language": "Clojure",
-    "description": "The Light Table IDE ⛺"
-  },
-  {
-    "repo": "preactjs/preact",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM."
+    "description": "Turn a Time-of-Flight sensor into a 3D Scanner"
   }
 ]
