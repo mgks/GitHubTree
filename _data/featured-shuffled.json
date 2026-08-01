@@ -1,129 +1,27 @@
 [
   {
-    "repo": "nkzw-tech/codiff",
+    "repo": "thinkpixelIab/polymarket-ai-trading",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "a fast local diff viewer"
+    "language": "HTML",
+    "description": "Polymarket prediction markets AI trading paper trading OpenAI GPT CLOB Kelly mean reversion SQLite Node Express Docker Render Vercel dashboard algorithmic trading quant research forecasting crypto"
   },
   {
-    "repo": "lich0821/wcfLink",
-    "branch": "master",
-    "language": "Go",
-    "description": ""
+    "repo": "spring-cloud/spring-cloud-kubernetes",
+    "branch": "main",
+    "language": "Java",
+    "description": "Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc..."
   },
   {
-    "repo": "dandavison/delta",
+    "repo": "lbjlaq/Antigravity-Tools-LS",
     "branch": "main",
     "language": "Rust",
-    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+    "description": "Antigravity-Tools-LS is a local proxy bridge system designed specifically for the Antigravity IDE."
   },
   {
-    "repo": "jesseduffield/lazydocker",
-    "branch": "master",
-    "language": "Go",
-    "description": "The lazier way to manage everything docker"
-  },
-  {
-    "repo": "go-task/task",
-    "branch": "master",
-    "language": "Go",
-    "description": "A task runner / simpler Make alternative written in Go"
-  },
-  {
-    "repo": "bigcode-project/starcoder",
+    "repo": "deepseek-ai/DeepSeek-VL",
     "branch": "main",
     "language": "Python",
-    "description": "Home of StarCoder: fine-tuning & inference!"
-  },
-  {
-    "repo": "graphql-rust/juniper",
-    "branch": "master",
-    "language": "Rust",
-    "description": "GraphQL server library for Rust"
-  },
-  {
-    "repo": "reinesana/Doomscroll-Skyrim-Edition",
-    "branch": "main",
-    "language": "Python",
-    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
-  },
-  {
-    "repo": "istio/istio",
-    "branch": "master",
-    "language": "Go",
-    "description": "Connect, secure, control, and observe services."
-  },
-  {
-    "repo": "realm/SwiftLint",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A tool to enforce Swift style and conventions."
-  },
-  {
-    "repo": "tonbistudio/turboquant-pytorch",
-    "branch": "master",
-    "language": "Python",
-    "description": "From-scratch PyTorch implementation of Google's TurboQuant (ICLR 2026) for LLM KV cache compression. 5x compression at 3-bit with 99.5% attention fidelity."
-  },
-  {
-    "repo": "jupyterlab/jupyterlab",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "JupyterLab computational environment."
-  },
-  {
-    "repo": "home-assistant/core",
-    "branch": "dev",
-    "language": "Python",
-    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
-  },
-  {
-    "repo": "total-typescript/ts-reset",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A 'CSS reset' for TypeScript, improving types for common JavaScript API's"
-  },
-  {
-    "repo": "liu-ziting/ThinkFlowAI",
-    "branch": "main",
-    "language": "Vue",
-    "description": "ThinkFlow AI 是一个轻量级“从想法到结构化图谱”的工作台：输入一个核心想法，应用会把它扩展为可浏览的知识图谱（模块/子模块）。每个节点支持继续追问扩展、深挖详情，以及可选的配图生成。"
-  },
-  {
-    "repo": "D1a0y1bb/CloverSec-CTF-Build-Dockerizer-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "四叶草安全-创研中心竞赛专用题目容器构建Skills，面向 CTF Jeopardy 的容器交付引擎：自动探测栈、生成合规题目镜像构建文件、执行规则校验并给出可修复建议，实现标准化工作流程的质量对齐。"
-  },
-  {
-    "repo": "Nahuel990/ministack",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ministack: the free LocalStack replacement"
-  },
-  {
-    "repo": "yt-dlp/yt-dlp",
-    "branch": "master",
-    "language": "Python",
-    "description": "A feature-rich command-line audio/video downloader"
-  },
-  {
-    "repo": "llmsresearch/paperbanana",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new domains like slide generation."
-  },
-  {
-    "repo": "sharkdp/fd",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A simple, fast and user-friendly alternative to 'find'"
-  },
-  {
-    "repo": "polymarket-dev/Polymarket-Arbitrage-Bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket arbitrage bot"
+    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
   },
   {
     "repo": "silverstein/minutes",
@@ -132,15 +30,117 @@
     "description": "Every meeting, every idea, every voice note — searchable by your AI. Open-source, privacy-first conversation memory layer."
   },
   {
-    "repo": "hilash/cabinet",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI-first knowledge base and startup OS"
+    "repo": "zsh-users/zsh-syntax-highlighting",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Fish shell like syntax highlighting for Zsh."
   },
   {
-    "repo": "ferrolho/VL53L5CX-BNO08X-viewer",
+    "repo": "actions/cache",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Cache dependencies and build outputs in GitHub Actions"
+  },
+  {
+    "repo": "vansh-nagar/ascii-studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Turn Videos into ASCII Frames - real ascii frames (character-based frames that run smoothly in sequence)"
+  },
+  {
+    "repo": "grpc/grpc-go",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Go language implementation of gRPC. HTTP/2 based RPC"
+  },
+  {
+    "repo": "actions/setup-node",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Set up your GitHub Actions workflow with a specific version of node.js"
+  },
+  {
+    "repo": "510myRday/Cursor-Toolbox",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "NVIDIA/NemoClaw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "NVIDIA plugin for secure installation of OpenClaw"
+  },
+  {
+    "repo": "frank890417/taiwan-md",
+    "branch": "main",
+    "language": "Astro",
+    "description": "🇹🇼 讓全世界完整認識台灣 | An open-source, AI-friendly knowledge base about Taiwan"
+  },
+  {
+    "repo": "allenai/molmoweb",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": ""
+  },
+  {
+    "repo": "lux-db/lux",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "pointfreeco/swift-snapshot-testing",
+    "branch": "main",
+    "language": "Swift",
+    "description": "📸 Delightful Swift snapshot testing."
+  },
+  {
+    "repo": "cli/cli",
+    "branch": "trunk",
+    "language": "Go",
+    "description": "GitHub’s official command line tool"
+  },
+  {
+    "repo": "F-R-L/forge-film",
     "branch": "main",
     "language": "Python",
-    "description": "Turn a Time-of-Flight sensor into a 3D Scanner"
+    "description": "Multi-model DAG-driven parallel AI film generation — parallel speedup scales with scene independence; Generate film scenes simultaneously instead of one by one;  把影视生成的执行图从拓扑序变成关键路径最优调度 ; 唯一把场景叙事依赖建模为 DAG、以 CPM    算法驱动并行调度的影视生成引擎"
+  },
+  {
+    "repo": "actions/setup-python",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Set up your GitHub Actions workflow with a specific version of Python"
+  },
+  {
+    "repo": "HKUDS/ClawTeam",
+    "branch": "main",
+    "language": "Python",
+    "description": "ClawTeam: Agent Swarm Intelligence (One Command → Full Automation)"
+  },
+  {
+    "repo": "yarnpkg/berry",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "📦🐈 Active development trunk for Yarn ⚒"
+  },
+  {
+    "repo": "liandu2024/AnGe-ClashBoard",
+    "branch": "main",
+    "language": "Vue",
+    "description": "AnGe-ClashBoard - zashboard 完整体"
+  },
+  {
+    "repo": "eslint/eslint",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Find and fix problems in your JavaScript code."
+  },
+  {
+    "repo": "phlx0/drift",
+    "branch": "main",
+    "language": "Go",
+    "description": "Terminal screensaver that activates when you're idle — constellations, rain, particles & braille   waves. Press any key to resume."
   }
 ]
