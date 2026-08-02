@@ -1,146 +1,146 @@
 [
   {
-    "repo": "RocketChat/Rocket.Chat",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "The Secure CommsOS™ for mission-critical operations"
+    "repo": "emollick/concord",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Instrument-grade qualitative text analysis: AI-coded corpora, gold calibration, DSL/PPI-corrected statistics, Evidence Ladder"
   },
   {
-    "repo": "SrSCK/Virtual_Machine_Manager",
+    "repo": "honnibal/claude-skills",
     "branch": "main",
     "language": "Python",
-    "description": "Run and manage virtual machines with ease. Supports VMware, VirtualBox, and Hyper-V. Create, start, and stop VMs."
+    "description": "Claude skills I'm experimenting with. Please review carefully before use."
   },
   {
-    "repo": "madeye/mcp-cli",
+    "repo": "understudy-ai/understudy",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An understudy watches. Then performs."
+  },
+  {
+    "repo": "yazinsai/quran-validator",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Validate and verify Quranic verses in LLM-generated text with high accuracy"
+  },
+  {
+    "repo": "obsproject/obs-studio",
+    "branch": "master",
+    "language": "C",
+    "description": "OBS Studio - Free and open source software for live streaming and screen recording"
+  },
+  {
+    "repo": "alibaba-damo-academy/RynnBrain",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "RynnBrain: Open Embodied Foundation Models"
+  },
+  {
+    "repo": "vitest-dev/vitest",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next generation testing framework powered by Vite."
+  },
+  {
+    "repo": "tw93/Kaku",
     "branch": "main",
     "language": "Rust",
-    "description": "save fork/exec overhead of ai code agent"
+    "description": "☄️ A fast, out-of-the-box terminal built for AI coding."
   },
   {
-    "repo": "indragiek/GHFS",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Mount GitHub repositories as a virtual read-only macOS filesystem"
-  },
-  {
-    "repo": "BlueSharks-apps/Gemini-app-windows",
-    "branch": "main",
-    "language": "C#",
-    "description": "chatgpt google gemini pro ai flash 3.5 app windows  download pc google ai desktop client windows 11 10 official application free exe install shortcut workspace chat assistant"
-  },
-  {
-    "repo": "vanroon/Blox-Fruits-Dragon-Update-Auto-Farm-Script-2026-Master",
-    "branch": "main",
-    "language": "Python",
-    "description": "Blox Fruits Dragon Update 2026 trainer with auto farm, ESP, auto raid, and more. The Master version offers enhanced performance and reliability."
-  },
-  {
-    "repo": "JUk1-GH/gpt-promo-scanner",
-    "branch": "main",
-    "language": "Python",
-    "description": "ChatGPT Team(Business) 促销码自动扫描工具 — 批量发现/验证/价格收集，支持 17 国 34 个码，最高折扣 71% | ChatGPT Business promo code scanner — batch discovery, validation, price collection, 34 codes across 17 countries, up to 71% off"
-  },
-  {
-    "repo": "RD1707/Umbrella-HWID",
-    "branch": "main",
-    "language": "C++",
-    "description": "Umbrella Spoofer download HWID cleaner  BattlEye EAC permanent temporary registry disk serial MAC address monitor ID Vanguard hardware changer ban protect system utility software."
-  },
-  {
-    "repo": "omarabdelazez11/Valorant_TriggerBot_Elite",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI-powered triggerbot and radar hack for Valorant with human-like behavior. Auto-shoot when crosshair locks on, reveal enemy positions, and unlock all skins. Works with Vanguard bypass."
-  },
-  {
-    "repo": "schibsted/videofy_minimal",
+    "repo": "NVIDIA/NemoClaw",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "NVIDIA plugin for secure installation of OpenClaw"
   },
   {
-    "repo": "stanford-iris-lab/meta-harness",
+    "repo": "jwasham/coding-interview-university",
     "branch": "main",
-    "language": "Python",
-    "description": "Reference code for the Meta-Harness paper."
+    "language": "Other",
+    "description": "A complete computer science study plan to become a software engineer."
   },
   {
-    "repo": "kubeedge/kubeedge",
-    "branch": "master",
-    "language": "Go",
-    "description": "Kubernetes Native Edge Computing Framework (project under CNCF)"
-  },
-  {
-    "repo": "nathaniel329/polymarket-trading-bot",
+    "repo": "lobehub/lobe-chat",
     "branch": "main",
-    "language": "Python",
-    "description": "polymarket trading bot"
+    "language": "TypeScript",
+    "description": "🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application."
   },
   {
-    "repo": "material-components/material-components-web",
+    "repo": "godagoo/claude-telegram-relay",
     "branch": "master",
     "language": "TypeScript",
-    "description": "Modular and customizable Material Design UI components for the web"
+    "description": "Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included."
   },
   {
-    "repo": "run-bigpig/jcp",
-    "branch": "master",
-    "language": "Go",
-    "description": "韭菜盘 (JCP AI) - AI 驱动的智能股票分析系统，基于 Wails + Go + React，支持多 Agent 协作分析"
-  },
-  {
-    "repo": "gordonmurray/firnflow",
+    "repo": "memovai/mimiclaw",
     "branch": "main",
-    "language": "Rust",
-    "description": "The cost efficiency of S3 with the speed of local RAM. A multi-tenant vector and full-text search engine featuring a tiered RAM → NVMe → S3 architecture for microsecond latency on   top of object storage"
+    "language": "C",
+    "description": "MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS.😗Local-first memory. Shareable. Portable. Privacy-first."
   },
   {
-    "repo": "judder659/Forven",
+    "repo": "wagmi-dev/wagmi",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Reactive primitives for Ethereum apps"
+  },
+  {
+    "repo": "ythx-101/ask-search",
+    "branch": "master",
+    "language": "Python",
+    "description": "Self-hosted web search skill for AI agents (OpenClaw/Claude Code/Antigravity) via SearxNG"
+  },
+  {
+    "repo": "opencontainers/image-spec",
+    "branch": "main",
+    "language": "Go",
+    "description": "OCI Image Format"
+  },
+  {
+    "repo": "ossu/computer-science",
+    "branch": "master",
+    "language": "HTML",
+    "description": "🎓 Path to a free self-taught education in Computer Science!"
+  },
+  {
+    "repo": "africa1207/AWS-BuildID-Auto-For-Ext",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "kaima2022/ABCard",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "unslop-xyz/noodles",
+    "repo": "trumpet-noek/sora2-free-watermark-remover",
     "branch": "main",
     "language": "Python",
-    "description": "Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line."
+    "description": "sora2 free watermark remover"
   },
   {
-    "repo": "usamafaheemAhmed/Palworld_Buddy_Bot",
+    "repo": "viplismism/rlm-cli",
     "branch": "main",
-    "language": "Python",
-    "description": "Auto-capture, infinite pal spheres, and instant breeding for Palworld. Throw spheres automatically, unlimited spheres, breed pals instantly, and collect resources."
+    "language": "TypeScript",
+    "description": "CLI for Recursive Language Models (arXiv:2512.24601)"
   },
   {
-    "repo": "erikdarlingdata/PerformanceMonitor",
-    "branch": "main",
-    "language": "C#",
-    "description": "Free, open-source SQL Server performance monitoring. Full Edition (server-installed, 30 collectors) and Lite Edition (standalone, DuckDB). Built-in MCP server for AI integration."
-  },
-  {
-    "repo": "moye-tech/WhatsApp_Bulk_Sender",
-    "branch": "main",
-    "language": "Python",
-    "description": "Send bulk messages to contacts and groups automatically. Message all contacts, send to groups, send images/videos, and schedule messages. Best for business."
-  },
-  {
-    "repo": "apkclaw-team/ApkClaw",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": ""
-  },
-  {
-    "repo": "ryanstephen/lil-agents",
-    "branch": "main",
-    "language": "Swift",
-    "description": "tiny AI companions that live on your macOS dock"
-  },
-  {
-    "repo": "pulumi/pulumi",
+    "repo": "aave/aave-v3-core",
     "branch": "master",
-    "language": "Go",
-    "description": "Pulumi - Infrastructure as Code in any programming language 🚀"
+    "language": "TypeScript",
+    "description": "This repository contains the core smart contracts of the Aave V3 protocol."
+  },
+  {
+    "repo": "dayflow-js/BlossomColorPicker",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A beautiful, blooming color picker component build by Tailwind for Web.     🌟 If you like it, give it a star :)"
+  },
+  {
+    "repo": "liuwei283/RealWonder",
+    "branch": "main",
+    "language": "Python",
+    "description": "Real-Time Physical Action-Conditioned Video Generation"
   }
 ]
