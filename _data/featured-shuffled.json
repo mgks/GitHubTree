@@ -1,146 +1,146 @@
 [
   {
-    "repo": "accius/openhamclock",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "The original HamClock will cease to function in June 2026. OpenHamClock aims to carry on Elwood's legacy with a modern, open-source implementation that the community can maintain and improve together."
-  },
-  {
-    "repo": "Vanszs/qwencloud-generator",
-    "branch": "main",
-    "language": "Python",
-    "description": "Automated QwenCloud account registration & API key harvester with multi-threading, TUI dashboard, proxy rotation, and Gmail OAuth"
-  },
-  {
-    "repo": "pandas-dev/pandas",
-    "branch": "main",
-    "language": "Python",
-    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
-  },
-  {
-    "repo": "plotly/plotly.js",
+    "repo": "ory/hydra",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "Open-source JavaScript charting library behind Plotly and Dash"
-  },
-  {
-    "repo": "danielmiessler/fabric",
-    "branch": "main",
     "language": "Go",
-    "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere."
+    "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go."
   },
   {
-    "repo": "brunch/brunch",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🍴 Web applications made easy. Since 2011."
-  },
-  {
-    "repo": "apache/spark",
-    "branch": "master",
-    "language": "Scala",
-    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
-  },
-  {
-    "repo": "ManimCommunity/manim",
-    "branch": "main",
-    "language": "Python",
-    "description": "A community-maintained Python framework for creating mathematical animations."
-  },
-  {
-    "repo": "ipython/ipython",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc."
-  },
-  {
-    "repo": "kubernetes-sigs/kind",
-    "branch": "main",
-    "language": "Go",
-    "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
-  },
-  {
-    "repo": "netblue30/firejail",
-    "branch": "master",
-    "language": "C",
-    "description": "Linux namespaces and seccomp-bpf sandbox"
-  },
-  {
-    "repo": "honojs/hono",
+    "repo": "lobehub/lobe-chat",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Web framework built on Web Standards"
+    "description": "🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application."
   },
   {
-    "repo": "zoontek/react-native-bootsplash",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🚀 Show a splash screen during app startup. Hide it when you are ready."
+    "repo": "dotnet/aspnetcore",
+    "branch": "main",
+    "language": "C#",
+    "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux."
   },
   {
-    "repo": "JakeWharton/butterknife",
-    "branch": "master",
+    "repo": "RyanCodrai/py-turboquant",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "iflytek/skillhub",
+    "branch": "main",
     "language": "Java",
-    "description": "Bind Android views and callbacks to fields and methods."
+    "description": "Self-hosted, open-source agent skill registry for enterprises. Publish & version skill packages, govern with RBAC and audit logs, deploy   on-premise with Docker or Kubernetes."
   },
   {
-    "repo": "SafeBreach-Labs/CVE-2026-24061",
+    "repo": "Geek-1001/arcmark",
     "branch": "main",
-    "language": "Python",
-    "description": "Exploitation of CVE-2026-24061"
+    "language": "Swift",
+    "description": "macOS bookmark manager that attaches to any browser window as a sidebar"
   },
   {
-    "repo": "react-hook-form/react-hook-form",
-    "branch": "master",
+    "repo": "vercel-labs/visual-json",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "📋 React Hooks for form state management and validation (Web + React Native)"
+    "description": "The Visual JSON Editor. Schema-aware, embeddable, extensible."
   },
   {
-    "repo": "nolimits4web/swiper",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Most modern mobile touch slider with hardware accelerated transitions"
-  },
-  {
-    "repo": "Significant-Gravitas/AutoGPT",
-    "branch": "master",
-    "language": "Python",
-    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
-  },
-  {
-    "repo": "goharbor/community",
+    "repo": "6551-Team/bybit-trading-bot",
     "branch": "main",
-    "language": "Other",
-    "description": "Harbor community-related material"
+    "language": "TypeScript",
+    "description": "Bybit trading bot & Bybit bot: AI, automated & auto crypto trading, futures, spot & grid, exchange strategies, algorithmic trading, cryptocurrency bot for Bybit."
   },
   {
-    "repo": "dandavison/delta",
+    "repo": "lifedever/TaskTick",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A native macOS app for managing scheduled tasks. Built with SwiftUI + SwiftData. Menu bar resident, cron expressions, script execution, and more."
+  },
+  {
+    "repo": "mrphrazer/agentic-malware-analysis",
+    "branch": "main",
+    "language": "YARA",
+    "description": "Agentic malware analysis environment with MCP-connected disassemblers, RE tooling, and structured workflows for Claude Code and Codex CLI."
+  },
+  {
+    "repo": "nushell/nushell",
     "branch": "main",
     "language": "Rust",
-    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+    "description": "A new type of shell"
   },
   {
-    "repo": "sympy/sympy",
+    "repo": "timuronlinq/messari-crack",
+    "branch": "main",
+    "language": "Python",
+    "description": "Messari crack"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
+  },
+  {
+    "repo": "liuwei283/RealWonder",
+    "branch": "main",
+    "language": "Python",
+    "description": "Real-Time Physical Action-Conditioned Video Generation"
+  },
+  {
+    "repo": "CompVis/stable-diffusion",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "A latent text-to-image diffusion model"
+  },
+  {
+    "repo": "cocos/cocos-engine",
+    "branch": "v3.8",
+    "language": "C++",
+    "description": "Cocos simplifies game creation and distribution with Cocos Creator, a free, open-source, cross-platform game engine. Empowering millions of developers to create high-performance, engaging 2D/3D games and instant web entertainment."
+  },
+  {
+    "repo": "peteromallet/dataclaw",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "steveclarke/real-world-rails",
+    "branch": "main",
+    "language": "Shell",
+    "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns."
+  },
+  {
+    "repo": "jwasham/coding-interview-university",
+    "branch": "main",
+    "language": "Other",
+    "description": "A complete computer science study plan to become a software engineer."
+  },
+  {
+    "repo": "tonyqinatcmu/SlideBot-AI",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🎨 SlideBot AI - AI-Powered Presentation Generator"
+  },
+  {
+    "repo": "element-hq/element-web",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "A glossy Matrix collaboration client for the web."
+  },
+  {
+    "repo": "locustio/locust",
     "branch": "master",
     "language": "Python",
-    "description": "A computer algebra system written in pure Python"
+    "description": "Write scalable load tests in plain Python 🚗💨"
   },
   {
-    "repo": "square/picasso",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A powerful image downloading and caching library for Android"
-  },
-  {
-    "repo": "pugjs/pug",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Pug – robust, elegant, feature rich template engine for Node.js"
-  },
-  {
-    "repo": "signalapp/Signal-Desktop",
+    "repo": "prettier/eslint-config-prettier",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A private messenger for Windows, macOS, and Linux."
+    "language": "JavaScript",
+    "description": "Turns off all rules that are unnecessary or might conflict with Prettier."
+  },
+  {
+    "repo": "cs50victor/claude-code-teams-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "use claude code's agent teams orchestraction with any harness"
   }
 ]
