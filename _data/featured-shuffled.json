@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ory/hydra",
+    "repo": "fluent/fluentd",
     "branch": "master",
-    "language": "Go",
-    "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go."
+    "language": "Ruby",
+    "description": "Fluentd: Unified Logging Layer (project under CNCF)"
   },
   {
-    "repo": "lobehub/lobe-chat",
+    "repo": "ddcat-ai/open-ai-canvas",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application."
+    "description": "面向 AI 影视创作的开源无限画布工作台，集成多模态生成、分镜编排、素材管理与 Agent 工作流。"
   },
   {
-    "repo": "dotnet/aspnetcore",
+    "repo": "eooce/python-ws",
+    "branch": "main",
+    "language": "Python",
+    "description": "build vless / trojan /shadowsocks  proxies on python server,no need core"
+  },
+  {
+    "repo": "wandb/wandb",
+    "branch": "main",
+    "language": "Python",
+    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
+  },
+  {
+    "repo": "sindresorhus/type-fest",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A collection of essential TypeScript types"
+  },
+  {
+    "repo": "element-hq/element-android",
+    "branch": "develop",
+    "language": "Kotlin",
+    "description": "A Matrix collaboration client for Android."
+  },
+  {
+    "repo": "jazzband/django-debug-toolbar",
+    "branch": "main",
+    "language": "Python",
+    "description": "A configurable set of panels that display various debug information about the current request/response."
+  },
+  {
+    "repo": "facebookresearch/xformers",
+    "branch": "main",
+    "language": "Python",
+    "description": "Hackable and optimized Transformers building blocks, supporting a composable construction."
+  },
+  {
+    "repo": "jitsi/jitsi-meet",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application."
+  },
+  {
+    "repo": "encode/starlette",
+    "branch": "master",
+    "language": "Python",
+    "description": "The little ASGI framework that shines. 🌟"
+  },
+  {
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "✨ A Markdown Editor"
+  },
+  {
+    "repo": "dotnet/runtime",
     "branch": "main",
     "language": "C#",
-    "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux."
+    "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps."
   },
   {
-    "repo": "RyanCodrai/py-turboquant",
+    "repo": "ChainSafe/lodestar",
+    "branch": "stable",
+    "language": "TypeScript",
+    "description": "🌟 Ethereum Consensus client for the Zig and TypeScript ecosystem"
+  },
+  {
+    "repo": "huggingface/datasets",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
   },
   {
-    "repo": "iflytek/skillhub",
+    "repo": "DioxusLabs/dioxus",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Fullstack app framework for web, desktop, and mobile."
+  },
+  {
+    "repo": "lib/pq",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go PostgreSQL driver for database/sql"
+  },
+  {
+    "repo": "sharkdp/fd",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A simple, fast and user-friendly alternative to 'find'"
+  },
+  {
+    "repo": "sirupsen/logrus",
+    "branch": "master",
+    "language": "Go",
+    "description": "Structured, pluggable logging for Go."
+  },
+  {
+    "repo": "expo/expo",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web."
+  },
+  {
+    "repo": "nolimits4web/swiper",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Most modern mobile touch slider with hardware accelerated transitions"
+  },
+  {
+    "repo": "googleapis/python-storage",
+    "branch": "main",
+    "language": "Python",
+    "description": "Python SDK for GCS (Google Cloud Storage)"
+  },
+  {
+    "repo": "junit-team/junit4",
     "branch": "main",
     "language": "Java",
-    "description": "Self-hosted, open-source agent skill registry for enterprises. Publish & version skill packages, govern with RBAC and audit logs, deploy   on-premise with Docker or Kubernetes."
+    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
   },
   {
-    "repo": "Geek-1001/arcmark",
-    "branch": "main",
-    "language": "Swift",
-    "description": "macOS bookmark manager that attaches to any browser window as a sidebar"
-  },
-  {
-    "repo": "vercel-labs/visual-json",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Visual JSON Editor. Schema-aware, embeddable, extensible."
-  },
-  {
-    "repo": "6551-Team/bybit-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Bybit trading bot & Bybit bot: AI, automated & auto crypto trading, futures, spot & grid, exchange strategies, algorithmic trading, cryptocurrency bot for Bybit."
-  },
-  {
-    "repo": "lifedever/TaskTick",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A native macOS app for managing scheduled tasks. Built with SwiftUI + SwiftData. Menu bar resident, cron expressions, script execution, and more."
-  },
-  {
-    "repo": "mrphrazer/agentic-malware-analysis",
-    "branch": "main",
-    "language": "YARA",
-    "description": "Agentic malware analysis environment with MCP-connected disassemblers, RE tooling, and structured workflows for Claude Code and Codex CLI."
-  },
-  {
-    "repo": "nushell/nushell",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A new type of shell"
-  },
-  {
-    "repo": "timuronlinq/messari-crack",
+    "repo": "allenai/allennlp",
     "branch": "main",
     "language": "Python",
-    "description": "Messari crack"
+    "description": "An open-source NLP research library, built on PyTorch."
   },
   {
-    "repo": "pyinstaller/pyinstaller",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Freeze (package) Python programs into stand-alone executables"
-  },
-  {
-    "repo": "liuwei283/RealWonder",
-    "branch": "main",
-    "language": "Python",
-    "description": "Real-Time Physical Action-Conditioned Video Generation"
-  },
-  {
-    "repo": "CompVis/stable-diffusion",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "A latent text-to-image diffusion model"
-  },
-  {
-    "repo": "cocos/cocos-engine",
-    "branch": "v3.8",
-    "language": "C++",
-    "description": "Cocos simplifies game creation and distribution with Cocos Creator, a free, open-source, cross-platform game engine. Empowering millions of developers to create high-performance, engaging 2D/3D games and instant web entertainment."
-  },
-  {
-    "repo": "peteromallet/dataclaw",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "steveclarke/real-world-rails",
-    "branch": "main",
-    "language": "Shell",
-    "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns."
-  },
-  {
-    "repo": "jwasham/coding-interview-university",
-    "branch": "main",
-    "language": "Other",
-    "description": "A complete computer science study plan to become a software engineer."
-  },
-  {
-    "repo": "tonyqinatcmu/SlideBot-AI",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🎨 SlideBot AI - AI-Powered Presentation Generator"
-  },
-  {
-    "repo": "element-hq/element-web",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "A glossy Matrix collaboration client for the web."
-  },
-  {
-    "repo": "locustio/locust",
+    "repo": "jmoiron/sqlx",
     "branch": "master",
-    "language": "Python",
-    "description": "Write scalable load tests in plain Python 🚗💨"
-  },
-  {
-    "repo": "prettier/eslint-config-prettier",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Turns off all rules that are unnecessary or might conflict with Prettier."
-  },
-  {
-    "repo": "cs50victor/claude-code-teams-mcp",
-    "branch": "main",
-    "language": "Python",
-    "description": "use claude code's agent teams orchestraction with any harness"
+    "language": "Go",
+    "description": "general purpose extensions to golang's database/sql"
   }
 ]
