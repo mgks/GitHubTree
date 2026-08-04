@@ -1,146 +1,146 @@
 [
   {
-    "repo": "fluent/fluentd",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "Fluentd: Unified Logging Layer (project under CNCF)"
-  },
-  {
-    "repo": "ddcat-ai/open-ai-canvas",
+    "repo": "manyougz/velotype",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "面向 AI 影视创作的开源无限画布工作台，集成多模态生成、分镜编排、素材管理与 Agent 工作流。"
+    "language": "Rust",
+    "description": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡"
   },
   {
-    "repo": "eooce/python-ws",
-    "branch": "main",
-    "language": "Python",
-    "description": "build vless / trojan /shadowsocks  proxies on python server,no need core"
-  },
-  {
-    "repo": "wandb/wandb",
-    "branch": "main",
-    "language": "Python",
-    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
-  },
-  {
-    "repo": "sindresorhus/type-fest",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A collection of essential TypeScript types"
-  },
-  {
-    "repo": "element-hq/element-android",
+    "repo": "nltk/nltk",
     "branch": "develop",
-    "language": "Kotlin",
-    "description": "A Matrix collaboration client for Android."
-  },
-  {
-    "repo": "jazzband/django-debug-toolbar",
-    "branch": "main",
     "language": "Python",
-    "description": "A configurable set of panels that display various debug information about the current request/response."
+    "description": "NLTK Source"
   },
   {
-    "repo": "facebookresearch/xformers",
-    "branch": "main",
-    "language": "Python",
-    "description": "Hackable and optimized Transformers building blocks, supporting a composable construction."
-  },
-  {
-    "repo": "jitsi/jitsi-meet",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application."
-  },
-  {
-    "repo": "encode/starlette",
+    "repo": "xiaomi-research/dmail",
     "branch": "master",
     "language": "Python",
-    "description": "The little ASGI framework that shines. 🌟"
+    "description": ""
   },
   {
-    "repo": "Tencent/cherry-markdown",
+    "repo": "SethGammon/Citadel",
     "branch": "main",
     "language": "JavaScript",
-    "description": "✨ A Markdown Editor"
+    "description": "Agent orchestration harness for Claude Code. Four-tier routing (/do), campaign persistence across sessions, parallel agents in isolated worktrees, discovery relay between waves, lifecycle hooks, circuit breaker, and 6 production-quality skills. From solo developer to institutional scale."
   },
   {
-    "repo": "dotnet/runtime",
-    "branch": "main",
-    "language": "C#",
-    "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps."
-  },
-  {
-    "repo": "ChainSafe/lodestar",
-    "branch": "stable",
-    "language": "TypeScript",
-    "description": "🌟 Ethereum Consensus client for the Zig and TypeScript ecosystem"
-  },
-  {
-    "repo": "huggingface/datasets",
-    "branch": "main",
-    "language": "Python",
-    "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
-  },
-  {
-    "repo": "DioxusLabs/dioxus",
+    "repo": "vuejs/awesome-vue",
     "branch": "master",
-    "language": "Rust",
-    "description": "Fullstack app framework for web, desktop, and mobile."
+    "language": "Other",
+    "description": "🎉 A curated list of awesome things related to Vue.js"
   },
   {
-    "repo": "lib/pq",
+    "repo": "WerWolv/ImHex",
     "branch": "master",
-    "language": "Go",
-    "description": "Go PostgreSQL driver for database/sql"
-  },
-  {
-    "repo": "sharkdp/fd",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A simple, fast and user-friendly alternative to 'find'"
-  },
-  {
-    "repo": "sirupsen/logrus",
-    "branch": "master",
-    "language": "Go",
-    "description": "Structured, pluggable logging for Go."
-  },
-  {
-    "repo": "expo/expo",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web."
-  },
-  {
-    "repo": "nolimits4web/swiper",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Most modern mobile touch slider with hardware accelerated transitions"
-  },
-  {
-    "repo": "googleapis/python-storage",
-    "branch": "main",
-    "language": "Python",
-    "description": "Python SDK for GCS (Google Cloud Storage)"
-  },
-  {
-    "repo": "junit-team/junit4",
-    "branch": "main",
-    "language": "Java",
-    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
-  },
-  {
-    "repo": "allenai/allennlp",
-    "branch": "main",
-    "language": "Python",
-    "description": "An open-source NLP research library, built on PyTorch."
+    "language": "C++",
+    "description": "🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM."
   },
   {
     "repo": "jmoiron/sqlx",
     "branch": "master",
     "language": "Go",
     "description": "general purpose extensions to golang's database/sql"
+  },
+  {
+    "repo": "Klipper3d/klipper",
+    "branch": "master",
+    "language": "C",
+    "description": "Klipper is a 3d-printer firmware"
+  },
+  {
+    "repo": "ruffle-rs/ruffle",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A Flash Player emulator written in Rust"
+  },
+  {
+    "repo": "marswaveai/TypeNo",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A free, open source, privacy-first voice input app for macOS."
+  },
+  {
+    "repo": "0xSero/turboquant",
+    "branch": "main",
+    "language": "Python",
+    "description": "TurboQuant: Near-optimal KV cache quantization for LLM inference (3-bit keys, 2-bit values) with Triton kernels + vLLM integration"
+  },
+  {
+    "repo": "patoles/agent-flow",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Real-time visualization of Claude Code agent orchestration — see your agents think, branch, and coordinate as they work."
+  },
+  {
+    "repo": "verialabs/ctf-agent",
+    "branch": "main",
+    "language": "Python",
+    "description": "Autonomous CTF solver that races multiple AI models in parallel. 1st place BSidesSF 2026."
+  },
+  {
+    "repo": "bitwarden/clients",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Bitwarden client apps (web, browser extension, desktop, and cli)."
+  },
+  {
+    "repo": "mantinedev/mantine",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A fully featured React components library"
+  },
+  {
+    "repo": "TheTom/turboquant_plus",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "remorses/usecomputer",
+    "branch": "main",
+    "language": "Zig",
+    "description": "Fast computer automation CLI for AI agents. Control any desktop with accessibility snapshots, clicks, typing, scrolling, and more."
+  },
+  {
+    "repo": "caddyserver/caddy",
+    "branch": "master",
+    "language": "Go",
+    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS"
+  },
+  {
+    "repo": "spring-cloud/spring-cloud-kubernetes",
+    "branch": "main",
+    "language": "Java",
+    "description": "Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc..."
+  },
+  {
+    "repo": "Anemll/flash-moe",
+    "branch": "m5-nax",
+    "language": "Objective-C",
+    "description": ""
+  },
+  {
+    "repo": "CoderLuii/HolyClaude",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": "AI coding workstation: Claude Code + web UI + 5 AI CLIs + headless browser + 50+ tools"
+  },
+  {
+    "repo": "DenisSergeevitch/repo-task-proof-loop",
+    "branch": "main",
+    "language": "Python",
+    "description": "Spec driven skill with subagents spawning"
+  },
+  {
+    "repo": "Zackriya-Solutions/meeting-minutes",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows."
+  },
+  {
+    "repo": "hxu296/tariff",
+    "branch": "main",
+    "language": "Python",
+    "description": "The official repository for tariff"
   }
 ]
