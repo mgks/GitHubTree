@@ -1,146 +1,146 @@
 [
   {
-    "repo": "zerosupercycIe/risk-free-sniper",
+    "repo": "Anduin2017/HowToCook",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only)."
+  },
+  {
+    "repo": "n8n-io/n8n",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+  },
+  {
+    "repo": "Tencent-Hunyuan/HY-Embodied",
     "branch": "master",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "sequelize/sequelize",
+    "repo": "lenxism/dither",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Feature-rich ORM for modern Node.js and TypeScript, it supports PostgreSQL (with JSON and JSONB support), MySQL, MariaDB, SQLite, MS SQL Server, Snowflake, Oracle DB (v6), DB2 and DB2 for IBM i."
+    "description": "Upload an image and watch it come alive as interactive dithered particles. Hover to push them, click to explode."
   },
   {
-    "repo": "freq-trades/hyperliquid-trading-bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "hyperliquid perpetuals grid crypto derivatives dex typescript nodejs automated-trading algorithmic-trading quant api leverage orderbook market-making testnet defi trading-bot blockchain risk OHLCV crypto-bot grid-strategy stop-loss drawdown viem websocket yaml systematic futures spot hedging rebalance liquidation SDK npm opensource observability d"
-  },
-  {
-    "repo": "dapr/dapr",
+    "repo": "tonbistudio/turboquant-pytorch",
     "branch": "master",
-    "language": "Go",
-    "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration."
-  },
-  {
-    "repo": "theori-io/copy-fail-CVE-2026-31431",
-    "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "From-scratch PyTorch implementation of Google's TurboQuant (ICLR 2026) for LLM KV cache compression. 5x compression at 3-bit with 99.5% attention fidelity."
   },
   {
-    "repo": "Shoshuo/Prismarr",
-    "branch": "main",
-    "language": "Twig",
-    "description": "A self-hosted media dashboard unifying Radarr, Sonarr, Prowlarr, Jellyseerr, qBittorrent and TMDb in a single Symfony 8 interface. One search bar across the local library and TMDb, one calendar merging movie and episode releases, one dashboard, one settings page. Single Docker container, embedded SQLite, multi-arch. AGPL-3.0."
-  },
-  {
-    "repo": "sartoopjj/vpn-over-github",
+    "repo": "buildpacks/pack",
     "branch": "main",
     "language": "Go",
-    "description": "Tunnels TCP connections through GitHub. Supports gist and git transports ( Too slow. Not usable.)"
+    "description": "CLI for building apps using Cloud Native Buildpacks"
   },
   {
-    "repo": "vuejs/vue",
+    "repo": "marswaveai/TypeNo",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+    "language": "Swift",
+    "description": "A free, open source, privacy-first voice input app for macOS."
   },
   {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "leo-lilinxiao/codex-autoresearch",
+    "repo": "uton88/dan-binary-releases",
     "branch": "main",
     "language": "Shell",
-    "description": "Codex Autoresearch Skill — A self-directed iterative system for Codex that continuously cycles through: modify, verify, retain or discard, and repeat indefinitely. Inspired by Karpathy’s autoresearch concept."
+    "description": "Public binary-only releases and install scripts for dan"
   },
   {
-    "repo": "owenlejeune/ArrMatey",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": ""
-  },
-  {
-    "repo": "alptexans/RSC-Detect-CVE-2025-55182",
-    "branch": "main",
-    "language": "Python",
-    "description": "RSC Detect CVE 2025 55182"
-  },
-  {
-    "repo": "deltatrader01/Polymarket-Kalshi-Trading-Bot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Polymarket-Kalshi arbitrage trading bot that exploits price inefficiencies between Kalshi and Polymarket. Kalshi Trading bot Polymarket trading bot Kalshi trading bot kalshi trading bot kalshi trading bot kalshi trading bot kalshi trading bot kalshi trading bot kalshi trading bot"
-  },
-  {
-    "repo": "FrondEnt/PolymarketBTC15mAssistant",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekis"
-  },
-  {
-    "repo": "grpc/grpc-web",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "gRPC for Web Clients"
-  },
-  {
-    "repo": "0xDbgMan/DrvEye",
-    "branch": "main",
-    "language": "Python",
-    "description": "Static analysis & exploitation-triage toolkit for Windows kernel drivers. Discover IOCTLs, Symbolic Links, and check cert , and Downlaods BYOVD"
-  },
-  {
-    "repo": "Zehong-Ma/PixelGen",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”"
-  },
-  {
-    "repo": "browser-use/browser-harness-js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Self-healing browser harness that enables LLMs to complete any task"
-  },
-  {
-    "repo": "ywnd1144/Gopay_plus_automatic",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "starccy/doubaoime-asr",
-    "branch": "main",
-    "language": "Python",
-    "description": "豆包输入法语音识别的非官方 Python 客户端"
-  },
-  {
-    "repo": "Solido/awesome-flutter",
-    "branch": "master",
-    "language": "Dart",
-    "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
-  },
-  {
-    "repo": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
-    "branch": "main",
-    "language": "C#",
-    "description": "Enables window switching and tab navigation in restricted browser environments"
-  },
-  {
-    "repo": "grafana/tempo",
+    "repo": "james-6-23/codex2api",
     "branch": "main",
     "language": "Go",
-    "description": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend."
+    "description": ""
   },
   {
-    "repo": "chencore/autoresearch-crypto",
-    "branch": "dev-2.0",
+    "repo": "509992828/grok-register",
+    "branch": "main",
     "language": "Python",
-    "description": "autoresearch-crypto"
+    "description": ""
+  },
+  {
+    "repo": "espressif/arduino-esp32",
+    "branch": "master",
+    "language": "C++",
+    "description": "Arduino core for the ESP32"
+  },
+  {
+    "repo": "kevinrgu/autoagent",
+    "branch": "main",
+    "language": "Python",
+    "description": "autonomous harness engineering"
+  },
+  {
+    "repo": "edinetdb/dexter-jp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "日本株の自律型リサーチAIエージェント｜AI agent for deep financial research on Japanese listed companies. Powered by EDINET DB + J-Quants."
+  },
+  {
+    "repo": "sndrec/WebMonkeyBall",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Super Monkey Ball on Web Broser."
+  },
+  {
+    "repo": "filiksyos/gitreverse",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Reverse engineer any repo into it's original prompt"
+  },
+  {
+    "repo": "Ta0ing/claude-code_evil",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "cc完整版，含手册，编译等"
+  },
+  {
+    "repo": "ipfs/js-ipfs",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "IPFS implementation in JavaScript"
+  },
+  {
+    "repo": "onnx/onnx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open standard for machine learning interoperability"
+  },
+  {
+    "repo": "adafruit/circuitpython",
+    "branch": "main",
+    "language": "C",
+    "description": "CircuitPython - a Python implementation for teaching coding with microcontrollers"
+  },
+  {
+    "repo": "mrdoob/three.wasm",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "8x Faster JavaScript 3D Library."
+  },
+  {
+    "repo": "cli/cli",
+    "branch": "trunk",
+    "language": "Go",
+    "description": "GitHub’s official command line tool"
+  },
+  {
+    "repo": "statsmodels/statsmodels",
+    "branch": "main",
+    "language": "Python",
+    "description": "Statsmodels: statistical modeling and econometrics in Python"
+  },
+  {
+    "repo": "motiful/cc-gateway",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI API identity gateway — reverse proxy that normalizes device fingerprints and telemetry for privacy-preserving API proxying"
+  },
+  {
+    "repo": "plotly/plotly.js",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Open-source JavaScript charting library behind Plotly and Dash"
   }
 ]
