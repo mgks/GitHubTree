@@ -1,146 +1,146 @@
 [
   {
-    "repo": "zonghaoyuan/infiplot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "InfiPlot is the world's first interactive plot game that AI generates all text and images in real-time. InfiPlot是全球首个由 AI 实时生成全部图文内容的交互式剧情游戏"
-  },
-  {
-    "repo": "tensorflow/serving",
-    "branch": "master",
-    "language": "C++",
-    "description": "A flexible, high-performance serving system for machine learning models"
-  },
-  {
-    "repo": "aave/aave-v3-core",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "This repository contains the core smart contracts of the Aave V3 protocol."
-  },
-  {
-    "repo": "ruffle-rs/ruffle",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A Flash Player emulator written in Rust"
-  },
-  {
-    "repo": "google/mediapipe",
-    "branch": "master",
-    "language": "C++",
-    "description": "Cross-platform, customizable ML solutions for live and streaming media."
-  },
-  {
-    "repo": "deep-learning-indaba/GoodPracticesML",
-    "branch": "main",
-    "language": "Other",
-    "description": "A repository of good practices for developing usable ML products in Africa."
-  },
-  {
-    "repo": "huggingface/tokenizers",
-    "branch": "main",
-    "language": "Rust",
-    "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production"
-  },
-  {
-    "repo": "facebookresearch/fairseq",
+    "repo": "mosaicml/llm-foundry",
     "branch": "main",
     "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    "description": "LLM training code for Databricks foundation models"
   },
   {
-    "repo": "sharkdp/bat",
+    "repo": "paritytech/substrate",
     "branch": "master",
     "language": "Rust",
-    "description": "A cat(1) clone with wings."
+    "description": "Substrate: The platform for blockchain innovators"
   },
   {
-    "repo": "JetBrains/kotlin",
+    "repo": "zoontek/react-native-bootsplash",
     "branch": "master",
-    "language": "Kotlin",
-    "description": "The Kotlin Programming Language."
+    "language": "TypeScript",
+    "description": "🚀 Show a splash screen during app startup. Hide it when you are ready."
   },
   {
-    "repo": "microsoft/Web-Dev-For-Beginners",
+    "repo": "apache/flink",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Flink"
+  },
+  {
+    "repo": "paritytech/polkadot",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Polkadot Node Implementation"
+  },
+  {
+    "repo": "sharkdp/hyperfine",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A command-line benchmarking tool"
+  },
+  {
+    "repo": "neovim/neovim",
+    "branch": "master",
+    "language": "Vim Script",
+    "description": "Vim-fork focused on extensibility and usability"
+  },
+  {
+    "repo": "pallets/jinja",
+    "branch": "main",
+    "language": "Python",
+    "description": "A very fast and expressive template engine."
+  },
+  {
+    "repo": "pytorch/xla",
+    "branch": "master",
+    "language": "C++",
+    "description": "Enabling PyTorch on XLA Devices (e.g. Google TPU)"
+  },
+  {
+    "repo": "Shopify/flash-list",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A better list for React Native"
+  },
+  {
+    "repo": "realm/realm-swift",
+    "branch": "master",
+    "language": "Objective-C",
+    "description": "Realm is a mobile database: a replacement for Core Data & SQLite"
+  },
+  {
+    "repo": "sapientinc/HRM-Text",
+    "branch": "main",
+    "language": "Python",
+    "description": "HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning."
+  },
+  {
+    "repo": "pmndrs/zustand",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🐻 Bear necessities for state management in React"
+  },
+  {
+    "repo": "google/benchmark",
+    "branch": "main",
+    "language": "C++",
+    "description": "A microbenchmark support library"
+  },
+  {
+    "repo": "jackc/pgx",
+    "branch": "master",
+    "language": "Go",
+    "description": "PostgreSQL driver and toolkit for Go"
+  },
+  {
+    "repo": "public-apis/public-apis",
+    "branch": "master",
+    "language": "Python",
+    "description": "A collective list of free APIs"
+  },
+  {
+    "repo": "jsdom/jsdom",
     "branch": "main",
     "language": "JavaScript",
-    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
+    "description": "A JavaScript implementation of various web standards, for use with Node.js"
   },
   {
-    "repo": "google/generative-ai-python",
+    "repo": "apollographql/graphql-subscriptions",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ":newspaper: A small module that implements GraphQL subscriptions for Node.js"
+  },
+  {
+    "repo": "NVIDIA/NeMo",
     "branch": "main",
     "language": "Python",
-    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
+    "description": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)"
   },
   {
-    "repo": "PaddlePaddle/PaddleOCR",
+    "repo": "microsoft/generative-ai-for-beginners",
     "branch": "main",
-    "language": "Python",
-    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+    "language": "Jupyter Notebook",
+    "description": "21 Lessons, Get Started Building with Generative AI"
   },
   {
-    "repo": "openai/triton",
+    "repo": "AssemblyScript/assemblyscript",
     "branch": "main",
-    "language": "MLIR",
-    "description": "Development repository for the Triton language and compiler"
+    "language": "WebAssembly",
+    "description": "A TypeScript-like language for WebAssembly."
   },
   {
-    "repo": "microsoft/STL",
-    "branch": "main",
-    "language": "C++",
-    "description": "MSVC's implementation of the C++ Standard Library."
-  },
-  {
-    "repo": "apple/swift",
-    "branch": "main",
-    "language": "C++",
-    "description": "The Swift Programming Language"
-  },
-  {
-    "repo": "microsoft/AI",
+    "repo": "ReactiveX/RxPY",
     "branch": "master",
     "language": "Python",
-    "description": "Microsoft AI"
+    "description": "ReactiveX for Python"
   },
   {
-    "repo": "google/flatbuffers",
-    "branch": "master",
-    "language": "C++",
-    "description": "FlatBuffers: Memory Efficient Serialization Library"
-  },
-  {
-    "repo": "microsoft/LlamaSharp",
+    "repo": "spring-projects/spring-data-jpa",
     "branch": "main",
-    "language": "Other",
-    "description": ".NET library for Llama model inference."
+    "language": "Java",
+    "description": "Simplifies the development of creating a JPA-based data access layer."
   },
   {
-    "repo": "deepset-ai/haystack",
-    "branch": "main",
-    "language": "MDX",
-    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
-  },
-  {
-    "repo": "stanfordnlp/stanza",
-    "branch": "main",
-    "language": "Python",
-    "description": "Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages"
-  },
-  {
-    "repo": "facebook/litho",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A declarative framework for building efficient UIs on Android."
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-Math",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
-  },
-  {
-    "repo": "vercel/ai-chatbot-svelte",
-    "branch": "main",
-    "language": "Svelte",
-    "description": "A full-featured, hackable SvelteKit AI chatbot built by Vercel"
+    "repo": "quasarframework/quasar",
+    "branch": "dev",
+    "language": "JavaScript",
+    "description": "Quasar Framework - Build high-performance VueJS user interfaces in record time"
   }
 ]
