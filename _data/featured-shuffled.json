@@ -1,146 +1,146 @@
 [
   {
-    "repo": "mosaicml/llm-foundry",
+    "repo": "Kuberwastaken/claurst",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
+  },
+  {
+    "repo": "LearnPrompt/cc-harness-skills",
     "branch": "main",
     "language": "Python",
-    "description": "LLM training code for Databricks foundation models"
+    "description": "Portable CC-inspired skills for memory, verification, multi-agent coordination, context compression, and proactive coding-agent workflows."
   },
   {
-    "repo": "paritytech/substrate",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Substrate: The platform for blockchain innovators"
+    "repo": "byJoey/openclawctl",
+    "branch": "main",
+    "language": "Shell",
+    "description": ""
   },
   {
-    "repo": "zoontek/react-native-bootsplash",
-    "branch": "master",
+    "repo": "Gitlawb/openclaude",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "🚀 Show a splash screen during app startup. Hide it when you are ready."
+    "description": "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
   },
   {
-    "repo": "apache/flink",
+    "repo": "ultralytics/yolov5",
     "branch": "master",
-    "language": "Java",
-    "description": "Apache Flink"
+    "language": "Python",
+    "description": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite"
   },
   {
-    "repo": "paritytech/polkadot",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Polkadot Node Implementation"
-  },
-  {
-    "repo": "sharkdp/hyperfine",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A command-line benchmarking tool"
-  },
-  {
-    "repo": "neovim/neovim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "Vim-fork focused on extensibility and usability"
-  },
-  {
-    "repo": "pallets/jinja",
+    "repo": "shuyicc/MathLens",
     "branch": "main",
     "language": "Python",
-    "description": "A very fast and expressive template engine."
+    "description": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。"
   },
   {
-    "repo": "pytorch/xla",
-    "branch": "master",
-    "language": "C++",
-    "description": "Enabling PyTorch on XLA Devices (e.g. Google TPU)"
-  },
-  {
-    "repo": "Shopify/flash-list",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A better list for React Native"
-  },
-  {
-    "repo": "realm/realm-swift",
-    "branch": "master",
-    "language": "Objective-C",
-    "description": "Realm is a mobile database: a replacement for Core Data & SQLite"
-  },
-  {
-    "repo": "sapientinc/HRM-Text",
+    "repo": "inspatio/inspatio-world",
     "branch": "main",
     "language": "Python",
-    "description": "HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning."
+    "description": ""
   },
   {
-    "repo": "pmndrs/zustand",
+    "repo": "x1xhlol/better-clawd",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🐻 Bear necessities for state management in React"
+    "description": "Claude Code, but better: better performance, OpenAI/OpenRouter support, no telemetry, no lock-in."
   },
   {
-    "repo": "google/benchmark",
+    "repo": "xr843/Master-skill",
     "branch": "main",
-    "language": "C++",
-    "description": "A microbenchmark support library"
+    "language": "Python",
+    "description": "Chinese Buddhist Master-skill powered by FoJin — 基于佛教经典文献的汉传祖师大德教学角色生成器"
   },
   {
-    "repo": "jackc/pgx",
+    "repo": "kamranahmedse/developer-roadmap",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
+  },
+  {
+    "repo": "projectdiscovery/nuclei",
     "branch": "master",
     "language": "Go",
-    "description": "PostgreSQL driver and toolkit for Go"
+    "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations."
   },
   {
-    "repo": "public-apis/public-apis",
+    "repo": "juliangarnier/anime",
     "branch": "master",
-    "language": "Python",
-    "description": "A collective list of free APIs"
+    "language": "JavaScript",
+    "description": "JavaScript animation engine"
   },
   {
-    "repo": "jsdom/jsdom",
+    "repo": "SamNet-dev/conduit-manager",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution"
+  },
+  {
+    "repo": "iamfakeguru/claude-md",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Production-grade agent directives for Claude Code"
+  },
+  {
+    "repo": "ramitsurana/awesome-kubernetes",
+    "branch": "master",
+    "language": "Shell",
+    "description": "A curated list for awesome kubernetes sources :ship::tada:"
+  },
+  {
+    "repo": "pugjs/pug",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Pug – robust, elegant, feature rich template engine for Node.js"
+  },
+  {
+    "repo": "go-kit/kit",
+    "branch": "master",
+    "language": "Go",
+    "description": "A standard library for microservices."
+  },
+  {
+    "repo": "Gentleman-Programming/engram",
+    "branch": "main",
+    "language": "Go",
+    "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI."
+  },
+  {
+    "repo": "smartcmd/MinecraftConsoles",
+    "branch": "main",
+    "language": "C++",
+    "description": "A certain block game"
+  },
+  {
+    "repo": "nextcloud/android",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "📱 Nextcloud Android app"
+  },
+  {
+    "repo": "bcefghj/ai-agent-interview-guide",
+    "branch": "main",
+    "language": "Python",
+    "description": "AI Agent 面试全攻略：从零到Offer，包含200+面试题、企业级项目(Python/Java/Go)、简历模板、STAR面试稿、哆啦A梦漫画图解"
+  },
+  {
+    "repo": "J-Pster/Psters_AI_Workflow",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A JavaScript implementation of various web standards, for use with Node.js"
+    "description": "An anti-vibe-coding, agentic AI workflow that improves results with engineering rigor in any project, language, and framework."
   },
   {
-    "repo": "apollographql/graphql-subscriptions",
+    "repo": "romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version",
     "branch": "main",
-    "language": "TypeScript",
-    "description": ":newspaper: A small module that implements GraphQL subscriptions for Node.js"
+    "language": "C++",
+    "description": "Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events"
   },
   {
-    "repo": "NVIDIA/NeMo",
+    "repo": "agentscope-ai/CoPaw",
     "branch": "main",
     "language": "Python",
-    "description": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)"
-  },
-  {
-    "repo": "microsoft/generative-ai-for-beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "21 Lessons, Get Started Building with Generative AI"
-  },
-  {
-    "repo": "AssemblyScript/assemblyscript",
-    "branch": "main",
-    "language": "WebAssembly",
-    "description": "A TypeScript-like language for WebAssembly."
-  },
-  {
-    "repo": "ReactiveX/RxPY",
-    "branch": "master",
-    "language": "Python",
-    "description": "ReactiveX for Python"
-  },
-  {
-    "repo": "spring-projects/spring-data-jpa",
-    "branch": "main",
-    "language": "Java",
-    "description": "Simplifies the development of creating a JPA-based data access layer."
-  },
-  {
-    "repo": "quasarframework/quasar",
-    "branch": "dev",
-    "language": "JavaScript",
-    "description": "Quasar Framework - Build high-performance VueJS user interfaces in record time"
+    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
   }
 ]
