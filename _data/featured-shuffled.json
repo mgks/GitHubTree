@@ -1,146 +1,146 @@
 [
   {
-    "repo": "go-kit/kit",
-    "branch": "master",
-    "language": "Go",
-    "description": "A standard library for microservices."
-  },
-  {
-    "repo": "realm/SwiftLint",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A tool to enforce Swift style and conventions."
-  },
-  {
-    "repo": "reakjra/omikuji",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Qt/QML based game launcher for Linux"
-  },
-  {
-    "repo": "openabdev/openab",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A lightweight, secure, cloud-native ACP harness that bridges Discord and any ACP-compatible coding CLI."
-  },
-  {
-    "repo": "claude-code-best/claude-code",
+    "repo": "zonghaoyuan/infiplot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Claude Code 可运行版; Typescript 类型全修复;企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
+    "description": "InfiPlot is the world's first interactive plot game that AI generates all text and images in real-time. InfiPlot是全球首个由 AI 实时生成全部图文内容的交互式剧情游戏"
   },
   {
-    "repo": "marilyn4120shaz3/KiteAI",
-    "branch": "main",
-    "language": "Python",
-    "description": "Automated multi-account farming tool for Kite AI decentralized payment network with faucet claims, token staking, DEX swaps, daily quiz completion, cross-chain bridging, proxy rotation, and configurable task scheduling"
-  },
-  {
-    "repo": "0xSero/moe-compress",
-    "branch": "main",
-    "language": "Python",
-    "description": "Model-agnostic MoE compression automation: build calibration bundles, run REAP/quantization/benchmark/publish stages, and render auditable reports."
-  },
-  {
-    "repo": "matteorigodanza/cryto-trading-ai-assistant",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI guardian for manual crypto traders — risk monitoring, strategy validation & emotional trading detection. No trade execution."
-  },
-  {
-    "repo": "lifedever/TaskTick",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A native macOS app for managing scheduled tasks. Built with SwiftUI + SwiftData. Menu bar resident, cron expressions, script execution, and more."
-  },
-  {
-    "repo": "zerobootdev/zeroboot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking"
-  },
-  {
-    "repo": "zipperiron5/kms-pico-port-version-26",
-    "branch": "main",
+    "repo": "tensorflow/serving",
+    "branch": "master",
     "language": "C++",
-    "description": "A powerful Windows-native (.exe) management utility for Microsoft KMS (Key Management Service) orchestration. Designed for enterprise volume license validation, GVLK deployment, and automated asset maintenance."
+    "description": "A flexible, high-performance serving system for machine learning models"
   },
   {
-    "repo": "joeseesun/markdown-proxy",
+    "repo": "aave/aave-v3-core",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "This repository contains the core smart contracts of the Aave V3 protocol."
+  },
+  {
+    "repo": "ruffle-rs/ruffle",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A Flash Player emulator written in Rust"
+  },
+  {
+    "repo": "google/mediapipe",
+    "branch": "master",
+    "language": "C++",
+    "description": "Cross-platform, customizable ML solutions for live and streaming media."
+  },
+  {
+    "repo": "deep-learning-indaba/GoodPracticesML",
     "branch": "main",
-    "language": "Python",
-    "description": "Fetch any URL as clean Markdown via proxy services (r.jina.ai / defuddle.md) or built-in scripts. Works with login-required pages like X/Twitter, WeCh"
+    "language": "Other",
+    "description": "A repository of good practices for developing usable ML products in Africa."
   },
   {
-    "repo": "JudoChinX/rangarr",
-    "branch": "main",
-    "language": "Python",
-    "description": "Rangarr automates and staggers media searches across your Radarr, Sonarr, and Lidarr instances."
-  },
-  {
-    "repo": "postrv/forgemax",
+    "repo": "huggingface/tokenizers",
     "branch": "main",
     "language": "Rust",
-    "description": "Code Mode inspired local sandboxed MCP Gateway — collapses N servers x M tools into 2 tools (~1,000 tokens)"
+    "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production"
   },
   {
-    "repo": "mbeijen/andrej-karpathy-skills-cursor-vscode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Andrej Karpathy skills for your Cursor or VS Code editor"
-  },
-  {
-    "repo": "gemini-cli-extensions/ralph",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Gemini CLI extension for Ralph loops"
-  },
-  {
-    "repo": "TACOWASA059/katamariio",
-    "branch": "main",
-    "language": "Java",
-    "description": "[Forge1.20.1] 球体を操作して周囲のブロックを巻き込み大きくなれるMOD"
-  },
-  {
-    "repo": "icebear0828/clio",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A Claude Code clone CLI - agentic coding assistant in your terminal"
-  },
-  {
-    "repo": "yfyang007/RealRestorer",
-    "branch": "master",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "OpenMOSS/MOSS-TTS",
+    "repo": "facebookresearch/fairseq",
     "branch": "main",
     "language": "Python",
-    "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
   },
   {
-    "repo": "khalildh/garment-notation",
+    "repo": "sharkdp/bat",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A cat(1) clone with wings."
+  },
+  {
+    "repo": "JetBrains/kotlin",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "The Kotlin Programming Language."
+  },
+  {
+    "repo": "microsoft/Web-Dev-For-Beginners",
     "branch": "main",
     "language": "JavaScript",
-    "description": ""
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
   },
   {
-    "repo": "taf2/mdvi",
-    "branch": "master",
-    "language": "Rust",
-    "description": "cli based Markdown viewer"
-  },
-  {
-    "repo": "poleHansen/baibaiAIGC",
+    "repo": "google/generative-ai-python",
     "branch": "main",
     "language": "Python",
-    "description": "baibaiAIGC"
+    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
   },
   {
-    "repo": "vixhal-baraiya/microgpt-c",
+    "repo": "PaddlePaddle/PaddleOCR",
     "branch": "main",
-    "language": "C",
-    "description": "The most atomic way to train and inference a GPT in pure, dependency-free C"
+    "language": "Python",
+    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+  },
+  {
+    "repo": "openai/triton",
+    "branch": "main",
+    "language": "MLIR",
+    "description": "Development repository for the Triton language and compiler"
+  },
+  {
+    "repo": "microsoft/STL",
+    "branch": "main",
+    "language": "C++",
+    "description": "MSVC's implementation of the C++ Standard Library."
+  },
+  {
+    "repo": "apple/swift",
+    "branch": "main",
+    "language": "C++",
+    "description": "The Swift Programming Language"
+  },
+  {
+    "repo": "microsoft/AI",
+    "branch": "master",
+    "language": "Python",
+    "description": "Microsoft AI"
+  },
+  {
+    "repo": "google/flatbuffers",
+    "branch": "master",
+    "language": "C++",
+    "description": "FlatBuffers: Memory Efficient Serialization Library"
+  },
+  {
+    "repo": "microsoft/LlamaSharp",
+    "branch": "main",
+    "language": "Other",
+    "description": ".NET library for Llama model inference."
+  },
+  {
+    "repo": "deepset-ai/haystack",
+    "branch": "main",
+    "language": "MDX",
+    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
+  },
+  {
+    "repo": "stanfordnlp/stanza",
+    "branch": "main",
+    "language": "Python",
+    "description": "Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages"
+  },
+  {
+    "repo": "facebook/litho",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "A declarative framework for building efficient UIs on Android."
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-Math",
+    "branch": "main",
+    "language": "Python",
+    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
+  },
+  {
+    "repo": "vercel/ai-chatbot-svelte",
+    "branch": "main",
+    "language": "Svelte",
+    "description": "A full-featured, hackable SvelteKit AI chatbot built by Vercel"
   }
 ]
