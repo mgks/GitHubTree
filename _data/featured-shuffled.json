@@ -1,146 +1,146 @@
 [
   {
-    "repo": "modelstudioai/cli",
+    "repo": "Fishaudio/Fish-Speech",
+    "branch": "main",
+    "language": "Python",
+    "description": "SOTA Open Source TTS"
+  },
+  {
+    "repo": "shaohua-pan/StarWAM",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Generalizable Codebase for World-Action Models"
+  },
+  {
+    "repo": "parcadei/ouros",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A sandboxed Python runtime for AI agents, written in Rust."
+  },
+  {
+    "repo": "compozy/compozy",
+    "branch": "main",
+    "language": "Go",
+    "description": "Drive the full lifecycle of AI-assisted development — from idea to shipped code."
+  },
+  {
+    "repo": "Geek-1001/arcmark",
+    "branch": "main",
+    "language": "Swift",
+    "description": "macOS bookmark manager that attaches to any browser window as a sidebar"
+  },
+  {
+    "repo": "aikhe/wrapped.nvim",
+    "branch": "master",
+    "language": "Lua",
+    "description": "View your Neovim configuration insights, history, and heatmaps."
+  },
+  {
+    "repo": "go-delve/delve",
+    "branch": "master",
+    "language": "Go",
+    "description": "Delve is a debugger for the Go programming language."
+  },
+  {
+    "repo": "apache/iceberg",
+    "branch": "main",
+    "language": "Java",
+    "description": "Apache Iceberg"
+  },
+  {
+    "repo": "styled-components/styled-components",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls."
+    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅"
   },
   {
-    "repo": "allenai/allennlp",
-    "branch": "main",
-    "language": "Python",
-    "description": "An open-source NLP research library, built on PyTorch."
-  },
-  {
-    "repo": "vakovalskii/codedash",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Termius-style browser dashboard for Claude Code & Codex sessions. View, search, resume, tag, and manage all your AI coding sessions."
-  },
-  {
-    "repo": "smartcmd/MinecraftConsoles",
-    "branch": "main",
-    "language": "C++",
-    "description": "A certain block game"
-  },
-  {
-    "repo": "harrymunro/nelson",
-    "branch": "main",
-    "language": "Shell",
-    "description": "A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons."
-  },
-  {
-    "repo": "PyCQA/flake8",
-    "branch": "main",
-    "language": "Python",
-    "description": "flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code."
-  },
-  {
-    "repo": "kubernetes-sigs/kubespray",
-    "branch": "master",
-    "language": "Jinja",
-    "description": "Deploy a Production Ready Kubernetes Cluster"
-  },
-  {
-    "repo": "nickustinov/itsypad-macos",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A tiny, fast scratchpad and clipboard manager for Mac"
-  },
-  {
-    "repo": "MichMich/MagicMirror",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant."
-  },
-  {
-    "repo": "Quick/Quick",
-    "branch": "main",
-    "language": "Swift",
-    "description": "The Swift (and Objective-C) testing framework."
-  },
-  {
-    "repo": "solana-labs/solana",
+    "repo": "clap-rs/clap",
     "branch": "master",
     "language": "Rust",
-    "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces."
+    "description": "A full featured, fast Command Line Argument Parser for Rust"
   },
   {
-    "repo": "open-telemetry/opentelemetry-python",
+    "repo": "r1cA18/screen-commentator",
     "branch": "main",
-    "language": "Python",
-    "description": "OpenTelemetry Python API and SDK"
+    "language": "Swift",
+    "description": "macOS app that captures your screen and generates scrolling AI comments overlay"
   },
   {
-    "repo": "alptexans/RSC-Detect-CVE-2025-55182",
+    "repo": "andyhuo520/rf-detr-detection",
     "branch": "main",
-    "language": "Python",
-    "description": "RSC Detect CVE 2025 55182"
+    "language": "JavaScript",
+    "description": "基于 RF-DETR 的浏览器端实时目标检测应用"
   },
   {
-    "repo": "xywml/PaperGrid",
+    "repo": "goharbor/community",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "执笔为剑  - 一款基于NEXT.js的轻量化博客"
+    "language": "Other",
+    "description": "Harbor community-related material"
   },
   {
-    "repo": "1Panel-dev/MaxKB",
-    "branch": "main",
-    "language": "Python",
-    "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。"
-  },
-  {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "Perkins729/OmniXtreme",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "deepfakes/faceswap",
+    "repo": "caiwuu/web2api",
     "branch": "master",
     "language": "Python",
-    "description": "Deepfakes Software For All"
+    "description": "把网页AI转api，如claude2api"
   },
   {
-    "repo": "Higangssh/gitcredits",
+    "repo": "jackwener/twitter-cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
+  },
+  {
+    "repo": "streamlit/streamlit",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Streamlit — A faster way to build and share data apps."
+  },
+  {
+    "repo": "tomascupr/sandstorm",
+    "branch": "main",
+    "language": "Python",
+    "description": "One API call. Full Claude agent. Completely sandboxed."
+  },
+  {
+    "repo": "AnkitNayak-eth/EpsteinFiles-RAG",
+    "branch": "main",
+    "language": "Python",
+    "description": "A RAG pipeline implementation built on the 'Epstein Files 20K' dataset from Hugging Face (Teyler)."
+  },
+  {
+    "repo": "open-pencil/open-pencil",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "AI-native design editor. Open-source Figma alternative."
+  },
+  {
+    "repo": "harlan-zw/vue-ecosystem-skills",
+    "branch": "main",
+    "language": "MDX",
+    "description": "AI agent skills for the bleeding edge Vue ecosystem. Built from real docs, issues, and releases."
+  },
+  {
+    "repo": "mosaxiv/clawlet",
     "branch": "main",
     "language": "Go",
-    "description": "Roll movie-style credits for your git repo — right in the terminal"
+    "description": "Lightweight Personal AI Assistant"
   },
   {
-    "repo": "vllm-project/aibrix",
-    "branch": "main",
-    "language": "Go",
-    "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
+    "repo": "apache/hadoop",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "Apache Hadoop"
   },
   {
-    "repo": "EricEsquivel/CobaltStrike-Linux-Beacon",
+    "repo": "microsoft/Web-Dev-For-Beginners",
     "branch": "main",
-    "language": "C",
-    "description": "Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons"
+    "language": "JavaScript",
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
   },
   {
-    "repo": "sqlalchemy/sqlalchemy",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Database Toolkit for Python"
-  },
-  {
-    "repo": "marilyn4120shaz3/KiteAI",
-    "branch": "main",
-    "language": "Python",
-    "description": "Automated multi-account farming tool for Kite AI decentralized payment network with faucet claims, token staking, DEX swaps, daily quiz completion, cross-chain bridging, proxy rotation, and configurable task scheduling"
-  },
-  {
-    "repo": "docker/docker-py",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Python library for the Docker Engine API"
+    "repo": "RocketChat/Rocket.Chat",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "The Secure CommsOS™ for mission-critical operations"
   }
 ]
