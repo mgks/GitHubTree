@@ -1,63 +1,105 @@
 [
   {
-    "repo": "TianyiDataScience/openclaw-control-center",
+    "repo": "modelstudioai/cli",
     "branch": "main",
     "language": "TypeScript",
-    "description": ""
+    "description": "Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls."
   },
   {
-    "repo": "Dokhacgiakhoa/google-antigravity",
+    "repo": "allenai/allennlp",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "An open-source NLP research library, built on PyTorch."
   },
   {
-    "repo": "bikini/exploitarium",
+    "repo": "vakovalskii/codedash",
     "branch": "main",
-    "language": "Python",
-    "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz"
+    "language": "JavaScript",
+    "description": "Termius-style browser dashboard for Claude Code & Codex sessions. View, search, resume, tag, and manage all your AI coding sessions."
   },
   {
-    "repo": "labstack/echo",
-    "branch": "master",
-    "language": "Go",
-    "description": "High performance, minimalist Go web framework"
-  },
-  {
-    "repo": "vitejs/vite",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Next generation frontend tooling. It's fast!"
-  },
-  {
-    "repo": "facebookresearch/faiss",
+    "repo": "smartcmd/MinecraftConsoles",
     "branch": "main",
     "language": "C++",
-    "description": "A library for efficient similarity search and clustering of dense vectors."
+    "description": "A certain block game"
   },
   {
-    "repo": "spring-projects/spring-boot",
+    "repo": "harrymunro/nelson",
     "branch": "main",
-    "language": "Java",
-    "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss."
+    "language": "Shell",
+    "description": "A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons."
   },
   {
-    "repo": "reduxjs/redux",
+    "repo": "PyCQA/flake8",
+    "branch": "main",
+    "language": "Python",
+    "description": "flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code."
+  },
+  {
+    "repo": "kubernetes-sigs/kubespray",
     "branch": "master",
+    "language": "Jinja",
+    "description": "Deploy a Production Ready Kubernetes Cluster"
+  },
+  {
+    "repo": "nickustinov/itsypad-macos",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A tiny, fast scratchpad and clipboard manager for Mac"
+  },
+  {
+    "repo": "MichMich/MagicMirror",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant."
+  },
+  {
+    "repo": "Quick/Quick",
+    "branch": "main",
+    "language": "Swift",
+    "description": "The Swift (and Objective-C) testing framework."
+  },
+  {
+    "repo": "solana-labs/solana",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces."
+  },
+  {
+    "repo": "open-telemetry/opentelemetry-python",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenTelemetry Python API and SDK"
+  },
+  {
+    "repo": "alptexans/RSC-Detect-CVE-2025-55182",
+    "branch": "main",
+    "language": "Python",
+    "description": "RSC Detect CVE 2025 55182"
+  },
+  {
+    "repo": "xywml/PaperGrid",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "A JS library for predictable global state management"
+    "description": "执笔为剑  - 一款基于NEXT.js的轻量化博客"
   },
   {
-    "repo": "PanJiaChen/vue-element-admin",
-    "branch": "master",
-    "language": "Vue",
-    "description": ":tada: A magical vue admin                                                                https://panjiachen.github.io/vue-element-admin"
-  },
-  {
-    "repo": "microsoft/ML-For-Beginners",
+    "repo": "1Panel-dev/MaxKB",
     "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all"
+    "language": "Python",
+    "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。"
+  },
+  {
+    "repo": "web3/web3.js",
+    "branch": "1.x",
+    "language": "TypeScript",
+    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
+  },
+  {
+    "repo": "Perkins729/OmniXtreme",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   },
   {
     "repo": "deepfakes/faceswap",
@@ -66,81 +108,39 @@
     "description": "Deepfakes Software For All"
   },
   {
-    "repo": "chartjs/Chart.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Simple HTML5 Charts using the <canvas> tag"
-  },
-  {
-    "repo": "starship/starship",
-    "branch": "master",
-    "language": "Rust",
-    "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
-  },
-  {
-    "repo": "sirupsen/logrus",
-    "branch": "master",
+    "repo": "Higangssh/gitcredits",
+    "branch": "main",
     "language": "Go",
-    "description": "Structured, pluggable logging for Go."
+    "description": "Roll movie-style credits for your git repo — right in the terminal"
   },
   {
-    "repo": "django/django",
+    "repo": "vllm-project/aibrix",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
+  },
+  {
+    "repo": "EricEsquivel/CobaltStrike-Linux-Beacon",
+    "branch": "main",
+    "language": "C",
+    "description": "Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons"
+  },
+  {
+    "repo": "sqlalchemy/sqlalchemy",
     "branch": "main",
     "language": "Python",
-    "description": "The Web framework for perfectionists with deadlines."
+    "description": "The Database Toolkit for Python"
   },
   {
-    "repo": "kubernetes/kubernetes",
-    "branch": "master",
-    "language": "Go",
-    "description": "Production-Grade Container Scheduling and Management"
-  },
-  {
-    "repo": "iterative/dvc",
+    "repo": "marilyn4120shaz3/KiteAI",
     "branch": "main",
     "language": "Python",
-    "description": "🦉 Data Versioning and ML Experiments"
+    "description": "Automated multi-account farming tool for Kite AI decentralized payment network with faucet claims, token staking, DEX swaps, daily quiz completion, cross-chain bridging, proxy rotation, and configurable task scheduling"
   },
   {
-    "repo": "hashicorp/vagrant",
+    "repo": "docker/docker-py",
     "branch": "main",
-    "language": "Ruby",
-    "description": "Vagrant is a tool for building and distributing development environments."
-  },
-  {
-    "repo": "github/hub",
-    "branch": "master",
-    "language": "Go",
-    "description": "A command-line tool that makes git easier to use with GitHub."
-  },
-  {
-    "repo": "cockroachdb/cockroach",
-    "branch": "master",
-    "language": "Go",
-    "description": "CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement."
-  },
-  {
-    "repo": "open-policy-agent/opa",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine."
-  },
-  {
-    "repo": "tensorflow/hub",
-    "branch": "master",
     "language": "Python",
-    "description": "A library for transfer learning by reusing parts of TensorFlow models."
-  },
-  {
-    "repo": "github/docs",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The open-source repo for docs.github.com"
-  },
-  {
-    "repo": "hashicorp/terraform",
-    "branch": "main",
-    "language": "Go",
-    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
+    "description": "A Python library for the Docker Engine API"
   }
 ]
