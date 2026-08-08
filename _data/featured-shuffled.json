@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Kuberwastaken/claurst",
+    "repo": "miantiao-me/cloud-code",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Cloud Code (Cloudflare + OpenCode) ，在 Cloudflare 运行 OpenCode 为你打造一个专属云端 Agent"
+  },
+  {
+    "repo": "MarioGalindoQ/Modern-CPP-Design-Patterns",
     "branch": "main",
+    "language": "C++",
+    "description": "32 Design Patterns and C++ Idioms implemented in Modern C++"
+  },
+  {
+    "repo": "Significant-Gravitas/AutoGPT",
+    "branch": "master",
+    "language": "Python",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+  },
+  {
+    "repo": "stormneonnightraven4640692/DeepFake-AI-RealTime",
+    "branch": "main",
+    "language": "C#",
+    "description": "An advanced, LLM-powered toolkit providing comprehensive capabilities for ethical synthetic media detection, analysis, and responsible content generation."
+  },
+  {
+    "repo": "oblador/react-native-vector-icons",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Customizable Icons for React Native with support for image source and full styling."
+  },
+  {
+    "repo": "CRYPTO-BLACKSKY/Polymarket-sports-copy-trading-bot",
+    "branch": "work",
+    "language": "TypeScript",
+    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket copy trading bot polymarket copy trading bot polymarket copytradingbot polymarket copytrading bot"
+  },
+  {
+    "repo": "hjanuschka/pi-multi-pass",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Multi-subscription extension for pi -- use multiple OAuth accounts per provider (Anthropic, Codex, Copilot, Gemini, Antigravity)"
+  },
+  {
+    "repo": "MariaDB/server",
+    "branch": "11.4",
+    "language": "C++",
+    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry."
+  },
+  {
+    "repo": "jarodise/XQuery",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "golang/protobuf",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go support for Google's protocol buffers"
+  },
+  {
+    "repo": "LearnPrompt/ai-news-radar",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "software-mansion/react-native-reanimated",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "React Native's Animated library reimplemented"
+  },
+  {
+    "repo": "airbnb/knowledge-repo",
+    "branch": "master",
+    "language": "Python",
+    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions."
+  },
+  {
+    "repo": "MiniMax-AI/skills",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "barrosyan/PINNeAPPle",
+    "branch": "main",
+    "language": "Python",
+    "description": "Pinneaple is an open-source Physics AI toolkit for Physics-Informed Neural Networks (PINNs), scientific ML, geometry processing, solvers, and reproducible training pipelines."
+  },
+  {
+    "repo": "nativefier/nativefier",
+    "branch": "development",
+    "language": "TypeScript",
+    "description": "Make any web page a desktop application"
+  },
+  {
+    "repo": "trevin-creator/autoresearch-mlx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
+  },
+  {
+    "repo": "juliye2025/evil-read-arxiv",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude Code+Obsidian，邪修读论文就是快"
+  },
+  {
+    "repo": "ryan26craf/Hbar-Wallet-Desktop",
+    "branch": "main",
+    "language": "C++",
+    "description": "A secure, open-source desktop wallet for Hedera HBAR cryptocurrency built with C++ and Qt6."
+  },
+  {
+    "repo": "sigstore/cosign",
+    "branch": "main",
+    "language": "Go",
+    "description": "Code signing and transparency for containers and binaries"
+  },
+  {
+    "repo": "m1heng/clawdbot-feishu",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "caiwuu/web2api",
+    "branch": "master",
+    "language": "Python",
+    "description": "把网页AI转api，如claude2api"
+  },
+  {
+    "repo": "starship/starship",
+    "branch": "master",
     "language": "Rust",
-    "description": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
+    "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
   },
   {
-    "repo": "LearnPrompt/cc-harness-skills",
+    "repo": "ochyai/vibe-local",
     "branch": "main",
     "language": "Python",
-    "description": "Portable CC-inspired skills for memory, verification, multi-agent coordination, context compression, and proactive coding-agent workflows."
-  },
-  {
-    "repo": "byJoey/openclawctl",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "Gitlawb/openclaude",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
-  },
-  {
-    "repo": "ultralytics/yolov5",
-    "branch": "master",
-    "language": "Python",
-    "description": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite"
-  },
-  {
-    "repo": "shuyicc/MathLens",
-    "branch": "main",
-    "language": "Python",
-    "description": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。"
-  },
-  {
-    "repo": "inspatio/inspatio-world",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "x1xhlol/better-clawd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code, but better: better performance, OpenAI/OpenRouter support, no telemetry, no lock-in."
-  },
-  {
-    "repo": "xr843/Master-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "Chinese Buddhist Master-skill powered by FoJin — 基于佛教经典文献的汉传祖师大德教学角色生成器"
-  },
-  {
-    "repo": "kamranahmedse/developer-roadmap",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers."
-  },
-  {
-    "repo": "projectdiscovery/nuclei",
-    "branch": "master",
-    "language": "Go",
-    "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations."
-  },
-  {
-    "repo": "juliangarnier/anime",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "JavaScript animation engine"
-  },
-  {
-    "repo": "SamNet-dev/conduit-manager",
-    "branch": "main",
-    "language": "Shell",
-    "description": "A powerful, one-click management tool for Psiphon Conduit nodes. Simplifies deployment, automation, and real-time monitoring on any Linux distribution"
-  },
-  {
-    "repo": "iamfakeguru/claude-md",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Production-grade agent directives for Claude Code"
-  },
-  {
-    "repo": "ramitsurana/awesome-kubernetes",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A curated list for awesome kubernetes sources :ship::tada:"
-  },
-  {
-    "repo": "pugjs/pug",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Pug – robust, elegant, feature rich template engine for Node.js"
-  },
-  {
-    "repo": "go-kit/kit",
-    "branch": "master",
-    "language": "Go",
-    "description": "A standard library for microservices."
-  },
-  {
-    "repo": "Gentleman-Programming/engram",
-    "branch": "main",
-    "language": "Go",
-    "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI."
-  },
-  {
-    "repo": "smartcmd/MinecraftConsoles",
-    "branch": "main",
-    "language": "C++",
-    "description": "A certain block game"
-  },
-  {
-    "repo": "nextcloud/android",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "📱 Nextcloud Android app"
-  },
-  {
-    "repo": "bcefghj/ai-agent-interview-guide",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI Agent 面试全攻略：从零到Offer，包含200+面试题、企业级项目(Python/Java/Go)、简历模板、STAR面试稿、哆啦A梦漫画图解"
-  },
-  {
-    "repo": "J-Pster/Psters_AI_Workflow",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "An anti-vibe-coding, agentic AI workflow that improves results with engineering rigor in any project, language, and framework."
-  },
-  {
-    "repo": "romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version",
-    "branch": "main",
-    "language": "C++",
-    "description": "Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events"
-  },
-  {
-    "repo": "agentscope-ai/CoPaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
+    "description": "Free AI coding environment: Ollama + Python"
   }
 ]
