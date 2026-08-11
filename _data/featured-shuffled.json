@@ -1,146 +1,146 @@
 [
   {
-    "repo": "therealXiaomanChu/ex-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "把前任蒸馏成 AI Skill，用ta的方式跟你说话。Inspired by colleague-skill（同事skill）."
-  },
-  {
-    "repo": "Viedie/BongoCat-Windows",
-    "branch": "main",
-    "language": "C++",
-    "description": "Free Bongo Cat download desktop app musical instruments piano drums keyboard guitar trumpet mouse tracking keyboard strokes OBS overlay streaming widget custom skins meme animation pixel art rhythm visualizer soundboard."
-  },
-  {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "psf/requests-html",
-    "branch": "master",
-    "language": "Python",
-    "description": "Pythonic HTML Parsing for Humans™"
-  },
-  {
-    "repo": "caddyserver/caddy",
-    "branch": "master",
-    "language": "Go",
-    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS"
-  },
-  {
-    "repo": "OpenZeppelin/openzeppelin-contracts",
-    "branch": "master",
-    "language": "Solidity",
-    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
-  },
-  {
-    "repo": "jae-jae/fetcher-mcp",
+    "repo": "giusmarci/openwhisp",
     "branch": "main",
     "language": "TypeScript",
-    "description": "MCP server for fetch web page content using Playwright headless browser."
+    "description": "Voice to text, entirely on your machine. Hold Fn, speak, release — transcribed, polished, and pasted. No cloud, no account, no latency."
   },
   {
-    "repo": "Kanaries/pygwalker",
-    "branch": "main",
-    "language": "Python",
-    "description": "PyGWalker: Turn your dataframe into an interactive UI for visual analysis"
+    "repo": "fastlane/fastlane",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps"
   },
   {
-    "repo": "argentlabs/argent-contracts",
-    "branch": "develop",
-    "language": "Solidity",
-    "description": "Smart Contracts for Argent Wallet"
-  },
-  {
-    "repo": "suborbital/sat",
+    "repo": "Henrygd/Beszel",
     "branch": "main",
     "language": "Go",
-    "description": "Tiny & fast WebAssembly edge compute server"
+    "description": "Lightweight server monitoring hub with historical data, docker stats, and alerts."
   },
   {
-    "repo": "graphql-rust/juniper",
+    "repo": "Stability-AI/stablediffusion",
+    "branch": "main",
+    "language": "Other",
+    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
+  },
+  {
+    "repo": "kristelTech/make_me_a_meme",
+    "branch": "main",
+    "language": "Python",
+    "description": "This repository detects your facial expressions and matches you with a famous meme."
+  },
+  {
+    "repo": "mkdocs/mkdocs",
+    "branch": "master",
+    "language": "Python",
+    "description": "Project documentation with Markdown."
+  },
+  {
+    "repo": "async-rs/async-std",
     "branch": "master",
     "language": "Rust",
-    "description": "GraphQL server library for Rust"
+    "description": "Async version of the Rust standard library"
   },
   {
-    "repo": "facebookresearch/audiocraft",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / tokenizer, along with MusicGen, a simple and controllable music generation LM with textual and melodic conditioning."
-  },
-  {
-    "repo": "facebookresearch/faiss",
-    "branch": "main",
-    "language": "C++",
-    "description": "A library for efficient similarity search and clustering of dense vectors."
-  },
-  {
-    "repo": "spotipy-dev/spotipy",
-    "branch": "master",
-    "language": "Python",
-    "description": "A light weight Python library for the Spotify Web API"
-  },
-  {
-    "repo": "mochajs/mocha",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "☕️ Classic, reliable, trusted test framework for Node.js and the browser"
-  },
-  {
-    "repo": "ForrestKnight/open-source-cs",
-    "branch": "master",
-    "language": "Other",
-    "description": "Video discussing this curriculum:"
-  },
-  {
-    "repo": "golang-migrate/migrate",
-    "branch": "master",
-    "language": "Go",
-    "description": "Database migrations. CLI and Golang library."
-  },
-  {
-    "repo": "BuilderIO/qwik",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Instant-loading web apps, without effort"
-  },
-  {
-    "repo": "airbnb/knowledge-repo",
-    "branch": "master",
-    "language": "Python",
-    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions."
-  },
-  {
-    "repo": "ethers-io/ethers.js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Complete Ethereum library and wallet implementation in JavaScript."
-  },
-  {
-    "repo": "anchore/grype",
-    "branch": "main",
-    "language": "Go",
-    "description": "A vulnerability scanner for container images and filesystems"
-  },
-  {
-    "repo": "prometheus/client_python",
-    "branch": "master",
-    "language": "Python",
-    "description": "Prometheus instrumentation library for Python applications"
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-OCR-2",
+    "repo": "shareAI-lab/claw0",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch"
   },
   {
-    "repo": "apache/beam",
+    "repo": "mduongvandinh/llm-wiki",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Hệ thống knowledge base cá nhân hoàn toàn tự động, vận hành bởi LLM. Dựa trên pattern LLM Wiki của Andrej Karpathy."
+  },
+  {
+    "repo": "arduino/Arduino",
     "branch": "master",
     "language": "Java",
-    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing."
+    "description": "Arduino IDE 1.x"
+  },
+  {
+    "repo": "certbot/certbot",
+    "branch": "main",
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+  },
+  {
+    "repo": "HackingDave/btrpa-scan",
+    "branch": "main",
+    "language": "Python",
+    "description": "Bluetooth Low Energy (BLE) scanner with Resolvable Private Address (RPA) resolution using Identity Resolving Keys (IRKs)"
+  },
+  {
+    "repo": "PIPIKAI/auto-painter-win",
+    "branch": "main",
+    "language": "Python",
+    "description": "Supports multiple sketch styles and automated mouse-controlled painting."
+  },
+  {
+    "repo": "World-Open-Graph/br-acc",
+    "branch": "main",
+    "language": "Python",
+    "description": "World Transparency Graph public codebase"
+  },
+  {
+    "repo": "javaevolved/javaevolved.github.io",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Java Evolved. Your Code Can Evolve Too!"
+  },
+  {
+    "repo": "heri1845/ai-meme-trading-bot",
+    "branch": "main",
+    "language": "Go",
+    "description": "Automated trading system for Solana and Base meme coins with AI-powered strategy evaluation. AI trading, AI prediction, AI trading, AI predictiction"
+  },
+  {
+    "repo": "VictoriaMetrics/VictoriaMetrics",
+    "branch": "master",
+    "language": "Go",
+    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
+  },
+  {
+    "repo": "EleutherAI/lm-evaluation-harness",
+    "branch": "main",
+    "language": "Python",
+    "description": "A framework for few-shot evaluation of language models."
+  },
+  {
+    "repo": "fastai/fastai",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "The fastai deep learning library"
+  },
+  {
+    "repo": "bytedance/semi-design",
+    "branch": "main",
+    "language": "Other",
+    "description": "A modern, comprehensive, flexible design system and React UI library."
+  },
+  {
+    "repo": "nolenroyalty/yt-browse",
+    "branch": "main",
+    "language": "Go",
+    "description": "it's like search, but for youtube"
+  },
+  {
+    "repo": "steipete/birdclaw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Stores all your tweets nicely claw-able for agents."
+  },
+  {
+    "repo": "TeleHuman/humanoid_skateboarding",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official implementation of HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control"
+  },
+  {
+    "repo": "silships/figma-cli",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
   }
 ]
