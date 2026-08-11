@@ -1,9 +1,45 @@
 [
   {
-    "repo": "giusmarci/openwhisp",
+    "repo": "williamchristian273/Reason-Studio-Rack-Toolkit",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Voice to text, entirely on your machine. Hold Fn, speak, release — transcribed, polished, and pasted. No cloud, no account, no latency."
+    "language": "HTML",
+    "description": "Top Reason Studios Rack DAW Plugins & Workflow Tools 2026"
+  },
+  {
+    "repo": "denoland/ronly",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "microsoft/autogen",
+    "branch": "main",
+    "language": "Python",
+    "description": "A programming framework for agentic AI"
+  },
+  {
+    "repo": "scikit-learn/scikit-learn",
+    "branch": "main",
+    "language": "Python",
+    "description": "scikit-learn: machine learning in Python"
+  },
+  {
+    "repo": "pallets/flask",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Python micro framework for building web applications."
+  },
+  {
+    "repo": "webpack-contrib/terser-webpack-plugin",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Terser Plugin"
+  },
+  {
+    "repo": "plotly/dash",
+    "branch": "dev",
+    "language": "Python",
+    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
   },
   {
     "repo": "fastlane/fastlane",
@@ -12,135 +48,99 @@
     "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps"
   },
   {
-    "repo": "Henrygd/Beszel",
-    "branch": "main",
-    "language": "Go",
-    "description": "Lightweight server monitoring hub with historical data, docker stats, and alerts."
-  },
-  {
-    "repo": "Stability-AI/stablediffusion",
-    "branch": "main",
-    "language": "Other",
-    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
-  },
-  {
-    "repo": "kristelTech/make_me_a_meme",
+    "repo": "newrelic/newrelic-python-agent",
     "branch": "main",
     "language": "Python",
-    "description": "This repository detects your facial expressions and matches you with a famous meme."
+    "description": "New Relic Python Agent"
   },
   {
-    "repo": "mkdocs/mkdocs",
+    "repo": "nteract/nteract",
     "branch": "master",
-    "language": "Python",
-    "description": "Project documentation with Markdown."
+    "language": "TypeScript",
+    "description": "📘 The interactive computing suite for you!  ✨"
   },
   {
-    "repo": "async-rs/async-std",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Async version of the Rust standard library"
-  },
-  {
-    "repo": "shareAI-lab/claw0",
+    "repo": "ReactiveX/RxSwift",
     "branch": "main",
-    "language": "Python",
-    "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch"
+    "language": "Swift",
+    "description": "Reactive Programming in Swift"
   },
   {
-    "repo": "mduongvandinh/llm-wiki",
+    "repo": "Snailclimb/JavaGuide",
     "branch": "main",
-    "language": "HTML",
-    "description": "Hệ thống knowledge base cá nhân hoàn toàn tự động, vận hành bởi LLM. Dựa trên pattern LLM Wiki của Andrej Karpathy."
-  },
-  {
-    "repo": "arduino/Arduino",
-    "branch": "master",
     "language": "Java",
-    "description": "Arduino IDE 1.x"
+    "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发与系统设计。准备后端技术面试，首选 JavaGuide！"
   },
   {
-    "repo": "certbot/certbot",
-    "branch": "main",
-    "language": "Python",
-    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
-  },
-  {
-    "repo": "HackingDave/btrpa-scan",
-    "branch": "main",
-    "language": "Python",
-    "description": "Bluetooth Low Energy (BLE) scanner with Resolvable Private Address (RPA) resolution using Identity Resolving Keys (IRKs)"
-  },
-  {
-    "repo": "PIPIKAI/auto-painter-win",
-    "branch": "main",
-    "language": "Python",
-    "description": "Supports multiple sketch styles and automated mouse-controlled painting."
-  },
-  {
-    "repo": "World-Open-Graph/br-acc",
-    "branch": "main",
-    "language": "Python",
-    "description": "World Transparency Graph public codebase"
-  },
-  {
-    "repo": "javaevolved/javaevolved.github.io",
+    "repo": "h9zdev/WireTapper",
     "branch": "main",
     "language": "HTML",
-    "description": "Java Evolved. Your Code Can Evolve Too!"
+    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
   },
   {
-    "repo": "heri1845/ai-meme-trading-bot",
-    "branch": "main",
-    "language": "Go",
-    "description": "Automated trading system for Solana and Base meme coins with AI-powered strategy evaluation. AI trading, AI prediction, AI trading, AI predictiction"
+    "repo": "PaddlePaddle/PaddleSpeech",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award."
   },
   {
-    "repo": "VictoriaMetrics/VictoriaMetrics",
-    "branch": "master",
-    "language": "Go",
-    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
-  },
-  {
-    "repo": "EleutherAI/lm-evaluation-harness",
+    "repo": "gabagool222/15min-btc-polymarket-trading-bot",
     "branch": "main",
     "language": "Python",
-    "description": "A framework for few-shot evaluation of language models."
+    "description": "15min btc polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
   },
   {
-    "repo": "fastai/fastai",
-    "branch": "master",
-    "language": "Jupyter Notebook",
-    "description": "The fastai deep learning library"
-  },
-  {
-    "repo": "bytedance/semi-design",
-    "branch": "main",
-    "language": "Other",
-    "description": "A modern, comprehensive, flexible design system and React UI library."
-  },
-  {
-    "repo": "nolenroyalty/yt-browse",
-    "branch": "main",
-    "language": "Go",
-    "description": "it's like search, but for youtube"
-  },
-  {
-    "repo": "steipete/birdclaw",
+    "repo": "rohunvora/x-research-skill",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Stores all your tweets nicely claw-able for agents."
+    "description": "X/Twitter research skill for Claude Code and OpenClaw. Agentic search, thread following, deep-dives, sourced briefings."
   },
   {
-    "repo": "TeleHuman/humanoid_skateboarding",
+    "repo": "first-fluke/oh-my-ag",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The Ultimate Multi-Agent Framework for Google Antigravity. Orchestrate 6 specialized agents via Serena Memory. Parallel CLI execution, real-time observability, and zero-config skills."
+  },
+  {
+    "repo": "bakkesmodrocketleague/bakkesmod",
+    "branch": "main",
+    "language": "C++",
+    "description": "bakkesmod rocket league  Download windows 11 plugins workshop map loader injector eac update easy anti cheat non eac mode custom training free play"
+  },
+  {
+    "repo": "marshmallow-code/marshmallow",
+    "branch": "dev",
+    "language": "Python",
+    "description": "A lightweight library for converting complex objects to and from simple Python datatypes."
+  },
+  {
+    "repo": "wesm/msgvault",
+    "branch": "main",
+    "language": "Go",
+    "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB"
+  },
+  {
+    "repo": "microsoft/react-native-code-push",
+    "branch": "master",
+    "language": "C",
+    "description": "React Native module for CodePush"
+  },
+  {
+    "repo": "Lazarus-AI/clearwing",
     "branch": "main",
     "language": "Python",
-    "description": "Official implementation of HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control"
+    "description": ""
   },
   {
-    "repo": "silships/figma-cli",
+    "repo": "CocoaPods/CocoaPods",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "The Cocoa Dependency Manager."
+  },
+  {
+    "repo": "IvanSobolev/Neo3dEngine",
     "branch": "main",
-    "language": "JavaScript",
-    "description": ""
+    "language": "C#",
+    "description": "A minimalist CPU-based 3D console engine in C# (.NET 8) built from scratch. Features Raycasting/Raytracing, dynamic lighting & shadows, .obj loader, and custom TCP-based multiplayer with real-time chat. No external graphics APIs."
   }
 ]
