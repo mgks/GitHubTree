@@ -1,146 +1,146 @@
 [
   {
-    "repo": "YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill",
+    "repo": "therealXiaomanChu/ex-skill",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code / Cursor skill to recommend from 6000+ Nano Banana Pro image prompts."
+    "language": "Python",
+    "description": "把前任蒸馏成 AI Skill，用ta的方式跟你说话。Inspired by colleague-skill（同事skill）."
   },
   {
-    "repo": "saimon4u/Drive-Pool",
+    "repo": "Viedie/BongoCat-Windows",
+    "branch": "main",
+    "language": "C++",
+    "description": "Free Bongo Cat download desktop app musical instruments piano drums keyboard guitar trumpet mouse tracking keyboard strokes OBS overlay streaming widget custom skins meme animation pixel art rhythm visualizer soundboard."
+  },
+  {
+    "repo": "web3/web3.js",
+    "branch": "1.x",
+    "language": "TypeScript",
+    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
+  },
+  {
+    "repo": "psf/requests-html",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pythonic HTML Parsing for Humans™"
+  },
+  {
+    "repo": "caddyserver/caddy",
+    "branch": "master",
+    "language": "Go",
+    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS"
+  },
+  {
+    "repo": "OpenZeppelin/openzeppelin-contracts",
+    "branch": "master",
+    "language": "Solidity",
+    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
+  },
+  {
+    "repo": "jae-jae/fetcher-mcp",
     "branch": "main",
     "language": "TypeScript",
+    "description": "MCP server for fetch web page content using Playwright headless browser."
+  },
+  {
+    "repo": "Kanaries/pygwalker",
+    "branch": "main",
+    "language": "Python",
+    "description": "PyGWalker: Turn your dataframe into an interactive UI for visual analysis"
+  },
+  {
+    "repo": "argentlabs/argent-contracts",
+    "branch": "develop",
+    "language": "Solidity",
+    "description": "Smart Contracts for Argent Wallet"
+  },
+  {
+    "repo": "suborbital/sat",
+    "branch": "main",
+    "language": "Go",
+    "description": "Tiny & fast WebAssembly edge compute server"
+  },
+  {
+    "repo": "graphql-rust/juniper",
+    "branch": "master",
+    "language": "Rust",
+    "description": "GraphQL server library for Rust"
+  },
+  {
+    "repo": "facebookresearch/audiocraft",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / tokenizer, along with MusicGen, a simple and controllable music generation LM with textual and melodic conditioning."
+  },
+  {
+    "repo": "facebookresearch/faiss",
+    "branch": "main",
+    "language": "C++",
+    "description": "A library for efficient similarity search and clustering of dense vectors."
+  },
+  {
+    "repo": "spotipy-dev/spotipy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A light weight Python library for the Spotify Web API"
+  },
+  {
+    "repo": "mochajs/mocha",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "☕️ Classic, reliable, trusted test framework for Node.js and the browser"
+  },
+  {
+    "repo": "ForrestKnight/open-source-cs",
+    "branch": "master",
+    "language": "Other",
+    "description": "Video discussing this curriculum:"
+  },
+  {
+    "repo": "golang-migrate/migrate",
+    "branch": "master",
+    "language": "Go",
+    "description": "Database migrations. CLI and Golang library."
+  },
+  {
+    "repo": "BuilderIO/qwik",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Instant-loading web apps, without effort"
+  },
+  {
+    "repo": "airbnb/knowledge-repo",
+    "branch": "master",
+    "language": "Python",
+    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions."
+  },
+  {
+    "repo": "ethers-io/ethers.js",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Complete Ethereum library and wallet implementation in JavaScript."
+  },
+  {
+    "repo": "anchore/grype",
+    "branch": "main",
+    "language": "Go",
+    "description": "A vulnerability scanner for container images and filesystems"
+  },
+  {
+    "repo": "prometheus/client_python",
+    "branch": "master",
+    "language": "Python",
+    "description": "Prometheus instrumentation library for Python applications"
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-OCR-2",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "soimy/openclaw-channel-dingtalk",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A dingtalk bot channel plugin for clawdbot"
-  },
-  {
-    "repo": "zqbxdev/webchat2api",
-    "branch": "main",
-    "language": "Python",
-    "description": "OpenAI-compatible Web Chat API proxy with GPT/Grok account management"
-  },
-  {
-    "repo": "jure/webphysics",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "WebGPU physics engine based on the AVBD solver"
-  },
-  {
-    "repo": "cporter202/video-scraping-apis",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A collection of APIs for scraping video metadata, engagement stats, and public video data across multiple platforms."
-  },
-  {
-    "repo": "cloudflare/vinext",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Vite plugin that reimplements the Next.js API surface — deploy anywhere"
-  },
-  {
-    "repo": "virattt/ai-hedge-fund",
-    "branch": "main",
-    "language": "Python",
-    "description": "An AI Hedge Fund Team"
-  },
-  {
-    "repo": "nyanko3141592/remotion-voicevox-template",
+    "repo": "apache/beam",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）"
-  },
-  {
-    "repo": "electron-userland/electron-builder",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box"
-  },
-  {
-    "repo": "raspberrypi/documentation",
-    "branch": "master",
-    "language": "Python",
-    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
-  },
-  {
-    "repo": "github/hub",
-    "branch": "master",
-    "language": "Go",
-    "description": "A command-line tool that makes git easier to use with GitHub."
-  },
-  {
-    "repo": "mksglu/claude-context-mode",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Stop losing context to large outputs."
-  },
-  {
-    "repo": "theNetworkChuck/axios-attack-guide",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Axios npm supply chain attack — detection scripts, IOCs, and protection guide"
-  },
-  {
-    "repo": "Janlaywss/hu-chenfeng-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "户晨风Skill"
-  },
-  {
-    "repo": "rq/rq",
-    "branch": "master",
-    "language": "Python",
-    "description": "Simple job queues for Python"
-  },
-  {
-    "repo": "xjtulyc/MedgeClaw",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Medge AI X OpenClaw"
-  },
-  {
-    "repo": "fspecii/HeartMuLa-Studio",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer"
-  },
-  {
-    "repo": "tensorflow/hub",
-    "branch": "master",
-    "language": "Python",
-    "description": "A library for transfer learning by reusing parts of TensorFlow models."
-  },
-  {
-    "repo": "mathiaschu/meta-ads-analyzer",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Meta Ads Analyzer skill + MCP server for Claude Code. Breakdown Effect, Learning Phase, and expert-level campaign diagnosis."
-  },
-  {
-    "repo": "behzadea12/Paqet-Tunnel-Manager",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Management script for paqet: raw socket KCP-based tunnel for firewall/DPI bypass. Supports kharej server and Iran client configurations."
-  },
-  {
-    "repo": "gin-gonic/gin",
-    "branch": "master",
-    "language": "Go",
-    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
-  },
-  {
-    "repo": "gatelynch/llm-knowledge-base",
-    "branch": "main",
-    "language": "Python",
-    "description": "參考自Andrej Kapathy的llm-wiki概念，把原始素材、LLM 編譯後的知識、   探索中的思考，以及最終作品明確分層管理   的個人知識庫系統。"
-  },
-  {
-    "repo": "civilian7/sql-tutorial",
-    "branch": "main",
-    "language": "Python",
-    "description": "현실적인 전자상거래 데이터베이스로 배우는 SQL 튜토리얼 (21 tables, 18 views, 111 exercises)"
+    "language": "Java",
+    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing."
   }
 ]
