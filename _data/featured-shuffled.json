@@ -1,146 +1,146 @@
 [
   {
-    "repo": "op7418/Video-Wrapper-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "为访谈视频添加综艺风格视觉特效的 Claude Skill。AI 分析字幕内容生成建议，用户审批后自动渲染，支持 4 种视觉主题。"
-  },
-  {
-    "repo": "newrelic/newrelic-java-agent",
-    "branch": "main",
-    "language": "Java",
-    "description": "The New Relic Java agent"
-  },
-  {
-    "repo": "Saganaki22/ComfyUI-OmniVoice-TTS",
-    "branch": "main",
-    "language": "Python",
-    "description": "OmniVoice TTS nodes for ComfyUI - Zero-shot multilingual text-to-speech with voice cloning, voice design, and multi-speaker dialogue"
-  },
-  {
-    "repo": "test-time-training/discover",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "AlexAnys/feishu-openclaw",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Connect 飞书Feishu/Lark bot to openclaw (formerly Clawdbot) — no public server, no domain, no ngrok needed. 稳定免安装、共需5 分钟"
-  },
-  {
-    "repo": "microsoft/DeepSpeed",
-    "branch": "master",
-    "language": "Python",
-    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
-  },
-  {
-    "repo": "ramitsurana/awesome-kubernetes",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A curated list for awesome kubernetes sources :ship::tada:"
-  },
-  {
-    "repo": "rabbitmq/rabbitmq-server",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
-  },
-  {
-    "repo": "h9zdev/WireTapper",
-    "branch": "main",
-    "language": "HTML",
-    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
-  },
-  {
-    "repo": "apache/echarts",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser"
-  },
-  {
-    "repo": "facebook/litho",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A declarative framework for building efficient UIs on Android."
-  },
-  {
-    "repo": "testing-library/react-testing-library",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices."
-  },
-  {
-    "repo": "godotengine/godot",
-    "branch": "master",
-    "language": "C++",
-    "description": "Godot Engine – Multi-platform 2D and 3D game engine"
-  },
-  {
-    "repo": "cporter202/video-scraping-apis",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A collection of APIs for scraping video metadata, engagement stats, and public video data across multiple platforms."
-  },
-  {
-    "repo": "airbnb/lottie-android",
-    "branch": "master",
-    "language": "Java",
-    "description": "Render After Effects animations natively on Android and iOS, Web, and React Native"
-  },
-  {
-    "repo": "hantuzun/awesome-clojure",
+    "repo": "raspberrypi/firmware",
     "branch": "master",
     "language": "Other",
-    "description": "A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff"
+    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
   },
   {
-    "repo": "containerd/containerd",
+    "repo": "Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application",
+    "branch": "main",
+    "language": "C++",
+    "description": "Bongo Cat program – adorable animated cat desktop pet that reacts to keystrokes, mouse clicks & gaming. Collect hats, enjoy reactive bongo animations, perfect overlay for streams, typing motivation & fun virtual pet on Windows PC! Cute meme cat companion app."
+  },
+  {
+    "repo": "prometheus-operator/prometheus-operator",
     "branch": "main",
     "language": "Go",
-    "description": "An open and reliable container runtime"
+    "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes"
   },
   {
-    "repo": "mrdoob/three.js",
-    "branch": "dev",
+    "repo": "nsqio/nsq",
+    "branch": "master",
+    "language": "Go",
+    "description": "A realtime distributed messaging platform"
+  },
+  {
+    "repo": "coredns/coredns",
+    "branch": "master",
+    "language": "Go",
+    "description": "CoreDNS is a DNS server that chains plugins"
+  },
+  {
+    "repo": "imaginevid-ai/Awesome-seedream-5-pro-prompts-and-skills",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "About  World's largest Seedream 5.0 Pro prompt library — 10,000+ curated prompts with preview images, 16 languages. Dreamina Seeream AI image generation. Free & open source."
+  },
+  {
+    "repo": "ashleymills/Reachability.swift",
+    "branch": "master",
+    "language": "Swift",
+    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
+  },
+  {
+    "repo": "Lightning-AI/lightning",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes."
+  },
+  {
+    "repo": "rustwasm/wasm-pack",
+    "branch": "master",
+    "language": "Rust",
+    "description": "📦✨ your favorite rust -> wasm workflow tool!"
+  },
+  {
+    "repo": "gcc-mirror/gcc",
+    "branch": "master",
+    "language": "C++",
+    "description": "Mirror of the GNU Compiler Collection master repository."
+  },
+  {
+    "repo": "RocketChat/Rocket.Chat",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "The Secure CommsOS™ for mission-critical operations"
+  },
+  {
+    "repo": "go-gorm/gorm",
+    "branch": "master",
+    "language": "Go",
+    "description": "The fantastic ORM library for Golang, aims to be developer friendly"
+  },
+  {
+    "repo": "sdkman/sdkman-cli",
+    "branch": "master",
+    "language": "Gherkin",
+    "description": "The SDKMAN! Command Line Interface"
+  },
+  {
+    "repo": "binhnguyennus/awesome-scalability",
+    "branch": "master",
+    "language": "Other",
+    "description": "The Patterns of Scalable, Reliable, and Performant Large-Scale Systems"
+  },
+  {
+    "repo": "radix-ui/primitives",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos."
+  },
+  {
+    "repo": "asdf-vm/asdf",
+    "branch": "master",
+    "language": "Go",
+    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
+  },
+  {
+    "repo": "cloudflare/quiche",
+    "branch": "master",
+    "language": "Rust",
+    "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3"
+  },
+  {
+    "repo": "google/styleguide",
+    "branch": "gh-pages",
+    "language": "HTML",
+    "description": "Style guides for Google-originated open-source projects"
+  },
+  {
+    "repo": "mmazzarolo/react-native-modal-datetime-picker",
+    "branch": "master",
     "language": "JavaScript",
-    "description": "JavaScript 3D Library."
+    "description": "A React-Native datetime-picker for Android and iOS"
   },
   {
-    "repo": "AMAP-ML/MathForge",
+    "repo": "less/less.js",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Less. The dynamic stylesheet language."
+  },
+  {
+    "repo": "uber-go/fx",
+    "branch": "master",
+    "language": "Go",
+    "description": "A dependency injection based application framework for Go."
+  },
+  {
+    "repo": "spacedriveapp/spacedrive",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
+  },
+  {
+    "repo": "stanford-oval/storm",
     "branch": "main",
     "language": "Python",
-    "description": "(ICLR 2026) Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation"
+    "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations."
   },
   {
-    "repo": "EbookFoundation/free-programming-books",
-    "branch": "main",
-    "language": "Python",
-    "description": ":books: Freely available programming books"
-  },
-  {
-    "repo": "kelseyhightower/kubernetes-the-hard-way",
+    "repo": "aosabook/500lines",
     "branch": "master",
-    "language": "Other",
-    "description": "Bootstrap Kubernetes the hard way. No scripts."
-  },
-  {
-    "repo": "sbilly/awesome-security",
-    "branch": "master",
-    "language": "Other",
-    "description": "A collection of awesome software, libraries, documents, books, resources and cools stuffs about security."
-  },
-  {
-    "repo": "Robbyant/lingbot-va",
-    "branch": "main",
-    "language": "Python",
-    "description": "Causal video-action world model for generalist robot control"
-  },
-  {
-    "repo": "qinwf/awesome-R",
-    "branch": "master",
-    "language": "R",
-    "description": "A curated list of awesome R packages, frameworks and software."
+    "language": "JavaScript",
+    "description": "500 Lines or Less"
   }
 ]
