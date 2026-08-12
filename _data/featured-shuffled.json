@@ -1,146 +1,146 @@
 [
   {
-    "repo": "raspberrypi/firmware",
-    "branch": "master",
-    "language": "Other",
-    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
-  },
-  {
-    "repo": "Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application",
+    "repo": "royalbhati/sqltoerdiagram",
     "branch": "main",
-    "language": "C++",
-    "description": "Bongo Cat program – adorable animated cat desktop pet that reacts to keystrokes, mouse clicks & gaming. Collect hats, enjoy reactive bongo animations, perfect overlay for streams, typing motivation & fun virtual pet on Windows PC! Cute meme cat companion app."
+    "language": "JavaScript",
+    "description": "ER diagram generator. Paste CREATE TABLE statements and get a clean, interactive ERD — runs 100% in your browser, nothing uploaded"
   },
   {
-    "repo": "prometheus-operator/prometheus-operator",
+    "repo": "gradio-app/gradio",
     "branch": "main",
-    "language": "Go",
-    "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes"
+    "language": "Python",
+    "description": "Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!"
   },
   {
-    "repo": "nsqio/nsq",
-    "branch": "master",
-    "language": "Go",
-    "description": "A realtime distributed messaging platform"
-  },
-  {
-    "repo": "coredns/coredns",
-    "branch": "master",
-    "language": "Go",
-    "description": "CoreDNS is a DNS server that chains plugins"
-  },
-  {
-    "repo": "imaginevid-ai/Awesome-seedream-5-pro-prompts-and-skills",
+    "repo": "deepseek-ai/DeepSeek-V3",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "About  World's largest Seedream 5.0 Pro prompt library — 10,000+ curated prompts with preview images, 16 languages. Dreamina Seeream AI image generation. Free & open source."
+    "language": "Python",
+    "description": "Vision-language models from DeepSeek research."
   },
   {
-    "repo": "ashleymills/Reachability.swift",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
-  },
-  {
-    "repo": "Lightning-AI/lightning",
+    "repo": "ultralytics/yolov5",
     "branch": "master",
     "language": "Python",
-    "description": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes."
+    "description": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite"
   },
   {
-    "repo": "rustwasm/wasm-pack",
+    "repo": "pytube/pytube",
     "branch": "master",
-    "language": "Rust",
-    "description": "📦✨ your favorite rust -> wasm workflow tool!"
+    "language": "Python",
+    "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos."
   },
   {
-    "repo": "gcc-mirror/gcc",
-    "branch": "master",
-    "language": "C++",
-    "description": "Mirror of the GNU Compiler Collection master repository."
-  },
-  {
-    "repo": "RocketChat/Rocket.Chat",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "The Secure CommsOS™ for mission-critical operations"
-  },
-  {
-    "repo": "go-gorm/gorm",
+    "repo": "google/cadvisor",
     "branch": "master",
     "language": "Go",
-    "description": "The fantastic ORM library for Golang, aims to be developer friendly"
+    "description": "Analyzes resource usage and performance characteristics of running containers."
   },
   {
-    "repo": "sdkman/sdkman-cli",
+    "repo": "mlflow/mlflow",
     "branch": "master",
-    "language": "Gherkin",
-    "description": "The SDKMAN! Command Line Interface"
+    "language": "Python",
+    "description": "The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform."
   },
   {
-    "repo": "binhnguyennus/awesome-scalability",
+    "repo": "lsd-rs/lsd",
     "branch": "master",
-    "language": "Other",
-    "description": "The Patterns of Scalable, Reliable, and Performant Large-Scale Systems"
+    "language": "Rust",
+    "description": "The next gen ls command"
   },
   {
-    "repo": "radix-ui/primitives",
+    "repo": "dev-protocol/polymarket-ai-trading-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos."
+    "description": "polymarket trading bot polymarket copy trading bot polymarket copy trading bot polymarket trading bot polymarket trading bot polymarket botpolymarket trading bot polymarket copy trading bot polymarket copy trading bot polymarket trading bot polymarket trading ML pipeline for Polymarket crypto 15m: predict UP token move in 5s from"
   },
   {
-    "repo": "asdf-vm/asdf",
+    "repo": "curl/curl",
     "branch": "master",
-    "language": "Go",
-    "description": "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
+    "language": "C",
+    "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features"
   },
   {
-    "repo": "cloudflare/quiche",
+    "repo": "privacyguides/privacyguides.org",
+    "branch": "main",
+    "language": "Markdown",
+    "description": "Protect your data against global mass surveillance programs."
+  },
+  {
+    "repo": "agenticnotetaking/arscontexta",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own."
+  },
+  {
+    "repo": "jmuncor/tokentap",
+    "branch": "main",
+    "language": "Python",
+    "description": "Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs,       debug prompts, and monitor context window usage across your AI development sessions."
+  },
+  {
+    "repo": "ChinaSiro/claude-code-sourcemap",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "cherepavel/VPN-Detector",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Android app for detecting VPN usage and network tunneling signals."
+  },
+  {
+    "repo": "aws/aws-cdk",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code"
+  },
+  {
+    "repo": "rohitg00/awesome-claude-code-toolkit",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+15,000 via SkillKit), 42 commands, 120 plugins, 19 hooks, 15 rules, 7 templates, 6 MCP configs, and more."
+  },
+  {
+    "repo": "tree-sitter/tree-sitter",
     "branch": "master",
     "language": "Rust",
-    "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3"
+    "description": "An incremental parsing system for programming tools"
   },
   {
-    "repo": "google/styleguide",
-    "branch": "gh-pages",
+    "repo": "obdev/littlesnitch-linux",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Open Source components of Little Snitch for Linux"
+  },
+  {
+    "repo": "YougLin-dev/Aha-Loop",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Aha Loop is a fully autonomous AI development system, extended from the core ideas of Ralph. It's not just an execution engine, but a complete AI development framework with planning capabilities, research abilities, and oversight mechanisms."
+  },
+  {
+    "repo": "BuilderIO/mitosis",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelte, and more."
+  },
+  {
+    "repo": "lodash/lodash",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A modern JavaScript utility library delivering modularity, performance, & extras."
+  },
+  {
+    "repo": "langchain-ai/langchain",
+    "branch": "master",
+    "language": "Python",
+    "description": "🦜🔗 The platform for reliable agents."
+  },
+  {
+    "repo": "simonw/cia-world-factbook-2020",
+    "branch": "main",
     "language": "HTML",
-    "description": "Style guides for Google-originated open-source projects"
-  },
-  {
-    "repo": "mmazzarolo/react-native-modal-datetime-picker",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A React-Native datetime-picker for Android and iOS"
-  },
-  {
-    "repo": "less/less.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Less. The dynamic stylesheet language."
-  },
-  {
-    "repo": "uber-go/fx",
-    "branch": "master",
-    "language": "Go",
-    "description": "A dependency injection based application framework for Go."
-  },
-  {
-    "repo": "spacedriveapp/spacedrive",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
-  },
-  {
-    "repo": "stanford-oval/storm",
-    "branch": "main",
-    "language": "Python",
-    "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations."
-  },
-  {
-    "repo": "aosabook/500lines",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "500 Lines or Less"
+    "description": "Recovered cia.gov/the-world-factbook/about/archives/download/factbook-2020.zip from Internet Archive"
   }
 ]
