@@ -1,129 +1,51 @@
 [
   {
-    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
-    "branch": "main",
-    "language": "TeX",
-    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
-  },
-  {
-    "repo": "JokiTsien/App_Store_Play_Store_Review_Bot",
+    "repo": "L42ARO/Mercury-Transforming-Drone",
     "branch": "main",
     "language": "Python",
-    "description": "Auto-post reviews and ratings for apps on Google Play and Apple App Store. Boost app rankings and credibility."
+    "description": "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
   },
   {
-    "repo": "ColeMurray/background-agents",
+    "repo": "africa1207/AWS-BuildID-Auto-For-Ext",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source background agent coding system"
-  },
-  {
-    "repo": "goldbergyoni/nodebestpractices",
-    "branch": "master",
-    "language": "Dockerfile",
-    "description": ":white_check_mark:  The Node.js best practices list (July 2024)"
-  },
-  {
-    "repo": "SwiftyJSON/SwiftyJSON",
-    "branch": "master",
-    "language": "Swift",
-    "description": "The better way to deal with JSON data in Swift."
-  },
-  {
-    "repo": "psf/black",
-    "branch": "main",
-    "language": "Python",
-    "description": "The uncompromising Python code formatter"
-  },
-  {
-    "repo": "GuDaStudio/commands",
-    "branch": "main",
-    "language": "PowerShell",
+    "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "kdn251/interviews",
-    "branch": "master",
-    "language": "Java",
-    "description": "Everything you need to know to get the job."
-  },
-  {
-    "repo": "fuma-nama/fumadocs",
+    "repo": "letmutex/gitas",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "The beautiful & flexible React.js docs framework."
-  },
-  {
-    "repo": "huggingface/trl",
-    "branch": "main",
-    "language": "Python",
-    "description": "Train transformer language models with reinforcement learning."
-  },
-  {
-    "repo": "elastic/logstash",
-    "branch": "main",
-    "language": "Java",
-    "description": "Logstash - transport and process your logs, events, or other data"
-  },
-  {
-    "repo": "less/less.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Less. The dynamic stylesheet language."
-  },
-  {
-    "repo": "1jehuang/mermaid-rs-renderer",
-    "branch": "master",
     "language": "Rust",
-    "description": "A fast native Rust Mermaid diagram renderer. No browser required. 500-1000x faster than mermaid-cli."
+    "description": "Git Account Switch"
   },
   {
-    "repo": "aosabook/500lines",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "500 Lines or Less"
+    "repo": "disler/pi-vs-claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Comparison between open source PI agent and closed source Claude Code agent"
   },
   {
-    "repo": "localstack/localstack",
+    "repo": "hallucinogen/agent-viewer",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Kanban board for managing Claude Code agents in tmux"
+  },
+  {
+    "repo": "IAmUnbounded/devctx",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Carry context across coding agents/editors/IDEs - Cursor/Windsurf/Claude Code/Antigravity"
+  },
+  {
+    "repo": "gavrielc/nanoclaw",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs."
+  },
+  {
+    "repo": "google-research/bert",
     "branch": "master",
     "language": "Python",
-    "description": "💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline"
-  },
-  {
-    "repo": "airbnb/lottie-web",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
-  },
-  {
-    "repo": "leonardomso/33-js-concepts",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "📜 33 JavaScript concepts every developer should know."
-  },
-  {
-    "repo": "pmndrs/react-three-fiber",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "🇨🇭 A React renderer for Three.js"
-  },
-  {
-    "repo": "yangshun/tech-interview-handbook",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Curated coding interview preparation materials for busy software engineers"
-  },
-  {
-    "repo": "koreader/koreader",
-    "branch": "master",
-    "language": "Lua",
-    "description": "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
-  },
-  {
-    "repo": "smartcontractkit/chainlink",
-    "branch": "develop",
-    "language": "Go",
-    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+    "description": "TensorFlow code and pre-trained models for BERT"
   },
   {
     "repo": "signalapp/Signal-Desktop",
@@ -132,15 +54,93 @@
     "description": "A private messenger for Windows, macOS, and Linux."
   },
   {
-    "repo": "openobserve/openobserve",
+    "repo": "Moore-developers/moore-wechat-article-downloader",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Modern observability platform: 10x easier, 140x lower storage cost, petabyte scale. Open-source alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more."
+    "language": "Python",
+    "description": ""
   },
   {
-    "repo": "fluxcd/flux2",
+    "repo": "miaoxworld/ClawdBotInstaller",
+    "branch": "main",
+    "language": "Shell",
+    "description": "ClawdBot 一键部署工具"
+  },
+  {
+    "repo": "linkedin/school-of-sre",
+    "branch": "main",
+    "language": "HTML",
+    "description": "At LinkedIn, we are using this curriculum for onboarding our entry-level talents into the SRE role."
+  },
+  {
+    "repo": "Anduin2017/HowToCook",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only)."
+  },
+  {
+    "repo": "lynaghk/vibe",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Easy Linux virtual machine on MacOS to sandbox LLM agents."
+  },
+  {
+    "repo": "Robbyant/lingbot-world",
+    "branch": "main",
+    "language": "Python",
+    "description": "Advancing Open-source World Models"
+  },
+  {
+    "repo": "InfinityLoop1308/PipePipe-X",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Modern designed PipePipe"
+  },
+  {
+    "repo": "lucasastorian/llmwiki",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Open Source Implementation of Karpathy's LLM Wiki. Upload documents, connect your Claude account via MCP, and have it write your wiki !"
+  },
+  {
+    "repo": "notdog1998/yourself-skill",
+    "branch": "master",
+    "language": "Python",
+    "description": "与其蒸馏别人，不如蒸馏自己。欢迎加入数字永生！Inspired by colleague-skill（同事skill）。"
+  },
+  {
+    "repo": "flame-engine/flame",
+    "branch": "main",
+    "language": "Dart",
+    "description": "A Flutter based game engine."
+  },
+  {
+    "repo": "stablyai/agent-slack",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Slack automation CLI for AI agents"
+  },
+  {
+    "repo": "juliangarnier/anime",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "JavaScript animation engine"
+  },
+  {
+    "repo": "ReinerBRO/grok-register",
+    "branch": "main",
+    "language": "Python",
+    "description": "Automated Grok (x.ai) account registration with DuckMail + headless server support. Auto-push SSO tokens to grok2api."
+  },
+  {
+    "repo": "stellarlinkco/myclaw",
     "branch": "main",
     "language": "Go",
-    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
+    "description": ""
+  },
+  {
+    "repo": "cypress-io/cypress",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Fast, easy and reliable testing for anything that runs in a browser."
   }
 ]
