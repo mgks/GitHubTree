@@ -1,146 +1,146 @@
 [
   {
-    "repo": "uton88/dan-binary-releases",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Public binary-only releases and install scripts for dan"
-  },
-  {
-    "repo": "letmutex/gitas",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Git Account Switch"
-  },
-  {
-    "repo": "github/super-linter",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Combination of multiple linters to install as a GitHub Action"
-  },
-  {
-    "repo": "moltlaunch/cashclaw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An autonomous agent that takes work, does work, gets paid, and gets better at it."
-  },
-  {
-    "repo": "serverless/serverless",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services."
-  },
-  {
-    "repo": "pedrohcgs/claude-code-my-workflow",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A ready-to-fork Claude Code template for academics using LaTeX/Beamer + R. Multi-agent review, quality gates, adversarial QA, and replication protocols."
-  },
-  {
-    "repo": "pytorch/examples",
+    "repo": "openai/whisper",
     "branch": "main",
     "language": "Python",
-    "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc."
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision"
   },
   {
-    "repo": "pointfreeco/swift-composable-architecture",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
-  },
-  {
-    "repo": "meilisearch/meilisearch",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
-  },
-  {
-    "repo": "FFmpeg/FFmpeg",
+    "repo": "luolangaga/tubatool",
     "branch": "master",
-    "language": "C",
-    "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
-  },
-  {
-    "repo": "LemoLev/tg-ws-proxy-ANDROID",
-    "branch": "main",
-    "language": "Python",
-    "description": "Flowseal/tg-ws-proxy на андроид (да и не только)"
-  },
-  {
-    "repo": "sympy/sympy",
-    "branch": "master",
-    "language": "Python",
-    "description": "A computer algebra system written in pure Python"
-  },
-  {
-    "repo": "zai-org/GLM-OCR",
-    "branch": "main",
-    "language": "Python",
-    "description": "GLM-OCR: Accurate ×  Fast × Comprehensive"
-  },
-  {
-    "repo": "Pluviobyte/rnskill",
-    "branch": "main",
-    "language": "Python",
-    "description": "雪踏乌云的 AI Agent Skills 集合"
-  },
-  {
-    "repo": "ahmedkhan1/ngx-ai-devtools",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Floating DevTools panel that intercepts OpenAI, Anthropic, Gemini, Mistral, Groq, and Cohere calls in your Angular app and shows you the prompt, response, tokens, cost, and tool use."
-  },
-  {
-    "repo": "mrgummy007/Yoshi-pc",
-    "branch": "main",
     "language": "C#",
-    "description": "yoshi and the mysterious book free pc review switch 2 download gameplay walkthrough ryujinx yuzu emulator installation"
-  },
-  {
-    "repo": "redteamfortress/PhantomKiller",
-    "branch": "main",
-    "language": "C++",
-    "description": "Another BYOVD process killer. works on all EDR's. fully signed."
-  },
-  {
-    "repo": "gokulgml/polymarket-copy-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,"
-  },
-  {
-    "repo": "actuallyaridan/linux-devmgmt",
-    "branch": "main",
-    "language": "C++",
-    "description": "A faithful recreation of the Windows Device Manager built with Qt6 and real hardware backends via sysfs/procfs. Best enjoyed with AeroThemePlasma, but looks great on regular KDE as well."
-  },
-  {
-    "repo": "NanoFlow-io/engram",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🧠 Hybrid long-term memory plugin for OpenClaw agents — SQLite+FTS5 for structured facts, LanceDB for semantic recall"
-  },
-  {
-    "repo": "jake-stewart/tuie",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A rich, performant TUI library for Rust."
-  },
-  {
-    "repo": "Michaelliv/pi-dynamic-workflows",
-    "branch": "main",
-    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "EURICO55/download-tor-browser",
-    "branch": "main",
-    "language": "C#",
-    "description": "tor browser github onion  vpn brave  official download onion routing dark web privacy anonymity security censorship circumvention tracker blocker encrypted traffic .onion sites open source firefox based windows macos linux android portable secure web browsing"
+    "repo": "home-assistant/core",
+    "branch": "dev",
+    "language": "Python",
+    "description": ":house_with_garden: Open source home automation that puts local control and privacy first."
   },
   {
-    "repo": "cosmicstack-labs/mercury-agent",
+    "repo": "ramitsurana/awesome-kubernetes",
+    "branch": "master",
+    "language": "Shell",
+    "description": "A curated list for awesome kubernetes sources :ship::tada:"
+  },
+  {
+    "repo": "psycopg/psycopg",
+    "branch": "master",
+    "language": "Python",
+    "description": "New generation PostgreSQL database adapter for the Python programming language"
+  },
+  {
+    "repo": "pypa/hatch",
+    "branch": "master",
+    "language": "Python",
+    "description": "Modern, extensible Python project management"
+  },
+  {
+    "repo": "sharonubsyq/trading-view-indicator-extension",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "PsiACE/skills",
+    "branch": "main",
+    "language": "HTML",
+    "description": "A small, shared skill library by builders, for builders."
+  },
+  {
+    "repo": "jackwener/xiaohongshu-cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "A CLI for Xiaohongshu (小红书) — search, read, interact via reverse-engineered API"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
+  },
+  {
+    "repo": "apache/spark",
+    "branch": "master",
+    "language": "Scala",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing"
+  },
+  {
+    "repo": "T-Lab-CUHKSZ/claude-code",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
+    "description": "Claude Code Source - Buildable Research Fork. Reverse-engineered build system, runnable with Bun."
+  },
+  {
+    "repo": "libgdx/libgdx",
+    "branch": "master",
+    "language": "Java",
+    "description": "Desktop/Android/HTML5/iOS Java game development framework"
+  },
+  {
+    "repo": "lerna/lerna",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository."
+  },
+  {
+    "repo": "Railly/agentfiles",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Discover, organize, and edit AI coding agent skills across Claude Code, Cursor, Codex, Windsurf, and more, from inside Obsidian."
+  },
+  {
+    "repo": "pocketbase/pocketbase",
+    "branch": "master",
+    "language": "Go",
+    "description": "Open Source realtime backend in 1 file"
+  },
+  {
+    "repo": "joyehuang/Learn-Open-Harness",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🤖 Official Interactive Tutorial for OpenHarness – Zero to Hero in 12 Chapters | Learn OpenHarness like Claude Code: Agent Loop, Tools, Memory, Multi-Agent | 面向零基础的 AI Agent 交互式教程"
+  },
+  {
+    "repo": "zed-industries/zed",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+  },
+  {
+    "repo": "bwya77/vscode-dark-islands",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "VSCode theme based off the new Jetbrains islands theme"
+  },
+  {
+    "repo": "kzhrknt/awesome-design-md-jp",
+    "branch": "main",
+    "language": "HTML",
+    "description": "日本語UIをAIエージェントに正しくつくらせるためのDESIGN.md集。Japanese DESIGN.md collection for AI agents — extending Google Stitch format with CJK typography."
+  },
+  {
+    "repo": "apache/kafka",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "Mirror of Apache Kafka"
+  },
+  {
+    "repo": "ufira-ai/Vibma",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Vibe Design meets Figma. Let AI agents design directly in Figma."
+  },
+  {
+    "repo": "glommer/cachebro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "File cache with diff tracking for AI coding agents. Drop-in MCP server that cuts token usage by 26%."
+  },
+  {
+    "repo": "wesm/agentsview",
+    "branch": "main",
+    "language": "Go",
+    "description": "Fast local coding agent session viewer for Claude, Codex, Gemini, with analytics dashboard and full text search"
   }
 ]
