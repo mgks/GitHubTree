@@ -1,8 +1,8 @@
 {
-  "repo": "WYH66666666/DSH-Transparent-UI-Plugin",
+  "repo": "omdsh-dev/dsh-genui",
   "branch": "main",
-  "language": "JavaScript",
-  "description": "是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页端。顶栏、侧边栏、输入框、统计行、轨迹视图都成了磨砂玻璃片。玻璃模糊度、磨砂度、背景（流体或自定义壁纸，壁纸还能单独调模糊和磨砂）全都能在设置卡片里自由调节。关掉开关就回到原生界面，不改 DSH 任何一行源码。",
-  "stars": 248,
-  "forks": 13
+  "language": "TypeScript",
+  "description": "GenUI for DeepSeek Harness: interactive UI components rendered inline in assistant replies via the dsh-ui fence — layout, charts, plots, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model. Ships the fence-teaching host plugin, the browser renderer (client half), and the genui skill.",
+  "stars": 184,
+  "forks": 15
 }
