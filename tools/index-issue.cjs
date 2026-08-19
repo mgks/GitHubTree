@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 
 const REPO_OWNER = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
@@ -142,7 +142,7 @@ async function processIssue(issue) {
         fs.writeFileSync(csvPath, csvContent + newRow + '\n');
 
         execSync('git add _data/repositories.csv');
-        execSync(`git commit -m "feat(database): index ${repo} via issue #${issueNum}"`);
+        spawnSync('git', ['commit', '-m', `feat(database): index ${repo} via issue #${issueNum}`], { stdio: 'inherit' });
         execSync('git push origin main');
         await triggerDeploy();
 
