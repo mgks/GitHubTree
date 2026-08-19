@@ -1,39 +1,57 @@
 [
   {
-    "repo": "ChristianJR19/GoblinOS",
-    "branch": "main",
+    "repo": "charlax/professional-programming",
+    "branch": "master",
     "language": "Python",
-    "description": "a Hermes Agent personality layer that replaces the default agent identity with a persistent, mood-driven goblin persona"
+    "description": "A collection of learning resources for curious software engineers"
   },
   {
-    "repo": "NikkeTryHard/zerogravity",
+    "repo": "Callous-0923/agent-study",
     "branch": "main",
-    "language": "Shell",
-    "description": "OpenAI, Anthropic, and Gemini-compatible proxy"
+    "language": "HTML",
+    "description": "28章AI Agent全栈课程：从ReAct循环到Claude Code逆向、MCP/A2A协议、RAG、DSPy、生产可观测性——全部为可运行Python文件，面试导向。"
   },
   {
-    "repo": "Lissy93/awesome-privacy",
-    "branch": "main",
-    "language": "Astro",
-    "description": "🦄  A curated list of privacy & security-focused software and services"
-  },
-  {
-    "repo": "solidjs/solid",
+    "repo": "nextui-org/nextui",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
   },
   {
-    "repo": "influxdata/telegraf",
+    "repo": "vuetifyjs/vuetify",
     "branch": "master",
-    "language": "Go",
-    "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data."
+    "language": "TypeScript",
+    "description": "🐉 Vue Component Framework"
   },
   {
-    "repo": "deep-learning-indaba/GoodPracticesML",
+    "repo": "huggingface/diffusers",
     "branch": "main",
-    "language": "Other",
-    "description": "A repository of good practices for developing usable ML products in Africa."
+    "language": "Python",
+    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+  },
+  {
+    "repo": "pytorch/audio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+  },
+  {
+    "repo": "better-auth/better-icons",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Skill and MCP server for searching and retrieving icons"
+  },
+  {
+    "repo": "Anduin2017/HowToCook",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only)."
+  },
+  {
+    "repo": "PowerShell/vscode-powershell",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Provides PowerShell language and debugging support for Visual Studio Code"
   },
   {
     "repo": "parcel-bundler/parcel",
@@ -42,105 +60,87 @@
     "description": "The zero configuration build tool for the web. 📦🚀"
   },
   {
-    "repo": "openscad/openscad",
+    "repo": "ziadoz/awesome-php",
     "branch": "master",
-    "language": "C++",
-    "description": "OpenSCAD - The Programmers Solid 3D CAD Modeller"
+    "language": "Other",
+    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things."
   },
   {
-    "repo": "freeCodeCamp/freeCodeCamp",
+    "repo": "FireRedTeam/FireRed-Image-Edit",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "fish-shell/fish-shell",
+    "branch": "master",
+    "language": "Rust",
+    "description": "The user-friendly command line shell."
+  },
+  {
+    "repo": "761696148/Game-Map-Tracker",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "antfu/ghfs",
     "branch": "main",
     "language": "TypeScript",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
+    "description": "GitHub issues/PRs as filesystem, for offline view and operations in batch. Designed for human and agents."
   },
   {
-    "repo": "matrix-org/matrix-js-sdk",
-    "branch": "develop",
+    "repo": "angular/angular",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "Matrix Client-Server SDK for JavaScript"
+    "description": "Deliver web apps with confidence 🚀"
   },
   {
-    "repo": "espressif/esp-idf",
+    "repo": "wassim249/fastapi-langgraph-agent-production-ready-template",
+    "branch": "main",
+    "language": "Python",
+    "description": "A production-ready FastAPI template for building AI agent applications with LangGraph integration. This template provides a robust foundation for building scalable, secure, and maintainable AI agent services."
+  },
+  {
+    "repo": "delbaoliveira/learn-claude-code",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "GoAdminGroup/go-admin",
     "branch": "master",
-    "language": "C",
-    "description": "Espressif IoT Development Framework. Official development framework for Espressif SoCs."
+    "language": "Go",
+    "description": "A golang framework helps gopher to build a data visualization and admin panel in ten minutes"
   },
   {
-    "repo": "vmware-tanzu/velero",
+    "repo": "T3-Content/quipslop",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "ethanweber/posterskill",
+    "branch": "main",
+    "language": "HTML",
+    "description": "AI-assisted academic posters."
+  },
+  {
+    "repo": "vllm-project/aibrix",
     "branch": "main",
     "language": "Go",
-    "description": "Backup and migrate Kubernetes applications and their persistent volumes"
+    "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
   },
   {
-    "repo": "Fixie-ai/Ultravox",
-    "branch": "main",
-    "language": "Python",
-    "description": "A fast multimodal LLM for real-time voice"
-  },
-  {
-    "repo": "longhorn/longhorn",
+    "repo": "gcc-mirror/gcc",
     "branch": "master",
-    "language": "Shell",
-    "description": "Cloud-Native distributed storage built on and for Kubernetes"
-  },
-  {
-    "repo": "kautukkundan/Awesome-Profile-README-templates",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A collection of awesome readme templates to display on your profile"
-  },
-  {
-    "repo": "defold/defold",
-    "branch": "dev",
     "language": "C++",
-    "description": "Defold is a completely free to use game engine for development of desktop, mobile and web games."
-  },
-  {
-    "repo": "emberjs/ember.js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Ember.js - A JavaScript framework for creating ambitious web applications"
-  },
-  {
-    "repo": "apache/hadoop",
-    "branch": "trunk",
-    "language": "Java",
-    "description": "Apache Hadoop"
-  },
-  {
-    "repo": "Supervisor/supervisor",
-    "branch": "master",
-    "language": "Python",
-    "description": "Supervisor process control system for Unix (supervisord)"
-  },
-  {
-    "repo": "microsoft/DeepSpeed",
-    "branch": "master",
-    "language": "Python",
-    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
-  },
-  {
-    "repo": "NVlabs/Sana",
-    "branch": "main",
-    "language": "Python",
-    "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer"
-  },
-  {
-    "repo": "nteract/nteract",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "📘 The interactive computing suite for you!  ✨"
-  },
-  {
-    "repo": "microsoft/vscode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Visual Studio Code"
-  },
-  {
-    "repo": "encode/starlette",
-    "branch": "master",
-    "language": "Python",
-    "description": "The little ASGI framework that shines. 🌟"
+    "description": "Mirror of the GNU Compiler Collection master repository."
   }
 ]
