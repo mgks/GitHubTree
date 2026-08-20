@@ -1,135 +1,87 @@
 [
   {
-    "repo": "wanshuiyin/HERO-Anti-OverDefense",
-    "branch": "main",
-    "language": "Markdown",
-    "description": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Windsurf, Gemini CLI."
-  },
-  {
-    "repo": "996icu/996.ICU",
-    "branch": "master",
-    "language": "Other",
-    "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-  },
-  {
-    "repo": "scrya-com/rotorquant",
+    "repo": "okturro/asr-rescore-bench",
     "branch": "main",
     "language": "Python",
-    "description": "RotorQuant: Clifford algebra vector quantization for LLM KV cache compression. 10-19x faster than TurboQuant, 44x fewer parameters."
+    "description": "Benchmark for LLM-based ASR n-best rescoring (ngram, neural-LM, MLM-PLL, LLM-prompt strategies)."
   },
   {
-    "repo": "angular/angular-cli",
-    "branch": "main",
+    "repo": "tensorflow/tensorboard",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "CLI tool for Angular"
+    "description": "TensorFlow's Visualization Toolkit"
   },
   {
-    "repo": "donnemartin/system-design-primer",
+    "repo": "CleverCloud/mdr",
+    "branch": "main",
+    "language": "Rust",
+    "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded"
+  },
+  {
+    "repo": "jitsi/jitsi-meet",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application."
+  },
+  {
+    "repo": "mosaicml/llm-foundry",
+    "branch": "main",
+    "language": "Python",
+    "description": "LLM training code for Databricks foundation models"
+  },
+  {
+    "repo": "espressif/esp-idf",
+    "branch": "master",
+    "language": "C",
+    "description": "Espressif IoT Development Framework. Official development framework for Espressif SoCs."
+  },
+  {
+    "repo": "mysqljs/mysql",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A pure node.js JavaScript Client implementing the MySQL protocol."
+  },
+  {
+    "repo": "ramda/ramda",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ":ram: Practical functional Javascript"
+  },
+  {
+    "repo": "yt-dlp/yt-dlp",
     "branch": "master",
     "language": "Python",
-    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards."
+    "description": "A feature-rich command-line audio/video downloader"
   },
   {
-    "repo": "paritytech/substrate",
+    "repo": "ziadoz/awesome-php",
     "branch": "master",
-    "language": "Rust",
-    "description": "Substrate: The platform for blockchain innovators"
-  },
-  {
-    "repo": "sindresorhus/awesome",
-    "branch": "main",
     "language": "Other",
-    "description": "😎 Awesome lists about all kinds of interesting topics"
+    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things."
   },
   {
-    "repo": "facebook/react-native",
+    "repo": "WhiskeyCoder/Qwen3-Audiobook-Converter",
     "branch": "main",
-    "language": "C++",
-    "description": "A framework for building native applications using React"
+    "language": "Python",
+    "description": "Convert PDFs, EPUBs, DOCX, DOC, and TXT files into high-quality audiobooks using **Qwen3 TTS Voice Model** - an open-source voice synthesis system that excels at natural speech generation and voice cloning."
   },
   {
-    "repo": "bytedance/semi-design",
-    "branch": "main",
-    "language": "Other",
-    "description": "A modern, comprehensive, flexible design system and React UI library."
-  },
-  {
-    "repo": "signalapp/Signal-Android",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A private messenger for Android."
-  },
-  {
-    "repo": "anchore/syft",
-    "branch": "main",
-    "language": "Go",
-    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
-  },
-  {
-    "repo": "webpack/webpack",
+    "repo": "prettier/prettier",
     "branch": "main",
     "language": "JavaScript",
-    "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through loaders, modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff."
+    "description": "Prettier is an opinionated code formatter."
   },
   {
-    "repo": "DioxusLabs/dioxus",
+    "repo": "flutter/flutter",
     "branch": "master",
-    "language": "Rust",
-    "description": "Fullstack app framework for web, desktop, and mobile."
+    "language": "Dart",
+    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
   },
   {
-    "repo": "jackc/pgx",
+    "repo": "Alamofire/Alamofire",
     "branch": "master",
-    "language": "Go",
-    "description": "PostgreSQL driver and toolkit for Go"
-  },
-  {
-    "repo": "libuv/libuv",
-    "branch": "v1.x",
-    "language": "C",
-    "description": "Cross-platform asynchronous I/O"
-  },
-  {
-    "repo": "public-apis/public-apis",
-    "branch": "master",
-    "language": "Python",
-    "description": "A collective list of free APIs"
-  },
-  {
-    "repo": "kubernetes/kubernetes",
-    "branch": "master",
-    "language": "Go",
-    "description": "Production-Grade Container Scheduling and Management"
-  },
-  {
-    "repo": "lapce/lapce",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Lightning-fast and Powerful Code Editor written in Rust"
-  },
-  {
-    "repo": "radix-ui/primitives",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos."
-  },
-  {
-    "repo": "NVlabs/Sana",
-    "branch": "main",
-    "language": "Python",
-    "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer"
-  },
-  {
-    "repo": "deepmind/alphafold",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open source code for AlphaFold 2."
-  },
-  {
-    "repo": "element-hq/element-ios",
-    "branch": "develop",
     "language": "Swift",
-    "description": "A glossy Matrix collaboration client for iOS"
+    "description": "Elegant HTTP Networking in Swift"
   },
   {
     "repo": "QwenLM/Qwen3-TTS",
@@ -138,9 +90,57 @@
     "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
   },
   {
-    "repo": "duckdb/duckdb",
-    "branch": "main",
+    "repo": "element-plus/element-plus",
+    "branch": "dev",
+    "language": "TypeScript",
+    "description": "🎉 A Vue.js 3 UI Library made by Element team"
+  },
+  {
+    "repo": "MarlinFirmware/Marlin",
+    "branch": "bugfix-2.1.x",
     "language": "C++",
-    "description": "DuckDB is an analytical in-process SQL database management system"
+    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
+  },
+  {
+    "repo": "tilt-dev/tilt",
+    "branch": "master",
+    "language": "Go",
+    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
+  },
+  {
+    "repo": "adafruit/circuitpython",
+    "branch": "main",
+    "language": "C",
+    "description": "CircuitPython - a Python implementation for teaching coding with microcontrollers"
+  },
+  {
+    "repo": "test-time-training/ttt-video-dit",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
+  },
+  {
+    "repo": "nvm-sh/nvm",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions"
+  },
+  {
+    "repo": "grp06/openclaw-studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "papers-we-love/papers-we-love",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Papers from the computer science community to read and discuss."
+  },
+  {
+    "repo": "MetaMask/metamask-extension",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites"
   }
 ]
