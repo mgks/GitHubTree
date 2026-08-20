@@ -1,146 +1,146 @@
 [
   {
-    "repo": "okturro/asr-rescore-bench",
+    "repo": "kamranahmedse/claude-statusline",
     "branch": "main",
-    "language": "Python",
-    "description": "Benchmark for LLM-based ASR n-best rescoring (ngram, neural-LM, MLM-PLL, LLM-prompt strategies)."
-  },
-  {
-    "repo": "tensorflow/tensorboard",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "TensorFlow's Visualization Toolkit"
-  },
-  {
-    "repo": "CleverCloud/mdr",
-    "branch": "main",
-    "language": "Rust",
-    "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded"
-  },
-  {
-    "repo": "jitsi/jitsi-meet",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application."
-  },
-  {
-    "repo": "mosaicml/llm-foundry",
-    "branch": "main",
-    "language": "Python",
-    "description": "LLM training code for Databricks foundation models"
-  },
-  {
-    "repo": "espressif/esp-idf",
-    "branch": "master",
-    "language": "C",
-    "description": "Espressif IoT Development Framework. Official development framework for Espressif SoCs."
-  },
-  {
-    "repo": "mysqljs/mysql",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A pure node.js JavaScript Client implementing the MySQL protocol."
-  },
-  {
-    "repo": "ramda/ramda",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":ram: Practical functional Javascript"
-  },
-  {
-    "repo": "yt-dlp/yt-dlp",
-    "branch": "master",
-    "language": "Python",
-    "description": "A feature-rich command-line audio/video downloader"
-  },
-  {
-    "repo": "ziadoz/awesome-php",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things."
-  },
-  {
-    "repo": "WhiskeyCoder/Qwen3-Audiobook-Converter",
-    "branch": "main",
-    "language": "Python",
-    "description": "Convert PDFs, EPUBs, DOCX, DOC, and TXT files into high-quality audiobooks using **Qwen3 TTS Voice Model** - an open-source voice synthesis system that excels at natural speech generation and voice cloning."
-  },
-  {
-    "repo": "prettier/prettier",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Prettier is an opinionated code formatter."
-  },
-  {
-    "repo": "flutter/flutter",
-    "branch": "master",
-    "language": "Dart",
-    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
-  },
-  {
-    "repo": "Alamofire/Alamofire",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Elegant HTTP Networking in Swift"
-  },
-  {
-    "repo": "QwenLM/Qwen3-TTS",
-    "branch": "main",
-    "language": "Python",
-    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
-  },
-  {
-    "repo": "element-plus/element-plus",
-    "branch": "dev",
-    "language": "TypeScript",
-    "description": "🎉 A Vue.js 3 UI Library made by Element team"
-  },
-  {
-    "repo": "MarlinFirmware/Marlin",
-    "branch": "bugfix-2.1.x",
-    "language": "C++",
-    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
-  },
-  {
-    "repo": "tilt-dev/tilt",
-    "branch": "master",
-    "language": "Go",
-    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
-  },
-  {
-    "repo": "adafruit/circuitpython",
-    "branch": "main",
-    "language": "C",
-    "description": "CircuitPython - a Python implementation for teaching coding with microcontrollers"
-  },
-  {
-    "repo": "test-time-training/ttt-video-dit",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official PyTorch implementation of One-Minute Video Generation with Test-Time Training"
-  },
-  {
-    "repo": "nvm-sh/nvm",
-    "branch": "master",
     "language": "Shell",
-    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions"
+    "description": "Minimal Claude Code statusline setup I personally use"
   },
   {
-    "repo": "grp06/openclaw-studio",
+    "repo": "pingmike2/freebuff2api-wokers",
     "branch": "main",
-    "language": "TypeScript",
+    "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "papers-we-love/papers-we-love",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Papers from the computer science community to read and discuss."
+    "repo": "safe-global/safe-contracts",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Safe allows secure management of blockchain assets."
   },
   {
-    "repo": "MetaMask/metamask-extension",
+    "repo": "node-fetch/node-fetch",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A light-weight module that brings the Fetch API to Node.js"
+  },
+  {
+    "repo": "androidx/media",
+    "branch": "main",
+    "language": "Java",
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+  },
+  {
+    "repo": "google/generative-ai-python",
+    "branch": "main",
+    "language": "Python",
+    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
+  },
+  {
+    "repo": "jquery/jquery-ui",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The official jQuery user interface library."
+  },
+  {
+    "repo": "raspberrypi/documentation",
+    "branch": "master",
+    "language": "Python",
+    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
+  },
+  {
+    "repo": "newrelic/newrelic-java-agent",
+    "branch": "main",
+    "language": "Java",
+    "description": "The New Relic Java agent"
+  },
+  {
+    "repo": "signalapp/Signal-Android",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "A private messenger for Android."
+  },
+  {
+    "repo": "junegunn/fzf",
+    "branch": "master",
+    "language": "Go",
+    "description": ":cherry_blossom: A command-line fuzzy finder"
+  },
+  {
+    "repo": "mpv-player/mpv",
+    "branch": "master",
+    "language": "C",
+    "description": "🎥 Command line media player"
+  },
+  {
+    "repo": "Tencent/wepy",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "小程序组件化开发框架"
+  },
+  {
+    "repo": "facebook/fresco",
+    "branch": "main",
+    "language": "Java",
+    "description": "An Android library for managing images and the memory they use."
+  },
+  {
+    "repo": "nextcloud/server",
+    "branch": "master",
+    "language": "PHP",
+    "description": "☁️ Nextcloud server, a safe home for all your data"
+  },
+  {
+    "repo": "ollama/ollama",
+    "branch": "main",
+    "language": "Go",
+    "description": "Get up and running with OpenAI GLM-4.7, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+  },
+  {
+    "repo": "DataDog/datadog-agent",
+    "branch": "main",
+    "language": "Go",
+    "description": "Main repository for Datadog Agent"
+  },
+  {
+    "repo": "mermaid-js/mermaid",
     "branch": "develop",
     "language": "TypeScript",
-    "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites"
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
+  },
+  {
+    "repo": "go-pg/pg",
+    "branch": "master",
+    "language": "Go",
+    "description": "Golang ORM with focus on PostgreSQL features and performance"
+  },
+  {
+    "repo": "dotnet/roslyn",
+    "branch": "main",
+    "language": "C#",
+    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
+  },
+  {
+    "repo": "celery/celery",
+    "branch": "master",
+    "language": "Python",
+    "description": "Distributed Task Queue (development branch)"
+  },
+  {
+    "repo": "actions/checkout",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Action for checking out a repo"
+  },
+  {
+    "repo": "matrix-org/matrix-react-sdk",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Matrix SDK for React Javascript"
+  },
+  {
+    "repo": "github/hub",
+    "branch": "master",
+    "language": "Go",
+    "description": "A command-line tool that makes git easier to use with GitHub."
   }
 ]
