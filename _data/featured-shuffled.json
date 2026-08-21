@@ -1,146 +1,146 @@
 [
   {
-    "repo": "kamranahmedse/claude-statusline",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Minimal Claude Code statusline setup I personally use"
+    "repo": "ARMSX2/ARMSX3",
+    "branch": "master",
+    "language": "C++",
+    "description": "Proof of concept port of RPCS3 for Android"
   },
   {
-    "repo": "pingmike2/freebuff2api-wokers",
+    "repo": "op7418/Claude-to-IM-skill",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
+  },
+  {
+    "repo": "leo-lilinxiao/codex-autoresearch",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Codex Autoresearch Skill — A self-directed iterative system for Codex that continuously cycles through: modify, verify, retain or discard, and repeat indefinitely. Inspired by Karpathy’s autoresearch concept."
+  },
+  {
+    "repo": "pyenv/pyenv",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Simple Python version management"
+  },
+  {
+    "repo": "karanb192/claude-code-hooks",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🪝 A growing collection of useful Claude Code hooks. Copy, paste, customize."
+  },
+  {
+    "repo": "apple/swift-nio",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
+  },
+  {
+    "repo": "k3s-io/k3s",
+    "branch": "master",
+    "language": "Go",
+    "description": "Lightweight Kubernetes"
+  },
+  {
+    "repo": "MME-Benchmarks/Video-MME-v2",
+    "branch": "main",
+    "language": "Python",
+    "description": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding"
+  },
+  {
+    "repo": "omnimind-ai/OmniInfer",
+    "branch": "main",
+    "language": "C++",
+    "description": "Cross-platform LLM inference framework for efficient edge deployment"
+  },
+  {
+    "repo": "vkhanhqui/figma-mcp-go",
+    "branch": "main",
+    "language": "Go",
+    "description": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code"
+  },
+  {
+    "repo": "lerna/lerna",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository."
+  },
+  {
+    "repo": "T-Lab-CUHKSZ/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code Source - Buildable Research Fork. Reverse-engineered build system, runnable with Bun."
+  },
+  {
+    "repo": "less/less.js",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Less. The dynamic stylesheet language."
+  },
+  {
+    "repo": "ReactiveX/RxPY",
+    "branch": "master",
+    "language": "Python",
+    "description": "ReactiveX for Python"
+  },
+  {
+    "repo": "silships/figma-cli",
     "branch": "main",
     "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "safe-global/safe-contracts",
+    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-tool",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "spool-lab/spool",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Safe allows secure management of blockchain assets."
+    "description": "The missing search engine for your own data."
   },
   {
-    "repo": "node-fetch/node-fetch",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A light-weight module that brings the Fetch API to Node.js"
-  },
-  {
-    "repo": "androidx/media",
-    "branch": "main",
-    "language": "Java",
-    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
-  },
-  {
-    "repo": "google/generative-ai-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "This SDK is now deprecated, use the new unified Google GenAI SDK."
-  },
-  {
-    "repo": "jquery/jquery-ui",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "The official jQuery user interface library."
-  },
-  {
-    "repo": "raspberrypi/documentation",
-    "branch": "master",
-    "language": "Python",
-    "description": "The official documentation for Raspberry Pi computers and microcontrollers"
-  },
-  {
-    "repo": "newrelic/newrelic-java-agent",
-    "branch": "main",
-    "language": "Java",
-    "description": "The New Relic Java agent"
-  },
-  {
-    "repo": "signalapp/Signal-Android",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "A private messenger for Android."
-  },
-  {
-    "repo": "junegunn/fzf",
-    "branch": "master",
-    "language": "Go",
-    "description": ":cherry_blossom: A command-line fuzzy finder"
-  },
-  {
-    "repo": "mpv-player/mpv",
+    "repo": "stedolan/jq",
     "branch": "master",
     "language": "C",
-    "description": "🎥 Command line media player"
+    "description": "Command-line JSON processor"
   },
   {
-    "repo": "Tencent/wepy",
+    "repo": "acedef/SynthAPT",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "小程序组件化开发框架"
+    "language": "Rust",
+    "description": "Generate malware with AI"
   },
   {
-    "repo": "facebook/fresco",
+    "repo": "skottrun/extrateto",
     "branch": "main",
-    "language": "Java",
-    "description": "An Android library for managing images and the memory they use."
-  },
-  {
-    "repo": "nextcloud/server",
-    "branch": "master",
-    "language": "PHP",
-    "description": "☁️ Nextcloud server, a safe home for all your data"
-  },
-  {
-    "repo": "ollama/ollama",
-    "branch": "main",
-    "language": "Go",
-    "description": "Get up and running with OpenAI GLM-4.7, DeepSeek, gpt-oss, Qwen, Gemma and other models."
-  },
-  {
-    "repo": "DataDog/datadog-agent",
-    "branch": "main",
-    "language": "Go",
-    "description": "Main repository for Datadog Agent"
-  },
-  {
-    "repo": "mermaid-js/mermaid",
-    "branch": "develop",
     "language": "TypeScript",
-    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
+    "description": "Dashboard público que expõe supersalários do Judiciário brasileiro acima do teto constitucional"
   },
   {
-    "repo": "go-pg/pg",
-    "branch": "master",
-    "language": "Go",
-    "description": "Golang ORM with focus on PostgreSQL features and performance"
-  },
-  {
-    "repo": "dotnet/roslyn",
+    "repo": "Maoleio/CPA-Codex-Manager",
     "branch": "main",
-    "language": "C#",
-    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
-  },
-  {
-    "repo": "celery/celery",
-    "branch": "master",
     "language": "Python",
-    "description": "Distributed Task Queue (development branch)"
+    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
   },
   {
-    "repo": "actions/checkout",
+    "repo": "GreatScott/enject",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Action for checking out a repo"
+    "language": "Rust",
+    "description": "enject: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
   },
   {
-    "repo": "matrix-org/matrix-react-sdk",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Matrix SDK for React Javascript"
+    "repo": "F-R-L/forge-film",
+    "branch": "main",
+    "language": "Python",
+    "description": "Multi-model DAG-driven parallel AI film generation — parallel speedup scales with scene independence; Generate film scenes simultaneously instead of one by one;  把影视生成的执行图从拓扑序变成关键路径最优调度 ; 唯一把场景叙事依赖建模为 DAG、以 CPM    算法驱动并行调度的影视生成引擎"
   },
   {
-    "repo": "github/hub",
-    "branch": "master",
-    "language": "Go",
-    "description": "A command-line tool that makes git easier to use with GitHub."
+    "repo": "idawnlight/ShichiZip",
+    "branch": "main",
+    "language": "Swift",
+    "description": "The 7-Zip derivative intended for macOS"
   }
 ]
