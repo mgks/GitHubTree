@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ARMSX2/ARMSX3",
-    "branch": "master",
-    "language": "C++",
-    "description": "Proof of concept port of RPCS3 for Android"
-  },
-  {
-    "repo": "op7418/Claude-to-IM-skill",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
-  },
-  {
-    "repo": "leo-lilinxiao/codex-autoresearch",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Codex Autoresearch Skill — A self-directed iterative system for Codex that continuously cycles through: modify, verify, retain or discard, and repeat indefinitely. Inspired by Karpathy’s autoresearch concept."
-  },
-  {
-    "repo": "pyenv/pyenv",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Simple Python version management"
-  },
-  {
-    "repo": "karanb192/claude-code-hooks",
+    "repo": "vuciv/artblock",
     "branch": "main",
     "language": "JavaScript",
-    "description": "🪝 A growing collection of useful Claude Code hooks. Copy, paste, customize."
+    "description": "Every ad on the internet, replaced with fine art from public museum and NASA collections."
   },
   {
-    "repo": "apple/swift-nio",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
-  },
-  {
-    "repo": "k3s-io/k3s",
-    "branch": "master",
-    "language": "Go",
-    "description": "Lightweight Kubernetes"
-  },
-  {
-    "repo": "MME-Benchmarks/Video-MME-v2",
+    "repo": "openai/point-e",
     "branch": "main",
     "language": "Python",
-    "description": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding"
+    "description": "Point cloud diffusion for 3D model synthesis"
   },
   {
-    "repo": "omnimind-ai/OmniInfer",
+    "repo": "maderix/ANE",
+    "branch": "main",
+    "language": "Objective-C",
+    "description": "Training neural networks on Apple Neural Engine via reverse-engineered private APIs"
+  },
+  {
+    "repo": "tiimgreen/github-cheat-sheet",
+    "branch": "master",
+    "language": "Other",
+    "description": "A list of cool features of Git and GitHub."
+  },
+  {
+    "repo": "emscripten-core/emscripten",
     "branch": "main",
     "language": "C++",
-    "description": "Cross-platform LLM inference framework for efficient edge deployment"
+    "description": "Emscripten: An LLVM-to-WebAssembly Compiler"
   },
   {
-    "repo": "vkhanhqui/figma-mcp-go",
+    "repo": "deepseek-ai/DeepSeek-VL",
     "branch": "main",
-    "language": "Go",
-    "description": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code"
-  },
-  {
-    "repo": "lerna/lerna",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository."
-  },
-  {
-    "repo": "T-Lab-CUHKSZ/claude-code",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code Source - Buildable Research Fork. Reverse-engineered build system, runnable with Bun."
-  },
-  {
-    "repo": "less/less.js",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Less. The dynamic stylesheet language."
-  },
-  {
-    "repo": "ReactiveX/RxPY",
-    "branch": "master",
     "language": "Python",
-    "description": "ReactiveX for Python"
+    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
   },
   {
-    "repo": "silships/figma-cli",
+    "repo": "airbnb/lottie-web",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
+  },
+  {
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "electron/electron",
+    "branch": "main",
+    "language": "C++",
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+  },
+  {
+    "repo": "spring-cloud/spring-cloud-gateway",
+    "branch": "main",
+    "language": "Java",
+    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
+  },
+  {
+    "repo": "openai/shap-e",
+    "branch": "main",
+    "language": "Python",
+    "description": "Generate 3D objects conditioned on text or images"
+  },
+  {
+    "repo": "django/django",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Web framework for perfectionists with deadlines."
+  },
+  {
+    "repo": "androidx/media",
+    "branch": "main",
+    "language": "Java",
+    "description": "Jetpack Media3 support libraries for media use cases, including ExoPlayer, an extensible media player for Android"
+  },
+  {
+    "repo": "Anarkh-Lee/universal-db-mcp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "MCP 数据库万能连接器：使用支持MCP服务协议的工具（例如：Claude Desktop、Cherry Studio等）直接连接你的数据库，用自然语言查询和分析数据"
+  },
+  {
+    "repo": "sveltejs/svelte",
     "branch": "main",
     "language": "JavaScript",
+    "description": "web development for the rest of us"
+  },
+  {
+    "repo": "golangci/golangci-lint",
+    "branch": "master",
+    "language": "Go",
+    "description": "Fast linters runner for Go"
+  },
+  {
+    "repo": "JakeWharton/butterknife",
+    "branch": "master",
+    "language": "Java",
+    "description": "Bind Android views and callbacks to fields and methods."
+  },
+  {
+    "repo": "https-deeplearning-ai/sc-agent-skills-files",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-tool",
-    "branch": "main",
-    "language": "Rust",
-    "description": ""
-  },
-  {
-    "repo": "spool-lab/spool",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The missing search engine for your own data."
-  },
-  {
-    "repo": "stedolan/jq",
-    "branch": "master",
-    "language": "C",
-    "description": "Command-line JSON processor"
-  },
-  {
-    "repo": "acedef/SynthAPT",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Generate malware with AI"
-  },
-  {
-    "repo": "skottrun/extrateto",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Dashboard público que expõe supersalários do Judiciário brasileiro acima do teto constitucional"
-  },
-  {
-    "repo": "Maoleio/CPA-Codex-Manager",
+    "repo": "deepseek-ai/deepseek-coder",
     "branch": "main",
     "language": "Python",
-    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
+    "description": "DeepSeek Coder: Let the Code Write Itself"
   },
   {
-    "repo": "GreatScott/enject",
-    "branch": "main",
-    "language": "Rust",
-    "description": "enject: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
-  },
-  {
-    "repo": "F-R-L/forge-film",
+    "repo": "EbookFoundation/free-programming-books",
     "branch": "main",
     "language": "Python",
-    "description": "Multi-model DAG-driven parallel AI film generation — parallel speedup scales with scene independence; Generate film scenes simultaneously instead of one by one;  把影视生成的执行图从拓扑序变成关键路径最优调度 ; 唯一把场景叙事依赖建模为 DAG、以 CPM    算法驱动并行调度的影视生成引擎"
+    "description": ":books: Freely available programming books"
   },
   {
-    "repo": "idawnlight/ShichiZip",
+    "repo": "nsqio/nsq",
+    "branch": "master",
+    "language": "Go",
+    "description": "A realtime distributed messaging platform"
+  },
+  {
+    "repo": "antfu/skills",
     "branch": "main",
-    "language": "Swift",
-    "description": "The 7-Zip derivative intended for macOS"
+    "language": "TypeScript",
+    "description": "Anthony Fu's curated collection of agent skills."
+  },
+  {
+    "repo": "supabase/postgres",
+    "branch": "develop",
+    "language": "Nix",
+    "description": "Unmodified Postgres with some useful plugins"
+  },
+  {
+    "repo": "pydantic/pydantic",
+    "branch": "main",
+    "language": "Python",
+    "description": "Data validation using Python type hints"
   }
 ]
