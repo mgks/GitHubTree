@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Go Repositories Directory - Page 4 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Go repositories - Page 4. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/go/4/">
+    <meta property="og:title" content="Best Go Repositories Directory - Page 4 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Go repositories - Page 4. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/go/4/">
+    <meta property="twitter:title" content="Best Go Repositories Directory - Page 4 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Go repositories - Page 4. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/go/4/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/go/3/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/go/5/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Go Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/cortexproject/cortex/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cortexproject/cortex</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A horizontally scalable, highly available, multi-tenant, long term Prometheus.</p>
+                </a>
+                <a href="/repo/earthly/earthly/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">earthly/earthly</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like Dockerfile and Makefile had a baby.</p>
+                </a>
+                <a href="/repo/dagger/dagger/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dagger/dagger</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud</p>
+                </a>
+                <a href="/repo/wader/fq/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wader/fq</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">jq for binary formats - tool, language and decoders for working with binary and text formats</p>
+                </a>
+                <a href="/repo/antonmedv/fx/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">antonmedv/fx</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Terminal JSON viewer & processor</p>
+                </a>
+                <a href="/repo/jesseduffield/lazygit/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jesseduffield/lazygit</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">simple terminal UI for git commands</p>
+                </a>
+                <a href="/repo/jesseduffield/lazydocker/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jesseduffield/lazydocker</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The lazier way to manage everything docker</p>
+                </a>
+                <a href="/repo/suborbital/sat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">suborbital/sat</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Tiny & fast WebAssembly edge compute server</p>
+                </a>
+                <a href="/repo/gitleaks/gitleaks/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">gitleaks/gitleaks</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Find secrets with Gitleaks 🔑</p>
+                </a>
+                <a href="/repo/OWASP/Amass/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OWASP/Amass</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">In-depth attack surface mapping and asset discovery</p>
+                </a>
+                <a href="/repo/ory/kratos/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ory/kratos</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Headless cloud-native authentication and identity management written in Go. Scales to a billion+ users. Replace Homegrown, Auth0, Okta, Firebase with better UX and DX. Passkeys, Social Sign In, OIDC, Magic Link, Multi-Factor Auth, SMS, SAML, TOTP, and more. Runs everywhere, runs best on Ory Network. </p>
+                </a>
+                <a href="/repo/ory/hydra/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ory/hydra</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go.</p>
+                </a>
+                <a href="/repo/ory/oathkeeper/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ory/oathkeeper</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A cloud native Identity & Access Proxy / API (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. Inspired by the BeyondCorp / Zero Trust white paper. Written in Go.</p>
+                </a>
+                <a href="/repo/projectdiscovery/nuclei/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">projectdiscovery/nuclei</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.</p>
+                </a>
+                <a href="/repo/milvus-io/milvus/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">milvus-io/milvus</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search</p>
+                </a>
+                <a href="/repo/smartcontractkit/chainlink/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">smartcontractkit/chainlink</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">node of the decentralized oracle network, bridging on and off-chain computation</p>
+                </a>
+                <a href="/repo/ethereum-optimism/optimism/develop/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ethereum-optimism/optimism</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Optimism is Ethereum, scaled.</p>
+                </a>
+                <a href="/repo/wy51ai/moltbotCNAPP/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wy51ai/moltbotCNAPP</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/burpheart/cursor-tap/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">burpheart/cursor-tap</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cursor gRPC 通信流量分析工具</p>
+                </a>
+                <a href="/repo/1354427059/orchids-api/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">1354427059/orchids-api</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">1111</p>
+                </a>
+                <a href="/repo/wesm/msgvault/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wesm/msgvault</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by DuckDB</p>
+                </a>
+                <a href="/repo/TsingmaoAI/xw-cli/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TsingmaoAI/xw-cli</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型</p>
+                </a>
+                <a href="/repo/run-bigpig/jcp/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">run-bigpig/jcp</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">韭菜盘 (JCP AI) - AI 驱动的智能股票分析系统，基于 Wails + Go + React，支持多 Agent 协作分析</p>
+                </a>
+                <a href="/repo/eljojo/rememory/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">eljojo/rememory</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">have a plan for the worst-case scenario</p>
+                </a>
+                <a href="/repo/jingkaihe/matchlock/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jingkaihe/matchlock</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Matchlock secures AI agent workloads with a Linux-based sandbox.</p>
+                </a>
+                <a href="/repo/Quorinex/Kiro-Go/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Quorinex/Kiro-Go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">🚀 Convert Kiro accounts into OpenAI/Anthropic APIs. Features multi-account pooling, streaming, auto token refresh, and a web admin panel.</p>
+                </a>
+                <a href="/repo/sipeed/picoclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sipeed/picoclaw</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">picoclaw</p>
+                </a>
+                <a href="/repo/stellarlinkco/myclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">stellarlinkco/myclaw</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/praetorian-inc/augustus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">praetorian-inc/augustus</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">LLM security testing framework for detecting prompt injection, jailbreaks, and adversarial attacks — 190+ probes, 28 providers, single Go binary</p>
+                </a>
+                <a href="/repo/simonw/showboat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">simonw/showboat</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Create executable documents that demonstrate an agent's work</p>
+                </a>
+                <a href="/repo/mosaxiv/picoclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mosaxiv/picoclaw</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lightweight Personal AI Assistant (Single Binary, Simple Setup)</p>
+                </a>
+                <a href="/repo/RevylAI/greenlight/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">RevylAI/greenlight</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pre-submission compliance scanner for the Apple App Store</p>
+                </a>
+                <a href="/repo/mosaxiv/clawlet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mosaxiv/clawlet</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lightweight Personal AI Assistant</p>
+                </a>
+                <a href="/repo/simonw/rodney/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">simonw/rodney</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CLI tool for interacting with the web</p>
+                </a>
+                <a href="/repo/louisho5/picobot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">louisho5/picobot</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight self-hosted bot in a single binary, written in Go.</p>
+                </a>
+                <a href="/repo/mickamy/sql-tap/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mickamy/sql-tap</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Watch SQL traffic in real-time with a TUI</p>
+                </a>
+                <a href="/repo/klawsh/klaw.sh/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">klawsh/klaw.sh</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">kubectl for AI Agents</p>
+                </a>
+                <a href="/repo/pinchtab/pinchtab/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">pinchtab/pinchtab</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Gentleman-Programming/engram/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Gentleman-Programming/engram</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.</p>
+                </a>
+                <a href="/repo/DatanoiseTV/tinyice/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DatanoiseTV/tinyice</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A tiny audio streaming server (compatible with icecast2) written in Go with multiple mountpoint, multi-source, and relaying support.</p>
+                </a>
+                <a href="/repo/Fox-Fig/phoenix/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Fox-Fig/phoenix</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Phoenix is a high-performance, resilient tunneling tool designed to bypass DPI and severe network censorship using HTTP/2 (h2/h2c) multiplexing.</p>
+                </a>
+                <a href="/repo/jasperan/picooraclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jasperan/picooraclaw</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">PicoClaw that works with Oracle AI Database</p>
+                </a>
+                <a href="/repo/quailyquaily/aqua/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">quailyquaily/aqua</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Aqua, a cli message tool for AI agents </p>
+                </a>
+                <a href="/repo/wesm/agentsview/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wesm/agentsview</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fast local coding agent session viewer for Claude, Codex, Gemini, with analytics dashboard and full text search</p>
+                </a>
+                <a href="/repo/NOBB2333/ClipCascade_go/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NOBB2333/ClipCascade_go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">ClipCascade go语言重制版</p>
+                </a>
+                <a href="/repo/thellimist/clihub/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thellimist/clihub</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/bjarneo/cliamp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bjarneo/cliamp</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Terminal Winamp</p>
+                </a>
+                <a href="/repo/nextlevelbuilder/goclaw/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nextlevelbuilder/goclaw</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.</p>
+                </a>
+                <a href="/repo/taigrr/spank/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">taigrr/spank</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Slap your MacBook, it yells back. Uses Apple Silicon accelerometer via IOKit HID.</p>
+                </a>
+                <a href="/repo/amneziawg-mikrotik/awg-proxy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">amneziawg-mikrotik/awg-proxy</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/afumu/openlink/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">afumu/openlink</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenLink让网页版 AI直接访问你的本地文件系统和执行命令。</p>
+                </a>
+                <a href="/repo/hiragram/agent-workspace/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hiragram/agent-workspace</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/geekjourneyx/jina-cli/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">geekjourneyx/jina-cli</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight CLI tool wrapping Jina AI Reader API for AI Agents. Fetch and parse any URL into LLM-friendly   formats (Markdown/Text/HTML). Perfect for reading X(Twitter), blogs, and news sites.</p>
+                </a>
+                <a href="/repo/junevm/splathash/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">junevm/splathash</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller.</p>
+                </a>
+                <a href="/repo/Resinat/Resin/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Resinat/Resin</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A high-performance proxy pool gateway. Turn massive proxy subscriptions into a stable, smart, and observable network with sticky sessions.</p>
+                </a>
+                <a href="/repo/chenhg5/cc-connect/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chenhg5/cc-connect</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.</p>
+                </a>
+                <a href="/repo/LeoChen-CoreMind/VMPacker/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LeoChen-CoreMind/VMPacker</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">ARM64 ELF Virtual Machine Protection System</p>
+                </a>
+                <a href="/repo/Enriquefft/openclaw-kapso-whatsapp/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Enriquefft/openclaw-kapso-whatsapp</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Give your OpenClaw AI agent a WhatsApp number. Official Meta Cloud API via Kapso. No ban risk.</p>
+                </a>
+                <a href="/repo/Higangssh/gitcredits/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Higangssh/gitcredits</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Roll movie-style credits for your git repo — right in the terminal</p>
+                </a>
+                <a href="/repo/heri1845/ai-meme-trading-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">heri1845/ai-meme-trading-bot</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Automated trading system for Solana and Base meme coins with AI-powered strategy evaluation. AI trading, AI prediction, AI trading, AI predictiction</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/go/3/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 4 of 6</span>
+                        <a href="/language/go/5/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Go Repositories Directory - Page 2 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Go repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/go/2/">
+    <meta property="og:title" content="Best Go Repositories Directory - Page 2 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Go repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/go/2/">
+    <meta property="twitter:title" content="Best Go Repositories Directory - Page 2 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Go repositories - Page 2. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/go/2/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/go/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/go/3/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Go Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/kubernetes/minikube/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/minikube</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Run Kubernetes locally</p>
+                </a>
+                <a href="/repo/kubernetes/kompose/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/kompose</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Convert Compose to Kubernetes</p>
+                </a>
+                <a href="/repo/kubernetes-sigs/kind/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes-sigs/kind</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Kubernetes IN Docker - local clusters for testing Kubernetes</p>
+                </a>
+                <a href="/repo/kubernetes-sigs/kustomize/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes-sigs/kustomize</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Customization of kubernetes YAML configurations</p>
+                </a>
+                <a href="/repo/k3s-io/k3s/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">k3s-io/k3s</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Lightweight Kubernetes</p>
+                </a>
+                <a href="/repo/rancher/rancher/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rancher/rancher</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Complete container management platform</p>
+                </a>
+                <a href="/repo/argoproj/argo-cd/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">argoproj/argo-cd</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Declarative Continuous Deployment for Kubernetes</p>
+                </a>
+                <a href="/repo/argoproj/argo-workflows/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">argoproj/argo-workflows</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Workflow Engine for Kubernetes</p>
+                </a>
+                <a href="/repo/fluxcd/flux2/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fluxcd/flux2</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.</p>
+                </a>
+                <a href="/repo/cilium/cilium/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cilium/cilium</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">eBPF-based Networking, Security, and Observability</p>
+                </a>
+                <a href="/repo/linkerd/linkerd2/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">linkerd/linkerd2</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.</p>
+                </a>
+                <a href="/repo/jaegertracing/jaeger/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jaegertracing/jaeger</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CNCF Jaeger, a Distributed Tracing Platform</p>
+                </a>
+                <a href="/repo/open-telemetry/opentelemetry-collector/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">open-telemetry/opentelemetry-collector</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">OpenTelemetry Collector</p>
+                </a>
+                <a href="/repo/prometheus/node_exporter/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">prometheus/node_exporter</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Exporter for machine metrics</p>
+                </a>
+                <a href="/repo/thanos-io/thanos/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thanos-io/thanos</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project.</p>
+                </a>
+                <a href="/repo/grafana/loki/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grafana/loki</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Like Prometheus, but for logs.</p>
+                </a>
+                <a href="/repo/grafana/mimir/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grafana/mimir</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.</p>
+                </a>
+                <a href="/repo/grafana/tempo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grafana/tempo</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Grafana Tempo is a high volume, minimal dependency distributed tracing backend.</p>
+                </a>
+                <a href="/repo/elastic/beats/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">elastic/beats</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">:tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash</p>
+                </a>
+                <a href="/repo/hashicorp/consul/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hashicorp/consul</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.</p>
+                </a>
+                <a href="/repo/hashicorp/nomad/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hashicorp/nomad</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.</p>
+                </a>
+                <a href="/repo/hashicorp/packer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hashicorp/packer</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.</p>
+                </a>
+                <a href="/repo/github/hub/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">github/hub</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A command-line tool that makes git easier to use with GitHub.</p>
+                </a>
+                <a href="/repo/cli/cli/trunk/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cli/cli</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">GitHub’s official command line tool</p>
+                </a>
+                <a href="/repo/docker/buildx/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">docker/buildx</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Docker CLI plugin for extended build capabilities with BuildKit</p>
+                </a>
+                <a href="/repo/docker/cli/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">docker/cli</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Docker CLI</p>
+                </a>
+                <a href="/repo/moby/moby/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">moby/moby</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems</p>
+                </a>
+                <a href="/repo/containerd/containerd/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">containerd/containerd</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">An open and reliable container runtime</p>
+                </a>
+                <a href="/repo/grpc/grpc-go/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">grpc/grpc-go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Go language implementation of gRPC. HTTP/2 based RPC</p>
+                </a>
+                <a href="/repo/envoyproxy/protoc-gen-validate/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">envoyproxy/protoc-gen-validate</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Protocol Buffer Validation - replaced by https://github.com/bufbuild/protovalidate</p>
+                </a>
+                <a href="/repo/bufbuild/buf/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bufbuild/buf</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The best way of working with Protocol Buffers.</p>
+                </a>
+                <a href="/repo/cncf/toc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cncf/toc</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation.</p>
+                </a>
+                <a href="/repo/buildpacks/pack/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">buildpacks/pack</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CLI for building apps using Cloud Native Buildpacks</p>
+                </a>
+                <a href="/repo/tektoncd/pipeline/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tektoncd/pipeline</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A cloud-native Pipeline resource.</p>
+                </a>
+                <a href="/repo/GoogleContainerTools/kaniko/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GoogleContainerTools/kaniko</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Build Container Images In Kubernetes</p>
+                </a>
+                <a href="/repo/google/cadvisor/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">google/cadvisor</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Analyzes resource usage and performance characteristics of running containers.</p>
+                </a>
+                <a href="/repo/prometheus-operator/prometheus-operator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">prometheus-operator/prometheus-operator</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes</p>
+                </a>
+                <a href="/repo/kubernetes/ingress-nginx/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/ingress-nginx</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Ingress NGINX Controller for Kubernetes</p>
+                </a>
+                <a href="/repo/kubernetes/dashboard/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/dashboard</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">General-purpose web UI for Kubernetes clusters</p>
+                </a>
+                <a href="/repo/kubernetes/client-go/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes/client-go</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Go client for Kubernetes.</p>
+                </a>
+                <a href="/repo/kubernetes-sigs/external-dns/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes-sigs/external-dns</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Configure external DNS servers dynamically from Kubernetes resources</p>
+                </a>
+                <a href="/repo/kubernetes-sigs/metrics-server/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubernetes-sigs/metrics-server</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.</p>
+                </a>
+                <a href="/repo/coredns/coredns/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">coredns/coredns</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">CoreDNS is a DNS server that chains plugins</p>
+                </a>
+                <a href="/repo/flannel-io/flannel/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">flannel-io/flannel</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">flannel is a network fabric for containers, designed for Kubernetes</p>
+                </a>
+                <a href="/repo/open-policy-agent/opa/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">open-policy-agent/opa</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open Policy Agent (OPA) is an open source, general-purpose policy engine.</p>
+                </a>
+                <a href="/repo/open-policy-agent/gatekeeper/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">open-policy-agent/gatekeeper</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">🐊 Policy Controller for Kubernetes</p>
+                </a>
+                <a href="/repo/istio/api/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">istio/api</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">API definitions for the Istio project</p>
+                </a>
+                <a href="/repo/knative/serving/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">knative/serving</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Kubernetes-based, scale-to-zero, request-driven compute</p>
+                </a>
+                <a href="/repo/knative/eventing/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">knative/eventing</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Event-driven application platform for Kubernetes</p>
+                </a>
+                <a href="/repo/kubevirt/kubevirt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kubevirt/kubevirt</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Kubernetes Virtualization API and runtime in order to define and manage virtual machines.</p>
+                </a>
+                <a href="/repo/rook/rook/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">rook/rook</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Storage Orchestration for Kubernetes</p>
+                </a>
+                <a href="/repo/vmware-tanzu/velero/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vmware-tanzu/velero</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Backup and migrate Kubernetes applications and their persistent volumes</p>
+                </a>
+                <a href="/repo/crossplane/crossplane/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">crossplane/crossplane</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">The Cloud Native Control Plane</p>
+                </a>
+                <a href="/repo/operator-framework/operator-sdk/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">operator-framework/operator-sdk</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.</p>
+                </a>
+                <a href="/repo/operator-framework/operator-lifecycle-manager/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">operator-framework/operator-lifecycle-manager</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A management framework for extending Kubernetes with Operators</p>
+                </a>
+                <a href="/repo/kyverno/kyverno/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kyverno/kyverno</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Cloud Native Policy Management</p>
+                </a>
+                <a href="/repo/aquasecurity/trivy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aquasecurity/trivy</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</p>
+                </a>
+                <a href="/repo/aquasecurity/kube-bench/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aquasecurity/kube-bench</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark</p>
+                </a>
+                <a href="/repo/openclarity/kubeclarity/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">openclarity/kubeclarity</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems</p>
+                </a>
+                <a href="/repo/metallb/metallb/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">metallb/metallb</span>
+                        <span class="mrc-lang">Go <i class="fas fa-circle mrc-lang-dot lang-go"></i></span>
+                    </div>
+                    <p class="mrc-desc">A network load-balancer implementation for Kubernetes using standard routing protocols</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/go/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 2 of 6</span>
+                        <a href="/language/go/3/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
