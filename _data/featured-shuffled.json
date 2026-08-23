@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Andiveli/wptui",
+    "repo": "victorsosaMx/vsWaybar-Studio",
+    "branch": "main",
+    "language": "Python",
+    "description": "Visual editor for Waybar — build, style and preview your bar in real time (GTK + Python)"
+  },
+  {
+    "repo": "OldJobobo/omarchy-lumon-theme",
+    "branch": "master",
+    "language": "CSS",
+    "description": "A cold corporate Omarchy theme inspired by Lumon Industries and the terminal palettes of *Severance*"
+  },
+  {
+    "repo": "spring-projects/spring-security",
+    "branch": "main",
+    "language": "Java",
+    "description": "Spring Security"
+  },
+  {
+    "repo": "bestpracticaI/kalshi-ai-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK"
+  },
+  {
+    "repo": "codetrybe/polymarket-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+  },
+  {
+    "repo": "skills/introduction-to-github",
+    "branch": "main",
+    "language": "Other",
+    "description": "Get started using GitHub in less than an hour."
+  },
+  {
+    "repo": "TanStack/router",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more)."
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "language": "Python",
+    "description": "A fast multimodal LLM for real-time voice"
+  },
+  {
+    "repo": "bregman-arie/devops-exercises",
+    "branch": "master",
+    "language": "Python",
+    "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions"
+  },
+  {
+    "repo": "keithnull/TeachYourselfCS-CN",
+    "branch": "master",
+    "language": "Other",
+    "description": "TeachYourselfCS 的中文翻译 |  A Chinese translation of TeachYourselfCS"
+  },
+  {
+    "repo": "pmndrs/drei",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🥉 useful helpers for react-three-fiber"
+  },
+  {
+    "repo": "weaviate/weaviate",
+    "branch": "master",
+    "language": "Go",
+    "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database​."
+  },
+  {
+    "repo": "Gentleatvice/seed-phrase-recover-BTC-ETH",
     "branch": "main",
     "language": "Rust",
-    "description": "Keyboard-driven WhatsApp client for the terminal (Rust/Ratatui + Go/whatsmeow)"
-  },
-  {
-    "repo": "dnakov/kittyfarm",
-    "branch": "main",
-    "language": "Swift",
     "description": ""
   },
   {
-    "repo": "maria-rcks/miri",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Niri-ish, keyboard-first window manager for macOS."
+    "repo": "grpc/grpc-go",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Go language implementation of gRPC. HTTP/2 based RPC"
   },
   {
-    "repo": "Blueemi/codex-eu-patcher",
+    "repo": "docker/docker-py",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Python library for the Docker Engine API"
+  },
+  {
+    "repo": "hallucinogen/agent-viewer",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Kanban board for managing Claude Code agents in tmux"
+  },
+  {
+    "repo": "vakovalskii/codedash",
     "branch": "main",
     "language": "JavaScript",
+    "description": "Termius-style browser dashboard for Claude Code & Codex sessions. View, search, resume, tag, and manage all your AI coding sessions."
+  },
+  {
+    "repo": "MME-Benchmarks/Video-MME-v2",
+    "branch": "main",
+    "language": "Python",
+    "description": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding"
+  },
+  {
+    "repo": "signalapp/Signal-Android",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "A private messenger for Android."
+  },
+  {
+    "repo": "junaid-mahmood/nlsh",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Turn natural language to terminal commands"
+  },
+  {
+    "repo": "OctoPrint/OctoPrint",
+    "branch": "master",
+    "language": "Python",
+    "description": "OctoPrint is the snappy web interface for your 3D printer!"
+  },
+  {
+    "repo": "Crestdrasnip/Claude-Zeroclaw",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "babar-mpire/polymarket-trading-bot",
-    "branch": "main",
+    "repo": "huangserva/claude-code-cli",
+    "branch": "master",
     "language": "TypeScript",
-    "description": "Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot"
+    "description": "这是 Claude Code 的 CLI 客户端主体（src/ 目录），即整个终端交互层的源码。具体包含： 1. CLI 入口与命令解析 — main.tsx（4684行）、entrypoints/（CLI 模式、SDK 模式、MCP 模式） 2. 终端 UI 渲染 — components/（144 个组件，用 React + Ink 渲染终端界面） 3. 工具系统 — tools/（43 个工具，Bash、文件读写编辑、Grep、Glob、Web 搜索等） 4. API 通信层 — services/api/（与 Anthropic 后端通信） 5. MCP 协议  6. 多 Agent/Team 协作 l 7. 认证与策略 8. 辅助服务 等"
   },
   {
-    "repo": "jlabon2/PsUi",
+    "repo": "encoredev/encore",
     "branch": "main",
-    "language": "PowerShell",
-    "description": "For building UIs in PowerShell without the misery."
-  },
-  {
-    "repo": "YGYOOO/WorldX",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "One sentence creates an AI-driven world — generate maps, characters, and watch stories emerge on their own. 一句话生成一个AI自主驱动的世界."
-  },
-  {
-    "repo": "ArcaneNibble/awawausb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "WebUSB for fopses"
-  },
-  {
-    "repo": "chaitanyagiri/munder-difflin",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "local multi-agent harness"
-  },
-  {
-    "repo": "openclaw/agent-skills",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Useful skills for agents and claws."
-  },
-  {
-    "repo": "Tencent-Hunyuan/Hy-MT2",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "Nightmare-Eclipse/MiniPlasma",
-    "branch": "main",
-    "language": "C#",
-    "description": "CVE-2020-17103 supposedly still works"
-  },
-  {
-    "repo": "recursive-org/first-steps-toward-automated-ai-research",
-    "branch": "main",
-    "language": "Python",
-    "description": "Research artifacts from Recursive's automated AI research system"
-  },
-  {
-    "repo": "dzcmemory-web/bazi-ziwei-skill",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。"
-  },
-  {
-    "repo": "alchaincyf/huashu-md-html",
-    "branch": "main",
-    "language": "CSS",
-    "description": "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill."
-  },
-  {
-    "repo": "rebel0789/codexpro",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Use ChatGPT Developer Mode as a local coding agent for your repo through MCP."
-  },
-  {
-    "repo": "ConardLi/web-design-skill",
-    "branch": "main",
-    "language": "CSS",
-    "description": "An AI agent skill that transforms AI-generated web pages from functional to stunning.(Inspired by Claude Design)"
-  },
-  {
-    "repo": "FlashML-org/flashlib",
-    "branch": "main",
-    "language": "Python",
-    "description": "Fast and memory-efficient classical machine learning operators"
-  },
-  {
-    "repo": "vuciv/artblock",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Every ad on the internet, replaced with fine art from public museum and NASA collections."
-  },
-  {
-    "repo": "heyderekj/dinky",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Dinky makes files smaller."
-  },
-  {
-    "repo": "Simbastack-hq/framedex",
-    "branch": "main",
-    "language": "Python",
-    "description": "Framedex — a queryable knowledge base for your video archive"
-  },
-  {
-    "repo": "beijingcao/binance-deribit-btc",
-    "branch": "main",
-    "language": "Python",
-    "description": "Binance and Deribit BTC cross-exchange arbitrage bot with Redis state recovery, Telegram alerts, and a Flask monitoring dashboard."
-  },
-  {
-    "repo": "edgenuitybot/exodusbot",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Exodus | The # 1 Edgenuity Bot for Quizes, Tests, and Exams. Includes Auto Answers, Auto delays, built in AI Answers, Auto Submit, EdgeEX support and MORE! | About: Exodus is an online course tool designed for online middle and high school classes (K-8 curriculum). Join the Discord: https://discord.gg/exodusbot"
-  },
-  {
-    "repo": "UditAkhourii/adhd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work."
+    "language": "Go",
+    "description": "Open source framework for building robust type-safe distributed systems with declarative infrastructure"
   }
 ]
