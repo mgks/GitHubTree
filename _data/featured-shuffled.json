@@ -1,27 +1,123 @@
 [
   {
-    "repo": "iad1tya/EchoTube",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "Open-source YouTube client - enjoy an ad-free experience in a lightweight app, no account required."
+    "repo": "go-micro/go-micro",
+    "branch": "master",
+    "language": "Go",
+    "description": "A Go microservices framework"
   },
   {
-    "repo": "prisma/prisma",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB"
+    "repo": "LinXiaoTao/FuckClaude",
+    "branch": "master",
+    "language": "Astro",
+    "description": ""
   },
   {
-    "repo": "juntoku9/claude_immigration_attorney",
+    "repo": "v1ewp0rt/BAREBLOOD",
+    "branch": "main",
+    "language": "QML",
+    "description": "Gothic maximalist linux theme for KDE plasma 6.5"
+  },
+  {
+    "repo": "jshachm/pi-rs",
+    "branch": "main",
+    "language": "Rust",
+    "description": "基于pi-mono，rust轻量化版本"
+  },
+  {
+    "repo": "es617/claude-replay",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Community tool to convert Claude Code session transcripts into self-contained, embeddable HTML replays"
+  },
+  {
+    "repo": "hexiecs/talk-normal",
     "branch": "main",
     "language": "Shell",
-    "description": "Claude code environment for laywers"
+    "description": "Make any LLM talk like a normal person. A system prompt that removes AI slop."
   },
   {
-    "repo": "Textualize/rich",
+    "repo": "supermemoryai/openclaw-supermemory",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Supermemory allows Clawdbot / Molt bot to have PERFECT memory and recall for their own personal agent."
+  },
+  {
+    "repo": "dwzhu-pku/PaperBanana",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "PaperBanana: Automating Academic Illustration For AI Scientists"
+  },
+  {
+    "repo": "curl/curl",
     "branch": "master",
+    "language": "C",
+    "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features"
+  },
+  {
+    "repo": "HKUDS/CLI-Anything",
+    "branch": "main",
     "language": "Python",
-    "description": "Rich is a Python library for rich text and beautiful formatting in the terminal."
+    "description": "CLI-Anything: Making ALL Software Agent-Native"
+  },
+  {
+    "repo": "facebookresearch/fairseq",
+    "branch": "main",
+    "language": "Python",
+    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+  },
+  {
+    "repo": "1354427059/orchids-api",
+    "branch": "main",
+    "language": "Go",
+    "description": "1111"
+  },
+  {
+    "repo": "google/or-tools",
+    "branch": "stable",
+    "language": "C++",
+    "description": "Google's Operations Research tools:"
+  },
+  {
+    "repo": "Pika-Labs/Pika-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "sterlingcrispin/nothing-ever-happens",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "tencent-connect/openclaw-qqbot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "QQ Bot Channel Plugin for OpenClaw"
+  },
+  {
+    "repo": "DISCO-design/DISCO",
+    "branch": "main",
+    "language": "Python",
+    "description": "Code for the DISCO model: General Multimodal Protein Design Enables DNA-Encoding of Chemistry"
+  },
+  {
+    "repo": "ultraworkers/claw-code-parity",
+    "branch": "main",
+    "language": "Rust",
+    "description": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration"
+  },
+  {
+    "repo": "electron/electron",
+    "branch": "main",
+    "language": "C++",
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+  },
+  {
+    "repo": "cksac/turboquant-model",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   },
   {
     "repo": "google/googletest",
@@ -30,117 +126,21 @@
     "description": "GoogleTest - Google Testing and Mocking Framework"
   },
   {
-    "repo": "getredash/redash",
-    "branch": "master",
-    "language": "Python",
-    "description": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data."
-  },
-  {
-    "repo": "stellarlinkco/myclaw",
+    "repo": "F-R-L/forge-film",
     "branch": "main",
-    "language": "Go",
-    "description": ""
+    "language": "Python",
+    "description": "Multi-model DAG-driven parallel AI film generation — parallel speedup scales with scene independence; Generate film scenes simultaneously instead of one by one;  把影视生成的执行图从拓扑序变成关键路径最优调度 ; 唯一把场景叙事依赖建模为 DAG、以 CPM    算法驱动并行调度的影视生成引擎"
   },
   {
-    "repo": "wisher567/Portpal",
+    "repo": "jhochenbaum/pi-autoresearch-studio",
     "branch": "main",
     "language": "TypeScript",
-    "description": "See exactly what’s using your ports — and kill it in one click."
+    "description": "Dashboard, plan editor, PR workflow, and orchestration tools for pi autoresearch sessions"
   },
   {
-    "repo": "caddyserver/caddy",
+    "repo": "uralbash/awesome-pyramid",
     "branch": "master",
-    "language": "Go",
-    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS"
-  },
-  {
-    "repo": "obdev/littlesnitch-linux",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Open Source components of Little Snitch for Linux"
-  },
-  {
-    "repo": "cookiecutter/cookiecutter",
-    "branch": "master",
-    "language": "Python",
-    "description": "A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects."
-  },
-  {
-    "repo": "elder-plinius/G0DM0D3",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "LIBERATED AI CHAT"
-  },
-  {
-    "repo": "ray-project/ray",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
-  },
-  {
-    "repo": "Xiangyue-Zhang/auto-deep-researcher-24x7",
-    "branch": "main",
-    "language": "Python",
-    "description": "🔥 An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory."
-  },
-  {
-    "repo": "Alamofire/Alamofire",
-    "branch": "master",
-    "language": "Swift",
-    "description": "Elegant HTTP Networking in Swift"
-  },
-  {
-    "repo": "PaddlePaddle/PaddleDetection",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Object Detection toolkit based on PaddlePaddle. It supports object detection, instance segmentation, multiple object tracking and real-time multi-person keypoint detection."
-  },
-  {
-    "repo": "DenisSergeevitch/repo-task-proof-loop",
-    "branch": "main",
-    "language": "Python",
-    "description": "Spec driven skill with subagents spawning"
-  },
-  {
-    "repo": "krajekisbtc/PolymarketBTC15mAssistant",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Real-time Polymarket BTC 15m trading assistant for every trader! created by @krajekisbtc"
-  },
-  {
-    "repo": "InterviewReady/system-design-resources",
-    "branch": "main",
     "language": "Other",
-    "description": "These are the best resources for System Design on the Internet"
-  },
-  {
-    "repo": "lbjlaq/Antigravity-Tools-LS",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Antigravity-Tools-LS is a local proxy bridge system designed specifically for the Antigravity IDE."
-  },
-  {
-    "repo": "crshdn/mission-control",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway."
-  },
-  {
-    "repo": "D1a0y1bb/CloverSec-CTF-Build-Dockerizer-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "四叶草安全-创研中心竞赛专用题目容器构建Skills，面向 CTF Jeopardy 的容器交付引擎：自动探测栈、生成合规题目镜像构建文件、执行规则校验并给出可修复建议，实现标准化工作流程的质量对齐。"
-  },
-  {
-    "repo": "hitmux/HitCC",
-    "branch": "main",
-    "language": "Python",
-    "description": "Complete reverse-engineering documentation of the full logic of Claude Code CLI Node.js version v2.1.84"
-  },
-  {
-    "repo": "fastlane/fastlane",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps"
+    "description": "A curated list of awesome Pyramid apps, projects and resources."
   }
 ]
