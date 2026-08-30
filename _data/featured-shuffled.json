@@ -1,146 +1,146 @@
 [
   {
-    "repo": "HackingDave/nightwire",
+    "repo": "funador/claude-code-merge-queue",
     "branch": "main",
-    "language": "Python",
-    "description": "A secure way to code via Signal. Integrates long-term memory, ralph-style looping for complex specifics, and more all from your phone."
+    "language": "TypeScript",
+    "description": "The local merge queue for parallel Claude Code agents."
   },
   {
-    "repo": "InfinityLoop1308/PipePipe-X",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Modern designed PipePipe"
-  },
-  {
-    "repo": "getify/You-Dont-Know-JS",
+    "repo": "inputsh/awesome-linux",
     "branch": "master",
     "language": "Other",
-    "description": "A book series (2 published editions) on the JS language."
+    "description": ":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:"
   },
   {
-    "repo": "quarkusio/quarkus",
+    "repo": "longhorn/longhorn",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Cloud-Native distributed storage built on and for Kubernetes"
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V3",
+    "branch": "main",
+    "language": "Python",
+    "description": "Vision-language models from DeepSeek research."
+  },
+  {
+    "repo": "Lightning-AI/lightning",
+    "branch": "master",
+    "language": "Python",
+    "description": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes."
+  },
+  {
+    "repo": "pointfreeco/swift-composable-architecture",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
+  },
+  {
+    "repo": "square/retrofit",
+    "branch": "master",
+    "language": "HTML",
+    "description": "A type-safe HTTP client for Android and the JVM"
+  },
+  {
+    "repo": "getsentry/sentry",
+    "branch": "master",
+    "language": "Python",
+    "description": "Developer-first error tracking and performance monitoring"
+  },
+  {
+    "repo": "google/ExoPlayer",
+    "branch": "release-v2",
+    "language": "Java",
+    "description": "This project is deprecated and stale. The latest ExoPlayer code is available in https://github.com/androidx/media"
+  },
+  {
+    "repo": "square/picasso",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "A powerful image downloading and caching library for Android"
+  },
+  {
+    "repo": "homebridge/homebridge",
+    "branch": "latest",
+    "language": "TypeScript",
+    "description": "HomeKit support for the impatient."
+  },
+  {
+    "repo": "grpc/grpc-go",
+    "branch": "master",
+    "language": "Go",
+    "description": "The Go language implementation of gRPC. HTTP/2 based RPC"
+  },
+  {
+    "repo": "spring-cloud/spring-cloud-gateway",
     "branch": "main",
     "language": "Java",
-    "description": "Quarkus: Supersonic Subatomic Java."
+    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
   },
   {
-    "repo": "sqlite/sqlite",
-    "branch": "master",
-    "language": "C",
-    "description": "Official Git mirror of the SQLite source tree"
-  },
-  {
-    "repo": "olemeyer/rocketplaneIO",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Self-hosted AI SRE for Kubernetes — zero-instrumentation eBPF observability plus a copilot that fixes issues through guardrailed, self-verifying actions. BYO-LLM, air-gapped capable."
-  },
-  {
-    "repo": "google/jax",
-    "branch": "main",
-    "language": "Python",
-    "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more"
-  },
-  {
-    "repo": "ensdomains/ens-contracts",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The core contracts of the ENS protocol"
-  },
-  {
-    "repo": "trufflesuite/truffle",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": ":warning: The Truffle Suite is being sunset. For information on ongoing support, migration options and FAQs, visit the Consensys blog. Thank you for all the support over the years."
-  },
-  {
-    "repo": "tailwindlabs/heroicons",
+    "repo": "grpc/grpc-web",
     "branch": "master",
     "language": "JavaScript",
-    "description": "A set of free MIT-licensed high-quality SVG icons for UI development."
+    "description": "gRPC for Web Clients"
   },
   {
-    "repo": "element-plus/element-plus",
-    "branch": "dev",
-    "language": "TypeScript",
-    "description": "🎉 A Vue.js 3 UI Library made by Element team"
-  },
-  {
-    "repo": "libp2p/go-libp2p",
-    "branch": "master",
-    "language": "Go",
-    "description": "libp2p implementation in Go"
-  },
-  {
-    "repo": "chakra-ui/chakra-ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️"
-  },
-  {
-    "repo": "denoland/deno",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A modern runtime for JavaScript and TypeScript."
-  },
-  {
-    "repo": "explosion/spaCy",
-    "branch": "master",
-    "language": "Python",
-    "description": "💫 Industrial-strength Natural Language Processing (NLP) in Python"
-  },
-  {
-    "repo": "tendermint/tendermint",
-    "branch": "main",
-    "language": "Go",
-    "description": "⟁ Tendermint Core (BFT Consensus) in Go"
-  },
-  {
-    "repo": "tensorflow/tensorflow",
-    "branch": "master",
-    "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
-  },
-  {
-    "repo": "microsoft/ML-For-Beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all"
-  },
-  {
-    "repo": "expressjs/express",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Fast, unopinionated, minimalist web framework for node."
-  },
-  {
-    "repo": "storybookjs/storybook",
-    "branch": "next",
-    "language": "TypeScript",
-    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
-  },
-  {
-    "repo": "syncthing/syncthing",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Source Continuous File Synchronization"
-  },
-  {
-    "repo": "jina-ai/jina",
+    "repo": "statsmodels/statsmodels",
     "branch": "main",
     "language": "Python",
-    "description": "☁️ Build multimodal AI applications with cloud-native stack"
+    "description": "Statsmodels: statistical modeling and econometrics in Python"
   },
   {
-    "repo": "facebookresearch/fairseq",
+    "repo": "rvm/rvm",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Ruby enVironment Manager (RVM)"
+  },
+  {
+    "repo": "signalapp/Signal-iOS",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A private messenger for iOS."
+  },
+  {
+    "repo": "spring-projects/spring-framework",
+    "branch": "main",
+    "language": "Java",
+    "description": "Spring Framework"
+  },
+  {
+    "repo": "onnx/onnx",
     "branch": "main",
     "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    "description": "Open standard for machine learning interoperability"
   },
   {
-    "repo": "nextui-org/nextui",
+    "repo": "spinnaker/spinnaker",
+    "branch": "master",
+    "language": "Java",
+    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
+  },
+  {
+    "repo": "apple/swift-nio",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
+  },
+  {
+    "repo": "kubernetes-sigs/external-dns",
+    "branch": "master",
+    "language": "Go",
+    "description": "Configure external DNS servers dynamically from Kubernetes resources"
+  },
+  {
+    "repo": "faker-js/faker",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
+    "description": "Generate massive amounts of fake data in the browser and node.js"
+  },
+  {
+    "repo": "puppetlabs/puppet",
+    "branch": "main",
+    "language": "Ruby",
+    "description": "Server automation framework and application"
   }
 ]
