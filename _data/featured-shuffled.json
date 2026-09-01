@@ -1,146 +1,146 @@
 [
   {
-    "repo": "nethical6/conversation-steganography",
-    "branch": "main",
-    "language": "Go",
-    "description": "Use LLMS to hide secret messages inside normal-looking chat text"
-  },
-  {
-    "repo": "evilsocket/audit",
+    "repo": "OpenNSWM-Lab/FAROS",
     "branch": "main",
     "language": "Python",
-    "description": "An 8-stage vulnerability-discovery agent."
+    "description": ""
   },
   {
-    "repo": "simular-ai/simulang",
-    "branch": "main",
+    "repo": "balancer/balancer-v2-monorepo",
+    "branch": "master",
     "language": "TypeScript",
-    "description": ""
+    "description": "Balancer V2 Monorepo"
   },
   {
-    "repo": "Happy-Chen-CH/Educational_RAG_System",
-    "branch": "main",
-    "language": "Python",
-    "description": "面向教育场景的RAG智能问答系统，融合关键词匹配与语义检索双引擎，融合MySQL和RAG技术，先经过MySQL数据库的检索(还融合了Redis辅助储存和搜索)，若无符合条件答案，则进入RAG系统，RAG知识库中的知识储存在Milvus向量数据库中"
+    "repo": "redux-saga/redux-saga",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "An alternative side effect model for Redux apps"
   },
   {
-    "repo": "JFGAtlas/aethergate-pro",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
+    "repo": "go-sql-driver/mysql",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
   },
   {
-    "repo": "ByteDance-Seed/Cola-DLM",
-    "branch": "main",
-    "language": "Python",
-    "description": "The codebase of Cola DLM"
-  },
-  {
-    "repo": "laramint/laravel-brain",
-    "branch": "main",
+    "repo": "guzzle/guzzle",
+    "branch": "master",
     "language": "PHP",
-    "description": "Visualize your Laravel request lifecycle as an interactive graph"
+    "description": "Guzzle, an extensible PHP HTTP client"
   },
   {
-    "repo": "xzf-thu/Mega-ASR",
+    "repo": "apache/airflow",
     "branch": "main",
     "language": "Python",
-    "description": "First foundation ASR built for the real world - 7 atomic acoustic conditions, 54 compound scenarios, 2.6M samples, and up to ~30% gains over SOTA where every other model falls apart. **You'll come back to MEGA-ASR, after the rest fail in the wild. ⭐**"
+    "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
   },
   {
-    "repo": "ThatXliner/rust-but-lisp",
+    "repo": "mockk/mockk",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "mocking library for Kotlin"
+  },
+  {
+    "repo": "apache/tvm",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Machine Learning Compiler Framework"
+  },
+  {
+    "repo": "EbookFoundation/free-programming-books",
+    "branch": "main",
+    "language": "Python",
+    "description": ":books: Freely available programming books"
+  },
+  {
+    "repo": "tensorflow/models",
+    "branch": "master",
+    "language": "Python",
+    "description": "Models and examples built with TensorFlow"
+  },
+  {
+    "repo": "mrdoob/three.js",
+    "branch": "dev",
+    "language": "JavaScript",
+    "description": "JavaScript 3D Library."
+  },
+  {
+    "repo": "swc-project/swc",
     "branch": "main",
     "language": "Rust",
-    "description": "Rust but LISP"
+    "description": "Rust-based platform for the Web"
   },
   {
-    "repo": "Margele/OpenZen",
-    "branch": "master",
-    "language": "Java",
-    "description": "打得过Zen"
-  },
-  {
-    "repo": "jmmy9609-design/gpt-pp",
+    "repo": "microsoft/cascadia-code",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
   },
   {
-    "repo": "ForgetMeAI/FreeDeepseekAPI",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Локальный API-прокси для DeepSeek Web Chat с поддержкой OpenAI/Anthropic API, streaming, tool calling, Responses API и Open WebUI"
-  },
-  {
-    "repo": "LYiHub/OpenClaw-AWD-Arena",
-    "branch": "main",
-    "language": "Python",
-    "description": "An automated Attack-with-Defense platform where LLM-powered agents compete in real-time."
-  },
-  {
-    "repo": "Dharyen/ryujinx-emu",
+    "repo": "dotnet/roslyn",
     "branch": "main",
     "language": "C#",
-    "description": "canary ryujinx emulator tomodachi life github ryubing nintendo switch emulator download"
+    "description": "The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs."
   },
   {
-    "repo": "tgies/copy-fail-c",
+    "repo": "obsproject/obs-studio",
+    "branch": "master",
+    "language": "C",
+    "description": "OBS Studio - Free and open source software for live streaming and screen recording"
+  },
+  {
+    "repo": "vuejs/vue",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core"
+  },
+  {
+    "repo": "microsoft/wslg",
+    "branch": "main",
+    "language": "C++",
+    "description": "Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios"
+  },
+  {
+    "repo": "unjs/nitro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer."
+  },
+  {
+    "repo": "CompVis/stable-diffusion",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "A latent text-to-image diffusion model"
+  },
+  {
+    "repo": "YuJunZhiXue/github-skill-forge",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "branch": "master",
+    "language": "Python",
+    "description": "The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted."
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V3",
+    "branch": "main",
+    "language": "Python",
+    "description": "Vision-language models from DeepSeek research."
+  },
+  {
+    "repo": "adafruit/circuitpython",
     "branch": "main",
     "language": "C",
-    "description": "Cross-platform C port of the Copy Fail Linux LPE (CVE-2026-31431). Disclosed 2026-04-29 by Theori / Xint."
+    "description": "CircuitPython - a Python implementation for teaching coding with microcontrollers"
   },
   {
-    "repo": "haigechanlun/chanlun_auto_trading",
-    "branch": "main",
-    "language": "Python",
-    "description": "一个基于缠论（Chanlun）理论构建的自动化量化交易系统，结合历史数据训练、严格风控与实盘执行，致力于实现稳定且可持续的收益表现。  回测收益年化80%+！欢迎订阅信号和实盘测试。"
-  },
-  {
-    "repo": "NabilAziz99/agent-runtime",
-    "branch": "main",
-    "language": "Python",
-    "description": "Python port of Claude Code's agent-runtime architecture, on LangChain"
-  },
-  {
-    "repo": "elder-plinius/ENTHEA",
-    "branch": "main",
-    "language": "HTML",
-    "description": "real-time psychedelic visual synthesizer and pro-grade music visualizer"
-  },
-  {
-    "repo": "IvanSobolev/Neo3dEngine",
-    "branch": "main",
-    "language": "C#",
-    "description": "A minimalist CPU-based 3D console engine in C# (.NET 8) built from scratch. Features Raycasting/Raytracing, dynamic lighting & shadows, .obj loader, and custom TCP-based multiplayer with real-time chat. No external graphics APIs."
-  },
-  {
-    "repo": "WL-DF/Legend-OF-Zelda-Twilight-Princess-PC",
-    "branch": "main",
-    "language": "C++",
-    "description": "Legend Zelda Twilight Princess PC Download April 2026 High Performance 4K 60FPS Enhancement Suite Midna Shadow Shaders Texture Pack Ultra Wide Support High Refresh Rate Emulation Fix Gaming Utility Stable Build Free Project Preservation Tutorial Guide"
-  },
-  {
-    "repo": "myccarl/ai-shortVideo-pipeline",
-    "branch": "main",
-    "language": "Python",
-    "description": "End-to-end AI short-video production pipeline. FastAPI orchestration + Spring Boot gateway with multi-model failover, circuit breaker, metering, and full-stack observability. AI quality gating: prompt anchoring, CLIP consistency, AV sync auto-rescue."
-  },
-  {
-    "repo": "RastProxy88/Vivid-R6-Cracked-2026",
-    "branch": "main",
-    "language": "C++",
-    "description": "External memory analysis framework for Rainbow Six Siege. Features ESP, aimbot, skeleton rendering via DirectX 11 overlay. Read-only operation with direct syscall stubs. Supports Y8S4 — Y9S2. C++17, x64, MIT license."
-  },
-  {
-    "repo": "solomondurham854062/Cursor-AI-Pro-Download-2026",
-    "branch": "main",
-    "language": "C#",
-    "description": "A standalone utility designed to unlock and manage Pro features within the Cursor AI editor environment locally."
-  },
-  {
-    "repo": "Fokkyp/SoftwareCopyright-Skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "中国软件著作权申请材料 生成器 Skills，本 Skills 通过阅读本地项目，自动生成全套 .docx 软著申请材料，全开源，无须再付费购买任何软著申请服务"
+    "repo": "google/dopamine",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms."
   }
 ]
