@@ -1,57 +1,129 @@
 [
   {
-    "repo": "safe-global/safe-contracts",
+    "repo": "SKYFIRE5836/Slay-the-Spire-2-Drawing",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Safe allows secure management of blockchain assets."
+    "language": "Python",
+    "description": "杀戮尖塔2 数字琥珀自动画板 | A Python automation drawing tool for Slay the Spire 2"
   },
   {
-    "repo": "Signal-Trade-Core/weather-prediction-bot",
+    "repo": "trynullsec/nullsec-s1",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+    "language": "Python",
+    "description": "Security-native LLM system for AI-generated application security."
   },
   {
-    "repo": "atom/atom",
+    "repo": "bigcode-project/starcoder",
+    "branch": "main",
+    "language": "Python",
+    "description": "Home of StarCoder: fine-tuning & inference!"
+  },
+  {
+    "repo": "uralbash/awesome-pyramid",
     "branch": "master",
-    "language": "JavaScript",
-    "description": ":atom: The hackable text editor"
+    "language": "Other",
+    "description": "A curated list of awesome Pyramid apps, projects and resources."
   },
   {
-    "repo": "Michaelliv/markit",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🖍️ Convert anything to markdown. Mark it."
-  },
-  {
-    "repo": "colinhacks/zod",
+    "repo": "pypa/hatch",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "TypeScript-first schema validation with static type inference"
+    "language": "Python",
+    "description": "Modern, extensible Python project management"
   },
   {
-    "repo": "mahi64675/SpotSync-Web",
-    "branch": "main",
-    "language": "HTML",
-    "description": "MeTify 2026: Self-Hosted Music Downloader with Spotify Web UI Integration"
-  },
-  {
-    "repo": "Homebrew/brew",
+    "repo": "sdmg15/Best-websites-a-programmer-should-visit",
     "branch": "master",
-    "language": "Ruby",
-    "description": "🍺 The missing package manager for macOS (or Linux)"
+    "language": "Other",
+    "description": ":link: Some useful websites for programmers."
   },
   {
-    "repo": "twalichiewicz/HNewhere",
+    "repo": "pandas-profiling/pandas-profiling",
+    "branch": "develop",
+    "language": "Python",
+    "description": "1 Line of code data quality profiling & exploratory data analysis for Pandas and Spark DataFrames."
+  },
+  {
+    "repo": "guardrailsio/awesome-python-security",
+    "branch": "master",
+    "language": "Other",
+    "description": "Awesome Python Security resources 🕶🐍🔐"
+  },
+  {
+    "repo": "jazzband/pip-tools",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A lightweight userscript that adds Hacker News discussions to any previously submitted article."
+    "language": "Python",
+    "description": "A set of tools to keep your pinned Python dependencies fresh."
   },
   {
-    "repo": "ReactiveX/RxJava",
-    "branch": "3.x",
+    "repo": "stonerl/Thaw",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Menu bar manager for macOS"
+  },
+  {
+    "repo": "THUDM/CodeGeeX",
+    "branch": "main",
+    "language": "Python",
+    "description": "CodeGeeX: An Open Multilingual Code Generation Model (KDD 2023)"
+  },
+  {
+    "repo": "VictoriaMetrics/VictoriaMetrics",
+    "branch": "master",
+    "language": "Go",
+    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
+  },
+  {
+    "repo": "duckdb/duckdb",
+    "branch": "main",
+    "language": "C++",
+    "description": "DuckDB is an analytical in-process SQL database management system"
+  },
+  {
+    "repo": "junit-team/junit4",
+    "branch": "main",
     "language": "Java",
-    "description": "RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM."
+    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
+  },
+  {
+    "repo": "soimy/openclaw-channel-dingtalk",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A dingtalk bot channel plugin for clawdbot"
+  },
+  {
+    "repo": "libuv/libuv",
+    "branch": "v1.x",
+    "language": "C",
+    "description": "Cross-platform asynchronous I/O"
+  },
+  {
+    "repo": "typeorm/typeorm",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms."
+  },
+  {
+    "repo": "sharkdp/hyperfine",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A command-line benchmarking tool"
+  },
+  {
+    "repo": "CSSEGISandData/COVID-19",
+    "branch": "master",
+    "language": "Other",
+    "description": "Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE"
+  },
+  {
+    "repo": "kysely-org/kysely",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A type-safe TypeScript SQL query builder"
+  },
+  {
+    "repo": "docker/compose",
+    "branch": "main",
+    "language": "Go",
+    "description": "Define and run multi-container applications with Docker"
   },
   {
     "repo": "syncthing/syncthing",
@@ -60,87 +132,15 @@
     "description": "Open Source Continuous File Synchronization"
   },
   {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "fajarakpdev/Driver_Updater",
+    "repo": "pydantic/FastUI",
     "branch": "main",
     "language": "Python",
-    "description": "Update outdated drivers for better performance and stability. Automatically scan and download latest drivers for all hardware."
+    "description": "Build better UIs faster."
   },
   {
-    "repo": "0xhype/hyperliquid-tracker",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Get notified when big trades happen on Hyperliquid."
-  },
-  {
-    "repo": "ConsenSys/teku",
-    "branch": "master",
-    "language": "Java",
-    "description": "🚀 Open-source Ethereum consensus client written in Java"
-  },
-  {
-    "repo": "prettier/prettier",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Prettier is an opinionated code formatter."
-  },
-  {
-    "repo": "amet2901/asterdex-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Automated Crypto Trading Bot on Aster DEX"
-  },
-  {
-    "repo": "paritytech/substrate",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Substrate: The platform for blockchain innovators"
-  },
-  {
-    "repo": "raheemxghumman/DBD-AutoGrind-Trainer-2026-Extreme",
+    "repo": "facebookresearch/xformers",
     "branch": "main",
     "language": "Python",
-    "description": "Ultimate Dead by Daylight auto-grind trainer Extreme edition with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
-  },
-  {
-    "repo": "PengZhang64/circuit-framework",
-    "branch": "main",
-    "language": "Python",
-    "description": "Circuit Framework — multi-agent LLM trading research system"
-  },
-  {
-    "repo": "WenyuChiou/awesome-agentic-ai-zh",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑，每階段有必做練習跟必修閱讀。三語對照（繁中／简中／English）。歡迎社群一起貢獻、優化內容。"
-  },
-  {
-    "repo": "aattaran/deepclaude",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper."
-  },
-  {
-    "repo": "airbnb/lottie-web",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
-  },
-  {
-    "repo": "RoushanKhalid/File_Encryption_Tool",
-    "branch": "main",
-    "language": "Python",
-    "description": "Encrypt/decrypt files with AES-256 and password protection. Encrypt files, decrypt files, batch encrypt, and encrypt entire folders. Protect your data."
-  },
-  {
-    "repo": "Predictly-Poly/polymarket-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Polymarket copy trading bot and Polymarket trading bot starter that tracks selected wallets and mirrors, polymarket trading bot, polymarket trading bot, polymarket trading bot,polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot, polymarket trading bot,trading"
+    "description": "Hackable and optimized Transformers building blocks, supporting a composable construction."
   }
 ]
