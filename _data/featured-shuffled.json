@@ -1,146 +1,146 @@
 [
   {
-    "repo": "rakanki911/DLSS5-Swapper",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "DLSS 5 Swapper A powerful, easy-to-use tool for installing and managing DLSS 5 across your games, with automatic game detection and support for DX12, DX11, and DX9 even bringing DLSS to compatible games without native DLSS support."
-  },
-  {
-    "repo": "marswaveai/ColaMD",
+    "repo": "open-telemetry/opentelemetry-js",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The Agent Native Markdown Editor."
+    "description": "OpenTelemetry JavaScript Client"
   },
   {
-    "repo": "THUDM/ChatGLM-6B",
+    "repo": "arinltte/latte",
     "branch": "main",
-    "language": "Python",
-    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
+    "language": "Swift",
+    "description": "Just Download Anything."
   },
   {
-    "repo": "obsidianmd/obsidian-releases",
-    "branch": "master",
-    "language": "Other",
-    "description": "Community plugins list, theme list, and releases of Obsidian."
-  },
-  {
-    "repo": "electron/electron",
+    "repo": "sttbandung105-arch/FIFA-Editing-Toolsuite",
     "branch": "main",
-    "language": "C++",
-    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+    "language": "C#",
+    "description": "fifa editing toolsuite fifa editor tool fifa mod manager ea sports fc 26 fc 25 frostbite engine modding tool asset editor textures meshes legacy assets custom kits rosters faces setup guide installation tutorial download link desktop utility career mode graphics mod stable build eafc 26 modding tutorial series"
   },
   {
-    "repo": "scikit-learn/scikit-learn",
+    "repo": "PhiloLabs/fable51-worlds",
     "branch": "main",
-    "language": "Python",
-    "description": "scikit-learn: machine learning in Python"
+    "language": "TypeScript",
+    "description": "worlds via code, from fable 5.1"
   },
   {
-    "repo": "nats-io/nats-server",
+    "repo": "Leutenegger/claudish-to-english",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Claude Code plugin that rewrites each assistant message into plain language on screen only. Local ollama by default; also codex CLI, Anthropic, or any OpenAI-compatible API. Fail-open. Optional Markdown rewrite."
+  },
+  {
+    "repo": "amagine-ai/Amagine3D",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Amagine3D: From hardware requirements to editable 3D designs"
+  },
+  {
+    "repo": "yutat23/lsoff",
     "branch": "main",
     "language": "Go",
-    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
+    "description": "CLI / TUI that lists listening TCP/UDP ports"
   },
   {
-    "repo": "redis/redis",
-    "branch": "unstable",
-    "language": "C",
-    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
+    "repo": "JetBrains/benjamin-plus-skill",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Benjamin-Plus: a measured token-efficiency skill for coding agents (−17.9% cost median, quality unchanged). Inject it, don't install it."
   },
   {
-    "repo": "maxucheng0/grok-auto-register",
+    "repo": "LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
+    "branch": "main",
+    "language": "Python",
+    "description": "Neural latent upscaler for Minimax H3 (24ch). Bypasses costly 5B-param VAE decode/encode. Upscale low-res latents directly, then refine. Accelerates high-res video gen, outperforms naive interp."
+  },
+  {
+    "repo": "sudoingX/qwen38-mtp",
+    "branch": "master",
+    "language": "Python",
+    "description": "One llama.cpp flag unlocks +33-39% decode speed for Qwen3.8-27B on consumer GPUs. The MTP head already ships inside your GGUF. Recipe, paired benchmarks, probe tool."
+  },
+  {
+    "repo": "sodiumsun/agenttrail",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Local observability map for AI coding agents. Watch Claude Code, Codex, and Cursor plans, tool calls, file changes, and progress in real time."
+  },
+  {
+    "repo": "jaredrhod/barehands",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Move things on your screen with your bare hands. A webcam-powered, hand-tracked interface for your AI. No headset. No controllers."
+  },
+  {
+    "repo": "skydashnet/material-design-3-ui-skill",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessibility, adaptive layouts, and semantic design tokens."
+  },
+  {
+    "repo": "fanhao375/microduck-replica",
+    "branch": "master",
+    "language": "Python",
+    "description": "Microduck 复刻 · 从官方 MJCF 与 Rust 源码反推出的装配图、CAD 装配体与完整电控方案 | Mechanical + electronics reconstruction of Pollen Robotics' Microduck"
+  },
+  {
+    "repo": "alberto4442/ComputePool",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A simple ComputePool Platform for Resource optimization."
+  },
+  {
+    "repo": "warmsum/mini-harness",
+    "branch": "main",
+    "language": "Python",
+    "description": "用 Python 从零理解 DeepSeek Harness 的 Headless 架构"
+  },
+  {
+    "repo": "RobertGolds1/Gradient",
+    "branch": "main",
+    "language": "Python",
+    "description": "Gradient"
+  },
+  {
+    "repo": "lightorigins/LightNav-0",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "pueschel88/Tradingview-MCP",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Tradingview MCP server for controlling Tradingview Desktop from Claude Code via Chrome DevTools Protocol"
-  },
-  {
-    "repo": "d3/d3",
+    "repo": "jaredrhod/fullstack-agent",
     "branch": "main",
     "language": "Shell",
-    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
+    "description": "Give your AI a full stack: memory, voice, face, and hands. This is the I want an AI agent shortcut. It sets up the entire jaredrhod stack for you with an installation wizard. Select which pieces you want or do it all!"
   },
   {
-    "repo": "frecodecasti/gem5-branchpred",
-    "branch": "master",
-    "language": "C++",
-    "description": "This is an read-only mirror of the gem5 simulator. The upstream repository is stored in https://gem5.googlesource.com, code reviews should be submitted to https://gem5-review.googlesource.com/. The mirrors are synchronized every 15 minutes."
-  },
-  {
-    "repo": "3441293738/creatorhub",
+    "repo": "liceses/dsh-gitbash-preset",
     "branch": "main",
-    "language": "Python",
-    "description": "多平台内容监控·采集·搬运 —— 纯 Python(FastAPI + Playwright),一个 Web 面板管起抖音 / 小红书 / 快手"
+    "language": "JavaScript",
+    "description": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。"
   },
   {
-    "repo": "tensorflow/tensorflow",
-    "branch": "master",
-    "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
-  },
-  {
-    "repo": "deepset-ai/haystack",
-    "branch": "main",
-    "language": "MDX",
-    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
-  },
-  {
-    "repo": "google/benchmark",
+    "repo": "tsouth89/omakade",
     "branch": "main",
     "language": "C++",
-    "description": "A microbenchmark support library"
+    "description": "A beautiful, local-first game library built for Omarchy."
   },
   {
-    "repo": "kdsuomi/cc-simplerouter",
+    "repo": "chrissotraidis/kartpad",
     "branch": "main",
-    "language": "Go",
-    "description": "Install and setup in 26 seconds. Simplerouter configures Claude Code to use any compatible OpenRouter model in seconds, WITHOUT manual editing of config files, environment variables, or messing with local webservers/webUIs. It also doesn't overwrite your existing Claude Code subscription sign-in!"
+    "language": "Objective-C++",
+    "description": "Mario Kart Wii, native for iOS, iPadOS, and MacOS."
   },
   {
-    "repo": "RasaHQ/rasa",
+    "repo": "AlephAITech/DoubaoWorkGuide",
     "branch": "main",
-    "language": "Python",
-    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+    "language": "JavaScript",
+    "description": "豆包工作系统化中文实践指南：教程、真实任务、Skills、连接器、自动化与多 Agent 工作流。"
   },
   {
-    "repo": "DefinitelyTyped/DefinitelyTyped",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The repository for high quality TypeScript type definitions."
-  },
-  {
-    "repo": "iAm-182/bluk-cf",
-    "branch": "master",
-    "language": "Python",
-    "description": "Cloudflare Workers AI Account ID & Token Auto-Grabber — automated signup with Turnstile bypass"
-  },
-  {
-    "repo": "worldwonderer/novel-to-game",
+    "repo": "GangTailorUpgrade/CoomeRtool",
     "branch": "main",
     "language": "Python",
-    "description": "将任何小说蒸馏为可玩的游戏 · Turn any novel into a playable game — a 7-skill adaptation pipeline for Claude Code, Codex & Kimi Code(k3)"
-  },
-  {
-    "repo": "facebook/docusaurus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Easy to maintain open source documentation websites."
-  },
-  {
-    "repo": "Icex0/wp2shell-poc",
-    "branch": "main",
-    "language": "Python",
-    "description": "wp2shell (CVE-2026-63030 & CVE-2026-60137) - full RCE chain"
-  },
-  {
-    "repo": "CWS6206/EasyLastSkill",
-    "branch": "main",
-    "language": "Python",
-    "description": "EasyLastSkill ist eine deutschsprachige Codex-/Agent-Skill fuer schnelle Recherchen zu den letzten Tagen eines Themas. Standardmaessig betrachtet sie die letzten 30 Tage und erstellt einen kompakten Bericht mit Quellen, Relevanzscore und Unsicherheiten."
+    "description": "Coomer Tool"
   }
 ]
