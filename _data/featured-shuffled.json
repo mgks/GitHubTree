@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ruoyuw22-byte/NeuroMorph-Assessment",
+    "repo": "swarmclawai/swarmvault",
     "branch": "main",
-    "language": "Python",
-    "description": "An automated structural MRI morphometry system integrating CAT12 processing, brain tissue quantification, visualization, and automated report generation."
-  },
-  {
-    "repo": "Kuberwastaken/claurst",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
-  },
-  {
-    "repo": "chroma-core/chroma",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Open-source search and retrieval database for AI applications."
-  },
-  {
-    "repo": "nyanko3141592/remotion-voicevox-template",
-    "branch": "master",
     "language": "TypeScript",
-    "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）"
+    "description": "Inspired by Karpathy's LLM Wiki. Local-first LLM knowledge base compiler (Claude Code, Codex, OpenCode, OpenClaw). Turn raw research into a persistent markdown wiki, knowledge graph, and search index that compound over time."
   },
   {
-    "repo": "microsoft/Data-Science-For-Beginners",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "10 Weeks, 20 Lessons, Data Science for All!"
-  },
-  {
-    "repo": "alpinejs/alpine",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A rugged, minimal framework for composing JavaScript behavior in your markup."
-  },
-  {
-    "repo": "fatedier/frp",
-    "branch": "dev",
-    "language": "Go",
-    "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet."
-  },
-  {
-    "repo": "doocs/advanced-java",
-    "branch": "main",
-    "language": "Java",
-    "description": "😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识"
-  },
-  {
-    "repo": "graphql-rust/juniper",
+    "repo": "TheAlgorithms/Python",
     "branch": "master",
-    "language": "Rust",
-    "description": "GraphQL server library for Rust"
+    "language": "Python",
+    "description": "All Algorithms implemented in Python"
   },
   {
-    "repo": "RevylAI/greenlight",
-    "branch": "main",
-    "language": "Go",
-    "description": "Pre-submission compliance scanner for the Apple App Store"
-  },
-  {
-    "repo": "cporter202/video-scraping-apis",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A collection of APIs for scraping video metadata, engagement stats, and public video data across multiple platforms."
-  },
-  {
-    "repo": "v2fly/v2ray-core",
-    "branch": "master",
-    "language": "Go",
-    "description": "A platform for building proxies to bypass network restrictions."
-  },
-  {
-    "repo": "influxdata/telegraf",
-    "branch": "master",
-    "language": "Go",
-    "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data."
-  },
-  {
-    "repo": "sanic-org/sanic",
+    "repo": "DISCO-design/DISCO",
     "branch": "main",
     "language": "Python",
-    "description": "Accelerate your web app development  | Build fast. Run fast."
+    "description": "Code for the DISCO model: General Multimodal Protein Design Enables DNA-Encoding of Chemistry"
   },
   {
-    "repo": "ahmetb/kubectx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Faster way to switch between clusters and namespaces in kubectl"
+    "repo": "langchain-ai/langchainjs",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🦜🔗 Build context-aware reasoning applications"
   },
   {
-    "repo": "BitrigApp/XCDocs",
+    "repo": "dodo-reach/hermes-desktop",
     "branch": "main",
     "language": "Swift",
-    "description": "Apple's developer docs as a Swift package and CLI."
+    "description": "A native Mac workspace for Hermes: real SSH, real terminal, real session data."
   },
   {
-    "repo": "HsMirage/CliproxyAccountCleaner",
+    "repo": "Geek-1001/arcmark",
+    "branch": "main",
+    "language": "Swift",
+    "description": "macOS bookmark manager that attaches to any browser window as a sidebar"
+  },
+  {
+    "repo": "ListerOvO1211/LazyEnv",
+    "branch": "main",
+    "language": "C++",
+    "description": ""
+  },
+  {
+    "repo": "openai/sora-prompt-engineering-guide",
+    "branch": "main",
+    "language": "Other",
+    "description": "Guide for prompt engineering for video generation with Sora."
+  },
+  {
+    "repo": "zhangbo2008/claude_code_annotated",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "claudecode泄露部分的代码解析"
+  },
+  {
+    "repo": "spring-guides/gs-spring-boot",
+    "branch": "main",
+    "language": "Java",
+    "description": "Building an Application with Spring Boot :: Learn how to build an application with minimal configuration."
+  },
+  {
+    "repo": "romerzzz/Tomodachi-Life-Living-in-the-Dream-PC-Version",
+    "branch": "main",
+    "language": "C++",
+    "description": "Tomodachi Life Living in the Dream PC is the  Windows version of the popular life simulation game. Create your own Mii characters, build your dream island, interact with quirky residents, fall in love, solve problems, and enjoy endless daily events"
+  },
+  {
+    "repo": "microsoft/cascadia-code",
     "branch": "main",
     "language": "Python",
-    "description": "一个用于CLI Proxy API 批量账号管理的工具（暂时只支持codex）：Cliproxy Account Cleaner"
+    "description": "This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal."
   },
   {
-    "repo": "erenjugs/OpenGork",
-    "branch": "main",
-    "language": "Shell",
-    "description": "🧠 Uncensored AI agent powered by xAI's Grok - no filters, no limits"
-  },
-  {
-    "repo": "trumpet-noek/sora2-free-watermark-remover",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 free watermark remover"
-  },
-  {
-    "repo": "redai-infra/Relax",
-    "branch": "main",
-    "language": "Python",
-    "description": "An Asynchronous Reinforcement Learning Engine for Omni-Modal Post-Training at Scale"
-  },
-  {
-    "repo": "jshachm/chronoh",
-    "branch": "main",
-    "language": "Rust",
-    "description": "遵循harness原则，长时运行agent任务的框架，集成pi-rs"
-  },
-  {
-    "repo": "shitagaki-lab/see-through",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Single-image Layer Decomposition for Anime Characters (SIGGRAPH 2026, Conditionally Accepted)"
-  },
-  {
-    "repo": "codejunkie99/agentic-stack",
+    "repo": "appium/appium",
     "branch": "master",
-    "language": "Python",
-    "description": "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch."
+    "language": "JavaScript",
+    "description": "Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol"
   },
   {
-    "repo": "HKUDS/CLI-Anything",
+    "repo": "Tencent/cherry-markdown",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "✨ A Markdown Editor"
+  },
+  {
+    "repo": "blairxu13/persona3-website",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "CatsJuice/sticker-forge",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A tactile WebGL sticker maker with rich text, image uploads, and interactive peel physics."
+  },
+  {
+    "repo": "alberto4442/LatentVault",
     "branch": "main",
     "language": "Python",
-    "description": "CLI-Anything: Making ALL Software Agent-Native"
+    "description": "LatentVault enables real-time, distributed encryption of data at the storage layer, securing access through a centralized repository gateway."
+  },
+  {
+    "repo": "Alkih/Nightlight-Game-Launcher",
+    "branch": "main",
+    "language": "C#",
+    "description": "Nightlight Game Launcher: NLGL download, Rockstar Social Club bypass, GTA V Epic Games launch error, RDR2 offline play, GTA IV Social Club fix. Steam account switcher, Epic Online Services bypass, EOS SDK. dll, -nobattleye, -scOfflineMode, launch options, account manager, local backup, source code GitHub, onajlikezz, open source tool."
+  },
+  {
+    "repo": "deerwork-ai/deer-workflow",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An open-source graph engineering runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes."
+  },
+  {
+    "repo": "StartupHakk/OpenMonoAgent.ai",
+    "branch": "main",
+    "language": "C#",
+    "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription."
+  },
+  {
+    "repo": "Glazenovatag/hyperliquid-whale-order-tracking",
+    "branch": "main",
+    "language": "Python",
+    "description": "A real, working Hyperliquid whale tracker not a placeholder. The synthetic-message test passed and the WebSocket subscribe / reconnect logic was verified live."
+  },
+  {
+    "repo": "mostafamo123/Pragmata-Reframework",
+    "branch": "main",
+    "language": "C++",
+    "description": "Pragmata REFramework/RenoDX/Optiscaler Download April 2026 Nightly Build Pragmata FOV Fix Ultrawide Black Bars Solution Pragmata D3D Device Removed Error Fix Optiscaler DXGI.DLL Pragmata VR Mod Status Diana Amiibo PC Rewards Pragmata Steam Deck Performance Guide NVIDIA Reflex Stutter Fix RTX 5090 HDR Tonemapping RenoDX Pragmata Trainer"
+  },
+  {
+    "repo": "majidmanzarpour/threejs-procedural-dungeon",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Real-time procedural dungeon generator in Three.js - deterministic seeds, Delaunay/MST graph layouts, room semantics, five themes, and a custom bloom/tilt-shift pipeline."
+  },
+  {
+    "repo": "Anionex/agent-vision-toolkit",
+    "branch": "main",
+    "language": "Python",
+    "description": "给纯文本 LLM agent 装上眼睛：图片问答、OCR、截图分析、视觉定位等一套视觉工具箱 + skill，并可无缝接入 Codex、Claude Code、OpenCode、Pi ｜ Give text-only LLM agents vision: image Q&A, OCR, screenshot understanding, visual grounding, image-to-SVG - a vision toolkit & skill, with drop-in integration for Codex, Claude Code, OpenCode, Pi"
   }
 ]
