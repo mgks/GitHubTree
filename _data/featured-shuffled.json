@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Sir-Scuzza/gluetun-webui",
+    "repo": "ethereumjs/ethereumjs-monorepo",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Ethereum L1 Protocol Stack and EVM in TypeScript"
+  },
+  {
+    "repo": "thillygooth/questboard",
     "branch": "main",
     "language": "JavaScript",
-    "description": ""
+    "description": "A gamified family chore tracker built with React, FastAPI, and Docker. Family members claim daily and weekly chores to earn points, then redeem them for real-world rewards. Features per-player profiles, age-appropriate chore filtering, auto daily/weekly resets, and a shared backend for real-time sync across devices."
   },
   {
-    "repo": "WenyuChiou/awesome-agentic-ai-zh",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑，每階段有必做練習跟必修閱讀。三語對照（繁中／简中／English）。歡迎社群一起貢獻、優化內容。"
-  },
-  {
-    "repo": "helm/helm",
+    "repo": "codeany-ai/codeany",
     "branch": "main",
     "language": "Go",
-    "description": "The Kubernetes Package Manager"
+    "description": "Open-source AI-powered terminal agent. Built in Go."
   },
   {
-    "repo": "vanna-ai/vanna",
+    "repo": "googleapis/google-cloud-python",
     "branch": "main",
     "language": "Python",
-    "description": "🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using Agentic Retrieval 🔄."
+    "description": "Google Cloud Client Library for Python"
   },
   {
-    "repo": "Textualize/rich",
+    "repo": "run-bigpig/jcp",
+    "branch": "master",
+    "language": "Go",
+    "description": "韭菜盘 (JCP AI) - AI 驱动的智能股票分析系统，基于 Wails + Go + React，支持多 Agent 协作分析"
+  },
+  {
+    "repo": "cpaczek/any-buddy",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Hack Claude Code to get any buddy you want"
+  },
+  {
+    "repo": "react-native-webview/react-native-webview",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "React Native Cross-Platform WebView"
+  },
+  {
+    "repo": "agents-io/PokeClaw",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "PokeClaw (PocketClaw) — first on-device AI that controls your Android phone. Gemma 4, no cloud, no API key. Poke is short for Pocket."
+  },
+  {
+    "repo": "dateutil/dateutil",
     "branch": "master",
     "language": "Python",
-    "description": "Rich is a Python library for rich text and beautiful formatting in the terminal."
+    "description": "Useful extensions to the standard Python datetime features"
   },
   {
-    "repo": "drizzle-team/drizzle-orm",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "ORM"
-  },
-  {
-    "repo": "ForrestKnight/open-source-cs",
+    "repo": "tailwindlabs/heroicons",
     "branch": "master",
-    "language": "Other",
-    "description": "Video discussing this curriculum:"
-  },
-  {
-    "repo": "crshdn/mission-control",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway."
-  },
-  {
-    "repo": "Olshansk/interview",
-    "branch": "master",
-    "language": "Other",
-    "description": "Everything you need to prepare for your technical interview"
-  },
-  {
-    "repo": "kdeldycke/awesome-falsehood",
-    "branch": "master",
-    "language": "Other",
-    "description": "😱 Falsehoods Programmers Believe in"
-  },
-  {
-    "repo": "jgraph/drawio",
-    "branch": "dev",
     "language": "JavaScript",
-    "description": "draw.io is a JavaScript, client-side editor for general diagramming."
+    "description": "A set of free MIT-licensed high-quality SVG icons for UI development."
   },
   {
-    "repo": "arduino/Arduino",
+    "repo": "aws/aws-cli",
+    "branch": "v2",
+    "language": "Python",
+    "description": "Universal Command Line Interface for Amazon Web Services"
+  },
+  {
+    "repo": "JuliusBrussee/caveman",
+    "branch": "main",
+    "language": "Python",
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 75% of tokens by talking like caveman"
+  },
+  {
+    "repo": "fafathops152/Pokemon-Pokopia-For-PC",
+    "branch": "main",
+    "language": "C++",
+    "description": "Pokémon Pokopia For PC 2026 is the complete Windows edition of the beloved creature-collecting adventure game. Explore the beautiful Pokopia region, catch and train unique Pokémon, battle powerful trainers, and become the ultimate Champion. Now fully playable on PC with enhanced graphics, smooth performance"
+  },
+  {
+    "repo": "yzhao062/agent-style",
+    "branch": "main",
+    "language": "Python",
+    "description": "21 writing rules for AI coding and writing agents. Drop-in for Claude Code, Codex, Copilot, Cursor, and Aider, so their output reads like a tech pro."
+  },
+  {
+    "repo": "vyfor/rattles",
+    "branch": "master",
+    "language": "Rust",
+    "description": "🪇 Minimal terminal spinners for Rust"
+  },
+  {
+    "repo": "iBUHub/CanvasToAPI",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A wrapper that exposes Gemini Canvas as OpenAI, Gemini, and Anthropic compatible APIs.（一个将 Gemini Canvas 封装为兼容 OpenAI / Gemini / Anthropic 风格 API 的工具）"
+  },
+  {
+    "repo": "pmndrs/drei",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🥉 useful helpers for react-three-fiber"
+  },
+  {
+    "repo": "sympy/sympy",
+    "branch": "master",
+    "language": "Python",
+    "description": "A computer algebra system written in pure Python"
+  },
+  {
+    "repo": "superpilot69/pdf-trad-to-simp-preserve-layout-kit",
+    "branch": "main",
+    "language": "Python",
+    "description": "PDF traditional-to-simplified Chinese conversion kit with layout-preserving scripts, Codex skill, and example source/output PDFs."
+  },
+  {
+    "repo": "marktext/marktext",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows."
+  },
+  {
+    "repo": "bumptech/glide",
     "branch": "master",
     "language": "Java",
-    "description": "Arduino IDE 1.x"
+    "description": "An image loading and caching library for Android focused on smooth scrolling"
   },
   {
-    "repo": "beeware/toga",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Python native, OS native GUI toolkit."
-  },
-  {
-    "repo": "ok-oldking/ok-end-field",
-    "branch": "master",
-    "language": "Python",
-    "description": "终末地 End Field Automation 基于ok-script开发的自动化"
-  },
-  {
-    "repo": "Mrack/TInjector_Symbi",
-    "branch": "master",
-    "language": "C++",
-    "description": "更稳定的劫持Zygote在App启动前注入so"
-  },
-  {
-    "repo": "LuaJIT/LuaJIT",
-    "branch": "v2.1",
-    "language": "C",
-    "description": "Mirror of the LuaJIT git repository"
-  },
-  {
-    "repo": "YunjueTech/Yunjue-Agent",
-    "branch": "main",
-    "language": "Python",
-    "description": "Yunjue Agent: A Fully Reproducible, Zero-Start In-Situ Self-Evolving Agent System for Open-Ended Tasks"
-  },
-  {
-    "repo": "sindresorhus/type-fest",
+    "repo": "1270011/claude-buddy",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A collection of essential TypeScript types"
+    "description": "Keep Your Claude Code Buddy Forever — permanent coding companion that survives every update"
   },
   {
-    "repo": "pandas-profiling/pandas-profiling",
-    "branch": "develop",
+    "repo": "ManimCommunity/manim",
+    "branch": "main",
     "language": "Python",
-    "description": "1 Line of code data quality profiling & exploratory data analysis for Pandas and Spark DataFrames."
+    "description": "A community-maintained Python framework for creating mathematical animations."
   },
   {
-    "repo": "nightwatchjs/nightwatch",
+    "repo": "sanic-org/sanic",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Integrated end-to-end testing framework written in Node.js and using W3C Webdriver API. Developed at @browserstack"
-  },
-  {
-    "repo": "datasciencemasters/go",
-    "branch": "master",
-    "language": "Other",
-    "description": "The Open Source Data Science Masters"
-  },
-  {
-    "repo": "fullcalendar/fullcalendar",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Full-sized drag & drop event calendar in JavaScript"
-  },
-  {
-    "repo": "SortableJS/Sortable",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required."
-  },
-  {
-    "repo": "FFmpeg/FFmpeg",
-    "branch": "master",
-    "language": "C",
-    "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
+    "language": "Python",
+    "description": "Accelerate your web app development  | Build fast. Run fast."
   }
 ]
