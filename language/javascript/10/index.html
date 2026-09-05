@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best JavaScript Repositories Directory - Page 10 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best JavaScript repositories - Page 10. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/javascript/10/">
+    <meta property="og:title" content="Best JavaScript Repositories Directory - Page 10 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best JavaScript repositories - Page 10. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/javascript/10/">
+    <meta property="twitter:title" content="Best JavaScript Repositories Directory - Page 10 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best JavaScript repositories - Page 10. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/javascript/10/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/javascript/9/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/javascript/11/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>JavaScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/Yixuan-Wu39/bandminton/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Yixuan-Wu39/bandminton</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source wearable badminton motion analysis with lightweight on-device machine learning.</p>
+                </a>
+                <a href="/repo/NousResearch/Hermes-Bot-Mode/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NousResearch/Hermes-Bot-Mode</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bot Mode for the Hermes desktop: a roster of named agents with their own chats, avatars, routines, and bot-to-bot messaging. Desktop plugin, no core patches.</p>
+                </a>
+                <a href="/repo/dengzi008/DramaLens/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dengzi008/DramaLens</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Local-first Chrome extension for timestamped transcription and human-reviewed short-form drama analysis.</p>
+                </a>
+                <a href="/repo/Oliverrr2424/webgl-apple-liquid-glass/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Oliverrr2424/webgl-apple-liquid-glass</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">WebGL2 replica of Apple's Liquid Glass: squircle SDF thickness field -> Snell refraction with a meniscus rim, dispersion, variable-blur scattering, Fresnel rim</p>
+                </a>
+                <a href="/repo/xiaobright/dsh-anchored-standard/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xiaobright/dsh-anchored-standard</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)</p>
+                </a>
+                <a href="/repo/turtle2209/Bigfish/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">turtle2209/Bigfish</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Bigfish —— DeepSeek Harness 的第三方桌面端，内置 Node 运行时，双击即用，附带桌面萌宠。</p>
+                </a>
+                <a href="/repo/Awaker-OTE/readingspace-mn/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Awaker-OTE/readingspace-mn</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reading Space MN — a reading workflow plugin for MarginNote 4.</p>
+                </a>
+                <a href="/repo/omdsh-dev/dsh-at-file/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">omdsh-dev/dsh-at-file</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts.</p>
+                </a>
+                <a href="/repo/vlln/whale-girl/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vlln/whale-girl</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。官方 repository-plugin（.dsh-plugin 格式），config.yaml 安装：github:dsh-external/whale-girl#<ref>&path:/.dsh-plugin</p>
+                </a>
+                <a href="/repo/steven-kid/deepseek-harness-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">steven-kid/deepseek-harness-desktop</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Minimal desktop wrapper for DeepSeek Harness 极简 Deespeek Harness 桌面端，跨平台，免配置，开箱即用</p>
+                </a>
+                <a href="/repo/myYangyunfan/dsh_desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">myYangyunfan/dsh_desktop</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch</p>
+                </a>
+                <a href="/repo/SheberDavid/v4-flash-godmode-opencode-go/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SheberDavid/v4-flash-godmode-opencode-go</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset</p>
+                </a>
+                <a href="/repo/zouyuxuan122/Deepseek-Harness-EAC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zouyuxuan122/Deepseek-Harness-EAC</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch, 10 built-in UI skins. EAC: Embracing All Creation 揽尽万象</p>
+                </a>
+                <a href="/repo/yjh051108/dsh-router-standard/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yjh051108/dsh-router-standard</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Task-aware reasoning-mode router for DeepSeek Harness: three measured behavior bands (spec/mixed/react) with phase-transition evidence, persona + first-turn tool injection, agent-visible tuning. Dual-attractor policy paper included.</p>
+                </a>
+                <a href="/repo/bruc3van/awesome-dsh-plugin/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bruc3van/awesome-dsh-plugin</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">用 30 秒找到适合你的 DeepSeek Harness 插件。 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。</p>
+                </a>
+                <a href="/repo/ysr666/dsh-vision-router/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ysr666/dsh-vision-router</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no Python, image turns work like ordinary tool-calling turns.</p>
+                </a>
+                <a href="/repo/vibeinging/deepseek-harness-desktop-app/dev/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vibeinging/deepseek-harness-desktop-app</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.</p>
+                </a>
+                <a href="/repo/Yousuf-developer/Viscose-carousel/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Yousuf-developer/Viscose-carousel</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A wheel of work that never quite sets. Cards fuse as they meet, and draw into threads as they part.</p>
+                </a>
+                <a href="/repo/WYH66666666/DSH-Transparent-UI-Plugin/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">WYH66666666/DSH-Transparent-UI-Plugin</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页端。顶栏、侧边栏、输入框、统计行、轨迹视图都成了磨砂玻璃片。玻璃模糊度、磨砂度、背景（流体或自定义壁纸，壁纸还能单独调模糊和磨砂）全都能在设置卡片里自由调节。关掉开关就回到原生界面，不改 DSH 任何一行源码。</p>
+                </a>
+                <a href="/repo/Kronop/vibe-aso/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Kronop/vibe-aso</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">You vibe-coded the app — now vibe the ASO. A Claude Code skill: keyword research, 50-locale App Store metadata, localized screenshots, worldwide pricing, in-app localization.</p>
+                </a>
+                <a href="/repo/LeonQ8/ComfyUI-ALLinONE-MinimaxH3/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LeonQ8/ComfyUI-ALLinONE-MinimaxH3</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">All-in-one MiniMax H3 node for ComfyUI - T2V, I2V, R2V, audio drive, keyframes, extend & Motion Context chains in a single node.</p>
+                </a>
+                <a href="/repo/Nagi-ovo/dsh-find-plugins/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nagi-ovo/dsh-find-plugins</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">帮 DSH 搜索、安装并验证插件的 Skill｜A DSH skill that finds, installs, and verifies GitHub plugins</p>
+                </a>
+                <a href="/repo/jdshfhds/northcinder/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jdshfhds/northcinder</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Buyer-run, ad-neutral shopping-agent MCP software with deterministic ranking, signed purchase mandates, and a local audit trail.</p>
+                </a>
+                <a href="/repo/d-dev0101/open-sea-skin/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">d-dev0101/open-sea-skin</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">WebGPU ocean skin for DeepSeek Harness — DSH plugin, Harness-only Chrome/Edge extension, static installer, and native integration.</p>
+                </a>
+                <a href="/repo/shaobeichen/dsh-pocket/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shaobeichen/dsh-pocket</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）</p>
+                </a>
+                <a href="/repo/QCYTSN/dsh-dafeiyu/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">QCYTSN/dsh-dafeiyu</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows.</p>
+                </a>
+                <a href="/repo/cinderline/northcinder/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">cinderline/northcinder</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Buyer-run, ad-neutral shopping-agent MCP software with deterministic ranking, signed purchase mandates, and a local audit trail.</p>
+                </a>
+                <a href="/repo/vvxw/deploy-vercel/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">vvxw/deploy-vercel</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Install Command：npm install</p>
+                </a>
+                <a href="/repo/Spielewoy/autoprompt-skill/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Spielewoy/autoprompt-skill</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.</p>
+                </a>
+                <a href="/repo/Ariescar/anyCreature/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Ariescar/anyCreature</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/PC2005-cloud/dsh-pet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">PC2005-cloud/dsh-pet</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DSH 桌面宠物：一行命令安装现成宠物（28 个透明动画，即装即用），或内置素材链从 AI 视频自造专属宠物 | One-line install desktop pet for DeepSeek Harness + DIY asset pipeline</p>
+                </a>
+                <a href="/repo/Devin-AXIS/deepseek-design/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Devin-AXIS/deepseek-design</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness.</p>
+                </a>
+                <a href="/repo/wanonewan/wanwan/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">wanonewan/wanwan</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/liceses/dsh-gitbash-preset/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">liceses/dsh-gitbash-preset</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。</p>
+                </a>
+                <a href="/repo/MeteorNOX/DeepSeek-Balance-Whale-Widget/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MeteorNOX/DeepSeek-Balance-Whale-Widget</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装</p>
+                </a>
+                <a href="/repo/sam70361/emotion-ball/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sam70361/emotion-ball</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Emotion Ball 是一套面向 AI 助手的表情引擎:32 种状态表情全部由纯 SVG 与原生 JavaScript 实时驱动,零框架、零图片资源。AI 侧只需输出一个 emotionId,小球即可切换到对应表情,可直接用作聊天机器人、桌面宠物、悬浮助手的情绪表达层。</p>
+                </a>
+                <a href="/repo/howmp/dsh-pentest/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">howmp/dsh-pentest</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">面向 DeepSeek Harness（dsh）的渗透测试模式  @CloverSecLabs</p>
+                </a>
+                <a href="/repo/asen-goat-mine/boujoy-harness/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">asen-goat-mine/boujoy-harness</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A knowledge-linked local AI harness with macOS support and a Windows Beta launcher.</p>
+                </a>
+                <a href="/repo/elysia395/dsh-wallpaper-engine/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">elysia395/dsh-wallpaper-engine</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">把本机 Wallpaper Engine 的壁纸变成 DSH 网页界面的背景：Video 动态播放、Web 以 iframe 加载、Scene 壁纸提取主纹理作为静态帧；iOS 液态玻璃设置窗口（配色 / 玻璃颜色 / 透明度）、内容分级与类型过滤、自定义壁纸上传、紧凑 CD 架布局、黑胶唱片展示、隐藏 / 恢复、倍速 / 翻转与自动轮播。感谢 Jerry 维护 macOS 版。</p>
+                </a>
+                <a href="/repo/MrMoT9I/paper-aquarium/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">MrMoT9I/paper-aquarium</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Бумажная раскраска превращается в 3D-рыбу: ребёнок раскрашивает лист, фотографирует телефоном — и рыбка плывёт в аквариуме на большом экране. Node без зависимостей + three.js.</p>
+                </a>
+                <a href="/repo/albertobeiz/kindergrimm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">albertobeiz/kindergrimm</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Procedural doodle characters drawn as if by hand on cream paper — and Kindergrimm, the game they live in</p>
+                </a>
+                <a href="/repo/liangmianya/dsh-synapse/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">liangmianya/dsh-synapse</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A visual, non-linear conversation workspace plugin for DeepSeek Harness ; A canvas-based session explorer and branching workspace for DeepSeek Harness.</p>
+                </a>
+                <a href="/repo/babygoton/WorkDaddy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">babygoton/WorkDaddy</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">WorkBuddy 增强助手，多账号 · 自动领积分 · 会话迁移 · 主题 · 增强工具集</p>
+                </a>
+                <a href="/repo/dcouple/terminal-minceraft/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dcouple/terminal-minceraft</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Minecraft inside your terminal.</p>
+                </a>
+                <a href="/repo/only-cli/oc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">only-cli/oc</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of thousands.</p>
+                </a>
+                <a href="/repo/YuJunZhiXue/dsh-purge/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">YuJunZhiXue/dsh-purge</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">no more refusals, do everything.</p>
+                </a>
+                <a href="/repo/GamePhanes/GamePhanes/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GamePhanes/GamePhanes</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">An open-source game coding agent environment and benchmark for Godot.</p>
+                </a>
+                <a href="/repo/nateherkai/scroll-craft/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nateherkai/scroll-craft</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.</p>
+                </a>
+                <a href="/repo/kunchenguid/backpass/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kunchenguid/backpass</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">You don't write AGENTS.md. You train it with gradient descent.</p>
+                </a>
+                <a href="/repo/mrhlaingbwardev/Telegram-Secure-Storage-Bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mrhlaingbwardev/Telegram-Secure-Storage-Bot</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A secure, privacy-focused Telegram cloud storage bot using Cloudflare Workers and D1 Database. Features PIN protection, Burn-after-read, and Anti-leak.</p>
+                </a>
+                <a href="/repo/thiagotigaz/ocr-it/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thiagotigaz/ocr-it</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Chrome extension: pin a screen region once, then hotkey your way through a paginated document. OCR runs 100% offline via bundled Tesseract.</p>
+                </a>
+                <a href="/repo/luke321/vault-graph/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">luke321/vault-graph</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Interactive graph of an Obsidian vault as a single self-contained offline HTML file</p>
+                </a>
+                <a href="/repo/yizhiyanhua-ai/fireworks-open-eli5/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yizhiyanhua-ai/fireworks-open-eli5</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Evidence-aware interactive visual explainers for Codex and Claude Code.</p>
+                </a>
+                <a href="/repo/czm15053/linuxdo-idea-ui/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">czm15053/linuxdo-idea-ui</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">油猴脚本：将 linux.do 换成 JetBrains / Darcula 风格外观，只换皮不碰数据</p>
+                </a>
+                <a href="/repo/Restdritower/iready-tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Restdritower/iready-tool</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">Skip i-Ready lessons skip minutes, auto-answer quizzes, and bypass diagnostics with iReady Tool the most powerful free Chrome extension and userscript for i-Ready. Open source, no paywall, works on all browsers.</p>
+                </a>
+                <a href="/repo/achrefelouafi/LinearAbilityExtThreeJS/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">achrefelouafi/LinearAbilityExtThreeJS</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/techcomet122583/Polymarket-Telegram-Bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">techcomet122583/Polymarket-Telegram-Bot</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/zhuyifang/tonghuasun-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zhuyifang/tonghuasun-agent</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">在 Codex、Claude Code、WorkBuddy、ZCode、OpenClaw 或 DeepSeek Harness 中，直接查询你电脑上的同花顺行情、K 线、持仓、委托和成交数据。</p>
+                </a>
+                <a href="/repo/Cleverfuxaqo1668/Polymarket-Telegram-Bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Cleverfuxaqo1668/Polymarket-Telegram-Bot</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/OrRon/EpicInfographics/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">OrRon/EpicInfographics</span>
+                        <span class="mrc-lang">JavaScript <i class="fas fa-circle mrc-lang-dot lang-javascript"></i></span>
+                    </div>
+                    <p class="mrc-desc">A simple skill that will make your Agent create beautiful Infographics</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/javascript/9/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 10 of 11</span>
+                        <a href="/language/javascript/11/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>

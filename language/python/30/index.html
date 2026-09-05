@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Python Repositories Directory - Page 30 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Python repositories - Page 30. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/python/30/">
+    <meta property="og:title" content="Best Python Repositories Directory - Page 30 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Python repositories - Page 30. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/python/30/">
+    <meta property="twitter:title" content="Best Python Repositories Directory - Page 30 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Python repositories - Page 30. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/python/30/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/python/29/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/python/31/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Python Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/joeseesun/qiaomu-seo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">joeseesun/qiaomu-seo</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Audit, diagnose, research, plan, implement, experiment on, and verify website SEO across Google, Bing, and AI-search surfaces. Use for technical SEO, </p>
+                </a>
+                <a href="/repo/alikon-art/DeterminFlow/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alikon-art/DeterminFlow</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。</p>
+                </a>
+                <a href="/repo/FuDie0915/Super-Instruct-Codex-5.6/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">FuDie0915/Super-Instruct-Codex-5.6</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">针对GPT 5.6的破甲实验项目，基于Rust开发</p>
+                </a>
+                <a href="/repo/alexan0618/zkky/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alexan0618/zkky</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">直卡开源</p>
+                </a>
+                <a href="/repo/AMAP-ML/LongHorizon-Harness/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">AMAP-ML/LongHorizon-Harness</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making reliable progress on complex workflows. Features fresh-context execution, durable verified state, independent auditing, recoverable progress, and native Claude Code / Codex / OpenClaw integration.</p>
+                </a>
+                <a href="/repo/KKKKhazix/human-writing/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KKKKhazix/human-writing</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">活人感写作 1.0.0｜通用中文创作与改稿 Skill</p>
+                </a>
+                <a href="/repo/EcZachly/databricks-lakebase-app-day-1/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">EcZachly/databricks-lakebase-app-day-1</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/xmarre/ComfyUI-Spectrum-MiniMax-H3/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xmarre/ComfyUI-Spectrum-MiniMax-H3</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Spectrum-based acceleration for ComfyUI’s native MiniMax H3 audio-video model. Forecasts post-transformer features with Chebyshev ridge regression to skip selected transformer evaluations, with adaptive scheduling, sampler-aware safeguards, CPU/VRAM history storage, and native fallbacks.</p>
+                </a>
+                <a href="/repo/tonbistudio/buzz-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tonbistudio/buzz-skills</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/xyaz1313/phoenix/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xyaz1313/phoenix</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">不死鸟 Phoenix — Hermes Agent 插件：路由分档/风险防线/自愈/存档点提醒/审批策略自适应，官方钩子接入，不改 Hermes 核心代码</p>
+                </a>
+                <a href="/repo/dahan6/siming/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dahan6/siming</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Behavioral Grammar: detecting adaptive malware via tiny language-model priors and second-order temporal analysis. 0.88M-param self-supervised HIDS — 93% detection vs adaptive adversarial agent at 3.84% onboarding FPR.</p>
+                </a>
+                <a href="/repo/typewriter03/Desko/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">typewriter03/Desko</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/littlelelephant/literature-review-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">littlelelephant/literature-review-agent</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">A LangGraph-powered agent for literature search, evidence screening, outline generation, and evidence-grounded review writing.</p>
+                </a>
+                <a href="/repo/Binaryify/open-kimi-ppt-skill/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Binaryify/open-kimi-ppt-skill</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor</p>
+                </a>
+                <a href="/repo/0xwilliamortiz/claude-red/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">0xwilliamortiz/claude-red</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.</p>
+                </a>
+                <a href="/repo/SandAI-org/MAGI-2-preview/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SandAI-org/MAGI-2-preview</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">MAGI-2-preview: Scaling Video Generation Models Efficiently</p>
+                </a>
+                <a href="/repo/Anionex/agent-vision-toolkit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Anionex/agent-vision-toolkit</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">给纯文本 LLM agent 装上眼睛：图片问答、OCR、截图分析、视觉定位等一套视觉工具箱 + skill，并可无缝接入 Codex、Claude Code、OpenCode、Pi ｜ Give text-only LLM agents vision: image Q&A, OCR, screenshot understanding, visual grounding, image-to-SVG - a vision toolkit & skill, with drop-in integration for Codex, Claude Code, OpenCode, Pi</p>
+                </a>
+                <a href="/repo/inspatio/querysplat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">inspatio/querysplat</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">repo for QuerySplat</p>
+                </a>
+                <a href="/repo/jd-opensource/JoyAI-Video-Edit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jd-opensource/JoyAI-Video-Edit</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">MiniMaxH3_LatentUpscaler for ComfyUI</p>
+                </a>
+                <a href="/repo/kijai/ComfyUI-SolAttn_triton/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kijai/ComfyUI-SolAttn_triton</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/oil-oil/codex-deepseek-subagent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">oil-oil/codex-deepseek-subagent</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Configure DeepSeek as a native Codex subagent with automated setup and verified routing.</p>
+                </a>
+                <a href="/repo/x4gKing/bot-telegram/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">x4gKing/bot-telegram</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/domaup/coldcard-poc/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">domaup/coldcard-poc</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Coldcard Mk3 RNG vulnerability PoC — BIP39 seed reconstruction tool for the Block security disclosure (July 2026)</p>
+                </a>
+                <a href="/repo/kaibush/grok-register/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">kaibush/grok-register</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">GrokFree注册机 - 支持生成CPA、grok2api格式的json鉴权文件</p>
+                </a>
+                <a href="/repo/ryanzhou/deepseek-v4-flash-mi300x/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ryanzhou/deepseek-v4-flash-mi300x</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/HELPMEEADICE/TE-Speed-MiniMaxH3-OSS/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">HELPMEEADICE/TE-Speed-MiniMaxH3-OSS</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">MiniMax-H3超级缓存加速插件</p>
+                </a>
+                <a href="/repo/Shane8989/before-signing/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Shane8989/before-signing</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/helloaiden0305/odm_AIDataPlatform_demo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">helloaiden0305/odm_AIDataPlatform_demo</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">精简版数据中台demo，仅用于个人技术学习分享，不涉及任何商用数据，已处理脱敏。欢迎各位同事交流学习，点点✨。</p>
+                </a>
+                <a href="/repo/humanpen/humanpen-skill/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">humanpen/humanpen-skill</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/mika50000/gpt-link/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mika50000/gpt-link</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Standalone ChatGPT Session/accessToken link extractor</p>
+                </a>
+                <a href="/repo/KimGLee/Cambium/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">KimGLee/Cambium</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Governance standard and reference toolset for LLM-maintained knowledge corpora</p>
+                </a>
+                <a href="/repo/Larryvrh/ComfyUI-MiniMax-H3-Turbo/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Larryvrh/ComfyUI-MiniMax-H3-Turbo</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/oliverb-io1902e8/agent-skills-collection/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">oliverb-io1902e8/agent-skills-collection</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Curated collection of modular agent skills for LLM-based agents</p>
+                </a>
+                <a href="/repo/Evianis/travel-photo-abstraction/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Evianis/travel-photo-abstraction</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">A source-available Codex skill for distilling photographs into sparse editorial abstractions.</p>
+                </a>
+                <a href="/repo/IAmIronMan42/MiniMax-H3-FineTuning/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">IAmIronMan42/MiniMax-H3-FineTuning</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/TaiT-tt/tait-crt-interface-skill/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">TaiT-tt/tait-crt-interface-skill</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/waiterve/wai-play/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">waiterve/wai-play</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">WAI Play - AI web game testing and quality evaluation platform</p>
+                </a>
+                <a href="/repo/T8mars/comfyui-minimax-h3-audio-T8/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">T8mars/comfyui-minimax-h3-audio-T8</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/sowarma/wp2shell-PoC/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sowarma/wp2shell-PoC</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">CVE-2026-63030 & CVE-2026-60137 RCE chain proof-of-concept</p>
+                </a>
+                <a href="/repo/531149627/MonsterDeleter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">531149627/MonsterDeleter</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">召唤一个大将怪兽帮你删除文件的桌面宠物</p>
+                </a>
+                <a href="/repo/alishamari/AgentForge/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alishamari/AgentForge</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Real-time event-driven orchestration of dynamic resource allocation yields a highly scalable, intelligent, and autonomous enterprise agent broker.</p>
+                </a>
+                <a href="/repo/harrietbrooke/NEdge/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">harrietbrooke/NEdge</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Edge-orchestrated, real-time NFTMesh platform enables decentralized, immutable, and dynamic digital asset management Suite.</p>
+                </a>
+                <a href="/repo/sanjanvandijk/ZTech/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sanjanvandijk/ZTech</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Holistic data convergence catalyst, facilitating auto-scaling, real-time data processing, and intelligent decision-making across distributed systems infrastructure enabler.</p>
+                </a>
+                <a href="/repo/alishamari/DecentralPurse/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">alishamari/DecentralPurse</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/0xSero/deepseek-v4-flash-0731-spark-sparkinfer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">0xSero/deepseek-v4-flash-0731-spark-sparkinfer</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Pinned one-DGX-Spark Docker recipe for DeepSeek V4 Flash with EXL3, SparkInfer, and 262K NVFP4 MLA KV cache</p>
+                </a>
+                <a href="/repo/oil-oil/oil-motion/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">oil-oil/oil-motion</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Create smooth, responsive interactive web animations.</p>
+                </a>
+                <a href="/repo/ShawnPana/phone-harness/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ShawnPana/phone-harness</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">let your agent control your phone</p>
+                </a>
+                <a href="/repo/i3T4AN/KADATH/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">i3T4AN/KADATH</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Evolutionary multi-agent runtime that breeds, evaluates, and improves autonomous agents across reproducible epochs to converge on optimization of a goal.</p>
+                </a>
+                <a href="/repo/Samin100/codex-ios-assistant/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Samin100/codex-ios-assistant</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Control and inspect an iPhone from Codex through iMessage and Shortcuts</p>
+                </a>
+                <a href="/repo/ethanfel/ComfyUI-MiniMax-H3-Guide/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">ethanfel/ComfyUI-MiniMax-H3-Guide</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Guided MiniMax H3 prompt preparation node for ComfyUI</p>
+                </a>
+                <a href="/repo/RidgeRookPattern/comix-autoclipper/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">RidgeRookPattern/comix-autoclipper</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Best Manga Downloader 2026: Fast GUI & CLI Comix Tool with PDF CBZ Export</p>
+                </a>
+                <a href="/repo/NikoDemon80/ComfyUI-H3-Motion-Context/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">NikoDemon80/ComfyUI-H3-Motion-Context</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Clip chaining for MiniMax H3 in ComfyUI - motion and audio genuinely continue across joins</p>
+                </a>
+                <a href="/repo/crawfordxx/xiaoma-durex-copywriter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">crawfordxx/xiaoma-durex-copywriter</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">杜蕾斯式文案与海报 Skill for Claude Code —— 双层语义方法论 + 8 个文案公式 + 从 260 张原始海报拆解的视觉系统 + AI 出图/代码排版管线</p>
+                </a>
+                <a href="/repo/liujunxibaba/douyin-tiktok-story-skill-agent/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">liujunxibaba/douyin-tiktok-story-skill-agent</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Local-first AI Skill and Agent for creating original Douyin and TikTok story scripts with a searchable SQLite reference database.</p>
+                </a>
+                <a href="/repo/lbx154/Argus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lbx154/Argus</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/okky-x0f/qoder-creator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">okky-x0f/qoder-creator</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Qoder Automation - Full Automation with UI Interaction (Auto-claim Pro Trial + 300 Credits)</p>
+                </a>
+                <a href="/repo/sosoj92/jarvis-assistant-vocal/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sosoj92/jarvis-assistant-vocal</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.</p>
+                </a>
+                <a href="/repo/3169657175/gpt-webcodex/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">3169657175/gpt-webcodex</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">可以通过一定的方式让chatgpt网页版实现操作桌面端的文件，读取创建以及修改</p>
+                </a>
+                <a href="/repo/yang13926151198-ai/AI-Photographer-Agent-ROCm/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">yang13926151198-ai/AI-Photographer-Agent-ROCm</span>
+                        <span class="mrc-lang">Python <i class="fas fa-circle mrc-lang-dot lang-python"></i></span>
+                    </div>
+                    <p class="mrc-desc">Private local AI Photographer Agent on AMD Radeon and ROCm</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/python/29/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 30 of 34</span>
+                        <a href="/language/python/31/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
