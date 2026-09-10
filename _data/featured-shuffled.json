@@ -1,146 +1,146 @@
 [
   {
-    "repo": "libp2p/go-libp2p",
+    "repo": "disler/super-simple-software-factory",
+    "branch": "main",
+    "language": "Python",
+    "description": "Repeatable agents-plus-code workflows, packaged as one skill, stamped into any repo. Deterministic Python owns the graph; coding agents are bounded nodes inside it."
+  },
+  {
+    "repo": "kzhrknt/awesome-design-md-jp",
+    "branch": "main",
+    "language": "HTML",
+    "description": "日本語UIをAIエージェントに正しくつくらせるためのDESIGN.md集。Japanese DESIGN.md collection for AI agents — extending Google Stitch format with CJK typography."
+  },
+  {
+    "repo": "1354427059/orchids-api",
+    "branch": "main",
+    "language": "Go",
+    "description": "1111"
+  },
+  {
+    "repo": "Haleclipse/CodexDesktop-Rebuild",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Codex Desktop App - Cross-platform Rebuild"
+  },
+  {
+    "repo": "lib/pq",
     "branch": "master",
     "language": "Go",
-    "description": "libp2p implementation in Go"
+    "description": "Go PostgreSQL driver for database/sql"
   },
   {
-    "repo": "CopilotKit/openbot",
+    "repo": "yazinsai/quran-validator",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent."
+    "description": "Validate and verify Quranic verses in LLM-generated text with high accuracy"
   },
   {
-    "repo": "UnrealXu/UnrealEngine5-Skills",
+    "repo": "detekt/detekt",
     "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "Kotlin",
+    "description": "Static code analysis for Kotlin"
   },
   {
-    "repo": "jarodise/pdf2epub-paddle",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "umijs/umi",
+    "repo": "saltstack/salt",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "A framework in react community ✨"
+    "language": "Python",
+    "description": "Software to automate the management and configuration of infrastructure and applications at scale."
   },
   {
-    "repo": "Ye-Yu-Mo/FundVal-Live",
+    "repo": "webpack-contrib/terser-webpack-plugin",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Terser Plugin"
+  },
+  {
+    "repo": "graphql/dataloader",
     "branch": "main",
     "language": "JavaScript",
-    "description": "盘中基金估值，实时估值，基金净值"
+    "description": "DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching."
   },
   {
-    "repo": "lapce/lapce",
+    "repo": "GoogleCloudPlatform/golang-samples",
+    "branch": "main",
+    "language": "Go",
+    "description": "Sample apps and code written for Google Cloud in the Go programming language."
+  },
+  {
+    "repo": "Supervisor/supervisor",
+    "branch": "master",
+    "language": "Python",
+    "description": "Supervisor process control system for Unix (supervisord)"
+  },
+  {
+    "repo": "pytorch/ignite",
+    "branch": "master",
+    "language": "Python",
+    "description": "High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently."
+  },
+  {
+    "repo": "marktext/marktext",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows."
+  },
+  {
+    "repo": "sqlalchemy/sqlalchemy",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Database Toolkit for Python"
+  },
+  {
+    "repo": "SumeLabs/clawra",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Clawra - Openclaw as your girlfriend"
+  },
+  {
+    "repo": "SVProgressHUD/SVProgressHUD",
+    "branch": "master",
+    "language": "Objective-C",
+    "description": "A clean and lightweight progress HUD for your iOS and tvOS app."
+  },
+  {
+    "repo": "krahets/hello-algo",
+    "branch": "main",
+    "language": "Java",
+    "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现"
+  },
+  {
+    "repo": "ansible/awx",
+    "branch": "devel",
+    "language": "Python",
+    "description": "AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is one of the upstream projects for Red Hat Ansible Automation Platform."
+  },
+  {
+    "repo": "mosaicml/llm-foundry",
+    "branch": "main",
+    "language": "Python",
+    "description": "LLM training code for Databricks foundation models"
+  },
+  {
+    "repo": "Kotlin/kotlinx.serialization",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Kotlin multiplatform / multi-format serialization"
+  },
+  {
+    "repo": "valeriansaliou/sonic",
     "branch": "master",
     "language": "Rust",
-    "description": "Lightning-fast and Powerful Code Editor written in Rust"
+    "description": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
   },
   {
-    "repo": "PaddlePaddle/PaddleDetection",
+    "repo": "opf/openproject",
+    "branch": "dev",
+    "language": "Ruby",
+    "description": "OpenProject is the leading open source project management software."
+  },
+  {
+    "repo": "element-hq/element-ios",
     "branch": "develop",
-    "language": "Python",
-    "description": "Object Detection toolkit based on PaddlePaddle. It supports object detection, instance segmentation, multiple object tracking and real-time multi-person keypoint detection."
-  },
-  {
-    "repo": "BradGroux/veritas-kanban",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era."
-  },
-  {
-    "repo": "test-time-training/discover",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "thangchung/awesome-dotnet-core",
-    "branch": "master",
-    "language": "C#",
-    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
-  },
-  {
-    "repo": "ngrx/platform",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Reactive State for Angular"
-  },
-  {
-    "repo": "sbilly/awesome-security",
-    "branch": "master",
-    "language": "Other",
-    "description": "A collection of awesome software, libraries, documents, books, resources and cools stuffs about security."
-  },
-  {
-    "repo": "NomicFoundation/hardhat",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software."
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-Math",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
-  },
-  {
-    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage trading bot"
-  },
-  {
-    "repo": "nmap/nmap",
-    "branch": "master",
-    "language": "C",
-    "description": "Nmap - the Network Mapper. Github mirror of official SVN repository."
-  },
-  {
-    "repo": "Tencent/wepy",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "小程序组件化开发框架"
-  },
-  {
-    "repo": "shuyu-labs/BigBanana-AI-Director",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "BigBanana AI Director是一个 AI 一站式短剧/漫剧平台，面向创作者，实现从灵感到成片的高效生产。  它摇弃了传统的“抽卡式”生成，采用 Script-to-Asset-to-Keyframe 的工业化工作流。实现 “一句话生成完整短剧，从剧本到成片全自动化”，同时精准控制角色一致性、场景连续性与镜头运动。"
-  },
-  {
-    "repo": "OpenDCAI/OpenPrism",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Open-source implementation of AI-powered academic writing workspace inspired by OpenAI Prism, featuring LaTeX editing, PDF preview, and intelligent AI assistance"
-  },
-  {
-    "repo": "lens-protocol/lens-protocol",
-    "branch": "main",
-    "language": "Solidity",
-    "description": "The Lens Protocol"
-  },
-  {
-    "repo": "llmsresearch/paperbanana",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new domains like slide generation."
-  },
-  {
-    "repo": "paragonie/awesome-appsec",
-    "branch": "master",
-    "language": "PHP",
-    "description": "A curated list of resources for learning about application security"
-  },
-  {
-    "repo": "hiteshchoudhary/gitbackup",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "It was personal script but now it is a complete desktop application to take backup of your github account"
+    "language": "Swift",
+    "description": "A glossy Matrix collaboration client for iOS"
   }
 ]
