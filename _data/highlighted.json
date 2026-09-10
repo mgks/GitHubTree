@@ -1,8 +1,8 @@
 {
-  "repo": "sohu-mptc/FlashRec",
+  "repo": "fidetolabs/qanat",
   "branch": "main",
   "language": "Python",
-  "description": "FlashRec is a CUDA-graph engine for generative recommendation: wide beam search (3–5 SID steps, n=50–512+) over a trie-constrained catalog, in-process FP8 serving, and ranked beams on /v1/chat/completions.",
-  "stars": 103,
-  "forks": 4
+  "description": "Agent-native workflow engine for building and backtesting alphas as DAGs.",
+  "stars": 110,
+  "forks": 24
 }
