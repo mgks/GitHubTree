@@ -1,146 +1,146 @@
 [
   {
-    "repo": "do-md/domd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "JohnRiceML/clawport-ui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw."
-  },
-  {
-    "repo": "tensorflow/serving",
+    "repo": "MoonshotAI/FlashKDA",
     "branch": "master",
-    "language": "C++",
-    "description": "A flexible, high-performance serving system for machine learning models"
+    "language": "Cuda",
+    "description": "FlashKDA: high-performance Kimi Delta Attention kernels"
   },
   {
-    "repo": "letmutex/gitas",
+    "repo": "mshumer/Claude-of-Duty",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A Call of Duty-quality FPS in Three.js, built from a single prompt."
+  },
+  {
+    "repo": "shenhao-stu/ohmycaptcha",
+    "branch": "main",
+    "language": "Python",
+    "description": "⚡ Self-hostable YesCaptcha-compatible captcha solver built with FastAPI, Playwright, and OpenAI-compatible multimodal models."
+  },
+  {
+    "repo": "godotengine/godot-docs",
+    "branch": "master",
+    "language": "reStructuredText",
+    "description": "Godot Engine official documentation"
+  },
+  {
+    "repo": "molefrog/skills",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "❈ Claude skill for generating high-quality PDFs using react-pdf"
+  },
+  {
+    "repo": "huggingface/tokenizers",
     "branch": "main",
     "language": "Rust",
-    "description": "Git Account Switch"
+    "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production"
   },
   {
-    "repo": "yetone/voice-input-dist",
+    "repo": "Anetedith12807/Ethereum-MEV-Bot",
     "branch": "main",
-    "language": "Swift",
-    "description": ""
+    "language": "Python",
+    "description": "Advanced MEV (Maximal Extractable Value) bot for Ethereum mainnet with Flashbots integration, sandwich attacks, front-running, back-running, and cross-DEX arbitrage."
   },
   {
-    "repo": "sigstore/cosign",
-    "branch": "main",
-    "language": "Go",
-    "description": "Code signing and transparency for containers and binaries"
-  },
-  {
-    "repo": "Lissy93/awesome-privacy",
-    "branch": "main",
-    "language": "Astro",
-    "description": "🦄  A curated list of privacy & security-focused software and services"
-  },
-  {
-    "repo": "prometheus/prometheus",
-    "branch": "main",
-    "language": "Go",
-    "description": "The Prometheus monitoring system and time series database."
-  },
-  {
-    "repo": "MichMich/MagicMirror",
+    "repo": "0Voice/Expert_Readed_Books",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant."
+    "language": "Other",
+    "description": "2021年最新总结，推荐工程师合适读本，计算机科学，软件技术，创业，思想类，数学类，人物传记书籍"
   },
   {
-    "repo": "dev-protocol/polymarket-kalshi-momentum-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Updated version - A sophisticated automated trading bot that mirrors the positions of a target trader on Polymarket. The bot continuously monitors a specified wallet address and replicates their trading positions in real-time with customizable risk management parameters. polymarket trading bot that do polymarket trading like trading bot on polymark"
-  },
-  {
-    "repo": "golang/mock",
-    "branch": "master",
-    "language": "Go",
-    "description": "GoMock is a mocking framework for the Go programming language."
-  },
-  {
-    "repo": "r3nzsec/irflow-timeline",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "DFIR Timeline Analysis for macOS — SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection."
-  },
-  {
-    "repo": "poseljacob/agentic-video-editor",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI-powered video editor that turns raw footage and a creative brief into a polished ad using an ensemble of AI agents (Google Gemini + FFmpeg)"
-  },
-  {
-    "repo": "vercel-labs/visual-json",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Visual JSON Editor. Schema-aware, embeddable, extensible."
-  },
-  {
-    "repo": "pytorch/pytorch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
-  },
-  {
-    "repo": "DotNetRussell/BloodBash",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Bloodhound alternative. BloodBash will ingest the same files bloodhound does but no server is required to use this tool. It's great for quick AD enumeration."
-  },
-  {
-    "repo": "randallscott25-star/epstein-forensic-finance",
+    "repo": "revfactory/harness",
     "branch": "main",
     "language": "HTML",
-    "description": "Epstein Financial Forensics Automated forensic financial reconstruction from 1.48 million DOJ EFTA documents + 503K cataloged media items"
+    "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use."
   },
   {
-    "repo": "pinchtab/pinchtab",
+    "repo": "microsoft/playwright",
     "branch": "main",
-    "language": "Go",
+    "language": "TypeScript",
+    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
+  },
+  {
+    "repo": "fancyai-official/skills",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "gorilla/mux",
-    "branch": "main",
-    "language": "Go",
-    "description": "Package gorilla/mux is a powerful HTTP router and URL matcher for building Go web servers with 🦍"
-  },
-  {
-    "repo": "pacifio/cersei",
-    "branch": "main",
-    "language": "Rust",
-    "description": "The Rust SDK for building coding agents. Tool execution, LLM streaming, graph memory, sub-agent orchestration, MCP — as composable library functions."
-  },
-  {
-    "repo": "NCSC-NL/spring4shell",
-    "branch": "main",
-    "language": "Other",
-    "description": "Operational information regarding the Spring4Shell vulnerability in the Spring Core Framework"
-  },
-  {
-    "repo": "jmoiron/sqlx",
-    "branch": "master",
-    "language": "Go",
-    "description": "general purpose extensions to golang's database/sql"
-  },
-  {
-    "repo": "alejandrobalderas/claude-code-from-source",
+    "repo": "EA1FUO/AntennaSim",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Architecture, patterns & internals of Anthropic's AI coding agent — reverse-engineered from source maps"
+    "description": "Web-based antenna simulator powered by NEC2. Design, simulate, and analyze antennas with real-time 3D visualization, radiation patterns, SWR, and impedance charts."
   },
   {
-    "repo": "anchore/syft",
+    "repo": "nashsu/opencli-rs",
     "branch": "main",
-    "language": "Go",
-    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
+    "language": "Rust",
+    "description": "Opencli-rs is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl)"
+  },
+  {
+    "repo": "jwasham/coding-interview-university",
+    "branch": "main",
+    "language": "Other",
+    "description": "A complete computer science study plan to become a software engineer."
+  },
+  {
+    "repo": "deepmind/mujoco",
+    "branch": "main",
+    "language": "C++",
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator."
+  },
+  {
+    "repo": "spinnaker/spinnaker",
+    "branch": "master",
+    "language": "Java",
+    "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence."
+  },
+  {
+    "repo": "joshavant/clawbox",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw-ready macOS VMs"
+  },
+  {
+    "repo": "gnekt/My-Brain-Is-Full-Crew",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Built by a PhD whose memory was failing, whose diet was a mess, and whose anxiety had its own agenda. Most second brain tools ignore the fact that your brain doesn't work in isolation: your body and your mental health are part of the system too. This crew handles all three: knowledge, nutrition, and mental wellness."
+  },
+  {
+    "repo": "atom/atom",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ":atom: The hackable text editor"
+  },
+  {
+    "repo": "GRVYDEV/marky",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A lightweight easy to use markdown viewer"
+  },
+  {
+    "repo": "testing-library/react-testing-library",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices."
+  },
+  {
+    "repo": "espressif/esp-claw",
+    "branch": "master",
+    "language": "C",
+    "description": "ESP-Claw, a Chat Coding AI agent framework for IoT devices"
+  },
+  {
+    "repo": "agents-io/PokeClaw",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "PokeClaw (PocketClaw) — first on-device AI that controls your Android phone. Gemma 4, no cloud, no API key. Poke is short for Pocket."
+  },
+  {
+    "repo": "payloadcms/payload",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
   }
 ]
