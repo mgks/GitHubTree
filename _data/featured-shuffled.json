@@ -1,51 +1,63 @@
 [
   {
-    "repo": "get-Lucid/Lucid",
+    "repo": "Wechat-ggGitHub/wechat-claude-code",
     "branch": "main",
     "language": "TypeScript",
-    "description": "An intelligence layer grounding autonomous agents in verified, real-time knowledge at scale."
+    "description": "Chat with Claude Code from WeChat - a Claude Code Skill"
   },
   {
-    "repo": "hashicorp/raft",
+    "repo": "0xsouravm/oxichrome",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Framework to build Chrome extensions entirely in Rust with proc macros, type-safe Chrome API bindings, and Leptos for reactive UI. Compiles to WebAssembly with zero hand-written JavaScript."
+  },
+  {
+    "repo": "silverstein/minutes",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Every meeting, every idea, every voice note — searchable by your AI. Open-source, privacy-first conversation memory layer."
+  },
+  {
+    "repo": "playPlumtown/Plumtown",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The cozy life-sim that pays. Build a home, master skills, climb careers — earn $PLUM and cash out real SOL. Free to play in your browser."
+  },
+  {
+    "repo": "steipete/discrawl",
     "branch": "main",
     "language": "Go",
-    "description": "Golang implementation of the Raft consensus protocol"
+    "description": "cli for discord with sqlite backend"
   },
   {
-    "repo": "saadansha/tts-prosody-probe",
+    "repo": "mrphrazer/agentic-malware-analysis",
+    "branch": "main",
+    "language": "YARA",
+    "description": "Agentic malware analysis environment with MCP-connected disassemblers, RE tooling, and structured workflows for Claude Code and Codex CLI."
+  },
+  {
+    "repo": "epiral/agent-clip",
+    "branch": "main",
+    "language": "Go",
+    "description": "AI Agent as a Pinix Clip — agentic loop with memory, tools, and vision"
+  },
+  {
+    "repo": "dou-jiang/codex-console",
     "branch": "main",
     "language": "Python",
-    "description": "Probe and compare the prosody (pitch / energy / duration) of TTS outputs."
+    "description": "codex-console 是一个集成化控制台项目，支持任务管理、批量处理、数据导出、自动上传、日志查看与打包支持。"
   },
   {
-    "repo": "meilisearch/meilisearch",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
-  },
-  {
-    "repo": "awesome-selfhosted/awesome-selfhosted",
+    "repo": "Zaneham/BarraCUDA",
     "branch": "master",
-    "language": "Other",
-    "description": "A list of Free Software network services and web applications which can be hosted on your own servers"
+    "language": "C",
+    "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code."
   },
   {
-    "repo": "rust-lang/rustlings",
+    "repo": "wong2/weixin-agent-sdk",
     "branch": "main",
-    "language": "Rust",
-    "description": ":crab: Small exercises to get you used to reading and writing Rust code!"
-  },
-  {
-    "repo": "fastify/fastify",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Fast and low overhead web framework, for Node.js"
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+    "language": "TypeScript",
+    "description": ""
   },
   {
     "repo": "brendanhogan/hermitclaw",
@@ -54,93 +66,81 @@
     "description": ""
   },
   {
-    "repo": "chartjs/Chart.js",
+    "repo": "mayfer/electrobun-macos-native-blur",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "Simple HTML5 Charts using the <canvas> tag"
-  },
-  {
-    "repo": "prometheus/client_python",
-    "branch": "master",
-    "language": "Python",
-    "description": "Prometheus instrumentation library for Python applications"
-  },
-  {
-    "repo": "kevinho/clawfeed",
-    "branch": "main",
-    "language": "HTML",
-    "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard"
-  },
-  {
-    "repo": "ultralytics/yolov5",
-    "branch": "master",
-    "language": "Python",
-    "description": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite"
-  },
-  {
-    "repo": "cita-777/metapi",
-    "branch": "main",
     "language": "TypeScript",
-    "description": "把你在各处注册的 New API / One API / OneHub / DoneHub / Veloera / AnyRouter / Sub2API 等站点， 汇聚成 一个 API Key、一个入口，自动发现模型、智能路由、成本最优"
+    "description": "Enable background blur like a native app in Electrobun"
   },
   {
-    "repo": "standardagents/sip",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Small Image Processor - Ultra memory-efficient image processing for Cloudflare Workers 🟠"
-  },
-  {
-    "repo": "aio-libs/aiohttp",
-    "branch": "master",
-    "language": "Python",
-    "description": "Asynchronous HTTP client/server framework for asyncio and Python"
-  },
-  {
-    "repo": "JudoChinX/rangarr",
+    "repo": "Nasiko-Labs/nasiko",
     "branch": "main",
     "language": "Python",
-    "description": "Rangarr automates and staggers media searches across your Radarr, Sonarr, and Lidarr instances."
+    "description": "AI-powered development platform for the future"
   },
   {
-    "repo": "freeCodeCamp/freeCodeCamp",
+    "repo": "deepcon3/Binance-Claw",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
+    "language": "Rust",
+    "description": "Binance-Claw Lightning-fast Binance price sniper, real-time monitor & OpenClaw skill — written in Rust"
   },
   {
-    "repo": "auth0/node-jsonwebtoken",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "JsonWebToken implementation for node.js http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html"
+    "repo": "knowsuchagency/mcp2cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
   },
   {
-    "repo": "cnlimiter/codex-manager-v3",
-    "branch": "master",
+    "repo": "v0id4real/Void-Tools",
+    "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "seaweedfs/seaweedfs",
+    "repo": "quailyquaily/aqua",
     "branch": "master",
     "language": "Go",
-    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, xDC replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding. Enterprise version is at seaweedfs.com."
+    "description": "Aqua, a cli message tool for AI agents"
   },
   {
-    "repo": "RocketChat/Rocket.Chat",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "The Secure CommsOS™ for mission-critical operations"
-  },
-  {
-    "repo": "DangJin/pdf2video",
+    "repo": "Windy3f3f3f3f/claude-code-from-scratch",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Transform PDF documents into engaging video presentations with smooth animations."
+    "description": "Build your own coding agent from scratch in ~1300 lines of TypeScript. / 从零构建你自己的 Claude Code，~1300 行代码，分步教程"
   },
   {
-    "repo": "TrendTechVista/polymarket-copy-trading-bot",
+    "repo": "nclamvn/Viet-ERP",
     "branch": "main",
     "language": "TypeScript",
-    "description": "polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot"
+    "description": "VietERP Platform — Open-source ERP for Vietnamese enterprises"
+  },
+  {
+    "repo": "HMAKT99/UnTouchID",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Use your phone's fingerprint to authenticate on any Mac — sudo, screensaver, App Store. No $199 Magic Keyboard needed. Works with iPhone, Android, Apple Watch, Wear OS, or any browser. Ready for MacBook Neo."
+  },
+  {
+    "repo": "Spade-sec/First",
+    "branch": "main",
+    "language": "Python",
+    "description": "WMPFDebugger 二开微信小程序多功能集成工具"
+  },
+  {
+    "repo": "TheCSir/TerminalStart",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Chromium Extension for Tech Bros"
+  },
+  {
+    "repo": "huxiuhan/civ-finish-quotes",
+    "branch": "main",
+    "language": "Python",
+    "description": "A skilll for agent to add a Civilization-style ceremonial quote when a substantial multi-step task is truly complete."
+  },
+  {
+    "repo": "veyliss/ai-localbase",
+    "branch": "main",
+    "language": "Go",
+    "description": "一个本地优先的AI知识库系统（RAG），用于把本地文档接入辅导搜索与大模型对话流程。"
   }
 ]
