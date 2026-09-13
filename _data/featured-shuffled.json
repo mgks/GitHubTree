@@ -1,93 +1,99 @@
 [
   {
-    "repo": "skerry699/agent-symphony",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Multi-Agent AI Task Orchestrator 2026"
-  },
-  {
-    "repo": "DovAmir/awesome-design-patterns",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of software and architecture related design patterns."
-  },
-  {
-    "repo": "kzhrknt/awesome-design-md-jp",
-    "branch": "main",
-    "language": "HTML",
-    "description": "日本語UIをAIエージェントに正しくつくらせるためのDESIGN.md集。Japanese DESIGN.md collection for AI agents — extending Google Stitch format with CJK typography."
-  },
-  {
-    "repo": "webpack/webpack",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through loaders, modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff."
-  },
-  {
-    "repo": "Janlaywss/hu-chenfeng-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "户晨风Skill"
-  },
-  {
-    "repo": "lenxism/dither",
+    "repo": "chaitanyagiri/munder-difflin",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Upload an image and watch it come alive as interactive dithered particles. Hover to push them, click to explode."
+    "description": "local multi-agent harness"
   },
   {
-    "repo": "serde-rs/serde",
+    "repo": "microsoft/react-native-code-push",
+    "branch": "master",
+    "language": "C",
+    "description": "React Native module for CodePush"
+  },
+  {
+    "repo": "Lcharvol/MacSift",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Transparent macOS disk cleaner — groups files by app, moves to Trash (never permanent). SwiftUI + Liquid Glass, built for macOS Tahoe."
+  },
+  {
+    "repo": "colinhacks/zod",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "TypeScript-first schema validation with static type inference"
+  },
+  {
+    "repo": "vercel-labs/visual-json",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The Visual JSON Editor. Schema-aware, embeddable, extensible."
+  },
+  {
+    "repo": "eonsystemspbc/fly-brain",
+    "branch": "main",
+    "language": "Python",
+    "description": "Emulation of the Drosophila Fly brain: Brian2, Brian2CUDA, PyTorch, NEST GPU, and neuromorphic chips"
+  },
+  {
+    "repo": "ant-design/ant-design",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "An enterprise-class UI design language and React UI library"
+  },
+  {
+    "repo": "openai/triton",
+    "branch": "main",
+    "language": "MLIR",
+    "description": "Development repository for the Triton language and compiler"
+  },
+  {
+    "repo": "CraftyGeezer/Kalshi-Polymarket-Ai-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "chu2bard/pinion-os",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Client SDK, Claude plugin and skill framework for the Pinion protocol. x402 micropayments on Base."
+  },
+  {
+    "repo": "googleworkspace/cli",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills."
+  },
+  {
+    "repo": "LeoYeAI/openclaw-master-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "🧠 Curated collection of 127+ best OpenClaw skills — weekly updated from skills.sh, GitHub & ClaWHub. Powered by MyClaw.ai"
+  },
+  {
+    "repo": "foundry-rs/foundry",
     "branch": "master",
     "language": "Rust",
-    "description": "Serialization framework for Rust"
+    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
   },
   {
-    "repo": "simonw/rodney",
-    "branch": "main",
-    "language": "Go",
-    "description": "CLI tool for interacting with the web"
-  },
-  {
-    "repo": "nguyenduchoai/bizclaw",
-    "branch": "master",
-    "language": "Rust",
-    "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp, và công cụ thông qua kiến trúc thống nhất, hoán đổi được."
-  },
-  {
-    "repo": "babel/babel",
+    "repo": "Castor6/tactus",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
+    "description": "The first browser AI Agent extension to support Agent Skills, enabling AI to perform complex tasks through an expandable skill system. 🌟 Star if you like it! | 首个支持 Agent Skills 的浏览器 AI Agent 扩展，让 AI 通过可扩展技能系统执行复杂任务 🌟 如果喜欢请点个 Star！"
   },
   {
-    "repo": "leaked-claude-code/leaked-claude-code",
+    "repo": "xyzeva/k-id-age-verifier",
     "branch": "main",
     "language": "TypeScript",
-    "description": "[ LEAKED | LEAK ] Claude Code source code. full claude code opensource."
+    "description": "automatically verify your age on discord, twitch, kick, quora and more (k-id)"
   },
   {
-    "repo": "sooryathejas/METATRON",
+    "repo": "kimlawtech/korean-privacy-terms",
     "branch": "main",
-    "language": "Python",
-    "description": "AI-powered penetration testing assistant using local LLM on linux (Parrot OS)"
-  },
-  {
-    "repo": "CocoaPods/CocoaPods",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "The Cocoa Dependency Manager."
-  },
-  {
-    "repo": "angular/angular-cli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI tool for Angular"
-  },
-  {
-    "repo": "pytorch/vision",
-    "branch": "main",
-    "language": "Python",
-    "description": "Datasets, Transforms and Models specific to Computer Vision"
+    "language": "Go Template",
+    "description": "한국 법령 기반 개인정보처리방침·이용약관 자동 생성 Claude Code 스킬. 2025.4.21 작성지침 및 2026.3 개정 법령 반영."
   },
   {
     "repo": "andrew-kramer-inno/claude-code-source-build",
@@ -96,51 +102,45 @@
     "description": ""
   },
   {
-    "repo": "wasabeef/awesome-android-ui",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome Android UI/UX libraries"
-  },
-  {
-    "repo": "facebookresearch/detectron2",
+    "repo": "mimurchison/claude-chief-of-staff",
     "branch": "main",
-    "language": "Python",
-    "description": "Detectron2 is a platform for object detection, segmentation and other visual recognition tasks."
+    "language": "Shell",
+    "description": "AI Chief of Staff — Your personal AI operating system built on Claude Code"
   },
   {
-    "repo": "klawsh/klaw.sh",
+    "repo": "vava-nessa/free-coding-models",
     "branch": "main",
-    "language": "Go",
-    "description": "kubectl for AI Agents"
+    "language": "JavaScript",
+    "description": ""
   },
   {
-    "repo": "yifangao112/Camyla",
+    "repo": "sgInnora/alipay-deeplink-research",
     "branch": "main",
-    "language": "Python",
-    "description": "Scaling Autonomous Research in Medical Image Segmentation"
+    "language": "HTML",
+    "description": "Alipay DeepLink + JSBridge Security Research - 17 Verified Vulnerabilities | 支付宝DeepLink安全研究 | Full Report: innora.ai/zfb"
   },
   {
-    "repo": "injaneity/pi-computer-use",
+    "repo": "AERT-7Y/kiro-auto",
     "branch": "main",
     "language": "TypeScript",
-    "description": "control your applications using pi-coding-agent. fully invisible."
+    "description": "kiro自动注册机"
   },
   {
-    "repo": "facebookresearch/tribev2",
+    "repo": "kossisoroyce/timber",
     "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "This repository contains the code to train and evaluate TRIBE v2, a multimodal model for brain response prediction"
-  },
-  {
-    "repo": "langchain-ai/langchain",
-    "branch": "master",
     "language": "Python",
-    "description": "🦜🔗 The platform for reliable agents."
+    "description": "Ollama for classical ML models. AOT compiler that turns XGBoost, LightGBM, scikit-learn, CatBoost & ONNX models into native C99 inference code. One command to load, one command to serve. 336x faster than Python inference."
   },
   {
-    "repo": "ultraworkers/claw-code",
+    "repo": "vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
     "branch": "main",
-    "language": "Rust",
-    "description": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex."
+    "language": "C++",
+    "description": "esp32-s3-touch-amoled-1.8"
+  },
+  {
+    "repo": "paradigmxyz/evmbench",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A benchmark and harness for finding and exploiting smart contract bugs"
   }
 ]
