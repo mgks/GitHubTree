@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Accio-org/RealReplicaBench",
+    "repo": "RongleCat/grok-go",
     "branch": "main",
-    "language": "HTML",
-    "description": "RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services"
+    "language": "Rust",
+    "description": "Local multi-account Grok gateway for Codex (API + MCP). 本地多账号 Grok 网关，面向 Codex。"
   },
   {
-    "repo": "761696148/Game-Map-Tracker",
+    "repo": "phpmyadmin/phpmyadmin",
+    "branch": "master",
+    "language": "PHP",
+    "description": "A web interface for MySQL and MariaDB"
+  },
+  {
+    "repo": "adithya-s-k/manim_skill",
     "branch": "main",
     "language": "Python",
+    "description": "Agent skills for Manim to create 3Blue1Brown style animations."
+  },
+  {
+    "repo": "liorwn/claudetop",
+    "branch": "main",
+    "language": "Shell",
+    "description": "htop for your Claude Code sessions — real-time cost, cache efficiency, model comparison, and smart alerts"
+  },
+  {
+    "repo": "my-claude-utils/clsh",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Access your terminal and your AI agent from any device — phone, tablet, desktop."
+  },
+  {
+    "repo": "russellromney/honker",
+    "branch": "main",
+    "language": "Python",
+    "description": "SQLite extension + bindings for Postgres NOTIFY/LISTEN semantics with durable queues, streams, pub/sub, and scheduler"
+  },
+  {
+    "repo": "chrisryugj/kordoc",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "모두 파싱해버리겠다 — HWP/HWPX/PDF → Markdown | npm · CLI · MCP Server"
+  },
+  {
+    "repo": "KAOPU-XiaoPu/web-design",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Claude Code SKILL for designing beautiful, consistent web pages — spec first, code second."
+  },
+  {
+    "repo": "akitaonrails/FrankSherlock",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Intelligent File Searcher that can search for descriptions in media files like photos, for example receipt from market of $42.00 using AI based classification"
+  },
+  {
+    "repo": "nexu-io/auto-github-contributor",
+    "branch": "main",
+    "language": "Shell",
     "description": ""
   },
   {
-    "repo": "elder-plinius/GLOSSOPETRAE",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "LINGUISTIC ENGINE FOR AI"
-  },
-  {
-    "repo": "IyadhKhalfallah/clauditor",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Stop Claude Code from burning through your quota in 20 minutes. Auto-rotates oversized sessions and preserves context."
-  },
-  {
-    "repo": "poteto/brainmaxxing",
-    "branch": "main",
-    "language": "Python",
-    "description": "stupid simple persistent memory and skill improvement"
-  },
-  {
-    "repo": "freestylefly/wechat-cli",
-    "branch": "main",
-    "language": "Python",
-    "description": "A CLI tool to query your local WeChat data — chat history, contacts, sessions, favorites, and more. Designed for LLM integration."
-  },
-  {
-    "repo": "PowerShell/vscode-powershell",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Provides PowerShell language and debugging support for Visual Studio Code"
-  },
-  {
-    "repo": "moltlaunch/cashclaw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An autonomous agent that takes work, does work, gets paid, and gets better at it."
-  },
-  {
-    "repo": "vxcozy/tome",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Beautiful documentation that doesn't cost a fortune. Open-source Mintlify alternative."
-  },
-  {
-    "repo": "TanStack/router",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more)."
-  },
-  {
-    "repo": "redux-saga/redux-saga",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "An alternative side effect model for Redux apps"
-  },
-  {
-    "repo": "codeany-ai/codeany",
+    "repo": "louisho5/picobot",
     "branch": "main",
     "language": "Go",
-    "description": "Open-source AI-powered terminal agent. Built in Go."
+    "description": "A lightweight self-hosted bot in a single binary, written in Go."
   },
   {
-    "repo": "wevm/incur",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI framework for agents and humans"
-  },
-  {
-    "repo": "Azure/azure-sdk-for-python",
+    "repo": "DLYuanGod/MegaTrain",
     "branch": "main",
     "language": "Python",
-    "description": "This repository is for active development of the Azure SDK for Python. For consumers of the SDK we recommend visiting our public developer docs at https://learn.microsoft.com/python/azure/ or our versioned developer docs at https://azure.github.io/azure-sdk-for-python."
-  },
-  {
-    "repo": "Shubhamsaboo/awesome-llm-apps",
-    "branch": "main",
-    "language": "Python",
-    "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models."
-  },
-  {
-    "repo": "airbnb/lottie-android",
-    "branch": "master",
-    "language": "Java",
-    "description": "Render After Effects animations natively on Android and iOS, Web, and React Native"
-  },
-  {
-    "repo": "tanbiralam/claude-code",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. All original source code is the property of Anthropic."
-  },
-  {
-    "repo": "reduxjs/reselect",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Selector library for Redux"
-  },
-  {
-    "repo": "LING71671/Open-ClaudeCode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "ClaudeCode related repository"
-  },
-  {
-    "repo": "googleapis/google-cloud-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "Google Cloud Client Library for Python"
-  },
-  {
-    "repo": "adamlyttleapps/notchy",
-    "branch": "main",
-    "language": "Swift",
     "description": ""
   },
   {
-    "repo": "rabbitmq/rabbitmq-server",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
-  },
-  {
-    "repo": "django/django",
+    "repo": "YeQing17-2026/OmniAgent",
     "branch": "main",
     "language": "Python",
-    "description": "The Web framework for perfectionists with deadlines."
+    "description": "An agent capable of self-evolving and dynamically hardening security"
   },
   {
-    "repo": "TanStack/table",
+    "repo": "Parallax-Trading/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,polymarket trading bot,polymarket copy trading bot,"
+  },
+  {
+    "repo": "xiaochong/hi-kid",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table"
+    "description": "HiKid - Your AI English Pal. An desktop app built with React and TypeScript, targeting children in non-English-speaking countries who want to practice English speaking and listening."
+  },
+  {
+    "repo": "vuciv/artblock",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Every ad on the internet, replaced with fine art from public museum and NASA collections."
+  },
+  {
+    "repo": "iamlukethedev/Claw3D",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claw3D is an open source 3D engine built on OpenClaw for creating games, simulations, and high-performance 3D applications."
+  },
+  {
+    "repo": "DatanoiseTV/tinyice",
+    "branch": "main",
+    "language": "Go",
+    "description": "A tiny audio streaming server (compatible with icecast2) written in Go with multiple mountpoint, multi-source, and relaying support."
+  },
+  {
+    "repo": "browser-use/browser-harness-js",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Self-healing browser harness that enables LLMs to complete any task"
+  },
+  {
+    "repo": "Thearas/wechat-db-decrypt-macos",
+    "branch": "main",
+    "language": "Python",
+    "description": "macOS arm64 微信 4.1 数据库解密，只在最新的微信 4.1.2.241 测试过，不支持4.0 以下版本"
+  },
+  {
+    "repo": "therealaleph/sni-spoofing-rust",
+    "branch": "main",
+    "language": "Rust",
+    "description": "SNI spoofing for Windows, Linux and MacOS / works alongside v2ray connections, idea and windows by @patterniha, I just did the linux & rust one"
+  },
+  {
+    "repo": "gradenGnostic/LegacyLauncher",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A custom launcher for Minecraft LCE."
+  },
+  {
+    "repo": "SamadhiFire/xinqingnian-skill",
+    "branch": "main",
+    "language": "HTML",
+    "description": "新青年Skill/新青年/毛选Skill/毛泽东选集：把“新中国最会解决问题的脑子”请来，当一次“临时参谋”。157篇原文蒸馏 · 184份拆解稿沉淀 ·18条风险边界 · 8张方法卡 · 6类场景入口 · 2种输出报告，把《毛选》方法论变成可执行的现实分析 skill。用于复杂问题分析、自我管理、团队治理、关系边界与决策判断。"
+  },
+  {
+    "repo": "Anemll/flash-moe",
+    "branch": "m5-nax",
+    "language": "Objective-C",
+    "description": ""
   }
 ]
