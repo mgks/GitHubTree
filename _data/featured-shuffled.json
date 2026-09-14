@@ -1,146 +1,146 @@
 [
   {
-    "repo": "hbddevos/PumpFun-Trainer_V1",
+    "repo": "ghostty-org/ghostling",
     "branch": "main",
-    "language": "Python",
-    "description": "An advanced AI‑driven trading utility for Solana meme‑coins, featuring sniper, auto‑sell, MEV protection, multi‑wallet, alerts, and price monitoring."
-  },
-  {
-    "repo": "tj/n",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Node version management"
-  },
-  {
-    "repo": "redis/hiredis",
-    "branch": "master",
     "language": "C",
-    "description": "Minimalistic C client for Redis >= 1.2"
+    "description": "A minimum viable terminal emulator built on top of the libghostty C API. Ex minimo, infinita nascuntur. 👻🐣"
   },
   {
-    "repo": "Lucent-Snow/style-extractor",
+    "repo": "jackc/pgx",
+    "branch": "master",
+    "language": "Go",
+    "description": "PostgreSQL driver and toolkit for Go"
+  },
+  {
+    "repo": "omnigent-ai/omnigent",
     "branch": "main",
+    "language": "Python",
+    "description": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check with policies and sandboxing, and collaborate in real time on the same live session, from any device."
+  },
+  {
+    "repo": "freestylefly/openclaw-wechat",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "让 OpenClaw稳定的连上你的个人微信"
+  },
+  {
+    "repo": "react-native-picker/picker",
+    "branch": "master",
     "language": "JavaScript",
-    "description": "一个能够提取最大化提取网页风格的skill"
+    "description": "Picker is a cross-platform UI component for selecting an item from a list of options."
   },
   {
-    "repo": "stanford-iris-lab/meta-harness",
-    "branch": "main",
-    "language": "Python",
-    "description": "Reference code for the Meta-Harness paper."
-  },
-  {
-    "repo": "rohitg00/ai-engineering-from-scratch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Learn it. Build it. Ship it for others."
-  },
-  {
-    "repo": "miaoxworld/OpenClawInstaller",
-    "branch": "main",
-    "language": "Shell",
-    "description": "ClawdBot 一键部署工具"
-  },
-  {
-    "repo": "GainSec/AutoProber",
-    "branch": "main",
-    "language": "Python",
-    "description": "Hardware hacker’s flying probe automation stack for agent-driven   target discovery, microscope mapping, safety-monitored CNC motion, probe review, and   controlled pin probing."
-  },
-  {
-    "repo": "AnnaSuSu/TechSpar",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI 驱动的八股文面试备战系统。支持长期记忆和人物画像，系统会记住你每次的表现，追踪薄弱点和掌握度，自动针对短板出题。支持简历模拟面试和专项强化训练，练得越多，题目越精准，一个越来越了解你的 AI 面试教练。"
-  },
-  {
-    "repo": "infraform/polymarket-copy-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
-  },
-  {
-    "repo": "Zehong-Ma/PixelGen",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official repository for “PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss”"
-  },
-  {
-    "repo": "cosmic-market/polymarket-copy-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copy trading Bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrading bot polymarket copytrade"
-  },
-  {
-    "repo": "Robbyant/lingbot-world",
-    "branch": "main",
-    "language": "Python",
-    "description": "Advancing Open-source World Models"
-  },
-  {
-    "repo": "softmatcha/softmatcha2",
-    "branch": "main",
-    "language": "Python",
-    "description": "A fast and soft pattern search for trillion-scale corpora."
-  },
-  {
-    "repo": "ant-design/ant-design",
+    "repo": "ahmetb/kubectx",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "An enterprise-class UI design language and React UI library"
+    "language": "Go",
+    "description": "Faster way to switch between clusters and namespaces in kubectl"
   },
   {
-    "repo": "alibaba/ice",
+    "repo": "react-navigation/react-navigation",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Routing and navigation for React Native and Web apps"
+  },
+  {
+    "repo": "Railly/agentfiles",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Discover, organize, and edit AI coding agent skills across Claude Code, Cursor, Codex, Windsurf, and more, from inside Obsidian."
+  },
+  {
+    "repo": "coredns/coredns",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "🚀 ice.js: The Progressive App Framework Based On React（基于 React 的渐进式应用框架）"
+    "language": "Go",
+    "description": "CoreDNS is a DNS server that chains plugins"
   },
   {
-    "repo": "mrphrazer/agentic-malware-analysis",
-    "branch": "main",
-    "language": "YARA",
-    "description": "Agentic malware analysis environment with MCP-connected disassemblers, RE tooling, and structured workflows for Claude Code and Codex CLI."
-  },
-  {
-    "repo": "coleam00/claude-memory-compiler",
-    "branch": "main",
-    "language": "Python",
-    "description": "Give Claude Code a memory that evolves with your codebase. Hooks automatically capture sessions, the Claude Agent SDK extracts key decisions and lessons, and an LLM compiler organizes everything into structured, cross-referenced knowledge articles - inspired by Karpathy's LLM Knowledge Base architecture."
-  },
-  {
-    "repo": "bleuropa/loomkin",
-    "branch": "main",
-    "language": "Elixir",
-    "description": "An Elixir-native AI coding assistant with persistent decision graphs, repo intelligence, and a Phoenix LiveView UI"
-  },
-  {
-    "repo": "KlingAIResearch/X-Dub",
-    "branch": "master",
-    "language": "Python",
-    "description": "Try X-Dub to sync any character in a video with any audio you like | Official repository for From Inpainting to Editing: Unlocking Robust Mask-Free Visual Dubbing via Generative Bootstrapping"
-  },
-  {
-    "repo": "EvilFreelancer/openapi-to-cli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Turns any OpenAPI/Swagger API into an CLI with set of commands. One CLI command per endpoint."
-  },
-  {
-    "repo": "Shpigford/chops",
+    "repo": "apple/swift-protobuf",
     "branch": "main",
     "language": "Swift",
-    "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp."
+    "description": "Plugin and runtime library for using protobuf with Swift"
   },
   {
-    "repo": "h9zdev/WireTapper",
-    "branch": "main",
-    "language": "HTML",
-    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
-  },
-  {
-    "repo": "ferrolho/VL53L5CX-BNO08X-viewer",
+    "repo": "Dataherald/dataherald",
     "branch": "main",
     "language": "Python",
-    "description": "Turn a Time-of-Flight sensor into a 3D Scanner"
+    "description": "Interact with your SQL database, Natural Language to SQL using LLMs"
+  },
+  {
+    "repo": "aiming-lab/AutoResearchClaw",
+    "branch": "main",
+    "language": "Python",
+    "description": "Fully autonomous research from idea to paper. Chat an Idea. Get a Paper. Fully Autonomous. 🦞"
+  },
+  {
+    "repo": "gleam-lang/gleam",
+    "branch": "main",
+    "language": "Rust",
+    "description": "⭐️ A friendly language for building type-safe, scalable systems!"
+  },
+  {
+    "repo": "sindresorhus/type-fest",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A collection of essential TypeScript types"
+  },
+  {
+    "repo": "shaom/svg-hand-drawn-skill",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "delta-io/delta",
+    "branch": "master",
+    "language": "Scala",
+    "description": "An open-source storage framework that enables building a Lakehouse architecture with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs"
+  },
+  {
+    "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "The largest open-source medical AI skills library for OpenClaw🦞."
+  },
+  {
+    "repo": "larksuite/openclaw-lark",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "飞书官方出品的 OpenClaw 飞书/Lark Channel 插件"
+  },
+  {
+    "repo": "Creators-of-Aeronautics/Simulated-Project",
+    "branch": "main",
+    "language": "Java",
+    "description": "Build anything from airships to planes and cars!"
+  },
+  {
+    "repo": "cube-js/cube",
+    "branch": "master",
+    "language": "Rust",
+    "description": "📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics"
+  },
+  {
+    "repo": "openai/sora-prompt-engineering-guide",
+    "branch": "main",
+    "language": "Other",
+    "description": "Guide for prompt engineering for video generation with Sora."
+  },
+  {
+    "repo": "vercel-labs/wterm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A terminal emulator for the web"
+  },
+  {
+    "repo": "bytedance-deerflow/deer-flow-installer",
+    "branch": "main",
+    "language": "Python",
+    "description": "🦌 DeerFlow 2.0 installer - open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours."
+  },
+  {
+    "repo": "inspatio/inspatio-world",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
   }
 ]
