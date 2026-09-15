@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ViceVerse-cz/Serein",
+    "repo": "fluxcd/flux2",
     "branch": "main",
-    "language": "Rust",
-    "description": "Tiny, Performant & 100% Native client for Discord made in Rust"
+    "language": "Go",
+    "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
   },
   {
-    "repo": "helix-editor/helix",
+    "repo": "chojs23/concord",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A feature rich terminal client for Discord"
+  },
+  {
+    "repo": "sharkdp/hyperfine",
     "branch": "master",
     "language": "Rust",
-    "description": "A post-modern modal text editor."
+    "description": "A command-line benchmarking tool"
   },
   {
-    "repo": "devanshulakhani/val",
-    "branch": "main",
+    "repo": "stong/gradscii-art",
+    "branch": "master",
+    "language": "Python",
+    "description": "An extremely good ASCII art generator, based on machine learning"
+  },
+  {
+    "repo": "mpv-player/mpv",
+    "branch": "master",
+    "language": "C",
+    "description": "🎥 Command line media player"
+  },
+  {
+    "repo": "goldbergyoni/nodebestpractices",
+    "branch": "master",
+    "language": "Dockerfile",
+    "description": ":white_check_mark:  The Node.js best practices list (July 2024)"
+  },
+  {
+    "repo": "boto/boto3",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Boto3, an AWS SDK for Python"
+  },
+  {
+    "repo": "docker/awesome-compose",
+    "branch": "master",
     "language": "HTML",
+    "description": "Awesome Docker Compose samples"
+  },
+  {
+    "repo": "unjs/nitro",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer."
+  },
+  {
+    "repo": "arduino/Arduino",
+    "branch": "master",
+    "language": "Java",
+    "description": "Arduino IDE 1.x"
+  },
+  {
+    "repo": "getsentry/sentry-javascript",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Official Sentry SDKs for JavaScript"
+  },
+  {
+    "repo": "curvefi/curve-contract",
+    "branch": "master",
+    "language": "Python",
+    "description": "Vyper contracts used in Curve.fi exchange pools."
+  },
+  {
+    "repo": "pyg-team/pytorch_geometric",
+    "branch": "master",
+    "language": "Python",
+    "description": "Graph Neural Network Library for PyTorch"
+  },
+  {
+    "repo": "soloterm/screen",
+    "branch": "main",
+    "language": "PHP",
+    "description": "A terminal renderer written in pure PHP."
+  },
+  {
+    "repo": "SergioBenitez/Rocket",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A web framework for Rust."
+  },
+  {
+    "repo": "TianyiDataScience/openclaw-control-center",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "weareaisle/nano-analyzer",
-    "branch": "main",
-    "language": "Python",
-    "description": "A minimal LLM-powered zero-day vulnerability scanner by AISLE."
-  },
-  {
-    "repo": "microsoft/AI",
+    "repo": "ruanyf/weekly",
     "branch": "master",
+    "language": "Other",
+    "description": "科技爱好者周刊，每周五发布"
+  },
+  {
+    "repo": "matrix-org/synapse",
+    "branch": "develop",
     "language": "Python",
-    "description": "Microsoft AI"
+    "description": "Synapse: Matrix homeserver written in Python/Twisted."
   },
   {
-    "repo": "nolenroyalty/yt-browse",
+    "repo": "xgen-universe/Capybara",
     "branch": "main",
-    "language": "Go",
-    "description": "it's like search, but for youtube"
-  },
-  {
-    "repo": "junaid-mahmood/nlsh",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Turn natural language to terminal commands"
-  },
-  {
-    "repo": "stellarlinkco/myclaw",
-    "branch": "main",
-    "language": "Go",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "keanucz/detour",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026"
-  },
-  {
-    "repo": "facebookresearch/actionmesh",
-    "branch": "main",
-    "language": "Python",
-    "description": "🎬ActionMesh: A fast video to animated mesh model with unprecedented quality. Generate animated mesh seamlessly importable into any 3D software in less than a minute."
-  },
-  {
-    "repo": "AlexsJones/llmfit",
+    "repo": "vignesh07/babyshark",
     "branch": "main",
     "language": "Rust",
-    "description": "94 models. 30 providers. One command to find what runs on your hardware."
+    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
   },
   {
-    "repo": "amneziawg-mikrotik/awg-proxy",
+    "repo": "avelino/awesome-go",
     "branch": "main",
     "language": "Go",
-    "description": ""
+    "description": "A curated list of awesome Go frameworks, libraries and software"
   },
   {
-    "repo": "glommer/codemogger",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Codemogger is a code indexing library and MCP server for AI coding agents"
-  },
-  {
-    "repo": "microsoft/DeepSpeed",
-    "branch": "master",
-    "language": "Python",
-    "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective."
-  },
-  {
-    "repo": "shareAI-lab/claw0",
-    "branch": "main",
-    "language": "Python",
-    "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch"
-  },
-  {
-    "repo": "Kindness-Kismet/One-Player",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "增强的 Android 视频播放器"
-  },
-  {
-    "repo": "firewalld/firewalld",
-    "branch": "main",
-    "language": "Python",
-    "description": "Stateful zone based firewall daemon with D-Bus interface"
-  },
-  {
-    "repo": "PinchToDebug/EverythingQuickSearch",
+    "repo": "shadowsocks/shadowsocks-windows",
     "branch": "master",
     "language": "C#",
-    "description": ""
+    "description": "A C# port of shadowsocks"
   },
   {
-    "repo": "jackwener/twitter-cli",
+    "repo": "spacedriveapp/spacedrive",
     "branch": "main",
-    "language": "Python",
-    "description": "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
+    "language": "Rust",
+    "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust."
   },
   {
-    "repo": "PatrikFehrenbach/h1-brain",
+    "repo": "AssemblyScript/assemblyscript",
     "branch": "main",
-    "language": "Python",
-    "description": "MCP server that connects AI assistants to HackerOne for bug bounty hunting"
-  },
-  {
-    "repo": "rawwerks/ypi",
-    "branch": "master",
-    "language": "Shell",
-    "description": "A recursive coding agent inpired by RLMs"
-  },
-  {
-    "repo": "mikewang817/MacBar",
-    "branch": "master",
-    "language": "Swift",
-    "description": "A lightweight macOS menu bar clipboard manager with OCR, file support, and global hotkey"
-  },
-  {
-    "repo": "dazzyddos/PrivHound",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "A BloodHound OpenGraph collector that models Windows local privilege escalation as interconnected attack paths."
-  },
-  {
-    "repo": "Alex-Gilbert/unredact",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "WebAssembly",
+    "description": "A TypeScript-like language for WebAssembly."
   }
 ]
