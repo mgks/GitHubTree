@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best Shell Repositories Directory - Page 3 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best Shell repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/shell/3/">
+    <meta property="og:title" content="Best Shell Repositories Directory - Page 3 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best Shell repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/shell/3/">
+    <meta property="twitter:title" content="Best Shell Repositories Directory - Page 3 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best Shell repositories - Page 3. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-CwoFeDk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-x5ZfAYbv.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/shell/3/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/shell/2/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/shell/4/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> Private Access
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+            </div>
+            <div class="input-group branch-input">
+                <span class="prefix">branch:</span>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fas fa-search"></i> Fetch
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-header">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-actions-container">
+                <!-- Column 1: Embed Badge -->
+                <div class="repo-action-block">
+                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Feature Request (only shown when not indexed) -->
+                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fas fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>Shell Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/seramo/sni-scanner/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">seramo/sni-scanner</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">A lightweight Bash tool to scan common CDN ports on a list of IPs and domains.</p>
+                </a>
+                <a href="/repo/smallnest/autoresearch/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">smallnest/autoresearch</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">autoresearch for software development</p>
+                </a>
+                <a href="/repo/unclebob/swarm-forge/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">unclebob/swarm-forge</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">A simple tool for coordinating several AI agents.</p>
+                </a>
+                <a href="/repo/golbin/agent-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">golbin/agent-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Reusable agent skills for Codex and compatible tools</p>
+                </a>
+                <a href="/repo/nexu-io/auto-github-contributor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nexu-io/auto-github-contributor</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/worldwonderer/oh-story-claudecode/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">worldwonderer/oh-story-claudecode</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味全流程</p>
+                </a>
+                <a href="/repo/chaohong-ai/ai-auto-work/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">chaohong-ai/ai-auto-work</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Automatically completes the full workflow from requirement research → research review → planning → plan review → development →  development review using → test AI large language models. Capable of autonomously handling medium to large-scale engineering projects.</p>
+                </a>
+                <a href="/repo/charlie947/social-media-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">charlie947/social-media-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/evanklem/evanflow/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">evanklem/evanflow</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">A TDD-driven iterative feedback loop for software development. 16 cohesive Claude Code skills walk an idea from brainstorm → plan → execute → iterate, with checkpoints throughout.</p>
+                </a>
+                <a href="/repo/99xAgency/GodModeSkill/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">99xAgency/GodModeSkill</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Multi-LLM cross-review workflow for Claude Code. /work orchestrates plan/implement/bug-fix with 3 different model families voting on every gate.</p>
+                </a>
+                <a href="/repo/skydoves/compose-performance-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skydoves/compose-performance-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚡️ A curated library of Agent Skills focused on Jetpack Compose performance.</p>
+                </a>
+                <a href="/repo/noonghunna/club-3090/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">noonghunna/club-3090</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Community recipes for serving LLMs on RTX 3090. Multi-engine (vLLM, llama.cpp, SGLang) and model-agnostic. Currently shipping Qwen3.6-27B configs for 1× and 2× cards.</p>
+                </a>
+                <a href="/repo/DadsMmoLab/dads-mmo-lab/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">DadsMmoLab/dads-mmo-lab</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Offline MMO private servers on Steam Deck. Free guides, Docker scripts & shell installers for classic MMOs. No subscription. No internet. Forever. Visibility:       ✅ Public</p>
+                </a>
+                <a href="/repo/nostrband/ServiceGraph/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nostrband/ServiceGraph</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI Agent skills for a structured catalog of 100k+ US professional-services firms</p>
+                </a>
+                <a href="/repo/anthropics/cwc-long-running-agents/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">anthropics/cwc-long-running-agents</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/hoangnb24/harness-experimental/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hoangnb24/harness-experimental</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Salomondiei08/oh-my-hermes/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Salomondiei08/oh-my-hermes</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">An opinionated workflow layer for building, shipping, and operating apps with Hermes Agent</p>
+                </a>
+                <a href="/repo/shannhk/hermes-agent-control-room/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">shannhk/hermes-agent-control-room</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Control Room-first template for managing Hermes agents from one VPS agent to specialist teams and orchestrated workflows</p>
+                </a>
+                <a href="/repo/dtnewman/burn-baby-burn/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dtnewman/burn-baby-burn</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Be the most productive engineer on your team 🚀🚀🚀</p>
+                </a>
+                <a href="/repo/thananon/9arm-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">thananon/9arm-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/skydoves/android-testing-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">skydoves/android-testing-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">⚡️ A set of skills for Android testing: Compose UI, AndroidX Test, JVM unit tests, and ADB.</p>
+                </a>
+                <a href="/repo/Code-Leafy/G2rayXCodeLeafy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Code-Leafy/G2rayXCodeLeafy</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/nikvpn-iran/nikvpn-codespace/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">nikvpn-iran/nikvpn-codespace</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Free VLESS proxy using GitHub Codespaces - NikVPN for Iran</p>
+                </a>
+                <a href="/repo/hypnguyen1209/offensive-claude/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">hypnguyen1209/offensive-claude</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Offensive security toolkit for Claude Code covering red team, exploit dev, AD attacks, EDR bypass, mobile pentest</p>
+                </a>
+                <a href="/repo/zzzhhh1/mg-Koyeb/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zzzhhh1/mg-Koyeb</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">基于 Koyeb + Cloudflare Argo 隧道的 VLESS 安全单兵节点，详细纯小白视频教程，点击下方视频链接</p>
+                </a>
+                <a href="/repo/duggasco/bc250-40cu-unlock/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">duggasco/bc250-40cu-unlock</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Re-enable all 40 CUs on the AMD BC-250 (gfx1013 / Cyan Skillfish). Kernel patch + build script. 1.61x compute scaling verified.</p>
+                </a>
+                <a href="/repo/bryanyzhu/agentic-ai-system-course/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">bryanyzhu/agentic-ai-system-course</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Use agent to learn agent - A skeleton course on how to design, build, and operate production AI agents </p>
+                </a>
+                <a href="/repo/GOROman/nullevi03/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">GOROman/nullevi03</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/dockur/proxmox/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">dockur/proxmox</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Proxmox inside a Docker container.</p>
+                </a>
+                <a href="/repo/K-Dense-AI/science-superpowers/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">K-Dense-AI/science-superpowers</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Composable computational-science methodology skills for AI research agents — pre-registration over TDD. A science-domain reimplementation of Superpowers.</p>
+                </a>
+                <a href="/repo/Moh4696/websites-100-audit/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Moh4696/websites-100-audit</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Christian-Katzmann/app-it/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Christian-Katzmann/app-it</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Claude Code + Codex skill that turns a local project into a macOS Dock-launchable app — native window, its own icon, no Electron. [The Windows version is in BETA]</p>
+                </a>
+                <a href="/repo/Forlives/pearl-proxy-release/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Forlives/pearl-proxy-release</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">珍珠币(PEARL/PRL)矿池中转加速器 · 一键安装 · 实时面板 · 透明抽水 · 仅发布二进制</p>
+                </a>
+                <a href="/repo/zarazhangrui/beautiful-feishu-whiteboard/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">zarazhangrui/beautiful-feishu-whiteboard</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill.</p>
+                </a>
+                <a href="/repo/mizuamedesu/ReportSkills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">mizuamedesu/ReportSkills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/SkyBlue997/enableMacosAI/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SkyBlue997/enableMacosAI</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">国行 Mac 一键开启完整 Apple 智能(端侧 + Private Cloud Compute 云端)· macOS 27 / Apple Silicon</p>
+                </a>
+                <a href="/repo/lenucksi/aur-malware-check/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">lenucksi/aur-malware-check</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Detection tools for the June 2026 atomic-lockfile AUR supply-chain attack. Consolidated from community Gists.</p>
+                </a>
+                <a href="/repo/LearnPrompt/luban-skill/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">LearnPrompt/luban-skill</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">鲁班 | Luban — 把'能用的Skill'打磨成'能被装、能传播、能验证、能进化'的公共资产。Agent skill-polishing workshop: 验料·访行·过尺·慢刨·回炉</p>
+                </a>
+                <a href="/repo/duolahypercho/fusion-fable/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">duolahypercho/fusion-fable</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Fuse two frontier models into one Fable-tier answer: Opus 4.8 drafts, a second model (Opus 4.8 or GPT-5.5 via codex) checks, Opus fuses. A Claude Code skill.</p>
+                </a>
+                <a href="/repo/Nanako0129/coralline/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Nanako0129/coralline</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">🪸 Powerlevel10k-inspired statusline for Claude Code — paste one prompt and your AI interviews you, then installs it</p>
+                </a>
+                <a href="/repo/fivetaku/fablize/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">fivetaku/fablize</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.</p>
+                </a>
+                <a href="/repo/arnabbagxd/Brand-building-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">arnabbagxd/Brand-building-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Brand building skills for Claude Code and AI agents. strategy, naming, identity, voice, positioning, messaging, auditing, and launch</p>
+                </a>
+                <a href="/repo/craftzdog/tmux-claude-session-manager/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">craftzdog/tmux-claude-session-manager</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Run many Claude Code sessions across your projects, each in its own tmux session — then list them, see which are done vs. still working, and jump to one from a single popup.</p>
+                </a>
+                <a href="/repo/tongxuluo/gamecraft-bench/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">tongxuluo/gamecraft-bench</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Code and Data for paper "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?"</p>
+                </a>
+                <a href="/repo/0xSero/glm-5.2-sm120/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">0xSero/glm-5.2-sm120</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">GLM-5.2-NVFP4-REAP-469B serving on SM120 (4× RTX PRO 6000 Blackwell) — one-command vLLM launch recipe, 250K context, DeepSeek Sparse Attention + MTP speculative decode</p>
+                </a>
+                <a href="/repo/SakanaAI/fugu/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">SakanaAI/fugu</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/Env-Kit/envkit-releases/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Env-Kit/envkit-releases</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">EnvKit — free local development environment for Windows & macOS: nginx/Apache, multiple PHP versions, MySQL/MariaDB,   PostgreSQL, Redis, MongoDB, Mailpit, Node.js, trusted .test HTTPS, and a built-in MCP server for AI-assistant control.   A Laragon/XAMPP/Herd alternative.</p>
+                </a>
+                <a href="/repo/Mekotofeuka/MTPROTO_FIX_By_MEKO/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mekotofeuka/MTPROTO_FIX_By_MEKO</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">MTProto fix - stable fixes the limitations that occurred on June 4</p>
+                </a>
+                <a href="/repo/jamesob/local-llm/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">jamesob/local-llm</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Everything I know about running LLMs locally</p>
+                </a>
+                <a href="/repo/Mayuqi-crypto/HowToGetAlongWithGirls/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Mayuqi-crypto/HowToGetAlongWithGirls</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Dating coach skills and references</p>
+                </a>
+                <a href="/repo/haiou-666/haiou2.0-Claude-Code-/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">haiou-666/haiou2.0-Claude-Code-</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">海鸥 2.0 — Claude Code 人格重塑配置包。让 Claude 摆脱客服腔和过度谨慎，化身一位嘴硬心软、直来直往的资深中文安全研究员"海鸥"——专注技术，不废话，不绕弯子，不说"作为AI"，直接给代码不给免责声明。标志性问候"海鸥在线，你要整点薯条吗？"。1700+ few-shot 示例锁定人格防脱壳，200+ 安全/游戏术语映射覆盖渗透测试、逆向工程、游戏开发等技术场景。一键部署，跨平台支持 Windows/macOS/Linux，自动备份原配置，可一键卸载恢复，无侵入式安装。MIT License，仅供学习交流。</p>
+                </a>
+                <a href="/repo/Kulaxyz/token-diet/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">Kulaxyz/token-diet</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness.</p>
+                </a>
+                <a href="/repo/xuanxuan321/xuanxuan-prompts/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xuanxuan321/xuanxuan-prompts</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">AI Agent 复刻精美网页的提示词合集：每个目录一份 prompt.md + 效果图截图，丢给 Claude/Codex/Kimi 即可生成对应网站</p>
+                </a>
+                <a href="/repo/u-ichi/compact-plus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">u-ichi/compact-plus</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Claude Code plugin: preserve and restore working state around /compact</p>
+                </a>
+                <a href="/repo/sunflower-of-parchman/codex-hygiene/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">sunflower-of-parchman/codex-hygiene</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Codex skill for auditing and tuning Codex Desktop context/tool surfaces</p>
+                </a>
+                <a href="/repo/xsser/cliproxyapi-cloudflare-stack/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">xsser/cliproxyapi-cloudflare-stack</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">感谢马斯克 让我grok自由，免费注册grok 无数个号。然后cpa自由使用</p>
+                </a>
+                <a href="/repo/aws-samples/sample-specship/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">aws-samples/sample-specship</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Spec-driven autonomous engineering workflow for AI coding agents: recon → plan → build → validate → ship — with TDD, adversarial validation, and anti-slop quality gates. Packaged as a Kiro Power.</p>
+                </a>
+                <a href="/repo/my-take-dev/inspired-mino-design-skills/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">my-take-dev/inspired-mino-design-skills</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">ミノ駆動氏のWebに掲載されている資料から作成した開発スキル</p>
+                </a>
+                <a href="/repo/iptvorganization/TV-AutoBuild/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">iptvorganization/TV-AutoBuild</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Monitored public GitHub Actions builds for iptvorganization TV Mobile and Leanback APKs</p>
+                </a>
+                <a href="/repo/JimLiu/baocut/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title">JimLiu/baocut</span>
+                        <span class="mrc-lang">Shell <i class="fas fa-circle mrc-lang-dot lang-shell"></i></span>
+                    </div>
+                    <p class="mrc-desc">Open-source Agent Skill that drives the BaoCut macOS app CLI (transcribe · subtitle · translate · cut) from Claude Code, Codex, and other agents</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/shell/2/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 3 of 4</span>
+                        <a href="/language/shell/4/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fas fa-filter"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn">
+                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="styleDropdownContainer">
+                        <button class="tool-btn" id="styleBtn">
+                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
+                        </button>
+                        <div class="dropdown-content" id="styleDropdown">
+                            <a href="#" data-style="classic">Classic (└──)</a>
+                            <a href="#" data-style="slashed">Slashed (/src)</a>
+                            <a href="#" data-style="plus">ASCII (+--)</a>
+                            <a href="#" data-style="minimal">Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted">Bulleted (•)</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                    </button>
+                    <button id="shareBtn" class="tool-btn responsive-btn">
+                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
+                    </button>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+</body>
+</html>
