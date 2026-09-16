@@ -1,146 +1,146 @@
 [
   {
-    "repo": "NativeScript/NativeScript",
+    "repo": "sdcb/SimdPaddleOCR",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love ❤️ Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Flutter and you name it compatible."
+    "language": "C#",
+    "description": "纯 C# PP-OCRv6 推理库：多平台 SIMD 优化、较低内存占用、高正确率。"
   },
   {
-    "repo": "577206/knowledge-forge",
+    "repo": "alainnothere/llm-circuit-finder",
+    "branch": "main",
+    "language": "Python",
+    "description": "I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B improves logical deduction from 0.22→0.76 on BBH — no training, no weight changes, just routing hidden states through the same circuit twice. Tools included. Two AMD GPUs, one evening."
+  },
+  {
+    "repo": "gitleaks/gitleaks",
+    "branch": "master",
+    "language": "Go",
+    "description": "Find secrets with Gitleaks 🔑"
+  },
+  {
+    "repo": "OpenZeppelin/openzeppelin-contracts",
+    "branch": "master",
+    "language": "Solidity",
+    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
+  },
+  {
+    "repo": "ant-design/ant-design-pro",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
+  },
+  {
+    "repo": "MetaMask/metamask-extension",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites"
+  },
+  {
+    "repo": "jmoiron/sqlx",
+    "branch": "master",
+    "language": "Go",
+    "description": "general purpose extensions to golang's database/sql"
+  },
+  {
+    "repo": "immerjs/immer",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Local-first Obsidian knowledge ingestion workbench for PDFs, Markdown, TXT and spreadsheets."
+    "description": "Create the next immutable state by mutating the current one"
   },
   {
-    "repo": "promptpirate-x/discord-id-bypass-tool",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A verified tool that works on any potato computer that will let you bypass discord verification"
+    "repo": "solana-labs/solana",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces."
   },
   {
-    "repo": "jupyter/notebook",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Jupyter Interactive Notebook"
-  },
-  {
-    "repo": "TristanH/wikiwise",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "SamuelQZQ/auto-coding-agent-demo",
+    "repo": "payloadcms/payload",
     "branch": "main",
     "language": "TypeScript",
-    "description": "一个长达 10 小时的 AI 全自动编程实验"
+    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
   },
   {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "Koenkk/zigbee2mqtt",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Zigbee 🐝 to MQTT bridge 🌉, get rid of your proprietary Zigbee bridges 🔨"
-  },
-  {
-    "repo": "VoltAgent/awesome-design-md",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI."
-  },
-  {
-    "repo": "supermalparit/Towns",
-    "branch": "main",
-    "language": "Java",
-    "description": "Repository for the Towns game"
-  },
-  {
-    "repo": "mikewang817/MacBar",
-    "branch": "master",
-    "language": "Swift",
-    "description": "A lightweight macOS menu bar clipboard manager with OCR, file support, and global hotkey"
-  },
-  {
-    "repo": "agenticnotetaking/arscontexta",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own."
-  },
-  {
-    "repo": "tilt-dev/tilt",
-    "branch": "master",
-    "language": "Go",
-    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
-  },
-  {
-    "repo": "apple/swift-log",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A Logging API for Swift"
-  },
-  {
-    "repo": "trumpet-noek/sora2-free-watermark-remover",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 free watermark remover"
-  },
-  {
-    "repo": "ethanweber/posterskill",
-    "branch": "main",
-    "language": "HTML",
-    "description": "AI-assisted academic posters."
-  },
-  {
-    "repo": "falcosecurity/falco",
-    "branch": "master",
-    "language": "C++",
-    "description": "Cloud Native Runtime Security"
-  },
-  {
-    "repo": "rachartier/tiny-cmdline.nvim",
-    "branch": "main",
-    "language": "Lua",
-    "description": "A Neovim plugin that repositions the cmdline as a centered floating window, powered by Neovim's native ui2 system."
-  },
-  {
-    "repo": "actions/upload-artifact",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Upload artifacts from your workflow"
-  },
-  {
-    "repo": "Willis404/Professional-Polymarket-Trading-Bots-Suite-AI-Powered-Arbitrage-Copy-Trading",
+    "repo": "meilisearch/meilisearch",
     "branch": "main",
     "language": "Rust",
-    "description": "Polymarket Trading Bot, Polymarket Arbitrage Bot, Polymarket Copy Trading, Automated Polymarket Trading, Polymarket Bot Rust, Synth AI Trading, Bittensor Trading Bot, Polymarket Prediction Markets, Crypto Trading Bot, DeFi Trading Automation"
+    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
   },
   {
-    "repo": "docker/buildx",
+    "repo": "github/hub",
     "branch": "master",
     "language": "Go",
-    "description": "Docker CLI plugin for extended build capabilities with BuildKit"
+    "description": "A command-line tool that makes git easier to use with GitHub."
   },
   {
-    "repo": "antfu/tsnapi",
+    "repo": "elastic/beats",
+    "branch": "main",
+    "language": "Go",
+    "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash"
+  },
+  {
+    "repo": "influxdata/influxdb",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Scalable datastore for metrics, events, and real-time analytics"
+  },
+  {
+    "repo": "vinta/awesome-python",
+    "branch": "master",
+    "language": "Python",
+    "description": "An opinionated list of awesome Python frameworks, libraries, software and resources."
+  },
+  {
+    "repo": "junit-team/junit4",
+    "branch": "main",
+    "language": "Java",
+    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
+  },
+  {
+    "repo": "ericboy0224/learn-docker-and-k8s",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Interactive AI-driven game to learn Docker, Linux, networking & Kubernetes. Open in Claude Code or Cursor, type 'let's play'."
+  },
+  {
+    "repo": "jobrunr/JavaClaw",
+    "branch": "main",
+    "language": "Java",
+    "description": "JavaClaw, a Java version of OpenClaw built on Spring Boot, Spring AI and JobRunr"
+  },
+  {
+    "repo": "op7418/m5-paper-buddy",
+    "branch": "main",
+    "language": "C++",
+    "description": "📟 Claude Code physical companion on M5Paper V1.1 e-ink. Multi-session dashboard, hardware approval (buttons + touch), AskUserQuestion option cards, CJK, USB/BLE, installable as a Claude Code plugin. / Claude Code 实体搭档，把 M5Paper 变成 Claude Code 的多会话看板 + 硬件审批面板。"
+  },
+  {
+    "repo": "nextui-org/nextui",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Library public API snapshot testing for runtime exports and type declarations."
+    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
   },
   {
-    "repo": "matteyeux/coruna",
+    "repo": "YeQing17-2026/OmniAgent",
     "branch": "main",
     "language": "Python",
-    "description": "deobfuscated JS and blobs from https://b27[.]icu, first attempt at using claude"
+    "description": "An agent capable of self-evolving and dynamically hardening security"
   },
   {
-    "repo": "jzOcb/writing-style-skill",
+    "repo": "uber-go/zap",
+    "branch": "master",
+    "language": "Go",
+    "description": "Blazing fast, structured, leveled logging in Go."
+  },
+  {
+    "repo": "istio/istio.io",
+    "branch": "master",
+    "language": "HTML",
+    "description": "Source for the istio.io site"
+  },
+  {
+    "repo": "AThevon/TokenEater",
     "branch": "main",
-    "language": "Python",
-    "description": "Writing style skill template with built-in auto-learning. AI writes → you edit → rules auto-extracted → SKILL.md improves. Works with Claude Code + OpenClaw."
+    "language": "Swift",
+    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
   }
 ]
