@@ -1,146 +1,146 @@
 [
   {
-    "repo": "sdcb/SimdPaddleOCR",
-    "branch": "main",
-    "language": "C#",
-    "description": "纯 C# PP-OCRv6 推理库：多平台 SIMD 优化、较低内存占用、高正确率。"
+    "repo": "awesome-selfhosted/awesome-selfhosted",
+    "branch": "master",
+    "language": "Other",
+    "description": "A list of Free Software network services and web applications which can be hosted on your own servers"
   },
   {
-    "repo": "alainnothere/llm-circuit-finder",
+    "repo": "2417467487-hub/WorldCupROI",
     "branch": "main",
     "language": "Python",
-    "description": "I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B improves logical deduction from 0.22→0.76 on BBH — no training, no weight changes, just routing hidden states through the same circuit twice. Tools included. Two AMD GPUs, one evening."
+    "description": "Sports sponsorship intelligence platform for World Cup match data, real-source text signals, ROI prediction, uncertainty analysis, and scenario recommendations."
   },
   {
-    "repo": "gitleaks/gitleaks",
-    "branch": "master",
-    "language": "Go",
-    "description": "Find secrets with Gitleaks 🔑"
-  },
-  {
-    "repo": "OpenZeppelin/openzeppelin-contracts",
-    "branch": "master",
-    "language": "Solidity",
-    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
-  },
-  {
-    "repo": "ant-design/ant-design-pro",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
-  },
-  {
-    "repo": "MetaMask/metamask-extension",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites"
-  },
-  {
-    "repo": "jmoiron/sqlx",
-    "branch": "master",
-    "language": "Go",
-    "description": "general purpose extensions to golang's database/sql"
-  },
-  {
-    "repo": "immerjs/immer",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Create the next immutable state by mutating the current one"
-  },
-  {
-    "repo": "solana-labs/solana",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces."
-  },
-  {
-    "repo": "payloadcms/payload",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications."
-  },
-  {
-    "repo": "meilisearch/meilisearch",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications."
-  },
-  {
-    "repo": "github/hub",
-    "branch": "master",
-    "language": "Go",
-    "description": "A command-line tool that makes git easier to use with GitHub."
-  },
-  {
-    "repo": "elastic/beats",
-    "branch": "main",
-    "language": "Go",
-    "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash"
-  },
-  {
-    "repo": "influxdata/influxdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Scalable datastore for metrics, events, and real-time analytics"
-  },
-  {
-    "repo": "vinta/awesome-python",
-    "branch": "master",
-    "language": "Python",
-    "description": "An opinionated list of awesome Python frameworks, libraries, software and resources."
-  },
-  {
-    "repo": "junit-team/junit4",
-    "branch": "main",
-    "language": "Java",
-    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
-  },
-  {
-    "repo": "ericboy0224/learn-docker-and-k8s",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Interactive AI-driven game to learn Docker, Linux, networking & Kubernetes. Open in Claude Code or Cursor, type 'let's play'."
-  },
-  {
-    "repo": "jobrunr/JavaClaw",
-    "branch": "main",
-    "language": "Java",
-    "description": "JavaClaw, a Java version of OpenClaw built on Spring Boot, Spring AI and JobRunr"
-  },
-  {
-    "repo": "op7418/m5-paper-buddy",
-    "branch": "main",
-    "language": "C++",
-    "description": "📟 Claude Code physical companion on M5Paper V1.1 e-ink. Multi-session dashboard, hardware approval (buttons + touch), AskUserQuestion option cards, CJK, USB/BLE, installable as a Claude Code plugin. / Claude Code 实体搭档，把 M5Paper 变成 Claude Code 的多会话看板 + 硬件审批面板。"
-  },
-  {
-    "repo": "nextui-org/nextui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
-  },
-  {
-    "repo": "YeQing17-2026/OmniAgent",
-    "branch": "main",
-    "language": "Python",
-    "description": "An agent capable of self-evolving and dynamically hardening security"
-  },
-  {
-    "repo": "uber-go/zap",
-    "branch": "master",
-    "language": "Go",
-    "description": "Blazing fast, structured, leveled logging in Go."
-  },
-  {
-    "repo": "istio/istio.io",
+    "repo": "ripienaar/free-for-dev",
     "branch": "master",
     "language": "HTML",
-    "description": "Source for the istio.io site"
+    "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
   },
   {
-    "repo": "AThevon/TokenEater",
+    "repo": "sooryathejas/METATRON",
     "branch": "main",
-    "language": "Swift",
-    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
+    "language": "Python",
+    "description": "AI-powered penetration testing assistant using local LLM on linux (Parrot OS)"
+  },
+  {
+    "repo": "1837620622/cloudflare-bypass-2026",
+    "branch": "main",
+    "language": "Python",
+    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
+  },
+  {
+    "repo": "requests/requests",
+    "branch": "main",
+    "language": "Python",
+    "description": "A simple, yet elegant, HTTP library."
+  },
+  {
+    "repo": "getsentry/sentry",
+    "branch": "master",
+    "language": "Python",
+    "description": "Developer-first error tracking and performance monitoring"
+  },
+  {
+    "repo": "MINT-SJTU/RoboClaw",
+    "branch": "main",
+    "language": "Python",
+    "description": "RoboClaw is an Embodied AI Assistant."
+  },
+  {
+    "repo": "rust-lang/rust",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Empowering everyone to build reliable and efficient software."
+  },
+  {
+    "repo": "termux/termux-app",
+    "branch": "master",
+    "language": "Java",
+    "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages."
+  },
+  {
+    "repo": "apple/python-apple-fm-sdk",
+    "branch": "main",
+    "language": "Python",
+    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
+  },
+  {
+    "repo": "Mondo-Robotics/DiT4DiT",
+    "branch": "main",
+    "language": "Python",
+    "description": "This is the official code repo for DiT4DiT, a Vision-Action-Model (VAM) framework that combines video generation model with flow-matching-based action prediction for generalizable robotic manipulation."
+  },
+  {
+    "repo": "rbenv/rbenv",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Manage your app's Ruby environment"
+  },
+  {
+    "repo": "cloudflare/pingora",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A library for building fast, reliable and evolvable network services."
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "antfu/skills-npm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Install agent skills from npm"
+  },
+  {
+    "repo": "PCRE2Project/pcre2",
+    "branch": "master",
+    "language": "C",
+    "description": "PCRE2 development is based here."
+  },
+  {
+    "repo": "helm/helm",
+    "branch": "main",
+    "language": "Go",
+    "description": "The Kubernetes Package Manager"
+  },
+  {
+    "repo": "Maoleio/CPA-Codex-Manager",
+    "branch": "main",
+    "language": "Python",
+    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
+  },
+  {
+    "repo": "wsargent/docker-cheat-sheet",
+    "branch": "master",
+    "language": "Other",
+    "description": "Docker Cheat Sheet"
+  },
+  {
+    "repo": "mre/awesome-static-analysis",
+    "branch": "master",
+    "language": "Rust",
+    "description": "⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality."
+  },
+  {
+    "repo": "ConardLi/garden-skills",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
+  },
+  {
+    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-bot",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "instructkr/claw-code",
+    "branch": "main",
+    "language": "Python",
+    "description": "Better Harness Tools, not merely storing the archive of leaked Claude Code but also make real things done. Now rewriting in Rust."
   }
 ]
