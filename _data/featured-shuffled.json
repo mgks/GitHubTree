@@ -1,146 +1,146 @@
 [
   {
-    "repo": "ReinerBRO/grok-register",
+    "repo": "mdspan/posix-sync",
     "branch": "main",
-    "language": "Python",
-    "description": "Automated Grok (x.ai) account registration with DuckMail + headless server support. Auto-push SSO tokens to grok2api."
+    "language": "Rust",
+    "description": "Idiomatic Rust interface for POSIX synchronisation primitives"
   },
   {
-    "repo": "encode/uvicorn",
-    "branch": "master",
-    "language": "Python",
-    "description": "An ASGI web server, for Python. 🦄"
-  },
-  {
-    "repo": "m1heng/clawdbot-feishu",
+    "repo": "tonbistudio/buzz-skills",
     "branch": "main",
-    "language": "TypeScript",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "ForgetMeAI/FreeDeepseekAPI",
+    "repo": "ARMSX2/ARMSX1",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Локальный API-прокси для DeepSeek Web Chat с поддержкой OpenAI/Anthropic API, streaming, tool calling, Responses API и Open WebUI"
+    "language": "C",
+    "description": "New PS1 Emulator from the Founders of ARMSX2"
   },
   {
-    "repo": "foundry-rs/foundry",
-    "branch": "master",
+    "repo": "pengchujin/tower",
+    "branch": "main",
+    "language": "Swift",
+    "description": "塔台 — 原生 SwiftUI iOS App，在本机管理机场订阅与自有节点，生成 Surge / Clash / Shadowrocket / Loon / Quantumult X 配置"
+  },
+  {
+    "repo": "DutchDiederik/AmberConsole",
+    "branch": "main",
+    "language": "CSS",
+    "description": "A UI design system inspired by the 1970s"
+  },
+  {
+    "repo": "videlalvaro/inference-school",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A hands-on Swift and Metal course for building LLM inference from first principles on Apple silicon, with 48 guided lessons, runnable exercises, a native macOS Studio, and a complete companion book."
+  },
+  {
+    "repo": "sazardev/shiki",
+    "branch": "main",
     "language": "Rust",
-    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
+    "description": "TUI note-taking app in Rust — Yazi-style navigation, notebooks as independent git repos, real per-note version history, themes, and fast fuzzy search."
   },
   {
-    "repo": "934050259/BrowserCluster",
+    "repo": "biheto/DevAgent-Studio",
     "branch": "main",
     "language": "Python",
-    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
+    "description": "面向开发者的多智能体任务工作站"
   },
   {
-    "repo": "matrix-org/matrix-react-sdk",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Matrix SDK for React Javascript"
-  },
-  {
-    "repo": "ethereum/go-ethereum",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go implementation of the Ethereum protocol"
-  },
-  {
-    "repo": "soimy/openclaw-channel-dingtalk",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A dingtalk bot channel plugin for clawdbot"
-  },
-  {
-    "repo": "microsoft/Web-Dev-For-Beginners",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
-  },
-  {
-    "repo": "TheOdinProject/css-exercises",
+    "repo": "asdafgs419/Extreme-FPS-Boost",
     "branch": "main",
     "language": "HTML",
-    "description": "A repository for practicing CSS concepts."
+    "description": "Extreme FPS Boost is a lightweight Windows 10/11 gaming optimizer designed to improve FPS stability, reduce input lag, and enhance overall system performance."
   },
   {
-    "repo": "ok-oldking/ok-end-field",
-    "branch": "master",
-    "language": "Python",
-    "description": "终末地 End Field Automation 基于ok-script开发的自动化"
-  },
-  {
-    "repo": "tiimgreen/github-cheat-sheet",
-    "branch": "master",
-    "language": "Other",
-    "description": "A list of cool features of Git and GitHub."
-  },
-  {
-    "repo": "hashicorp/terraform",
-    "branch": "main",
-    "language": "Go",
-    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
-  },
-  {
-    "repo": "distribution/distribution",
-    "branch": "main",
-    "language": "Go",
-    "description": "The toolkit to pack, ship, store, and deliver container content"
-  },
-  {
-    "repo": "pallets/flask",
-    "branch": "main",
-    "language": "Python",
-    "description": "The Python micro framework for building web applications."
-  },
-  {
-    "repo": "Stability-AI/stablediffusion",
-    "branch": "main",
-    "language": "Other",
-    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
-  },
-  {
-    "repo": "lsd-rs/lsd",
-    "branch": "master",
-    "language": "Rust",
-    "description": "The next gen ls command"
-  },
-  {
-    "repo": "antfu/skills",
+    "repo": "xiaotianfotos/homerail",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Anthony Fu's curated collection of agent skills."
+    "description": "Voice-first local agent orchestration runtime for auditable DAG workflows."
   },
   {
-    "repo": "gin-gonic/gin",
-    "branch": "master",
-    "language": "Go",
-    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
-  },
-  {
-    "repo": "networkx/networkx",
+    "repo": "lbouaraba/comfyui-krea2edit",
     "branch": "main",
     "language": "Python",
-    "description": "Network Analysis in Python"
+    "description": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity Edit LoRA"
   },
   {
-    "repo": "async-rs/async-std",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Async version of the Rust standard library"
-  },
-  {
-    "repo": "openai/glide-text2im",
-    "branch": "main",
-    "language": "Python",
-    "description": "GLIDE: a diffusion-based text-conditional image synthesis model"
-  },
-  {
-    "repo": "fullcalendar/fullcalendar",
+    "repo": "ailinone/collective-intelligence",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Full-sized drag & drop event calendar in JavaScript"
+    "description": "Ailin¹ is an open-source collective intelligence engine where tens of thousands of AI models collaborate through dozens of coordination strategies, applying structured diversity and independent reasoning to improve reliability, auditability, and resilience."
+  },
+  {
+    "repo": "sunny-glow/Auto-BenchMax",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "mufengyuan666/Hearth",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "Saivineeth147/lora-speedrun",
+    "branch": "main",
+    "language": "Python",
+    "description": "Speedrunning LoRA fine-tuning: frozen task, frozen hardware, public wall-clock leaderboard. modded-nanogpt for fine-tuning."
+  },
+  {
+    "repo": "R44VC0RP/hark",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A simple, beautiful webhook to notification platform."
+  },
+  {
+    "repo": "SirBlondieDK/HADocs",
+    "branch": "main",
+    "language": "HTML",
+    "description": "HADocs automatically documents, analyzes, and visualizes your Home Assistant installation. Generate comprehensive documentation, calculate a meaningful Health Score, discover configuration issues, detect unused entities, and gain deep insights into your smart home architecture."
+  },
+  {
+    "repo": "1370998960-del/https-github.com-Emily2040-seedance-2.0",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "awplanets/awplanet",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "AI 原生 3D 导演工作台与场景创作工具 / AI-native 3D direction and scene creation studio"
+  },
+  {
+    "repo": "0xwilliamortiz/humanizer-cli",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "33 ways to spot AI-written text, right in your terminal. Before/after examples, draft checker, zero dependencies."
+  },
+  {
+    "repo": "PauliusOS/pallet-town-3d",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Pallet Town — a first-person, modern 3D cartoon reimagining of the opening of Pokemon LeafGreen, built in Three.js with zero binary art assets"
+  },
+  {
+    "repo": "guillaumemeyer/watermarks-remover",
+    "branch": "main",
+    "language": "Python",
+    "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD"
+  },
+  {
+    "repo": "earendil-works/pi-review-loop",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A persistent incremental diff review loop for pi"
+  },
+  {
+    "repo": "Hisn00w/ASu-skills",
+    "branch": "main",
+    "language": "HTML",
+    "description": "简历包装"
   }
 ]
