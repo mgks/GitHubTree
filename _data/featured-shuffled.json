@@ -1,146 +1,146 @@
 [
   {
-    "repo": "awesome-selfhosted/awesome-selfhosted",
-    "branch": "master",
-    "language": "Other",
-    "description": "A list of Free Software network services and web applications which can be hosted on your own servers"
-  },
-  {
-    "repo": "2417467487-hub/WorldCupROI",
+    "repo": "ReinerBRO/grok-register",
     "branch": "main",
     "language": "Python",
-    "description": "Sports sponsorship intelligence platform for World Cup match data, real-source text signals, ROI prediction, uncertainty analysis, and scenario recommendations."
+    "description": "Automated Grok (x.ai) account registration with DuckMail + headless server support. Auto-push SSO tokens to grok2api."
   },
   {
-    "repo": "ripienaar/free-for-dev",
-    "branch": "master",
-    "language": "HTML",
-    "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
-  },
-  {
-    "repo": "sooryathejas/METATRON",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI-powered penetration testing assistant using local LLM on linux (Parrot OS)"
-  },
-  {
-    "repo": "1837620622/cloudflare-bypass-2026",
-    "branch": "main",
-    "language": "Python",
-    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
-  },
-  {
-    "repo": "requests/requests",
-    "branch": "main",
-    "language": "Python",
-    "description": "A simple, yet elegant, HTTP library."
-  },
-  {
-    "repo": "getsentry/sentry",
+    "repo": "encode/uvicorn",
     "branch": "master",
     "language": "Python",
-    "description": "Developer-first error tracking and performance monitoring"
+    "description": "An ASGI web server, for Python. 🦄"
   },
   {
-    "repo": "MINT-SJTU/RoboClaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "RoboClaw is an Embodied AI Assistant."
-  },
-  {
-    "repo": "rust-lang/rust",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Empowering everyone to build reliable and efficient software."
-  },
-  {
-    "repo": "termux/termux-app",
-    "branch": "master",
-    "language": "Java",
-    "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages."
-  },
-  {
-    "repo": "apple/python-apple-fm-sdk",
-    "branch": "main",
-    "language": "Python",
-    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
-  },
-  {
-    "repo": "Mondo-Robotics/DiT4DiT",
-    "branch": "main",
-    "language": "Python",
-    "description": "This is the official code repo for DiT4DiT, a Vision-Action-Model (VAM) framework that combines video generation model with flow-matching-based action prediction for generalizable robotic manipulation."
-  },
-  {
-    "repo": "rbenv/rbenv",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Manage your app's Ruby environment"
-  },
-  {
-    "repo": "cloudflare/pingora",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A library for building fast, reliable and evolvable network services."
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "antfu/skills-npm",
+    "repo": "m1heng/clawdbot-feishu",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Install agent skills from npm"
-  },
-  {
-    "repo": "PCRE2Project/pcre2",
-    "branch": "master",
-    "language": "C",
-    "description": "PCRE2 development is based here."
-  },
-  {
-    "repo": "helm/helm",
-    "branch": "main",
-    "language": "Go",
-    "description": "The Kubernetes Package Manager"
-  },
-  {
-    "repo": "Maoleio/CPA-Codex-Manager",
-    "branch": "main",
-    "language": "Python",
-    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
-  },
-  {
-    "repo": "wsargent/docker-cheat-sheet",
-    "branch": "master",
-    "language": "Other",
-    "description": "Docker Cheat Sheet"
-  },
-  {
-    "repo": "mre/awesome-static-analysis",
-    "branch": "master",
-    "language": "Rust",
-    "description": "⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality."
-  },
-  {
-    "repo": "ConardLi/garden-skills",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
-  },
-  {
-    "repo": "Sectionnaenumerate/Polymarket-Kalshi-btc-arbitrage-bot",
-    "branch": "main",
-    "language": "Rust",
     "description": ""
   },
   {
-    "repo": "instructkr/claw-code",
+    "repo": "ForgetMeAI/FreeDeepseekAPI",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Локальный API-прокси для DeepSeek Web Chat с поддержкой OpenAI/Anthropic API, streaming, tool calling, Responses API и Open WebUI"
+  },
+  {
+    "repo": "foundry-rs/foundry",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
+  },
+  {
+    "repo": "934050259/BrowserCluster",
     "branch": "main",
     "language": "Python",
-    "description": "Better Harness Tools, not merely storing the archive of leaked Claude Code but also make real things done. Now rewriting in Rust."
+    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
+  },
+  {
+    "repo": "matrix-org/matrix-react-sdk",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Matrix SDK for React Javascript"
+  },
+  {
+    "repo": "ethereum/go-ethereum",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go implementation of the Ethereum protocol"
+  },
+  {
+    "repo": "soimy/openclaw-channel-dingtalk",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A dingtalk bot channel plugin for clawdbot"
+  },
+  {
+    "repo": "microsoft/Web-Dev-For-Beginners",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer"
+  },
+  {
+    "repo": "TheOdinProject/css-exercises",
+    "branch": "main",
+    "language": "HTML",
+    "description": "A repository for practicing CSS concepts."
+  },
+  {
+    "repo": "ok-oldking/ok-end-field",
+    "branch": "master",
+    "language": "Python",
+    "description": "终末地 End Field Automation 基于ok-script开发的自动化"
+  },
+  {
+    "repo": "tiimgreen/github-cheat-sheet",
+    "branch": "master",
+    "language": "Other",
+    "description": "A list of cool features of Git and GitHub."
+  },
+  {
+    "repo": "hashicorp/terraform",
+    "branch": "main",
+    "language": "Go",
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
+  },
+  {
+    "repo": "distribution/distribution",
+    "branch": "main",
+    "language": "Go",
+    "description": "The toolkit to pack, ship, store, and deliver container content"
+  },
+  {
+    "repo": "pallets/flask",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Python micro framework for building web applications."
+  },
+  {
+    "repo": "Stability-AI/stablediffusion",
+    "branch": "main",
+    "language": "Other",
+    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
+  },
+  {
+    "repo": "lsd-rs/lsd",
+    "branch": "master",
+    "language": "Rust",
+    "description": "The next gen ls command"
+  },
+  {
+    "repo": "antfu/skills",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Anthony Fu's curated collection of agent skills."
+  },
+  {
+    "repo": "gin-gonic/gin",
+    "branch": "master",
+    "language": "Go",
+    "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices."
+  },
+  {
+    "repo": "networkx/networkx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Network Analysis in Python"
+  },
+  {
+    "repo": "async-rs/async-std",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Async version of the Rust standard library"
+  },
+  {
+    "repo": "openai/glide-text2im",
+    "branch": "main",
+    "language": "Python",
+    "description": "GLIDE: a diffusion-based text-conditional image synthesis model"
+  },
+  {
+    "repo": "fullcalendar/fullcalendar",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Full-sized drag & drop event calendar in JavaScript"
   }
 ]
