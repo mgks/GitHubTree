@@ -1,146 +1,146 @@
 [
   {
-    "repo": "sentrux/sentrux",
-    "branch": "main",
-    "language": "Rust",
-    "description": "See what your AI agent is building. Real-time architecture visualization + structural quality scoring for AI-generated code. Pure Rust."
-  },
-  {
-    "repo": "DramaticShape/DramaticShapeVoxelMod",
-    "branch": "master",
-    "language": "Lua",
-    "description": ""
-  },
-  {
-    "repo": "DatanoiseTV/tinyice",
-    "branch": "main",
-    "language": "Go",
-    "description": "A tiny audio streaming server (compatible with icecast2) written in Go with multiple mountpoint, multi-source, and relaying support."
-  },
-  {
-    "repo": "khalildh/garment-notation",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "open-pencil/open-pencil",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "AI-native design editor. Open-source Figma alternative."
-  },
-  {
-    "repo": "thellimist/clihub",
-    "branch": "main",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "zhangbo2008/claude_code_annotated",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "claudecode泄露部分的代码解析"
-  },
-  {
-    "repo": "anadim/AdderBoard",
+    "repo": "google-deepmind/alphageometry",
     "branch": "main",
     "language": "Python",
-    "description": "Smallest transformer that can add two 10-digit numbers"
+    "description": "Solving olympiad geometry without human demonstrations."
   },
   {
-    "repo": "AThevon/TokenEater",
+    "repo": "xsser/codex-jailbreak-guide",
+    "branch": "main",
+    "language": "Python",
+    "description": "Codex CLI jailbreak guide — customizing system prompt via model_instructions_file config"
+  },
+  {
+    "repo": "alecthomas/t",
+    "branch": "master",
+    "language": "Rust",
+    "description": "`t` is a concise language for manipulating text, replacing common usage patterns of Unix utilities like grep, sed, cut, awk, sort, and uniq."
+  },
+  {
+    "repo": "langwatch/kanban-code",
     "branch": "main",
     "language": "Swift",
-    "description": "Native macOS widget to monitor your Claude AI usage limits in real-time"
-  },
-  {
-    "repo": "Intrect-io/OpenSwarm",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "OpenSwarm, CLI Code Agent Orchstrator"
-  },
-  {
-    "repo": "dashersw/gea",
-    "branch": "main",
-    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "doctorhetfield-cmd/simpleui.koplugin",
-    "branch": "main",
-    "language": "Lua",
-    "description": "A UI plugin for KOReader with bottom navigation bar, topbar, and desktop widgets"
-  },
-  {
-    "repo": "griffinmartin/opencode-claude-auth",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "OpenCode plugin that uses your existing Claude Code credentials — no separate login needed"
-  },
-  {
-    "repo": "lqs/retrotick",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "💾 Run classic Windows & DOS executables in the browser — an x86 emulator + Win32/Win16/DOS API layer built from scratch in TypeScript"
-  },
-  {
-    "repo": "dongsheng123132/u-claw",
-    "branch": "main",
-    "language": "HTML",
-    "description": "🦞 U-Claw - OpenClaw Offline Installer USB for China | OpenClaw 离线安装 U 盘，专为中国用户打造。免翻墙，一键安装，雨林木风风格。"
-  },
-  {
-    "repo": "6551Team/opentwitter-mcp",
-    "branch": "main",
-    "language": "Python",
-    "description": "Twitter/X Data · User Profiles · Tweet Search · Follower Events · KOL Tracking"
-  },
-  {
-    "repo": "kamranahmedse/claude-statusline",
+    "repo": "slowmist/openclaw-security-practice-guide",
     "branch": "main",
     "language": "Shell",
-    "description": "Minimal Claude Code statusline setup I personally use"
+    "description": "This guide is designed for OpenClaw itself (Agent-facing), not as a traditional human-only hardening checklist."
   },
   {
-    "repo": "qiaoshouqing/drive-escape",
-    "branch": "main",
-    "language": "HTML",
-    "description": "周末自驾逃离计划 - 交互式驾车时间地图"
-  },
-  {
-    "repo": "xgen-universe/Capybara",
-    "branch": "main",
+    "repo": "Nahuel990/ministack",
+    "branch": "master",
     "language": "Python",
+    "description": "Ministack: the free LocalStack replacement"
+  },
+  {
+    "repo": "URLab-Sim/UnrealRoboticsLab",
+    "branch": "main",
+    "language": "C++",
+    "description": "A high-fidelity, open-source robotics simulator integrating Unreal Engine's photorealistic rendering with MuJoCo's precision physics."
+  },
+  {
+    "repo": "dazzyddos/PrivHound",
+    "branch": "main",
+    "language": "PowerShell",
+    "description": "A BloodHound OpenGraph collector that models Windows local privilege escalation as interconnected attack paths."
+  },
+  {
+    "repo": "cheeriojs/cheerio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The fast, flexible, and elegant library for parsing and manipulating HTML and XML."
+  },
+  {
+    "repo": "apache/superset",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Apache Superset is a Data Visualization and Data Exploration Platform"
+  },
+  {
+    "repo": "MuhammadHananAsghar/wormhole",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open-source ngrok alternative. Expose your localhost to the internet with one command. Built with Go + Cloudflare Workers."
+  },
+  {
+    "repo": "op7418/Claude-to-IM",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Host-agnostic bridge connecting Claude Code SDK to IM platforms (Telegram, Discord, Feishu)"
+  },
+  {
+    "repo": "aspi6246/ClaudeCodeTools",
+    "branch": "main",
+    "language": "TeX",
+    "description": "My collection of Claude Code tools"
+  },
+  {
+    "repo": "nolenroyalty/yt-browse",
+    "branch": "main",
+    "language": "Go",
+    "description": "it's like search, but for youtube"
+  },
+  {
+    "repo": "linkerd/linkerd2",
+    "branch": "main",
+    "language": "Go",
+    "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x."
+  },
+  {
+    "repo": "PabloLopezParada/RACCOIN-Coin-Pusher-Roguelike-Desktop",
+    "branch": "main",
+    "language": "C++",
+    "description": "RACCOIN: Coin Pusher Roguelike Full Version 2026 is an addictive blend of classic coin pusher machines and roguelike gameplay. Push coins, collect epic rewards, upgrade your raccoon, unlock powerful relics and new machines across endless runs. Deep progression, high replayability, and satisfying coin mechanics. 🦝"
+  },
+  {
+    "repo": "kubernetes/kompose",
+    "branch": "master",
+    "language": "Go",
+    "description": "Convert Compose to Kubernetes"
+  },
+  {
+    "repo": "material-components/material-components-web",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Modular and customizable Material Design UI components for the web"
+  },
+  {
+    "repo": "diandianti/clawInstaller",
+    "branch": "main",
+    "language": "C#",
     "description": ""
   },
   {
-    "repo": "xarbit/plasma6-applet-appgrid",
+    "repo": "apache/tvm",
     "branch": "main",
-    "language": "QML",
-    "description": "A modern  application launcher for KDE Plasma, inspired by macOS  and COSMIC."
+    "language": "Python",
+    "description": "Open Machine Learning Compiler Framework"
   },
   {
-    "repo": "MeisnerDan/mission-control",
+    "repo": "HELPMEEADICE/doge-code",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Open-source task management for the agentic era. The command center for solo entrepreneurs who delegate work to AI agents."
+    "description": "Claude Code 的一个 Fork。不是官方正史，而是平行世界番外篇；不是萌豚整活仓库，而是“认真修、顺手发癫一点点”的工程分支。"
   },
   {
-    "repo": "Rohit24567/HyperLiquid-Claw",
+    "repo": "asonglin/crypto-liquidity-ai-trading-bot",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Trade smarter, not harder. Hyperliquid Claw gives your AI assistant full access to Hyperliquid DEX"
+    "description": "Crypto liquidity detection & algorithmic trading bot. Order book analysis, stop-loss clusters, liquidity sweeps. Multi-exchange (Binance, Bybit, Kraken, OKX). Trading signals, quant research, market microstructure."
   },
   {
-    "repo": "flamestro/deff",
+    "repo": "Maoleio/CPA-Codex-Manager",
+    "branch": "main",
+    "language": "Python",
+    "description": "CPA-Codex-Manager 是一款专为 OpenAI 账号池设计的高性能管理面板，集成全自动批量注册、CLIProxyAPI 平台账号池实时监控与智能维护功能"
+  },
+  {
+    "repo": "jshachm/chronoh",
     "branch": "main",
     "language": "Rust",
-    "description": "interactive, side-by-side file review for git diffs with per-file navigation, vertical and horizontal scrolling, syntax highlighting, and added/deleted line tinting"
-  },
-  {
-    "repo": "ForLoopCodes/contextplus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Semantic Intelligence for Large-Scale Engineering. Context+ is an MCP server designed for developers who demand 99% accuracy. By combining Tree-sitter AST parsing, Spectral Clustering, and Obsidian-style linking, Context+ turns a massive codebase into a searchable, hierarchical feature graph."
+    "description": "遵循harness原则，长时运行agent任务的框架，集成pi-rs"
   }
 ]
