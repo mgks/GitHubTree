@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Fenng/Tech-Doc-Style-Chinese",
+    "repo": "hashicorp/consul",
     "branch": "main",
-    "language": "Python",
-    "description": "Yet another reusable writing skill for Chinese technical documentation and product copy."
+    "language": "Go",
+    "description": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure."
   },
   {
-    "repo": "LynnReal-AI/LynnReal-Omni",
+    "repo": "russelleNVy/three-man-team",
     "branch": "main",
-    "language": "Python",
-    "description": "LynnReal-Omni brings text-to-video, image-to-video, human- and hand-pose guided generation, structural control, omni-reference generation, style transfer, video editing, degraded-video restoration and streaming long-video generation into a single framework, all at four-step fast generation."
+    "language": "Shell",
+    "description": "A structured 3-agent AI dev team — Architect, Builder, Reviewer. Built from production use. Token-optimized. Works with Claude Code, VS Code, Cursor, and any AI that supports context files."
   },
   {
-    "repo": "mahdidavoodi7/react-native-continued-task",
+    "repo": "tqdm/tqdm",
+    "branch": "master",
+    "language": "Python",
+    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
+  },
+  {
+    "repo": "pallets/werkzeug",
+    "branch": "main",
+    "language": "Python",
+    "description": "The comprehensive WSGI web application library."
+  },
+  {
+    "repo": "RongleCat/grok-app",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Background tasks that keep running after your app is backgrounded, for React Native and Expo. Wraps iOS 26 BGContinuedProcessingTask (Live Activity) and Android WorkManager foreground services behind one typed API. Swift + Kotlin via Nitro Modules."
+    "description": "Desktop workbench for Grok Build CLI — sessions, projects, media, automations (Tauri 2 · unofficial)"
   },
   {
-    "repo": "x4gpanell/3x-ui",
-    "branch": "main",
-    "language": "Dockerfile",
-    "description": ""
-  },
-  {
-    "repo": "Tencent-Hunyuan/Hy4-preview",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "air-embodied-brain/Zetta-Embodiment",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "MarcoG-h/DSH-Launcher",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "最全面的DeepSeek Harness🐋启动器  *首创多实例管理中枢* | 多开并行 | 整合包下载 | 一键部署 | 插件管理 |"
-  },
-  {
-    "repo": "l00sed/termixer",
-    "branch": "main",
+    "repo": "rust-embedded/discovery",
+    "branch": "master",
     "language": "Rust",
-    "description": "A 2-deck mixer, sample pads, sequencer— all from any Unix terminal."
+    "description": "Discover the world of microcontrollers through Rust!"
   },
   {
-    "repo": "jinzijian/EvoTrace",
-    "branch": "main",
-    "language": "Python",
-    "description": "Compile real-world Claude Code and Codex trajectories into verified, tradable post-training assets."
-  },
-  {
-    "repo": "SKLauncherMC/SKLauncher-Minecraft",
-    "branch": "main",
-    "language": "C++",
-    "description": "SkLauncher Minecraft launcher for Windows, macOS and Linux. Play Minecraft Java Edition , SkLauncher skin, SkLauncher mods, SkLauncher not opening fix, SkLauncher OptiFine support, SkLauncher vs TLauncher vs ATLauncher, SkLauncher servers. Supports Forge, Fabric and NeoForge. Download SkLauncher Minecraft 2026."
-  },
-  {
-    "repo": "seesee75-commits/ComfyUI-MiniMaxH3-Director",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A timeline editor for MiniMax H3 inside ComfyUI - storyboard prompts, first/last keyframes, image/video/audio references, joint audio, live sampling preview, retakes and shot chaining."
-  },
-  {
-    "repo": "cclank/lanshu-create-ai-presenter-video",
-    "branch": "main",
-    "language": "Python",
-    "description": "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
-  },
-  {
-    "repo": "localai-org/kimodo.cpp",
-    "branch": "main",
-    "language": "C++",
-    "description": "NVIDIA Kimodo ported to C++/GGML"
-  },
-  {
-    "repo": "fufankeji/deepseek-harness-studio",
+    "repo": "faker-js/faker",
     "branch": "main",
     "language": "TypeScript",
-    "description": "DeepSeek Harness 零代码桌面端｜一键启动，支持 Windows 与 macOS；内置插件发现、热点插件推送、一键安装与管理、AI 智能推荐和视觉增强。"
+    "description": "Generate massive amounts of fake data in the browser and node.js"
   },
   {
-    "repo": "asen-goat-mine/boujoy-harness",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A knowledge-linked local AI harness with macOS support and a Windows Beta launcher."
-  },
-  {
-    "repo": "Innate-Labs/Noobi.ai",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Noobi.ai — desktop AI game-production workbench with Skills and MCP."
-  },
-  {
-    "repo": "Saivineeth147/lora-speedrun",
-    "branch": "main",
-    "language": "Python",
-    "description": "Speedrunning LoRA fine-tuning: frozen task, frozen hardware, public wall-clock leaderboard. modded-nanogpt for fine-tuning."
-  },
-  {
-    "repo": "ShadowAqueduct/watermark-remover",
-    "branch": "main",
-    "language": "Python",
-    "description": "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD."
-  },
-  {
-    "repo": "lvgalvao/projeto-dados-ia-databricks",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "BOMWiki/partmode",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Local-first parametric browser CAD for people and typed agents"
-  },
-  {
-    "repo": "programasweights/claudish",
-    "branch": "main",
-    "language": "Python",
-    "description": "Translate between English and Claudish with tiny ProgramAsWeights functions."
-  },
-  {
-    "repo": "Vistyy/nopus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Deterministic prose checks for clearer coding-agent responses"
-  },
-  {
-    "repo": "Ashlixy17/PCB_lightgraph_Portable",
-    "branch": "main",
+    "repo": "istio/istio.io",
+    "branch": "master",
     "language": "HTML",
-    "description": "此项目是与 PCB_lightgraph 功能完全相同点击即用的Web网页便捷版，无需下载安装。"
+    "description": "Source for the istio.io site"
   },
   {
-    "repo": "xweiba/location-spoofer",
+    "repo": "davegoldblatt/total-recall",
     "branch": "main",
-    "language": "Swift",
-    "description": ""
+    "language": "Shell",
+    "description": "Persistent memory plugin for Claude Code. Tiered memory system with write gates, correction propagation, and slash commands."
+  },
+  {
+    "repo": "pallets/jinja",
+    "branch": "main",
+    "language": "Python",
+    "description": "A very fast and expressive template engine."
+  },
+  {
+    "repo": "AdguardTeam/AdGuardHome",
+    "branch": "master",
+    "language": "Go",
+    "description": "Network-wide ads & trackers blocking DNS server"
+  },
+  {
+    "repo": "wagoodman/dive",
+    "branch": "master",
+    "language": "Go",
+    "description": "A tool for exploring each layer in a docker image"
+  },
+  {
+    "repo": "apache/httpcomponents-client",
+    "branch": "master",
+    "language": "Java",
+    "description": "Mirror of Apache HttpClient"
+  },
+  {
+    "repo": "playframework/playframework",
+    "branch": "main",
+    "language": "Scala",
+    "description": "The Community Maintained High Velocity Web Framework For Java and Scala."
+  },
+  {
+    "repo": "ReactiveX/RxAndroid",
+    "branch": "3.x",
+    "language": "Java",
+    "description": "RxJava bindings for Android"
+  },
+  {
+    "repo": "cloudflare/quiche",
+    "branch": "master",
+    "language": "Rust",
+    "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3"
+  },
+  {
+    "repo": "balancer/balancer-v2-monorepo",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Balancer V2 Monorepo"
+  },
+  {
+    "repo": "cri-o/cri-o",
+    "branch": "main",
+    "language": "Go",
+    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
+  },
+  {
+    "repo": "1038lab/ComfyUI-MiniMax-H3-Promptor",
+    "branch": "main",
+    "language": "Python",
+    "description": "A powerful, ComfyUI Custom node automation suite for generating cinema-production-grade prompts explicitly formatted for the **MiniMax H3 Video Generation System**."
+  },
+  {
+    "repo": "nkxx188/ComfyUI-MiniMaxH3-Easy",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The easiest way to use MiniMax H3. One compact workflow for T2V, I2V, first/last-frame, and reference video generation, with a unified multi-media input, powerful @ references, and inline dialogue blocks. Less wiring. More creative control."
+  },
+  {
+    "repo": "DhananjayBhosale/hilight-studio",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Experimental Pixel 11 HiLight LED controller for Android 17."
+  },
+  {
+    "repo": "tilt-dev/tilt",
+    "branch": "master",
+    "language": "Go",
+    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
+  },
+  {
+    "repo": "forcequitOS/bad_query",
+    "branch": "main",
+    "language": "C",
+    "description": "Sandbox escape PoC for iOS 26 and 27."
+  },
+  {
+    "repo": "winglang/wing",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A programming language for the cloud ☁️ A unified programming model, combining infrastructure and runtime code into one language ⚡"
   }
 ]
