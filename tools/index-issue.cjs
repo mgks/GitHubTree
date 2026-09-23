@@ -1,11 +1,20 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { spawnSync } = require('child_process');
 
 const REPO_OWNER = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
 const VALID_PREFIXES = ['Feature Repo:', 'Feature Request:', 'Index Request:'];
 const DEPLOY_WORKFLOW = 'deploy-site.yml';
+
+function runGit(args) {
+    const result = spawnSync('git', args, { encoding: 'utf8' });
+    if (result.error) throw result.error;
+    if (result.status !== 0) {
+        throw new Error(`git ${args.join(' ')} failed: ${(result.stderr || '').trim() || `exit code ${result.status}`}`);
+    }
+    return result;
+}
 
 async function triggerDeploy() {
     try {
@@ -141,9 +150,9 @@ async function processIssue(issue) {
         if (!csvContent.endsWith('\n')) csvContent += '\n';
         fs.writeFileSync(csvPath, csvContent + newRow + '\n');
 
-        execSync('git add _data/repositories.csv');
-        execSync(`git commit -m "feat(database): index ${repo} via issue #${issueNum}"`);
-        execSync('git push origin main');
+        runGit(['add', '_data/repositories.csv']);
+        runGit(['commit', '-m', `feat(database): index ${repo} via issue #${issueNum}`]);
+        runGit(['push', 'origin', 'main']);
         await triggerDeploy();
 
         console.log(`  ✓ Indexed and pushed — closing`);
@@ -177,9 +186,9 @@ async function run() {
     }
 
     // Configure git and pull once before any file changes
-    execSync('git config --global user.name "github-actions[bot]"');
-    execSync('git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"');
-    execSync('git pull --rebase origin main');
+    runGit(['config', '--global', 'user.name', 'github-actions[bot]']);
+    runGit(['config', '--global', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
+    runGit(['pull', '--rebase', 'origin', 'main']);
 
     for (const issue of issues) {
         await processIssue(issue);
