@@ -6,7 +6,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     target: 'esnext',
-    minify: 'esbuild',
+    minify: 'oxc',
     sourcemap: false
   },
   server: {
