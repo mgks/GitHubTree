@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   id-token: write
+  packages: write
 
 jobs:
   publish:
@@ -20,11 +21,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: '22'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Ensure recent npm
-        run: npm install -g npm@latest
+      - name: Upgrade npm (required for OIDC provenance)
+        run: npm install -g npm@11.12.1
 
       - name: Install dependencies
         run: npm install
@@ -37,4 +38,4 @@ jobs:
           ls -la packages/core/
 
       - name: Publish to npm
-        run: npm publish --workspace=gh-tree --access public
+        run: npm publish ./packages/core --access public --provenance
