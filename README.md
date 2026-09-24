@@ -10,17 +10,9 @@
   
   <!-- BADGES -->
   <p>
-    <a href="https://githubtree.mgks.dev/repo/mgks/githubtree/main/"><img src="https://img.shields.io/badge/GitHubTree-githubtree-blue?style=flat-square" alt="GitHubTree"></a>
     <a href="https://www.npmjs.com/package/gh-tree"><img src="https://img.shields.io/github/v/release/mgks/githubtree?style=flat-square&color=38bd24" alt="release version"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/stars/mgks/githubtree?style=flat-square&logo=github&color=blue" alt="stars"></a>
     <a href="https://github.com/mgks/GitHubTree"><img src="https://img.shields.io/github/license/mgks/githubtree.svg?style=flat-square&color=blue" alt="license"></a>
-  </p>
-
-  <!-- MENU -->
-  <p>
-    <h4>
-      <a href="https://githubtree.mgks.dev">🚀 Open Web App</a>
-    </h4>
   </p>
 
   <!-- PREVIEW -->
@@ -28,6 +20,11 @@
     <a href="https://githubtree.mgks.dev">
       <img width="1000" alt="image" src="https://raw.githubusercontent.com/mgks/GitHubTree/refs/heads/main/packages/web/public/images/gh-tree-preview.webp" />
     </a>
+  </p>
+
+  <!-- MENU -->
+  <p>
+     <a href="https://githubtree.mgks.dev"><img alt="Static Badge" src="https://img.shields.io/badge/Web_App-Open?style=for-the-badge&logo=rocket&logoColor=white&label=Open&color=4A8B67"></a>
   </p>
 
 </div>
@@ -128,15 +125,9 @@ try {
 3.  **Deploy Production Build**: `npm run deploy`
 
 ## Contributing
-Contributions are welcome! If you have a feature request, bug report, or a pull request, please feel free to open an issue or submit a PR on [GitHub](https://github.com/mgks/GitHubTree).
 
-1.  **Fork the Repo**
-2.  **Create a Feature Branch** (`git checkout -b feature/amazing-feature`)
-3.  **Commit Changes** (`git commit -m 'Add amazing feature'`)
-4.  **Push to Branch** (`git push origin feature/amazing-feature`)
-5.  **Open a Pull Request**
+Found a bug or have an idea? [Open an issue](https://github.com/mgks/GitHubTree/issues) or [submit a pull request](https://github.com/mgks/GitHubTree/pulls).
 
 ## License
-MIT
 
-![Website Badge](https://img.shields.io/badge/.*%20mgks.dev-blue?style=flat&link=https%3A%2F%2Fmgks.dev) ![Sponsor Badge](https://img.shields.io/badge/%20%20Become%20a%20Sponsor%20%20-red?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmgks)
+Distributed under the MIT License.
