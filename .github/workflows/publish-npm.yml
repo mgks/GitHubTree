@@ -36,4 +36,4 @@ jobs:
           ls -la packages/core/
 
       - name: Publish to npm
-        run: npm publish --workspace=gh-tree --access public
+        run: npm publish --workspace=gh-tree --access public --provenance
