@@ -1,146 +1,146 @@
 [
   {
-    "repo": "material-components/material-components-android",
+    "repo": "timhartmann7/omnyssh",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A fast, keyboard-driven TUI for managing SSH connections, written in Rust"
+  },
+  {
+    "repo": "yazinsai/quran-validator",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Validate and verify Quranic verses in LLM-generated text with high accuracy"
+  },
+  {
+    "repo": "microsoft/calculator",
+    "branch": "main",
+    "language": "C++",
+    "description": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+  },
+  {
+    "repo": "XYZ-AI-Lab/AxisAgentic",
+    "branch": "main",
+    "language": "Python",
+    "description": "AxisAgentic: An Extensible Runtime and Trajectory-Collection Framework for Long-Horizon Agents."
+  },
+  {
+    "repo": "dapr/dapr",
+    "branch": "master",
+    "language": "Go",
+    "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration."
+  },
+  {
+    "repo": "Fixie-ai/Ultravox",
+    "branch": "main",
+    "language": "Python",
+    "description": "A fast multimodal LLM for real-time voice"
+  },
+  {
+    "repo": "Unclecode/Crawl4AI",
+    "branch": "main",
+    "language": "Python",
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
+  },
+  {
+    "repo": "getsentry/sentry-javascript",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Official Sentry SDKs for JavaScript"
+  },
+  {
+    "repo": "videolan/vlc",
+    "branch": "master",
+    "language": "C",
+    "description": "VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc"
+  },
+  {
+    "repo": "apache/tvm",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open Machine Learning Compiler Framework"
+  },
+  {
+    "repo": "esphome/esphome",
+    "branch": "dev",
+    "language": "C++",
+    "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems."
+  },
+  {
+    "repo": "guardrailsio/awesome-python-security",
+    "branch": "master",
+    "language": "Other",
+    "description": "Awesome Python Security resources 🕶🐍🔐"
+  },
+  {
+    "repo": "uqogihujomuwhiff/sora2-watermark-cleaner-pro",
+    "branch": "main",
+    "language": "Python",
+    "description": "sora2 watermark cleaner pro"
+  },
+  {
+    "repo": "apache/iceberg",
+    "branch": "main",
+    "language": "Java",
+    "description": "Apache Iceberg"
+  },
+  {
+    "repo": "arduino/Arduino",
     "branch": "master",
     "language": "Java",
-    "description": "Modular and customizable Material Design UI components for Android"
+    "description": "Arduino IDE 1.x"
   },
   {
-    "repo": "ircfspace/teleMirror",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A simple desktop client for viewing Telegram channels, specifically designed for complex filtering environments like Iran"
-  },
-  {
-    "repo": "direkturcrypto/polymarket-terminal",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Copy, Scalping & Sniper for polymarket"
-  },
-  {
-    "repo": "anadim/AdderBoard",
-    "branch": "main",
-    "language": "Python",
-    "description": "Smallest transformer that can add two 10-digit numbers"
-  },
-  {
-    "repo": "thesSmartApe/polymarket-copy-trading-bot-rust",
-    "branch": "main",
-    "language": "Rust",
-    "description": "polymarket rust copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot"
-  },
-  {
-    "repo": "aligfellow/xyzrender",
-    "branch": "main",
-    "language": "Python",
-    "description": "Publication-quality molecular graphics from the command line."
-  },
-  {
-    "repo": "ZimoLiao/scholaraio",
-    "branch": "main",
-    "language": "Python",
-    "description": "Scholar All-In-One: AI agent-powered research terminal"
-  },
-  {
-    "repo": "nickustinov/itsypad-macos",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A tiny, fast scratchpad and clipboard manager for Mac"
-  },
-  {
-    "repo": "lightningpixel/modly",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Desktop app to generate 3D models from images using local AI — runs entirely on your GPU"
-  },
-  {
-    "repo": "bendrape1-byte/silk-design",
-    "branch": "main",
-    "language": "CSS",
-    "description": "A Claude Code skill for building web interfaces that move well. Motion, smooth scroll, and design tokens by default."
-  },
-  {
-    "repo": "liuwei283/RealWonder",
-    "branch": "main",
-    "language": "Python",
-    "description": "Real-Time Physical Action-Conditioned Video Generation"
-  },
-  {
-    "repo": "silverstein/minutes",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Every meeting, every idea, every voice note — searchable by your AI. Open-source, privacy-first conversation memory layer."
-  },
-  {
-    "repo": "zoontek/react-native-bootsplash",
+    "repo": "HubSpot/messenger",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "🚀 Show a splash screen during app startup. Hide it when you are ready."
+    "language": "JavaScript",
+    "description": "Growl-style alerts and messages for your app. #hubspot-open-source"
   },
   {
-    "repo": "hubeiqiao/apple-bento-grid",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and any AI coding agent."
-  },
-  {
-    "repo": "EvilFreelancer/openapi-to-cli",
+    "repo": "understudy-ai/understudy",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Turns any OpenAPI/Swagger API into an CLI with set of commands. One CLI command per endpoint."
+    "description": "An understudy watches. Then performs."
   },
   {
-    "repo": "dev-protocol/Polymarket-Trading-Bot-with-Synth-AI",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot Polymarket Trading Bot"
-  },
-  {
-    "repo": "vercel-labs/openreview",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An open-source, self-hosted AI code review bot powered by Vercel."
-  },
-  {
-    "repo": "PaddlePaddle/PaddleDetection",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Object Detection toolkit based on PaddlePaddle. It supports object detection, instance segmentation, multiple object tracking and real-time multi-person keypoint detection."
-  },
-  {
-    "repo": "pallets/werkzeug",
-    "branch": "main",
-    "language": "Python",
-    "description": "The comprehensive WSGI web application library."
-  },
-  {
-    "repo": "zarazhangrui/youtube-to-ebook",
-    "branch": "main",
-    "language": "Python",
-    "description": "Claude skill for turning YouTube transcripts from your favorite channels into EPUB ebooks, delivered to your email inbox regularly"
-  },
-  {
-    "repo": "rohitg00/ai-engineering-from-scratch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Learn it. Build it. Ship it for others."
-  },
-  {
-    "repo": "rohunvora/x-research-skill",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "X/Twitter research skill for Claude Code and OpenClaw. Agentic search, thread following, deep-dives, sourced briefings."
-  },
-  {
-    "repo": "AI45Lab/TrinityGuard",
+    "repo": "yarnpkg/yarn",
     "branch": "master",
-    "language": "Python",
-    "description": "TrinityGuard: A Unified Framework for Safeguarding Multi-Agent System Safety"
+    "language": "JavaScript",
+    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
   },
   {
-    "repo": "lailoo/butcher-wiki",
+    "repo": "doctorhetfield-cmd/simpleui.koplugin",
+    "branch": "main",
+    "language": "Lua",
+    "description": "A UI plugin for KOReader with bottom navigation bar, topbar, and desktop widgets"
+  },
+  {
+    "repo": "adanto/EtwTiViewer",
+    "branch": "main",
+    "language": "C++",
+    "description": "Live ETW-TI event viewer for Windows kernel threat-intelligence telemetry. Research tool for exploring the same signals commercial EDRs rely on."
+  },
+  {
+    "repo": "marshallrichards/ClawPhone",
+    "branch": "main",
+    "language": "Python",
+    "description": "Tweaks for running OpenClaw on a Android smartphone"
+  },
+  {
+    "repo": "techjarves/Uncensored-Local-AI-Multiplatform",
+    "branch": "main",
+    "language": "Dart",
+    "description": "A cross-platform Flutter app that runs uncensored, 100% offline open-source AI models (GGUF) directly on your Android, iOS, or PC. No cloud, no filters, total privacy."
+  },
+  {
+    "repo": "joeseesun/qiaomu-blog-opensource",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Agent engineering knowledge base — dissects open-source projects into portable engineering components"
+    "description": "Open-source Cloudflare blog template based on OpenNext, Next.js 16, D1, and R2"
+  },
+  {
+    "repo": "quoroom-ai/room",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet."
   }
 ]
