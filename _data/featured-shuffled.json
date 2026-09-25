@@ -1,146 +1,146 @@
 [
   {
-    "repo": "0xSero/glm-5.2-sm120",
-    "branch": "main",
-    "language": "Shell",
-    "description": "GLM-5.2-NVFP4-REAP-469B serving on SM120 (4× RTX PRO 6000 Blackwell) — one-command vLLM launch recipe, 250K context, DeepSeek Sparse Attention + MTP speculative decode"
-  },
-  {
-    "repo": "blader/taskmaster",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete"
-  },
-  {
-    "repo": "AMAP-ML/MathForge",
+    "repo": "mizorewww/laya-coreml",
     "branch": "main",
     "language": "Python",
-    "description": "(ICLR 2026) Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation"
+    "description": "Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks."
   },
   {
-    "repo": "AIScientists-Dev/WorldSeed",
+    "repo": "go-gitea/gitea",
     "branch": "main",
-    "language": "Python",
-    "description": "A world engine where AI agents live autonomously — physical rules, information asymmetry, any agent can plug in. Define scenarios in YAML, watch stories emerge."
+    "language": "Go",
+    "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD"
   },
   {
-    "repo": "iliya-Developer/VortexL2",
+    "repo": "chartist/chartist",
+    "branch": "develop",
+    "language": "Ruby",
+    "description": "Final Project @ Makers Academy"
+  },
+  {
+    "repo": "mitjafelicijan/xdgctl",
+    "branch": "master",
+    "language": "C",
+    "description": "TUI for managing XDG default applications"
+  },
+  {
+    "repo": "nickustinov/itsypad-macos",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A tiny, fast scratchpad and clipboard manager for Mac"
+  },
+  {
+    "repo": "stablyai/agent-slack",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Slack automation CLI for AI agents"
+  },
+  {
+    "repo": "openperf/openclaw-cloud",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Give your AI Agent a cloud-native life. Deploy once, converse everywhere."
+  },
+  {
+    "repo": "terausss/15min-btc-polymarket-trading-bot",
     "branch": "main",
     "language": "Python",
+    "description": "15min btc polymarket arbitrage bot-polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+  },
+  {
+    "repo": "SawyerHood/gitclaw",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw but it runs entirely on github actions"
+  },
+  {
+    "repo": "reinesana/Doomscroll-Skyrim-Edition",
+    "branch": "main",
+    "language": "Python",
+    "description": "A CV productivity tool that plays the Skeleton Shield meme whenever you doomscroll or lose focus."
+  },
+  {
+    "repo": "uqogihujomuwhiff/sora2-watermark-cleaner-pro",
+    "branch": "main",
+    "language": "Python",
+    "description": "sora2 watermark cleaner pro"
+  },
+  {
+    "repo": "tw93/Kaku",
+    "branch": "main",
+    "language": "Rust",
+    "description": "☄️ A fast, out-of-the-box terminal built for AI coding."
+  },
+  {
+    "repo": "ok-oldking/ok-end-field",
+    "branch": "master",
+    "language": "Python",
+    "description": "终末地 End Field Automation 基于ok-script开发的自动化"
+  },
+  {
+    "repo": "xvhuan/xiaoi",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "小爱音箱语音通知工具：提供 CLI/TUI/MCP/Webhook 一键播报与控制音量，支持 PM2 常驻部署，支持docker部署。"
+  },
+  {
+    "repo": "simonw/cia-world-factbook-2020",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Recovered cia.gov/the-world-factbook/about/archives/download/factbook-2020.zip from Internet Archive"
+  },
+  {
+    "repo": "kelseyhightower/kubernetes-the-hard-way",
+    "branch": "master",
+    "language": "Other",
+    "description": "Bootstrap Kubernetes the hard way. No scripts."
+  },
+  {
+    "repo": "lukilabs/beautiful-mermaid-swift",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Native Mermaid diagram renderer for Swift"
+  },
+  {
+    "repo": "mvanhorn/last30days-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude Code skill that researches any topic across Reddit + X from the last 30 days, then writes copy-paste-ready prompts"
+  },
+  {
+    "repo": "tailwindlabs/heroicons",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A set of free MIT-licensed high-quality SVG icons for UI development."
+  },
+  {
+    "repo": "react-native-webview/react-native-webview",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "React Native Cross-Platform WebView"
+  },
+  {
+    "repo": "antfu/skills",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Anthony Fu's curated collection of agent skills."
+  },
+  {
+    "repo": "numpy/numpy",
+    "branch": "main",
+    "language": "Python",
+    "description": "The fundamental package for scientific computing with Python."
+  },
+  {
+    "repo": "ListerOvO1211/LazyEnv",
+    "branch": "main",
+    "language": "C++",
     "description": ""
   },
   {
-    "repo": "ultraworkers/claw-code",
+    "repo": "SahilH4ck4you/iOS-SSL-pinning-bypass-without-jalibreak",
     "branch": "main",
-    "language": "Rust",
-    "description": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex."
-  },
-  {
-    "repo": "vikingmute/better-wechatpay",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "现代化的微信支付 Node.js SDK - ESM、TypeScript、全支付方式支持"
-  },
-  {
-    "repo": "ninja-build/ninja",
-    "branch": "master",
-    "language": "C++",
-    "description": "a small build system with a focus on speed"
-  },
-  {
-    "repo": "alpinejs/alpine",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A rugged, minimal framework for composing JavaScript behavior in your markup."
-  },
-  {
-    "repo": "nanostores/nanostores",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores"
-  },
-  {
-    "repo": "ruanyf/weekly",
-    "branch": "master",
-    "language": "Other",
-    "description": "科技爱好者周刊，每周五发布"
-  },
-  {
-    "repo": "skydoves/android-skills-mcp",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "An MCP server and CLI packager for official Android skills."
-  },
-  {
-    "repo": "pierceboggan/primer",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Get your repo ready for AI."
-  },
-  {
-    "repo": "ionic-team/capacitor",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️"
-  },
-  {
-    "repo": "ZJU-REAL/SkillZero",
-    "branch": "main",
-    "language": "Python",
-    "description": "Official code for SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization"
-  },
-  {
-    "repo": "Ye-Yu-Mo/FundVal-Live",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "盘中基金估值，实时估值，基金净值"
-  },
-  {
-    "repo": "llmsresearch/paperbanana",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new domains like slide generation."
-  },
-  {
-    "repo": "ryanmcdermott/clean-code-javascript",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Clean Code concepts adapted for JavaScript"
-  },
-  {
-    "repo": "iad1tya/Net-Bar",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A lightweight, aesthetically pleasing network speed monitor that lives in your macOS menu bar."
-  },
-  {
-    "repo": "HKUDS/ClawTeam",
-    "branch": "main",
-    "language": "Python",
-    "description": "ClawTeam: Agent Swarm Intelligence (One Command → Full Automation)"
-  },
-  {
-    "repo": "DioxusLabs/dioxus",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Fullstack app framework for web, desktop, and mobile."
-  },
-  {
-    "repo": "Backtthefuture/huangshu",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "黄叔开源的Skill集合"
-  },
-  {
-    "repo": "eljojo/rememory",
-    "branch": "main",
-    "language": "Go",
-    "description": "have a plan for the worst-case scenario"
-  },
-  {
-    "repo": "meteor/meteor",
-    "branch": "devel",
-    "language": "JavaScript",
-    "description": "Meteor, the JavaScript App Platform"
+    "language": "Shell",
+    "description": "SSL pinning bypass setup for iOS (No Jailbreak) using OpenVPN + iptables traffic redirection to proxy (Burp Suite / mitmproxy)"
   }
 ]
