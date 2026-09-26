@@ -1,146 +1,146 @@
 [
   {
-    "repo": "bridge-mind/bridgeclip",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Open-source AI video clipping desktop app by BridgeMind"
-  },
-  {
-    "repo": "androidx/androidx",
-    "branch": "androidx-main",
-    "language": "Kotlin",
-    "description": "Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP."
-  },
-  {
-    "repo": "Ar9av/obsidian-wiki",
+    "repo": "Jia-Ethan/codex-keysmith",
     "branch": "main",
     "language": "Python",
-    "description": "Framework for AI agents to build and maintain an Obsidian wiki using Karpathy's LLM Wiki pattern"
+    "description": "Codex CLI instruction-file installer for local configuration"
   },
   {
-    "repo": "openai/gym",
-    "branch": "master",
-    "language": "Python",
-    "description": "A toolkit for developing and comparing reinforcement learning algorithms."
-  },
-  {
-    "repo": "Textualize/textual",
+    "repo": "LeDat98/NexusRAG",
     "branch": "main",
     "language": "Python",
-    "description": "The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser."
+    "description": "Hybrid RAG system combining vector search, knowledge graph (LightRAG), and cross-encoder reranking — with Docling document parsing, visual intelligence (image/table captioning), agentic streaming chat, and inline citations. Powered by Gemini or local Ollama models."
   },
   {
-    "repo": "MarlinFirmware/Marlin",
-    "branch": "bugfix-2.1.x",
-    "language": "C++",
-    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
-  },
-  {
-    "repo": "yangshun/tech-interview-handbook",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Curated coding interview preparation materials for busy software engineers"
-  },
-  {
-    "repo": "microsoft/terminal",
-    "branch": "main",
-    "language": "C++",
-    "description": "The new Windows Terminal and the original Windows console host, all in the same place!"
-  },
-  {
-    "repo": "mlflow/mlflow",
-    "branch": "master",
-    "language": "Python",
-    "description": "The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform."
-  },
-  {
-    "repo": "thanos-io/thanos",
-    "branch": "main",
-    "language": "Go",
-    "description": "Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project."
-  },
-  {
-    "repo": "ruanyf/weekly",
-    "branch": "master",
-    "language": "Other",
-    "description": "科技爱好者周刊，每周五发布"
-  },
-  {
-    "repo": "ryanmcdermott/clean-code-javascript",
+    "repo": "yargs/yargs",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Clean Code concepts adapted for JavaScript"
+    "description": "yargs the modern, pirate-themed successor to optimist."
   },
   {
-    "repo": "sveltejs/svelte",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "web development for the rest of us"
-  },
-  {
-    "repo": "jupyter/notebook",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Jupyter Interactive Notebook"
-  },
-  {
-    "repo": "SakanaAI/AI-Scientist-v2",
-    "branch": "main",
-    "language": "Python",
-    "description": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
-  },
-  {
-    "repo": "open-telemetry/opentelemetry-collector",
-    "branch": "main",
-    "language": "Go",
-    "description": "OpenTelemetry Collector"
-  },
-  {
-    "repo": "requestsession/IndexGPT",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "IndexGPT: 本地科研助手（RAG + SFT + LoRA）| Local research assistant for PDF parsing, retrieval QA, SFT data generation, and LoRA training."
-  },
-  {
-    "repo": "FortAwesome/Font-Awesome",
-    "branch": "6.x",
-    "language": "JavaScript",
-    "description": "The iconic SVG, font, and CSS toolkit"
-  },
-  {
-    "repo": "miaoxworld/ClawdBotInstaller",
-    "branch": "main",
-    "language": "Shell",
-    "description": "ClawdBot 一键部署工具"
-  },
-  {
-    "repo": "nextui-org/nextui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
-  },
-  {
-    "repo": "aikorea/awesome-rl",
+    "repo": "ashleymills/Reachability.swift",
     "branch": "master",
-    "language": "Other",
-    "description": "Reinforcement learning resources curated"
+    "language": "Swift",
+    "description": "Replacement for Apple's Reachability re-written in Swift with closures"
   },
   {
-    "repo": "go-chi/chi",
-    "branch": "master",
-    "language": "Go",
-    "description": "lightweight, idiomatic and composable router for building Go HTTP services"
+    "repo": "Krypto-Hashers-Community/polymarket-copytrading-bot-rust-sport-crypto",
+    "branch": "main",
+    "language": "Rust",
+    "description": "The ultimate Polymarket CopyTrading Bot in Rust. AI-powered Polymarket CopyTrading Bot for smarter trades. Self-hosted Polymarket CopyTrading Bot with dashboard. Real-time Polymarket CopyTrading Bot for top traders. Reliable Polymarket CopyTrading Bot for prediction markets. Fast Polymarket CopyTrading Bot. Try Polymarket CopyTrading Bot now."
   },
   {
-    "repo": "k3s-io/k3s",
-    "branch": "master",
-    "language": "Go",
-    "description": "Lightweight Kubernetes"
-  },
-  {
-    "repo": "pointfreeco/swift-snapshot-testing",
+    "repo": "wh1te4ever/super-tart-vphone-writeup",
     "branch": "main",
     "language": "Swift",
-    "description": "📸 Delightful Swift snapshot testing."
+    "description": ""
+  },
+  {
+    "repo": "lailoo/butcher-wiki",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Agent engineering knowledge base — dissects open-source projects into portable engineering components"
+  },
+  {
+    "repo": "homebridge/homebridge",
+    "branch": "latest",
+    "language": "TypeScript",
+    "description": "HomeKit support for the impatient."
+  },
+  {
+    "repo": "hicode002/qualcomm_gbl_exploit_poc",
+    "branch": "main",
+    "language": "C",
+    "description": "Unlocking qualcomm bootloader via gbl exploit."
+  },
+  {
+    "repo": "sanbuphy/claude-code-source-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code v2.1.88 Source Code"
+  },
+  {
+    "repo": "Tencent-Hunyuan/HY-Embodied",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "actions/setup-node",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Set up your GitHub Actions workflow with a specific version of node.js"
+  },
+  {
+    "repo": "beita6969/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code Source - Buildable Research Fork. Reverse-engineered build system, runnable with Bun."
+  },
+  {
+    "repo": "matrix-org/synapse",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Synapse: Matrix homeserver written in Python/Twisted."
+  },
+  {
+    "repo": "kimjune01/cord",
+    "branch": "master",
+    "language": "Python",
+    "description": "A coordination protocol for trees of Claude Code agents"
+  },
+  {
+    "repo": "lobehub/lobe-chat",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application."
+  },
+  {
+    "repo": "infiniflow/ragflow",
+    "branch": "main",
+    "language": "Python",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
+  },
+  {
+    "repo": "GreatScott/enveil",
+    "branch": "main",
+    "language": "Rust",
+    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
+  },
+  {
+    "repo": "Blimp-Labs/claude-usage-bar",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A macOS menu bar app that shows your Claude API usage at a glance"
+  },
+  {
+    "repo": "dair-ai/Prompt-Engineering-Guide",
+    "branch": "main",
+    "language": "MDX",
+    "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
+  },
+  {
+    "repo": "langgenius/dify",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Production-ready platform for agentic workflow development."
+  },
+  {
+    "repo": "ghostwright/phantom",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK."
+  },
+  {
+    "repo": "R6410418/Jackrong-llm-finetuning-guide",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": ""
+  },
+  {
+    "repo": "formik/formik",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Build forms in React, without the tears 😭"
   }
 ]
