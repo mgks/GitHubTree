@@ -1,146 +1,146 @@
 [
   {
-    "repo": "mliu98/awesome-human-distillation",
-    "branch": "main",
-    "language": "Python",
-    "description": "A curated catalog of human distillliation agent skills"
-  },
-  {
-    "repo": "yureii1996/cek-probe-model",
-    "branch": "main",
-    "language": "Python",
-    "description": "Untuk cek model apakah maskingan atau bukan"
-  },
-  {
-    "repo": "josephmisiti/awesome-machine-learning",
+    "repo": "anywhere-labs/deepseek-harness-desktop",
     "branch": "master",
-    "language": "Python",
-    "description": "A curated list of awesome Machine Learning frameworks, libraries and software."
+    "language": "TypeScript",
+    "description": "为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验"
   },
   {
-    "repo": "HKUDS/ClawWork",
+    "repo": "software-mansion/react-native-screens",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Native navigation primitives for your React Native app."
+  },
+  {
+    "repo": "pmndrs/zustand",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🐻 Bear necessities for state management in React"
+  },
+  {
+    "repo": "Percepta-Core/transformer-vm",
     "branch": "main",
     "language": "Python",
-    "description": "ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours"
+    "description": "Compile programs directly into transformer weights. Includes a 2D convex-hull KV cache with O(log n) inference."
   },
   {
-    "repo": "cert-manager/cert-manager",
-    "branch": "master",
+    "repo": "fafathops152/Pokemon-Pokopia-For-PC",
+    "branch": "main",
+    "language": "C++",
+    "description": "Pokémon Pokopia For PC 2026 is the complete Windows edition of the beloved creature-collecting adventure game. Explore the beautiful Pokopia region, catch and train unique Pokémon, battle powerful trainers, and become the ultimate Champion. Now fully playable on PC with enhanced graphics, smooth performance"
+  },
+  {
+    "repo": "Quorinex/Freebuff2API",
+    "branch": "main",
     "language": "Go",
-    "description": "Automatically provision and manage TLS certificates in Kubernetes"
+    "description": "🚀 OpenAI-compatible Freebuff proxy with dynamic free-agent tracking, token rotation, and ready-to-use Docker deployment."
   },
   {
-    "repo": "aarondfrancis/counselors",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Fan out prompts to multiple AI coding agents in parallel"
-  },
-  {
-    "repo": "934050259/BrowserCluster",
+    "repo": "russellromney/honker",
     "branch": "main",
     "language": "Python",
-    "description": "Browser Cluster 是一个高性能、分布式的浏览器自动化集群系统，基于 Playwright 和 FastAPI 构建。它支持大规模并发网页抓取、截图、PDF 生成及自动化操作，具备完善的任务调度、结果缓存和节点管理功能。"
+    "description": "SQLite extension + bindings for Postgres NOTIFY/LISTEN semantics with durable queues, streams, pub/sub, and scheduler"
   },
   {
-    "repo": "StreisandEffect/streisand",
-    "branch": "master",
+    "repo": "mnemox-ai/idea-reality-mcp",
+    "branch": "main",
+    "language": "Python",
+    "description": "MCP server that reality-checks your AI project idea against GitHub, Hacker News, npm, PyPI & Product Hunt. Returns a 0-100 reality signal."
+  },
+  {
+    "repo": "patchfighterway90/cs2-external-overlay",
+    "branch": "main",
+    "language": "Python",
+    "description": "The cs2 external helper tool is a software utility designed for gamers and developers. It provides a set of features to enhance the gaming experience, including a customizable overlay. The tool is particularly useful for users who want to access additional information during gameplay."
+  },
+  {
+    "repo": "nova452/ComfyUI-Conditioning-Rebalance",
+    "branch": "main",
+    "language": "Python",
+    "description": "Conditioning optimizer nodes offering IP-Adapter-like features for Krea 2 image reference editing along with bypassing the built in quality diluation from the trained safety filter and also works as a means to unfilter the model."
+  },
+  {
+    "repo": "techjarves/Local-AI-Image-Generator",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A fully self-contained, offline AI image generation studio for Windows. Runs Stable Diffusion (Safetensors/GGUF) locally with zero manual setup. Auto-configures CUDA for Nvidia GPUs and Vulkan for AMD/Intel Arc cards. Zero system-wide dependencies required."
+  },
+  {
+    "repo": "dev-protocol/polymarket-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket copytrading bot || polymarket copy trading bot || polymarket copy bot ||"
+  },
+  {
+    "repo": "juliye2025/evil-read-arxiv",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude Code+Obsidian，邪修读论文就是快"
+  },
+  {
+    "repo": "xzf-thu/Mega-ASR",
+    "branch": "main",
+    "language": "Python",
+    "description": "First foundation ASR built for the real world - 7 atomic acoustic conditions, 54 compound scenarios, 2.6M samples, and up to ~30% gains over SOTA where every other model falls apart. **You'll come back to MEGA-ASR, after the rest fail in the wild. ⭐**"
+  },
+  {
+    "repo": "loc567/loc567",
+    "branch": "main",
+    "language": "C",
+    "description": "loc567 是一款完全开源免费的纯网页端iOS模拟定位工具。在线体验地址：https://loc567.com"
+  },
+  {
+    "repo": "zzzhhh1/mg-Koyeb",
+    "branch": "main",
     "language": "Shell",
-    "description": "Streisand sets up a new server running your choice of WireGuard, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, or a Tor bridge. It also generates custom instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists."
+    "description": "基于 Koyeb + Cloudflare Argo 隧道的 VLESS 安全单兵节点，详细纯小白视频教程，点击下方视频链接"
   },
   {
-    "repo": "actions/runner-images",
+    "repo": "vivek772/Lossless-Scaling-FPS-Upcaler-Desktop",
     "branch": "main",
-    "language": "PowerShell",
-    "description": "GitHub Actions runner images"
+    "language": "C++",
+    "description": "Lossless Scaling is a professional Windows utility for universal frame generation and spatial upscaling. Featuring LSFG 3.1 (X2/X3/X4) and LS1 algorithms, it ensures high-fidelity motion and sharp visuals on any GPU. Designed for stability and low latency in modern 2026 gaming environments."
   },
   {
-    "repo": "promptpirate-x/discord-id-bypass-tool",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A verified tool that works on any potato computer that will let you bypass discord verification"
-  },
-  {
-    "repo": "op7418/Youtube-clipper-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "bron1e/fnos-rce-chain",
-    "branch": "main",
-    "language": "Python",
-    "description": "飞牛系统（fnOS）远程代码执行链：认证绕过"
-  },
-  {
-    "repo": "spaceraccoon/vulnerability-spoiler-alert-action",
+    "repo": "imbue-ai/bouncer",
     "branch": "main",
     "language": "TypeScript",
-    "description": "GitHub Action to alert on security patches before the CVE drops."
+    "description": "Heal your social media feeds"
   },
   {
-    "repo": "liuxiaopai-ai/ralph-desktop",
+    "repo": "joyehuang/Learn-Open-Harness",
     "branch": "main",
-    "language": "Rust",
-    "description": "Ralph Desktop -  Start vague. Ralph Loop until perfect.  A visual controller for AI coding agents that helps you brainstorm requirements and execute tasks through persistent iteration."
+    "language": "TypeScript",
+    "description": "🤖 Official Interactive Tutorial for OpenHarness – Zero to Hero in 12 Chapters | Learn OpenHarness like Claude Code: Agent Loop, Tools, Memory, Multi-Agent | 面向零基础的 AI Agent 交互式教程"
   },
   {
-    "repo": "flybirdxx/ComfyUI-Qwen-TTS",
+    "repo": "Crestdrasnip/Claude-Zeroclaw",
     "branch": "main",
-    "language": "Python",
-    "description": "A Simple Implementation of Qwen3-TTS's ComfyUI"
-  },
-  {
-    "repo": "op7418/Document-illustrator-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
-  },
-  {
-    "repo": "edgedb/edgedb",
-    "branch": "master",
-    "language": "Python",
-    "description": "Gel supercharges Postgres with a modern data model, graph queries, Auth & AI solutions, and much more."
-  },
-  {
-    "repo": "async-rs/async-std",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Async version of the Rust standard library"
-  },
-  {
-    "repo": "beeware/briefcase",
-    "branch": "main",
-    "language": "Python",
-    "description": "Tools to support converting a Python project into a standalone native application."
-  },
-  {
-    "repo": "kivy/kivy",
-    "branch": "master",
-    "language": "Python",
-    "description": "Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS"
-  },
-  {
-    "repo": "mdp/linkedin-extension-fingerprinting",
-    "branch": "main",
-    "language": "JavaScript",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "zkSync-Community-Hub/zksync-developers",
-    "branch": "main",
-    "language": "Other",
-    "description": "Discussions and Support for the ZKsync Developer Community."
-  },
-  {
-    "repo": "shanselman/cert-inspector",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🔒 Web tool to inspect SSL certificates and DNS for all domains in a webpage's request tree. Captures full network footprint via headless browser."
-  },
-  {
-    "repo": "THUDM/CogVLM",
+    "repo": "lukiIabs/trading-agents",
     "branch": "main",
     "language": "Python",
-    "description": "a state-of-the-art-level open visual language model | 多模态预训练模型"
+    "description": "TradingAgents LLM multi-agent finance trading stocks crypto fintech quantitative algo trading sentiment analysis OpenAI JavaScript Node.js research OSS"
+  },
+  {
+    "repo": "Senabayu08989/Stable-Diffusion-AI-Free",
+    "branch": "main",
+    "language": "C++",
+    "description": "Stable Diffusion Free AI Image Generator Flux 2 Local Deployment Real-time Video Character Consistency Identity Anchoring SDXL Turbo LoRA Training ControlNet Open Source Art Studio Hyperrealistic Cinematic Styles Prompt Engineering Python Pytorch Forge ComfyUI 2026 Release High Resolution Desktop Tool"
+  },
+  {
+    "repo": "comeonzhj/AutoContents",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "基于 RSS 的 AI 资讯聚合、内容创作与 Agent 自动化工具"
+  },
+  {
+    "repo": "android-bench/android-bench",
+    "branch": "main",
+    "language": "Python",
+    "description": "Android Bench is a framework for benchmarking Large Language Models (LLMs) on Android development tasks. It evaluates an AI model's ability to understand mobile codebases, generate accurate patches, and solve Android-specific engineering problems."
   }
 ]
