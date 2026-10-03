@@ -1,146 +1,146 @@
 [
   {
-    "repo": "africa1207/AWS-BuildID-Auto-For-Ext",
+    "repo": "dodo-reach/hermes-desktop",
     "branch": "main",
-    "language": "JavaScript",
+    "language": "Swift",
+    "description": "A native Mac workspace for Hermes: real SSH, real terminal, real session data."
+  },
+  {
+    "repo": "pedronauck/skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "My personal favorite skills"
+  },
+  {
+    "repo": "ZacharyZhang-NY/Ely-GPUI-Components",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A component library for GPUI, in light and dark. Every component runs live in the browser."
+  },
+  {
+    "repo": "Alex-Gilbert/unredact",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "ReactiveX/RxKotlin",
-    "branch": "3.x",
-    "language": "Kotlin",
-    "description": "RxJava bindings for Kotlin"
+    "repo": "facebook/react-native",
+    "branch": "main",
+    "language": "C++",
+    "description": "A framework for building native applications using React"
   },
   {
-    "repo": "fuma-nama/fumadocs",
+    "repo": "davebcn87/pi-autoresearch",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The beautiful & flexible React.js docs framework."
+    "description": "Autonomous experiment loop extension for pi"
   },
   {
-    "repo": "Colafornia/short-video-generator-AI",
+    "repo": "rawwerks/ypi",
+    "branch": "master",
+    "language": "Shell",
+    "description": "A recursive coding agent inpired by RLMs"
+  },
+  {
+    "repo": "QwenLM/Qwen3-TTS",
     "branch": "main",
     "language": "Python",
-    "description": "Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content."
+    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
   },
   {
-    "repo": "sirupsen/logrus",
-    "branch": "master",
-    "language": "Go",
-    "description": "Structured, pluggable logging for Go."
+    "repo": "pi0/skillman",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🤹 Manage project skills and lock them in skills.json"
   },
   {
-    "repo": "pytorch/audio",
+    "repo": "Syngnat/GoNavi",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "现代化、原生体验的数据库管理工具，支持 MySQL、PostgreSQL、SQLite 等数据库，采用 Go 后端 + Wails + React 前端构建，启动快、体积小、性能强。"
+  },
+  {
+    "repo": "aiming-lab/MetaClaw",
     "branch": "main",
     "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+    "description": "Just talk to your agent — it learns and EVOLVES."
   },
   {
-    "repo": "cncf/toc",
+    "repo": "phuryn/pm-skills",
     "branch": "main",
-    "language": "Go",
-    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
-  },
-  {
-    "repo": "go-kit/kit",
-    "branch": "master",
-    "language": "Go",
-    "description": "A standard library for microservices."
-  },
-  {
-    "repo": "encode/django-rest-framework",
-    "branch": "master",
     "language": "Python",
-    "description": "Web APIs for Django. 🎸"
+    "description": "PM Skills Marketplace: An AI Operating System for Better Product Decisions. 65 PM skills and 36 chained workflows across 8 plugins — from discovery to strategy, execution, launch, and growth."
   },
   {
-    "repo": "Tencent/cherry-markdown",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "✨ A Markdown Editor"
+    "repo": "Narcooo/inkos",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Multi-agent novel production system — AI agents autonomously write, audit, and revise novels with human review gates"
   },
   {
-    "repo": "lencx/ChatGPT",
+    "repo": "jackwener/rdt-cli",
     "branch": "main",
+    "language": "Python",
+    "description": "Reddit in your terminal 📖 — Browse feeds, read posts, search, upvote, save, subscribe"
+  },
+  {
+    "repo": "apollographql/graphql-subscriptions",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ":newspaper: A small module that implements GraphQL subscriptions for Node.js"
+  },
+  {
+    "repo": "actix/actix-web",
+    "branch": "master",
     "language": "Rust",
-    "description": "🔮 ChatGPT Desktop Application (Mac, Windows and Linux)"
+    "description": "Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust."
   },
   {
-    "repo": "FlowiseAI/Flowise",
+    "repo": "finvfamily/finshare",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Build AI Agents, Visually"
-  },
-  {
-    "repo": "SortableJS/Sortable",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required."
-  },
-  {
-    "repo": "microsoft/TypeScript",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output."
-  },
-  {
-    "repo": "tamagui/tamagui",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Style React fast with 100% parity on React Native, an optional UI kit, and optimizing compiler."
-  },
-  {
-    "repo": "tektoncd/pipeline",
-    "branch": "main",
-    "language": "Go",
-    "description": "A cloud-native Pipeline resource."
-  },
-  {
-    "repo": "cookiecutter/cookiecutter",
-    "branch": "master",
     "language": "Python",
-    "description": "A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects."
+    "description": "专业的金融数据获取工具库 - A Professional Financial Data Fetching Toolkit for   Python"
   },
   {
-    "repo": "jgraph/drawio",
+    "repo": "RocketChat/Rocket.Chat",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "The Secure CommsOS™ for mission-critical operations"
+  },
+  {
+    "repo": "snarktank/antfarm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Build your agent team in OpenClaw with one command."
+  },
+  {
+    "repo": "godotengine/godot-docs",
+    "branch": "master",
+    "language": "reStructuredText",
+    "description": "Godot Engine official documentation"
+  },
+  {
+    "repo": "liuwei283/RealWonder",
+    "branch": "main",
+    "language": "Python",
+    "description": "Real-Time Physical Action-Conditioned Video Generation"
+  },
+  {
+    "repo": "mrdoob/three.js",
     "branch": "dev",
     "language": "JavaScript",
-    "description": "draw.io is a JavaScript, client-side editor for general diagramming."
+    "description": "JavaScript 3D Library."
   },
   {
-    "repo": "facebook/stylex",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "StyleX is the styling system for ambitious user interfaces."
-  },
-  {
-    "repo": "dapr/dapr",
-    "branch": "master",
-    "language": "Go",
-    "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration."
-  },
-  {
-    "repo": "aquasecurity/kube-bench",
-    "branch": "main",
-    "language": "Go",
-    "description": "Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark"
-  },
-  {
-    "repo": "ipython/ipython",
+    "repo": "thu-ml/Causal-Forcing",
     "branch": "main",
     "language": "Python",
-    "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc."
+    "description": "Official codebase for Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation"
   },
   {
-    "repo": "vanna-ai/vanna",
+    "repo": "tophant-ai/ClawVault",
     "branch": "main",
     "language": "Python",
-    "description": "🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using Agentic Retrieval 🔄."
-  },
-  {
-    "repo": "umijs/umi",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A framework in react community ✨"
+    "description": "OpenClaw Security Vault — Atomic claw control: every AI reach, within your sight."
   }
 ]
