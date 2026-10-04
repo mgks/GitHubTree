@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Aloni-zin/Equity-Ray-Tracer",
+    "repo": "jinzijian/EvoTrace",
     "branch": "main",
+    "language": "Python",
+    "description": "Compile real-world Claude Code and Codex trajectories into verified, tradable post-training assets."
+  },
+  {
+    "repo": "teamchong/turboquant-wasm",
+    "branch": "main",
+    "language": "Zig",
+    "description": "TurboQuant WASM SIMD vector compression — 3 bits/dim with fast dot product. Requires relaxed SIMD (Chrome 114+, Firefox 128+, Safari 18+, Node 20+)"
+  },
+  {
+    "repo": "docker/awesome-compose",
+    "branch": "master",
     "language": "HTML",
-    "description": "Advanced Equity Line Strategy 2026: MT4/MT5 Multi-Timeframe Profit Visualizer"
+    "description": "Awesome Docker Compose samples"
   },
   {
-    "repo": "jmoiron/sqlx",
-    "branch": "master",
-    "language": "Go",
-    "description": "general purpose extensions to golang's database/sql"
-  },
-  {
-    "repo": "FireRedTeam/FireRedASR2S",
+    "repo": "securo-finance/securo",
     "branch": "main",
     "language": "Python",
-    "description": "FireRedASR2S is a SOTA Industrial-Grade All-in-One ASR system with ASR, VAD, LID, and Punc modules. FireRedASR2 supports Chinese (Mandarin, 20+ dialects/accents), English, code-switching, and singing lyrics recognition. FireRedVAD supports speech/singing/music in 100+ langs. FireRedLID supports 100+ langs and 20+ zh dialects."
+    "description": "Open-source personal finance manager. Self-hosted, privacy-first."
   },
   {
-    "repo": "stanford-iris-lab/meta-harness-tbench2-artifact",
-    "branch": "main",
-    "language": "Python",
-    "description": "Meta-Harness: 76.4% on Terminal-Bench 2.0 (Claude Opus 4.6)"
-  },
-  {
-    "repo": "DaveMoudy/SalesforceDocGen",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "This package contains all the parts and moving pieces needed to run the DocGen app in Salesforce."
-  },
-  {
-    "repo": "jbhuang0604/awesome-computer-vision",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of awesome computer vision resources"
-  },
-  {
-    "repo": "spring-projects/spring-boot",
-    "branch": "main",
-    "language": "Java",
-    "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss."
-  },
-  {
-    "repo": "plotly/dash",
-    "branch": "dev",
-    "language": "Python",
-    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
-  },
-  {
-    "repo": "math-inc/OpenGauss",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "nedbat/coveragepy",
-    "branch": "master",
-    "language": "Python",
-    "description": "The code coverage tool for Python"
-  },
-  {
-    "repo": "Nuzair46/Monarch",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Detach, restore, and switch monitor layouts without touching cables."
-  },
-  {
-    "repo": "KeyID-AI/sdk-py",
-    "branch": "main",
-    "language": "Python",
-    "description": "Free email for AI agents. No signup, no human needed. Install → provision → send and receive. Ed25519 keypair auth."
-  },
-  {
-    "repo": "valeriansaliou/sonic",
-    "branch": "master",
-    "language": "Rust",
-    "description": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
-  },
-  {
-    "repo": "MINT-SJTU/RoboClaw",
-    "branch": "main",
-    "language": "Python",
-    "description": "RoboClaw is an Embodied AI Assistant."
-  },
-  {
-    "repo": "sgInnora/alipay-deeplink-research",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Alipay DeepLink + JSBridge Security Research - 17 Verified Vulnerabilities | 支付宝DeepLink安全研究 | Full Report: innora.ai/zfb"
-  },
-  {
-    "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "The largest open-source medical AI skills library for OpenClaw🦞."
-  },
-  {
-    "repo": "PyCQA/isort",
-    "branch": "main",
-    "language": "Python",
-    "description": "A Python utility / library to sort imports."
-  },
-  {
-    "repo": "makermate/clarvis-ai",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Clarvis - 3D Printing Made Easy"
-  },
-  {
-    "repo": "shuyicc/MathLens",
-    "branch": "main",
-    "language": "Python",
-    "description": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。"
-  },
-  {
-    "repo": "samuelfaj/distill",
+    "repo": "lukeed/comptime",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Distill large CLI outputs into small answers for LLMs and save tokens!"
+    "description": "A Zig-inspired build-time evaluation primitive, exposed as Vite and Rolldown plugins"
   },
   {
-    "repo": "helenigtxu/blooket",
+    "repo": "rohitg00/ai-engineering-from-scratch",
     "branch": "main",
-    "language": "Rust",
-    "description": ""
+    "language": "Python",
+    "description": "Learn it. Build it. Ship it for others."
   },
   {
-    "repo": "170-carry/codex-tools",
+    "repo": "mlflow/mlflow",
+    "branch": "master",
+    "language": "Python",
+    "description": "The open source developer platform to build AI agents and models with confidence. Enhance your AI applications with end-to-end tracking, observability, and evaluations, all in one integrated platform."
+  },
+  {
+    "repo": "1270011/claude-buddy",
     "branch": "main",
-    "language": "Rust",
-    "description": "快捷切换codex 账号以及监控codex用量的工具"
+    "language": "TypeScript",
+    "description": "Keep Your Claude Code Buddy Forever — permanent coding companion that survives every update"
   },
   {
-    "repo": "sadsadsasdasadsadsadsadsa/Crimson-Desert-Optiscaler-Fsr-4",
+    "repo": "tensorflow/probability",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Probabilistic reasoning and statistical analysis in TensorFlow"
+  },
+  {
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
+    "language": "Python",
+    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+  },
+  {
+    "repo": "ceph/ceph",
     "branch": "main",
     "language": "C++",
-    "description": "Crimson Desert Optiscaler FSR 4 Full Version 2026 – Advanced Graphics Mod featuring OptiScaler + AMD FSR 4. Significantly increases FPS while improving image sharpness and reducing ghosting in Crimson Desert. Perfect for low-end and high-end PCs. Includes multiple FSR 4 presets. Best performance and upscaling solution for Crimson Desert in 2026!"
+    "description": "Ceph is a distributed object, block, and file storage platform"
   },
   {
-    "repo": "ahmadawais/chartli",
+    "repo": "lib/pq",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go PostgreSQL driver for database/sql"
+  },
+  {
+    "repo": "cockroachdb/cockroach",
+    "branch": "master",
+    "language": "Go",
+    "description": "CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement."
+  },
+  {
+    "repo": "hiteshchoudhary/gitbackup",
     "branch": "main",
     "language": "TypeScript",
-    "description": "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg."
+    "description": "It was personal script but now it is a complete desktop application to take backup of your github account"
+  },
+  {
+    "repo": "MarlinFirmware/Marlin",
+    "branch": "bugfix-2.1.x",
+    "language": "C++",
+    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
+  },
+  {
+    "repo": "CoreGuideLab/polymarket-arbitrage-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket arbitrage trading bot: Polymarket arbitrage trading bot Polymarket arbitrage bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket tradingbot"
+  },
+  {
+    "repo": "cilium/cilium",
+    "branch": "main",
+    "language": "Go",
+    "description": "eBPF-based Networking, Security, and Observability"
+  },
+  {
+    "repo": "geekjourneyx/jina-cli",
+    "branch": "main",
+    "language": "Go",
+    "description": "A lightweight CLI tool wrapping Jina AI Reader API for AI Agents. Fetch and parse any URL into LLM-friendly   formats (Markdown/Text/HTML). Perfect for reading X(Twitter), blogs, and news sites."
+  },
+  {
+    "repo": "kdenlive/kdenlive",
+    "branch": "master",
+    "language": "Other",
+    "description": "Kdenlive is a free and open source video editor, available for GNU/Linux, Windows and macOS."
+  },
+  {
+    "repo": "cloudflare/vinext",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Vite plugin that reimplements the Next.js API surface — deploy anywhere"
+  },
+  {
+    "repo": "nextui-org/nextui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
+  },
+  {
+    "repo": "aave/aave-v2",
+    "branch": "master",
+    "language": "Other",
+    "description": "Aave Protocol V2"
+  },
+  {
+    "repo": "LocoreMind/LocoTrainer",
+    "branch": "main",
+    "language": "Python",
+    "description": "MS-SWIFT domain expert agent for codebase analysis and report generation"
+  },
+  {
+    "repo": "raspberrypi/firmware",
+    "branch": "master",
+    "language": "Other",
+    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
   }
 ]
