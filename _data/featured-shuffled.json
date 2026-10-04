@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Nightmare-Eclipse/MiniPlasma",
+    "repo": "thisisgm/flea",
     "branch": "main",
-    "language": "C#",
-    "description": "CVE-2020-17103 supposedly still works"
+    "language": "Shell",
+    "description": "A fast, keyboard-first file manager for Omarchy: Quickshell front end, Rust backend."
   },
   {
-    "repo": "lifo-sh/lifo",
+    "repo": "argentlabs/argent-contracts",
+    "branch": "develop",
+    "language": "Solidity",
+    "description": "Smart Contracts for Argent Wallet"
+  },
+  {
+    "repo": "kewonit/aeris",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A browser-native operating system. Unix/Linux reimagined where the browser IS the kernel and Web APIs ARE syscalls. 60+ commands, bash-like shell, virtual filesystem, and IndexedDB persistence."
+    "description": "Aeris is a real-time 3D flight radar for the web"
   },
   {
-    "repo": "flutter/flutter",
+    "repo": "dateutil/dateutil",
     "branch": "master",
-    "language": "Dart",
-    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
+    "language": "Python",
+    "description": "Useful extensions to the standard Python datetime features"
   },
   {
-    "repo": "devicekit/DeviceKit",
-    "branch": "master",
-    "language": "Swift",
-    "description": "DeviceKit is a value-type replacement of UIDevice."
-  },
-  {
-    "repo": "opencontainers/runc",
+    "repo": "containerd/containerd",
     "branch": "main",
     "language": "Go",
-    "description": "CLI tool for spawning and running containers according to the OCI specification"
+    "description": "An open and reliable container runtime"
   },
   {
-    "repo": "tailwindcss/tailwindcss",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "A utility-first CSS framework for rapid UI development."
-  },
-  {
-    "repo": "react-native-maps/react-native-maps",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "React Native Mapview component for iOS + Android"
-  },
-  {
-    "repo": "invertase/react-native-firebase",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🔥 A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services."
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "shanselman/cert-inspector",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🔒 Web tool to inspect SSL certificates and DNS for all domains in a webpage's request tree. Captures full network footprint via headless browser."
-  },
-  {
-    "repo": "apple/swift-nio",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
-  },
-  {
-    "repo": "shanselman/openclaw-windows-hub",
-    "branch": "master",
-    "language": "C#",
-    "description": "Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension"
-  },
-  {
-    "repo": "atomiks/tippyjs",
-    "branch": "v6",
-    "language": "JavaScript",
-    "description": "Tooltip, popover, dropdown, and menu library"
-  },
-  {
-    "repo": "dandavison/delta",
+    "repo": "lukehinds/nono",
     "branch": "main",
     "language": "Rust",
-    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+    "description": "OS-Level Isolation for AI Agents."
   },
   {
-    "repo": "open-policy-agent/gatekeeper",
-    "branch": "master",
+    "repo": "ankitects/anki",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Anki is a smart spaced repetition flashcard program"
+  },
+  {
+    "repo": "sliverp/qqbot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "qqbot"
+  },
+  {
+    "repo": "starccy/doubaoime-asr",
+    "branch": "main",
+    "language": "Python",
+    "description": "豆包输入法语音识别的非官方 Python 客户端"
+  },
+  {
+    "repo": "TsingmaoAI/xw-cli",
+    "branch": "main",
     "language": "Go",
-    "description": "🐊 Policy Controller for Kubernetes"
+    "description": "实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型"
   },
   {
-    "repo": "nodejs/node",
+    "repo": "go-gitea/gitea",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Node.js JavaScript runtime ✨🐢🚀✨"
+    "language": "Go",
+    "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD"
   },
   {
-    "repo": "deepchem/deepchem",
+    "repo": "ossu/computer-science",
     "branch": "master",
-    "language": "Python",
-    "description": "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology"
+    "language": "HTML",
+    "description": "🎓 Path to a free self-taught education in Computer Science!"
   },
   {
-    "repo": "terausss/polymarket-copy-trading-bot",
+    "repo": "nushell/nushell",
     "branch": "main",
-    "language": "Python",
-    "description": "polymarket bot polymarket bot polymarket bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot"
+    "language": "Rust",
+    "description": "A new type of shell"
   },
   {
-    "repo": "sonpiaz/evox",
+    "repo": "BabylonJS/Babylon.js",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."
+  },
+  {
+    "repo": "snoglobe/helios",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "vignesh07/babyshark",
+    "repo": "zulip/zulip",
     "branch": "main",
-    "language": "Rust",
-    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
+    "language": "Python",
+    "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused."
   },
   {
-    "repo": "ant-design/ant-design-pro",
+    "repo": "nextcloud/android",
     "branch": "master",
+    "language": "Kotlin",
+    "description": "📱 Nextcloud Android app"
+  },
+  {
+    "repo": "Shoshuo/Prismarr",
+    "branch": "main",
+    "language": "Twig",
+    "description": "A self-hosted media dashboard unifying Radarr, Sonarr, Prowlarr, Jellyseerr, qBittorrent and TMDb in a single Symfony 8 interface. One search bar across the local library and TMDb, one calendar merging movie and episode releases, one dashboard, one settings page. Single Docker container, embedded SQLite, multi-arch. AGPL-3.0."
+  },
+  {
+    "repo": "pytorch/examples",
+    "branch": "main",
+    "language": "Python",
+    "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc."
+  },
+  {
+    "repo": "NVIDIA/NemoClaw",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
+    "description": "NVIDIA plugin for secure installation of OpenClaw"
   },
   {
-    "repo": "animate-css/animate.css",
+    "repo": "CalyxOS/calyxos",
     "branch": "main",
-    "language": "CSS",
-    "description": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
+    "language": "HTML",
+    "description": "CalyxOS - Google-free Android"
   },
   {
-    "repo": "Xuanwo/xurl",
-    "branch": "main",
-    "language": "Rust",
-    "description": "xURL: Client for AI Agents URLs"
+    "repo": "apache/groovy",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Groovy: A powerful multi-faceted programming language for the JVM platform"
   },
   {
-    "repo": "MarioGalindoQ/Modern-CPP-Design-Patterns",
+    "repo": "cncf/toc",
     "branch": "main",
-    "language": "C++",
-    "description": "32 Design Patterns and C++ Idioms implemented in Modern C++"
+    "language": "Go",
+    "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation."
+  },
+  {
+    "repo": "btahir/react-kino",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Cinematic scroll-driven storytelling for React"
   }
 ]
