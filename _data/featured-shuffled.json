@@ -1,146 +1,146 @@
 [
   {
-    "repo": "paritytech/polkadot",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Polkadot Node Implementation"
-  },
-  {
-    "repo": "KeyID-AI/sdk-py",
+    "repo": "Nightmare-Eclipse/MiniPlasma",
     "branch": "main",
-    "language": "Python",
-    "description": "Free email for AI agents. No signup, no human needed. Install → provision → send and receive. Ed25519 keypair auth."
+    "language": "C#",
+    "description": "CVE-2020-17103 supposedly still works"
   },
   {
-    "repo": "qdrant/qdrant",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
-  },
-  {
-    "repo": "jupyter/notebook",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Jupyter Interactive Notebook"
-  },
-  {
-    "repo": "Chozzc/Lujie-Careerkit",
+    "repo": "lifo-sh/lifo",
     "branch": "main",
     "language": "TypeScript",
-    "description": "An AI-powered career workspace from resume editing to offer acceptance, covering resume editing, JD matching, application tracking, mock interviews, and interview review."
+    "description": "A browser-native operating system. Unix/Linux reimagined where the browser IS the kernel and Web APIs ARE syscalls. 60+ commands, bash-like shell, virtual filesystem, and IndexedDB persistence."
   },
   {
-    "repo": "jmoiron/sqlx",
+    "repo": "flutter/flutter",
     "branch": "master",
-    "language": "Go",
-    "description": "general purpose extensions to golang's database/sql"
+    "language": "Dart",
+    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
   },
   {
-    "repo": "plotly/plotly.py",
+    "repo": "devicekit/DeviceKit",
     "branch": "master",
-    "language": "Python",
-    "description": "The interactive graphing library for Python :sparkles:"
+    "language": "Swift",
+    "description": "DeviceKit is a value-type replacement of UIDevice."
   },
   {
-    "repo": "HKUSTDial/Supervisor-Skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "将博导十年科研经验炼化为可直接调用的 AI 技能。从 Idea 构思到论文投稿，你的 AI 科研副导师。"
-  },
-  {
-    "repo": "xiaolajiaoyyds/regplatformm",
+    "repo": "opencontainers/runc",
     "branch": "main",
     "language": "Go",
+    "description": "CLI tool for spawning and running containers according to the OCI specification"
+  },
+  {
+    "repo": "tailwindcss/tailwindcss",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A utility-first CSS framework for rapid UI development."
+  },
+  {
+    "repo": "react-native-maps/react-native-maps",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "React Native Mapview component for iOS + Android"
+  },
+  {
+    "repo": "invertase/react-native-firebase",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🔥 A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services."
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "shanselman/cert-inspector",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "🔒 Web tool to inspect SSL certificates and DNS for all domains in a webpage's request tree. Captures full network footprint via headless browser."
+  },
+  {
+    "repo": "apple/swift-nio",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
+  },
+  {
+    "repo": "shanselman/openclaw-windows-hub",
+    "branch": "master",
+    "language": "C#",
+    "description": "Windows companion suite for Moltbot - System Tray app, Shared library, and PowerToys Command Palette extension"
+  },
+  {
+    "repo": "atomiks/tippyjs",
+    "branch": "v6",
+    "language": "JavaScript",
+    "description": "Tooltip, popover, dropdown, and menu library"
+  },
+  {
+    "repo": "dandavison/delta",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
+  },
+  {
+    "repo": "open-policy-agent/gatekeeper",
+    "branch": "master",
+    "language": "Go",
+    "description": "🐊 Policy Controller for Kubernetes"
+  },
+  {
+    "repo": "nodejs/node",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Node.js JavaScript runtime ✨🐢🚀✨"
+  },
+  {
+    "repo": "deepchem/deepchem",
+    "branch": "master",
+    "language": "Python",
+    "description": "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology"
+  },
+  {
+    "repo": "terausss/polymarket-copy-trading-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "polymarket bot polymarket bot polymarket bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot polymarket trading bot polymarket copy trading bot"
+  },
+  {
+    "repo": "sonpiaz/evox",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "chiefautism/privacy-parser",
+    "repo": "vignesh07/babyshark",
     "branch": "main",
-    "language": "Python",
-    "description": "Reverse of OpenAI Privacy Filter: same 1.5B model, returns PII as structured spans instead of masking."
+    "language": "Rust",
+    "description": "Flows-first PCAP TUI (case files, gorgeous UX). Do do do do."
   },
   {
-    "repo": "Higangssh/gitcredits",
-    "branch": "main",
-    "language": "Go",
-    "description": "Roll movie-style credits for your git repo — right in the terminal"
-  },
-  {
-    "repo": "TitanFlow-Systems/best-of-algorithmic-trading",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "best-of algorithmic trading quant finance crypto bots frameworks APIs TA indicators libraries Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C# Java forex stocks derivatives polymarket prediction-markets courses books YouTube Telegram communities fintech opensource weekly ranked star-score"
-  },
-  {
-    "repo": "plotly/plotly.js",
+    "repo": "ant-design/ant-design-pro",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "Open-source JavaScript charting library behind Plotly and Dash"
+    "language": "TypeScript",
+    "description": "👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!"
   },
   {
-    "repo": "m-schuetz/CuRast",
+    "repo": "animate-css/animate.css",
+    "branch": "main",
+    "language": "CSS",
+    "description": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
+  },
+  {
+    "repo": "Xuanwo/xurl",
+    "branch": "main",
+    "language": "Rust",
+    "description": "xURL: Client for AI Agents URLs"
+  },
+  {
+    "repo": "MarioGalindoQ/Modern-CPP-Design-Patterns",
     "branch": "main",
     "language": "C++",
-    "description": "Cuda-Based Software Rasterization for Billions of Triangles"
-  },
-  {
-    "repo": "chekusu/mails",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "email for agents. Built for AI agents that need to send, receive, and understand emails programmatically"
-  },
-  {
-    "repo": "Aircoookie/WLED",
-    "branch": "main",
-    "language": "C++",
-    "description": "Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!"
-  },
-  {
-    "repo": "software-mansion/react-native-reanimated",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "React Native's Animated library reimplemented"
-  },
-  {
-    "repo": "sangrokjung/claude-forge",
-    "branch": "main",
-    "language": "Shell",
-    "description": "oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull."
-  },
-  {
-    "repo": "ShunsukeHayashi/agent-skill-bus",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "The missing runtime for Agent Skills — health monitoring, self-improvement, and dependency management for any AI agent framework. Zero dependencies."
-  },
-  {
-    "repo": "uber-go/zap",
-    "branch": "master",
-    "language": "Go",
-    "description": "Blazing fast, structured, leveled logging in Go."
-  },
-  {
-    "repo": "drasimwagan/mdv",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "MDV — a Markdown superset for documents, dashboards, and slides with embedded data and visualizations. HTML + PDF export, live preview, VS Code extension."
-  },
-  {
-    "repo": "awesome-selfhosted/awesome-selfhosted",
-    "branch": "master",
-    "language": "Other",
-    "description": "A list of Free Software network services and web applications which can be hosted on your own servers"
-  },
-  {
-    "repo": "lukiIabs/trading-agents",
-    "branch": "main",
-    "language": "Python",
-    "description": "TradingAgents LLM multi-agent finance trading stocks crypto fintech quantitative algo trading sentiment analysis OpenAI JavaScript Node.js research OSS"
-  },
-  {
-    "repo": "Jakubantalik/metal-fx",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Animated WebGL liquid-metal effect for React buttons and UI components"
+    "description": "32 Design Patterns and C++ Idioms implemented in Modern C++"
   }
 ]
