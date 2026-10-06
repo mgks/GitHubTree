@@ -1,146 +1,146 @@
 [
   {
-    "repo": "cdppcorp/KESE-KIT",
-    "branch": "main",
-    "language": "Python",
-    "description": "KISA 주요정보통신기반시설 기술적 취약점 분석 평가방법 상세가이드 기반 Skills"
-  },
-  {
-    "repo": "ipenywis/laya-ultrafast",
-    "branch": "main",
-    "language": "Python",
-    "description": "Same as jev-ultrafast but using Laya"
-  },
-  {
-    "repo": "zhuyansen/wx-favorites-report",
-    "branch": "main",
-    "language": "Python",
-    "description": "微信收藏可视化 Claude Code Skill — 从加密 DB 到交互式 HTML 报告的端到端管线"
-  },
-  {
-    "repo": "dagster-io/dagster",
+    "repo": "raspberrypi/firmware",
     "branch": "master",
-    "language": "Python",
-    "description": "An orchestration platform for the development, production, and observation of data assets."
+    "language": "Other",
+    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
   },
   {
-    "repo": "MartinGalway/C64_music",
+    "repo": "VDERR/echocat-skill-panel-3.0",
     "branch": "main",
-    "language": "Assembly",
-    "description": "Music source files from 1980's Commodore 64 games"
+    "language": "JavaScript",
+    "description": "DSH 技能调用审计 + 应用内 skill 管理器"
   },
   {
-    "repo": "NVIDIA/cuda-python",
-    "branch": "main",
-    "language": "Cython",
-    "description": "CUDA Python: Performance meets Productivity"
-  },
-  {
-    "repo": "SXai-lab/prediction-market-copytrade",
+    "repo": "my-claude-utils/clsh",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Polymarket copy trade Polymarket跟单交易 Polymarket copytrading bot  Polymarket跟单交易机器人 Copytrading Polymarket  Polymarket跟单交易 Polymarket copy trade Polymarket跟单交易 Polymarket copytrading bot  Polymarket跟单交易机器人 Copytrading Polymarket  Polymarket跟单交易 Polymarket copy trade Polymarket跟单交易 Polymarket copytrading bot  Polymarket跟单交易机器人 Copytrading Polymarket"
+    "description": "Access your terminal and your AI agent from any device — phone, tablet, desktop."
   },
   {
-    "repo": "goharbor/community",
+    "repo": "TsingmaoAI/xw-cli",
+    "branch": "main",
+    "language": "Go",
+    "description": "实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型"
+  },
+  {
+    "repo": "dashrobotco/robot-components",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "ryan26craf/polymarket-kalshi-arbitrage-bot",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Kalshi open source trading bot to automate copy trading and arbitrage strategies on crypto prediction markets for free, with simple interface."
+  },
+  {
+    "repo": "sveltejs/svelte",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "web development for the rest of us"
+  },
+  {
+    "repo": "fluent/fluent-bit",
+    "branch": "master",
+    "language": "C",
+    "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows"
+  },
+  {
+    "repo": "github/copilot-docs",
     "branch": "main",
     "language": "Other",
-    "description": "Harbor community-related material"
+    "description": "Documentation for GitHub Copilot"
   },
   {
-    "repo": "MarlinFirmware/Marlin",
-    "branch": "bugfix-2.1.x",
-    "language": "C++",
-    "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine."
+    "repo": "LightTable/LightTable",
+    "branch": "master",
+    "language": "Clojure",
+    "description": "The Light Table IDE ⛺"
   },
   {
-    "repo": "JackChen-me/open-multi-agent",
+    "repo": "prisma/graphql-yoga",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Production-grade multi-agent orchestration framework. Model-agnostic, supports team collaboration, task scheduling, and inter-agent communication."
+    "description": "🧘 Rewrite of a fully-featured GraphQL Server with focus on easy setup, performance & great developer experience.  The core of Yoga implements WHATWG Fetch API and can run/deploy on any JS environment."
   },
   {
-    "repo": "adafruit/circuitpython",
-    "branch": "main",
-    "language": "C",
-    "description": "CircuitPython - a Python implementation for teaching coding with microcontrollers"
+    "repo": "ant-design/ant-design-mobile",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Essential UI blocks for building mobile web apps."
   },
   {
-    "repo": "Shpigford/chops",
+    "repo": "ionic-team/ionic-framework",
     "branch": "main",
-    "language": "Swift",
-    "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp."
+    "language": "TypeScript",
+    "description": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript."
   },
   {
-    "repo": "junit-team/junit4",
+    "repo": "eslint/eslint",
     "branch": "main",
+    "language": "JavaScript",
+    "description": "Find and fix problems in your JavaScript code."
+  },
+  {
+    "repo": "rabbitmq/rabbitmq-server",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
+  },
+  {
+    "repo": "bumptech/glide",
+    "branch": "master",
     "language": "Java",
-    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
+    "description": "An image loading and caching library for Android focused on smooth scrolling"
   },
   {
-    "repo": "michelleoincx/zeroclaw-grok",
+    "repo": "jupyter/notebook",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "ZeroClaw — sleek web interface for Grok AI (xAI). Streaming responses, multi-session chat, model selector. Zero npm dependencies. Runs with one command."
+    "language": "Jupyter Notebook",
+    "description": "Jupyter Interactive Notebook"
   },
   {
-    "repo": "longhorn/longhorn",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Cloud-Native distributed storage built on and for Kubernetes"
-  },
-  {
-    "repo": "allenai/allennlp",
+    "repo": "1837620622/cloudflare-bypass-2026",
     "branch": "main",
     "language": "Python",
-    "description": "An open-source NLP research library, built on PyTorch."
+    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
   },
   {
-    "repo": "kubernetes-sigs/metrics-server",
-    "branch": "master",
-    "language": "Go",
-    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines."
-  },
-  {
-    "repo": "webadderall/Recordly",
+    "repo": "opencmit/alphora",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A free, open-source Screen Studio alternative that adds auto-zoom, cursor animations and more to your screen recordings. Substantially modifies the OpenScreen foundation."
-  },
-  {
-    "repo": "cosmos/cosmos-sdk",
-    "branch": "main",
-    "language": "Go",
-    "description": ":chains: A Framework for Building High Value Public Blockchains :sparkles:"
-  },
-  {
-    "repo": "micropython/micropython",
-    "branch": "master",
-    "language": "C",
-    "description": "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
-  },
-  {
-    "repo": "drivelineresearch/autoresearch-claude-code",
-    "branch": "master",
     "language": "Python",
-    "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch"
+    "description": "A Production-Ready Framework for Building Composable AI Agents"
   },
   {
-    "repo": "sharkdp/fd",
+    "repo": "pallets/jinja",
+    "branch": "main",
+    "language": "Python",
+    "description": "A very fast and expressive template engine."
+  },
+  {
+    "repo": "ecto/vcad",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Parametric CAD in Rust — CSG modeling with multi-format export"
+  },
+  {
+    "repo": "Aircoookie/WLED",
+    "branch": "main",
+    "language": "C++",
+    "description": "Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!"
+  },
+  {
+    "repo": "qufei1993/skills-hub",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”."
+  },
+  {
+    "repo": "prysmaticlabs/prysm",
     "branch": "master",
-    "language": "Rust",
-    "description": "A simple, fast and user-friendly alternative to 'find'"
-  },
-  {
-    "repo": "webpack/webpack",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through loaders, modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff."
-  },
-  {
-    "repo": "bahdotsh/mdterm",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A terminal-based Markdown browser."
+    "language": "Go",
+    "description": "Go implementation of Ethereum proof of stake"
   }
 ]
