@@ -1,146 +1,146 @@
 [
   {
-    "repo": "raspberrypi/firmware",
-    "branch": "master",
-    "language": "Other",
-    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
-  },
-  {
-    "repo": "VDERR/echocat-skill-panel-3.0",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "DSH 技能调用审计 + 应用内 skill 管理器"
-  },
-  {
-    "repo": "my-claude-utils/clsh",
+    "repo": "electron-userland/electron-forge",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Access your terminal and your AI agent from any device — phone, tablet, desktop."
+    "description": ":electron: A complete tool for building and publishing Electron applications"
   },
   {
-    "repo": "TsingmaoAI/xw-cli",
+    "repo": "KyrieCheungYep/ky-design-to-html-skill",
     "branch": "main",
-    "language": "Go",
-    "description": "实现国产算力大模型零门槛部署，一键跑通 Qwen、GLM-4.7、Minimax-2.1、DeepSeek-OCR 等模型"
+    "language": "Python",
+    "description": "A Codex / Claude skill for recreating UI screenshots as HTML/CSS."
   },
   {
-    "repo": "dashrobotco/robot-components",
+    "repo": "Nahuel990/ministack",
+    "branch": "master",
+    "language": "Python",
+    "description": "Ministack: the free LocalStack replacement"
+  },
+  {
+    "repo": "sindresorhus/type-fest",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A collection of essential TypeScript types"
+  },
+  {
+    "repo": "kicad/kicad",
+    "branch": "master",
+    "language": "C++",
+    "description": "This is an active mirror of the KiCad development branch, which is hosted at GitLab (updated every time something is pushed). Pull requests on GitHub are not accepted or watched."
+  },
+  {
+    "repo": "THU-SI/Spatial-TTT",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official Implementation of Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training"
+  },
+  {
+    "repo": "itcaat/mtproto-installer",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Ускоритель телеграм =)"
+  },
+  {
+    "repo": "steveclarke/real-world-rails",
+    "branch": "main",
+    "language": "Shell",
+    "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns."
+  },
+  {
+    "repo": "umijs/umi",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A framework in react community ✨"
+  },
+  {
+    "repo": "mrdoob/three.js",
+    "branch": "dev",
+    "language": "JavaScript",
+    "description": "JavaScript 3D Library."
+  },
+  {
+    "repo": "f/agentlytics",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Comprehensive analytics dashboard for AI coding agents — Cursor, Windsurf, Claude Code, VS Code Copilot, Zed, Antigravity, OpenCode, Command Code"
+  },
+  {
+    "repo": "snoglobe/helios",
     "branch": "main",
     "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "ryan26craf/polymarket-kalshi-arbitrage-bot",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Kalshi open source trading bot to automate copy trading and arbitrage strategies on crypto prediction markets for free, with simple interface."
-  },
-  {
-    "repo": "sveltejs/svelte",
+    "repo": "vkehfdl1/slides-grab",
     "branch": "main",
     "language": "JavaScript",
-    "description": "web development for the rest of us"
+    "description": "Select context for agents directly from AI-generated HTML slides"
   },
   {
-    "repo": "fluent/fluent-bit",
+    "repo": "pypa/packaging",
+    "branch": "main",
+    "language": "Python",
+    "description": "Core utilities for Python packages"
+  },
+  {
+    "repo": "webpack-contrib/style-loader",
     "branch": "master",
-    "language": "C",
-    "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows"
-  },
-  {
-    "repo": "github/copilot-docs",
-    "branch": "main",
-    "language": "Other",
-    "description": "Documentation for GitHub Copilot"
-  },
-  {
-    "repo": "LightTable/LightTable",
-    "branch": "master",
-    "language": "Clojure",
-    "description": "The Light Table IDE ⛺"
-  },
-  {
-    "repo": "prisma/graphql-yoga",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🧘 Rewrite of a fully-featured GraphQL Server with focus on easy setup, performance & great developer experience.  The core of Yoga implements WHATWG Fetch API and can run/deploy on any JS environment."
-  },
-  {
-    "repo": "ant-design/ant-design-mobile",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Essential UI blocks for building mobile web apps."
-  },
-  {
-    "repo": "ionic-team/ionic-framework",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript."
-  },
-  {
-    "repo": "eslint/eslint",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "Find and fix problems in your JavaScript code."
+    "description": "Style Loader"
   },
   {
-    "repo": "rabbitmq/rabbitmq-server",
+    "repo": "EvanZhouDev/openai-oauth",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
+    "language": "TypeScript",
+    "description": "Free OpenAI API access with your ChatGPT account."
   },
   {
-    "repo": "bumptech/glide",
+    "repo": "manuelschipper/nah",
+    "branch": "main",
+    "language": "Python",
+    "description": "Context-aware safety guard for Claude Code. A permission system you control."
+  },
+  {
+    "repo": "joshavant/clawbox",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenClaw-ready macOS VMs"
+  },
+  {
+    "repo": "excalidraw/excalidraw",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams"
+  },
+  {
+    "repo": "libgdx/libgdx",
     "branch": "master",
     "language": "Java",
-    "description": "An image loading and caching library for Android focused on smooth scrolling"
+    "description": "Desktop/Android/HTML5/iOS Java game development framework"
   },
   {
-    "repo": "jupyter/notebook",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Jupyter Interactive Notebook"
-  },
-  {
-    "repo": "1837620622/cloudflare-bypass-2026",
+    "repo": "zulip/zulip",
     "branch": "main",
     "language": "Python",
-    "description": "Cloudflare Turnstile 绕过工具 | Cloudflare Bypass Tool based on SeleniumBase UC Mode | 支持 Mac/Windows/Linux"
+    "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused."
   },
   {
-    "repo": "opencmit/alphora",
+    "repo": "unslop-xyz/noodles",
     "branch": "main",
     "language": "Python",
-    "description": "A Production-Ready Framework for Building Composable AI Agents"
+    "description": "Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line."
   },
   {
-    "repo": "pallets/jinja",
+    "repo": "vigorX777/product-design-system",
     "branch": "main",
-    "language": "Python",
-    "description": "A very fast and expressive template engine."
+    "language": "HTML",
+    "description": "面向产品经理的 AI 辅助产品设计工作框架，可 fork 定制的通用产品设计系统"
   },
   {
-    "repo": "ecto/vcad",
+    "repo": "collaborator-ai/collab-public",
     "branch": "main",
-    "language": "Rust",
-    "description": "Parametric CAD in Rust — CSG modeling with multi-format export"
-  },
-  {
-    "repo": "Aircoookie/WLED",
-    "branch": "main",
-    "language": "C++",
-    "description": "Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!"
-  },
-  {
-    "repo": "qufei1993/skills-hub",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”."
-  },
-  {
-    "repo": "prysmaticlabs/prysm",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go implementation of Ethereum proof of stake"
+    "language": "Shell",
+    "description": "Collaborator is a place to build with agents."
   }
 ]
