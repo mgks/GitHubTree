@@ -1,146 +1,146 @@
 [
   {
-    "repo": "miaoxworld/ClawdBotInstaller",
+    "repo": "K07VN/capcut-tts-api",
+    "branch": "main",
+    "language": "Python",
+    "description": "capcut api tts & stt"
+  },
+  {
+    "repo": "Abnerla/AI_paper",
+    "branch": "main",
+    "language": "Python",
+    "description": "一站式AI学术写作辅助工具 · 支持降AIGC、查重率、润色、智能纠错等功能"
+  },
+  {
+    "repo": "mshumer/unslop",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "6551Team/claude-code-design-guide",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "Gitlawb/openclaude",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
+  },
+  {
+    "repo": "louislva/claude-peers-mcp",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Allow all your Claude Codes to message each other ad-hoc!"
+  },
+  {
+    "repo": "FugerQingliu/SlayTheSpire2AutoDrawing",
+    "branch": "main",
+    "language": "HTML",
+    "description": "可以用来在杀戮尖塔2里面自动绘画的小工具！"
+  },
+  {
+    "repo": "claude-code-best/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code 可运行版; Typescript 类型全修复;企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
+  },
+  {
+    "repo": "esaradev/icarus-daedalus",
     "branch": "main",
     "language": "Shell",
-    "description": "ClawdBot 一键部署工具"
+    "description": "Icarus Memory Protocol -- universal agent memory in 50 lines. markdown files in a directory. any framework, any platform, shared memory. includes two-agent reference implementation with Telegram, Slack, and cross-platform recall."
   },
   {
-    "repo": "influxdata/influxdb",
+    "repo": "Garume/Manifold",
     "branch": "main",
-    "language": "Rust",
-    "description": "Scalable datastore for metrics, events, and real-time analytics"
+    "language": "C#",
+    "description": "Operation-first .NET foundation for generating fast CLI and MCP surfaces from a single definition."
   },
   {
-    "repo": "apache/beam",
-    "branch": "master",
-    "language": "Java",
-    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing."
-  },
-  {
-    "repo": "graphql/graphql-js",
+    "repo": "dev-protocol/polymarket-arbitrage-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A reference implementation of GraphQL for JavaScript"
+    "description": "Polymarket arbitrage bot || Dump Hedge Strategy || detect arbitrage opportunity between UP & Down token prices movement - RTDS based strategical Bot"
   },
   {
-    "repo": "google/guava",
-    "branch": "master",
+    "repo": "TACOWASA059/katamariio",
+    "branch": "main",
     "language": "Java",
-    "description": "Google core libraries for Java"
+    "description": "[Forge1.20.1] 球体を操作して周囲のブロックを巻き込み大きくなれるMOD"
   },
   {
-    "repo": "priyanshu14077/Horizon_Zero_Dawn_Unlimited_Resources",
+    "repo": "H-EmbodVis/VEGA-3D",
     "branch": "main",
     "language": "Python",
-    "description": "Unlimited health, ammo, resources, and all skills for Horizon Zero Dawn. God mode, infinite crafting, and stealth. Dominate the machines."
+    "description": "Official code of Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding"
   },
   {
-    "repo": "apple/swift-protobuf",
+    "repo": "makermate/clarvis-ai",
     "branch": "main",
-    "language": "Swift",
-    "description": "Plugin and runtime library for using protobuf with Swift"
-  },
-  {
-    "repo": "alacritty/alacritty",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A cross-platform, OpenGL terminal emulator."
-  },
-  {
-    "repo": "nats-io/nats-server",
-    "branch": "main",
-    "language": "Go",
-    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
-  },
-  {
-    "repo": "microsoft/onnxruntime",
-    "branch": "main",
-    "language": "C++",
-    "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
-  },
-  {
-    "repo": "nextui-org/nextui",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
-  },
-  {
-    "repo": "FlowiseAI/Flowise",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Build AI Agents, Visually"
-  },
-  {
-    "repo": "grpc/grpc-java",
-    "branch": "master",
-    "language": "Java",
-    "description": "The Java gRPC implementation. HTTP/2 based RPC"
-  },
-  {
-    "repo": "deepseek-ai/deepseek-coder",
-    "branch": "main",
-    "language": "Python",
-    "description": "DeepSeek Coder: Let the Code Write Itself"
-  },
-  {
-    "repo": "activepieces/activepieces",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
-  },
-  {
-    "repo": "junegunn/fzf",
-    "branch": "master",
-    "language": "Go",
-    "description": ":cherry_blossom: A command-line fuzzy finder"
-  },
-  {
-    "repo": "tj/n",
-    "branch": "master",
     "language": "Shell",
-    "description": "Node version management"
+    "description": "Clarvis - 3D Printing Made Easy"
   },
   {
-    "repo": "git/git",
-    "branch": "master",
-    "language": "C",
-    "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements."
-  },
-  {
-    "repo": "grafana/loki",
+    "repo": "leaked-claude-code/leaked-claude-code",
     "branch": "main",
-    "language": "Go",
-    "description": "Like Prometheus, but for logs."
+    "language": "TypeScript",
+    "description": "[ LEAKED | LEAK ] Claude Code source code. full claude code opensource."
   },
   {
-    "repo": "Guovin/IPTV-API",
+    "repo": "5uNRiSEBr7059Oken/uniswap-arbitrage-bot-2026",
     "branch": "main",
-    "language": "Python",
-    "description": "⚡️IPTV直播源自动更新平台『🤖全自动采集、筛选、测速、生成🚀』：自定义获取频道；IPv4/IPv6；接口验效；推流；多平台支持；工作流、Docker、命令行、GUI多端部署 | IPTV live streaming source automatic update platform"
+    "language": "Solidity",
+    "description": "Uniswap V3 arbitrage bot 2026 – mempool sniper with real profits"
   },
   {
-    "repo": "github/copilot-docs",
+    "repo": "ChinaSiro/claude-code-sourcemap",
     "branch": "main",
-    "language": "Other",
-    "description": "Documentation for GitHub Copilot"
+    "language": "TypeScript",
+    "description": ""
   },
   {
-    "repo": "kubernetes/minikube",
-    "branch": "master",
-    "language": "Go",
-    "description": "Run Kubernetes locally"
-  },
-  {
-    "repo": "llvm/llvm-project",
+    "repo": "CatsJuice/medal-forge",
     "branch": "main",
-    "language": "LLVM",
-    "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies."
+    "language": "TypeScript",
+    "description": ""
   },
   {
-    "repo": "google-deepmind/graphcast",
+    "repo": "amitshekhariitbhu/ai-engineering-interview-questions",
+    "branch": "main",
+    "language": "Markdown",
+    "description": "Your Cheat Sheet for AI Engineering Interview – Questions and Answers."
+  },
+  {
+    "repo": "AnnaSuSu/TechSpar",
     "branch": "main",
     "language": "Python",
-    "description": "Deep learning weather model from Google DeepMind."
+    "description": "AI 驱动的八股文面试备战系统。支持长期记忆和人物画像，系统会记住你每次的表现，追踪薄弱点和掌握度，自动针对短板出题。支持简历模拟面试和专项强化训练，练得越多，题目越精准，一个越来越了解你的 AI 面试教练。"
+  },
+  {
+    "repo": "cclank/cell-architecture-studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Interactive 3D cell architecture gallery built with React and Three.js"
+  },
+  {
+    "repo": "cybertronai/schmidhuber-problems",
+    "branch": "main",
+    "language": "Python",
+    "description": "58 implementations of synthetic learning problems from Jürgen Schmidhuber's papers (1989-2025). Pure numpy, laptop-runnable, paper-comparison metrics per stub. Algorithmic-lineage companion to hinton-problems."
+  },
+  {
+    "repo": "OpenCoworkAI/open-codesign",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini, Kimi, GLM, Ollama). BYOK, local-first, MIT."
+  },
+  {
+    "repo": "Avarok-Cybersecurity/atlas",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Pure Rust Inference Engine"
   }
 ]
