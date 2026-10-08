@@ -1,69 +1,135 @@
 [
   {
-    "repo": "ircfspace/teleMirror",
+    "repo": "v-modal/vmodal_sdk_flutter",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A simple desktop client for viewing Telegram channels, specifically designed for complex filtering environments like Iran"
+    "language": "Dart",
+    "description": "V- Modal AI: Search anything anywhere SDK Flutter"
   },
   {
-    "repo": "Qwilxy/paralives-release",
+    "repo": "AlexGoOn/the-most-vulnerable-dotnet-app",
     "branch": "main",
-    "language": "C#",
-    "description": "paralives release date early access steam download pc windows 11 gameplay trailer paramaker life simulation sims alternative free updates system requirements character creator build mode"
+    "language": "HTML",
+    "description": "This educational repository showcases the most common vulnerabilities found in .NET applications"
   },
   {
-    "repo": "abdosorour7/git-commands-cheatsheet",
+    "repo": "actions/cache",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "The ultimate Git Commands Cheatsheet: searchable, copy-ready, and organized for real-world developer workflows."
+    "language": "TypeScript",
+    "description": "Cache dependencies and build outputs in GitHub Actions"
   },
   {
-    "repo": "JaredStewart/coderlm",
+    "repo": "yvgude/lean-ctx",
     "branch": "main",
     "language": "Rust",
-    "description": "Tree-sitter-powered code indexing server that gives LLM agents precise, on-demand access to symbols, implementations, callers, tests, and grep across multi-language projects - so they explore codebases through targeted queries instead of loading everything into context."
+    "description": "Hybrid Context Optimizer — Shell Hook + MCP Server. Reduces LLM token consumption by 89-99%. Single Rust binary, zero dependencies."
   },
   {
-    "repo": "0xpoIygon/polymarket-trading-bot-example",
+    "repo": "alchaincyf/huashu-md-html",
+    "branch": "main",
+    "language": "CSS",
+    "description": "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill."
+  },
+  {
+    "repo": "status-im/nimbus-eth2",
+    "branch": "stable",
+    "language": "Nim",
+    "description": "Nim implementation of the Ethereum Beacon Chain"
+  },
+  {
+    "repo": "apollographql/apollo-client",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Polymarket Bot - TypeScript bot for Polymarket 15-minute BTC up/down markets: Gamma market discovery, CLOB quotes, weighted signal fusion, risk checks, and optional live orders via @polymarket/clob-client. Clue: Polymarket Bot, Polymarket Trading Bot, Polymarket Copy Trading Bot, Polymarket Arbitrage Trading Bot, Polymarket Copytrading Bot"
+    "description": "The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development."
   },
   {
-    "repo": "spring-cloud/spring-cloud-gateway",
-    "branch": "main",
-    "language": "Java",
-    "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more."
-  },
-  {
-    "repo": "ethereum/go-ethereum",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go implementation of the Ethereum protocol"
-  },
-  {
-    "repo": "TanStack/router",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more)."
-  },
-  {
-    "repo": "bhh-4209/Crimson-Desert-OptiScaler-FSR-4-Mod",
+    "repo": "electron/electron",
     "branch": "main",
     "language": "C++",
-    "description": "Crimson Desert OptiScaler FSR 4 Mod brings the latest AMD FSR 4 upscaling and OptiScaler technology to Crimson Desert. Significantly improves image quality, sharpness, and performance with higher FPS and excellent visual clarity on any GPU."
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
   },
   {
-    "repo": "styled-components/styled-components",
+    "repo": "PolyPulse-Analytics/hyperliquid-trading-bot",
+    "branch": "main",
+    "language": "Python",
+    "description": "hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot, hyperliquid trading bot,"
+  },
+  {
+    "repo": "tailwindcss/tailwindcss",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A utility-first CSS framework for rapid UI development."
+  },
+  {
+    "repo": "432539/plus_gopay_gptp-plus",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "plus+gopay开通GPTPLUS会员,已经比较稳定,部分技术支持QQ1114639355"
+  },
+  {
+    "repo": "facebook/jest",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅"
+    "description": "Delightful JavaScript Testing."
   },
   {
-    "repo": "xM0kht4r/VEN0m-Ransomware",
+    "repo": "ythx-101/ask-search",
+    "branch": "master",
+    "language": "Python",
+    "description": "Self-hosted web search skill for AI agents (OpenClaw/Claude Code/Antigravity) via SearxNG"
+  },
+  {
+    "repo": "h5bp/html5-boilerplate",
     "branch": "main",
-    "language": "Rust",
-    "description": "Fully undetectable and evasive ransomware written in Rust, leveraging a BYOVD technique to disable AV/EDR solutions on the infected systems."
+    "language": "JavaScript",
+    "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites."
+  },
+  {
+    "repo": "prometheus/prometheus",
+    "branch": "main",
+    "language": "Go",
+    "description": "The Prometheus monitoring system and time series database."
+  },
+  {
+    "repo": "FortAwesome/Font-Awesome",
+    "branch": "6.x",
+    "language": "JavaScript",
+    "description": "The iconic SVG, font, and CSS toolkit"
+  },
+  {
+    "repo": "trekhleb/javascript-algorithms",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings"
+  },
+  {
+    "repo": "square/okhttp",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM."
+  },
+  {
+    "repo": "bleuropa/loomkin",
+    "branch": "main",
+    "language": "Elixir",
+    "description": "An Elixir-native AI coding assistant with persistent decision graphs, repo intelligence, and a Phoenix LiveView UI"
+  },
+  {
+    "repo": "Deesama22/FiveM-Steam-Edition",
+    "branch": "main",
+    "language": "C++",
+    "description": "FiveM download GTA 5 RP roleplay scripts ESX QB-Core client launcher MLO EUP custom cars maps mods servers assets resources multiplayer gameplay."
+  },
+  {
+    "repo": "dnakov/kittyfarm",
+    "branch": "main",
+    "language": "Swift",
+    "description": ""
+  },
+  {
+    "repo": "butthtio/solidity-cot-auditor",
+    "branch": "main",
+    "language": "Python",
+    "description": "Multi-role chain-of-thought LLM pipeline for Solidity security auditing, layered on top of Slither output."
   },
   {
     "repo": "MayersScott/rkn-block-checker",
@@ -72,75 +138,9 @@
     "description": "Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)"
   },
   {
-    "repo": "solana-labs/solana-program-library",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A collection of Solana programs maintained by Solana Labs"
-  },
-  {
-    "repo": "Shpigford/chops",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp."
-  },
-  {
-    "repo": "keras-team/keras",
-    "branch": "master",
-    "language": "Python",
-    "description": "Deep Learning for humans"
-  },
-  {
-    "repo": "google/wire",
-    "branch": "master",
-    "language": "Go",
-    "description": "Compile-time Dependency Injection for Go"
-  },
-  {
-    "repo": "Stability-AI/stablediffusion",
-    "branch": "main",
-    "language": "Other",
-    "description": "High-Resolution Image Synthesis with Latent Diffusion Models."
-  },
-  {
-    "repo": "brendanhogan/loophole",
+    "repo": "6551Team/opennews-mcp",
     "branch": "main",
     "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "Tencent-Hunyuan/HY-Embodied",
-    "branch": "master",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "ray-project/ray",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
-  },
-  {
-    "repo": "AlmogBaku/debug-skill",
-    "branch": "master",
-    "language": "Go",
-    "description": ""
-  },
-  {
-    "repo": "HugoRCD/evlog",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Logging that makes sense. Wide events, structured errors, zero chaos."
-  },
-  {
-    "repo": "swarmclawai/swarmvault",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Inspired by Karpathy's LLM Wiki. Local-first LLM knowledge base compiler (Claude Code, Codex, OpenCode, OpenClaw). Turn raw research into a persistent markdown wiki, knowledge graph, and search index that compound over time."
-  },
-  {
-    "repo": "unslop-xyz/noodles",
-    "branch": "main",
-    "language": "Python",
-    "description": "Your codebase was probably AI-generated. Get a better handle on it. Noodles creates interactive diagrams that visualize how your code actually works, so you can understand what the AI built without reading every line."
+    "description": "Crypto News Aggregation · AI Ratings · Trading Signals · Real-time Updates"
   }
 ]
