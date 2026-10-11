@@ -1,146 +1,146 @@
 [
   {
-    "repo": "plausible/analytics",
+    "repo": "TauriccResearch/Solana-Trading-Bot",
     "branch": "master",
-    "language": "Elixir",
-    "description": "Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics."
+    "language": "TypeScript",
+    "description": "Solana Sniper Bot Raydium Sniper Bot Pumpfun Sniper Bot Bonkfun Sniper Bot Meteora Sniper Bot"
   },
   {
-    "repo": "cheeriojs/cheerio",
+    "repo": "kgoedecke/doop",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The fast, flexible, and elegant library for parsing and manipulating HTML and XML."
+    "description": "The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in."
   },
   {
-    "repo": "apache/mxnet",
+    "repo": "h9zdev/WireTapper",
+    "branch": "main",
+    "language": "HTML",
+    "description": "WireTapper is a wireless OSINT tool that passively detects and maps Wi-Fi, Bluetooth, CCTV cameras, vehicles, headphones, TVs, IoT devices, and cell towers, turning nearby radio signals into clear situational intelligence 📡"
+  },
+  {
+    "repo": "nteract/nteract",
     "branch": "master",
-    "language": "C++",
-    "description": "Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more"
+    "language": "TypeScript",
+    "description": "📘 The interactive computing suite for you!  ✨"
   },
   {
-    "repo": "apache/iceberg",
+    "repo": "SnapKit/SnapKit",
+    "branch": "develop",
+    "language": "Swift",
+    "description": "A Swift Autolayout DSL for iOS & OS X"
+  },
+  {
+    "repo": "rclone/rclone",
+    "branch": "master",
+    "language": "Go",
+    "description": "rsync for cloud storage - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files"
+  },
+  {
+    "repo": "react-native-image-picker/react-native-image-picker",
     "branch": "main",
     "language": "Java",
-    "description": "Apache Iceberg"
+    "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera."
   },
   {
-    "repo": "chartjs/Chart.js",
+    "repo": "RasaHQ/rasa",
+    "branch": "main",
+    "language": "Python",
+    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+  },
+  {
+    "repo": "jmoiron/sqlx",
+    "branch": "master",
+    "language": "Go",
+    "description": "general purpose extensions to golang's database/sql"
+  },
+  {
+    "repo": "nodemailer/nodemailer",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Simple HTML5 Charts using the <canvas> tag"
+    "description": "✉️ Send e-mails with Node.JS – easy as cake!"
   },
   {
-    "repo": "fatedier/frp",
-    "branch": "dev",
+    "repo": "cli/cli",
+    "branch": "trunk",
     "language": "Go",
-    "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet."
+    "description": "GitHub’s official command line tool"
   },
   {
-    "repo": "0xchasercat/mochi",
+    "repo": "streamlit/streamlit",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Streamlit — A faster way to build and share data apps."
+  },
+  {
+    "repo": "actions/download-artifact",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The library for faithful browser automation. High-fidelity fingerprinting for Bun, engineered for consistency and transparency."
+    "description": "Download artifacts from your build"
   },
   {
-    "repo": "louisedesadeleer/clipify",
+    "repo": "deepseek-ai/deepseek-coder",
     "branch": "main",
     "language": "Python",
-    "description": "Claude Code skill: turn long videos into social-ready clips. Auto-find funny moments, cut, reframe to 9:16 with face-tracking, and burn opus-style captions."
+    "description": "DeepSeek Coder: Let the Code Write Itself"
   },
   {
-    "repo": "lonr-6/cc-desktop-switch",
-    "branch": "main",
-    "language": "Python",
-    "description": "Windows desktop app for connecting Claude Desktop to Anthropic-compatible providers like DeepSeek, Kimi, Qiniu, Zhipu, SiliconFlow and Bailian."
-  },
-  {
-    "repo": "YGYOOO/WorldX",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "One sentence creates an AI-driven world — generate maps, characters, and watch stories emerge on their own. 一句话生成一个AI自主驱动的世界."
-  },
-  {
-    "repo": "arvohealth-ai/OpenVitals",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Your health never sleeps."
-  },
-  {
-    "repo": "intave/intave",
+    "repo": "yarnpkg/yarn",
     "branch": "master",
-    "language": "Java",
-    "description": "Intave is an enterprise, high-performance anticheat for Minecraft built on years of experience protecting the world's largest servers"
+    "language": "JavaScript",
+    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
   },
   {
-    "repo": "garnix-io/garnix-ci",
-    "branch": "main",
-    "language": "Haskell",
-    "description": "CI and hosting for nix-based, flakified github repos"
-  },
-  {
-    "repo": "ethanjyx/OpenBrand",
+    "repo": "Uniswap/v3-core",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Extract brand assets (logos, colors, backdrops) from any website; open source alternative to Brand.dev"
+    "description": "🦄 🦄 🦄 Core smart contracts of Uniswap v3"
   },
   {
-    "repo": "hehehai/voxt",
-    "branch": "main",
-    "language": "Swift",
-    "description": "[Beta] Voice input and translation app for macOS. Press to talk, release to paste."
+    "repo": "fastlane/supply",
+    "branch": "master",
+    "language": "Other",
+    "description": "Command line tool for updating Android apps and their metadata on the Google Play Store"
   },
   {
-    "repo": "skycryptsite/SkyCrypt",
-    "branch": "main",
-    "language": "Svelte",
-    "description": "Official SkyCrypt website — a Hypixel SkyBlock stats viewer for checking player profiles, skills, net worth, dungeons, slayers, accessories, collections, pets, armor, weapons, and progression using public Hypixel API data."
-  },
-  {
-    "repo": "GumbyEnder/hermes-kanban",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A dedicated Obsidian plugin + Hermes skill that turns Hermes into an autonomous project executor using Kanban boards inside your Obsidian vault."
-  },
-  {
-    "repo": "steveclarke/real-world-rails",
-    "branch": "main",
-    "language": "Shell",
-    "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns."
-  },
-  {
-    "repo": "anthropics/cwc-long-running-agents",
-    "branch": "main",
-    "language": "Shell",
-    "description": ""
-  },
-  {
-    "repo": "m0at/rvllm",
-    "branch": "main",
-    "language": "Rust",
-    "description": "rvLLM: High-performance LLM inference in Rust. Drop-in vLLM replacement."
-  },
-  {
-    "repo": "xM0kht4r/VEN0m-Ransomware",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Fully undetectable and evasive ransomware written in Rust, leveraging a BYOVD technique to disable AV/EDR solutions on the infected systems."
-  },
-  {
-    "repo": "darrylmorley/whatcable",
-    "branch": "main",
-    "language": "Swift",
-    "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do"
-  },
-  {
-    "repo": "thellimist/clihub",
+    "repo": "envoyproxy/protoc-gen-validate",
     "branch": "main",
     "language": "Go",
-    "description": ""
+    "description": "Protocol Buffer Validation - replaced by https://github.com/bufbuild/protovalidate"
   },
   {
-    "repo": "Shikhar-kulshreshtha/Bongo-Cat-Desktop-Pet-Application",
+    "repo": "sqlalchemy/sqlalchemy",
     "branch": "main",
-    "language": "C++",
-    "description": "Bongo Cat program – adorable animated cat desktop pet that reacts to keystrokes, mouse clicks & gaming. Collect hats, enjoy reactive bongo animations, perfect overlay for streams, typing motivation & fun virtual pet on Windows PC! Cute meme cat companion app."
+    "language": "Python",
+    "description": "The Database Toolkit for Python"
+  },
+  {
+    "repo": "plotly/plotly.py",
+    "branch": "master",
+    "language": "Python",
+    "description": "The interactive graphing library for Python :sparkles:"
+  },
+  {
+    "repo": "fastai/course-v3",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "The 3rd edition of course.fast.ai"
+  },
+  {
+    "repo": "appbrewery/Flutter-Course-Resources",
+    "branch": "master",
+    "language": "Other",
+    "description": "Learn to Code While Building Apps - The Complete Flutter Development Bootcamp."
+  },
+  {
+    "repo": "iJackUA/awesome-vagrant",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome Vagrant resources, plugins, tutorials and other nice things."
+  },
+  {
+    "repo": "pmndrs/react-three-fiber",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "🇨🇭 A React renderer for Three.js"
   }
 ]
