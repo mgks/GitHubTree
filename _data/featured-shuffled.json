@@ -1,146 +1,146 @@
 [
   {
-    "repo": "fromgof/TridentVision",
-    "branch": "main",
-    "language": "Verilog",
-    "description": "Implement yolov26m using a complete FPGA, without any C language code. Requires 160K LUTs and 386 DSP cores (based on Xilinx XC7K325T)."
-  },
-  {
-    "repo": "gitleaks/gitleaks",
-    "branch": "master",
-    "language": "Go",
-    "description": "Find secrets with Gitleaks 🔑"
-  },
-  {
-    "repo": "garinasset/leak-check",
-    "branch": "main",
-    "language": "Python",
-    "description": "个人信息 “泄漏” 检测接口"
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "swc-project/swc",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Rust-based platform for the Web"
-  },
-  {
-    "repo": "encode/django-rest-framework",
+    "repo": "chenwei810/Semiconductor_Manufacturing_Introduction",
     "branch": "master",
     "language": "Python",
-    "description": "Web APIs for Django. 🎸"
+    "description": "Introduction to Semiconductor Manufacturing"
   },
   {
-    "repo": "apple/swift-nio",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Event-driven network application framework for high performance protocol servers & clients, non-blocking."
-  },
-  {
-    "repo": "laravel/laravel",
-    "branch": "11.x",
-    "language": "Blade",
-    "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation for your next big idea — freeing you to create without sweating the small things."
-  },
-  {
-    "repo": "ClickHouse/ClickHouse",
-    "branch": "master",
-    "language": "C++",
-    "description": "ClickHouse® is a real-time analytics database management system"
-  },
-  {
-    "repo": "raspberrypi/firmware",
-    "branch": "master",
-    "language": "Other",
-    "description": "This repository contains pre-compiled binaries of the current Raspberry Pi  kernel and modules, userspace libraries, and bootloader/GPU firmware."
-  },
-  {
-    "repo": "ajeetdsouza/zoxide",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A smarter cd command. Supports all major shells."
-  },
-  {
-    "repo": "tinygo-org/tinygo",
-    "branch": "release",
-    "language": "Go",
-    "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM."
-  },
-  {
-    "repo": "BabylonJS/Babylon.js",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."
-  },
-  {
-    "repo": "GoogleContainerTools/skaffold",
-    "branch": "main",
-    "language": "Go",
-    "description": "Easy and Repeatable Kubernetes Development"
-  },
-  {
-    "repo": "pytube/pytube",
-    "branch": "master",
-    "language": "Python",
-    "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos."
-  },
-  {
-    "repo": "IAmUnbounded/devctx",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Carry context across coding agents/editors/IDEs - Cursor/Windsurf/Claude Code/Antigravity"
-  },
-  {
-    "repo": "pnpm/pnpm",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Fast, disk space efficient package manager"
-  },
-  {
-    "repo": "nolimits4web/swiper",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Most modern mobile touch slider with hardware accelerated transitions"
-  },
-  {
-    "repo": "huggingface/transformers",
+    "repo": "win4r/ClawTeam-OpenClaw",
     "branch": "main",
     "language": "Python",
-    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+    "description": "ClawTeam fork fully adapted for OpenClaw — multi-agent swarm coordination with OpenClaw as the default agent"
   },
   {
-    "repo": "antonmedv/fx",
-    "branch": "master",
-    "language": "Go",
-    "description": "Terminal JSON viewer & processor"
-  },
-  {
-    "repo": "Automattic/mongoose",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "MongoDB object modeling designed to work in an asynchronous environment."
-  },
-  {
-    "repo": "dotnet/maui",
-    "branch": "main",
-    "language": "C#",
-    "description": ".NET MAUI is the .NET Multi-platform App UI, a framework for building native device applications spanning mobile, tablet, and desktop."
-  },
-  {
-    "repo": "testcontainers/testcontainers-java",
+    "repo": "newrelic/newrelic-java-agent",
     "branch": "main",
     "language": "Java",
-    "description": "Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container."
+    "description": "The New Relic Java agent"
   },
   {
-    "repo": "facebook/stylex",
+    "repo": "sqlfluff/sqlfluff",
+    "branch": "main",
+    "language": "Python",
+    "description": "A modular SQL linter and auto-formatter with support for multiple dialects and templated code."
+  },
+  {
+    "repo": "nicepkg/ctxport",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Copy AI conversations as clean Markdown Context Bundles — one click from ChatGPT, Claude, Gemini, DeepSeek, Grok & GitHub. Copy from sidebar without opening. Zero upload, 100% local, open source."
+  },
+  {
+    "repo": "EvilFreelancer/openapi-to-cli",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Turns any OpenAPI/Swagger API into an CLI with set of commands. One CLI command per endpoint."
+  },
+  {
+    "repo": "ListerOvO1211/LazyEnv",
+    "branch": "main",
+    "language": "C++",
+    "description": ""
+  },
+  {
+    "repo": "liliMozi/openhanako",
     "branch": "main",
     "language": "JavaScript",
-    "description": "StyleX is the styling system for ambitious user interfaces."
+    "description": "A personal AI agent with memory, personality, and autonomy — built on Electron."
+  },
+  {
+    "repo": "Euro-Office/DocumentServer",
+    "branch": "main",
+    "language": "Shell",
+    "description": ""
+  },
+  {
+    "repo": "op7418/Document-illustrator-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
+  },
+  {
+    "repo": "alibaba-damo-academy/RynnBrain",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "RynnBrain: Open Embodied Foundation Models"
+  },
+  {
+    "repo": "software-mansion/react-native-screens",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Native navigation primitives for your React Native app."
+  },
+  {
+    "repo": "shanselman/MaximizeToVirtualDesktop",
+    "branch": "master",
+    "language": "C#",
+    "description": "macOS green-button behavior for Windows 11 — maximize any window to its own virtual desktop"
+  },
+  {
+    "repo": "jgarzik/apython",
+    "branch": "main",
+    "language": "Assembly",
+    "description": "Accelerated Asm Python"
+  },
+  {
+    "repo": "excalidraw/excalidraw",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams"
+  },
+  {
+    "repo": "elastic/kibana",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Your window into all of your data"
+  },
+  {
+    "repo": "gainubi/note-slides",
+    "branch": "main",
+    "language": "HTML",
+    "description": "把一篇长文、一个长 PDF，转为可读的精美 Slides。"
+  },
+  {
+    "repo": "drivelineresearch/autoresearch-claude-code",
+    "branch": "master",
+    "language": "Python",
+    "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch"
+  },
+  {
+    "repo": "e10nMa2k/cc-mini",
+    "branch": "main",
+    "language": "Python",
+    "description": "mini version of claude code"
+  },
+  {
+    "repo": "angel10x/Crash-Frontend",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "About Crash game - frontend"
+  },
+  {
+    "repo": "iflytek/astronclaw-tutorial",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "从零到工作流，掌握 AstronClaw（云端）与 Loomy（桌面）的 AI 助手实战教程 | A complete tutorial to master AstronClaw (cloud AI) & Loomy (desktop AI)"
+  },
+  {
+    "repo": "marswaveai/TypeNo",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A free, open source, privacy-first voice input app for macOS."
+  },
+  {
+    "repo": "CoreGuideLab/polymarket-arbitrage-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket arbitrage trading bot: Polymarket arbitrage trading bot Polymarket arbitrage bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket trading bot Polymarket tradingbot"
+  },
+  {
+    "repo": "harrymunro/nelson",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A Claude Code skill for coordinating agent work based on a Royal Navy themed framework. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to parallel subagent squadrons."
   }
 ]
