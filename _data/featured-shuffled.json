@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Polymarket-DevRel/polymarket-devrel",
+    "repo": "ni5arga/deanonymizer",
     "branch": "main",
-    "language": "Rust",
+    "language": "TypeScript",
+    "description": "Deanonymize anyone based on their public commenting or posting history & pattern."
+  },
+  {
+    "repo": "GoogleContainerTools/skaffold",
+    "branch": "main",
+    "language": "Go",
+    "description": "Easy and Repeatable Kubernetes Development"
+  },
+  {
+    "repo": "QwenLM/Qwen3-ASR",
+    "branch": "main",
+    "language": "Python",
+    "description": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction."
+  },
+  {
+    "repo": "yt-dlp/yt-dlp",
+    "branch": "master",
+    "language": "Python",
+    "description": "A feature-rich command-line audio/video downloader"
+  },
+  {
+    "repo": "BuilderIO/qwik",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Instant-loading web apps, without effort"
+  },
+  {
+    "repo": "Kotlin/kotlinx.coroutines",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Library support for Kotlin coroutines"
+  },
+  {
+    "repo": "YuJunZhiXue/github-skill-forge",
+    "branch": "main",
+    "language": "Python",
+    "description": "一个制造技能的技能。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。"
+  },
+  {
+    "repo": "yarnpkg/yarn",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry"
+  },
+  {
+    "repo": "nesaminua/claude-code-lsp-enforcement-kit",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Hooks that force Claude Code to use LSP instead of Grep for code navigation. Saves   ~80% tokens"
+  },
+  {
+    "repo": "eslint/eslint",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Find and fix problems in your JavaScript code."
+  },
+  {
+    "repo": "Shopify/react-native-skia",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "High-performance React Native Graphics using Skia"
+  },
+  {
+    "repo": "prometheus/prometheus",
+    "branch": "main",
+    "language": "Go",
+    "description": "The Prometheus monitoring system and time series database."
+  },
+  {
+    "repo": "guardrailsio/awesome-python-security",
+    "branch": "master",
+    "language": "Other",
+    "description": "Awesome Python Security resources 🕶🐍🔐"
+  },
+  {
+    "repo": "wh0amitz/TailVNC",
+    "branch": "master",
+    "language": "Go",
+    "description": "Tailscale-based Windows VNC persistence tool with Session 0 isolation bypass, embedding a full WireGuard peer and RFB server into a single drop-in binary."
+  },
+  {
+    "repo": "shaom/svg-hand-drawn-skill",
+    "branch": "main",
+    "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "Mondo-Robotics/DiT4DiT",
+    "repo": "HJCheng0602/nanoPD",
     "branch": "main",
     "language": "Python",
-    "description": "This is the official code repo for DiT4DiT, a Vision-Action-Model (VAM) framework that combines video generation model with flow-matching-based action prediction for generalizable robotic manipulation."
+    "description": "A from-scratch Prefill/Decode disaggregation inference engine for LLMs"
   },
   {
-    "repo": "marswaveai/TypeNo",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A free, open source, privacy-first voice input app for macOS."
-  },
-  {
-    "repo": "TanStack/query",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query."
-  },
-  {
-    "repo": "filecoin-project/lotus",
-    "branch": "master",
-    "language": "Go",
-    "description": "Reference implementation of the Filecoin protocol, written in Go"
-  },
-  {
-    "repo": "THUDM/ChatGLM-6B",
-    "branch": "main",
-    "language": "Python",
-    "description": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型"
-  },
-  {
-    "repo": "cert-manager/cert-manager",
-    "branch": "master",
-    "language": "Go",
-    "description": "Automatically provision and manage TLS certificates in Kubernetes"
-  },
-  {
-    "repo": "atomiks/tippyjs",
-    "branch": "v6",
-    "language": "JavaScript",
-    "description": "Tooltip, popover, dropdown, and menu library"
-  },
-  {
-    "repo": "nightwatchjs/nightwatch",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Integrated end-to-end testing framework written in Node.js and using W3C Webdriver API. Developed at @browserstack"
-  },
-  {
-    "repo": "scienceLabwork/Stable-Action",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Samsung Super Steady Horizon Lock - rebuilt for iPhone."
-  },
-  {
-    "repo": "deborahikssv/Antigravity-claw",
-    "branch": "main",
-    "language": "Rust",
-    "description": ""
-  },
-  {
-    "repo": "OpenBMB/MiniCPM-o",
-    "branch": "main",
-    "language": "Python",
-    "description": "MiniCPM-V 4.5: A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone"
-  },
-  {
-    "repo": "OasAIStudio/symphony-ts",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Typecript version of https://github.com/openai/symphony"
-  },
-  {
-    "repo": "dandavison/delta",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A syntax-highlighting pager for git, diff, grep, and blame output"
-  },
-  {
-    "repo": "ehang-io/nps",
-    "branch": "master",
-    "language": "Go",
-    "description": "一款轻量级、高性能、功能强大的内网穿透代理服务器。支持tcp、udp、socks5、http等几乎所有流量转发，可用来访问内网网站、本地支付接口调试、ssh访问、远程桌面，内网dns解析、内网socks5代理等等……，并带有功能强大的web管理端。a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal."
-  },
-  {
-    "repo": "imbue-bit/OpenClaw-PwnKit",
-    "branch": "main",
-    "language": "Python",
-    "description": "Get shell to almost any OpenClaw host machine."
-  },
-  {
-    "repo": "nektos/act",
-    "branch": "master",
-    "language": "Go",
-    "description": "Run your GitHub Actions locally 🚀"
-  },
-  {
-    "repo": "TanStack/router",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more)."
-  },
-  {
-    "repo": "finvfamily/finshare",
-    "branch": "main",
-    "language": "Python",
-    "description": "专业的金融数据获取工具库 - A Professional Financial Data Fetching Toolkit for   Python"
-  },
-  {
-    "repo": "Shopify/javy",
-    "branch": "main",
-    "language": "Rust",
-    "description": "JS to WebAssembly toolchain"
-  },
-  {
-    "repo": "Rabrg/artificial-life",
-    "branch": "main",
-    "language": "Python",
-    "description": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"
-  },
-  {
-    "repo": "matteyeux/coruna",
-    "branch": "main",
-    "language": "Python",
-    "description": "deobfuscated JS and blobs from https://b27[.]icu, first attempt at using claude"
-  },
-  {
-    "repo": "plotly/dash",
+    "repo": "cnitlrt/AutoTeam",
     "branch": "dev",
     "language": "Python",
-    "description": "Data Apps & Dashboards for Python. No JavaScript Required."
+    "description": "ChatGPT Team 账号自动轮转管理 - Codex 额度监控、自动换号、CPA 认证同步"
   },
   {
-    "repo": "react-native-camera/react-native-camera",
+    "repo": "babel/babel",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
+  },
+  {
+    "repo": "nextcloud/ios",
     "branch": "master",
-    "language": "Java",
-    "description": "A Camera component for React Native. Also supports barcode scanning!"
+    "language": "Swift",
+    "description": "📱 Nextcloud iOS App"
+  },
+  {
+    "repo": "flowapi-net/flow-llm-router",
+    "branch": "main",
+    "language": "Python",
+    "description": "The Ultimate Token Saver"
+  },
+  {
+    "repo": "professor-lee/StoneBadge",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Add a Rotating Stone in your README file."
+  },
+  {
+    "repo": "node-fetch/node-fetch",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A light-weight module that brings the Fetch API to Node.js"
+  },
+  {
+    "repo": "Developer-Y/cs-video-courses",
+    "branch": "master",
+    "language": "Other",
+    "description": "List of Computer Science courses with video lectures."
+  },
+  {
+    "repo": "MarchLiu/hypatia",
+    "branch": "main",
+    "language": "Rust",
+    "description": "We can wander through the stacks of the Library of Alexandria, imagining the scrolls and the knowledge they contain. Its destruction is a warning: all we have is transient.”--Alberto Manguel"
   }
 ]
