@@ -1,146 +1,146 @@
 [
   {
-    "repo": "storytold/wordcraft",
+    "repo": "OpenMOSS/MOSS-TTS-Nano",
     "branch": "main",
-    "language": "Rust",
-    "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust"
+    "language": "Python",
+    "description": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
   },
   {
-    "repo": "alishamari/NSystem",
+    "repo": "BlockRunAI/ClawRouter",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Decentralized Real-Time Data Processing Fabric leveraging Auto-Scaling and Load Balancing for Intelligent Distributed Workload Appliance."
+    "description": "Smart LLM router — save 78% on inference costs. 30+ models, one wallet, x402 micropayments."
   },
   {
-    "repo": "WTFox/luna.nvim",
-    "branch": "main",
-    "language": "Lua",
-    "description": "A near-black Neovim colorscheme built on greys, with four accent hues and nothing else."
-  },
-  {
-    "repo": "cristicretu/diri",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Native macOS orchestrator for coding agents — run Claude Code, Codex, Cursor, Gemini and shells in parallel across git worktrees and remote hosts"
-  },
-  {
-    "repo": "jd-opensource/JoyAI-Video-Edit",
+    "repo": "timuronlinq/messari-crack",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "Messari crack"
   },
   {
-    "repo": "Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
+    "repo": "dair-ai/ML-YouTube-Courses",
+    "branch": "main",
+    "language": "Other",
+    "description": "📺 Discover the latest machine learning / AI courses on YouTube."
+  },
+  {
+    "repo": "Justi1980/Dawn-Validator-BOT",
     "branch": "main",
     "language": "Python",
-    "description": "MiniMaxH3_LatentUpscaler for ComfyUI"
+    "description": "Dawn Validator BOT — Automated node validation bot for Dawn Protocol testnet with multi-account support, proxy rotation, validator registration, keepalive pings, reward tracking, and Rich CLI interface for decentralized bandwidth network participation"
   },
   {
-    "repo": "pengchujin/tower",
+    "repo": "golang/protobuf",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go support for Google's protocol buffers"
+  },
+  {
+    "repo": "motiful/cc-gateway",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI API identity gateway — reverse proxy that normalizes device fingerprints and telemetry for privacy-preserving API proxying"
+  },
+  {
+    "repo": "apple/swift-argument-parser",
     "branch": "main",
     "language": "Swift",
-    "description": "塔台 — 原生 SwiftUI iOS App，在本机管理机场订阅与自有节点，生成 Surge / Clash / Shadowrocket / Loon / Quantumult X 配置"
+    "description": "Straightforward, type-safe argument parsing for Swift"
   },
   {
-    "repo": "antinomie-lab/pi-book",
-    "branch": "main",
-    "language": "Vue",
-    "description": ""
-  },
-  {
-    "repo": "ShawnPana/phone-harness",
-    "branch": "main",
-    "language": "Python",
-    "description": "let your agent control your phone"
-  },
-  {
-    "repo": "ikuV/deident-wasm",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Privacy transformation engine for structured datasets — pseudonymization and risk-assessed anonymization for CSV files, driven by a declarative YAML policy."
-  },
-  {
-    "repo": "DavidCarliez/trustmebro",
-    "branch": "main",
-    "language": "Go",
-    "description": "Bypass llm guardrails by confusing it with fabricated tool output."
-  },
-  {
-    "repo": "paid-tw/einvoice",
+    "repo": "figure-markets/polymarket-arbitrage-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "台灣電子發票統一 SDK：一套與供應商無關的介面，支援 Amego、ECPay 綠界、ezPay 藍新與財政部平台。Unified e-invoice (電子發票) SDK for Taiwan — one interface, multiple providers."
+    "description": "polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot"
   },
   {
-    "repo": "google-gemma/gemma-translator",
+    "repo": "Gentleman-Programming/engram",
     "branch": "main",
-    "language": "JavaScript",
-    "description": ""
+    "language": "Go",
+    "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI."
   },
   {
-    "repo": "chadhurley25075-png/pd-bridge",
+    "repo": "alainnothere/llm-circuit-finder",
     "branch": "main",
     "language": "Python",
-    "description": "Heterogeneous prefill/decode for DeepSeek-V4-Flash: CUDA prefill (DGX Spark, vLLM) -> Metal decode (Mac Studio, oMLX) over plain 10GbE"
+    "description": "I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B improves logical deduction from 0.22→0.76 on BBH — no training, no weight changes, just routing hidden states through the same circuit twice. Tools included. Two AMD GPUs, one evening."
   },
   {
-    "repo": "yoheinakajima/graphcon-deck",
+    "repo": "nirholas/claude-code",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands."
+  },
+  {
+    "repo": "nats-io/nats-server",
+    "branch": "main",
+    "language": "Go",
+    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
+  },
+  {
+    "repo": "0xquqi/crypto-kol-quant",
     "branch": "main",
     "language": "HTML",
-    "description": ""
+    "description": "首个将99位加密KOL交易经验LLM蒸馏为可回测量化因子的开源项目 | First to distill 99 crypto KOL trading experience into backtestable quant factors via LLM"
   },
   {
-    "repo": "jmarshall23/msword",
+    "repo": "mliu98/awesome-human-distillation",
     "branch": "main",
-    "language": "C",
-    "description": "Port of Microsoft Word 1.1a to x64 with extra features for research purposes."
+    "language": "Python",
+    "description": "A curated catalog of human distillliation agent skills"
   },
   {
-    "repo": "elysia395/dsh-wallpaper-engine",
+    "repo": "gfx-rs/wgpu",
+    "branch": "master",
+    "language": "Rust",
+    "description": "A cross-platform, safe, pure-Rust graphics API."
+  },
+  {
+    "repo": "lynaghk/vibe",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Easy Linux virtual machine on MacOS to sandbox LLM agents."
+  },
+  {
+    "repo": "v4nsh0x/InstaTrace",
+    "branch": "main",
+    "language": "Python",
+    "description": "Private Instagram Post URL Extractor (Research POC)"
+  },
+  {
+    "repo": "adobe/react-spectrum",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences."
+  },
+  {
+    "repo": "yuwen-cool/yuwen-publish-precheck",
+    "branch": "master",
+    "language": "Python",
+    "description": "发布前审｜发抖音/小红书/视频号前先让 AI 审一遍：哪句踩线、依据哪条官方规则、给能直接用的改法。38 篇真实样本校准判定尺度，72 条官方原文引文可查证，你踩过的坑沉淀成本地规则库越用越准。不承诺过审，不教绕审。"
+  },
+  {
+    "repo": "openai/gym",
+    "branch": "master",
+    "language": "Python",
+    "description": "A toolkit for developing and comparing reinforcement learning algorithms."
+  },
+  {
+    "repo": "callstackincubator/agent-device",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "CLI to control iOS and Android devices for AI agents"
+  },
+  {
+    "repo": "guanxiaol/WindsurfPoolAPI",
     "branch": "main",
     "language": "JavaScript",
-    "description": "把本机 Wallpaper Engine 的壁纸变成 DSH 网页界面的背景：Video 动态播放、Web 以 iframe 加载、Scene 壁纸提取主纹理作为静态帧；iOS 液态玻璃设置窗口（配色 / 玻璃颜色 / 透明度）、内容分级与类型过滤、自定义壁纸上传、紧凑 CD 架布局、黑胶唱片展示、隐藏 / 恢复、倍速 / 翻转与自动轮播。感谢 Jerry 维护 macOS 版。"
+    "description": "Multi-account pool proxy for Windsurf — 113+ models (Claude/GPT/Gemini/Grok/Kimi) via OpenAI & Anthropic APIs, image upload, Cursor & Claude Code native / 企业级 Windsurf 多账号池化 API 代理"
   },
   {
-    "repo": "Yaxin9Luo/AutoDesign",
+    "repo": "dievus/ADPulse",
     "branch": "main",
     "language": "Python",
-    "description": "The open-source design agent and harness, better than Claude Design on academic communication artifacts production. This DesignHarness can also be used with any coding harness you like ( Codex/Claude Code/Kimi Code/Pi/OpenCode etc..) and any agentic model you want."
-  },
-  {
-    "repo": "Amr-Yasser-7/Video_Downloader___Converter",
-    "branch": "main",
-    "language": "Python",
-    "description": "Download videos from YouTube, Vimeo, and convert formats. Download videos, change video format, batch download, and extract audio. Save any video."
-  },
-  {
-    "repo": "Kr3n3r/ARC_Raiders_ESP___Aimbot",
-    "branch": "main",
-    "language": "Python",
-    "description": "ESP, aimbot, and radar hack for ARC Raiders (upcoming). See enemies, loot, and objectives through walls. Dominate the battlefield."
-  },
-  {
-    "repo": "alberto4442/LlmCanvas",
-    "branch": "main",
-    "language": "Python",
-    "description": "LlmCanvas is a high-performance, event-driven architecture for real-time data processing and adaptive auto-scaling system optimization."
-  },
-  {
-    "repo": "skydashnet/material-design-3-ui-skill",
-    "branch": "main",
-    "language": "PowerShell",
-    "description": "A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessibility, adaptive layouts, and semantic design tokens."
-  },
-  {
-    "repo": "Zahid275/Clair_Obscur__Expedition_33_Trainer",
-    "branch": "main",
-    "language": "Python",
-    "description": "Unlimited health, mana, and resources for Clair Obscur: Expedition 33. God mode, infinite items, and max experience. Dominate the turn-based battles."
-  },
-  {
-    "repo": "Neverforgetme/DBD-AutoGrind-Trainer-2026",
-    "branch": "main",
-    "language": "Python",
-    "description": "Ultimate Dead by Daylight auto-grind trainer with Bloodpoint bot, ESP wallhack, aimbot, and full perk/skin unlocker. Dominate the Fog with our 2026 undetected external tool."
+    "description": "Active Directory Vulnerability Scanner"
   }
 ]
