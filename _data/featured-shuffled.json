@@ -1,146 +1,146 @@
 [
   {
-    "repo": "wquguru/dasheng",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "大声读 — R2T2 流式 ASR 听，Jev 逐词判，英文朗读评分"
-  },
-  {
-    "repo": "win4r/memory-lancedb-pro",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI"
-  },
-  {
-    "repo": "lukehinds/nono",
-    "branch": "main",
-    "language": "Rust",
-    "description": "OS-Level Isolation for AI Agents."
-  },
-  {
-    "repo": "AdeleZhu/teacher-skill",
+    "repo": "cclank/lanshu-animated-architecture-diagram",
     "branch": "main",
     "language": "Python",
-    "description": "蒸馏你的老师 —— 把老师的教学方式、性格特点和学科知识提取成 AI 技能文件，让 AI 像你的老师一样给你讲题。Inspired by colleague-skill（同事skill）。"
+    "description": "Premium hand-drawn animated architecture diagram Codex skill"
   },
   {
-    "repo": "rails/rails",
+    "repo": "mateussmeneses/theorder1886-port",
+    "branch": "master",
+    "language": "C++",
+    "description": ""
+  },
+  {
+    "repo": "CheshireMew/VoxWeave",
+    "branch": "main",
+    "language": "Python",
+    "description": "Local-first high-quality offline RVC voice conversion workstation"
+  },
+  {
+    "repo": "Ryze-AI-Adgent/open-seo-mcp-skills",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor gaps, AI visibility. Runs on your real Search Console / GA4 / ads data via MCP, with DataForSEO built in. Free, MIT."
+  },
+  {
+    "repo": "amirh00sain/SpiderPanel",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "frs0n/GestaltEdit",
+    "branch": "main",
+    "language": "Swift",
+    "description": "iOS 27 MobileGestalt editor"
+  },
+  {
+    "repo": "HanyuanWang/LiveStream-Agent-Studio",
+    "branch": "main",
+    "language": "Python",
+    "description": "面向抖音直播电商的 Windows 本地 AI Agent Studio，贯通主播发现、直播洞察、直播复盘与短视频内容编导的统一智能工作流。"
+  },
+  {
+    "repo": "blendmaidintrigue/e621",
     "branch": "main",
     "language": "Ruby",
-    "description": "Ruby on Rails"
+    "description": "An independent community-maintained project based on the open-source e621 codebase."
   },
   {
-    "repo": "win4r/ClawTeam-OpenClaw",
+    "repo": "JetBrains/benjamin-plus-skill",
     "branch": "main",
-    "language": "Python",
-    "description": "ClawTeam fork fully adapted for OpenClaw — multi-agent swarm coordination with OpenClaw as the default agent"
+    "language": "Shell",
+    "description": "Benjamin-Plus: a measured token-efficiency skill for coding agents (−17.9% cost median, quality unchanged). Inject it, don't install it."
   },
   {
-    "repo": "ahmadawais/chartli",
+    "repo": "NicholasCone/agnes-ai-video-suite",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg."
+    "language": "HTML",
+    "description": "Best Open Source AI Video Generator 2026: Text to Multi-Scene Movies with Narration & Subtitles"
   },
   {
-    "repo": "therealaleph/sni-spoofing-rust",
+    "repo": "rit3zh/expo-content-transition",
     "branch": "main",
-    "language": "Rust",
-    "description": "SNI spoofing for Windows, Linux and MacOS / works alongside v2ray connections, idea and windows by @patterniha, I just did the linux & rust one"
+    "language": "Swift",
+    "description": "🚀 Native content transitions for React Native + Expo."
   },
   {
-    "repo": "vikasprogrammer/walkie",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "P2P communication for AI agents. No server. No setup. Just talk."
-  },
-  {
-    "repo": "corespeed-io/wechatbot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "微信 iLink Bot SDK for OpenClaw/AI Agent"
-  },
-  {
-    "repo": "jobrunr/JavaClaw",
-    "branch": "main",
-    "language": "Java",
-    "description": "JavaClaw, a Java version of OpenClaw built on Spring Boot, Spring AI and JobRunr"
-  },
-  {
-    "repo": "bazelbuild/bazel",
-    "branch": "master",
-    "language": "Java",
-    "description": "a fast, scalable, multi-language and extensible build system"
-  },
-  {
-    "repo": "deepseek-ai/TileKernels",
-    "branch": "main",
-    "language": "Python",
-    "description": "A kernel library written in tilelang"
-  },
-  {
-    "repo": "JinGuYuan/jinguyuan-dumpling-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "金谷园饺子馆 AI Skill - 北邮边上的饺子馆"
-  },
-  {
-    "repo": "gleam-lang/gleam",
-    "branch": "main",
-    "language": "Rust",
-    "description": "⭐️ A friendly language for building type-safe, scalable systems!"
-  },
-  {
-    "repo": "wenqingyu/ralphy-openspec",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Ralph loop + OpenSpec integration for Cursor, OpenCode and ClaudeCode heavy lifting."
-  },
-  {
-    "repo": "openai/openai-python",
-    "branch": "main",
-    "language": "Python",
-    "description": "The official Python library for the OpenAI API"
-  },
-  {
-    "repo": "ayush-that/jiang-clips",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Automated pipeline that converts long-form YouTube videos into viral-ready vertical clips"
-  },
-  {
-    "repo": "alainnothere/llm-circuit-finder",
-    "branch": "main",
-    "language": "Python",
-    "description": "I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B improves logical deduction from 0.22→0.76 on BBH — no training, no weight changes, just routing hidden states through the same circuit twice. Tools included. Two AMD GPUs, one evening."
-  },
-  {
-    "repo": "MME-Benchmarks/Video-MME-v2",
-    "branch": "main",
-    "language": "Python",
-    "description": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding"
-  },
-  {
-    "repo": "facebook/docusaurus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Easy to maintain open source documentation websites."
-  },
-  {
-    "repo": "tanishqkumar/ssd",
-    "branch": "main",
-    "language": "Python",
-    "description": "A lightweight inference engine supporting speculative speculative decoding (SSD)."
-  },
-  {
-    "repo": "vercel/next.js",
+    "repo": "50kg/image-to-slice",
     "branch": "main",
     "language": "JavaScript",
-    "description": "The React Framework"
+    "description": "AI 拆图、被遮挡背景补齐、人工校准、导入可编辑 Figma 图层、导出 HTML/CSS"
   },
   {
-    "repo": "avelino/awesome-go",
+    "repo": "elder-plinius/ENTHEA",
     "branch": "main",
-    "language": "Go",
-    "description": "A curated list of awesome Go frameworks, libraries and software"
+    "language": "HTML",
+    "description": "real-time psychedelic visual synthesizer and pro-grade music visualizer"
+  },
+  {
+    "repo": "tabtin-ai/TabTin",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A workspace where people and multiple AI agents work together."
+  },
+  {
+    "repo": "HTX-Trading-ToolKit/HTX-human-elite-copy-trading-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot HTX Human Elite Copy Trading Bot"
+  },
+  {
+    "repo": "liceses/dsh-gitbash-preset",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。"
+  },
+  {
+    "repo": "DuskMosquito/Lossless-Scaling-Desktop-2026",
+    "branch": "main",
+    "language": "C",
+    "description": "⭐️ Lossless Scaling Desktop 2026 | Setup Installer v1.0 | Patch Activator Keygen | License Key Pre-Activated | Full Version Latest Build Pro | Optimize Resolution Scaling | Enhance Performance Graphics | Get Desktop App Windows 10/11 PC | Direct Genuine Original x64 | Download Install Loader Mod ⭐️"
+  },
+  {
+    "repo": "starling-build/starling",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Starling — a new Linux desktop environment: Swift shell, its own compositor, a Flutter-to-Swift framework port, and first-party apps"
+  },
+  {
+    "repo": "Jadoox3/Mina-The-Hollower-Release",
+    "branch": "main",
+    "language": "C#",
+    "description": "mina the hollower release date download steam pc nintendo switch switch 2 ps5 xbox yacht club games crack free gameplay walkthrough torrent 2026"
+  },
+  {
+    "repo": "breslee1707/VI-Translate",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "OpenBMB/MiniCPM-Robot",
+    "branch": "main",
+    "language": "Python",
+    "description": "A Smarter and Faster On-Device AI Brain for Robots"
+  },
+  {
+    "repo": "70478581-max/bamboohr-desktop-integration-hub",
+    "branch": "main",
+    "language": "HTML",
+    "description": "BambooHR Desktop App 2026 for Windows HR Management"
+  },
+  {
+    "repo": "xoreaxeaxeax/asm-hall-of-shame",
+    "branch": "main",
+    "language": "C",
+    "description": "Racing to the bottom of CPU performance"
+  },
+  {
+    "repo": "huey1in/WindsurfX",
+    "branch": "main",
+    "language": "Python",
+    "description": "Windsurf 协议注册机 | Windsurf (windsurf.com) 批量自动注册工具"
   }
 ]
