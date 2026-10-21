@@ -1,146 +1,146 @@
 [
   {
-    "repo": "Sibyl-Research-Team/sibyl-research-system",
+    "repo": "playframework/playframework",
+    "branch": "main",
+    "language": "Scala",
+    "description": "The Community Maintained High Velocity Web Framework For Java and Scala."
+  },
+  {
+    "repo": "akitaonrails/ai-book-2026",
+    "branch": "main",
+    "language": "Ruby",
+    "description": "e-book version of the akitaonrails.com blog."
+  },
+  {
+    "repo": "rubygems/rubygems",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "Library packaging and distribution for Ruby."
+  },
+  {
+    "repo": "DepthFirstDisclosures/Nginx-Rift",
     "branch": "main",
     "language": "Python",
-    "description": "Fully Autonomous AI Research System with Self-Evolution, built natively on Claude Code"
+    "description": "exploit for CVE-2026-42945"
   },
   {
-    "repo": "confluentinc/schema-registry",
-    "branch": "master",
-    "language": "Java",
-    "description": "Confluent Schema Registry for Kafka"
-  },
-  {
-    "repo": "soimy/openclaw-channel-dingtalk",
+    "repo": "unclebob/swarm-forge",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "A dingtalk bot channel plugin for clawdbot"
+    "language": "Shell",
+    "description": "A simple tool for coordinating several AI agents."
   },
   {
-    "repo": "mrgrey565-ux/File_Shredder",
-    "branch": "main",
-    "language": "Python",
-    "description": "Securely delete files so they cannot be recovered. Overwrite with random data multiple times. Protect your sensitive data."
-  },
-  {
-    "repo": "tikv/tikv",
-    "branch": "master",
-    "language": "Rust",
-    "description": "Distributed transactional key-value database, originally created to complement TiDB"
-  },
-  {
-    "repo": "lib/pq",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go PostgreSQL driver for database/sql"
-  },
-  {
-    "repo": "lance0/xfr",
-    "branch": "master",
-    "language": "Rust",
-    "description": "A modern iperf3 alternative with a live TUI, multi-client server, and QUIC support. Built in Rust."
-  },
-  {
-    "repo": "termux/termux-app",
-    "branch": "master",
-    "language": "Java",
-    "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages."
-  },
-  {
-    "repo": "pytest-dev/pytest",
-    "branch": "main",
-    "language": "Python",
-    "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing"
-  },
-  {
-    "repo": "sb-ocr/cmdeck",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "esp-rs/esp-idf-hal",
+    "repo": "launchbadge/sqlx",
     "branch": "main",
     "language": "Rust",
-    "description": "embedded-hal implementation for Rust on ESP32 and ESP-IDF"
+    "description": "🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite."
   },
   {
-    "repo": "johnBuffer/StableIndexVector",
-    "branch": "main",
-    "language": "C++",
-    "description": ""
-  },
-  {
-    "repo": "facebookresearch/dino",
-    "branch": "main",
-    "language": "Python",
-    "description": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO"
-  },
-  {
-    "repo": "quic-go/quic-go",
-    "branch": "master",
-    "language": "Go",
-    "description": "A production-ready QUIC implementation in pure Go"
-  },
-  {
-    "repo": "pmndrs/zustand",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "🐻 Bear necessities for state management in React"
-  },
-  {
-    "repo": "starccy/doubaoime-asr",
-    "branch": "main",
-    "language": "Python",
-    "description": "豆包输入法语音识别的非官方 Python 客户端"
-  },
-  {
-    "repo": "ehang-io/nps",
-    "branch": "master",
-    "language": "Go",
-    "description": "一款轻量级、高性能、功能强大的内网穿透代理服务器。支持tcp、udp、socks5、http等几乎所有流量转发，可用来访问内网网站、本地支付接口调试、ssh访问、远程桌面，内网dns解析、内网socks5代理等等……，并带有功能强大的web管理端。a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal."
-  },
-  {
-    "repo": "eslint/eslint",
+    "repo": "jquery/jquery",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Find and fix problems in your JavaScript code."
+    "description": "jQuery JavaScript Library"
   },
   {
-    "repo": "nullclaw/nullclaw",
-    "branch": "main",
-    "language": "Zig",
-    "description": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig"
-  },
-  {
-    "repo": "rome/tools",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Unified developer tools for JavaScript, TypeScript, and the web"
-  },
-  {
-    "repo": "apache/superset",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Apache Superset is a Data Visualization and Data Exploration Platform"
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-Math",
+    "repo": "863401402/she-love-me",
     "branch": "main",
     "language": "Python",
-    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
+    "description": "她爱我吗？恋情分析室 — 微信聊天记录恋爱分析 Agent Skill"
   },
   {
-    "repo": "mirarr-app/network-checker",
+    "repo": "sass/sass",
     "branch": "main",
-    "language": "Dart",
+    "language": "TypeScript",
+    "description": "Sass makes CSS fun!"
+  },
+  {
+    "repo": "airbnb/lottie-web",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
+  },
+  {
+    "repo": "google/trax",
+    "branch": "master",
+    "language": "Python",
+    "description": "Trax — Deep Learning with Clear Code and Speed"
+  },
+  {
+    "repo": "certbot/certbot",
+    "branch": "main",
+    "language": "Python",
+    "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol."
+  },
+  {
+    "repo": "cft0808/edict",
+    "branch": "main",
+    "language": "HTML",
+    "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails"
+  },
+  {
+    "repo": "open-webui/open-webui",
+    "branch": "main",
+    "language": "Python",
+    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+  },
+  {
+    "repo": "Leonxlnx/claw-dev",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "ysharma3501/LavaSR",
+    "repo": "pyinvoke/invoke",
     "branch": "main",
     "language": "Python",
-    "description": "🌋LavaSR: Fast Speech restoration and enhancement"
+    "description": "Pythonic task management & command execution."
+  },
+  {
+    "repo": "V-IOLE-T/hotmail-register-extension",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "基于Outlook Email的Chrome扩展：支持OpenAI OAuth古法注册与账号标签管理"
+  },
+  {
+    "repo": "996icu/996.ICU",
+    "branch": "master",
+    "language": "Other",
+    "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+  },
+  {
+    "repo": "public-apis/public-apis",
+    "branch": "master",
+    "language": "Python",
+    "description": "A collective list of free APIs"
+  },
+  {
+    "repo": "nats-io/nats-server",
+    "branch": "main",
+    "language": "Go",
+    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system."
+  },
+  {
+    "repo": "filecoin-project/lotus",
+    "branch": "master",
+    "language": "Go",
+    "description": "Reference implementation of the Filecoin protocol, written in Go"
+  },
+  {
+    "repo": "antflydb/antfly",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "facebookresearch/xformers",
+    "branch": "main",
+    "language": "Python",
+    "description": "Hackable and optimized Transformers building blocks, supporting a composable construction."
+  },
+  {
+    "repo": "grpc/grpc",
+    "branch": "master",
+    "language": "C++",
+    "description": "C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
   }
 ]
