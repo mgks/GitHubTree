@@ -1085,7 +1085,7 @@ async function fetchLastUpdated(repo, path, branch) {
             if (commitInfo.empty) {
                 el.innerText = "No commit history found.";
             } else {
-                el.innerHTML = `${commitInfo.date} by <strong>${commitInfo.author}</strong> &mdash; <em>"${commitInfo.message}"</em>`;
+                el.innerHTML = `${escapeHtml(commitInfo.date)} by <strong>${escapeHtml(commitInfo.author)}</strong> &mdash; <em>"${escapeHtml(commitInfo.message)}"</em>`;
             }
             return;
         } catch(e) {}
@@ -1114,7 +1114,7 @@ async function fetchLastUpdated(repo, path, branch) {
                 message: message
             };
 
-            el.innerHTML = `${formattedDate} by <strong>${author}</strong> &mdash; <em>"${message}"</em>`;
+            el.innerHTML = `${escapeHtml(formattedDate)} by <strong>${escapeHtml(author)}</strong> &mdash; <em>"${escapeHtml(message)}"</em>`;
             sessionStorage.setItem(cacheKey, JSON.stringify(commitInfo));
         } else {
             el.innerText = "No commit history found.";
@@ -1123,6 +1123,12 @@ async function fetchLastUpdated(repo, path, branch) {
     } catch (e) {
         el.innerText = "Failed to load update history.";
     }
+}
+
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = String(str == null ? '' : str);
+    return div.innerHTML;
 }
 
 function formatDate(dateString) {
