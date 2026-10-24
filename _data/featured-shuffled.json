@@ -1,146 +1,146 @@
 [
   {
-    "repo": "vinayaklatthe/microsoft-security-skills",
+    "repo": "6-robot/jie_3d_nav",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Curated Microsoft Security skills for AI agents - Defender, Sentinel, Entra, Purview, Intune, Security Copilot"
+    "language": "Python",
+    "description": "一套基于 ROS 2 Humble 的 3D 导航系统，通过 Web 界面交互。本系统已在智元科技 D1 机器狗以及留形科技 Odin 1 空间定位模组上测试通过。"
   },
   {
-    "repo": "chalk/chalk",
+    "repo": "dotnet/aspnetcore",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "🖍 Terminal string styling done right"
+    "language": "C#",
+    "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux."
   },
   {
-    "repo": "zhu1090093659/spec_driven_develop",
+    "repo": "sebastianvkl/pizero-openclaw",
     "branch": "main",
-    "language": "Shell",
-    "description": "Cross-platform AI agent skill for spec-driven development: analyze codebases, decompose large  transformations, and track long-running work."
-  },
-  {
-    "repo": "wangyingqi-x/workflow-showcase-platform",
-    "branch": "main",
-    "language": "Java",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "grpc/grpc-go",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Go language implementation of gRPC. HTTP/2 based RPC"
-  },
-  {
-    "repo": "pro-tech-killers/binance-trading-bot",
+    "repo": "Quick/Nimble",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "binance trading bot binance spot binance api trading bot crypto trading bot automated trading binance trading bot typescript ccxt algorithmic trading spot trading crypto bot binance trading bot npm nodejs quant fintech crypto trading bot automated trading binance trading bot open source binance trading bot btc eth usdt binance trading bot"
+    "language": "Swift",
+    "description": "A Matcher Framework for Swift and Objective-C"
   },
   {
-    "repo": "AlexCheema/talos-vs-macbook",
-    "branch": "main",
-    "language": "Python",
-    "description": "microGPT benchmarks: a single M4 Max MacBook Pro P-core in C runs Karpathy's 4192-parameter transformer at ~71x the throughput of TALOS-V2's FPGA implementation."
-  },
-  {
-    "repo": "firebase/firebase-android-sdk",
+    "repo": "Anuken/Mindustry",
     "branch": "master",
     "language": "Java",
-    "description": "Firebase Android SDK"
+    "description": "The automation tower defense RTS"
   },
   {
-    "repo": "cathrynlavery/openclaw-ops",
-    "branch": "main",
-    "language": "Shell",
-    "description": "OpenClaw operations skill with health checks, repair scripts, watchdogs, update triage, and security scans."
-  },
-  {
-    "repo": "FoundZiGu/GuJumpgate",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "datavorous/sameshi",
-    "branch": "master",
-    "language": "C",
-    "description": "a ~1200 Elo chess engine that fits within 2KB"
-  },
-  {
-    "repo": "tektoncd/pipeline",
-    "branch": "main",
-    "language": "Go",
-    "description": "A cloud-native Pipeline resource."
-  },
-  {
-    "repo": "missuo/koe",
-    "branch": "main",
-    "language": "Objective-C",
-    "description": "A zero-GUI macOS voice input tool. Press a hotkey, speak, and the corrected text is pasted into whatever app you're using."
-  },
-  {
-    "repo": "junevm/splathash",
-    "branch": "main",
-    "language": "Go",
-    "description": "compress any image to 16 bytes and reconstruct a blurry preview. Like blurhash and thumbhash, but smaller."
-  },
-  {
-    "repo": "rook/rook",
-    "branch": "master",
-    "language": "Go",
-    "description": "Storage Orchestration for Kubernetes"
-  },
-  {
-    "repo": "zornade/visura-api",
-    "branch": "main",
-    "language": "Python",
-    "description": "Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER"
-  },
-  {
-    "repo": "haydenbleasel/files-sdk",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A unified storage SDK for object and blob backends. One small, honest API. Web-standards I/O."
-  },
-  {
-    "repo": "Kuberwastaken/claurst",
+    "repo": "samvallad33/vestige",
     "branch": "main",
     "language": "Rust",
-    "description": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
+    "description": "Cognitive memory MCP server for Claude - FSRS-6, spreading activation, synaptic tagging, and 130 years of memory research"
   },
   {
-    "repo": "kunchenguid/autopreso",
+    "repo": "446599/ccodex-rotate",
+    "branch": "master",
+    "language": "Go",
+    "description": "Local Codex reverse proxy: rotating proxy-node pool, lazy health failover, and per-model 292 turn-state collection/injection. macOS + Windows."
+  },
+  {
+    "repo": "jasmine/jasmine",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Realtime speech to presentation. Let the whiteboard whiteboard itself."
+    "description": "Simple JavaScript testing framework for browsers and node.js"
   },
   {
-    "repo": "winglang/wing",
+    "repo": "immich-app/immich",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A programming language for the cloud ☁️ A unified programming model, combining infrastructure and runtime code into one language ⚡"
+    "description": "High performance self-hosted photo and video management solution."
   },
   {
-    "repo": "dappuniversity/starter_kit",
+    "repo": "kubernetes-sigs/external-dns",
     "branch": "master",
-    "language": "JavaScript",
-    "description": "Start building full stack dApps fast with this starter kit!"
+    "language": "Go",
+    "description": "Configure external DNS servers dynamically from Kubernetes resources"
   },
   {
-    "repo": "xgen-universe/Capybara",
+    "repo": "django/django",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "The Web framework for perfectionists with deadlines."
   },
   {
-    "repo": "lobehub/lobe-chat",
+    "repo": "aikorea/awesome-rl",
+    "branch": "master",
+    "language": "Other",
+    "description": "Reinforcement learning resources curated"
+  },
+  {
+    "repo": "jwasham/coding-interview-university",
+    "branch": "main",
+    "language": "Other",
+    "description": "A complete computer science study plan to become a software engineer."
+  },
+  {
+    "repo": "data-science-on-aws/data-science-on-aws",
+    "branch": "master",
+    "language": "Jupyter Notebook",
+    "description": "AI and Machine Learning with Kubeflow, Amazon EKS, and SageMaker"
+  },
+  {
+    "repo": "TanStack/table",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers, Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application."
+    "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table"
   },
   {
-    "repo": "comeonzhj/AutoContents",
+    "repo": "OpenBMB/ChatDev",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "基于 RSS 的 AI 资讯聚合、内容创作与 Agent 自动化工具"
+    "language": "Python",
+    "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration"
+  },
+  {
+    "repo": "netblue30/firejail",
+    "branch": "master",
+    "language": "C",
+    "description": "Linux namespaces and seccomp-bpf sandbox"
+  },
+  {
+    "repo": "huggingface/accelerate",
+    "branch": "main",
+    "language": "Python",
+    "description": "🚀 A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration, automatic mixed precision (including fp8), and easy-to-configure FSDP and DeepSpeed support"
+  },
+  {
+    "repo": "getredash/redash",
+    "branch": "master",
+    "language": "Python",
+    "description": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data."
+  },
+  {
+    "repo": "fspecii/HeartMuLa-Studio",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Suno-like music generation studio for HeartMuLa/heartlib - AI-powered music creation with reference audio style transfer"
+  },
+  {
+    "repo": "TeamStuQ/skill-map",
+    "branch": "master",
+    "language": "HTML",
+    "description": "程序员技能图谱"
+  },
+  {
+    "repo": "thepartly/gatehouse",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A flexible authorization library that combines role-based (RBAC), attribute-based (ABAC), and relationship-based (ReBAC) access control policies."
+  },
+  {
+    "repo": "Quick/Quick",
+    "branch": "main",
+    "language": "Swift",
+    "description": "The Swift (and Objective-C) testing framework."
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
   }
 ]
