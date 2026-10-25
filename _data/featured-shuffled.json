@@ -1,135 +1,21 @@
 [
   {
-    "repo": "kata-containers/kata-containers",
+    "repo": "t4t5/omdrop-owl",
     "branch": "main",
-    "language": "Rust",
-    "description": "Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. https://katacontainers.io/"
+    "language": "Shell",
+    "description": "airdrop for non-apple devices"
   },
   {
-    "repo": "kubernetes-sigs/external-dns",
+    "repo": "trinodb/trino",
     "branch": "master",
-    "language": "Go",
-    "description": "Configure external DNS servers dynamically from Kubernetes resources"
+    "language": "Java",
+    "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)"
   },
   {
-    "repo": "tensorflow/serving",
+    "repo": "DovAmir/awesome-design-patterns",
     "branch": "master",
-    "language": "C++",
-    "description": "A flexible, high-performance serving system for machine learning models"
-  },
-  {
-    "repo": "NOBB2333/ClipCascade_go",
-    "branch": "main",
-    "language": "Go",
-    "description": "ClipCascade go语言重制版"
-  },
-  {
-    "repo": "StayLameBro/backburner",
-    "branch": "main",
-    "language": "Python",
-    "description": "Your iPhone helps your Mac run a 27B model: faster prompt reading and more context over a USB-C cable"
-  },
-  {
-    "repo": "alishamari/DecentralPurse",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "DefiLeoo/YOINK",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "techcomet122583/Polymarket-Telegram-Bot",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "Leutenegger/book-to-skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work."
-  },
-  {
-    "repo": "BagasRizkyHarySaputra/SIAPIN",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "EverettFish/holo-card-studio",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project."
-  },
-  {
-    "repo": "casatrickdev/robinhood-trading-tools",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Trading infrastructure and automation tools for Robinhood Chain, starting with Pons - robinhood copy trading bot, robinhood sniper bot, robinhood bundler."
-  },
-  {
-    "repo": "OpenBMB/Meshy",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "furkan-bayrak/lg-tv-blocklist",
-    "branch": "main",
-    "language": "Python",
-    "description": "Curated DNS blocklist for LG webOS TV telemetry, ads and phone-home traffic (safe + strict tiers)"
-  },
-  {
-    "repo": "g8row/PhotosBackup",
-    "branch": "main",
-    "language": "Swift",
-    "description": "PhotosBackup iOS app"
-  },
-  {
-    "repo": "byJoey/warp-masque-actions",
-    "branch": "main",
-    "language": "Python",
-    "description": "GitHub Actions 自动生成 Cloudflare WARP (MASQUE) 密钥与 mihomo 配置，产物只存 artifact"
-  },
-  {
-    "repo": "sapientinc/PRAXIST",
-    "branch": "main",
-    "language": "Python",
-    "description": "Autonomous research system for measurable, computer-executable research."
-  },
-  {
-    "repo": "tompftampffern/polyseed-monero",
-    "branch": "main",
-    "language": "C",
-    "description": "Polyseed Monero"
-  },
-  {
-    "repo": "qwen38maxfree/Qwen-3.8-Max-Uncensored-Free",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Qwen 3.8 Max Uncensored Free - Alibaba 2.4T params, 95B active MoE. 1M context, no filters, offline Ollama. Apache 2.0. Free desktop client Windows/Mac/Linux 2026."
-  },
-  {
-    "repo": "openobserve/openobserve",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Modern observability platform: 10x easier, 140x lower storage cost, petabyte scale. Open-source alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more."
-  },
-  {
-    "repo": "grapeot/context-infrastructure",
-    "branch": "main",
-    "language": "Python",
-    "description": "Reference implementation: a context infrastructure system for pulling LLM out of consensus"
-  },
-  {
-    "repo": "thunderstoremods/Thunderstore-Mod-Manager",
-    "branch": "main",
-    "language": "C#",
-    "description": "Thunderstore Mod Manager free for Windows, macOS and Linux. Best mod manager for Lethal Company, Risk of Rain 2, Valheim, Deep Rock Galactic and Cyberpunk 2077. Thunderstore mod manager download, standalone, not working fix, vs Overwolf, vs Nexus Mod Manager. BepInEx and MelonLoader support. Download Thunderstore Mod Manager free 2026."
+    "language": "Other",
+    "description": "A curated list of software and architecture related design patterns."
   },
   {
     "repo": "tokio-rs/tokio",
@@ -138,9 +24,123 @@
     "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
   },
   {
-    "repo": "BradGroux/veritas-kanban",
+    "repo": "date-fns/date-fns",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era."
+    "description": "⏳ Modern JavaScript date utility library ⌛️"
+  },
+  {
+    "repo": "bokeh/bokeh",
+    "branch": "branch-3.4",
+    "language": "TypeScript",
+    "description": "Interactive Data Visualization in the browser, from  Python"
+  },
+  {
+    "repo": "pandas-dev/pandas",
+    "branch": "main",
+    "language": "Python",
+    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+  },
+  {
+    "repo": "ramda/ramda",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": ":ram: Practical functional Javascript"
+  },
+  {
+    "repo": "StartupHakk/OpenMonoAgent.ai",
+    "branch": "main",
+    "language": "C#",
+    "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription."
+  },
+  {
+    "repo": "vasilytrofimchuk/domainsearcher-app",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Score and choose the best domain name for your startup — AI-powered generation, real-time availability, and multi-dimensional scoring (LEN, PRO, MEM, BRD, FIT). Free, no signup."
+  },
+  {
+    "repo": "ZRainbow1275/AutoTeam-F",
+    "branch": "main",
+    "language": "Python",
+    "description": "参照上游 cnitlrt/AutoTeam 的改善版,重点在于实现免费号批量获得以及改善操作体验 (Fix + Free)"
+  },
+  {
+    "repo": "apache/kafka",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "Mirror of Apache Kafka"
+  },
+  {
+    "repo": "JetBrains/kotlin",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "The Kotlin Programming Language."
+  },
+  {
+    "repo": "pytorch/examples",
+    "branch": "main",
+    "language": "Python",
+    "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc."
+  },
+  {
+    "repo": "apache/mxnet",
+    "branch": "master",
+    "language": "C++",
+    "description": "Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more"
+  },
+  {
+    "repo": "apache/arrow",
+    "branch": "main",
+    "language": "C++",
+    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+  },
+  {
+    "repo": "hapijs/hapi",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "The Simple, Secure Framework Developers Trust"
+  },
+  {
+    "repo": "renatoworks/3dsvg",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "The easiest way to turn SVGs into interactive React 3D components"
+  },
+  {
+    "repo": "R6410418/Jackrong-llm-finetuning-guide",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": ""
+  },
+  {
+    "repo": "microsoft/playwright",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
+  },
+  {
+    "repo": "Dhravya/webpull",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "civilian7/sql-tutorial",
+    "branch": "main",
+    "language": "Python",
+    "description": "현실적인 전자상거래 데이터베이스로 배우는 SQL 튜토리얼 (21 tables, 18 views, 111 exercises)"
+  },
+  {
+    "repo": "nashsu/opencli-rs",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Opencli-rs is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl)"
+  },
+  {
+    "repo": "redis/redis",
+    "branch": "unstable",
+    "language": "C",
+    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
   }
 ]
