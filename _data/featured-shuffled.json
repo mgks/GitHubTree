@@ -1,27 +1,51 @@
 [
   {
-    "repo": "t4t5/omdrop-owl",
+    "repo": "L42ARO/Mercury-Transforming-Drone",
     "branch": "main",
-    "language": "Shell",
-    "description": "airdrop for non-apple devices"
+    "language": "Python",
+    "description": "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
   },
   {
-    "repo": "trinodb/trino",
-    "branch": "master",
-    "language": "Java",
-    "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)"
+    "repo": "arbitrageBot-group/Polymarket-trading-bot",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket arbitrage bot, polymarket copy trading bot polymarket  bot,"
   },
   {
-    "repo": "DovAmir/awesome-design-patterns",
-    "branch": "master",
-    "language": "Other",
-    "description": "A curated list of software and architecture related design patterns."
+    "repo": "hashicorp/packer",
+    "branch": "main",
+    "language": "Go",
+    "description": "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration."
   },
   {
-    "repo": "tokio-rs/tokio",
+    "repo": "antirez/h3.c",
+    "branch": "main",
+    "language": "C",
+    "description": "MiniMax H3 inference engine for Mac computers"
+  },
+  {
+    "repo": "EmGi96/TrailPrint3D",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "thangchung/awesome-dotnet-core",
     "branch": "master",
-    "language": "Rust",
-    "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
+    "language": "C#",
+    "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software"
+  },
+  {
+    "repo": "millionco/isolet",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Package any component into a self-contained, isolated widget"
+  },
+  {
+    "repo": "microsoft/winget-pkgs",
+    "branch": "master",
+    "language": "PowerShell",
+    "description": "The Microsoft community Windows Package Manager manifest repository"
   },
   {
     "repo": "date-fns/date-fns",
@@ -30,117 +54,93 @@
     "description": "⏳ Modern JavaScript date utility library ⌛️"
   },
   {
-    "repo": "bokeh/bokeh",
-    "branch": "branch-3.4",
-    "language": "TypeScript",
-    "description": "Interactive Data Visualization in the browser, from  Python"
-  },
-  {
-    "repo": "pandas-dev/pandas",
+    "repo": "google-deepmind/alphageometry",
     "branch": "main",
     "language": "Python",
-    "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+    "description": "Solving olympiad geometry without human demonstrations."
   },
   {
-    "repo": "ramda/ramda",
+    "repo": "op7418/Document-illustrator-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。"
+  },
+  {
+    "repo": "ForrestKnight/open-source-cs",
     "branch": "master",
-    "language": "JavaScript",
-    "description": ":ram: Practical functional Javascript"
+    "language": "Other",
+    "description": "Video discussing this curriculum:"
   },
   {
-    "repo": "StartupHakk/OpenMonoAgent.ai",
+    "repo": "smartcontractkit/chainlink",
+    "branch": "develop",
+    "language": "Go",
+    "description": "node of the decentralized oracle network, bridging on and off-chain computation"
+  },
+  {
+    "repo": "nuxt/ui",
+    "branch": "dev",
+    "language": "Vue",
+    "description": "The Intuitive Vue UI Library powered by Reka UI & Tailwind CSS."
+  },
+  {
+    "repo": "elastic/elasticsearch",
     "branch": "main",
-    "language": "C#",
-    "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription."
+    "language": "Java",
+    "description": "Free and Open Source, Distributed, RESTful Search Engine"
   },
   {
-    "repo": "vasilytrofimchuk/domainsearcher-app",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Score and choose the best domain name for your startup — AI-powered generation, real-time availability, and multi-dimensional scoring (LEN, PRO, MEM, BRD, FIT). Free, no signup."
-  },
-  {
-    "repo": "ZRainbow1275/AutoTeam-F",
+    "repo": "yzhao062/anywhere-agents",
     "branch": "main",
     "language": "Python",
-    "description": "参照上游 cnitlrt/AutoTeam 的改善版,重点在于实现免费号批量获得以及改善操作体验 (Fix + Free)"
+    "description": "One config to rule all your AI agents: portable (every project, every session), effective (curated writing, routing, skills), and safer (destructive-command guard)."
   },
   {
-    "repo": "apache/kafka",
-    "branch": "trunk",
+    "repo": "bazelbuild/bazel",
+    "branch": "master",
     "language": "Java",
-    "description": "Mirror of Apache Kafka"
+    "description": "a fast, scalable, multi-language and extensible build system"
   },
   {
-    "repo": "JetBrains/kotlin",
+    "repo": "element-plus/element-plus",
+    "branch": "dev",
+    "language": "TypeScript",
+    "description": "🎉 A Vue.js 3 UI Library made by Element team"
+  },
+  {
+    "repo": "doctrine/orm",
+    "branch": "3.2.x",
+    "language": "PHP",
+    "description": "Doctrine Object Relational Mapper (ORM)"
+  },
+  {
+    "repo": "docker/buildx",
+    "branch": "master",
+    "language": "Go",
+    "description": "Docker CLI plugin for extended build capabilities with BuildKit"
+  },
+  {
+    "repo": "pinterest/ktlint",
     "branch": "master",
     "language": "Kotlin",
-    "description": "The Kotlin Programming Language."
+    "description": "An anti-bikeshedding Kotlin linter with built-in formatter"
   },
   {
-    "repo": "pytorch/examples",
-    "branch": "main",
-    "language": "Python",
-    "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc."
-  },
-  {
-    "repo": "apache/mxnet",
+    "repo": "keras-team/keras-cv",
     "branch": "master",
-    "language": "C++",
-    "description": "Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more"
-  },
-  {
-    "repo": "apache/arrow",
-    "branch": "main",
-    "language": "C++",
-    "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
-  },
-  {
-    "repo": "hapijs/hapi",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "The Simple, Secure Framework Developers Trust"
-  },
-  {
-    "repo": "renatoworks/3dsvg",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The easiest way to turn SVGs into interactive React 3D components"
-  },
-  {
-    "repo": "R6410418/Jackrong-llm-finetuning-guide",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": ""
-  },
-  {
-    "repo": "microsoft/playwright",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
-  },
-  {
-    "repo": "Dhravya/webpull",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "civilian7/sql-tutorial",
-    "branch": "main",
     "language": "Python",
-    "description": "현실적인 전자상거래 데이터베이스로 배우는 SQL 튜토리얼 (21 tables, 18 views, 111 exercises)"
+    "description": "Industry-strength Computer Vision workflows with Keras"
   },
   {
-    "repo": "nashsu/opencli-rs",
+    "repo": "JohnRiceML/clawport-ui",
     "branch": "main",
-    "language": "Rust",
-    "description": "Opencli-rs is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl)"
+    "language": "TypeScript",
+    "description": "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw."
   },
   {
-    "repo": "redis/redis",
-    "branch": "unstable",
-    "language": "C",
-    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
+    "repo": "mattermost/mattermost-server",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.."
   }
 ]
