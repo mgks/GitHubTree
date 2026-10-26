@@ -1,146 +1,146 @@
 [
   {
-    "repo": "chekusu/yobiru",
-    "branch": "main",
-    "language": "Python",
-    "description": "Let your agents talk: messages, data, files and wake-ups over Tailscale."
-  },
-  {
-    "repo": "uedk9p/sora2-watermark-remover",
-    "branch": "main",
-    "language": "Python",
-    "description": "sora2 watermark remover"
-  },
-  {
-    "repo": "homielab/giapha-os",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Đây là mã nguồn mở cho ứng dụng quản lý gia phả dòng họ, cung cấp giao diện trực quan để xem sơ đồ phả hệ, quản lý thành viên, tìm kiếm và lọc danh sách thành viên."
-  },
-  {
-    "repo": "EricEsquivel/CobaltStrike-Linux-Beacon",
-    "branch": "main",
-    "language": "C",
-    "description": "Proof of Concept (PoC) implant for creating custom Cobalt Strike Beacons"
-  },
-  {
-    "repo": "tomascupr/sandstorm",
-    "branch": "main",
-    "language": "Python",
-    "description": "One API call. Full Claude agent. Completely sandboxed."
-  },
-  {
-    "repo": "Geek-1001/arcmark",
+    "repo": "hpennington/agentswift",
     "branch": "main",
     "language": "Swift",
-    "description": "macOS bookmark manager that attaches to any browser window as a sidebar"
+    "description": ""
   },
   {
-    "repo": "molefrog/skills",
+    "repo": "Charonyuu/whatsmyagentdoing",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "❈ Claude skill for generating high-quality PDFs using react-pdf"
+    "language": "JavaScript",
+    "description": "See what every Claude Code and Codex agent on your machine is doing — live, in a little office."
   },
   {
-    "repo": "ewindmer/polymarket-arbitrage-trading-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "polymarket arbitrage trading bot"
-  },
-  {
-    "repo": "BquantFinance/licitaciones-espana",
+    "repo": "openai/privacy-filter",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "OpenAI Privacy Filter"
   },
   {
-    "repo": "Aliothmoon/MAA-Meow",
+    "repo": "Zcy233035/rl-explainer",
     "branch": "main",
-    "language": "Kotlin",
-    "description": "《明日方舟》小助手Android版，全日常一键长草！| A one-click tool for the daily tasks of Arknights, supporting all clients."
+    "language": "Svelte",
+    "description": "rl-explainer"
   },
   {
-    "repo": "yeuxuan/openclaw-docs",
+    "repo": "gatelynch/llm-knowledge-base",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "openclaw 剖析、拆解、教程在线文档"
+    "language": "Python",
+    "description": "參考自Andrej Kapathy的llm-wiki概念，把原始素材、LLM 編譯後的知識、   探索中的思考，以及最終作品明確分層管理   的個人知識庫系統。"
   },
   {
-    "repo": "phioranex/openclaw-docker",
+    "repo": "Tencent/tdesign-vue-next",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "A Vue3.x UI components lib for TDesign."
+  },
+  {
+    "repo": "google/leveldb",
     "branch": "main",
-    "language": "PowerShell",
-    "description": ""
+    "language": "C++",
+    "description": "LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values."
   },
   {
-    "repo": "burpheart/cursor-tap",
+    "repo": "cablate/banini-tracker",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "巴逆逆（8zz）反指標追蹤器 — Facebook 抓取 + 影片轉錄 + AI 分析 + Telegram 推送"
+  },
+  {
+    "repo": "kessler/gemma-gem",
     "branch": "main",
-    "language": "Go",
-    "description": "Cursor gRPC 通信流量分析工具"
+    "language": "TypeScript",
+    "description": "Gemma Gem runs Google's Gemma 4 model entirely on-device via WebGPU — no API keys, no cloud, no data leaving your machine."
   },
   {
-    "repo": "vibe-music/vibe-music-web",
+    "repo": "nateherkai/hyperframes-student-kit",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Open-source cloud music player with a bring-your-own-music model. Local control, optional sync, zero platform dependency."
-  },
-  {
-    "repo": "rebane2001/xikipedia",
-    "branch": "mane",
     "language": "HTML",
-    "description": "Wikipedia as a social media feed"
+    "description": "HTML-native motion-graphics video workspace — 12 finished projects built on Hyperframes + GSAP. A teaching kit for students learning to build motion-graphics video pipelines end-to-end."
   },
   {
-    "repo": "simonw/showboat",
-    "branch": "main",
-    "language": "Go",
-    "description": "Create executable documents that demonstrate an agent's work"
-  },
-  {
-    "repo": "godagoo/claude-telegram-relay",
+    "repo": "ChristosChristofidis/awesome-deep-learning",
     "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome Deep Learning tutorials, projects and communities."
+  },
+  {
+    "repo": "nvm-sh/nvm",
+    "branch": "master",
+    "language": "Shell",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions"
+  },
+  {
+    "repo": "storybookjs/storybook",
+    "branch": "next",
     "language": "TypeScript",
-    "description": "Minimal pattern for running Claude Code as an always-on Telegram bot. Cross-platform daemon setup included."
+    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
   },
   {
-    "repo": "linguo2625469/qq-farm-bot",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "基于 Node.js 的 QQ 经典农场小程序自动化挂机脚本。通过分析小程序 WebSocket 通信协议（Protocol Buffers），实现全自动农场管理。"
-  },
-  {
-    "repo": "peteromallet/desloppify",
+    "repo": "guidelabs/steerling",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "Interpretable Causal Diffusion Language Models"
   },
   {
-    "repo": "mayfer/electrobun-macos-native-blur",
+    "repo": "alefinvest/polymarket-arbitrage-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot polymarket arbitrage bot polymarket arbitrage trading bot polymarket trading bot"
+  },
+  {
+    "repo": "akullpp/awesome-java",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "Enable background blur like a native app in Electrobun"
+    "language": "Other",
+    "description": "A curated list of awesome frameworks, libraries and software for the Java programming language."
   },
   {
-    "repo": "vigorX777/ai-daily-digest",
+    "repo": "apple/python-apple-fm-sdk",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI"
+    "language": "Python",
+    "description": "Python bindings for access to the on-device model at the core of Apple Intelligence through the Foundation Models framework"
   },
   {
-    "repo": "openperf/openclaw-cloud",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Give your AI Agent a cloud-native life. Deploy once, converse everywhere."
+    "repo": "QLHazyCoder/codex-oauth-automation-extension",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "Chrome扩展：支持OpenAI OAuth注册、验证码获取、CPA回调验证与自动恢复"
   },
   {
-    "repo": "itcaat/mtproto-installer",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Ускоритель телеграм =)"
+    "repo": "grpc/grpc",
+    "branch": "master",
+    "language": "C++",
+    "description": "C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
   },
   {
-    "repo": "Conway-Research/automaton",
+    "repo": "YeQing17-2026/OmniAgent",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human"
+    "language": "Python",
+    "description": "An agent capable of self-evolving and dynamically hardening security"
+  },
+  {
+    "repo": "yangdongchao/UniAudio2",
+    "branch": "main",
+    "language": "Python",
+    "description": "UniAudio 2.0: An audio fundation model for text, speech, sound, and music"
+  },
+  {
+    "repo": "apache/kafka",
+    "branch": "trunk",
+    "language": "Java",
+    "description": "Mirror of Apache Kafka"
+  },
+  {
+    "repo": "WenXiaoWendy/timeline-for-agent",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Kill Tomato Clock"
+  },
+  {
+    "repo": "Zouuup/landrun",
+    "branch": "main",
+    "language": "Go",
+    "description": "Run any Linux process in a secure, unprivileged sandbox using Landlock. Think firejail, but lightweight, user-friendly, and baked into the kernel."
   }
 ]
