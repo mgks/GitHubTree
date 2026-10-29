@@ -1,146 +1,146 @@
 [
   {
-    "repo": "zhongweiv/hermes-edu-skills",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "中文教育 Agent Skill Pack：教材同步、备考复习、拍照答疑、错题复盘、亲子陪学、阅读写作和教师工具，Hermes Agent 可直接使用，也可导出到 OpenClaw/Codex/Cursor/Claude Code。"
-  },
-  {
-    "repo": "localstack/localstack",
-    "branch": "master",
-    "language": "Python",
-    "description": "💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline"
-  },
-  {
-    "repo": "hashicorp/raft",
-    "branch": "main",
-    "language": "Go",
-    "description": "Golang implementation of the Raft consensus protocol"
-  },
-  {
-    "repo": "pypa/pipx",
-    "branch": "main",
-    "language": "Python",
-    "description": "Install and Run Python Applications in Isolated Environments"
-  },
-  {
-    "repo": "fermyon/spin",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Spin is the open source developer tool for building and running serverless applications powered by WebAssembly."
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-OCR-2",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "prakhar1989/awesome-courses",
-    "branch": "master",
-    "language": "Other",
-    "description": ":books: List of awesome university courses for learning Computer Science!"
-  },
-  {
-    "repo": "teorth/optimizationproblems",
+    "repo": "Henryfud/werm",
     "branch": "main",
     "language": "HTML",
-    "description": "A collection of optimization problems in mathematics"
+    "description": "A 302 neuron network on the real C. elegans wiring diagram, with a steering layer for local language models."
   },
   {
-    "repo": "hanxiao/claudecode-telegram",
+    "repo": "pulsemindcover/Polymarket-AI-Trading-Bot",
     "branch": "main",
     "language": "Python",
-    "description": "Telegram bridge for Claude Code"
+    "description": "AI-powered macOS trading script for Polymarket. Automatically analyzes markets, generates intelligent trade decisions, and executes orders using configurable risk management and strategy parameters. One-command installation, lightweight setup, and optimized performance for automated prediction market trading."
   },
   {
-    "repo": "airbnb/knowledge-repo",
-    "branch": "master",
+    "repo": "xgen-universe/Capybara",
+    "branch": "main",
     "language": "Python",
-    "description": "A next-generation curated knowledge sharing platform for data scientists and other technical professions."
+    "description": ""
   },
   {
-    "repo": "CSSEGISandData/COVID-19",
+    "repo": "TQZHR/grok2api",
+    "branch": "main",
+    "language": "Python",
+    "description": "Grok2API (Cloudflare Workers) one-click deploy with auto D1+KV provisioning"
+  },
+  {
+    "repo": "uqogihujomuwhiff/sora2-watermark-cleaner-pro",
+    "branch": "main",
+    "language": "Python",
+    "description": "sora2 watermark cleaner pro"
+  },
+  {
+    "repo": "missing-semester/missing-semester",
     "branch": "master",
+    "language": "CSS",
+    "description": "The Missing Semester of Your CS Education 📚"
+  },
+  {
+    "repo": "FuelLabs/fuels-ts",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Fuel Network Typescript SDK"
+  },
+  {
+    "repo": "deepmind/dm-haiku",
+    "branch": "main",
+    "language": "Python",
+    "description": "JAX-based neural network library"
+  },
+  {
+    "repo": "grapeot/context-infrastructure",
+    "branch": "main",
+    "language": "Python",
+    "description": "Reference implementation: a context infrastructure system for pulling LLM out of consensus"
+  },
+  {
+    "repo": "mit-pdos/xv6-public",
+    "branch": "master",
+    "language": "C",
+    "description": "xv6 OS"
+  },
+  {
+    "repo": "lukehinds/nono",
+    "branch": "main",
+    "language": "Rust",
+    "description": "OS-Level Isolation for AI Agents."
+  },
+  {
+    "repo": "cclank/x-algorithm-wiki",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Architecture wiki for the open-sourced X For You recommendation algorithm (xai-org/x-algorithm) — 21 source-anchored pages"
+  },
+  {
+    "repo": "NCSC-NL/spring4shell",
+    "branch": "main",
     "language": "Other",
-    "description": "Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE"
+    "description": "Operational information regarding the Spring4Shell vulnerability in the Spring Core Framework"
   },
   {
-    "repo": "ory/hydra",
+    "repo": "pgvector/pgvector",
     "branch": "master",
-    "language": "Go",
-    "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go."
+    "language": "C",
+    "description": "Open-source vector similarity search for Postgres"
   },
   {
-    "repo": "wenqingyu/ralphy-openspec",
+    "repo": "HugoRCD/evlog",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Ralph loop + OpenSpec integration for Cursor, OpenCode and ClaudeCode heavy lifting."
+    "description": "Logging that makes sense. Wide events, structured errors, zero chaos."
   },
   {
-    "repo": "dashrobotco/robot-components",
+    "repo": "QwenLM/Qwen3-TTS",
     "branch": "main",
-    "language": "TypeScript",
+    "language": "Python",
+    "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+  },
+  {
+    "repo": "shannhk/hermes-agent-control-room",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Control Room-first template for managing Hermes agents from one VPS agent to specialist teams and orchestrated workflows"
+  },
+  {
+    "repo": "Edosaqw/Tomodachi-Life-Living-The-Dream-PC",
+    "branch": "main",
+    "language": "C++",
+    "description": "Tomodachi Life Living The Dream PC Download April 2026 Sequel Release Switch Emulator Eden Ryujinx Performance Fix Mii Maker HD Same Sex Marriage Guide Shop Lock Solution Time Travel Bypass 4K Textures Free Full Version Save Transfer Tutorial Latest Build Gaming Utility"
+  },
+  {
+    "repo": "scosman/cursed_browser",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A web browser with no rendering engine — the VLM reads the HTML and hallucinates the page."
+  },
+  {
+    "repo": "TQ-trade/defidollar-core",
+    "branch": "decentralized-stable-index",
+    "language": "JavaScript",
+    "description": "Smart contracts for the DefiDollar ($DUSD) stablecoin."
+  },
+  {
+    "repo": "Emanuele-web04/remodex",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Remote Control for Codex. 24/7 version on the way"
+  },
+  {
+    "repo": "Tong89/smartNode",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "brianc/node-postgres",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "PostgreSQL client for node.js."
-  },
-  {
-    "repo": "actuallyepic/background-computer-use",
+    "repo": "BytePioneer-AI/moltbot-china",
     "branch": "main",
-    "language": "Swift",
-    "description": ""
+    "language": "TypeScript",
+    "description": "Clawdbot/OpenClaw中国插件：支持飞书，钉钉，QQ，企业微信"
   },
   {
-    "repo": "iam567/LifeManga",
+    "repo": "strukto-ai/mirage",
     "branch": "main",
-    "language": "Swift",
-    "description": "ios swift swiftui openai gpt-image manga ai-art"
-  },
-  {
-    "repo": "duonghieu7104/Star-Fox-64-Remake-PC-Port",
-    "branch": "main",
-    "language": "C++",
-    "description": "Star Fox 64 Remake PC download Fox McCloud Arwing Landmaster Falco Peppy Slippy Lylat System Corneria Andross Star Wolf Team 4K Widescreen Native Port Controller Support HD Textures Medals Expert Mode Barrel Roll All-Range Mode Venom Sector Z Solar Macbeth Aquas 60FPS."
-  },
-  {
-    "repo": "rubygems/rubygems",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "Library packaging and distribution for Ruby."
-  },
-  {
-    "repo": "Aladdin-IT/MaaNTE",
-    "branch": "main",
-    "language": "C++",
-    "description": "MaaNTE download Arknights automation assistant daily tasks infrastructure base management recruitment OCR scripts farming resource planner auto-deploy strategy helper open source tool."
-  },
-  {
-    "repo": "wuyoscar/gpt_image_2_skill",
-    "branch": "main",
-    "language": "Python",
-    "description": "Curated T2I prompts and skill/CLI wrappers for GPT Image 2"
-  },
-  {
-    "repo": "fspecii/ace-step-ui",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 AI Music Generation. Free, local, unlimited. Stop paying for Suno!"
-  },
-  {
-    "repo": "pluk-inc/md-preview.app",
-    "branch": "main",
-    "language": "Swift",
-    "description": "A simple Markdown viewer for reading .md files"
-  },
-  {
-    "repo": "xinyitang3/cfnb",
-    "branch": "main",
-    "language": "Python",
-    "description": "这是一个全自动的 Cloudflare CDN 节点优选工具。它通过 TCP 延迟筛选 + IP 可用性二次检测 + 真实带宽测速 + IP 纯净度过滤 四重机制，从海量公开节点中筛选出当前网络环境下速度最快、可用性最高、滥用评分最低的 Cloudflare IP，并支持自动更新至 Cloudflare DNS 以及同步至 GitHub 仓库，同时支持微信实时通知。"
+    "language": "TypeScript",
+    "description": "A Unified Virtual Filesystem For AI Agents"
   }
 ]
