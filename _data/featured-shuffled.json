@@ -1,51 +1,33 @@
 [
   {
-    "repo": "CapeAga/bai-it",
+    "repo": "pemarine/cve-2026-41940-PoC",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "掰it — Chrome extension for English reading comprehension. Break long sentences into chunks, learn vocabulary in context."
-  },
-  {
-    "repo": "kivy/kivy",
-    "branch": "master",
     "language": "Python",
-    "description": "Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS"
+    "description": "A cPanel and WHM authentication bypassing tool"
   },
   {
-    "repo": "ray-project/ray",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
-  },
-  {
-    "repo": "protocolbuffers/protobuf",
+    "repo": "torproject/tor",
     "branch": "main",
-    "language": "C++",
-    "description": "Protocol Buffers - Google's data interchange format"
+    "language": "Other",
+    "description": "unofficial git repo -- report bugs/issues/pull requests on https://gitlab.torproject.org/ --"
   },
   {
-    "repo": "airbnb/lottie-android",
-    "branch": "master",
-    "language": "Java",
-    "description": "Render After Effects animations natively on Android and iOS, Web, and React Native"
-  },
-  {
-    "repo": "tqdm/tqdm",
-    "branch": "master",
-    "language": "Python",
-    "description": ":zap: A Fast, Extensible Progress Bar for Python and CLI"
-  },
-  {
-    "repo": "microsoft/fast",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "The adaptive interface system for modern web experiences."
-  },
-  {
-    "repo": "LazyVim/LazyVim",
+    "repo": "helm/helm-www",
     "branch": "main",
-    "language": "Lua",
-    "description": "Neovim config for the lazy"
+    "language": "MDX",
+    "description": "The Helm website for docs, blog and project info."
+  },
+  {
+    "repo": "requests/requests",
+    "branch": "main",
+    "language": "Python",
+    "description": "A simple, yet elegant, HTTP library."
+  },
+  {
+    "repo": "AnnaSuSu/TechSpar",
+    "branch": "main",
+    "language": "Python",
+    "description": "AI 驱动的八股文面试备战系统。支持长期记忆和人物画像，系统会记住你每次的表现，追踪薄弱点和掌握度，自动针对短板出题。支持简历模拟面试和专项强化训练，练得越多，题目越精准，一个越来越了解你的 AI 面试教练。"
   },
   {
     "repo": "grafana/grafana",
@@ -54,93 +36,111 @@
     "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more."
   },
   {
-    "repo": "google/or-tools",
-    "branch": "stable",
-    "language": "C++",
-    "description": "Google's Operations Research tools:"
+    "repo": "distribution/distribution",
+    "branch": "main",
+    "language": "Go",
+    "description": "The toolkit to pack, ship, store, and deliver container content"
   },
   {
-    "repo": "keepassxreboot/keepassxc",
-    "branch": "develop",
-    "language": "C++",
-    "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”."
+    "repo": "mattmireles/gemma-tuner-multimodal",
+    "branch": "main",
+    "language": "Python",
+    "description": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders."
   },
   {
-    "repo": "lqSky7/iphone-duo-macos-animation",
+    "repo": "zed-industries/zed",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+  },
+  {
+    "repo": "diepvantien/Tiktok-Pro-Tools",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": ""
+  },
+  {
+    "repo": "pixel-point/media-downloader",
     "branch": "main",
     "language": "Swift",
-    "description": "A clone of Iphone Duo's fold progressive blur animation on macbook using lid tilt sensor. Fully native written in swift! Demo:"
+    "description": "Beautiful native macOS video downloader. Download and trim in one app."
   },
   {
-    "repo": "lyra81604/zhengxi-views",
+    "repo": "Elias569/fintech-app",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "fintech app"
+  },
+  {
+    "repo": "iampedii/WhiteDNS-Wizard",
+    "branch": "main",
+    "language": "Go",
+    "description": "Cloudflare-first WhiteDNS CLI/TUI for provisioning a managed 3x-ui/Xray VPN stack over SSH, with DNS, certificates, client import links, Tor-routed profiles, diagnostics, backups, and repair/reset flows."
+  },
+  {
+    "repo": "MuhammadHanzalaIqbal/Hades-II-Trainer-Platinum",
     "branch": "main",
     "language": "Python",
-    "description": "可溯源的郑希(易方达基金经理)投研 Agent Skill——基于他全部公开观点原文 + 有原话佐证的投资方法 + 全市场基金真实数据，能溯源问答、按他框架给基金打分，绝不杜撰。⚠️仅研究学习辅助，不构成投资建议‼️website是郑希主页！"
+    "description": "Unlock the full potential of Hades II with this free trainer. Features include God Mode, infinite gold, all resources, and speed hack."
   },
   {
-    "repo": "kontaktinfob-popeb-music-glitch/pokemon-champions-pc",
+    "repo": "Qwilxy/paralives-release",
     "branch": "main",
     "language": "C#",
-    "description": "pokemon champions on pc desktop emulator mobile"
+    "description": "paralives release date early access steam download pc windows 11 gameplay trailer paramaker life simulation sims alternative free updates system requirements character creator build mode"
   },
   {
-    "repo": "QuantML-Research/wq-alpha-research",
+    "repo": "NVIDIA/NeMo",
     "branch": "main",
     "language": "Python",
+    "description": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)"
+  },
+  {
+    "repo": "do-md/domd",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "jackwener/DeepseekHarness-Android",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku"
-  },
-  {
-    "repo": "LiteLLM-Labs/litellm-rust",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A minimal Rust gateway built for coding agents (LiteLLM-Compatible)"
-  },
-  {
-    "repo": "YINGLINGH/limioryn",
+    "repo": "facebookresearch/fairseq",
     "branch": "main",
     "language": "Python",
-    "description": "High-level edge-cloud AI multi-agent framework for real devices, verifiable actuation and entropy-bounded recovery."
+    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
   },
   {
-    "repo": "hallieongibson4690/R6S-D-M-A-2026",
-    "branch": "main",
-    "language": "C#",
-    "description": "A comprehensive open-source framework for analyzing Rainbow Six Siege game mechanics, operator interactions, and developing advanced defensive strategies."
-  },
-  {
-    "repo": "nateherkai/scroll-craft",
+    "repo": "real-Elysia886/Todo-Tree-Next",
     "branch": "main",
     "language": "JavaScript",
-    "description": "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
+    "description": "Modern rewrite of Todo Tree — TypeScript + Rust architecture for blazing-fast TODO scanning in VS Code"
   },
   {
-    "repo": "frtghyujkiolsas-lab/ai-sdd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI-SDD spec-driven MVP demo: from idea, PRD and prototype to frontend-backend integration, testing and delivery."
-  },
-  {
-    "repo": "Nanako0129/sepia",
-    "branch": "main",
-    "language": "Shell",
-    "description": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136)."
-  },
-  {
-    "repo": "fzakaria/selfdb",
+    "repo": "Danm72/home-assistant-automation-suggestions",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "A Home Assistant integration that analyzes your manual actions and suggests automations to create"
   },
   {
-    "repo": "Belucking/ZkCanvas",
+    "repo": "Harkirat1462/claude-code-cli",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "ZkCanvas provides a distributed, high-performance platform for real-time data processing and rendering, scalable across multiple server clusters."
+    "language": "TypeScript",
+    "description": "claude code cli install codex github anthropic agentic coding system terminal assistant codebase git workflows multi file editing mcp protocol model context protocol subagents automation ci cd integration npm install setup guide tutorial command line interface latest version 2026 free download update bug fix test runner**"
+  },
+  {
+    "repo": "hydra-node/polymarket-weather-bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot"
+  },
+  {
+    "repo": "github/gitignore",
+    "branch": "main",
+    "language": "Other",
+    "description": "A collection of useful .gitignore templates"
+  },
+  {
+    "repo": "arvohealth-ai/OpenVitals",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Your health never sleeps."
   }
 ]
