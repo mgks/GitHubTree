@@ -1,146 +1,146 @@
 [
   {
-    "repo": "pemarine/cve-2026-41940-PoC",
+    "repo": "whatwg/html",
+    "branch": "main",
+    "language": "HTML",
+    "description": "HTML Standard"
+  },
+  {
+    "repo": "lij768423-svg/grok-register-panel",
     "branch": "main",
     "language": "Python",
-    "description": "A cPanel and WHM authentication bypassing tool"
+    "description": "Grok register engine (Camoufox) + live web monitor panel"
   },
   {
-    "repo": "torproject/tor",
-    "branch": "main",
-    "language": "Other",
-    "description": "unofficial git repo -- report bugs/issues/pull requests on https://gitlab.torproject.org/ --"
-  },
-  {
-    "repo": "helm/helm-www",
-    "branch": "main",
-    "language": "MDX",
-    "description": "The Helm website for docs, blog and project info."
-  },
-  {
-    "repo": "requests/requests",
-    "branch": "main",
-    "language": "Python",
-    "description": "A simple, yet elegant, HTTP library."
-  },
-  {
-    "repo": "AnnaSuSu/TechSpar",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI 驱动的八股文面试备战系统。支持长期记忆和人物画像，系统会记住你每次的表现，追踪薄弱点和掌握度，自动针对短板出题。支持简历模拟面试和专项强化训练，练得越多，题目越精准，一个越来越了解你的 AI 面试教练。"
-  },
-  {
-    "repo": "grafana/grafana",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more."
-  },
-  {
-    "repo": "distribution/distribution",
-    "branch": "main",
+    "repo": "grpc-ecosystem/grpc-gateway",
+    "branch": "master",
     "language": "Go",
-    "description": "The toolkit to pack, ship, store, and deliver container content"
+    "description": "gRPC to JSON proxy generator following the gRPC HTTP spec"
   },
   {
-    "repo": "mattmireles/gemma-tuner-multimodal",
-    "branch": "main",
-    "language": "Python",
-    "description": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders."
+    "repo": "OpenZeppelin/openzeppelin-contracts",
+    "branch": "master",
+    "language": "Solidity",
+    "description": "OpenZeppelin Contracts is a library for secure smart contract development."
   },
   {
-    "repo": "zed-industries/zed",
+    "repo": "cloudflare/pingora",
     "branch": "main",
     "language": "Rust",
-    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+    "description": "A library for building fast, reliable and evolvable network services."
   },
   {
-    "repo": "diepvantien/Tiktok-Pro-Tools",
+    "repo": "NativeScript/NativeScript",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love ❤️ Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Flutter and you name it compatible."
+  },
+  {
+    "repo": "software-mansion/react-native-screens",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Native navigation primitives for your React Native app."
+  },
+  {
+    "repo": "killervillsy/SessionToJson",
     "branch": "main",
     "language": "JavaScript",
     "description": ""
   },
   {
-    "repo": "pixel-point/media-downloader",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Beautiful native macOS video downloader. Download and trim in one app."
+    "repo": "trufflesuite/truffle",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": ":warning: The Truffle Suite is being sunset. For information on ongoing support, migration options and FAQs, visit the Consensys blog. Thank you for all the support over the years."
   },
   {
-    "repo": "Elias569/fintech-app",
+    "repo": "TrendTechVista/polymarket-politics-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "fintech app"
+    "description": "polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot polymarket politics bot"
   },
   {
-    "repo": "iampedii/WhiteDNS-Wizard",
+    "repo": "Tencent/tdesign-vue-next",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "A Vue3.x UI components lib for TDesign."
+  },
+  {
+    "repo": "aio-libs/aiohttp",
+    "branch": "master",
+    "language": "Python",
+    "description": "Asynchronous HTTP client/server framework for asyncio and Python"
+  },
+  {
+    "repo": "0x5uo2hen/codex_register",
+    "branch": "main",
+    "language": "Python",
+    "description": "OpenAI / ChatGPT 全自动注册机 & Token 提取器"
+  },
+  {
+    "repo": "777genius/claude-code-source-code-full",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Full source repository for Claude Code source code"
+  },
+  {
+    "repo": "status-im/nimbus-eth2",
+    "branch": "stable",
+    "language": "Nim",
+    "description": "Nim implementation of the Ethereum Beacon Chain"
+  },
+  {
+    "repo": "SudoPlz/spicetify-cli",
+    "branch": "master",
+    "language": "Other",
+    "description": "Command-line tool to customize Spotify client."
+  },
+  {
+    "repo": "mongodb/mongo",
+    "branch": "master",
+    "language": "C++",
+    "description": "The MongoDB Database"
+  },
+  {
+    "repo": "sno-ai/llmix",
+    "branch": "main",
+    "language": "Python",
+    "description": "Production LLM call layer for AI agents and tools: keep OpenAI/Anthropic/AI SDK/LiteLLM, hot-swap models with MDA presets, and add cache, retries, circuit breakers, key rotation, singleflight, and Python/TypeScript/Rust parity."
+  },
+  {
+    "repo": "samber/cc-skills-golang",
     "branch": "main",
     "language": "Go",
-    "description": "Cloudflare-first WhiteDNS CLI/TUI for provisioning a managed 3x-ui/Xray VPN stack over SSH, with DNS, certificates, client import links, Tor-routed profiles, diagnostics, backups, and repair/reset flows."
+    "description": "🧑‍🎨 A collection of Golang agentic skills that works"
   },
   {
-    "repo": "MuhammadHanzalaIqbal/Hades-II-Trainer-Platinum",
+    "repo": "microsoft/fast",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "The adaptive interface system for modern web experiences."
+  },
+  {
+    "repo": "pretyflaco/meetscribe",
     "branch": "main",
     "language": "Python",
-    "description": "Unlock the full potential of Hades II with this free trainer. Features include God Mode, infinite gold, all resources, and speed hack."
+    "description": "Fully local meeting transcription with speaker diarization, AI summaries, and PDF output"
   },
   {
-    "repo": "Qwilxy/paralives-release",
+    "repo": "nostrband/ServiceGraph",
     "branch": "main",
-    "language": "C#",
-    "description": "paralives release date early access steam download pc windows 11 gameplay trailer paramaker life simulation sims alternative free updates system requirements character creator build mode"
+    "language": "Shell",
+    "description": "AI Agent skills for a structured catalog of 100k+ US professional-services firms"
   },
   {
-    "repo": "NVIDIA/NeMo",
-    "branch": "main",
-    "language": "Python",
-    "description": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)"
-  },
-  {
-    "repo": "do-md/domd",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "facebookresearch/fairseq",
+    "repo": "rasbt/mini-coding-agent",
     "branch": "main",
     "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    "description": "Minimal and readable coding agent harness implementation in Python to explain the core components of coding agents."
   },
   {
-    "repo": "real-Elysia886/Todo-Tree-Next",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Modern rewrite of Todo Tree — TypeScript + Rust architecture for blazing-fast TODO scanning in VS Code"
-  },
-  {
-    "repo": "Danm72/home-assistant-automation-suggestions",
+    "repo": "pytest-dev/pytest",
     "branch": "main",
     "language": "Python",
-    "description": "A Home Assistant integration that analyzes your manual actions and suggests automations to create"
-  },
-  {
-    "repo": "Harkirat1462/claude-code-cli",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "claude code cli install codex github anthropic agentic coding system terminal assistant codebase git workflows multi file editing mcp protocol model context protocol subagents automation ci cd integration npm install setup guide tutorial command line interface latest version 2026 free download update bug fix test runner**"
-  },
-  {
-    "repo": "hydra-node/polymarket-weather-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot Polymarket weather betting bot Polymarket weather trading bot"
-  },
-  {
-    "repo": "github/gitignore",
-    "branch": "main",
-    "language": "Other",
-    "description": "A collection of useful .gitignore templates"
-  },
-  {
-    "repo": "arvohealth-ai/OpenVitals",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Your health never sleeps."
+    "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing"
   }
 ]
