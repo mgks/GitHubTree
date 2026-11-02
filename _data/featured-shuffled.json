@@ -1,146 +1,146 @@
 [
   {
-    "repo": "win4r/video-director",
+    "repo": "soumatheusgomes/editonny",
     "branch": "main",
     "language": "Python",
-    "description": "A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals."
+    "description": "Local video editing through conversation. Created by Matheus Gomes."
   },
   {
-    "repo": "ProjectBarks/gopher-code",
+    "repo": "google-research/vision_transformer",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Vision Transformer in JAX."
+  },
+  {
+    "repo": "clawvader-tech/hermes-telegram-miniapp",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Terminal-style Telegram Mini App for Hermes Agent — chat, cron jobs, and system monitoring in a dark TUI"
+  },
+  {
+    "repo": "boratanrikulu/gecit",
     "branch": "main",
     "language": "Go",
-    "description": "Claude Code, rewritten from scratch in Go. Zero Node.js. Zero Electron. One binary."
+    "description": "DPI bypass tool - eBPF on Linux, TUN on macOS/Windows."
   },
   {
-    "repo": "B3hnamR/PsiphonOverMITM",
+    "repo": "coyvalyss1/model-matchmaker",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Local hook for Cursor and Claude Code that routes prompts to the right model tier. Stop paying Opus prices to rename files."
+  },
+  {
+    "repo": "knowsuchagency/mcp2cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
+  },
+  {
+    "repo": "sweriko/ai4anim-webgpu",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "evanklem/evanflow",
+    "branch": "main",
+    "language": "Shell",
+    "description": "A TDD-driven iterative feedback loop for software development. 16 cohesive Claude Code skills walk an idea from brainstorm → plan → execute → iterate, with checkpoints throughout."
+  },
+  {
+    "repo": "jackwener/boss-cli",
+    "branch": "main",
+    "language": "Python",
+    "description": "A CLI for BOSS 直聘 — search jobs, view recommendations, manage applications via reverse-engineered API"
+  },
+  {
+    "repo": "pithings/coderaft",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🛶 Run VS Code on any machine anywhere and access it in the browser (25MB npm pkg)"
+  },
+  {
+    "repo": "op7418/Claude-to-IM-skill",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
+  },
+  {
+    "repo": "RightNow-AI/autokernel",
+    "branch": "main",
+    "language": "Python",
+    "description": "Autoresearch for GPU kernels. Give it any PyTorch model, go to sleep, wake up to optimized Triton kernels."
+  },
+  {
+    "repo": "amaancoderx/npxskillui",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "wuyoscar/gpt_image_2_skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Curated T2I prompts and skill/CLI wrappers for GPT Image 2"
+  },
+  {
+    "repo": "TheTom/vllm-swift",
+    "branch": "main",
+    "language": "Python",
+    "description": "vLLM Metal plugin powered by mlx-swift — high-performance LLM inference on Apple Silicon"
+  },
+  {
+    "repo": "Aryagm/dflash-mlx",
+    "branch": "main",
+    "language": "Python",
+    "description": "Exact speculative decoding on Apple Silicon, powered by MLX."
+  },
+  {
+    "repo": "pretyflaco/meetscribe",
+    "branch": "main",
+    "language": "Python",
+    "description": "Fully local meeting transcription with speaker diarization, AI summaries, and PDF output"
+  },
+  {
+    "repo": "DylanDavis1/DSCourier",
     "branch": "main",
     "language": "PowerShell",
     "description": ""
   },
   {
-    "repo": "mohi-devhub/antivibe",
+    "repo": "muxprotocol/kalshi-trading-bot",
     "branch": "main",
-    "language": "Shell",
-    "description": "Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives."
+    "language": "TypeScript",
+    "description": "kalshi trading bot on prediction market autonomous kalshi trading bot that connects to the kalshi api via kalshi rest and kalshi websocket, runs a five-agent ai ensemble to analyze kalshi prediction markets, sizes positions with fractional kelly criterion against your kalshi balance, and executes kalshi orders in paper or live mode with hard daily"
   },
   {
-    "repo": "ChuprinaDaria/Vibecode-Cleaner-Fartrun",
-    "branch": "master",
-    "language": "Python",
-    "description": "Not another AI reviewing AI. Rust-powered code scanner that actually reads your codebase —    zero extra tokens consumed. 29 MCP tools: security vulns, dead code, health checks, save  points, frozen files. Finds problems. Farts at you. Hasselhoff approves."
-  },
-  {
-    "repo": "agenmod/immortal-skill",
+    "repo": "3-JonWallis1993/HyperLiquid-Claw",
     "branch": "main",
-    "language": "Python",
-    "description": "♾️ 开源数字永生框架 — 从聊天记录蒸馏任何人的七维数字分身。支持微信/飞书/iMessage/Telegram等12+平台，7种角色模板，对齐 OpenClaw Soul Spec 标准。一行指令让你的AI学会蒸馏。"
-  },
-  {
-    "repo": "coleam00/claude-memory-compiler",
-    "branch": "main",
-    "language": "Python",
-    "description": "Give Claude Code a memory that evolves with your codebase. Hooks automatically capture sessions, the Claude Agent SDK extracts key decisions and lessons, and an LLM compiler organizes everything into structured, cross-referenced knowledge articles - inspired by Karpathy's LLM Knowledge Base architecture."
-  },
-  {
-    "repo": "connectfarm1/accumulation-radar",
-    "branch": "main",
-    "language": "Python",
-    "description": "🏦 Accumulation Radar — Auto-detect market maker accumulation + OI anomaly + 3-strategy scoring for crypto futures. Pure Python, zero AI cost."
-  },
-  {
-    "repo": "milla-jovovich/mempalace",
-    "branch": "main",
-    "language": "Python",
-    "description": "The highest-scoring AI memory system ever benchmarked. And it's free."
-  },
-  {
-    "repo": "R6410418/Jackrong-llm-finetuning-guide",
-    "branch": "main",
-    "language": "Jupyter Notebook",
+    "language": "Rust",
     "description": ""
   },
   {
-    "repo": "zennomi/truyendrive",
+    "repo": "ConardLi/garden-skills",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
+  },
+  {
+    "repo": "170-carry/codex-tools",
+    "branch": "main",
+    "language": "Rust",
+    "description": "快捷切换codex 账号以及监控codex用量的工具"
+  },
+  {
+    "repo": "ConardLi/web-design-skill",
+    "branch": "main",
+    "language": "CSS",
+    "description": "An AI agent skill that transforms AI-generated web pages from functional to stunning.(Inspired by Claude Design)"
+  },
+  {
+    "repo": "AgentSeal/codeburn",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Biến Google Drive thành Web Truyện"
-  },
-  {
-    "repo": "LuisAlexisSalazar/Zelda-Minish-Cap-PC",
-    "branch": "main",
-    "language": "C++",
-    "description": "Zelda Minish Cap PC download Link Ezlo Picori Vaati Hyrule Kinstones Four Sword shrinking GBA native widescreen controller save editor rom."
-  },
-  {
-    "repo": "konbakuyomu/smartsearch",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "yaassin12/DeepSeek-V4-Pro-App",
-    "branch": "main",
-    "language": "C++",
-    "description": "DeepSeek V4 Pro: Advanced AI desktop app. Features: 1.6T MoE architecture, 1M token context window, Engram memory. Pro coding agent, Think Mode (High/Max), repo-level reasoning, complex bug fixing. Real-time web search, local API key storage, cross-file analysis, low-latency streaming interface."
-  },
-  {
-    "repo": "PrathamLearnsToCode/paper2code",
-    "branch": "main",
-    "language": "Python",
-    "description": "Agent skill to turn any arxiv paper into a working implementation"
-  },
-  {
-    "repo": "moabukar/miniblue",
-    "branch": "main",
-    "language": "Go",
-    "description": "Local Azure development. One binary. No account needed. 20+ emulated services for testing, CI and local dev."
-  },
-  {
-    "repo": "millionco/debug-agent",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Debugging skill for AI agents"
-  },
-  {
-    "repo": "teamchong/turboquant-wasm",
-    "branch": "main",
-    "language": "Zig",
-    "description": "TurboQuant WASM SIMD vector compression — 3 bits/dim with fast dot product. Requires relaxed SIMD (Chrome 114+, Firefox 128+, Safari 18+, Node 20+)"
-  },
-  {
-    "repo": "zubair-trabzada/ai-legal-claude",
-    "branch": "main",
-    "language": "Python",
-    "description": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out the Skool community"
-  },
-  {
-    "repo": "shitagaki-lab/see-through",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "Single-image Layer Decomposition for Anime Characters (SIGGRAPH 2026, Conditionally Accepted)"
-  },
-  {
-    "repo": "browser-use/browser-harness-js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Self-healing browser harness that enables LLMs to complete any task"
-  },
-  {
-    "repo": "Ajai53200/DeepSeek-V4-Pro-App",
-    "branch": "main",
-    "language": "C++",
-    "description": "DeepSeek V4 Pro download MoE architecture 1.6T parameters 1M context window reasoning modes Think Max sparse attention coding agent agentic AI benchmarks API pricing open weights MIT license."
-  },
-  {
-    "repo": "renatoworks/3dsvg",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The easiest way to turn SVGs into interactive React 3D components"
-  },
-  {
-    "repo": "stanford-iris-lab/meta-harness",
-    "branch": "main",
-    "language": "Python",
-    "description": "Reference code for the Meta-Harness paper."
+    "description": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code and Codex cost observability."
   }
 ]
