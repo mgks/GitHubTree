@@ -1,146 +1,146 @@
 [
   {
-    "repo": "cv-cat/TaoBaoApis",
+    "repo": "konbakuyomu/smartsearch",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "rbrown101010/bluey-by-riley",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Googly Eyes: a blueberry character on iPhone that points and acts on your Mac (Mac menu bar app + iOS app)"
+  },
+  {
+    "repo": "kdeldycke/awesome-falsehood",
+    "branch": "master",
+    "language": "Other",
+    "description": "😱 Falsehoods Programmers Believe in"
+  },
+  {
+    "repo": "apache/beam",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing."
+  },
+  {
+    "repo": "rabbitmq/rabbitmq-server",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
+  },
+  {
+    "repo": "huggingface/diffusers",
+    "branch": "main",
+    "language": "Python",
+    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+  },
+  {
+    "repo": "wandb/wandb",
+    "branch": "main",
+    "language": "Python",
+    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
+  },
+  {
+    "repo": "filecoin-project/lotus",
+    "branch": "master",
+    "language": "Go",
+    "description": "Reference implementation of the Filecoin protocol, written in Go"
+  },
+  {
+    "repo": "mgks/GitHubTree",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
+  },
+  {
+    "repo": "babel/babel",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
+  },
+  {
+    "repo": "flutter/flutter",
+    "branch": "master",
+    "language": "Dart",
+    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
+  },
+  {
+    "repo": "go-sql-driver/mysql",
+    "branch": "master",
+    "language": "Go",
+    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
+  },
+  {
+    "repo": "ipfs/kubo",
+    "branch": "master",
+    "language": "Go",
+    "description": "An IPFS implementation in Go"
+  },
+  {
+    "repo": "shadowsocks/shadowsocks-windows",
+    "branch": "master",
+    "language": "C#",
+    "description": "A C# port of shadowsocks"
+  },
+  {
+    "repo": "testing-library/react-testing-library",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices."
+  },
+  {
+    "repo": "EbookFoundation/free-programming-books",
+    "branch": "main",
+    "language": "Python",
+    "description": ":books: Freely available programming books"
+  },
+  {
+    "repo": "deepset-ai/haystack",
+    "branch": "main",
+    "language": "MDX",
+    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
+  },
+  {
+    "repo": "Homebrew/brew",
+    "branch": "master",
+    "language": "Ruby",
+    "description": "🍺 The missing package manager for macOS (or Linux)"
+  },
+  {
+    "repo": "tensorflow/models",
     "branch": "master",
     "language": "Python",
-    "description": "淘宝算法逆向，淘宝api，websockets自动运营，淘宝AI Agent基座"
+    "description": "Models and examples built with TensorFlow"
   },
   {
-    "repo": "neosigmaai/auto-harness",
+    "repo": "Tencent/tdesign-react",
     "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "TypeScript",
+    "description": "A React UI components lib for TDesign."
   },
   {
-    "repo": "staturnzz/amethyst",
+    "repo": "cncf/landscape",
+    "branch": "master",
+    "language": "Other",
+    "description": "🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location."
+  },
+  {
+    "repo": "directus/directus",
     "branch": "main",
+    "language": "TypeScript",
+    "description": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more."
+  },
+  {
+    "repo": "Mufeedvh/Code2Prompt",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A CLI tool to convert your codebase into a single LLM prompt with source tree, prompt templating, and token counting."
+  },
+  {
+    "repo": "redis/redis",
+    "branch": "unstable",
     "language": "C",
-    "description": "iOS 12/13 jailbreak for all devices"
-  },
-  {
-    "repo": "deltatrader01/Polymarket-Trading-Bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "Polymarket arbitrage trading bot that detects inefficiencies in 5-minute, 15-minute, and 1-hour markets. polymarket arbitrage trading bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot polymarket arbitrage bot"
-  },
-  {
-    "repo": "kellyvv/PhoneClaw",
-    "branch": "main",
-    "language": "Swift",
-    "description": "PhoneClaw: On-device AI Agent for Phone powered by Gemma 4"
-  },
-  {
-    "repo": "elder-plinius/G0DM0D3",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "LIBERATED AI CHAT"
-  },
-  {
-    "repo": "cksac/turboquant-model",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "Crestdrasnip/Claude-Zeroclaw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "veyliss/ai-localbase",
-    "branch": "main",
-    "language": "Go",
-    "description": "一个本地优先的AI知识库系统（RAG），用于把本地文档接入辅导搜索与大模型对话流程。"
-  },
-  {
-    "repo": "epiral/bb-sites",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Community fetch recipes for bb-browser — pre-built adapters for Reddit, Twitter, GitHub, and more"
-  },
-  {
-    "repo": "adamlyttleapps/notchy",
-    "branch": "main",
-    "language": "Swift",
-    "description": ""
-  },
-  {
-    "repo": "Composio-HQ/polymarket-kalshi-arbitrage-bot",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Polymarket Kalshi arbitrage prediction-markets trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv"
-  },
-  {
-    "repo": "Paparusi/legal-ai-agent",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "6-robot/jie_3d_nav",
-    "branch": "main",
-    "language": "Python",
-    "description": "一套基于 ROS 2 Humble 的 3D 导航系统，通过 Web 界面交互。本系统已在智元科技 D1 机器狗以及留形科技 Odin 1 空间定位模组上测试通过。"
-  },
-  {
-    "repo": "OpenYSM/YSMParser",
-    "branch": "main",
-    "language": "C++",
-    "description": "A Parser to recover Yes-Steve-Model Encrypted Binaries."
-  },
-  {
-    "repo": "509992828/grok-register",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "joewongjc/type4me",
-    "branch": "main",
-    "language": "Swift",
-    "description": "MacOS语音输入工具，实时识别、大模型文本优化、全本地存储"
-  },
-  {
-    "repo": "Gitlawb/openclaude",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
-  },
-  {
-    "repo": "lsm1103/CC",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "ckckck/UltimateSearchSkill",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Dual-engine web search Skill for OpenClaw/Pi: Grok AI + Tavily + FireCrawl"
-  },
-  {
-    "repo": "L1v1ng0ffTh3L4N/EdgeSavedPasswordsDumper",
-    "branch": "main",
-    "language": "C#",
-    "description": "Security related proof of concepts"
-  },
-  {
-    "repo": "aiming-lab/AutoHarness",
-    "branch": "main",
-    "language": "Python",
-    "description": "AutoHarness: Automated Harness Engineering for AI Agents"
-  },
-  {
-    "repo": "stevibe/ToolCall-15",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "ircfspace/teleMirror",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "A simple desktop client for viewing Telegram channels, specifically designed for complex filtering environments like Iran"
+    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
   }
 ]
