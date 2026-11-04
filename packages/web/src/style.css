@@ -1306,6 +1306,12 @@ input {
     .toolbar .tool-btn { padding: 0 8px; width: 100%; height: 38px; border-radius: 6px; }
 }
 
+@media (max-width: 960px) {
+    #treeStatsSummary {
+        display: none !important;
+    }
+}
+
 @media (max-width: 1000px) and (min-width: 769px) {
     .responsive-btn .btn-text { display: none; }
 }
@@ -1670,16 +1676,19 @@ input {
     flex: 1;
     min-width: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .embed-badge-img {
     height: 18px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .embed-input {
     flex: 1;
-    min-width: 120px;
+    min-width: 0;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -1688,6 +1697,8 @@ input {
     color: var(--text);
     cursor: pointer;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     padding: 0;
 }
 
@@ -1703,6 +1714,7 @@ input {
     align-items: center;
     justify-content: center;
     transition: color 0.15s ease;
+    flex-shrink: 0;
 }
 
 .embed-copy-btn:hover {
@@ -2463,6 +2475,15 @@ mark.search-highlight {
    15. MOBILE & RESPONSIVE POLISH
    ========================================= */
 
+@media (max-width: 768px) {
+    /* Tree badges: keep file size and directory count close to name instead of miles away */
+    .t-badge {
+        margin-left: 10px !important;
+        margin-right: auto !important;
+        opacity: 0.65;
+    }
+}
+
 @media (max-width: 640px) {
     /* Stack action groups in repository meta bar */
     .repo-meta-bar {
@@ -2495,6 +2516,57 @@ mark.search-highlight {
         width: 95%;
         padding: 14px;
         max-height: 90vh;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Header layout and button spacing */
+    header {
+        margin-bottom: 22px;
+        gap: 10px;
+    }
+
+    .brand {
+        font-size: 1.25rem;
+        gap: 8px;
+    }
+
+    .brand i {
+        font-size: 1.45rem;
+    }
+
+    .brand a span {
+        font-size: 1.15rem;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .app-star-btn {
+        height: 30px;
+        padding: 0 9px;
+        font-size: 0.74rem;
+        gap: 5px;
+        margin-left: 4px;
+        flex-shrink: 0;
+    }
+
+    .text-btn {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 0.74rem;
+        gap: 6px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .icon-btn {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
     }
 }
 
@@ -2551,26 +2623,13 @@ mark.search-highlight {
         word-break: break-all;
     }
 
-    /* Header Compact Brand & Actions */
-    .brand {
-        font-size: 1.25rem;
-        gap: 8px;
-    }
-
-    .brand i {
-        font-size: 1.4rem;
-    }
-
-    .app-star-btn {
-        height: 28px;
-        padding: 0 8px;
-        font-size: 0.72rem;
+    /* Collapse long text on private button to keep top buttons neatly spaced */
+    .private-btn-text {
+        display: none;
     }
 
     .text-btn {
-        height: 28px;
-        padding: 0 8px;
-        font-size: 0.72rem;
+        padding: 0 9px;
     }
 }
 
@@ -2581,6 +2640,6 @@ mark.search-highlight {
     }
 
     .app-star-btn {
-        padding: 0 8px;
+        padding: 0 9px;
     }
 }
