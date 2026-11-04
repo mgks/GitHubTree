@@ -387,8 +387,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
         const card = e.target.closest('.mini-repo-card');
         const tpBtn = e.target.closest('.tp-explore-btn');
+        const chip = e.target.closest('.quick-tag-chip');
         
-        if (card && !card.classList.contains('history-card')) {
+        if (chip) {
+            const repo = chip.dataset.repo;
+            if (repo) {
+                const [u, r] = repo.split('/');
+                els.repo.value = `${u}/${r}`;
+                els.branch.value = 'main';
+                loadTree();
+                trackEvent('Fetch', 'Quick Tag Chip', repo);
+            }
+        } else if (card && !card.classList.contains('history-card')) {
             const repo = card.dataset.repo;
             if (repo) {
                 const [u, r] = repo.split('/');

@@ -1852,27 +1852,115 @@ input {
 
 
 
-/* Homepage Hero Styles */
+/* =========================================
+   13. HOMEPAGE & HERO STYLES
+   ========================================= */
 .home-hero {
     text-align: center;
-    margin: 40px auto 30px;
-    max-width: 600px;
+    margin: 36px auto 32px;
+    max-width: 680px;
     padding: 0 16px;
 }
 
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.74rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+}
+
+.hero-badge i {
+    color: var(--accent);
+    font-size: 0.72rem;
+}
+
 .home-hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.85rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     color: var(--text);
     margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--accent) 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .gradient-text {
+    background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home-hero p {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.55;
     margin: 0;
+}
+
+/* Quick Explore Repository Tags */
+.quick-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.quick-tags-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quick-tags-label i {
+    color: #eab308;
+    font-size: 0.72rem;
+}
+
+.quick-tag-chip {
+    background: var(--panel-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+}
+
+.quick-tag-chip:hover {
+    border-color: var(--accent);
+    background: var(--btn-hover);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.quick-tag-chip i {
+    font-size: 0.8rem;
+    opacity: 0.85;
 }
 
 /* Modern Grid layouts */
@@ -1905,24 +1993,25 @@ input {
 
 /* Modern Mini Cards */
 .mini-repo-card {
-    background: var(--bg);
+    background: var(--panel-bg);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 12px 14px;
+    padding: 14px 16px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    min-height: 80px;
+    min-height: 90px;
     box-sizing: border-box;
 }
 
 .mini-repo-card:hover {
     border-color: var(--accent);
+    background: var(--bg-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(9, 105, 218, 0.08);
+    box-shadow: 0 6px 18px var(--shadow);
 }
 
 .mrc-header {
@@ -1934,19 +2023,24 @@ input {
 }
 
 .mrc-title {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-weight: 600;
     color: var(--text);
     word-break: break-all;
 }
 
 .mrc-lang {
-    font-size: 0.68rem;
+    font-size: 0.70rem;
+    font-weight: 500;
     color: var(--text-muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 2px 7px;
+    border-radius: 4px;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
 }
 
 .mrc-lang-dot {
@@ -1955,10 +2049,10 @@ input {
 }
 
 .mrc-desc {
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: var(--text-muted);
-    line-height: 1.4;
-    margin: 0;
+    line-height: 1.45;
+    margin: 8px 0 0;
     display: -webkit-box;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -1967,13 +2061,12 @@ input {
 }
 
 /* Language Cards */
-/* Language Cards */
 .lang-card {
     --lang-color: #8b949e;
-    background: var(--bg);
+    background: var(--panel-bg);
     border: 1px solid var(--border);
     border-radius: 6px;
-    padding: 10px 12px;
+    padding: 10px 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1984,23 +2077,27 @@ input {
 
 .lang-card:hover {
     border-color: var(--accent);
-    background: var(--btn-bg);
+    background: var(--bg-hover);
+    transform: translateY(-1px);
 }
 
 .lc-name {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .lc-count {
-    font-size: 0.65rem;
-    color: var(--text);
-    background: color-mix(in srgb, var(--lang-color) 20%, transparent);
-    border: 1px solid var(--lang-color);
-    padding: 2px 6px;
-    border-radius: 10px;
-    font-weight: 600;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 /* Language Colored Dots */
@@ -2024,28 +2121,55 @@ input {
 
 /* Highlighted Trending Repo Card */
 .trending-repo-card {
-    background: color-mix(in srgb, var(--accent) 3%, var(--bg));
-    border: 1px solid color-mix(in srgb, var(--accent) 12%, var(--border));
+    background: var(--panel-bg);
+    border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 20px;
+    padding: 22px 24px;
     max-width: 900px;
-    margin: 0 auto 24px;
+    margin: 0 auto 28px;
     text-align: left;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trending-repo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, #f59e0b 50%, #10b981 100%);
+}
+
+.trending-repo-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 28px var(--shadow);
 }
 
 .tp-badge {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.68rem;
+    font-size: 0.70rem;
     font-weight: 700;
-    color: #cf7122;
+    color: #d97706;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    padding: 3px 9px;
+    border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 12px;
+}
+
+[data-theme="dark"] .tp-badge {
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.1);
+    border-color: rgba(251, 191, 36, 0.25);
 }
 
 .tp-content {
@@ -2053,28 +2177,36 @@ input {
 }
 
 .tp-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: var(--text);
+    font-family: 'Fira Code', monospace;
+    color: var(--accent);
     margin: 0 0 8px;
 }
 
 .tp-desc {
     font-size: 0.85rem;
     color: var(--text-muted);
-    line-height: 1.5;
-    margin: 0 0 14px;
+    line-height: 1.55;
+    margin: 0 0 16px;
 }
 
 .tp-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    align-items: center;
+    gap: 8px;
 }
 
 .tp-meta-item {
-    font-size: 0.75rem;
-    color: var(--text-muted);
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 0.74rem;
+    font-weight: 500;
+    color: var(--text);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -2082,38 +2214,34 @@ input {
 }
 
 .tp-meta-item i {
-    font-size: 0.82rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
+    font-size: 0.80rem;
 }
 
 .tp-lang-dot {
     font-size: 0.55rem !important;
-    display: inline-flex;
-    align-items: center;
-    margin-right: 2px;
 }
 
 .tp-explore-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    height: 36px;
+    height: 32px;
     font-size: 0.78rem;
     font-weight: 600;
-    color: #fff !important;
+    color: #ffffff !important;
     background: var(--accent);
-    border: none;
+    border: 1px solid var(--accent);
     border-radius: 6px;
-    padding: 0 16px;
+    padding: 0 14px;
     cursor: pointer;
-    transition: background 0.15s ease;
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    -webkit-font-smoothing: antialiased;
 }
 
 .tp-explore-btn:hover {
-    background: #0959be;
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-1px);
 }
 
 /* Compact Recently Visited Cards */

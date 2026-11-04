@@ -79,8 +79,8 @@ async function generate() {
             <div class="homepage-section">
                 <div class="section-header">
                     <h3>Featured Repositories</h3>
-                    <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-request.md&title=Feature+Request:+owner/repo" target="_blank" class="section-cta">
-                        <i class="fas fa-plus"></i> Feature Your Repo
+                    <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+owner/repo" target="_blank" class="section-cta">
+                        <i class="fa-solid fa-plus"></i> Feature Repo
                     </a>
                 </div>
                 <div id="recentCloud" class="tag-cloud"></div>
@@ -135,7 +135,7 @@ async function generate() {
         `<div class="mini-repo-card" data-repo="${r.repo}">
             <div class="mrc-header">
                 <span class="mrc-title">${r.repo}</span>
-                <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
+                <span class="mrc-lang">${r.language} <i class="fa-solid fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
             </div>
             <p class="mrc-desc">${r.description || 'No description available.'}</p>
          </div>`
@@ -162,17 +162,17 @@ async function generate() {
     }
     highlightedHtml = `
         <div class="trending-repo-card" style="--lang-color: ${getLangColor(highlighted.language)}">
-            <div class="tp-badge"><i class="fas fa-fire"></i> Trending Repo</div>
+            <div class="tp-badge"><i class="fa-solid fa-fire"></i> Trending Project</div>
             <div class="tp-content">
                 <h4 class="tp-title">${highlighted.repo}</h4>
                 <p class="tp-desc">${highlighted.description}</p>
                 <div class="tp-meta">
-                    <span class="tp-meta-item"><i class="fas fa-circle tp-lang-dot ${getLangClass(highlighted.language)}"></i> ${highlighted.language}</span>
-                    <span class="tp-meta-item"><i class="far fa-star"></i> ${highlighted.stars} stars</span>
-                    <span class="tp-meta-item"><i class="fas fa-code-branch"></i> ${highlighted.forks} forks</span>
+                    <span class="tp-meta-item"><i class="fa-solid fa-circle tp-lang-dot ${getLangClass(highlighted.language)}"></i> ${highlighted.language}</span>
+                    <span class="tp-meta-item"><i class="fa-regular fa-star"></i> ${highlighted.stars} stars</span>
+                    <span class="tp-meta-item"><i class="fa-solid fa-code-branch"></i> ${highlighted.forks} forks</span>
                 </div>
             </div>
-            <button class="tp-explore-btn" data-repo="${highlighted.repo}"><i class="fas fa-eye"></i> Explore Structure</button>
+            <button class="tp-explore-btn" data-repo="${highlighted.repo}"><i class="fa-solid fa-arrow-right"></i> Explore Tree</button>
         </div>`;
 
     const homeHtml = templateHtml
