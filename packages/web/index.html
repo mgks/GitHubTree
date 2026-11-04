@@ -85,18 +85,22 @@
             </div>
             <div class="input-group branch-input" id="branchInputGroup">
                 <button type="button" id="branchDropdownBtn" class="branch-prefix-btn" title="Choose branch">
-                    <i class="fas fa-code-fork"></i>
+                    <i class="fa-solid fa-code-branch"></i>
                 </button>
                 <input type="text" id="branchInput" placeholder="main" autocomplete="off" spellcheck="false" title="Branch name">
-                <i class="fas fa-chevron-down branch-caret"></i>
+                <i class="fa-solid fa-chevron-down branch-caret"></i>
                 <div id="branchDropdown" class="branch-picker-dropdown" style="display: none;">
+                    <div class="branch-search-box">
+                        <i class="fa-solid fa-magnifying-glass branch-search-icon"></i>
+                        <input type="text" id="branchFilterInput" placeholder="Search branches..." autocomplete="off" spellcheck="false">
+                    </div>
                     <div id="branchListContainer" class="branch-picker-list">
-                        <div class="branch-empty-hint"><i class="fas fa-spinner fa-spin"></i> Click to load branches</div>
+                        <div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Click to load branches</div>
                     </div>
                 </div>
             </div>
             <button id="fetchBtn" class="primary-btn">
-                <i class="fas fa-search"></i> <span>Fetch</span>
+                <i class="fa-solid fa-magnifying-glass"></i> <span>Fetch</span>
             </button>
         </div>
 
@@ -105,46 +109,43 @@
         <!-- Truncation Alert Caution Banner -->
         <div id="truncationWarning" class="truncation-alert" style="display: none;">
             <div class="alert-content">
-                <i class="fas fa-triangle-exclamation alert-icon"></i>
+                <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
                 <div>
                     <strong>Tree Truncated:</strong> GitHub API limited this tree to 100,000 entries (or 7MB payload). Some deeply nested files or subdirectories may not be visible.
                 </div>
             </div>
-            <button type="button" id="closeTruncationWarning" class="alert-dismiss" aria-label="Dismiss">&times;</button>
+            <button type="button" id="closeTruncationWarning" class="alert-dismiss" aria-label="Dismiss"><i class="fa-solid fa-xmark"></i></button>
         </div>
 
         <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
-            <div class="repo-meta-header">
+            <div class="repo-meta-top">
                 <div class="repo-meta-badges">
-                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
-                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fas fa-circle"></i> JS</a>
-                    <span class="meta-badge" id="repoStars"><i class="far fa-star"></i> 0 stars</span>
-                    <span class="meta-badge" id="repoForks"><i class="fas fa-code-branch"></i> 0 forks</span>
-                    <span class="meta-badge" id="repoSize"><i class="fas fa-database"></i> 0 KB</span>
-                    <span class="meta-badge" id="repoBranches"><i class="fas fa-code-fork"></i> 1 branch</span>
-                    <span class="meta-badge" id="repoContributors"><i class="fas fa-users"></i> 1 contributor</span>
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fa-solid fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="fa-regular fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fa-solid fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fa-solid fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fa-solid fa-code-branch"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fa-solid fa-users"></i> 1 contributor</span>
                 </div>
             </div>
             <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
             
-            <div class="repo-actions-container">
-                <!-- Column 1: Embed Badge -->
-                <div class="repo-action-block">
-                    <span class="action-label"><i class="fas fa-certificate"></i> Embed Badge</span>
+            <div class="repo-meta-bar">
+                <div class="compact-action-group">
+                    <span class="compact-label"><i class="fa-solid fa-certificate"></i> Badge:</span>
                     <div class="embed-input-wrapper">
                         <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
                         <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
                         <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
-                            <i class="far fa-copy"></i>
+                            <i class="fa-regular fa-copy"></i>
                         </button>
                     </div>
                 </div>
-                
-                <!-- Column 2: Feature Request (only shown when not indexed) -->
-                <div class="repo-action-block" id="repoIndexCol" style="display: none;">
-                    <span class="action-label"><i class="fas fa-plus-circle"></i> Feature Repo</span>
+
+                <div id="repoIndexCol" class="compact-action-group" style="display: none;">
                     <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
-                        <i class="fas fa-plus"></i> Feature Repo
+                        <i class="fa-solid fa-plus"></i> Feature Repo
                     </a>
                 </div>
             </div>
@@ -165,7 +166,7 @@
                 <div class="section-header">
                     <h3>Featured Repositories</h3>
                     <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+owner/repo" target="_blank" class="section-cta">
-                        <i class="fas fa-plus"></i> Feature Repo
+                        <i class="fa-solid fa-plus"></i> Feature Repo
                     </a>
                 </div>
                 <div id="recentCloud" class="featured-grid"></div>
@@ -182,56 +183,57 @@
             <div class="toolbar">
                 <div class="tools-left">
                     <div class="search-box-inline">
-                        <i class="fas fa-filter search-icon"></i>
+                        <i class="fa-solid fa-filter search-icon"></i>
                         <input type="text" id="treeSearch" placeholder="Filter files (/regex/)..." autocomplete="off" spellcheck="false">
-                        <button type="button" id="clearTreeSearch" class="clear-search-btn" title="Clear filter" style="display: none;">&times;</button>
+                        <button type="button" id="clearTreeSearch" class="clear-search-btn" title="Clear filter" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
                     </div>
 
                     <div class="dropdown" id="sortDropdownContainer">
                         <button class="tool-btn" id="sortBtn" title="Sort tree items">
-                            <i class="fas fa-arrow-down-short-wide"></i> <span id="sortBtnLabel" class="btn-text">Sort</span> <i class="fas fa-chevron-down dropdown-arrow-subtle"></i>
+                            <i class="fa-solid fa-arrow-down-short-wide"></i> <span id="sortBtnLabel" class="btn-text">Sort</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
                         </button>
                         <div class="dropdown-content" id="sortDropdown">
-                            <a href="#" data-sort="folder-az"><i class="fas fa-folder"></i> Folders (A-Z)</a>
-                            <a href="#" data-sort="folder-za"><i class="fas fa-folder-tree"></i> Folders (Z-A)</a>
-                            <a href="#" data-sort="alpha-az"><i class="fas fa-arrow-down-a-z"></i> Name (A-Z)</a>
-                            <a href="#" data-sort="alpha-za"><i class="fas fa-arrow-down-z-a"></i> Name (Z-A)</a>
+                            <a href="#" data-sort="folder-az"><i class="fa-solid fa-folder"></i> Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za"><i class="fa-solid fa-folder-tree"></i> Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az"><i class="fa-solid fa-arrow-down-a-z"></i> Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za"><i class="fa-solid fa-arrow-down-z-a"></i> Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="moreDropdownContainer">
+                        <button class="tool-btn" id="moreBtn" title="Styles, Share & Export Options">
+                            <i class="fa-solid fa-sliders"></i> <span class="btn-text">Options</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content dropdown-left" id="moreDropdown">
+                            <div class="dropdown-section-title">Tree Style</div>
+                            <a href="#" data-style="classic" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-classic"></i> Classic (└──)</a>
+                            <a href="#" data-style="slashed" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-slashed" style="opacity:0"></i> Slashed (/src)</a>
+                            <a href="#" data-style="plus" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-plus" style="opacity:0"></i> ASCII (+--)</a>
+                            <a href="#" data-style="minimal" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-minimal" style="opacity:0"></i> Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-bulleted" style="opacity:0"></i> Bulleted (•)</a>
+                            
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-section-title">Actions</div>
+                            <a href="#" id="moreShareBtn" class="dropdown-item"><i class="fa-solid fa-share-nodes"></i> Share View & Badge</a>
+                            <a href="#" id="exportAsciiBtn" class="dropdown-item"><i class="fa-solid fa-bars-staggered"></i> Copy ASCII Tree</a>
+                            <a href="#" id="exportMarkdownBtn" class="dropdown-item"><i class="fa-brands fa-markdown"></i> Copy as Markdown</a>
+                            <a href="#" id="exportJsonBtn" class="dropdown-item"><i class="fa-solid fa-code"></i> Copy as JSON</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" id="exportDownloadTxtBtn" class="dropdown-item"><i class="fa-solid fa-download"></i> Download .txt</a>
+                            <a href="#" id="exportDownloadJsonBtn" class="dropdown-item"><i class="fa-solid fa-file-arrow-down"></i> Download .json</a>
                         </div>
                     </div>
 
                     <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn">
-                        <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
+                        <i class="fa-solid fa-compress"></i> <span class="btn-text">Compact</span>
                     </button>
 
                     <span id="treeStatsSummary" class="tree-stats-badge" style="display: none;"></span>
                 </div>
 
                 <div class="tools-right">
-                    <div class="dropdown" id="moreDropdownContainer">
-                        <button class="tool-btn" id="moreBtn" title="Styles, Share & Export Options">
-                            <i class="fas fa-sliders"></i> <span class="btn-text">Options</span> <i class="fas fa-chevron-down dropdown-arrow-subtle"></i>
-                        </button>
-                        <div class="dropdown-content dropdown-right" id="moreDropdown">
-                            <div class="dropdown-section-title">Tree Style</div>
-                            <a href="#" data-style="classic" class="dropdown-item"><i class="fas fa-check style-check" id="check-classic"></i> Classic (└──)</a>
-                            <a href="#" data-style="slashed" class="dropdown-item"><i class="fas fa-check style-check" id="check-slashed" style="opacity:0"></i> Slashed (/src)</a>
-                            <a href="#" data-style="plus" class="dropdown-item"><i class="fas fa-check style-check" id="check-plus" style="opacity:0"></i> ASCII (+--)</a>
-                            <a href="#" data-style="minimal" class="dropdown-item"><i class="fas fa-check style-check" id="check-minimal" style="opacity:0"></i> Minimal (Indent)</a>
-                            <a href="#" data-style="bulleted" class="dropdown-item"><i class="fas fa-check style-check" id="check-bulleted" style="opacity:0"></i> Bulleted (•)</a>
-                            
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-section-title">Actions</div>
-                            <a href="#" id="shareBtn" class="dropdown-item"><i class="fas fa-share-nodes"></i> Share View & Badge</a>
-                            <a href="#" id="exportAsciiBtn" class="dropdown-item"><i class="fas fa-bars-staggered"></i> Copy ASCII Tree</a>
-                            <a href="#" id="exportMarkdownBtn" class="dropdown-item"><i class="fa-brands fa-markdown"></i> Copy as Markdown</a>
-                            <a href="#" id="exportJsonBtn" class="dropdown-item"><i class="fas fa-code"></i> Copy as JSON</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" id="exportDownloadTxtBtn" class="dropdown-item"><i class="fas fa-download"></i> Download .txt</a>
-                            <a href="#" id="exportDownloadJsonBtn" class="dropdown-item"><i class="fas fa-file-arrow-down"></i> Download .json</a>
-                        </div>
-                    </div>
                     <button id="copyAllBtn" class="tool-btn action-btn always-visible" title="Quick Copy Tree">
-                        <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                        <i class="fa-regular fa-copy"></i> <span class="btn-text">Copy Tree</span>
                     </button>
                 </div>
             </div>
@@ -252,14 +254,14 @@
         </div>
     </div>
 
-    <div class="footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="1.0166668891906738 2.9749999046325684 21.966665267944336 20.024999618530273"><path d="M7 3c-1.535 0-3.078.5-4.25 1.7-2.343 2.4-2.279 6.1 0 8.5L12 23l9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-.75.8-.75-.8C10.078 3.5 8.536 3 7 3" fill="#e74c3c"></path></svg> <b>{ <a href="https://mgks.dev">@mgks</a> / <a href="https://github.com/mgks/githubtree">star:GitHubTree</a> }</b></div>
+    <div class="footer"><i class="fa-solid fa-heart footer-heart"></i> <b>{ <a href="https://mgks.dev" target="_blank" rel="noopener">@mgks</a> / <a href="https://github.com/mgks/githubtree" target="_blank" rel="noopener">star:GitHubTree</a> }</b></div>
 
     <div id="shareOverlay" class="overlay">
         <div class="overlay-content">
             <h3>Share View</h3>
             <div class="share-box">
                 <input type="text" id="shareInput" readonly>
-                <button id="copyShareBtn" title="Copy Link"><i class="far fa-copy"></i></button>
+                <button id="copyShareBtn" title="Copy Link"><i class="fa-regular fa-copy"></i></button>
             </div>
             
             <div class="share-badge-section">
@@ -288,7 +290,7 @@
                 </div>
             </div>
 
-            <button id="closeOverlay" class="close-btn">&times;</button>
+            <button id="closeOverlay" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
         </div>
     </div>
 
@@ -307,19 +309,19 @@
 
             <div class="file-actions">
                 <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
-                <button id="btnCopyPath" class="tool-btn"><i class="far fa-copy"></i> Copy Path</button>
-                <button id="btnTogglePreview" class="tool-btn"><i class="far fa-eye"></i> Show Content</button>
+                <button id="btnCopyPath" class="tool-btn"><i class="fa-regular fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="fa-regular fa-eye"></i> Show Content</button>
             </div>
 
             <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
                 <div class="preview-header">
                     <span id="previewFileLabel"></span>
-                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="far fa-copy"></i> Copy</button>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="fa-regular fa-copy"></i> Copy</button>
                 </div>
                 <pre id="previewBody"><code></code></pre>
             </div>
 
-            <button id="closePreview" class="close-btn">&times;</button>
+            <button id="closePreview" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
         </div>
     </div>
 

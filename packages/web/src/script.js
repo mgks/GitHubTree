@@ -1168,22 +1168,27 @@ function setupBranchPicker() {
     const group = document.getElementById('branchInputGroup');
     if (!els.branchDropdownBtn || !els.branchDropdown) return;
 
+    const filterInput = document.getElementById('branchFilterInput');
     let loadedBranches = [];
 
-    const renderBranchList = () => {
+    const renderBranchList = (term = '') => {
         if (!els.branchListContainer) return;
         const currentSelected = els.branch.value.trim().toLowerCase();
+        const search = term.trim().toLowerCase();
+        const filtered = search
+            ? loadedBranches.filter(b => b.name.toLowerCase().includes(search))
+            : loadedBranches;
 
-        if (loadedBranches.length === 0) {
-            els.branchListContainer.innerHTML = `<div class="branch-empty-hint">No branches found</div>`;
+        if (filtered.length === 0) {
+            els.branchListContainer.innerHTML = `<div class="branch-empty-hint">${search ? `No branches matching "${escapeHtml(term)}"` : 'No branches found'}</div>`;
             return;
         }
 
         const frag = document.createDocumentFragment();
-        loadedBranches.forEach(b => {
+        filtered.forEach(b => {
             const item = document.createElement('div');
             item.className = 'branch-item' + (b.name.toLowerCase() === currentSelected ? ' selected' : '');
-            item.innerHTML = `<i class="fas fa-code-branch"></i> <span>${escapeHtml(b.name)}</span>`;
+            item.innerHTML = `<i class="fa-solid fa-code-branch"></i> <span>${escapeHtml(b.name)}</span>`;
             item.addEventListener('click', (e) => {
                 e.stopPropagation();
                 els.branch.value = b.name;
@@ -1196,6 +1201,18 @@ function setupBranchPicker() {
         els.branchListContainer.appendChild(frag);
     };
 
+    if (filterInput) {
+        filterInput.addEventListener('click', (e) => e.stopPropagation());
+        filterInput.addEventListener('input', (e) => {
+            renderBranchList(e.target.value);
+        });
+        filterInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                els.branchDropdown.style.display = 'none';
+            }
+        });
+    }
+
     const togglePicker = async (e) => {
         e.stopPropagation();
         const isClosed = els.branchDropdown.style.display === 'none';
@@ -1206,6 +1223,10 @@ function setupBranchPicker() {
 
         closeDropdowns();
         els.branchDropdown.style.display = 'block';
+        if (filterInput) {
+            filterInput.value = '';
+            setTimeout(() => filterInput.focus(), 40);
+        }
 
         let repo = els.repo.value.trim();
         if (repo.includes('github.com/')) {
@@ -1219,12 +1240,12 @@ function setupBranchPicker() {
         // Check cache first (avoids repeated API calls)
         if (branchCache.has(repo)) {
             loadedBranches = branchCache.get(repo);
-            renderBranchList();
+            renderBranchList(filterInput ? filterInput.value : '');
             return;
         }
 
         // Fetch on-demand only!
-        els.branchListContainer.innerHTML = `<div class="branch-empty-hint"><i class="fas fa-spinner fa-spin"></i> Loading branches...</div>`;
+        els.branchListContainer.innerHTML = `<div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Loading branches...</div>`;
 
         try {
             const token = localStorage.getItem('ght_token');
@@ -1236,7 +1257,7 @@ function setupBranchPicker() {
             const data = await res.json();
             loadedBranches = data.map(b => ({ name: b.name }));
             branchCache.set(repo, loadedBranches);
-            renderBranchList();
+            renderBranchList(filterInput ? filterInput.value : '');
         } catch (err) {
             els.branchListContainer.innerHTML = `<div class="branch-empty-hint">Failed to load branches.<br><small>${escapeHtml(err.message)}</small></div>`;
         }
@@ -1741,18 +1762,18 @@ function renderRepoDetailsCard(repo, details) {
     if (!card) return;
 
     document.getElementById('repoMetaDesc').innerText = details.description || "No description provided.";
-    document.getElementById('repoStars').innerHTML = `<i class="far fa-star"></i> ${formatNumber(details.stargazers_count)} stars`;
-    document.getElementById('repoForks').innerHTML = `<i class="fas fa-code-branch"></i> ${formatNumber(details.forks_count)} forks`;
+    document.getElementById('repoStars').innerHTML = `<i class="fa-regular fa-star"></i> ${formatNumber(details.stargazers_count)} stars`;
+    document.getElementById('repoForks').innerHTML = `<i class="fa-solid fa-code-branch"></i> ${formatNumber(details.forks_count)} forks`;
     
     const sizeBadge = document.getElementById('repoSize');
     if (sizeBadge) {
-        sizeBadge.innerHTML = `<i class="fas fa-database"></i> ${formatBytes(details.size * 1024)}`;
+        sizeBadge.innerHTML = `<i class="fa-solid fa-database"></i> ${formatBytes(details.size * 1024)}`;
     }
 
     const langBadge = document.getElementById('repoLanguage');
     if (details.language) {
         langBadge.style.display = 'inline-flex';
-        langBadge.innerHTML = `<i class="fas fa-circle"></i> ${details.language}`;
+        langBadge.innerHTML = `<i class="fa-solid fa-circle"></i> ${details.language}`;
         const langSlug = details.language.toLowerCase().replace(/\s+/g, '-');
         langBadge.href = `/language/${langSlug}/`;
         langBadge.style.cursor = 'pointer';
@@ -1813,15 +1834,15 @@ function renderRepoDetailsCard(repo, details) {
     const contributorsEl = document.getElementById('repoContributors');
     
     if (details.branchesCount !== undefined) {
-        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> ${formatNumber(details.branchesCount)} ${details.branchesCount === 1 ? 'branch' : 'branches'}`;
+        if (branchesEl) branchesEl.innerHTML = `<i class="fa-solid fa-code-branch"></i> ${formatNumber(details.branchesCount)} ${details.branchesCount === 1 ? 'branch' : 'branches'}`;
     } else {
-        if (branchesEl) branchesEl.innerHTML = `<i class="fas fa-code-fork"></i> Loading...`;
+        if (branchesEl) branchesEl.innerHTML = `<i class="fa-solid fa-code-branch"></i> Loading...`;
     }
 
     if (details.contributorsCount !== undefined) {
-        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> ${formatNumber(details.contributorsCount)} ${details.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
+        if (contributorsEl) contributorsEl.innerHTML = `<i class="fa-solid fa-users"></i> ${formatNumber(details.contributorsCount)} ${details.contributorsCount === 1 ? 'contributor' : 'contributors'}`;
     } else {
-        if (contributorsEl) contributorsEl.innerHTML = `<i class="fas fa-users"></i> Loading...`;
+        if (contributorsEl) contributorsEl.innerHTML = `<i class="fa-solid fa-users"></i> Loading...`;
     }
 
     const githubLinkEl = document.getElementById('repoGithubLink');
@@ -1831,15 +1852,12 @@ function renderRepoDetailsCard(repo, details) {
 
     // Check if indexed in our database
     const indexCol = document.getElementById('repoIndexCol');
-    const actionsContainer = document.querySelector('.repo-actions-container');
     if (indexCol) {
         const lowerRepo = repo.toLowerCase();
         if (typeof indexedRepos !== 'undefined' && indexedRepos.has(lowerRepo)) {
             indexCol.style.display = 'none';
-            if (actionsContainer) actionsContainer.classList.remove('has-feature');
         } else {
-            indexCol.style.display = 'flex';
-            if (actionsContainer) actionsContainer.classList.add('has-feature');
+            indexCol.style.display = 'inline-flex';
             const btn = document.getElementById('repoIndexBtn');
             if (btn) {
                 btn.href = `https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+${encodeURIComponent(repo)}`;
