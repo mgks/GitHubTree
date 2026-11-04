@@ -69,30 +69,7 @@ async function generate() {
     const repos = parseCSV(fs.readFileSync(CSV_PATH, 'utf8'));
     const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
-    // 2. Empty State Block (to be replaced later)
-    const emptyStateBlock = `<div id="emptyState" class="empty-state">
-            <div class="home-hero">
-                <h1>Explore GitHub Repositories Visually</h1>
-                <p>Interactive tree views, size insights, file breakdowns, and shields badges for any public repository.</p>
-            </div>
-
-            <div class="homepage-section">
-                <div class="section-header">
-                    <h3>Featured Repositories</h3>
-                    <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+owner/repo" target="_blank" class="section-cta">
-                        <i class="fa-solid fa-plus"></i> Feature Repo
-                    </a>
-                </div>
-                <div id="recentCloud" class="tag-cloud"></div>
-            </div>
-
-            <div class="homepage-section">
-                <h3>Browse by Language</h3>
-                <div id="langCloud" class="tag-cloud"></div>
-            </div>
-        </div>`;
-
-    // 3. Prepare Stats
+    // 2. Prepare Stats
     const languagesMap = {};
     const sitemapUrls = [BASE_URL + '/'];
 
@@ -113,8 +90,8 @@ async function generate() {
 
     const langCloudHtml = topLanguages.map(l => 
         `<a href="/language/${l.toLowerCase().replace(/\s+/g, '-')}/" class="lang-card" style="--lang-color: ${getLangColor(l)}">
-            <span class="lc-name">${l}</span>
-            <span class="lc-count">${languagesMap[l].length} repos</span>
+            <span class="lc-name"><i class="fa-solid fa-circle lc-dot" style="color: ${getLangColor(l)}"></i> ${l}</span>
+            <span class="lc-count">${languagesMap[l].length}</span>
          </a>`
     ).join('');
 
@@ -134,14 +111,14 @@ async function generate() {
     const repoCloudHtml = displayRepos.map(r => 
         `<div class="mini-repo-card" data-repo="${r.repo}">
             <div class="mrc-header">
-                <span class="mrc-title">${r.repo}</span>
-                <span class="mrc-lang">${r.language} <i class="fa-solid fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
+                <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ${r.repo}</span>
+                <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i> ${r.language}</span>
             </div>
             <p class="mrc-desc">${r.description || 'No description available.'}</p>
          </div>`
     ).join('');
 
-    // Load Trending Project
+    // Load Featured Spotlight Project
     let highlightedHtml = '';
     const highlightedPath = path.resolve('_data/highlighted.json');
     let highlighted = null;
@@ -161,8 +138,11 @@ async function generate() {
         };
     }
     highlightedHtml = `
-        <div class="trending-repo-card" style="--lang-color: ${getLangColor(highlighted.language)}">
-            <div class="tp-badge"><i class="fa-solid fa-fire"></i> Trending Project</div>
+        <div class="trending-repo-card">
+            <div class="tp-header">
+                <div class="tp-badge"><i class="fa-solid fa-star"></i> Featured Repository</div>
+                <button class="tp-explore-btn" data-repo="${highlighted.repo}"><i class="fa-solid fa-arrow-right"></i> Explore Tree</button>
+            </div>
             <div class="tp-content">
                 <h4 class="tp-title">${highlighted.repo}</h4>
                 <p class="tp-desc">${highlighted.description}</p>
@@ -172,7 +152,6 @@ async function generate() {
                     <span class="tp-meta-item"><i class="fa-solid fa-code-branch"></i> ${highlighted.forks} forks</span>
                 </div>
             </div>
-            <button class="tp-explore-btn" data-repo="${highlighted.repo}"><i class="fa-solid fa-arrow-right"></i> Explore Tree</button>
         </div>`;
 
     const homeHtml = templateHtml
@@ -219,7 +198,7 @@ async function generate() {
             .replace('<!-- BREADCRUMB_INJECT -->', breadcrumbHtml)
             
             // Hide the default Empty State (Quick Start) so it doesn't clutter the page
-            .replace(emptyStateBlock, '<div id="emptyState" class="empty-state" style="display:none;"></div>')
+            .replace(/<!-- EMPTY_STATE_START -->[\s\S]*?<!-- EMPTY_STATE_END -->/, '<div id="emptyState" class="empty-state" style="display:none;"></div>')
             
             // Pre-fill inputs
             .replace('id="repoInput" placeholder="username/repo"', `id="repoInput" value="${item.repo}"`)
@@ -252,8 +231,8 @@ async function generate() {
             const listHtml = chunk.map(r => `
                 <a href="/repo/${r.repo}/${r.branch}/" class="mini-repo-card" style="text-decoration: none;">
                     <div class="mrc-header">
-                        <span class="mrc-title">${r.repo}</span>
-                        <span class="mrc-lang">${r.language} <i class="fas fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i></span>
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ${r.repo}</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot ${getLangClass(r.language)}"></i> ${r.language}</span>
                     </div>
                     <p class="mrc-desc">${r.description || 'No description available.'}</p>
                 </a>`).join('');

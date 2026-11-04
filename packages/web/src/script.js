@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 els.repo.value = `${u}/${r}`;
                 els.branch.value = 'main';
                 loadTree();
-                trackEvent('Fetch', 'Trending Project Click', repo);
+                trackEvent('Fetch', 'Featured Project Click', repo);
             }
         }
     });

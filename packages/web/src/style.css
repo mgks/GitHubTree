@@ -1834,20 +1834,24 @@ input {
     gap: 6px;
     font-size: 0.72rem;
     font-weight: 600;
-    color: var(--accent) !important;
+    color: var(--text-muted) !important;
     text-decoration: none;
-    background: rgba(9, 105, 218, 0.03);
-    border: 1px solid rgba(9, 105, 218, 0.15);
-    border-radius: 4px;
-    padding: 4px 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    height: 26px;
+    padding: 0 10px;
     transition: all 0.15s ease;
     margin-left: 12px;
+    white-space: nowrap;
 }
 
 .section-cta:hover {
-    background: rgba(9, 105, 218, 0.08);
-    border-color: rgba(9, 105, 218, 0.3);
+    color: var(--accent) !important;
+    border-color: var(--accent);
+    background: var(--btn-hover);
     text-decoration: none;
+    transform: translateY(-1px);
 }
 
 
@@ -1894,12 +1898,14 @@ input {
 .gradient-text {
     background: linear-gradient(135deg, var(--accent) 0%, #60a5fa 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 [data-theme="dark"] .gradient-text {
     background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -1964,31 +1970,41 @@ input {
 }
 
 /* Modern Grid layouts */
-.featured-grid, .language-grid, .history-grid {
+.featured-grid, .history-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     text-align: left;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     .featured-grid, .history-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .language-grid {
+}
+
+@media (min-width: 960px) {
+    .featured-grid, .history-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .featured-grid, .history-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .language-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/* Browse by Language - Modern Pill Tag Cloud */
+.language-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
 }
 
 /* Modern Mini Cards */
@@ -1996,14 +2012,13 @@ input {
     background: var(--panel-bg);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 14px 16px;
+    padding: 13px 15px;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    min-height: 90px;
+    min-height: 96px;
     box-sizing: border-box;
 }
 
@@ -2011,7 +2026,7 @@ input {
     border-color: var(--accent);
     background: var(--bg-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px var(--shadow);
+    box-shadow: 0 4px 16px var(--shadow);
 }
 
 .mrc-header {
@@ -2027,6 +2042,15 @@ input {
     font-weight: 600;
     color: var(--text);
     word-break: break-all;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mrc-icon {
+    color: var(--accent);
+    font-size: 0.82rem;
+    flex-shrink: 0;
 }
 
 .mrc-lang {
@@ -2041,18 +2065,18 @@ input {
     display: inline-flex;
     align-items: center;
     gap: 5px;
+    flex-shrink: 0;
 }
 
 .mrc-lang-dot {
     font-size: 0.5rem;
-    color: var(--accent);
 }
 
 .mrc-desc {
     font-size: 0.76rem;
     color: var(--text-muted);
     line-height: 1.45;
-    margin: 8px 0 0;
+    margin: 6px 0 0;
     display: -webkit-box;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -2060,29 +2084,31 @@ input {
     overflow: hidden;
 }
 
-/* Language Cards */
+/* Modern Language Pill Cards */
 .lang-card {
     --lang-color: #8b949e;
     background: var(--panel-bg);
     border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 10px 14px;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 20px;
+    padding: 6px 13px;
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
     text-decoration: none !important;
     transition: all 0.15s ease;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .lang-card:hover {
     border-color: var(--accent);
     background: var(--bg-hover);
     transform: translateY(-1px);
+    box-shadow: 0 2px 8px var(--shadow);
 }
 
 .lc-name {
-    font-size: 0.82rem;
+    font-size: 0.80rem;
     font-weight: 500;
     color: var(--text);
     display: inline-flex;
@@ -2090,14 +2116,20 @@ input {
     gap: 6px;
 }
 
+.lc-dot {
+    font-size: 0.52rem;
+    flex-shrink: 0;
+}
+
 .lc-count {
     font-size: 0.68rem;
     color: var(--text-muted);
     background: var(--bg);
     border: 1px solid var(--border);
-    padding: 2px 7px;
-    border-radius: 12px;
-    font-weight: 500;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 /* Language Colored Dots */
@@ -2119,35 +2151,31 @@ input {
 .lang-kotlin { color: #a97bff !important; }
 .lang-other { color: #8b949e !important; }
 
-/* Highlighted Trending Repo Card */
+/* Modern Featured Spotlight Repo Card */
 .trending-repo-card {
     background: var(--panel-bg);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 22px 24px;
-    max-width: 900px;
-    margin: 0 auto 28px;
+    border-radius: 10px;
+    padding: 20px 24px;
+    width: 100%;
+    margin: 0 0 36px 0;
     text-align: left;
-    position: relative;
-    overflow: hidden;
     box-sizing: border-box;
-    box-shadow: 0 4px 20px var(--shadow);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.trending-repo-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent) 0%, #f59e0b 50%, #10b981 100%);
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .trending-repo-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 8px 28px var(--shadow);
+    box-shadow: 0 4px 18px var(--shadow);
+}
+
+.tp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .tp-badge {
@@ -2155,40 +2183,38 @@ input {
     align-items: center;
     gap: 6px;
     font-size: 0.70rem;
-    font-weight: 700;
-    color: #d97706;
-    background: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    padding: 3px 9px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 12px;
 }
 
-[data-theme="dark"] .tp-badge {
-    color: #fbbf24;
-    background: rgba(251, 191, 36, 0.1);
-    border-color: rgba(251, 191, 36, 0.25);
+.tp-badge i {
+    color: #eab308;
+    font-size: 0.72rem;
 }
 
 .tp-content {
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .tp-title {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 700;
     font-family: 'Fira Code', monospace;
-    color: var(--accent);
-    margin: 0 0 8px;
+    color: var(--text);
+    margin: 0 0 6px;
 }
 
 .tp-desc {
     font-size: 0.85rem;
     color: var(--text-muted);
-    line-height: 1.55;
-    margin: 0 0 16px;
+    line-height: 1.5;
+    margin: 0 0 14px;
 }
 
 .tp-meta {
@@ -2199,7 +2225,7 @@ input {
 }
 
 .tp-meta-item {
-    background: var(--bg-hover);
+    background: var(--bg);
     border: 1px solid var(--border);
     height: 26px;
     padding: 0 10px;
@@ -2215,10 +2241,11 @@ input {
 
 .tp-meta-item i {
     font-size: 0.80rem;
+    color: var(--text-muted);
 }
 
 .tp-lang-dot {
-    font-size: 0.55rem !important;
+    font-size: 0.52rem !important;
 }
 
 .tp-explore-btn {
@@ -2236,6 +2263,8 @@ input {
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
     -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .tp-explore-btn:hover {
