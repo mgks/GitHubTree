@@ -40,9 +40,9 @@
     --header-bg: #161e29;
     --border: #242f3d;
 
-    --accent: #4f8fe8;
-    --accent-hover: #639df0;
-    --focus-ring: rgba(79, 143, 232, 0.22);
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --focus-ring: rgba(59, 130, 246, 0.25);
     --panel-bg: #151b23;
     --panel-border: #242f3d;
 
@@ -121,43 +121,53 @@ header {
 
 .header-actions {
     display: flex;
-    gap: 15px;
+    gap: 8px;
     align-items: center;
 }
 
 .icon-btn {
-    background: none;
-    border: none;
-    font-size: 1.25rem;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    font-size: 0.88rem;
     color: var(--text);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    transition: background 0.2s;
-
+    padding: 0;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s;
+    box-sizing: border-box;
 }
 
 .icon-btn:hover {
-    background: var(--btn-bg);
+    background: var(--btn-hover);
+    border-color: var(--border);
 }
 
 .text-btn {
-    background: none;
-    border: none;
-    font-size: 0.9rem;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    font-size: 0.78rem;
     color: var(--text);
     cursor: pointer;
     font-weight: 500;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 6px;
+    transition: background 0.2s, border-color 0.2s;
+    box-sizing: border-box;
 }
 
 .text-btn:hover {
-    color: var(--accent);
+    background: var(--btn-hover);
+    border-color: var(--border);
 }
 
 /* ICON FIX: Override FontAwesome defaults with !important */
@@ -251,32 +261,32 @@ header {
    ========================================= */
 .search-section {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     align-items: stretch;
 }
 
 .input-group {
     background: var(--panel-bg);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
-    padding: 0 14px;
-    height: 44px;
-    flex: 1 1 280px;
+    padding: 0 12px;
+    height: 38px;
+    flex: 1 1 240px;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .input-group:focus-within {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--focus-ring);
+    box-shadow: 0 0 0 2px var(--focus-ring);
 }
 
 .prefix {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     margin-right: 4px;
     white-space: nowrap;
     font-family: 'Fira Code', monospace;
@@ -289,7 +299,7 @@ input {
     color: var(--text);
     width: 100%;
     outline: none;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-family: 'Fira Code', monospace;
 }
 
@@ -299,16 +309,16 @@ input {
     max-width: 200px;
     min-width: 130px;
     padding: 0 10px;
-    cursor: pointer;
+    cursor: text;
 }
 
 .branch-prefix-btn {
     background: transparent;
     border: none;
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     padding: 0;
-    margin-right: 8px;
+    margin-right: 6px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -319,20 +329,21 @@ input {
     flex: 1;
     min-width: 0;
     font-family: inherit;
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    cursor: pointer;
+    cursor: text;
     padding: 0;
 }
 
 .branch-caret {
-    font-size: 0.72rem;
+    font-size: 0.70rem;
     color: var(--text-muted);
     margin-left: 6px;
     flex-shrink: 0;
     cursor: pointer;
+    transition: transform 0.15s ease;
 }
 
 .branch-picker-dropdown {
@@ -348,31 +359,6 @@ input {
     z-index: 1000;
     overflow: hidden;
     animation: fadeIn 0.15s ease-out;
-}
-
-.branch-search-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-}
-
-.branch-search-icon {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    flex-shrink: 0;
-}
-
-.branch-search-box input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 0.84rem;
-    color: var(--text);
-    font-family: inherit;
 }
 
 .branch-picker-list {
@@ -421,20 +407,22 @@ input {
 
 .primary-btn {
     background: var(--accent);
-    color: #ffffff;
-    border: none;
-    padding: 0 24px;
-    border-radius: 8px;
+    color: #ffffff !important;
+    border: 1px solid var(--accent);
+    padding: 0 18px;
+    border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
-    height: 44px;
+    height: 38px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
-    transition: background 0.2s, transform 0.1s ease;
+    font-size: 0.86rem;
+    transition: background 0.15s ease, border-color 0.15s ease;
     white-space: nowrap;
     flex-shrink: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 .primary-btn:hover {
@@ -1558,89 +1546,48 @@ input {
     font-size: 0.74rem;
 }
 
-/* Premium Professional Toned-down Colors for Badges */
-#repoStars {
-    background: rgba(212, 175, 55, 0.04);
-    border-color: rgba(212, 175, 55, 0.15);
-}
+/* Consistent Neutral Badges with Colorful Icons */
 #repoStars i {
-    color: #cca410;
-}
-[data-theme="dark"] #repoStars {
-    background: rgba(241, 224, 90, 0.06);
-    border-color: rgba(241, 224, 90, 0.2);
+    color: #d4a359;
 }
 [data-theme="dark"] #repoStars i {
     color: #f1e05a;
 }
 
-#repoForks {
-    background: rgba(79, 143, 186, 0.04);
-    border-color: rgba(79, 143, 186, 0.15);
-}
 #repoForks i {
     color: #3b82b6;
-}
-[data-theme="dark"] #repoForks {
-    background: rgba(79, 143, 186, 0.06);
-    border-color: rgba(79, 143, 186, 0.2);
 }
 [data-theme="dark"] #repoForks i {
     color: #7ab8e2;
 }
 
-#repoLanguage {
-    background: rgba(139, 148, 158, 0.04);
-    border-color: rgba(139, 148, 158, 0.15);
-}
-[data-theme="dark"] #repoLanguage {
-    background: rgba(139, 148, 158, 0.06);
-    border-color: rgba(139, 148, 158, 0.2);
+#repoLanguage i {
+    color: var(--text-muted);
 }
 
-#repoSize {
-    background: rgba(147, 51, 234, 0.04);
-    border-color: rgba(147, 51, 234, 0.15);
-}
 #repoSize i {
     color: #8b5cf6;
-}
-[data-theme="dark"] #repoSize {
-    background: rgba(167, 139, 250, 0.06);
-    border-color: rgba(167, 139, 250, 0.2);
 }
 [data-theme="dark"] #repoSize i {
     color: #c084fc;
 }
 
-#repoBranches {
-    background: rgba(16, 185, 129, 0.04);
-    border-color: rgba(16, 185, 129, 0.15);
-}
 #repoBranches i {
     color: #10b981;
-}
-[data-theme="dark"] #repoBranches {
-    background: rgba(52, 211, 153, 0.06);
-    border-color: rgba(52, 211, 153, 0.2);
 }
 [data-theme="dark"] #repoBranches i {
     color: #34d399;
 }
 
-#repoContributors {
-    background: rgba(244, 63, 94, 0.04);
-    border-color: rgba(244, 63, 94, 0.15);
-}
 #repoContributors i {
     color: #f43f5e;
 }
-[data-theme="dark"] #repoContributors {
-    background: rgba(251, 113, 133, 0.06);
-    border-color: rgba(251, 113, 133, 0.2);
-}
 [data-theme="dark"] #repoContributors i {
     color: #fda4af;
+}
+
+#repoGithubLink i {
+    color: var(--text);
 }
 
 .repo-meta-desc {
@@ -1654,16 +1601,24 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     padding-top: 10px;
     border-top: 1px solid var(--border);
+    width: 100%;
 }
 
-.compact-action-group {
-    display: inline-flex;
+.repo-meta-bar > .compact-action-group:first-child {
+    display: flex;
     align-items: center;
     gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+#repoIndexCol {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .compact-label {
@@ -1673,16 +1628,17 @@ input {
     display: inline-flex;
     align-items: center;
     gap: 5px;
+    white-space: nowrap;
 }
 
 .feature-action-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    height: 28px;
+    height: 32px;
     box-sizing: border-box;
-    padding: 0 12px;
-    font-size: 0.76rem;
+    padding: 0 14px;
+    font-size: 0.78rem;
     font-weight: 600;
     color: #ffffff !important;
     background: var(--accent);
@@ -1691,6 +1647,7 @@ input {
     text-decoration: none;
     transition: background 0.15s ease, border-color 0.15s ease;
     white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
 }
 
 .feature-action-btn:hover {
@@ -1699,16 +1656,18 @@ input {
 }
 
 .embed-input-wrapper {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
     background: var(--bg);
     border: 1px solid var(--border);
     padding: 0 6px 0 8px;
-    height: 28px;
+    height: 32px;
     box-sizing: border-box;
     border-radius: 6px;
-    max-width: 380px;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
 }
 
 .embed-badge-img {
@@ -1828,28 +1787,29 @@ input {
 .app-star-btn {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2px 6px;
-    font-size: 0.7rem;
+    gap: 5px;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 6px;
+    padding: 0 10px;
+    font-size: 0.78rem;
     font-family: inherit;
     font-weight: 500;
-    color: var(--text-muted);
+    color: var(--text);
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
-    height: 22px;
+    height: 30px;
+    box-sizing: border-box;
 }
 
-.app-star-btn:hover,.app-star-btn.starred {
-    background: rgba(255, 210, 78, 0.36);
+.app-star-btn:hover, .app-star-btn.starred {
+    background: rgba(255, 210, 78, 0.25);
     color: #c79d00;
-    border-color: #ffe999;
+    border-color: #ffd24e;
 }
 
 .app-star-btn i {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
 }
 
 /* Feature/Index Banner and Section Header Styles */
@@ -2294,21 +2254,30 @@ input {
     color: var(--text);
 }
 
-/* Directory Count & Size Badge inside tree rows */
+/* Directory Count & File Size Badges inside tree rows */
 .t-badge {
     margin-left: auto;
-    font-size: 0.72rem;
-    padding: 1px 7px;
+    font-size: 0.70rem;
+    padding: 1px 6px;
     border-radius: 4px;
-    background: var(--btn-bg);
+    background: transparent;
     color: var(--text-muted);
-    border: 1px solid var(--border);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     letter-spacing: 0.2px;
     white-space: nowrap;
-    opacity: 0.85;
+    opacity: 0.45;
     pointer-events: none;
     flex-shrink: 0;
+    transition: opacity 0.15s ease;
+}
+
+.t-badge-file {
+    font-size: 0.67rem;
+    opacity: 0.38;
+}
+
+.tree-line:hover .t-badge {
+    opacity: 0.85;
 }
 
 /* Search Highlighting */

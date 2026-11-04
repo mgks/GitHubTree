@@ -87,13 +87,9 @@
                 <button type="button" id="branchDropdownBtn" class="branch-prefix-btn" title="Choose branch">
                     <i class="fa-solid fa-code-branch"></i>
                 </button>
-                <input type="text" id="branchInput" placeholder="main" autocomplete="off" spellcheck="false" title="Branch name">
-                <i class="fa-solid fa-chevron-down branch-caret"></i>
+                <input type="text" id="branchInput" placeholder="branch" autocomplete="off" spellcheck="false" title="Branch name or search">
+                <i class="fa-solid fa-chevron-down branch-caret" id="branchCaret"></i>
                 <div id="branchDropdown" class="branch-picker-dropdown" style="display: none;">
-                    <div class="branch-search-box">
-                        <i class="fa-solid fa-magnifying-glass branch-search-icon"></i>
-                        <input type="text" id="branchFilterInput" placeholder="Search branches..." autocomplete="off" spellcheck="false">
-                    </div>
                     <div id="branchListContainer" class="branch-picker-list">
                         <div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Click to load branches</div>
                     </div>

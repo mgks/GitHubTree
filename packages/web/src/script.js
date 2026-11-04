@@ -787,8 +787,10 @@ function renderVisible(regex = null) {
 
         const stats = isFolder ? treeMetadata.statsByFolder.get(item.path) : null;
         let badgeHTML = '';
-        if (stats && stats.fileCount > 0) {
-            badgeHTML = `<span class="t-badge" title="${stats.fileCount} files, total size ${formatBytes(stats.totalBytes)}">${stats.fileCount} ${stats.fileCount === 1 ? 'file' : 'files'} &bull; ${formatBytes(stats.totalBytes)}</span>`;
+        if (isFolder && stats && stats.fileCount > 0) {
+            badgeHTML = `<span class="t-badge t-badge-folder" title="${stats.fileCount} files, total size ${formatBytes(stats.totalBytes)}">${stats.fileCount} ${stats.fileCount === 1 ? 'file' : 'files'} &bull; ${formatBytes(stats.totalBytes)}</span>`;
+        } else if (!isFolder && typeof item.size === 'number' && item.size >= 0) {
+            badgeHTML = `<span class="t-badge t-badge-file" title="${formatBytes(item.size)}">${formatBytes(item.size)}</span>`;
         }
 
         const typeClass = isFolder ? 'folder' : 'file';
@@ -1166,9 +1168,8 @@ function updateActiveStyleCheckmarks() {
 
 function setupBranchPicker() {
     const group = document.getElementById('branchInputGroup');
-    if (!els.branchDropdownBtn || !els.branchDropdown) return;
+    if (!els.branch || !els.branchDropdown) return;
 
-    const filterInput = document.getElementById('branchFilterInput');
     let loadedBranches = [];
 
     const renderBranchList = (term = '') => {
@@ -1189,7 +1190,8 @@ function setupBranchPicker() {
             const item = document.createElement('div');
             item.className = 'branch-item' + (b.name.toLowerCase() === currentSelected ? ' selected' : '');
             item.innerHTML = `<i class="fa-solid fa-code-branch"></i> <span>${escapeHtml(b.name)}</span>`;
-            item.addEventListener('click', (e) => {
+            item.addEventListener('mousedown', (e) => {
+                // Use mousedown so it fires before input blur
                 e.stopPropagation();
                 els.branch.value = b.name;
                 els.branchDropdown.style.display = 'none';
@@ -1201,33 +1203,7 @@ function setupBranchPicker() {
         els.branchListContainer.appendChild(frag);
     };
 
-    if (filterInput) {
-        filterInput.addEventListener('click', (e) => e.stopPropagation());
-        filterInput.addEventListener('input', (e) => {
-            renderBranchList(e.target.value);
-        });
-        filterInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                els.branchDropdown.style.display = 'none';
-            }
-        });
-    }
-
-    const togglePicker = async (e) => {
-        e.stopPropagation();
-        const isClosed = els.branchDropdown.style.display === 'none';
-        if (!isClosed) {
-            els.branchDropdown.style.display = 'none';
-            return;
-        }
-
-        closeDropdowns();
-        els.branchDropdown.style.display = 'block';
-        if (filterInput) {
-            filterInput.value = '';
-            setTimeout(() => filterInput.focus(), 40);
-        }
-
+    const fetchBranchesForRepo = async () => {
         let repo = els.repo.value.trim();
         if (repo.includes('github.com/')) {
             repo = repo.split('github.com/').pop().split('?')[0].split('#')[0].replace(/\/$/, "");
@@ -1237,14 +1213,13 @@ function setupBranchPicker() {
             return;
         }
 
-        // Check cache first (avoids repeated API calls)
+        // Check cache first
         if (branchCache.has(repo)) {
             loadedBranches = branchCache.get(repo);
-            renderBranchList(filterInput ? filterInput.value : '');
+            renderBranchList(els.branch.value);
             return;
         }
 
-        // Fetch on-demand only!
         els.branchListContainer.innerHTML = `<div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Loading branches...</div>`;
 
         try {
@@ -1257,15 +1232,68 @@ function setupBranchPicker() {
             const data = await res.json();
             loadedBranches = data.map(b => ({ name: b.name }));
             branchCache.set(repo, loadedBranches);
-            renderBranchList(filterInput ? filterInput.value : '');
+            renderBranchList(els.branch.value);
         } catch (err) {
             els.branchListContainer.innerHTML = `<div class="branch-empty-hint">Failed to load branches.<br><small>${escapeHtml(err.message)}</small></div>`;
         }
     };
 
-    els.branchDropdownBtn.addEventListener('click', togglePicker);
+    const openPicker = () => {
+        closeDropdowns();
+        els.branchDropdown.style.display = 'block';
+        if (loadedBranches.length === 0) {
+            fetchBranchesForRepo();
+        } else {
+            renderBranchList(els.branch.value);
+        }
+    };
+
+    const togglePicker = (e) => {
+        if (e) e.stopPropagation();
+        const isOpen = els.branchDropdown.style.display !== 'none';
+        if (isOpen) {
+            els.branchDropdown.style.display = 'none';
+        } else {
+            openPicker();
+            els.branch.focus();
+        }
+    };
+
+    // Clicking or focusing directly on the branch input opens the dropdown
+    els.branch.addEventListener('focus', () => {
+        openPicker();
+    });
+
+    els.branch.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPicker();
+    });
+
+    // Real-time filtering as user types directly in the branch input
+    els.branch.addEventListener('input', (e) => {
+        if (els.branchDropdown.style.display === 'none') {
+            els.branchDropdown.style.display = 'block';
+        }
+        renderBranchList(e.target.value);
+    });
+
+    // Keyboard support: Escape closes, Enter submits
+    els.branch.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            els.branchDropdown.style.display = 'none';
+        } else if (e.key === 'Enter') {
+            els.branchDropdown.style.display = 'none';
+            loadTree();
+        }
+    });
+
+    if (els.branchDropdownBtn) {
+        els.branchDropdownBtn.addEventListener('click', togglePicker);
+    }
     const branchCaret = group ? group.querySelector('.branch-caret') : null;
-    if (branchCaret) branchCaret.addEventListener('click', togglePicker);
+    if (branchCaret) {
+        branchCaret.addEventListener('click', togglePicker);
+    }
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('#branchInputGroup')) {
