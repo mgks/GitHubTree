@@ -2458,3 +2458,129 @@ mark.search-highlight {
     background: var(--border);
     margin: 6px 0;
 }
+
+/* =========================================
+   15. MOBILE & RESPONSIVE POLISH
+   ========================================= */
+
+@media (max-width: 640px) {
+    /* Stack action groups in repository meta bar */
+    .repo-meta-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .repo-meta-bar > .compact-action-group:first-child {
+        width: 100%;
+    }
+
+    #repoIndexCol {
+        width: 100%;
+    }
+
+    .feature-action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Modal file details grid */
+    .file-details-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .preview-content {
+        width: 95%;
+        padding: 14px;
+        max-height: 90vh;
+    }
+}
+
+@media (max-width: 520px) {
+    /* Mobile Hero typography */
+    .home-hero {
+        margin: 24px auto 22px;
+        padding: 0 8px;
+    }
+
+    .home-hero h1 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .home-hero p {
+        font-size: 0.82rem;
+    }
+
+    .hero-badge {
+        font-size: 0.70rem;
+        padding: 3px 10px;
+    }
+
+    .quick-tags {
+        gap: 6px;
+    }
+
+    .quick-tag-chip {
+        height: 26px;
+        padding: 0 8px;
+        font-size: 0.72rem;
+    }
+
+    /* Mobile Featured Spotlight Card */
+    .trending-repo-card {
+        padding: 16px 16px;
+        margin-bottom: 24px;
+    }
+
+    .tp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .tp-explore-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tp-title {
+        font-size: 1.05rem;
+        word-break: break-all;
+    }
+
+    /* Header Compact Brand & Actions */
+    .brand {
+        font-size: 1.25rem;
+        gap: 8px;
+    }
+
+    .brand i {
+        font-size: 1.4rem;
+    }
+
+    .app-star-btn {
+        height: 28px;
+        padding: 0 8px;
+        font-size: 0.72rem;
+    }
+
+    .text-btn {
+        height: 28px;
+        padding: 0 8px;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Extra narrow devices: hide text on star button for single-row compactness */
+    .app-star-btn #appStarText {
+        display: none;
+    }
+
+    .app-star-btn {
+        padding: 0 8px;
+    }
+}
