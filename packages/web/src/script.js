@@ -1782,6 +1782,12 @@ async function fetchLastUpdated(repo, path, branch) {
     }
 }
 
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = String(str == null ? '' : str);
+    return div.innerHTML;
+}
+
 function formatDate(dateString) {
     const date = new Date(dateString);
     if (isNaN(date.getTime())) return dateString;
