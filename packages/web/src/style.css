@@ -40,9 +40,9 @@
     --header-bg: #161e29;
     --border: #242f3d;
 
-    --accent: #3b82f6;
-    --accent-hover: #2563eb;
-    --focus-ring: rgba(59, 130, 246, 0.25);
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --focus-ring: rgba(37, 99, 235, 0.3);
     --panel-bg: #151b23;
     --panel-border: #242f3d;
 
@@ -645,12 +645,14 @@ input {
 
 .action-btn {
     box-sizing: border-box;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: var(--accent);
     border: 1px solid var(--accent);
     padding: 0 14px;
     height: 34px;
     line-height: 1;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
 }
 
 .action-btn:hover {
