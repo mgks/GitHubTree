@@ -211,4 +211,31 @@ export class GitHubTree {
 
         return output;
     }
+
+    /**
+     * Computes statistics for a flat tree
+     */
+    getTreeStats(flatTree) {
+        if (!flatTree || !Array.isArray(flatTree)) {
+            return { totalFiles: 0, totalDirs: 0, totalBytes: 0, extensions: {} };
+        }
+        let totalFiles = 0;
+        let totalDirs = 0;
+        let totalBytes = 0;
+        const extensions = {};
+
+        flatTree.forEach(item => {
+            if (item.type === 'tree') {
+                totalDirs++;
+            } else {
+                totalFiles++;
+                totalBytes += item.size || 0;
+                const parts = item.path.split('.');
+                const ext = parts.length > 1 ? parts.pop().toLowerCase() : 'no-extension';
+                extensions[ext] = (extensions[ext] || 0) + 1;
+            }
+        });
+
+        return { totalFiles, totalDirs, totalBytes, extensions };
+    }
 }

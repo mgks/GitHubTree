@@ -29,11 +29,13 @@ const helpText = `
     --save-token <token>  Save token locally and exit
     --clear-cache         Clear local cache
     --icons               Show icons in output
+    --stats               Show tree statistics (files, dirs, size)
+    --no-copy             Do not auto-copy ASCII tree to clipboard
     --help, -h            Show this help
 
   Examples:
     gh-tree facebook/react
-    gh-tree mgks/dhwani -b dev --icons
+    gh-tree mgks/dhwani -b dev --icons --stats
 `;
 
 // Simple Arg Parser
@@ -53,6 +55,8 @@ for (let i = 0; i < args.length; i++) {
         if (key === 'depth' || key === 'd') flags.depth = parseInt(args[i + 1]);
         if (key === 'ignore' || key === 'i') flags.ignore = args[i + 1].split(',');
         if (key === 'json') flags.json = true;
+        if (key === 'stats') flags.stats = true;
+        if (key === 'no-copy') flags.noCopy = true;
         if (key === 'clear-cache') { clearCache(); process.exit(0); }
         if (key === 'icons') flags.icons = true;
         if (key === 'help' || key === 'h') { console.log(helpText); process.exit(0); }
@@ -135,6 +139,11 @@ async function run() {
             console.log(`   Switched to default branch: '${data.branch}'`);
         }
 
+        // Notify if tree was truncated by GitHub API
+        if (data.truncated) {
+            console.log(`\n⚠️  Warning: Repository tree was truncated by GitHub API (exceeds 100,000 entries or 7MB payload).`);
+        }
+
         // Generate and Print Tree
         const output = gt.generateAsciiTree(processedTree, { 
             icons: flags.icons,
@@ -145,13 +154,30 @@ async function run() {
             console.log(output);
         } else {
             console.log('\n' + output);
-            // Auto-Copy (Only for ASCII)
-            try {
-                copyToClipboard(output);
-                console.log(`\n✨ Tree copied to clipboard!`);
-            } catch (e) {
-                console.log(`\n(Could not auto-copy: ${e.message})`);
+            // Auto-Copy (Only for ASCII, unless --no-copy)
+            if (!flags.noCopy) {
+                try {
+                    copyToClipboard(output);
+                    console.log(`\n✨ Tree copied to clipboard!`);
+                } catch (e) {
+                    console.log(`\n(Could not auto-copy: ${e.message})`);
+                }
             }
+        }
+
+        if (flags.stats) {
+            const stats = gt.getTreeStats(processedTree);
+            console.log('\n📊 Repository Statistics:');
+            console.log(`   • Total Directories: ${stats.totalDirs.toLocaleString()}`);
+            console.log(`   • Total Files:       ${stats.totalFiles.toLocaleString()}`);
+            const mb = (stats.totalBytes / (1024 * 1024)).toFixed(2);
+            console.log(`   • Total Size:        ${stats.totalBytes.toLocaleString()} bytes (~${mb} MB)`);
+            const topExts = Object.entries(stats.extensions)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5)
+                .map(([ext, count]) => `.${ext}: ${count}`)
+                .join(', ');
+            if (topExts) console.log(`   • Top Extensions:    ${topExts}`);
         }
     } catch (err) {
         console.error(`\n❌ Error processing tree: ${err.message}`);

@@ -3,23 +3,46 @@ import { GitHubTree } from 'gh-tree';
 // --- State ---
 let gt = new GitHubTree(); 
 let currentData = []; // Stores the Raw API response
+let currentDataTruncated = false;
 let currentSort = 'folder-az';
 let currentStyle = 'classic';
 let activeDetailItem = null;
 let indexedRepos = new Set();
 let indexedReposReady = Promise.resolve();
 
+// High-Performance Virtual Hierarchy State
+let treeMetadata = {
+    totalFiles: 0,
+    totalDirs: 0,
+    totalBytes: 0,
+    statsByFolder: new Map(), // path -> { fileCount, totalBytes, directCount }
+    defaultExpanded: new Set()
+};
+let expandedFolders = new Set();
+let treeHierarchyCache = [];
+let visibleItemsList = [];
+let activeSelectedRowIndex = -1;
+const branchCache = new Map(); // repo -> Array<{ name, default }>
+
 // --- Elements ---
 const els = {
-    // Search
+    // Search & Inputs
     repo: document.getElementById('repoInput'),
     branch: document.getElementById('branchInput'),
     fetchBtn: document.getElementById('fetchBtn'),
+    branchDropdownBtn: document.getElementById('branchDropdownBtn'),
+    branchDropdown: document.getElementById('branchDropdown'),
+    branchFilterInput: document.getElementById('branchFilterInput'),
+    branchListContainer: document.getElementById('branchListContainer'),
     
-    // UI Containers
+    // UI Containers & Alerts
     wrapper: document.getElementById('treeWrapper'),
     empty: document.getElementById('emptyState'),
     status: document.getElementById('statusMsg'),
+    truncationWarning: document.getElementById('truncationWarning'),
+    closeTruncationWarning: document.getElementById('closeTruncationWarning'),
+    treeStatsSummary: document.getElementById('treeStatsSummary'),
+    terminalWindow: document.getElementById('terminalWindow'),
     
     // Terminal
     lineNums: document.getElementById('lineNumbers'),
@@ -32,10 +55,17 @@ const els = {
     saveToken: document.getElementById('saveTokenBtn'),
     clearToken: document.getElementById('clearTokenBtn'),
     
-    // Actions
+    // Actions & Toolbar
     copyAll: document.getElementById('copyAllBtn'),
     shareBtn: document.getElementById('shareBtn'),
     treeToggle: document.getElementById('treeToggleBtn'),
+    exportBtn: document.getElementById('exportBtn'),
+    exportDropdown: document.getElementById('exportDropdown'),
+    exportAsciiBtn: document.getElementById('exportAsciiBtn'),
+    exportMarkdownBtn: document.getElementById('exportMarkdownBtn'),
+    exportJsonBtn: document.getElementById('exportJsonBtn'),
+    exportDownloadTxtBtn: document.getElementById('exportDownloadTxtBtn'),
+    exportDownloadJsonBtn: document.getElementById('exportDownloadJsonBtn'),
 
     // Overlays & Dropdowns
     overlay: document.getElementById('shareOverlay'),
@@ -56,6 +86,193 @@ const els = {
     dropdowns: document.querySelectorAll('.dropdown')
 };
 
+// --- Storage Manager (Dual IndexedDB + SessionStorage Fallback) ---
+const TreeStorage = {
+    dbPromise: null,
+    getDB() {
+        if (this.dbPromise) return this.dbPromise;
+        if (!('indexedDB' in window)) return Promise.resolve(null);
+        this.dbPromise = new Promise((resolve) => {
+            try {
+                const req = indexedDB.open('GitHubTreeDB', 1);
+                req.onupgradeneeded = (e) => {
+                    const db = e.target.result;
+                    if (!db.objectStoreNames.contains('trees')) {
+                        db.createObjectStore('trees');
+                    }
+                };
+                req.onsuccess = (e) => resolve(e.target.result);
+                req.onerror = () => resolve(null);
+            } catch (err) {
+                resolve(null);
+            }
+        });
+        return this.dbPromise;
+    },
+    async get(key) {
+        // Tier 1: sessionStorage
+        try {
+            const raw = sessionStorage.getItem(key);
+            if (raw) return JSON.parse(raw);
+        } catch (e) {}
+
+        // Tier 2: IndexedDB (for large trees that exceeded 5MB sessionStorage)
+        try {
+            const db = await this.getDB();
+            if (!db) return null;
+            return new Promise((resolve) => {
+                const tx = db.transaction('trees', 'readonly');
+                const store = tx.objectStore('trees');
+                const req = store.get(key);
+                req.onsuccess = () => resolve(req.result || null);
+                req.onerror = () => resolve(null);
+            });
+        } catch (e) {
+            return null;
+        }
+    },
+    async set(key, value) {
+        // Tier 1: try saving to sessionStorage
+        try {
+            sessionStorage.setItem(key, JSON.stringify(value));
+        } catch (e) {
+            // QuotaExceededError is expected for large trees (>5MB)
+        }
+
+        // Tier 2: persist reliably in IndexedDB
+        try {
+            const db = await this.getDB();
+            if (!db) return;
+            return new Promise((resolve) => {
+                const tx = db.transaction('trees', 'readwrite');
+                const store = tx.objectStore('trees');
+                const req = store.put(value, key);
+                req.onsuccess = () => resolve(true);
+                req.onerror = () => resolve(false);
+            });
+        } catch (e) {}
+    }
+};
+
+// --- Sanitization & File Icon Helpers ---
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = String(str == null ? '' : str);
+    return div.innerHTML;
+}
+
+function getFileIcon(filename, isFolder, isExpanded) {
+    if (isFolder) {
+        return {
+            iconClass: isExpanded ? 'fa-solid fa-folder-open' : 'fa-solid fa-folder',
+            color: '#d4a359' // Soothing faded amber (identical for both open and closed)
+        };
+    }
+    const lower = filename.toLowerCase();
+    if (lower === 'dockerfile' || lower.startsWith('dockerfile.')) return { iconClass: 'fa-brands fa-docker', color: '#5b93b8' };
+    if (lower === 'package.json' || lower === 'package-lock.json') return { iconClass: 'fa-brands fa-npm', color: '#b85b56' };
+    if (lower.startsWith('license') || lower.startsWith('copying')) return { iconClass: 'fa-solid fa-scale-balanced', color: '#c2944b' };
+    if (lower === '.gitignore' || lower === '.gitattributes' || lower.startsWith('.env')) return { iconClass: 'fa-solid fa-wrench', color: '#7c8794' };
+    if (lower === 'readme.md') return { iconClass: 'fa-brands fa-markdown', color: '#628ec2' };
+
+    const parts = lower.split('.');
+    const ext = parts.length > 1 ? parts.pop() : '';
+
+    switch (ext) {
+        case 'js':
+        case 'mjs':
+        case 'cjs':
+            return { iconClass: 'fa-brands fa-js', color: '#cbb159' };
+        case 'ts':
+        case 'mts':
+        case 'cts':
+            return { iconClass: 'fa-solid fa-code', color: '#5f8bc0' };
+        case 'jsx':
+        case 'tsx':
+            return { iconClass: 'fa-brands fa-react', color: '#65a5be' };
+        case 'vue':
+            return { iconClass: 'fa-brands fa-vuejs', color: '#549d79' };
+        case 'html':
+        case 'htm':
+            return { iconClass: 'fa-brands fa-html5', color: '#be6955' };
+        case 'css':
+        case 'scss':
+        case 'sass':
+        case 'less':
+            return { iconClass: 'fa-brands fa-css3-alt', color: '#5d7ba6' };
+        case 'py':
+        case 'pyw':
+        case 'ipynb':
+            return { iconClass: 'fa-brands fa-python', color: '#5787ad' };
+        case 'rs':
+            return { iconClass: 'fa-solid fa-gear', color: '#ab7658' };
+        case 'go':
+            return { iconClass: 'fa-brands fa-golang', color: '#4f9fa8' };
+        case 'java':
+        case 'kt':
+        case 'kts':
+            return { iconClass: 'fa-brands fa-java', color: '#a87843' };
+        case 'php':
+            return { iconClass: 'fa-brands fa-php', color: '#767ba8' };
+        case 'rb':
+            return { iconClass: 'fa-solid fa-gem', color: '#b85450' };
+        case 'c':
+        case 'cpp':
+        case 'cc':
+        case 'h':
+        case 'hpp':
+        case 'cs':
+            return { iconClass: 'fa-solid fa-microchip', color: '#7a8898' };
+        case 'swift':
+            return { iconClass: 'fa-brands fa-swift', color: '#bf6c54' };
+        case 'json':
+            return { iconClass: 'fa-solid fa-code', color: '#b59e51' };
+        case 'yml':
+        case 'yaml':
+        case 'toml':
+            return { iconClass: 'fa-solid fa-sliders', color: '#a86968' };
+        case 'md':
+        case 'markdown':
+            return { iconClass: 'fa-brands fa-markdown', color: '#628ec2' };
+        case 'txt':
+        case 'log':
+            return { iconClass: 'fa-regular fa-file-lines', color: '#7c8794' };
+        case 'png':
+        case 'jpg':
+        case 'jpeg':
+        case 'gif':
+        case 'svg':
+        case 'webp':
+        case 'ico':
+            return { iconClass: 'fa-regular fa-image', color: '#589c6c' };
+        case 'mp3':
+        case 'wav':
+        case 'ogg':
+        case 'flac':
+            return { iconClass: 'fa-regular fa-file-audio', color: '#8e75a8' };
+        case 'mp4':
+        case 'webm':
+        case 'mov':
+            return { iconClass: 'fa-regular fa-file-video', color: '#bf6560' };
+        case 'zip':
+        case 'tar':
+        case 'gz':
+        case '7z':
+        case 'rar':
+            return { iconClass: 'fa-regular fa-file-zipper', color: '#a88f57' };
+        case 'sh':
+        case 'bash':
+        case 'zsh':
+            return { iconClass: 'fa-solid fa-terminal', color: '#579e6c' };
+        case 'sql':
+            return { iconClass: 'fa-solid fa-database', color: '#4b8eb5' };
+        case 'pdf':
+            return { iconClass: 'fa-regular fa-file-pdf', color: '#b85757' };
+        default:
+            return { iconClass: 'fa-regular fa-file', color: '#7c8794' };
+    }
+}
+
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
@@ -64,7 +281,11 @@ document.addEventListener('DOMContentLoaded', () => {
     indexedReposReady = loadIndexedRepos();
     setupUrlHandler();
     setupDropdowns();
+    updateActiveStyleCheckmarks();
     setupShareOverlay();
+    setupBranchPicker();
+    setupExportActions();
+    setupKeyboardNav();
     initHistoryCloud();
     
     // Main Listeners
@@ -74,23 +295,43 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleAll(!isCollapsed);
         
         // Update button state
-        const nextState = !isCollapsed ? 'Expand' : 'Compact';
+        const nextState = !isCollapsed ? 'Expand All' : 'Compact';
         const nextIcon = !isCollapsed ? 'fa-expand-alt' : 'fa-compress-alt';
         els.treeToggle.innerHTML = `<i class="fas ${nextIcon}"></i> <span class="btn-text">${nextState}</span>`;
         
         trackEvent('UI', 'Tree Toggle', nextState);
     });
 
-    // Search
+    // Debounced Search (250ms prevents typing lockup on large trees)
+    const clearSearchBtn = document.getElementById('clearTreeSearch');
     let searchDebounce = null;
     els.treeSearch.addEventListener('input', () => {
-        render();
+        if (clearSearchBtn) {
+            clearSearchBtn.style.display = els.treeSearch.value ? 'inline-flex' : 'none';
+        }
         clearTimeout(searchDebounce);
         searchDebounce = setTimeout(() => {
+            render();
             const term = els.treeSearch.value.trim();
             if (term) trackEvent('Search', 'Query', term);
-        }, 1000);
+        }, 250);
     });
+
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', () => {
+            els.treeSearch.value = '';
+            clearSearchBtn.style.display = 'none';
+            render();
+            els.treeSearch.focus();
+        });
+    }
+
+    // Truncation Notice Dismissal
+    if (els.closeTruncationWarning) {
+        els.closeTruncationWarning.addEventListener('click', () => {
+            els.truncationWarning.style.display = 'none';
+        });
+    }
 
     // Preview & Details Dialog
     if (els.closePreview) els.closePreview.addEventListener('click', () => els.previewOverlay.classList.remove('visible'));
@@ -203,6 +444,98 @@ function trackEvent(category, action, label = null) {
     }
 }
 
+// --- Tree Analysis & Smart Expansion Logic ---
+function analyzeTreeAndStats(flatTree) {
+    const statsMap = new Map();
+    const defaultExpanded = new Set(['']); // root is always expanded
+    let totalFiles = 0;
+    let totalDirs = 0;
+    let totalBytes = 0;
+
+    // Regex for folders that should start collapsed by default
+    const isCacheOrTmpDir = (dirName) => {
+        return /(^|\/)(node_modules|\.git|\.github|dist|build|out|target|vendor|coverage|\.next|\.nuxt|\.cache|cache|tmp|temp|\.turbo|__pycache__|\.pytest_cache|\.venv|venv|bin|obj)($|\/)/i.test(dirName);
+    };
+    const isAssetDir = (dirName) => {
+        return /(^|\/)(assets|images|img|static|fixtures|mocks|test-results|snapshots|audio|video|fonts)($|\/)/i.test(dirName);
+    };
+
+    // 1. First pass: Collect folders and files
+    flatTree.forEach(item => {
+        if (item.type === 'tree') {
+            totalDirs++;
+            if (!statsMap.has(item.path)) {
+                statsMap.set(item.path, { fileCount: 0, totalBytes: 0, directCount: 0 });
+            }
+        } else {
+            totalFiles++;
+            const size = item.size || 0;
+            totalBytes += size;
+
+            // Increment parent folders recursively
+            const parts = item.path.split('/');
+            parts.pop(); // remove file name
+            for (let i = parts.length; i >= 1; i--) {
+                const folderPath = parts.slice(0, i).join('/');
+                if (!statsMap.has(folderPath)) {
+                    statsMap.set(folderPath, { fileCount: 0, totalBytes: 0, directCount: 0 });
+                }
+                const st = statsMap.get(folderPath);
+                st.fileCount += 1;
+                st.totalBytes += size;
+                if (i === parts.length) {
+                    st.directCount += 1;
+                }
+            }
+        }
+    });
+
+    const totalCount = flatTree.length;
+
+    // 2. Second pass: Factual smart decisions on which folders to auto-expand
+    statsMap.forEach((st, folderPath) => {
+        const parts = folderPath.split('/');
+        const depth = parts.length - 1;
+        const folderName = parts[parts.length - 1];
+
+        // Heavy caches, temporary, build, vendor, or test assets always start collapsed
+        if (isCacheOrTmpDir(folderName) || isAssetDir(folderName)) {
+            return;
+        }
+
+        // Folders containing a huge list inside them start collapsed
+        if (st.directCount > 30 || st.fileCount > 80) {
+            return;
+        }
+
+        // Scaling rule based on overall repository size
+        if (totalCount > 3000) {
+            // Massive repo (e.g. Linux, Chromium, PostHog): keep depth >= 1 collapsed, only expand top-level primary code folder if small
+            if (depth === 0 && st.fileCount < 25) {
+                defaultExpanded.add(folderPath);
+            }
+        } else if (totalCount > 800) {
+            // Large repo: expand top level (depth 0), keep depth >= 2 collapsed
+            if (depth === 0) {
+                defaultExpanded.add(folderPath);
+            }
+        } else {
+            // Moderate repo: expand depth 0 and depth 1 if reasonable
+            if (depth <= 1) {
+                defaultExpanded.add(folderPath);
+            }
+        }
+    });
+
+    return {
+        totalFiles,
+        totalDirs,
+        totalBytes,
+        statsByFolder: statsMap,
+        defaultExpanded
+    };
+}
+
 // --- Fetch Logic ---
 async function loadTree() {
     let repo = els.repo.value.trim();
@@ -231,6 +564,7 @@ async function loadTree() {
     if (breadcrumbs) breadcrumbs.style.display = 'none';
 
     els.wrapper.style.display = 'none';
+    if (els.truncationWarning) els.truncationWarning.style.display = 'none';
     showMsg(`Fetching ${repo}...`, "loading");
     els.fetchBtn.disabled = true;
 
@@ -238,58 +572,61 @@ async function loadTree() {
     const tokenActive = !!localStorage.getItem('ght_token');
 
     try {
-        const cached = !tokenActive ? sessionStorage.getItem(cacheKey) : null;
+        const cached = !tokenActive ? await TreeStorage.get(cacheKey) : null;
 
-        if (cached) {
-            currentData = JSON.parse(cached);
-            updatePageMetadata(repo, branch); // Update metadata for SEO/share
-            showMsg("", ""); // Clear status
+        if (cached && cached.tree) {
+            currentData = cached.tree;
+            currentDataTruncated = !!cached.truncated;
+            updatePageMetadata(repo, branch);
+            showMsg("", "");
             
-            // Standard URL update for cached items
             const newUrl = `/repo/${repo}/${branch}/`;
             if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
 
-            // Fetch repo details card dynamically
             fetchAndRenderRepoDetails(repo);
             trackEvent('Fetch', 'Cache Hit', repo);
         } else {
             // Fetch from Core
             const data = await gt.getTree(repo, branch);
             currentData = data.tree;
+            currentDataTruncated = !!data.truncated;
             
             // --- SMART BRANCH HANDLING ---
             if (data.branch && data.branch !== branch) {
                 const newBranch = data.branch;
-                
-                // 1. Notify User
                 showMsg(`Branch '${branch}' not found. Switched to '${newBranch}'.`, "loading");
-                
-                // 2. Update Input UI
                 els.branch.value = newBranch;
-                updatePageMetadata(repo, newBranch); // Update metadata for SEO/share
+                updatePageMetadata(repo, newBranch);
                 
-                // 3. Cache under the CORRECT key
                 const correctCacheKey = `ght_${repo}_${newBranch}`;
-                if (!tokenActive) try { sessionStorage.setItem(correctCacheKey, JSON.stringify(currentData)); } catch(e){}
+                if (!tokenActive) {
+                    await TreeStorage.set(correctCacheKey, { tree: currentData, truncated: currentDataTruncated });
+                }
                 
-                // 4. Update URL (Replace history so back button works logically)
                 const correctUrl = `/repo/${repo}/${newBranch}/`;
                 window.history.replaceState(null, '', correctUrl);
-                
             } else {
-                // Case B: Normal Success
-                if (!tokenActive) try { sessionStorage.setItem(cacheKey, JSON.stringify(currentData)); } catch(e){}
-                updatePageMetadata(repo, branch); // Update metadata for SEO/share
-                showMsg("", ""); // Clear status
+                if (!tokenActive) {
+                    await TreeStorage.set(cacheKey, { tree: currentData, truncated: currentDataTruncated });
+                }
+                updatePageMetadata(repo, branch);
+                showMsg("", "");
                 
-                // Update URL
                 const newUrl = `/repo/${repo}/${branch}/`;
                 if (window.location.pathname !== newUrl) window.history.pushState(null, '', newUrl);
             }
 
-            // Fetch repo details card dynamically
             fetchAndRenderRepoDetails(repo);
             trackEvent('Fetch', 'Success', repo);
+        }
+
+        // Analyze tree, compute metadata & smart defaults
+        treeMetadata = analyzeTreeAndStats(currentData);
+        expandedFolders = new Set(treeMetadata.defaultExpanded);
+
+        // Show/hide truncation warning
+        if (els.truncationWarning) {
+            els.truncationWarning.style.display = currentDataTruncated ? 'flex' : 'none';
         }
 
         render();
@@ -298,18 +635,15 @@ async function loadTree() {
 
     } catch (err) {
         console.error(err);
-        let msg = err.message;
+        let msg = err.message || '';
         trackEvent('Fetch', 'Failure', `${repo} : ${msg}`);
 
         if (msg.includes('401') || msg.includes('Bad credentials')) {
             showMsg("Invalid Private Token. Please check your settings.", "error");
-        
         } else if (msg.includes('403') || msg.includes('Rate Limit')) {
             showMsg("API Limit Exceeded. Add a Token.", "error");
-        
         } else if (msg.includes('404')) {
             showMsg("Repository not found (or is Private).", "error");
-        
         } else {
             showMsg(msg, "error");
         }
@@ -321,30 +655,23 @@ async function loadTree() {
     }
 }
 
-// --- Render Logic (Visual) ---
+// --- Render Logic (High-Performance On-Demand Virtualized) ---
 function render() {
-    els.lineNums.innerHTML = '';
-    els.treeContent.innerHTML = '';
-
     const term = els.treeSearch.value.trim();
     let filteredData = currentData;
     let regex = null;
     
     if (term) {
         let isRegex = false;
-        // Check if query is enclosed in slashes for regex, e.g. /\.js$/i or /src/
         const regexMatch = term.match(/^\/(.+)\/([gimy]*)$/);
         if (regexMatch) {
             try {
                 regex = new RegExp(regexMatch[1], regexMatch[2] || 'i');
                 isRegex = true;
-            } catch (e) {
-                // Invalid regex, fallback to regular matching
-            }
+            } catch (e) {}
         }
         
         if (!isRegex) {
-            // Safe escape special characters for regex search
             const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             regex = new RegExp(escaped, 'i');
         }
@@ -355,24 +682,56 @@ function render() {
         matches.forEach(item => {
             const parts = item.path.split('/');
             for (let i = 1; i <= parts.length; i++) {
-                pathsToInclude.add(parts.slice(0, i).join('/'));
+                const subPath = parts.slice(0, i).join('/');
+                pathsToInclude.add(subPath);
+                // Auto-expand all ancestor directories so search results are immediately visible!
+                if (i < parts.length) {
+                    expandedFolders.add(subPath);
+                }
             }
         });
 
         filteredData = currentData.filter(item => pathsToInclude.has(item.path));
     }
 
-    // 1. Sort Data (using Core Logic)
+    // 1. Sort Data
     const sortedFlat = gt.sortTree(filteredData, currentSort);
 
-    // 2. Build Visual Props (Prefixes like │   ├──)
-    const hierarchy = buildVisualHierarchy(sortedFlat);
+    // 2. Build Hierarchy with Prefixes & Metadata
+    treeHierarchyCache = buildVisualHierarchy(sortedFlat);
 
-    // 3. Create DOM
+    // 3. Render Visible Nodes On-Demand
+    renderVisible(regex);
+}
+
+function renderVisible(regex = null) {
+    els.lineNums.innerHTML = '';
+    els.treeContent.innerHTML = '';
+
+    // Filter to only items whose parent directories are expanded
+    visibleItemsList = treeHierarchyCache.filter(item => {
+        if (!item.parentPath) return true; // root level is always visible
+        const parts = item.parentPath.split('/');
+        for (let i = 1; i <= parts.length; i++) {
+            const ancestor = parts.slice(0, i).join('/');
+            if (!expandedFolders.has(ancestor)) return false;
+        }
+        return true;
+    });
+
+    // Update Stats Badge in Toolbar
+    if (els.treeStatsSummary) {
+        const totalF = treeMetadata.totalFiles.toLocaleString();
+        const totalD = treeMetadata.totalDirs.toLocaleString();
+        const sizeStr = formatBytes(treeMetadata.totalBytes);
+        els.treeStatsSummary.textContent = `${totalF} files • ${totalD} dirs (${sizeStr})`;
+        els.treeStatsSummary.style.display = 'inline-flex';
+    }
+
     const fragNums = document.createDocumentFragment();
     const fragLines = document.createDocumentFragment();
 
-    hierarchy.forEach((item, idx) => {
+    visibleItemsList.forEach((item, idx) => {
         // Line Number
         const n = document.createElement('div');
         n.textContent = idx + 1;
@@ -381,28 +740,35 @@ function render() {
         // Content Row
         const row = document.createElement('div');
         row.className = 'tree-line';
+        row.dataset.index = idx;
+        row.dataset.path = item.path;
         row.dataset.depth = item.depth;
-        row.style.animation = `fadeIn 0.1s forwards ${Math.min(idx * 2, 500)}ms`;
-        row.style.opacity = '0';
+        row.dataset.type = item.type;
+        row.setAttribute('tabindex', '0');
+
+        if (idx === activeSelectedRowIndex) {
+            row.classList.add('active-row');
+        }
 
         const isFolder = item.type === 'tree';
-        const iconClass = isFolder ? 'fa-solid fa-folder' : 'fa-regular fa-file';
-        const typeClass = isFolder ? 'folder' : 'file';
+        const isExpanded = isFolder && expandedFolders.has(item.path);
 
         if (isFolder) {
             row.classList.add('tree-folder');
-            if (term) row.classList.remove('collapsed');
+            if (!isExpanded) row.classList.add('collapsed');
         }
 
-        // Apply Styles
-        let prefixDisplay = item.prefix;
-        
-        // Highlight matched search queries
-        let nameDisplay = item.name;
+        // File-Based Icon
+        const iconInfo = getFileIcon(item.name, isFolder, isExpanded);
+
+        // Name Display & Highlighting
+        let nameDisplay = escapeHtml(item.name);
         if (regex && regex.test(item.name)) {
-            nameDisplay = item.name.replace(regex, (match) => `<mark class="search-highlight">${match}</mark>`);
+            nameDisplay = nameDisplay.replace(regex, (match) => `<mark class="search-highlight">${match}</mark>`);
         }
 
+        // Prefix Styles
+        let prefixDisplay = item.prefix;
         if (currentStyle === 'minimal') prefixDisplay = item.indent;
         if (currentStyle === 'plus') prefixDisplay = prefixDisplay.replace(/└──/g, '+--').replace(/├──/g, '+--').replace(/│/g, '|');
         if (currentStyle === 'slashed') {
@@ -414,14 +780,26 @@ function render() {
             nameDisplay = `• ${nameDisplay}${isFolder ? '/' : ''}`;
         }
 
-        const caretHTML = isFolder ? '<span class="t-caret"><i class="fas fa-angle-down"></i></span>' : '';
+        // Caret & Badges
+        const caretHTML = isFolder 
+            ? `<span class="t-caret"><i class="fas ${isExpanded ? 'fa-angle-down' : 'fa-angle-right'}"></i></span>` 
+            : `<span class="t-caret t-caret-spacer"></span>`;
+
+        const stats = isFolder ? treeMetadata.statsByFolder.get(item.path) : null;
+        let badgeHTML = '';
+        if (stats && stats.fileCount > 0) {
+            badgeHTML = `<span class="t-badge" title="${stats.fileCount} files, total size ${formatBytes(stats.totalBytes)}">${stats.fileCount} ${stats.fileCount === 1 ? 'file' : 'files'} &bull; ${formatBytes(stats.totalBytes)}</span>`;
+        }
+
+        const typeClass = isFolder ? 'folder' : 'file';
 
         row.innerHTML = `
             <span class="t-prefix">${prefixDisplay}</span>
             ${caretHTML}
-            <span class="t-icon"><i class="${iconClass}"></i></span>
+            <span class="t-icon" style="color: ${iconInfo.color}"><i class="${iconInfo.iconClass}"></i></span>
             <span class="t-name ${typeClass}">${nameDisplay}</span>
-            <button class="sub-copy" data-path="${item.path}" title="Copy Path">
+            ${badgeHTML}
+            <button class="sub-copy" data-path="${escapeHtml(item.path)}" title="Copy Path">
                 <i class="far fa-copy"></i>
             </button>
         `;
@@ -437,28 +815,8 @@ function render() {
 
 // --- Preview Logic ---
 async function showPreview(item) {
-    // Feature disabled by default due to CSP/Fetch limitations
     console.log("Preview disabled:", item.path);
     return;
-    
-    const repo = els.repo.value.trim();
-    const branch = els.branch.value.trim() || 'main';
-    const cleanPath = item.path.replace(/^\//, '');
-    const url = `https://raw.githubusercontent.com/${repo}/${branch}/${cleanPath}`;
-
-    els.previewTitle.innerText = item.name;
-    els.previewBody.innerText = "Loading...";
-    els.previewOverlay.classList.add('visible');
-
-    try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error(`Could not load file (Code ${res.status})`);
-        const text = await res.text();
-        els.previewBody.innerText = text;
-        trackEvent('Preview', 'Open', item.path);
-    } catch (err) {
-        els.previewBody.innerText = `⚠️ Error: ${err.message}\n\nNote: Browsers may block large files or non-text content.`;
-    }
 }
 
 // --- Helper: Build Visual Hierarchy (Prefix Generator) ---
@@ -468,14 +826,16 @@ function buildVisualHierarchy(sortedFlatList) {
     
     // 1. Init Nodes
     sortedFlatList.forEach(item => {
-        map[item.path] = { ...item, name: item.path.split('/').pop(), children: [] };
+        const parts = item.path.split('/');
+        const name = parts[parts.length - 1];
+        parts.pop();
+        const parentPath = parts.join('/');
+        map[item.path] = { ...item, name, parentPath, children: [] };
     });
     
     // 2. Connect Parents
     sortedFlatList.forEach(item => {
-        const parts = item.path.split('/');
-        parts.pop();
-        const parent = map[parts.join('/')] || root;
+        const parent = map[map[item.path].parentPath] || root;
         parent.children.push(map[item.path]);
     });
 
@@ -486,13 +846,15 @@ function buildVisualHierarchy(sortedFlatList) {
         result.push({
             name: node.name,
             path: node.path,
+            parentPath: node.parentPath,
             type: node.type,
+            size: node.size,
             depth: depth,
             prefix: prefix + connector,
             indent: prefix.replace(/│   /g, '    ').replace(/├── /g, '    ').replace(/└── /g, '    ')
         });
         
-        if (node.children) {
+        if (node.children && node.children.length > 0) {
             const childPrefix = prefix + (isLast ? "    " : "│   ");
             node.children.forEach((child, i) => {
                 traverse(child, childPrefix, i === node.children.length - 1, depth + 1);
@@ -516,18 +878,18 @@ function handleTreeClick(e) {
         return;
     }
 
-    // 2. Folder toggle
-    const folderRow = e.target.closest('.tree-folder');
-    if (folderRow && !e.target.closest('.t-name')) {
-        toggleFolder(folderRow);
-        return;
+    // 2. Row selection
+    const row = e.target.closest('.tree-line');
+    if (row && row.dataset.index !== undefined) {
+        activeSelectedRowIndex = parseInt(row.dataset.index, 10);
+        document.querySelectorAll('.tree-line.active-row').forEach(r => r.classList.remove('active-row'));
+        row.classList.add('active-row');
     }
 
-    // 3. File Details Trigger
+    // 3. File Details Trigger (when clicking file name)
     const fileName = e.target.closest('.t-name.file');
-    if (fileName) {
-        const row = fileName.parentElement;
-        const path = row.querySelector('.sub-copy').dataset.path;
+    if (fileName && row) {
+        const path = row.dataset.path;
         const item = currentData.find(d => d.path === path);
         if (item) {
             showFileDetailsModal(item);
@@ -535,80 +897,38 @@ function handleTreeClick(e) {
         return;
     }
 
-    if (!folderRow) return;
-    toggleFolder(folderRow);
+    // 4. Folder toggle (clicking anywhere on a folder row)
+    const folderRow = e.target.closest('.tree-folder');
+    if (folderRow) {
+        const path = folderRow.dataset.path;
+        toggleFolder(path);
+    }
 }
 
-function toggleFolder(folderRow) {
-    const rows = Array.from(els.treeContent.children);
-    const nums = Array.from(els.lineNums.children);
-    const startIdx = rows.indexOf(folderRow);
-    const folderDepth = Number(folderRow.dataset.depth);
-    const isClosing = !folderRow.classList.contains('collapsed');
-
-    // Track folder interaction
-    const pathBtn = folderRow.querySelector('.sub-copy');
-    if (pathBtn) {
-        trackEvent('Tree', isClosing ? 'Collapse Folder' : 'Expand Folder', pathBtn.dataset.path);
+// Fast $O(1)$ Folder Toggle with instant re-render
+function toggleFolder(path) {
+    if (expandedFolders.has(path)) {
+        expandedFolders.delete(path);
+        trackEvent('Tree', 'Collapse Folder', path);
+    } else {
+        expandedFolders.add(path);
+        trackEvent('Tree', 'Expand Folder', path);
     }
-
-    folderRow.classList.toggle('collapsed');
-
-    for (let i = startIdx + 1; i < rows.length; i++) {
-        if (Number(rows[i].dataset.depth) <= folderDepth) break;
-
-        if (isClosing) {
-            rows[i].classList.add('child-hidden');
-            nums[i].classList.add('child-hidden');
-        } else {
-            // When expanding, skip rows inside a nested collapsed folder
-            if (isInsideCollapsedAncestor(rows, i, startIdx, folderDepth)) continue;
-            rows[i].classList.remove('child-hidden');
-            nums[i].classList.remove('child-hidden');
-        }
-    }
-
-    renumber();
-}
-
-// --- Helper: Check if row is inside a collapsed ancestor between afterIdx and targetIdx ---
-function isInsideCollapsedAncestor(rows, targetIdx, afterIdx, stopDepth) {
-    const targetDepth = Number(rows[targetIdx].dataset.depth);
-    for (let j = targetIdx - 1; j > afterIdx; j--) {
-        const d = Number(rows[j].dataset.depth);
-        if (d < targetDepth && rows[j].classList.contains('collapsed')) return true;
-        if (d <= stopDepth) break;
-    }
-    return false;
-}
-
-// --- Helper: Renumber visible lines ---
-function renumber() {
-    let num = 0;
-    Array.from(els.lineNums.children).forEach(el => {
-        el.textContent = el.classList.contains('child-hidden') ? '' : ++num;
-    });
+    renderVisible();
 }
 
 // --- Toggle All Folders ---
 function toggleAll(collapse) {
-    const rows = Array.from(els.treeContent.children);
-    const nums = Array.from(els.lineNums.children);
-
-    rows.forEach((row, i) => {
-        if (collapse) {
-            if (row.classList.contains('tree-folder')) row.classList.add('collapsed');
-            if (Number(row.dataset.depth) > 0) {
-                row.classList.add('child-hidden');
-                nums[i].classList.add('child-hidden');
+    if (collapse) {
+        expandedFolders.clear();
+    } else {
+        treeHierarchyCache.forEach(item => {
+            if (item.type === 'tree') {
+                expandedFolders.add(item.path);
             }
-        } else {
-            row.classList.remove('collapsed', 'child-hidden');
-            nums[i].classList.remove('child-hidden');
-        }
-    });
-
-    renumber();
+        });
+    }
+    renderVisible();
 }
 
 // --- Copy Logic ---
@@ -797,10 +1117,9 @@ async function verifyAppStarStatus(token) {
 
 // --- UI Helpers ---
 function setupDropdowns() {
-    // Select the actual buttons, not just the labels
     const dropdownBtns = [
         document.getElementById('sortBtn'),
-        document.getElementById('styleBtn')
+        document.getElementById('moreBtn')
     ];
 
     dropdownBtns.forEach(btn => {
@@ -809,15 +1128,15 @@ function setupDropdowns() {
             e.stopPropagation();
             const parent = btn.closest('.dropdown');
             closeDropdowns(parent);
-            parent.classList.toggle('active');
+            if (parent) parent.classList.toggle('active');
         });
     });
 
     document.querySelectorAll('[data-sort]').forEach(el => {
         el.addEventListener('click', (e) => {
             e.preventDefault();
-            currentSort = e.target.dataset.sort;
-            els.sortBtnLabel.textContent = e.target.innerText;
+            currentSort = e.currentTarget.dataset.sort;
+            if (els.sortBtnLabel) els.sortBtnLabel.textContent = e.currentTarget.innerText.trim();
             closeDropdowns();
             render();
             trackEvent('UI', 'Sort Change', currentSort);
@@ -827,8 +1146,8 @@ function setupDropdowns() {
     document.querySelectorAll('[data-style]').forEach(el => {
         el.addEventListener('click', (e) => {
             e.preventDefault();
-            currentStyle = e.target.dataset.style;
-            els.styleBtnLabel.textContent = e.target.innerText;
+            currentStyle = e.currentTarget.dataset.style;
+            updateActiveStyleCheckmarks();
             closeDropdowns();
             render();
             trackEvent('UI', 'Style Change', currentStyle);
@@ -836,6 +1155,274 @@ function setupDropdowns() {
     });
 
     document.addEventListener('click', () => closeDropdowns());
+}
+
+function updateActiveStyleCheckmarks() {
+    ['classic', 'slashed', 'plus', 'minimal', 'bulleted'].forEach(style => {
+        const check = document.getElementById(`check-${style}`);
+        if (check) check.style.opacity = (style === currentStyle) ? '1' : '0';
+    });
+}
+
+function setupBranchPicker() {
+    const group = document.getElementById('branchInputGroup');
+    if (!els.branchDropdownBtn || !els.branchDropdown) return;
+
+    let loadedBranches = [];
+
+    const renderBranchList = () => {
+        if (!els.branchListContainer) return;
+        const currentSelected = els.branch.value.trim().toLowerCase();
+
+        if (loadedBranches.length === 0) {
+            els.branchListContainer.innerHTML = `<div class="branch-empty-hint">No branches found</div>`;
+            return;
+        }
+
+        const frag = document.createDocumentFragment();
+        loadedBranches.forEach(b => {
+            const item = document.createElement('div');
+            item.className = 'branch-item' + (b.name.toLowerCase() === currentSelected ? ' selected' : '');
+            item.innerHTML = `<i class="fas fa-code-branch"></i> <span>${escapeHtml(b.name)}</span>`;
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                els.branch.value = b.name;
+                els.branchDropdown.style.display = 'none';
+                loadTree();
+            });
+            frag.appendChild(item);
+        });
+        els.branchListContainer.innerHTML = '';
+        els.branchListContainer.appendChild(frag);
+    };
+
+    const togglePicker = async (e) => {
+        e.stopPropagation();
+        const isClosed = els.branchDropdown.style.display === 'none';
+        if (!isClosed) {
+            els.branchDropdown.style.display = 'none';
+            return;
+        }
+
+        closeDropdowns();
+        els.branchDropdown.style.display = 'block';
+
+        let repo = els.repo.value.trim();
+        if (repo.includes('github.com/')) {
+            repo = repo.split('github.com/').pop().split('?')[0].split('#')[0].replace(/\/$/, "");
+        }
+        if (!repo || !repo.includes('/')) {
+            els.branchListContainer.innerHTML = `<div class="branch-empty-hint">Enter a repository name first</div>`;
+            return;
+        }
+
+        // Check cache first (avoids repeated API calls)
+        if (branchCache.has(repo)) {
+            loadedBranches = branchCache.get(repo);
+            renderBranchList();
+            return;
+        }
+
+        // Fetch on-demand only!
+        els.branchListContainer.innerHTML = `<div class="branch-empty-hint"><i class="fas fa-spinner fa-spin"></i> Loading branches...</div>`;
+
+        try {
+            const token = localStorage.getItem('ght_token');
+            const headers = { 'Accept': 'application/vnd.github+json' };
+            if (token) headers['Authorization'] = `token ${token}`;
+
+            const res = await fetch(`https://api.github.com/repos/${repo}/branches?per_page=100`, { headers });
+            if (!res.ok) throw new Error(`Status ${res.status}`);
+            const data = await res.json();
+            loadedBranches = data.map(b => ({ name: b.name }));
+            branchCache.set(repo, loadedBranches);
+            renderBranchList();
+        } catch (err) {
+            els.branchListContainer.innerHTML = `<div class="branch-empty-hint">Failed to load branches.<br><small>${escapeHtml(err.message)}</small></div>`;
+        }
+    };
+
+    els.branchDropdownBtn.addEventListener('click', togglePicker);
+    const branchCaret = group ? group.querySelector('.branch-caret') : null;
+    if (branchCaret) branchCaret.addEventListener('click', togglePicker);
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('#branchInputGroup')) {
+            els.branchDropdown.style.display = 'none';
+        }
+    });
+}
+
+function setupExportActions() {
+    const downloadBlob = (content, filename, type) => {
+        const blob = new Blob([content], { type });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+
+    const targetBtn = document.getElementById('moreBtn') || els.exportBtn;
+
+    if (els.exportAsciiBtn) {
+        els.exportAsciiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeDropdowns();
+            const text = gt.generateAsciiTree(currentData, { style: currentStyle });
+            handleCopy(targetBtn, text, false);
+            trackEvent('Export', 'ASCII Tree');
+        });
+    }
+
+    if (els.exportMarkdownBtn) {
+        els.exportMarkdownBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeDropdowns();
+            const text = gt.generateAsciiTree(currentData, { style: currentStyle });
+            const markdown = '```\n' + text + '\n```';
+            handleCopy(targetBtn, markdown, false);
+            trackEvent('Export', 'Markdown Block');
+        });
+    }
+
+    if (els.exportJsonBtn) {
+        els.exportJsonBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeDropdowns();
+            const jsonStr = JSON.stringify(currentData, null, 2);
+            handleCopy(targetBtn, jsonStr, false);
+            trackEvent('Export', 'JSON');
+        });
+    }
+
+    if (els.exportDownloadTxtBtn) {
+        els.exportDownloadTxtBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeDropdowns();
+            const repo = els.repo.value.replace(/[^a-zA-Z0-9._-]/g, '_') || 'tree';
+            const text = gt.generateAsciiTree(currentData, { style: currentStyle });
+            downloadBlob(text, `${repo}-tree.txt`, 'text/plain;charset=utf-8');
+            trackEvent('Export', 'Download TXT');
+        });
+    }
+
+    if (els.exportDownloadJsonBtn) {
+        els.exportDownloadJsonBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeDropdowns();
+            const repo = els.repo.value.replace(/[^a-zA-Z0-9._-]/g, '_') || 'tree';
+            const jsonStr = JSON.stringify(currentData, null, 2);
+            downloadBlob(jsonStr, `${repo}-tree.json`, 'application/json;charset=utf-8');
+            trackEvent('Export', 'Download JSON');
+        });
+    }
+}
+
+function setupKeyboardNav() {
+    window.addEventListener('keydown', (e) => {
+        // Do not intercept if actively typing inside an input/textarea
+        const tag = (e.target.tagName || '').toLowerCase();
+        const isEditing = tag === 'input' || tag === 'textarea' || e.target.isContentEditable;
+
+        if (e.key === 'Escape') {
+            if (isEditing) {
+                e.target.blur();
+                return;
+            }
+            if (els.previewOverlay.classList.contains('visible')) {
+                els.previewOverlay.classList.remove('visible');
+                return;
+            }
+            if (els.overlay.classList.contains('visible')) {
+                els.overlay.classList.remove('visible');
+                return;
+            }
+            closeDropdowns();
+            if (els.branchDropdown) els.branchDropdown.style.display = 'none';
+            return;
+        }
+
+        if (isEditing) return;
+
+        // Pressing '/' focuses search
+        if (e.key === '/') {
+            e.preventDefault();
+            els.treeSearch.focus();
+            return;
+        }
+
+        if (!visibleItemsList || visibleItemsList.length === 0) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            activeSelectedRowIndex = Math.min(activeSelectedRowIndex + 1, visibleItemsList.length - 1);
+            highlightSelectedRow();
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            activeSelectedRowIndex = Math.max(activeSelectedRowIndex - 1, 0);
+            highlightSelectedRow();
+        } else if (e.key === 'ArrowRight') {
+            if (activeSelectedRowIndex >= 0 && activeSelectedRowIndex < visibleItemsList.length) {
+                const item = visibleItemsList[activeSelectedRowIndex];
+                if (item.type === 'tree') {
+                    if (!expandedFolders.has(item.path)) {
+                        e.preventDefault();
+                        toggleFolder(item.path);
+                    }
+                }
+            }
+        } else if (e.key === 'ArrowLeft') {
+            if (activeSelectedRowIndex >= 0 && activeSelectedRowIndex < visibleItemsList.length) {
+                const item = visibleItemsList[activeSelectedRowIndex];
+                if (item.type === 'tree' && expandedFolders.has(item.path)) {
+                    e.preventDefault();
+                    toggleFolder(item.path);
+                } else if (item.parentPath) {
+                    // Navigate to parent folder
+                    e.preventDefault();
+                    const parentIdx = visibleItemsList.findIndex(v => v.path === item.parentPath);
+                    if (parentIdx !== -1) {
+                        activeSelectedRowIndex = parentIdx;
+                        highlightSelectedRow();
+                    }
+                }
+            }
+        } else if (e.key === 'Enter') {
+            if (activeSelectedRowIndex >= 0 && activeSelectedRowIndex < visibleItemsList.length) {
+                e.preventDefault();
+                const item = visibleItemsList[activeSelectedRowIndex];
+                if (item.type === 'tree') {
+                    toggleFolder(item.path);
+                } else {
+                    const fullItem = currentData.find(d => d.path === item.path) || item;
+                    showFileDetailsModal(fullItem);
+                }
+            }
+        } else if (e.key === 'c' || e.key === 'C') {
+            if (activeSelectedRowIndex >= 0 && activeSelectedRowIndex < visibleItemsList.length) {
+                const item = visibleItemsList[activeSelectedRowIndex];
+                navigator.clipboard.writeText(item.path);
+                showMsg(`Copied "${item.path}" to clipboard`, "loading");
+                setTimeout(() => showMsg("", ""), 1200);
+            }
+        }
+    });
+
+    function highlightSelectedRow() {
+        const rows = els.treeContent.querySelectorAll('.tree-line');
+        rows.forEach((r, idx) => {
+            if (idx === activeSelectedRowIndex) {
+                r.classList.add('active-row');
+                r.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            } else {
+                r.classList.remove('active-row');
+            }
+        });
+    }
 }
 
 // --- Metadata Helper ---
@@ -875,8 +1462,9 @@ function closeDropdowns(except = null) {
 }
 
 function setupShareOverlay() {
-    els.shareBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
+    const openShare = (e) => {
+        if (e) e.stopPropagation();
+        closeDropdowns();
         
         const repo = els.repo.value.trim();
         const branch = els.branch.value.trim() || 'main';
@@ -889,21 +1477,31 @@ function setupShareOverlay() {
         const markdownBadge = `[![GitHubTree](${badgeImgUrl})](${shareUrl})`;
         const htmlBadge = `<a href="${shareUrl}"><img src="${badgeImgUrl}" alt="GitHubTree Structure"></a>`;
 
-        document.getElementById('badgeMarkdownPreview').src = badgeImgUrl;
-        document.getElementById('badgeHtmlPreview').src = badgeImgUrl;
+        const badgeMarkdownPreview = document.getElementById('badgeMarkdownPreview');
+        const badgeHtmlPreview = document.getElementById('badgeHtmlPreview');
+        if (badgeMarkdownPreview) badgeMarkdownPreview.src = badgeImgUrl;
+        if (badgeHtmlPreview) badgeHtmlPreview.src = badgeImgUrl;
 
-        document.getElementById('badgeMarkdownInput').value = markdownBadge;
-        document.getElementById('badgeHtmlInput').value = htmlBadge;
+        const badgeMarkdownInput = document.getElementById('badgeMarkdownInput');
+        const badgeHtmlInput = document.getElementById('badgeHtmlInput');
+        if (badgeMarkdownInput) badgeMarkdownInput.value = markdownBadge;
+        if (badgeHtmlInput) badgeHtmlInput.value = htmlBadge;
 
         els.overlay.classList.add('visible');
         trackEvent('Share', 'Open Modal');
-    });
+    };
+
+    if (els.shareBtn) els.shareBtn.addEventListener('click', openShare);
+    const moreShareBtn = document.getElementById('moreShareBtn');
+    if (moreShareBtn) moreShareBtn.addEventListener('click', openShare);
     
-    els.closeOverlay.addEventListener('click', () => els.overlay.classList.remove('visible'));
+    if (els.closeOverlay) els.closeOverlay.addEventListener('click', () => els.overlay.classList.remove('visible'));
     
-    els.overlay.addEventListener('click', (e) => {
-        if (e.target === els.overlay) els.overlay.classList.remove('visible');
-    });
+    if (els.overlay) {
+        els.overlay.addEventListener('click', (e) => {
+            if (e.target === els.overlay) els.overlay.classList.remove('visible');
+        });
+    }
     
     els.shareInput.addEventListener('click', () => els.shareInput.select());
     els.copyShareBtn.addEventListener('click', () => {
@@ -1085,7 +1683,7 @@ async function fetchLastUpdated(repo, path, branch) {
             if (commitInfo.empty) {
                 el.innerText = "No commit history found.";
             } else {
-                el.innerHTML = `${commitInfo.date} by <strong>${commitInfo.author}</strong> &mdash; <em>"${commitInfo.message}"</em>`;
+                el.innerHTML = `${escapeHtml(commitInfo.date)} by <strong>${escapeHtml(commitInfo.author)}</strong> &mdash; <em>"${escapeHtml(commitInfo.message)}"</em>`;
             }
             return;
         } catch(e) {}
@@ -1114,7 +1712,7 @@ async function fetchLastUpdated(repo, path, branch) {
                 message: message
             };
 
-            el.innerHTML = `${formattedDate} by <strong>${author}</strong> &mdash; <em>"${message}"</em>`;
+            el.innerHTML = `${escapeHtml(formattedDate)} by <strong>${escapeHtml(author)}</strong> &mdash; <em>"${escapeHtml(message)}"</em>`;
             sessionStorage.setItem(cacheKey, JSON.stringify(commitInfo));
         } else {
             el.innerText = "No commit history found.";

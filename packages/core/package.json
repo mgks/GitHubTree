@@ -1,11 +1,12 @@
 {
   "name": "gh-tree",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "High-performance CLI tool and API to visualize GitHub repository file structures as ASCII trees without cloning.",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "node --test test/*.test.js",
     "build": "echo 'No compile step needed for Pure JS' && exit 0"
   },
   "bin": {

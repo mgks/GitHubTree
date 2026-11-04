@@ -81,18 +81,37 @@
         <div class="search-section">
             <div class="input-group main-input">
                 <span class="prefix">github.com/</span>
-                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off">
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off" spellcheck="false">
             </div>
-            <div class="input-group branch-input">
-                <span class="prefix">branch:</span>
-                <input type="text" id="branchInput" placeholder="main" autocomplete="off">
+            <div class="input-group branch-input" id="branchInputGroup">
+                <button type="button" id="branchDropdownBtn" class="branch-prefix-btn" title="Choose branch">
+                    <i class="fas fa-code-fork"></i>
+                </button>
+                <input type="text" id="branchInput" placeholder="main" autocomplete="off" spellcheck="false" title="Branch name">
+                <i class="fas fa-chevron-down branch-caret"></i>
+                <div id="branchDropdown" class="branch-picker-dropdown" style="display: none;">
+                    <div id="branchListContainer" class="branch-picker-list">
+                        <div class="branch-empty-hint"><i class="fas fa-spinner fa-spin"></i> Click to load branches</div>
+                    </div>
+                </div>
             </div>
             <button id="fetchBtn" class="primary-btn">
-                <i class="fas fa-search"></i> Fetch
+                <i class="fas fa-search"></i> <span>Fetch</span>
             </button>
         </div>
 
         <div id="statusMsg" style="display: none;"></div>
+
+        <!-- Truncation Alert Caution Banner -->
+        <div id="truncationWarning" class="truncation-alert" style="display: none;">
+            <div class="alert-content">
+                <i class="fas fa-triangle-exclamation alert-icon"></i>
+                <div>
+                    <strong>Tree Truncated:</strong> GitHub API limited this tree to 100,000 entries (or 7MB payload). Some deeply nested files or subdirectories may not be visible.
+                </div>
+            </div>
+            <button type="button" id="closeTruncationWarning" class="alert-dismiss" aria-label="Dismiss">&times;</button>
+        </div>
 
         <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
             <div class="repo-meta-header">
@@ -123,7 +142,7 @@
                 
                 <!-- Column 2: Feature Request (only shown when not indexed) -->
                 <div class="repo-action-block" id="repoIndexCol" style="display: none;">
-                    <span class="action-label"><i class="fas fa-plus-circle"></i> Add to Directory</span>
+                    <span class="action-label"><i class="fas fa-plus-circle"></i> Feature Repo</span>
                     <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
                         <i class="fas fa-plus"></i> Feature Repo
                     </a>
@@ -146,7 +165,7 @@
                 <div class="section-header">
                     <h3>Featured Repositories</h3>
                     <a href="https://github.com/mgks/GitHubTree/issues/new?template=feature-repo.md&title=Feature+Repo:+owner/repo" target="_blank" class="section-cta">
-                        <i class="fas fa-plus"></i> Feature Your Repo
+                        <i class="fas fa-plus"></i> Feature Repo
                     </a>
                 </div>
                 <div id="recentCloud" class="featured-grid"></div>
@@ -163,53 +182,72 @@
             <div class="toolbar">
                 <div class="tools-left">
                     <div class="search-box-inline">
-                        <i class="fas fa-filter"></i>
-                        <input type="text" id="treeSearch" placeholder="Filter files..." autocomplete="off">
+                        <i class="fas fa-filter search-icon"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files (/regex/)..." autocomplete="off" spellcheck="false">
+                        <button type="button" id="clearTreeSearch" class="clear-search-btn" title="Clear filter" style="display: none;">&times;</button>
                     </div>
 
                     <div class="dropdown" id="sortDropdownContainer">
-                        <button class="tool-btn" id="sortBtn">
-                            <i class="fas fa-sort-amount-down"></i> <span id="sortBtnLabel" class="btn-text">Sort</span>
+                        <button class="tool-btn" id="sortBtn" title="Sort tree items">
+                            <i class="fas fa-arrow-down-short-wide"></i> <span id="sortBtnLabel" class="btn-text">Sort</span> <i class="fas fa-chevron-down dropdown-arrow-subtle"></i>
                         </button>
                         <div class="dropdown-content" id="sortDropdown">
-                            <a href="#" data-sort="folder-az">Folders (A-Z)</a>
-                            <a href="#" data-sort="folder-za">Folders (Z-A)</a>
-                            <a href="#" data-sort="alpha-az">Name (A-Z)</a>
-                            <a href="#" data-sort="alpha-za">Name (Z-A)</a>
+                            <a href="#" data-sort="folder-az"><i class="fas fa-folder"></i> Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za"><i class="fas fa-folder-tree"></i> Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az"><i class="fas fa-arrow-down-a-z"></i> Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za"><i class="fas fa-arrow-down-z-a"></i> Name (Z-A)</a>
                         </div>
                     </div>
 
-                    <div class="dropdown" id="styleDropdownContainer">
-                        <button class="tool-btn" id="styleBtn">
-                            <i class="fas fa-code-branch"></i> <span id="styleBtnLabel" class="btn-text">Style</span>
-                        </button>
-                        <div class="dropdown-content" id="styleDropdown">
-                            <a href="#" data-style="classic">Classic (└──)</a>
-                            <a href="#" data-style="slashed">Slashed (/src)</a>
-                            <a href="#" data-style="plus">ASCII (+--)</a>
-                            <a href="#" data-style="minimal">Minimal (Indent)</a>
-                            <a href="#" data-style="bulleted">Bulleted (•)</a>
-                        </div>
-                    </div>
-
-                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn responsive-btn">
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn">
                         <i class="fas fa-compress-alt"></i> <span class="btn-text">Compact</span>
                     </button>
-                    <button id="shareBtn" class="tool-btn responsive-btn">
-                        <i class="fas fa-share-alt"></i> <span class="btn-text">Share</span>
-                    </button>
+
+                    <span id="treeStatsSummary" class="tree-stats-badge" style="display: none;"></span>
                 </div>
 
                 <div class="tools-right">
-                    <button id="copyAllBtn" class="tool-btn action-btn always-visible">
+                    <div class="dropdown" id="moreDropdownContainer">
+                        <button class="tool-btn" id="moreBtn" title="Styles, Share & Export Options">
+                            <i class="fas fa-sliders"></i> <span class="btn-text">Options</span> <i class="fas fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content dropdown-right" id="moreDropdown">
+                            <div class="dropdown-section-title">Tree Style</div>
+                            <a href="#" data-style="classic" class="dropdown-item"><i class="fas fa-check style-check" id="check-classic"></i> Classic (└──)</a>
+                            <a href="#" data-style="slashed" class="dropdown-item"><i class="fas fa-check style-check" id="check-slashed" style="opacity:0"></i> Slashed (/src)</a>
+                            <a href="#" data-style="plus" class="dropdown-item"><i class="fas fa-check style-check" id="check-plus" style="opacity:0"></i> ASCII (+--)</a>
+                            <a href="#" data-style="minimal" class="dropdown-item"><i class="fas fa-check style-check" id="check-minimal" style="opacity:0"></i> Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted" class="dropdown-item"><i class="fas fa-check style-check" id="check-bulleted" style="opacity:0"></i> Bulleted (•)</a>
+                            
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-section-title">Actions</div>
+                            <a href="#" id="shareBtn" class="dropdown-item"><i class="fas fa-share-nodes"></i> Share View & Badge</a>
+                            <a href="#" id="exportAsciiBtn" class="dropdown-item"><i class="fas fa-bars-staggered"></i> Copy ASCII Tree</a>
+                            <a href="#" id="exportMarkdownBtn" class="dropdown-item"><i class="fa-brands fa-markdown"></i> Copy as Markdown</a>
+                            <a href="#" id="exportJsonBtn" class="dropdown-item"><i class="fas fa-code"></i> Copy as JSON</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" id="exportDownloadTxtBtn" class="dropdown-item"><i class="fas fa-download"></i> Download .txt</a>
+                            <a href="#" id="exportDownloadJsonBtn" class="dropdown-item"><i class="fas fa-file-arrow-down"></i> Download .json</a>
+                        </div>
+                    </div>
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible" title="Quick Copy Tree">
                         <i class="far fa-copy"></i> <span class="btn-text">Copy Tree</span>
                     </button>
                 </div>
             </div>
 
-            <div class="terminal-window">
+            <div class="terminal-window" tabindex="0" id="terminalWindow" aria-label="File Tree Container">
                 <div id="lineNumbers" class="line-col"></div>
                 <div id="treeContent" class="code-col"></div>
+            </div>
+
+            <div class="tree-shortcuts-bar">
+                <span class="shortcut-tip"><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+                <span class="shortcut-tip"><kbd>→</kbd><kbd>←</kbd> Expand / Collapse</span>
+                <span class="shortcut-tip"><kbd>Enter</kbd> Details</span>
+                <span class="shortcut-tip"><kbd>c</kbd> Copy Path</span>
+                <span class="shortcut-tip"><kbd>/</kbd> Search</span>
+                <span class="shortcut-tip"><kbd>Esc</kbd> Clear</span>
             </div>
         </div>
     </div>
