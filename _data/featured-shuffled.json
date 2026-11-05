@@ -1,146 +1,146 @@
 [
   {
-    "repo": "konbakuyomu/smartsearch",
+    "repo": "uzairansaruzi/p3-stack",
+    "branch": "main",
+    "language": "Shell",
+    "description": "pstack reworked for T3 Code: delegated subagents, worktree threads, PR watching, scheduled runs."
+  },
+  {
+    "repo": "0xhype/hyperliquid-tracker",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Get notified when big trades happen on Hyperliquid."
+  },
+  {
+    "repo": "gakiyukr/Codex_team_auto",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "rbrown101010/bluey-by-riley",
-    "branch": "main",
-    "language": "Swift",
-    "description": "Googly Eyes: a blueberry character on iPhone that points and acts on your Mac (Mac menu bar app + iOS app)"
-  },
-  {
-    "repo": "kdeldycke/awesome-falsehood",
-    "branch": "master",
-    "language": "Other",
-    "description": "😱 Falsehoods Programmers Believe in"
-  },
-  {
-    "repo": "apache/beam",
-    "branch": "master",
-    "language": "Java",
-    "description": "Apache Beam is a unified programming model for Batch and Streaming data processing."
-  },
-  {
-    "repo": "rabbitmq/rabbitmq-server",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins"
-  },
-  {
-    "repo": "huggingface/diffusers",
-    "branch": "main",
-    "language": "Python",
-    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
-  },
-  {
-    "repo": "wandb/wandb",
-    "branch": "main",
-    "language": "Python",
-    "description": "The AI developer platform. Use Weights & Biases to train and fine-tune models, and manage models from experimentation to production."
-  },
-  {
-    "repo": "filecoin-project/lotus",
-    "branch": "master",
-    "language": "Go",
-    "description": "Reference implementation of the Filecoin protocol, written in Go"
-  },
-  {
-    "repo": "mgks/GitHubTree",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Visualise any GitHub repository folder structure. Available as a web app, CLI tool, and node.js library."
-  },
-  {
-    "repo": "babel/babel",
+    "repo": "oomol-lab/open-connector",
     "branch": "main",
     "language": "TypeScript",
-    "description": "🐠 Babel is a compiler for writing next generation JavaScript."
+    "description": "Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI."
   },
   {
-    "repo": "flutter/flutter",
-    "branch": "master",
-    "language": "Dart",
-    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond"
-  },
-  {
-    "repo": "go-sql-driver/mysql",
-    "branch": "master",
-    "language": "Go",
-    "description": "Go MySQL Driver is a MySQL driver for Go's (golang) database/sql package"
-  },
-  {
-    "repo": "ipfs/kubo",
-    "branch": "master",
-    "language": "Go",
-    "description": "An IPFS implementation in Go"
-  },
-  {
-    "repo": "shadowsocks/shadowsocks-windows",
-    "branch": "master",
-    "language": "C#",
-    "description": "A C# port of shadowsocks"
-  },
-  {
-    "repo": "testing-library/react-testing-library",
+    "repo": "GuyWithTwoCats/TheGallery",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices."
+    "language": "CSS",
+    "description": "Fifty Fable-generated websites that you can use as style examples for your vibe-coded website designs."
   },
   {
-    "repo": "EbookFoundation/free-programming-books",
+    "repo": "rstagit/rstaspoof",
+    "branch": "main",
+    "language": "Go",
+    "description": "ابزار دور زدن DPI با جعل SNI — پشتیبانی از Termux/Android/Linux"
+  },
+  {
+    "repo": "ATOM00blue/machine-learning-library",
     "branch": "main",
     "language": "Python",
-    "description": ":books: Freely available programming books"
+    "description": "A hand-curated, topic-organized library of the best ML education — 923 docs (391 arXiv papers, 474 Stanford/MIT/Karpathy/fast.ai lectures, 58 explainer articles), normalized to Markdown with full provenance. Open it in Obsidian or point your agent at it. A clean ML corpus for learning, RAG & fine-tuning."
   },
   {
-    "repo": "deepset-ai/haystack",
-    "branch": "main",
-    "language": "MDX",
-    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots."
-  },
-  {
-    "repo": "Homebrew/brew",
-    "branch": "master",
-    "language": "Ruby",
-    "description": "🍺 The missing package manager for macOS (or Linux)"
-  },
-  {
-    "repo": "tensorflow/models",
-    "branch": "master",
-    "language": "Python",
-    "description": "Models and examples built with TensorFlow"
-  },
-  {
-    "repo": "Tencent/tdesign-react",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A React UI components lib for TDesign."
-  },
-  {
-    "repo": "cncf/landscape",
-    "branch": "master",
-    "language": "Other",
-    "description": "🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location."
-  },
-  {
-    "repo": "directus/directus",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more."
-  },
-  {
-    "repo": "Mufeedvh/Code2Prompt",
+    "repo": "encrypted-spaces/prototype",
     "branch": "main",
     "language": "Rust",
-    "description": "A CLI tool to convert your codebase into a single LLM prompt with source tree, prompt templating, and token counting."
+    "description": "A cryptographic framework for building collaborative applications over an untrusted server. Research prototype."
   },
   {
-    "repo": "redis/redis",
-    "branch": "unstable",
+    "repo": "x4gKing/Amnezia-VPN-Config",
+    "branch": "main",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "gakonst/nanocodex",
+    "branch": "master",
+    "language": "Rust",
+    "description": "Blazing-fast, minimal, library-first reimplementation of Codex"
+  },
+  {
+    "repo": "MatheuZSecurity/Furtex",
+    "branch": "main",
     "language": "C",
-    "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
+    "description": "Post-exploitation and evasion research toolkit for Linux."
+  },
+  {
+    "repo": "kppox/video-frame-sampler",
+    "branch": "main",
+    "language": "Python",
+    "description": "Content-aware frame sampling strategies for video-LLMs."
+  },
+  {
+    "repo": "ni5arga/protestchat",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Encrypted messaging with no internet, no cell tower, and no server. Phones relay for each other over Bluetooth mesh, so it keeps working during internet shutdowns and inside cellular jammers"
+  },
+  {
+    "repo": "garnix-io/garnix-ci",
+    "branch": "main",
+    "language": "Haskell",
+    "description": "CI and hosting for nix-based, flakified github repos"
+  },
+  {
+    "repo": "onetoken-oss/K3Flight",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Run Kimi K3 locally on CPU with ~55GB measured runtime RAM. A single-file Linux inference server powered by cPilot Runtime."
+  },
+  {
+    "repo": "NousResearch/Hermes-Bot-Mode",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Bot Mode for the Hermes desktop: a roster of named agents with their own chats, avatars, routines, and bot-to-bot messaging. Desktop plugin, no core patches."
+  },
+  {
+    "repo": "alfhamdy515-svg/NS-FW-AI-Image-and-Video-Generator-Uncensd",
+    "branch": "main",
+    "language": "C#",
+    "description": "A foundational toolkit for AI-driven image generation, focusing on creative expression and content creation."
+  },
+  {
+    "repo": "humanpen/humanpen-skill",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "duxweb/ReTheme",
+    "branch": "main",
+    "language": "Rust",
+    "description": "🎨 为 ChatGPT、Codex 桌面端打造的安全、可更新、社区驱动主题换肤软件。Open-source desktop theme manager and runtime for ChatGPT"
+  },
+  {
+    "repo": "edmicho/mm-probe-kit",
+    "branch": "main",
+    "language": "Python",
+    "description": "A small, hackable toolkit for probing multimodal LLMs — attention, hidden states, alignment, and causal tracing."
+  },
+  {
+    "repo": "jundizhou/easy-stock",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "Forsy-AI/forsy-trace-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open skill for capturing AI agent work as structured traces."
+  },
+  {
+    "repo": "LiteLLM-Labs/litellm-rust",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A minimal Rust gateway built for coding agents (LiteLLM-Compatible)"
+  },
+  {
+    "repo": "boona13/glb-shrink",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
   }
 ]
