@@ -1,146 +1,146 @@
 [
   {
-    "repo": "vorssaint/vorssaint-utils",
-    "branch": "main",
-    "language": "Swift",
-    "description": ""
-  },
-  {
-    "repo": "nesaminua/claude-code-lsp-enforcement-kit",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Hooks that force Claude Code to use LSP instead of Grep for code navigation. Saves   ~80% tokens"
-  },
-  {
-    "repo": "testing-library/react-testing-library",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices."
-  },
-  {
-    "repo": "CalyxOS/calyxos",
-    "branch": "main",
-    "language": "HTML",
-    "description": "CalyxOS - Google-free Android"
-  },
-  {
-    "repo": "VictoriaMetrics/VictoriaMetrics",
+    "repo": "lzh-phd/topic-feasibility-screener",
     "branch": "master",
-    "language": "Go",
-    "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database"
-  },
-  {
-    "repo": "github/gitignore",
-    "branch": "main",
-    "language": "Other",
-    "description": "A collection of useful .gitignore templates"
-  },
-  {
-    "repo": "EbookFoundation/free-programming-books",
-    "branch": "main",
     "language": "Python",
-    "description": ":books: Freely available programming books"
+    "description": "有大致的想法不知道怎么选题？只要给这个skills扔点数据，他能自动帮你延伸出多个idea，检索文献，并帮你跑初步回归验证实证可行性和理论可行性，最后打分排名，让你的科研第一步不再难堪！"
   },
   {
-    "repo": "refinedev/refine",
+    "repo": "locustio/locust",
     "branch": "master",
-    "language": "TypeScript",
-    "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility."
-  },
-  {
-    "repo": "nativefier/nativefier",
-    "branch": "development",
-    "language": "TypeScript",
-    "description": "Make any web page a desktop application"
-  },
-  {
-    "repo": "deepseek-ai/DeepSeek-VL",
-    "branch": "main",
     "language": "Python",
-    "description": "DeepSeek-VL: Towards Real-World Vision-Language Understanding"
+    "description": "Write scalable load tests in plain Python 🚗💨"
   },
   {
-    "repo": "realm/realm-swift",
-    "branch": "master",
-    "language": "Objective-C",
-    "description": "Realm is a mobile database: a replacement for Core Data & SQLite"
-  },
-  {
-    "repo": "yargs/yargs",
+    "repo": "miuda-ai/lele",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "yargs the modern, pirate-themed successor to optimist."
-  },
-  {
-    "repo": "docker/compose",
-    "branch": "main",
-    "language": "Go",
-    "description": "Define and run multi-container applications with Docker"
-  },
-  {
-    "repo": "golang/go",
-    "branch": "master",
-    "language": "Go",
-    "description": "The Go programming language"
-  },
-  {
-    "repo": "godotengine/godot-docs",
-    "branch": "master",
-    "language": "reStructuredText",
-    "description": "Godot Engine official documentation"
-  },
-  {
-    "repo": "typeorm/typeorm",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms."
-  },
-  {
-    "repo": "standard/standard",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "🌟 JavaScript Style Guide, with linter & automatic code fixer"
-  },
-  {
-    "repo": "huggingface/peft",
-    "branch": "main",
-    "language": "Python",
-    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
-  },
-  {
-    "repo": "getify/You-Dont-Know-JS",
-    "branch": "master",
-    "language": "Other",
-    "description": "A book series (2 published editions) on the JS language."
-  },
-  {
-    "repo": "tokio-rs/tokio",
-    "branch": "master",
     "language": "Rust",
-    "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
+    "description": "Bare-Metal Rust Audio AI Framework"
   },
   {
-    "repo": "tensorflow/tensorflow",
+    "repo": "jackwener/wx-cli",
+    "branch": "main",
+    "language": "Rust",
+    "description": "WeChat local data CLI with daemon architecture"
+  },
+  {
+    "repo": "akullpp/awesome-java",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome frameworks, libraries and software for the Java programming language."
+  },
+  {
+    "repo": "Mrack/TInjector_Symbi",
     "branch": "master",
     "language": "C++",
-    "description": "An Open Source Machine Learning Framework for Everyone"
+    "description": "更稳定的劫持Zygote在App启动前注入so"
   },
   {
-    "repo": "metallb/metallb",
+    "repo": "dgreenheck/webgpu-claude-skill",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A Claude skill for developing WebGPU applications with Three.js"
+  },
+  {
+    "repo": "dask/dask",
+    "branch": "main",
+    "language": "Python",
+    "description": "Parallel computing with task scheduling"
+  },
+  {
+    "repo": "terausss/Polymarket-Kalshi-Arbitrage-Bot",
+    "branch": "main",
+    "language": "Rust",
+    "description": "polymarket-kalshi-arbitrage-bot polymarket arbitrage bot kalshi-arbitrage bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot"
+  },
+  {
+    "repo": "mrdoob/three-quake",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "A port of Quake (1996) to Three.js."
+  },
+  {
+    "repo": "balancer/balancer-v2-monorepo",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "Balancer V2 Monorepo"
+  },
+  {
+    "repo": "sorrycc/awesome-javascript",
+    "branch": "master",
+    "language": "Other",
+    "description": "🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things."
+  },
+  {
+    "repo": "cri-o/cri-o",
     "branch": "main",
     "language": "Go",
-    "description": "A network load-balancer implementation for Kubernetes using standard routing protocols"
+    "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface"
   },
   {
-    "repo": "BurntSushi/ripgrep",
+    "repo": "antfu/skills-npm",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Install agent skills from npm"
+  },
+  {
+    "repo": "sdmg15/Best-websites-a-programmer-should-visit",
     "branch": "master",
-    "language": "Rust",
-    "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore"
+    "language": "Other",
+    "description": ":link: Some useful websites for programmers."
   },
   {
-    "repo": "jackc/pgx",
+    "repo": "suborbital/sat",
+    "branch": "main",
+    "language": "Go",
+    "description": "Tiny & fast WebAssembly edge compute server"
+  },
+  {
+    "repo": "pyinstaller/pyinstaller",
+    "branch": "develop",
+    "language": "Python",
+    "description": "Freeze (package) Python programs into stand-alone executables"
+  },
+  {
+    "repo": "six2dez/burp-ai-agent",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more"
+  },
+  {
+    "repo": "wasabeef/awesome-android-ui",
+    "branch": "master",
+    "language": "Other",
+    "description": "A curated list of awesome Android UI/UX libraries"
+  },
+  {
+    "repo": "pyinvoke/invoke",
+    "branch": "main",
+    "language": "Python",
+    "description": "Pythonic task management & command execution."
+  },
+  {
+    "repo": "encode/starlette",
+    "branch": "master",
+    "language": "Python",
+    "description": "The little ASGI framework that shines. 🌟"
+  },
+  {
+    "repo": "portainer/portainer",
+    "branch": "develop",
+    "language": "TypeScript",
+    "description": "Making Docker and Kubernetes management easy."
+  },
+  {
+    "repo": "dagster-io/dagster",
+    "branch": "master",
+    "language": "Python",
+    "description": "An orchestration platform for the development, production, and observation of data assets."
+  },
+  {
+    "repo": "tilt-dev/tilt",
     "branch": "master",
     "language": "Go",
-    "description": "PostgreSQL driver and toolkit for Go"
+    "description": "Define your dev environment as code. For microservice apps on Kubernetes."
   }
 ]
