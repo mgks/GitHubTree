@@ -1,146 +1,146 @@
 [
   {
-    "repo": "nsqio/nsq",
-    "branch": "master",
-    "language": "Go",
-    "description": "A realtime distributed messaging platform"
-  },
-  {
-    "repo": "coollabsio/jean",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Run AI agents parallel in isolated workspaces."
-  },
-  {
-    "repo": "mermaid-js/mermaid",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
-  },
-  {
-    "repo": "jangafx/FMAG",
-    "branch": "main",
-    "language": "C",
-    "description": "A single-instruction GPU virtual machine and toolchain"
-  },
-  {
-    "repo": "react-native-video/react-native-video",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "A <Video /> component for react-native"
-  },
-  {
-    "repo": "VoltAgent/awesome-design-md",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI."
-  },
-  {
-    "repo": "open-gsd/get-shit-done-redux",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Getting Shit Done, the Aftermath"
-  },
-  {
-    "repo": "matplotlib/matplotlib",
-    "branch": "main",
-    "language": "Python",
-    "description": "matplotlib: plotting with Python"
-  },
-  {
-    "repo": "encode/httpx",
-    "branch": "master",
-    "language": "Python",
-    "description": "A next generation HTTP client for Python. 🦋"
-  },
-  {
-    "repo": "sympy/sympy",
-    "branch": "master",
-    "language": "Python",
-    "description": "A computer algebra system written in pure Python"
-  },
-  {
-    "repo": "NirDiamant/GenAI_Agents",
-    "branch": "main",
-    "language": "Jupyter Notebook",
-    "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems."
-  },
-  {
-    "repo": "boto/boto3",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Boto3, an AWS SDK for Python"
-  },
-  {
-    "repo": "xuanyuanzhifeng/easytshark",
-    "branch": "main",
-    "language": "C",
-    "description": "一款开源的简洁好用的网络抓包分析软件"
-  },
-  {
-    "repo": "simoncirstoiu/alice",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Analyse · Learn · Ingest · Curate · Export — AI-powered YOLO dataset management toolkit"
-  },
-  {
-    "repo": "DataDog/datadog-agent",
-    "branch": "main",
-    "language": "Go",
-    "description": "Main repository for Datadog Agent"
-  },
-  {
-    "repo": "reduxjs/redux-thunk",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Thunk middleware for Redux"
-  },
-  {
-    "repo": "blairxu13/persona3-website",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": ""
-  },
-  {
-    "repo": "Wendor/teapod-stream",
-    "branch": "master",
-    "language": "Dart",
-    "description": ""
-  },
-  {
-    "repo": "newrelic/newrelic-java-agent",
-    "branch": "main",
-    "language": "Java",
-    "description": "The New Relic Java agent"
-  },
-  {
-    "repo": "areofyl/fetch",
-    "branch": "main",
-    "language": "C",
-    "description": "An animated 3D fetch tool for your terminal. Takes your distro's ASCII logo, turns it into a spinning 3D object, and displays system info alongside it."
-  },
-  {
-    "repo": "cloudflare/pingora",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A library for building fast, reliable and evolvable network services."
-  },
-  {
-    "repo": "cathrynlavery/openclaw-ops",
+    "repo": "justxor/claude-code-pro-course",
     "branch": "main",
     "language": "Shell",
-    "description": "OpenClaw operations skill with health checks, repair scripts, watchdogs, update triage, and security scans."
+    "description": "Claude Code PRO — полный курс и гайд на русском: CLAUDE.md, settings, skills, subagents, hooks, MCP, плагины, CI. 8 лабораторных, библиотека промптов и готовый starter-kit. Здесь бесплатные курсы  по chatgpt -"
   },
   {
-    "repo": "facebook/litho",
+    "repo": "InstaPy/InstaPy",
+    "branch": "master",
+    "language": "Python",
+    "description": "📷 Instagram Bot - Tool for automated Instagram interactions"
+  },
+  {
+    "repo": "0xSero/turboquant",
+    "branch": "main",
+    "language": "Python",
+    "description": "TurboQuant: Near-optimal KV cache quantization for LLM inference (3-bit keys, 2-bit values) with Triton kernels + vLLM integration"
+  },
+  {
+    "repo": "missing-semester/missing-semester",
+    "branch": "master",
+    "language": "CSS",
+    "description": "The Missing Semester of Your CS Education 📚"
+  },
+  {
+    "repo": "pytorch/serve",
+    "branch": "master",
+    "language": "Java",
+    "description": "Serve, optimize and scale PyTorch models in production"
+  },
+  {
+    "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "The largest open-source medical AI skills library for OpenClaw🦞."
+  },
+  {
+    "repo": "rohanarun/phoneclaw",
     "branch": "main",
     "language": "Kotlin",
-    "description": "A declarative framework for building efficient UIs on Android."
+    "description": "A version of openClaw/Clawdbot that automates android phones entirely without root, including all apps from a side-loaded APK. Acts as your 24/7 personal assistant on your phone."
   },
   {
-    "repo": "NVIDIA/cuda-samples",
-    "branch": "master",
+    "repo": "leonyx007/Polymarket-Trading-Bot-Rust",
+    "branch": "main",
+    "language": "Rust",
+    "description": "polymarket bot polymarket trading bot polymarket arbitrage bot polymarket trading bot polymarket rust trading bot polymarket trading bot v2 polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket trading bot polymarket arb trading bot polymarket 5min trading bot 15min btc trading bot"
+  },
+  {
+    "repo": "github/copilot-docs",
+    "branch": "main",
+    "language": "Other",
+    "description": "Documentation for GitHub Copilot"
+  },
+  {
+    "repo": "daehyeonmun2021/react-native-skia-lab",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Beautiful react-native-skia demo built by Daehyeon Mun"
+  },
+  {
+    "repo": "fastify/fastify",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Fast and low overhead web framework, for Node.js"
+  },
+  {
+    "repo": "yangdongchao/UniAudio2",
+    "branch": "main",
+    "language": "Python",
+    "description": "UniAudio 2.0: An audio fundation model for text, speech, sound, and music"
+  },
+  {
+    "repo": "HzWeta/Delta-For-Roblox-PC-Edition",
+    "branch": "main",
+    "language": "C++",
+    "description": "Delta For Roblox PC Edition delivers a smooth and optimized Roblox experience on Windows. Enjoy better performance, higher FPS, widescreen support, and enhanced stability while playing your favorite Roblox games on desktop."
+  },
+  {
+    "repo": "Octoberfest7/SilentHarvest_BOF",
+    "branch": "main",
     "language": "C",
-    "description": "Samples for CUDA Developers which demonstrates features in CUDA Toolkit"
+    "description": "A Cobalt Strike BOF implementation of the SilentHarvest registry dumping technique"
+  },
+  {
+    "repo": "wh0amitz/TailVNC",
+    "branch": "master",
+    "language": "Go",
+    "description": "Tailscale-based Windows VNC persistence tool with Session 0 isolation bypass, embedding a full WireGuard peer and RFB server into a single drop-in binary."
+  },
+  {
+    "repo": "samyns/Unit-3",
+    "branch": "main",
+    "language": "QML",
+    "description": "Hyprland + Quickshell + Waybar rice for Arch Linux, NieR:Automata themed"
+  },
+  {
+    "repo": "aave/aave-v2",
+    "branch": "master",
+    "language": "Other",
+    "description": "Aave Protocol V2"
+  },
+  {
+    "repo": "AKCodez/hackingtool-plugin",
+    "branch": "main",
+    "language": "Python",
+    "description": "Claude Code plugin: 183+ pentesting & OSINT tools from Z4nzu/hackingtool. Auto-runs what it can, hands off the rest."
+  },
+  {
+    "repo": "scikit-learn/scikit-learn",
+    "branch": "main",
+    "language": "Python",
+    "description": "scikit-learn: machine learning in Python"
+  },
+  {
+    "repo": "Textualize/rich",
+    "branch": "master",
+    "language": "Python",
+    "description": "Rich is a Python library for rich text and beautiful formatting in the terminal."
+  },
+  {
+    "repo": "AgriciDaniel/claude-seo",
+    "branch": "main",
+    "language": "Python",
+    "description": "Universal SEO skill for Claude Code. Comprehensive SEO analysis for any website or business type."
+  },
+  {
+    "repo": "agentforce314/clawcodex",
+    "branch": "main",
+    "language": "Python",
+    "description": "ClawCodex - A production-oriented Python rebuild of Claude Code — Supporting OpenAI, Gemini, Claude, DeepSeek, Codex, and many models via OpenAI-compatible APIs"
+  },
+  {
+    "repo": "balabala-sean/stock-analysis",
+    "branch": "main",
+    "language": "Python",
+    "description": "面相A股市场的量化交易的脚手架工具（轻量级），涵盖历史/实时数据查询、策略信号、触达等功能，可以自由进行因子开发/交易模块的扩展，适合快速上手量化开发。"
+  },
+  {
+    "repo": "neovim/neovim",
+    "branch": "master",
+    "language": "Vim Script",
+    "description": "Vim-fork focused on extensibility and usability"
   }
 ]
