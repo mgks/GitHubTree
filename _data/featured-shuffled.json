@@ -1,9 +1,45 @@
 [
   {
-    "repo": "lusouldepth-ai/FDE_Learning",
+    "repo": "mujocolab/mjviser",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "Web-based MuJoCo viewer powered by Viser"
+  },
+  {
+    "repo": "YeQing17-2026/OmniAgent",
+    "branch": "main",
+    "language": "Python",
+    "description": "An agent capable of self-evolving and dynamically hardening security"
+  },
+  {
+    "repo": "omnimind-ai/OmniInfer",
+    "branch": "main",
+    "language": "C++",
+    "description": "Cross-platform LLM inference framework for efficient edge deployment"
+  },
+  {
+    "repo": "silverstein/minutes",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Every meeting, every idea, every voice note — searchable by your AI. Open-source, privacy-first conversation memory layer."
+  },
+  {
+    "repo": "LawmakerTreasure/deepseek-openclaw",
+    "branch": "main",
+    "language": "HTML",
+    "description": "OpenClaw for DeepSeek — a lightweight starter app for connecting DeepSeek models through OpenClaw with a clean UI and simple setup."
+  },
+  {
+    "repo": "ALKAERR/Kali_Hack_Agent",
+    "branch": "master",
+    "language": "Python",
+    "description": "一个基于三层 Agent 架构的容器代码执行系统，专门用于在 Kali Linux Docker 容器中安全、自动地执行渗透测试工具。"
+  },
+  {
+    "repo": "browser-use/browser-harness-js",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Self-healing browser harness that enables LLMs to complete any task"
   },
   {
     "repo": "deepcon3/Binance-Claw",
@@ -12,135 +48,99 @@
     "description": "Binance-Claw Lightning-fast Binance price sniper, real-time monitor & OpenClaw skill — written in Rust"
   },
   {
-    "repo": "dateutil/dateutil",
-    "branch": "master",
-    "language": "Python",
-    "description": "Useful extensions to the standard Python datetime features"
-  },
-  {
-    "repo": "cosmiciron/vmprint",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A pure-JS, zero-dependency typesetting engine that yields bit-perfect PDF output across any runtime—from Cloudflare Workers to the browser. Stop using Headless Chrome to print text."
-  },
-  {
-    "repo": "syncthing/syncthing",
-    "branch": "main",
-    "language": "Go",
-    "description": "Open Source Continuous File Synchronization"
-  },
-  {
-    "repo": "roboflow/rf-detr",
+    "repo": "lukasHoel/video_to_world",
     "branch": "main",
     "language": "Python",
-    "description": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO and designed for fine-tuning."
+    "description": "Our method reconstructs 3D worlds from video diffusion models using non-rigid alignment to resolve inherent 3D inconsistencies in the generated sequences."
   },
   {
-    "repo": "PyCQA/isort",
+    "repo": "aidenboomhero/Subnautica-2-PS5-Port",
     "branch": "main",
-    "language": "Python",
-    "description": "A Python utility / library to sort imports."
+    "language": "C++",
+    "description": "Subnautica 2 PS5 Port download sequel underwater survival ocean base building crafting leviathans co-op multiplayer exploration biomes creatures sea submarines planet blueprints oxygen resources vehicles equipment abyss scuba ecosystem alien technology flora fauna deep sea diving."
   },
   {
-    "repo": "bokeh/bokeh",
-    "branch": "branch-3.4",
-    "language": "TypeScript",
-    "description": "Interactive Data Visualization in the browser, from  Python"
-  },
-  {
-    "repo": "twbs/bootstrap",
-    "branch": "main",
-    "language": "MDX",
-    "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web."
-  },
-  {
-    "repo": "TheAlgorithms/Python",
-    "branch": "master",
-    "language": "Python",
-    "description": "All Algorithms implemented in Python"
-  },
-  {
-    "repo": "matplotlib/matplotlib",
-    "branch": "main",
-    "language": "Python",
-    "description": "matplotlib: plotting with Python"
-  },
-  {
-    "repo": "influxdata/influxdb",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Scalable datastore for metrics, events, and real-time analytics"
-  },
-  {
-    "repo": "cockroachdb/cockroach",
-    "branch": "master",
-    "language": "Go",
-    "description": "CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement."
-  },
-  {
-    "repo": "graphql/graphql-js",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "A reference implementation of GraphQL for JavaScript"
-  },
-  {
-    "repo": "square/okhttp",
+    "repo": "mockk/mockk",
     "branch": "master",
     "language": "Kotlin",
-    "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM."
+    "description": "mocking library for Kotlin"
   },
   {
-    "repo": "jenkinsci/jenkins",
+    "repo": "Keychron/Keychron-Keyboards-Hardware-Design",
+    "branch": "main",
+    "language": "Python",
+    "description": "All the industrial design files for Keychron keyboards and mice. Includes CAD models (case, plate, stabilizer, encoder, keycap) for Q, Q Pro, Q HE, K Pro, K Max, K HE, V Max, P HE series and M1–M7 mice. 100+ models. STEP/DXF/PDF formats. This project is source-available. Commercial use is strictly prohibited."
+  },
+  {
+    "repo": "patterniha/MITM-DomainFronting",
+    "branch": "main",
+    "language": "Batchfile",
+    "description": "Receiving unencrypted data with MITM, Then send it with DomainFronting"
+  },
+  {
+    "repo": "jakobfriedl/tgt-monitor-bof",
+    "branch": "main",
+    "language": "C",
+    "description": "Async BOF implementation of 'Rubeus monitor' to detect and automatically extract Kerberos TGTs as they appear on a target system."
+  },
+  {
+    "repo": "luxine/CalcKernel",
+    "branch": "main",
+    "language": "Rust",
+    "description": "CalcKernel compiler, runtime, tests, examples, documentation, and public releases"
+  },
+  {
+    "repo": "itcaat/mtproto-installer",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Ускоритель телеграм =)"
+  },
+  {
+    "repo": "Morgensonne/EditDeck",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "react-native-camera/react-native-camera",
     "branch": "master",
     "language": "Java",
-    "description": "Jenkins automation server"
+    "description": "A Camera component for React Native. Also supports barcode scanning!"
   },
   {
-    "repo": "mongodb/mongo",
-    "branch": "master",
+    "repo": "Aircoookie/WLED",
+    "branch": "main",
     "language": "C++",
-    "description": "The MongoDB Database"
+    "description": "Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!"
   },
   {
-    "repo": "scipy/scipy",
+    "repo": "esp-rs/esp-idf-hal",
     "branch": "main",
-    "language": "Python",
-    "description": "SciPy library main repository"
+    "language": "Rust",
+    "description": "embedded-hal implementation for Rust on ESP32 and ESP-IDF"
   },
   {
-    "repo": "videojs/video.js",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Video.js - open source HTML5 video player"
-  },
-  {
-    "repo": "atom/atom",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": ":atom: The hackable text editor"
-  },
-  {
-    "repo": "freqtrade/freqtrade",
-    "branch": "develop",
-    "language": "Python",
-    "description": "Free, open source crypto trading bot"
-  },
-  {
-    "repo": "nanostores/nanostores",
+    "repo": "dashkit-protocol/polymarket-arbitrage-bot",
     "branch": "main",
     "language": "TypeScript",
-    "description": "A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores"
+    "description": "polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot, polymarket arbitrage bot"
   },
   {
-    "repo": "mochajs/mocha",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "☕️ Classic, reliable, trusted test framework for Node.js and the browser"
-  },
-  {
-    "repo": "spotipy-dev/spotipy",
-    "branch": "master",
+    "repo": "walter-grace/mac-code",
+    "branch": "main",
     "language": "Python",
-    "description": "A light weight Python library for the Spotify Web API"
+    "description": "mac code — Claude Code, but it runs on your Mac for free.   35B AI agent at 30 tok/s via Apple Silicon flash-paging. $0/month."
+  },
+  {
+    "repo": "bababuyyy/unity-isometric-pixel-pipeline",
+    "branch": "main",
+    "language": "ShaderLab",
+    "description": "Pixel art isometric render pipeline for Unity 6 URP — toon shading, GPU grass, outline, sharp upscale"
+  },
+  {
+    "repo": "robinebers/openusage",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "A plugin-based menu bar app for tracking AI coding tool subscriptions like Cursor, Claude, Codex and more, all in one place with a heavy focus user experience, speed, and stability."
   }
 ]
