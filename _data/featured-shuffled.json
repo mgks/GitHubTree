@@ -1,146 +1,146 @@
 [
   {
-    "repo": "anthropics/FlashProve",
-    "branch": "main",
-    "language": "Lean",
-    "description": "A research prototype for zero-knowledge proofs of AI inference. Not maintained."
-  },
-  {
-    "repo": "tonbistudio/buzz-skills",
+    "repo": "SaarthurR/atticus-mac",
     "branch": "main",
     "language": "Python",
-    "description": ""
+    "description": "Fast, free voice assistant for your Mac. No API key: runs on your Claude Pro or Max plan. Remembers you and learns your shortcuts. Hold ⌃⌥Space and talk."
   },
   {
-    "repo": "TryCaspian/caspian-sdk",
+    "repo": "guanmo-ai/awesome-ai-motion",
     "branch": "main",
-    "language": "Python",
-    "description": "One identity for your AI agent across every channel humans use: Slack, Discord, Telegram, Instagram, email, X, behind a single on_message handler. Channel adapters + SDK + CLI."
-  },
-  {
-    "repo": "UNDERdecoded/Gen2Recomped",
-    "branch": "main",
-    "language": "C",
-    "description": "Generation 2 Pokemon Recomp forked from Gen1Recomp and modified"
-  },
-  {
-    "repo": "SheberDavid/v4-flash-godmode-opencode-go",
-    "branch": "master",
     "language": "JavaScript",
-    "description": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset"
+    "description": "精选 AI 动画与视频：作品封面、可播放案例、作者原始提示词与来源。Curated AI motion & video with original prompts. Focused on Claude Opus 5.5."
   },
   {
-    "repo": "ni5arga/protestchat",
+    "repo": "featherless-ai/simple-jev",
+    "branch": "main",
+    "language": "Python",
+    "description": "Turn any open model into a classifier/jev endpoint"
+  },
+  {
+    "repo": "kerpopule/hermes-jev-skills",
+    "branch": "main",
+    "language": "Python",
+    "description": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)"
+  },
+  {
+    "repo": "ythx-101/live-panel-skill",
+    "branch": "main",
+    "language": "HTML",
+    "description": "Config-driven animated architecture diagrams: turn one JSON file into a terminal-style, always-running diagram or a light-theme infographic that moves. Outputs H.264 mp4 or a live web page; also a Claude Code style skill (SKILL.md)."
+  },
+  {
+    "repo": "alpcanaydin/tusk",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A fast, native, keyboard-driven database client for macOS. 20 databases, an AI assistant that shows its work, free and open source."
+  },
+  {
+    "repo": "KKKKhazix/AIHOT",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Encrypted messaging with no internet, no cell tower, and no server. Phones relay for each other over Bluetooth mesh, so it keeps working during internet shutdowns and inside cellular jammers"
+    "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。"
   },
   {
-    "repo": "machinefi/trio-retina",
-    "branch": "main",
-    "language": "Python",
-    "description": "Model-agnostic state layer for world models — turn any detector (YOLO · VLM · DINO) into one standard, queryable stream of events + latent state. numpy-only, runs on CPU at the edge."
-  },
-  {
-    "repo": "chaitanyagiri/munder-difflin",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "local multi-agent harness"
-  },
-  {
-    "repo": "FFF686868/proxypin-wloc-spoofer",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "ProxyPin script for authorized iOS Apple WLOC response rewriting tests"
-  },
-  {
-    "repo": "Liquid4All/antidoom",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "Nai64/Nai64Patches",
-    "branch": "main",
-    "language": "Kotlin",
-    "description": "Morphe patches: Ads Free Rewards, No Ads, Remove telemetry and more."
-  },
-  {
-    "repo": "angieruiz17/claude-fintech-skills",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "claude fintech skills of running fintech infra, trading platforms, and borker-side systems in production"
-  },
-  {
-    "repo": "MarvinSchwaibold/mri-grid-viewer",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Local-first MRI series grid viewer with a SwiftUI iOS wrapper"
-  },
-  {
-    "repo": "cosmtrek/mindwalk",
-    "branch": "master",
-    "language": "Go",
-    "description": "A visualization tool that replays coding-agent sessions on a 3D map of your codebase."
-  },
-  {
-    "repo": "Moore-developers/moore-wechat-article-downloader",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "Dr-TSNG/PolyglotYT",
-    "branch": "master",
-    "language": "Kotlin",
-    "description": "Immersive translation Xposed module for YouTube app"
-  },
-  {
-    "repo": "antiwork/chromeless",
-    "branch": "main",
-    "language": "Swift",
-    "description": "The browser that isn't there — zero-chrome macOS browser for clean screenshots and fullscreen video. One Swift file."
-  },
-  {
-    "repo": "ridgekhanice/undress-ai-image-video-generator",
-    "branch": "main",
-    "language": "Python",
-    "description": "An easy-to-use AI-powered image and video generation tool designed for Windows"
-  },
-  {
-    "repo": "PitShipwrightGraph/MecchaPhantom",
-    "branch": "main",
-    "language": "Python",
-    "description": "🦎 MecchaPhantom – complete hack tool for MECCHA CHAMELEON. Features ESP wallhack, aimbot, fly hack, teleport, god mode, infinite paint, speed hack, and more. Dominate the hide-and-seek battlefield!"
-  },
-  {
-    "repo": "djfksjd/ir-search",
-    "branch": "main",
-    "language": "Python",
-    "description": "🇰🇷 한국 정부 지원사업 전수조사 Claude Code 스킬 — K-Startup·기업마당·NIPA·KOCCA·SMTECH 크롤링 + 프로젝트 프로필 기반 즉시/로드맵/변형 3분류 (Korea-only)"
-  },
-  {
-    "repo": "i3T4AN/KADATH",
-    "branch": "main",
-    "language": "Python",
-    "description": "Evolutionary multi-agent runtime that breeds, evaluates, and improves autonomous agents across reproducible epochs to converge on optimization of a goal."
-  },
-  {
-    "repo": "extreme-inject/Extreme-Injector",
+    "repo": "blackbearreloaded/ProsperoEden",
     "branch": "main",
     "language": "C++",
-    "description": "dll injection tool memory injector manual map thread hijacking loadlibrary process selector game modding trainer windows 11 windows 10"
+    "description": "Experimental Eden port for PS5"
   },
   {
-    "repo": "Haleclipse/cscience",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Claude Science Rebuild"
-  },
-  {
-    "repo": "SilentFleetKK/ai-market-pulse",
+    "repo": "empero-org/brewery-ai",
     "branch": "main",
     "language": "Python",
-    "description": "Turn any watchlist into a daily AI market research report — a quant research cockpit or a zero-code daily report tool."
+    "description": "An intuitive console agent to fine-tune AI models with little to no experience required!"
+  },
+  {
+    "repo": "unclebob/uml-viewer",
+    "branch": "master",
+    "language": "Clojure",
+    "description": "Live Quil UML class-diagram viewer driven by EDN"
+  },
+  {
+    "repo": "incoai/splash",
+    "branch": "main",
+    "language": "Python",
+    "description": "A local inference engine for Apple silicon, built around the model."
+  },
+  {
+    "repo": "TianyuCodings/NanoJev",
+    "branch": "main",
+    "language": "Python",
+    "description": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline."
+  },
+  {
+    "repo": "storytold/vectorcraft",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "DanFessler/trellis",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Fractal layouts for web apps: nest panels to any depth, zoom to the part you need, and keep every view alive."
+  },
+  {
+    "repo": "adonis-singh/re4",
+    "branch": "master",
+    "language": "C++",
+    "description": "Resident Evil 4 (GameCube, G4BE08 debug build) — complete byte-identical decompilation to C/C++"
+  },
+  {
+    "repo": "dagowda/notRDP",
+    "branch": "main",
+    "language": "C",
+    "description": ""
+  },
+  {
+    "repo": "HyNetworks/OpenGFW",
+    "branch": "master",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "kangkungmozzarella/kantor-ai",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Kantor Kita: interactive 3D paper-model office for a 13-person team"
+  },
+  {
+    "repo": "planetscale/lead",
+    "branch": "main",
+    "language": "Rust",
+    "description": "A non-production Postgres text-search extension for exercising TIN-compatible application SQL in development, test, CI, and staging environments"
+  },
+  {
+    "repo": "jarrodwatts/claude-image-view",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "See the images you paste into Claude Code: thumbnails above the prompt instead of bare [Image #1] tags"
+  },
+  {
+    "repo": "storytold/printcraft",
+    "branch": "main",
+    "language": "Rust",
+    "description": ""
+  },
+  {
+    "repo": "pch/rawmakase",
+    "branch": "main",
+    "language": "Rust",
+    "description": "Free Lightroom alternative for Linux and macOS (possibly Windows too - not tested)"
+  },
+  {
+    "repo": "InternLM/Intern-Decision",
+    "branch": "main",
+    "language": "Python",
+    "description": "Fast multi-modal decision model"
+  },
+  {
+    "repo": "coolbbcamp/Synthetic-Liquidity-Depth-Scanner",
+    "branch": "main",
+    "language": "Python",
+    "description": "Executable cash-exit capacity for Solana tokenized equities and stock-quoted launches — measured, not estimated."
   }
 ]
