@@ -1,146 +1,146 @@
 [
   {
-    "repo": "mrhlaingbwardev/agentic-hacking-skills",
+    "repo": "anthropics/FlashProve",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)"
+    "language": "Lean",
+    "description": "A research prototype for zero-knowledge proofs of AI inference. Not maintained."
   },
   {
-    "repo": "vasilytrofimchuk/domainsearcher-app",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Score and choose the best domain name for your startup — AI-powered generation, real-time availability, and multi-dimensional scoring (LEN, PRO, MEM, BRD, FIT). Free, no signup."
-  },
-  {
-    "repo": "onnx/onnx",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open standard for machine learning interoperability"
-  },
-  {
-    "repo": "Significant-Gravitas/AutoGPT",
-    "branch": "master",
-    "language": "Python",
-    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
-  },
-  {
-    "repo": "Fenng/Tech-Doc-Style-Chinese",
-    "branch": "main",
-    "language": "Python",
-    "description": "Yet another reusable writing skill for Chinese technical documentation and product copy."
-  },
-  {
-    "repo": "garrytan/gbrain",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Garry's Opinionated OpenClaw Brain"
-  },
-  {
-    "repo": "SentiAvatar/SentiAvatar",
+    "repo": "tonbistudio/buzz-skills",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "paperclipai/paperclip",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "Open-source orchestration for zero-human companies"
-  },
-  {
-    "repo": "microsoft/vscode",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Visual Studio Code"
-  },
-  {
-    "repo": "ProjectBarks/gopher-code",
-    "branch": "main",
-    "language": "Go",
-    "description": "Claude Code, rewritten from scratch in Go. Zero Node.js. Zero Electron. One binary."
-  },
-  {
-    "repo": "FrankDavis236869/spyder-osint",
+    "repo": "TryCaspian/caspian-sdk",
     "branch": "main",
     "language": "Python",
-    "description": "Spyder OSINT GUI — Graphical open-source intelligence research tool for phone number lookup, IP geolocation, social media reconnaissance, email validation, domain WHOIS, username search, with multi-module architecture and Tkinter-based interface for digital forensics"
+    "description": "One identity for your AI agent across every channel humans use: Slack, Discord, Telegram, Instagram, email, X, behind a single on_message handler. Channel adapters + SDK + CLI."
   },
   {
-    "repo": "gridex/gridex",
+    "repo": "UNDERdecoded/Gen2Recomped",
+    "branch": "main",
+    "language": "C",
+    "description": "Generation 2 Pokemon Recomp forked from Gen1Recomp and modified"
+  },
+  {
+    "repo": "SheberDavid/v4-flash-godmode-opencode-go",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset"
+  },
+  {
+    "repo": "ni5arga/protestchat",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Encrypted messaging with no internet, no cell tower, and no server. Phones relay for each other over Bluetooth mesh, so it keeps working during internet shutdowns and inside cellular jammers"
+  },
+  {
+    "repo": "machinefi/trio-retina",
+    "branch": "main",
+    "language": "Python",
+    "description": "Model-agnostic state layer for world models — turn any detector (YOLO · VLM · DINO) into one standard, queryable stream of events + latent state. numpy-only, runs on CPU at the edge."
+  },
+  {
+    "repo": "chaitanyagiri/munder-difflin",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "local multi-agent harness"
+  },
+  {
+    "repo": "FFF686868/proxypin-wloc-spoofer",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "ProxyPin script for authorized iOS Apple WLOC response rewriting tests"
+  },
+  {
+    "repo": "Liquid4All/antidoom",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Nai64/Nai64Patches",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": "Morphe patches: Ads Free Rewards, No Ads, Remove telemetry and more."
+  },
+  {
+    "repo": "angieruiz17/claude-fintech-skills",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "claude fintech skills of running fintech infra, trading platforms, and borker-side systems in production"
+  },
+  {
+    "repo": "MarvinSchwaibold/mri-grid-viewer",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Local-first MRI series grid viewer with a SwiftUI iOS wrapper"
+  },
+  {
+    "repo": "cosmtrek/mindwalk",
+    "branch": "master",
+    "language": "Go",
+    "description": "A visualization tool that replays coding-agent sessions on a 3D map of your codebase."
+  },
+  {
+    "repo": "Moore-developers/moore-wechat-article-downloader",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "Dr-TSNG/PolyglotYT",
+    "branch": "master",
+    "language": "Kotlin",
+    "description": "Immersive translation Xposed module for YouTube app"
+  },
+  {
+    "repo": "antiwork/chromeless",
     "branch": "main",
     "language": "Swift",
-    "description": "A native macOS / windows database IDE built with Swift and AppKit. Connect to PostgreSQL, MySQL, SQLite, and Redis from a single app with a fast, keyboard-driven interface."
+    "description": "The browser that isn't there — zero-chrome macOS browser for clean screenshots and fullscreen video. One Swift file."
   },
   {
-    "repo": "quilljs/quill",
-    "branch": "develop",
-    "language": "TypeScript",
-    "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility"
-  },
-  {
-    "repo": "LocoreMind/locoagent",
+    "repo": "ridgekhanice/undress-ai-image-video-generator",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "AI-powered social media agent with real browser automation"
+    "language": "Python",
+    "description": "An easy-to-use AI-powered image and video generation tool designed for Windows"
   },
   {
-    "repo": "benqi-finance/smartbugs-curated",
+    "repo": "PitShipwrightGraph/MecchaPhantom",
     "branch": "main",
-    "language": "Solidity",
-    "description": "SB Curated is a curated dataset of Solidity smart contracts annotated with tagged vulnerabilities. The dataset was created to evaluate the accuracy of automated analysis tools."
+    "language": "Python",
+    "description": "🦎 MecchaPhantom – complete hack tool for MECCHA CHAMELEON. Features ESP wallhack, aimbot, fly hack, teleport, god mode, infinite paint, speed hack, and more. Dominate the hide-and-seek battlefield!"
   },
   {
-    "repo": "Guid-Lab/kdecrypt",
+    "repo": "djfksjd/ir-search",
+    "branch": "main",
+    "language": "Python",
+    "description": "🇰🇷 한국 정부 지원사업 전수조사 Claude Code 스킬 — K-Startup·기업마당·NIPA·KOCCA·SMTECH 크롤링 + 프로젝트 프로필 기반 즉시/로드맵/변형 3분류 (Korea-only)"
+  },
+  {
+    "repo": "i3T4AN/KADATH",
+    "branch": "main",
+    "language": "Python",
+    "description": "Evolutionary multi-agent runtime that breeds, evaluates, and improves autonomous agents across reproducible epochs to converge on optimization of a goal."
+  },
+  {
+    "repo": "extreme-inject/Extreme-Injector",
     "branch": "main",
     "language": "C++",
-    "description": "PGP/GPG file encryption and decryption manager for KDE Plasma"
+    "description": "dll injection tool memory injector manual map thread hijacking loadlibrary process selector game modding trainer windows 11 windows 10"
   },
   {
-    "repo": "nextcloud/server",
+    "repo": "Haleclipse/cscience",
     "branch": "master",
-    "language": "PHP",
-    "description": "☁️ Nextcloud server, a safe home for all your data"
-  },
-  {
-    "repo": "CapeAga/bai-it",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "掰it — Chrome extension for English reading comprehension. Break long sentences into chunks, learn vocabulary in context."
-  },
-  {
-    "repo": "pasky/chrome-cdp-skill",
-    "branch": "main",
     "language": "JavaScript",
-    "description": "Give your AI agent access to your live Chrome session — works out of the box, connects to tabs you already have open"
+    "description": "Claude Science Rebuild"
   },
   {
-    "repo": "realm/realm-swift",
-    "branch": "master",
-    "language": "Objective-C",
-    "description": "Realm is a mobile database: a replacement for Core Data & SQLite"
-  },
-  {
-    "repo": "Monke-Manager/MonkeModManager",
-    "branch": "main",
-    "language": "C#",
-    "description": "monkemodmanager download github gorilla tag mod installer manager bepinex cosmetics quest link steam vr custom maps utility tool windows 11 latest version 2026 free gameplay tutorial update guide fix error"
-  },
-  {
-    "repo": "python-telegram-bot/python-telegram-bot",
-    "branch": "master",
-    "language": "Python",
-    "description": "We have made you a wrapper you can't refuse"
-  },
-  {
-    "repo": "XiaomiMiMo/MiMo-V2.5-ASR",
+    "repo": "SilentFleetKK/ai-market-pulse",
     "branch": "main",
     "language": "Python",
-    "description": ""
-  },
-  {
-    "repo": "d3/d3",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
+    "description": "Turn any watchlist into a daily AI market research report — a quant research cockpit or a zero-code daily report tool."
   }
 ]
