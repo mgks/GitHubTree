@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best TypeScript Repositories Directory - Page 27 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best TypeScript repositories - Page 27. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/typescript/27/">
+    <meta property="og:title" content="Best TypeScript Repositories Directory - Page 27 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best TypeScript repositories - Page 27. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/typescript/27/">
+    <meta property="twitter:title" content="Best TypeScript Repositories Directory - Page 27 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best TypeScript repositories - Page 27. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-x59jPjET.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CRCUQmuP.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/typescript/27/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/typescript/26/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> <span class="private-btn-text">Private Access</span>
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="input-group branch-input" id="branchInputGroup">
+                <button type="button" id="branchDropdownBtn" class="branch-prefix-btn" title="Choose branch">
+                    <i class="fa-solid fa-code-branch"></i>
+                </button>
+                <input type="text" id="branchInput" placeholder="branch" autocomplete="off" spellcheck="false" title="Branch name or search">
+                <i class="fa-solid fa-chevron-down branch-caret" id="branchCaret"></i>
+                <div id="branchDropdown" class="branch-picker-dropdown" style="display: none;">
+                    <div id="branchListContainer" class="branch-picker-list">
+                        <div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Click to load branches</div>
+                    </div>
+                </div>
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> <span>Fetch</span>
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <!-- Truncation Alert Caution Banner -->
+        <div id="truncationWarning" class="truncation-alert" style="display: none;">
+            <div class="alert-content">
+                <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
+                <div>
+                    <strong>Tree Truncated:</strong> GitHub API limited this tree to 100,000 entries (or 7MB payload). Some deeply nested files or subdirectories may not be visible.
+                </div>
+            </div>
+            <button type="button" id="closeTruncationWarning" class="alert-dismiss" aria-label="Dismiss"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-top">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fa-solid fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="fa-regular fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fa-solid fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fa-solid fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fa-solid fa-code-branch"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fa-solid fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-meta-bar">
+                <div class="compact-action-group">
+                    <span class="compact-label"><i class="fa-solid fa-certificate"></i> Badge:</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="repoIndexCol" class="compact-action-group" style="display: none;">
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fa-solid fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>TypeScript Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/BookracyFOS/bookracy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> BookracyFOS/bookracy</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Free, open-source book search, reader and library.</p>
+                </a>
+                <a href="/repo/0xCodez/cleanly/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> 0xCodez/cleanly</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Cleanly — a stylish, safe PC cleaner for Windows and macOS</p>
+                </a>
+                <a href="/repo/Forward-Future/folio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Forward-Future/folio</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Folio — a simple, clean, open-source PDF reader for Windows</p>
+                </a>
+                <a href="/repo/modelflare-ai/AnyModelBot/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> modelflare-ai/AnyModelBot</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.</p>
+                </a>
+                <a href="/repo/mromidev/claude-animated-shorts/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> mromidev/claude-animated-shorts</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion</p>
+                </a>
+                <a href="/repo/hongye007/open-pose-costume/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> hongye007/open-pose-costume</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A bilingual reference studio for poses, costumes, and AI character creation.</p>
+                </a>
+                <a href="/repo/rerun-build/rerun/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> rerun-build/rerun</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">AI coworkers that run your work. Self-hostable, AGPL-3.0.</p>
+                </a>
+                <a href="/repo/KKKKhazix/agent-autoloop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> KKKKhazix/agent-autoloop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。</p>
+                </a>
+                <a href="/repo/Minglink/dsh-jailbreak-workflow/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Minglink/dsh-jailbreak-workflow</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">DSH 破甲词制作作工作流 </p>
+                </a>
+                <a href="/repo/kevintngo/looseleaf/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> kevintngo/looseleaf</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">shadcn/ui, drawn by hand: 123 accessible React components that look drawn on paper, with a shadcn registry.</p>
+                </a>
+                <a href="/repo/Minireel/HGhub/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Minireel/HGhub</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">YellowFruit third-party client</p>
+                </a>
+                <a href="/repo/andrew-babo/muse4ai/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> andrew-babo/muse4ai</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Muse4AI — let your AI agent make the pictures and the videos. Local Windows bridge for Muse via REST, MCP, and OAuth.</p>
+                </a>
+                <a href="/repo/MagoStudio/MagoStudio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> MagoStudio/MagoStudio</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">MagoStudio application</p>
+                </a>
+                <a href="/repo/raylee-ai/lancer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> raylee-ai/lancer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Lancer — desktop AI workspace based on pi-gui and pi</p>
+                </a>
+                <a href="/repo/livliv-dev/player/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> livliv-dev/player</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A lightweight 2.5D character player for the web, with lip sync and webcam face tracking.</p>
+                </a>
+                <a href="/repo/AtomIllusionistDwell/watson-username-footprint-finder/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> AtomIllusionistDwell/watson-username-footprint-finder</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Free people-search desktop app: look up a nickname, email, phone or site across 3,100+ public pages and get one readable report.</p>
+                </a>
+                <a href="/repo/DominikScholz/open-bot-avatar/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> DominikScholz/open-bot-avatar</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A JSON spec and renderer for interactive agent avatars</p>
+                </a>
+                <a href="/repo/ZSeven-W/dsh-game-studio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ZSeven-W/dsh-game-studio</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, export one HTML file.</p>
+                </a>
+                <a href="/repo/lijiaqi-AI-Product-Manager/dsh-agent-compare/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> lijiaqi-AI-Product-Manager/dsh-agent-compare</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">同一需求，两版真跑，体验后审查采用。Two live builds for one task in DeepSeek Harness.</p>
+                </a>
+                <a href="/repo/jmanalabe/hwid-spoofer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> jmanalabe/hwid-spoofer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Full working HWID spoofer installer with all features enabled, ready to run</p>
+                </a>
+                <a href="/repo/RolandoV3/metatrader-5-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> RolandoV3/metatrader-5-bot</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Community-driven MetaTrader 5 bot with full features ready for desktop use</p>
+                </a>
+                <a href="/repo/Mymedspharmacy/phantom-blade-zero-trainer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Mymedspharmacy/phantom-blade-zero-trainer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Phantom Blade Zero Trainer 2026: God Mode, One-Hit Kill, start All Weapons</p>
+                </a>
+                <a href="/repo/ethangangasingh-crypto/musicmakerunlimited/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ethangangasingh-crypto/musicmakerunlimited</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Musicmakerunlimited 2026: Full-Feature Desktop Installer with Complete Toolset</p>
+                </a>
+                <a href="/repo/ma7401153-sketch/daemon-pro-installer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ma7401153-sketch/daemon-pro-installer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">DAEMON-Pro: Full-Feature Security Installer for Desktop Deployment</p>
+                </a>
+                <a href="/repo/jeevijk/secure-asset-deploy/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> jeevijk/secure-asset-deploy</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Adobe InDesign Installer with Enhanced Security Protocols for Secure Digital Asset Deployment</p>
+                </a>
+                <a href="/repo/rdeepak-wq121/quicken-deluxe-installer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> rdeepak-wq121/quicken-deluxe-installer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Quicken Deluxe Desktop Installer with Full Feature Set Enabled</p>
+                </a>
+                <a href="/repo/SK-Dev666/rust-external-trainer-tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> SK-Dev666/rust-external-trainer-tool</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Rust External 2026: Full Standalone Trainer Setup, Tools and Dependencies Ready to Run</p>
+                </a>
+                <a href="/repo/sghnnnn01212-cmyk/data-grip-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> sghnnnn01212-cmyk/data-grip-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Data-Grip 2026: Complete Standalone Desktop Utility for Efficient Data Management</p>
+                </a>
+                <a href="/repo/R1zmu24/discord-server-raider/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> R1zmu24/discord-server-raider</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Discord Server Raider: Community-Driven Bot for Discord and Telegram</p>
+                </a>
+                <a href="/repo/Marcian15350/robux-generator-enhancement/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Marcian15350/robux-generator-enhancement</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Robux-Generator: Full Installer, All Features Activated, Desktop-Ready</p>
+                </a>
+                <a href="/repo/tss878/delta-executor-toolkit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> tss878/delta-executor-toolkit</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Delta Executor for PC: Full Working Installer with All Tools Pre-Configured</p>
+                </a>
+                <a href="/repo/uchihamx999-beep/imei-repair-toolkit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> uchihamx999-beep/imei-repair-toolkit</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">IMEI Repair 2026: Standalone Installer and Complete Setup for Device Repair Solutions</p>
+                </a>
+                <a href="/repo/utkarshryanite25-a11y/sony-vegas-pro-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> utkarshryanite25-a11y/sony-vegas-pro-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Sony Vegas Pro 2026 standalone setup with pre-installed professional video editing and VFX tools</p>
+                </a>
+                <a href="/repo/ebtsamalhakmy-sketch/desktop-backup-suite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ebtsamalhakmy-sketch/desktop-backup-suite</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Aomei Backupper 2026: Full-Feature Desktop Backup and Recovery Suite</p>
+                </a>
+                <a href="/repo/Paulinho182/hitfilm-desktop-installer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Paulinho182/hitfilm-desktop-installer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">HitFilm: Fully Featured Desktop Video Editing and VFX Suite</p>
+                </a>
+                <a href="/repo/FrigadeHQ/yogurt/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> FrigadeHQ/yogurt</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Private AI meeting notes. Free and open source.</p>
+                </a>
+                <a href="/repo/agentes-chat/agentes-chat/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> agentes-chat/agentes-chat</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.</p>
+                </a>
+                <a href="/repo/alexeyw/lot-map/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> alexeyw/lot-map</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.</p>
+                </a>
+                <a href="/repo/JDhruv14/line-art-animation/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> JDhruv14/line-art-animation</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.</p>
+                </a>
+                <a href="/repo/luobinger/PerkRadar/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> luobinger/PerkRadar</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">PerkRadar — A self-hosted deals aggregator that fetches freebies, limited-time offers, and discounts from multiple sources every two hours, with source status tracking, expiration handling, and personal bookmarks.</p>
+                </a>
+                <a href="/repo/AIRzZ90/study-materials-fork/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> AIRzZ90/study-materials-fork</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">A cross-platform Tauri 2 interface and interaction practice project</p>
+                </a>
+                <a href="/repo/paulirish/chrome-capture/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> paulirish/chrome-capture</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">60-120fps / 2160p tab video/audio capture from Chrome</p>
+                </a>
+                <a href="/repo/TomyJan/SnowLuma/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> TomyJan/SnowLuma</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Next Remote Protocol Framework.</p>
+                </a>
+                <a href="/repo/LNPANDY/HGhub-MacOS-iOS-Version/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> LNPANDY/HGhub-MacOS-iOS-Version</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">HGhub 跨平台客户端 (macOS & iOS 增强版) · 支持 Apple Silicon / Intel 双架构 DMG 与 iOS 免签 IPA · 沉浸式刷剧 / 手势缩放 / 原生横屏全屏 / 多线路镜像测速</p>
+                </a>
+                <a href="/repo/aronhy/pibrowse/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> aronhy/pibrowse</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Open-source browser profile workspaces</p>
+                </a>
+                <a href="/repo/rivet-dev/open-orange/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> rivet-dev/open-orange</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Run Cloudflare Workers and Durable Objects unchanged on AWS, GCP, Azure or your own servers.</p>
+                </a>
+                <a href="/repo/nickvasilescu/grokbot-clone/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> nickvasilescu/grokbot-clone</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Open-source always-on AI teammates on the Grok API, Orgo cloud computers and Composio. Not affiliated with xAI.</p>
+                </a>
+                <a href="/repo/danyuchn/claude-work-mode/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> danyuchn/claude-work-mode</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Session work modes for Claude Code: /work-mode auto | out | wrap, with optional gates</p>
+                </a>
+                <a href="/repo/floatdotxyz/float/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> floatdotxyz/float</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Official docs, SDK, CLI and Anchor reference program for Float on Solana (Raydium LaunchLab/CPMM). </p>
+                </a>
+                <a href="/repo/dev-Armaan/satellites/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> dev-Armaan/satellites</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-typescript"></i> TypeScript</span>
+                    </div>
+                    <p class="mrc-desc">Watched.earth - see every public satellite image of earth</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/typescript/26/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 27 of 27</span>
+                        <a href="/language/typescript/28/" class="pagination-btn disabled">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fa-solid fa-filter search-icon"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files (/regex/)..." autocomplete="off" spellcheck="false">
+                        <button type="button" id="clearTreeSearch" class="clear-search-btn" title="Clear filter" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn" title="Sort tree items">
+                            <i class="fa-solid fa-arrow-down-short-wide"></i> <span id="sortBtnLabel" class="btn-text">Sort</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az"><i class="fa-solid fa-folder"></i> Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za"><i class="fa-solid fa-folder-tree"></i> Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az"><i class="fa-solid fa-arrow-down-a-z"></i> Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za"><i class="fa-solid fa-arrow-down-z-a"></i> Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="moreDropdownContainer">
+                        <button class="tool-btn" id="moreBtn" title="Styles, Share & Export Options">
+                            <i class="fa-solid fa-sliders"></i> <span class="btn-text">Options</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content dropdown-left" id="moreDropdown">
+                            <div class="dropdown-section-title">Tree Style</div>
+                            <a href="#" data-style="classic" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-classic"></i> Classic (└──)</a>
+                            <a href="#" data-style="slashed" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-slashed" style="opacity:0"></i> Slashed (/src)</a>
+                            <a href="#" data-style="plus" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-plus" style="opacity:0"></i> ASCII (+--)</a>
+                            <a href="#" data-style="minimal" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-minimal" style="opacity:0"></i> Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-bulleted" style="opacity:0"></i> Bulleted (•)</a>
+                            
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-section-title">Actions</div>
+                            <a href="#" id="moreShareBtn" class="dropdown-item"><i class="fa-solid fa-share-nodes"></i> Share View & Badge</a>
+                            <a href="#" id="exportAsciiBtn" class="dropdown-item"><i class="fa-solid fa-bars-staggered"></i> Copy ASCII Tree</a>
+                            <a href="#" id="exportMarkdownBtn" class="dropdown-item"><i class="fa-brands fa-markdown"></i> Copy as Markdown</a>
+                            <a href="#" id="exportJsonBtn" class="dropdown-item"><i class="fa-solid fa-code"></i> Copy as JSON</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" id="exportDownloadTxtBtn" class="dropdown-item"><i class="fa-solid fa-download"></i> Download .txt</a>
+                            <a href="#" id="exportDownloadJsonBtn" class="dropdown-item"><i class="fa-solid fa-file-arrow-down"></i> Download .json</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn">
+                        <i class="fa-solid fa-compress"></i> <span class="btn-text">Compact</span>
+                    </button>
+
+                    <span id="treeStatsSummary" class="tree-stats-badge" style="display: none;"></span>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible" title="Quick Copy Tree">
+                        <i class="fa-regular fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window" tabindex="0" id="terminalWindow" aria-label="File Tree Container">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+
+            <div class="tree-shortcuts-bar">
+                <span class="shortcut-tip"><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+                <span class="shortcut-tip"><kbd>→</kbd><kbd>←</kbd> Expand / Collapse</span>
+                <span class="shortcut-tip"><kbd>Enter</kbd> Details</span>
+                <span class="shortcut-tip"><kbd>c</kbd> Copy Path</span>
+                <span class="shortcut-tip"><kbd>/</kbd> Search</span>
+                <span class="shortcut-tip"><kbd>Esc</kbd> Clear</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><i class="fa-solid fa-heart footer-heart"></i> <b>{ <a href="https://mgks.dev" target="_blank" rel="noopener">@mgks</a> / <a href="https://github.com/mgks/githubtree" target="_blank" rel="noopener">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="fa-regular fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="fa-regular fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="fa-regular fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+</body>
+</html>
