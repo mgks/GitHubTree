@@ -1,146 +1,146 @@
 [
   {
-    "repo": "SaarthurR/atticus-mac",
-    "branch": "main",
-    "language": "Python",
-    "description": "Fast, free voice assistant for your Mac. No API key: runs on your Claude Pro or Max plan. Remembers you and learns your shortcuts. Hold ⌃⌥Space and talk."
-  },
-  {
-    "repo": "guanmo-ai/awesome-ai-motion",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "精选 AI 动画与视频：作品封面、可播放案例、作者原始提示词与来源。Curated AI motion & video with original prompts. Focused on Claude Opus 5.5."
-  },
-  {
-    "repo": "featherless-ai/simple-jev",
-    "branch": "main",
-    "language": "Python",
-    "description": "Turn any open model into a classifier/jev endpoint"
-  },
-  {
-    "repo": "kerpopule/hermes-jev-skills",
-    "branch": "main",
-    "language": "Python",
-    "description": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)"
-  },
-  {
-    "repo": "ythx-101/live-panel-skill",
-    "branch": "main",
-    "language": "HTML",
-    "description": "Config-driven animated architecture diagrams: turn one JSON file into a terminal-style, always-running diagram or a light-theme infographic that moves. Outputs H.264 mp4 or a live web page; also a Claude Code style skill (SKILL.md)."
-  },
-  {
-    "repo": "alpcanaydin/tusk",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A fast, native, keyboard-driven database client for macOS. 20 databases, an AI assistant that shows its work, free and open source."
-  },
-  {
-    "repo": "KKKKhazix/AIHOT",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。"
-  },
-  {
-    "repo": "blackbearreloaded/ProsperoEden",
-    "branch": "main",
-    "language": "C++",
-    "description": "Experimental Eden port for PS5"
-  },
-  {
-    "repo": "empero-org/brewery-ai",
-    "branch": "main",
-    "language": "Python",
-    "description": "An intuitive console agent to fine-tune AI models with little to no experience required!"
-  },
-  {
-    "repo": "unclebob/uml-viewer",
-    "branch": "master",
-    "language": "Clojure",
-    "description": "Live Quil UML class-diagram viewer driven by EDN"
-  },
-  {
-    "repo": "incoai/splash",
-    "branch": "main",
-    "language": "Python",
-    "description": "A local inference engine for Apple silicon, built around the model."
-  },
-  {
-    "repo": "TianyuCodings/NanoJev",
-    "branch": "main",
-    "language": "Python",
-    "description": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline."
-  },
-  {
-    "repo": "storytold/vectorcraft",
-    "branch": "main",
-    "language": "Rust",
-    "description": ""
-  },
-  {
-    "repo": "DanFessler/trellis",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Fractal layouts for web apps: nest panels to any depth, zoom to the part you need, and keep every view alive."
-  },
-  {
-    "repo": "adonis-singh/re4",
-    "branch": "master",
-    "language": "C++",
-    "description": "Resident Evil 4 (GameCube, G4BE08 debug build) — complete byte-identical decompilation to C/C++"
-  },
-  {
-    "repo": "dagowda/notRDP",
-    "branch": "main",
-    "language": "C",
-    "description": ""
-  },
-  {
-    "repo": "HyNetworks/OpenGFW",
+    "repo": "libp2p/go-libp2p",
     "branch": "master",
     "language": "Go",
+    "description": "libp2p implementation in Go"
+  },
+  {
+    "repo": "v0id4real/Void-Tools",
+    "branch": "main",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "kangkungmozzarella/kantor-ai",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "Kantor Kita: interactive 3D paper-model office for a 13-person team"
+    "repo": "sanketagarwal/hyperliquid-trading-agent",
+    "branch": "master",
+    "language": "Python",
+    "description": ""
   },
   {
-    "repo": "planetscale/lead",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A non-production Postgres text-search extension for exercising TIN-compatible application SQL in development, test, CI, and staging environments"
-  },
-  {
-    "repo": "jarrodwatts/claude-image-view",
+    "repo": "mreflow/control-center",
     "branch": "main",
     "language": "TypeScript",
-    "description": "See the images you paste into Claude Code: thumbnails above the prompt instead of bare [Image #1] tags"
+    "description": "A local-first, settings-driven business intelligence dashboard."
   },
   {
-    "repo": "storytold/printcraft",
+    "repo": "navysoto/wxhook",
+    "branch": "main",
+    "language": "C#",
+    "description": "Windows 桌面程序 Hook 技术分析与开发示例。"
+  },
+  {
+    "repo": "Awaker-OTE/WakeGPT",
     "branch": "main",
     "language": "Rust",
+    "description": "A local-first desktop app for quick capture, managed Markdown notebooks, and reusable ChatGPT/Codex context. Currently verified on macOS."
+  },
+  {
+    "repo": "Fratres-X-AI/JamBoy",
+    "branch": "main",
+    "language": "Python",
+    "description": "GPS-denied drone navigation layer: optical flow + offline map geo-match + EKF → MAVLink (sim-validated)."
+  },
+  {
+    "repo": "lilvli/portable-vna",
+    "branch": "main",
+    "language": "Verilog",
+    "description": "Low-cost compact direct-sampling vector network analyzer with optional future RTC antenna-test integration."
+  },
+  {
+    "repo": "krea-ai/krea-2",
+    "branch": "main",
+    "language": "Python",
+    "description": "Official inference code for Krea 2"
+  },
+  {
+    "repo": "criptogus/HermesOffice",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "HermesOffice — AI-native office suite forked from GenOffice (Apache-2.0), with native Hermes Agent AI"
+  },
+  {
+    "repo": "kitforai/kitforai",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Kit for AI developer hub — official SDK, Claude Code plugin, MCP setup, and llms.txt."
+  },
+  {
+    "repo": "FlavioAdamo/openfit",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Desktop dashboard and Codex-powered assistant for Fitbit data"
+  },
+  {
+    "repo": "iptvorganization/TV-AutoBuild",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Monitored public GitHub Actions builds for iptvorganization TV Mobile and Leanback APKs"
+  },
+  {
+    "repo": "StephenDev0/StikPair",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A simple SwiftUI iOS app that creates a pairing file on-device."
+  },
+  {
+    "repo": "ma7mod7/Resident-Evil-Requiem-Ultimate-Trainer-2026_v_2",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ultimate trainer for Resident Evil Requiem (RE9) – 42+ features including God Mode, Infinite Ammo, CP Editor, FOV fix, and more."
+  },
+  {
+    "repo": "jdshfhds/northcinder",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Buyer-run, ad-neutral shopping-agent MCP software with deterministic ranking, signed purchase mandates, and a local audit trail."
+  },
+  {
+    "repo": "Hatari130/map-creator",
+    "branch": "main",
+    "language": "Python",
+    "description": "结合gis+gpt，用自然语言生成可商用城市打卡地图"
+  },
+  {
+    "repo": "ai-twinkle/rlhf-book-zh-tw",
+    "branch": "main",
+    "language": "HTML",
+    "description": "《Reinforcement Learning from Human Feedback》繁體中文全譯本＋每章互動實驗 | Unofficial zh-TW community translation of the RLHF Book with interactive labs"
+  },
+  {
+    "repo": "ZHChen2000/qzone-history",
+    "branch": "main",
+    "language": "Go",
+    "description": "QQ空间历史数据恢复工具：Qzone-History"
+  },
+  {
+    "repo": "asimons81/hermes-gpt",
+    "branch": "master",
+    "language": "Python",
     "description": ""
   },
   {
-    "repo": "pch/rawmakase",
+    "repo": "GraeLefix/GITVERSE",
     "branch": "main",
-    "language": "Rust",
-    "description": "Free Lightroom alternative for Linux and macOS (possibly Windows too - not tested)"
+    "language": "TypeScript",
+    "description": "🔍 Reverse engineer any codebase into a build prompt — architecture breakdown, ASCII blueprint, and AI-ready reconstruction prompt"
   },
   {
-    "repo": "InternLM/Intern-Decision",
+    "repo": "Wan-Video/Wan-Dancer",
     "branch": "main",
     "language": "Python",
-    "description": "Fast multi-modal decision model"
+    "description": ""
   },
   {
-    "repo": "coolbbcamp/Synthetic-Liquidity-Depth-Scanner",
+    "repo": "x4gKing/Amnezia-VPN-Config",
+    "branch": "main",
+    "language": "HTML",
+    "description": ""
+  },
+  {
+    "repo": "TCLTVrepairing/MacOS_Cleaner_Tool",
     "branch": "main",
     "language": "Python",
-    "description": "Executable cash-exit capacity for Solana tokenized equities and stock-quoted launches — measured, not estimated."
+    "description": "Clean cache, remove duplicate files, and speed up Mac. Remove cache, find duplicates, remove apps fully, and free memory. Keep your Mac running smooth."
   }
 ]
