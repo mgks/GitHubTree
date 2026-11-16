@@ -1,146 +1,146 @@
 [
   {
-    "repo": "cheeriojs/cheerio",
+    "repo": "apkclaw-team/ApkClaw",
+    "branch": "main",
+    "language": "Kotlin",
+    "description": ""
+  },
+  {
+    "repo": "AlpinDale/gpt2.cmake",
+    "branch": "main",
+    "language": "CMake",
+    "description": "Implementation of the GPT-2 model in pure CMake"
+  },
+  {
+    "repo": "apple/swift-algorithms",
+    "branch": "main",
+    "language": "Swift",
+    "description": "Commonly used sequence and collection algorithms for Swift"
+  },
+  {
+    "repo": "ncvgl/slawk",
     "branch": "main",
     "language": "TypeScript",
-    "description": "The fast, flexible, and elegant library for parsing and manipulating HTML and XML."
+    "description": "A 14 day experiment to clone Slack with Claude Code"
   },
   {
-    "repo": "Kaleighc793/freqtrade-bot",
+    "repo": "ironsh/iron-proxy",
     "branch": "main",
-    "language": "Python",
-    "description": "Freqtrade — Configuration and management tool for the Freqtrade open-source crypto trading bot with strategy backtesting, live/dry-run modes, 10+ exchange support (Binance, Kraken, OKX), hyperparameter optimization, FreqUI dashboard, and Rich terminal menu interface"
+    "language": "Go",
+    "description": "An egress firewall for untrusted workloads."
   },
   {
-    "repo": "tytsxai/IDM-Activation-Script-Chinese",
+    "repo": "Shudesu/line-harness-oss",
     "branch": "main",
-    "language": "Batchfile",
-    "description": "Chinese GBK toolkit for IDM trial/activation/reset with registry backup (does not patch IDM binary). IDM 激活脚本中文版。"
+    "language": "TypeScript",
+    "description": "Open-source LINE Official Account CRM — free alternative to paid tools. Step delivery, broadcasts, forms, rich menus, scoring, automation, and more."
   },
   {
-    "repo": "grapeot/context-infrastructure",
-    "branch": "main",
-    "language": "Python",
-    "description": "Reference implementation: a context infrastructure system for pulling LLM out of consensus"
-  },
-  {
-    "repo": "ynsmroztas/AndroHunter",
-    "branch": "main",
+    "repo": "GoogleContainerTools/jib",
+    "branch": "master",
     "language": "Java",
-    "description": "AndroHunter"
+    "description": "🏗 Build container images for your Java applications."
   },
   {
-    "repo": "mpiorowski/late-sh",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A cozy terminal clubhouse for developers. Lofi beats, casual games, chat, and tech news, all via SSH."
-  },
-  {
-    "repo": "777genius/claude-code-source-code-full",
+    "repo": "MeisnerDan/mission-control",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Full source repository for Claude Code source code"
+    "description": "Open-source task management for the agentic era. The command center for solo entrepreneurs who delegate work to AI agents."
   },
   {
-    "repo": "pengchengneo/Claude-Code",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "可运行的Claude Code源码"
-  },
-  {
-    "repo": "gaotiexinqu/OneResearchClaw",
+    "repo": "bytedance-deerflow/deer-flow-installer",
     "branch": "main",
     "language": "Python",
-    "description": "Any research. One Claw. 🦞 From any materials to research with fully autonomous & skill-driven researcher."
+    "description": "🦌 DeerFlow 2.0 installer - open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours."
   },
   {
-    "repo": "poshan0126/dotclaude",
+    "repo": "GeiserX/awesome-spain",
     "branch": "main",
-    "language": "Shell",
-    "description": "The standard .claude/  folder structure for everyday development."
-  },
-  {
-    "repo": "drivelineresearch/autoresearch-claude-code",
-    "branch": "master",
     "language": "Python",
-    "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch"
+    "description": "Una selección de software open source que da soporte específico a España, incluyendo comunidades autónomas, provincias y ciudades."
   },
   {
-    "repo": "kapishdima/fonttrio",
+    "repo": "jina-ai/jina-grep-cli",
     "branch": "main",
-    "language": "TypeScript",
-    "description": "Curated font pairing registry for shadcn. Three fonts. One command. Install perfectly configured typography (heading + body + mono) with shadcn add.    Includes editorial-grade type scales, CSS variables, and a live preview site."
+    "language": "Python",
+    "description": "Semantic grep powered by Jina embeddings v5 (MLX on Apple Silicon)"
   },
   {
-    "repo": "RayceAnderson/tomodachi-pc",
+    "repo": "agentscope-ai/CoPaw",
     "branch": "main",
-    "language": "C#",
-    "description": "tomodachi life pc living  the dream windows  free patch notes update ryujinx emulator rom nsp xci mii creator life simulator 60fps mod graphics config save file setup guide fix crash"
+    "language": "Python",
+    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
   },
   {
-    "repo": "nkzw-tech/codiff",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "a fast local diff viewer"
-  },
-  {
-    "repo": "okooo5km/Skills4U",
-    "branch": "main",
-    "language": "TeX",
-    "description": "Skills here"
-  },
-  {
-    "repo": "AMAP-ML/RL3DEdit",
-    "branch": "main",
-    "language": "HTML",
-    "description": ""
-  },
-  {
-    "repo": "samanalalokaya/polymarket-copy-trading-bot",
+    "repo": "appium/appium",
     "branch": "master",
     "language": "JavaScript",
-    "description": "Copies trades from a target Polymarket wallet to your own. Watches the target via REST or WebSocket, then places matching orders (scaled by a multiplier) using the Polymarket CLOB. CLUE: polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading bot polymarket copy trading"
+    "description": "Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol"
   },
   {
-    "repo": "alpinejs/alpine",
-    "branch": "main",
-    "language": "HTML",
-    "description": "A rugged, minimal framework for composing JavaScript behavior in your markup."
+    "repo": "arendst/Tasmota",
+    "branch": "development",
+    "language": "C",
+    "description": "Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at"
   },
   {
-    "repo": "facebookresearch/fairseq",
+    "repo": "anadim/AdderBoard",
     "branch": "main",
     "language": "Python",
-    "description": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    "description": "Smallest transformer that can add two 10-digit numbers"
   },
   {
-    "repo": "pch/rawmakase",
+    "repo": "gorhom/react-native-bottom-sheet",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "A performant interactive bottom sheet with fully configurable options 🚀"
+  },
+  {
+    "repo": "apple/swift-log",
+    "branch": "main",
+    "language": "Swift",
+    "description": "A Logging API for Swift"
+  },
+  {
+    "repo": "xodn348/han",
     "branch": "main",
     "language": "Rust",
-    "description": "Free Lightroom alternative for Linux and macOS (possibly Windows too - not tested)"
+    "description": "A compiled programming language with Korean keywords, written in Rust"
   },
   {
-    "repo": "CuzTeam/hm-rev",
+    "repo": "kubernetes/ingress-nginx",
+    "branch": "main",
+    "language": "Go",
+    "description": "Ingress NGINX Controller for Kubernetes"
+  },
+  {
+    "repo": "peters/horizon",
+    "branch": "main",
+    "language": "Rust",
+    "description": "GPU-accelerated spatial terminal observatory — manage terminals, AI agents, and dev tools on an infinite canvas"
+  },
+  {
+    "repo": "joewongjc/type4me",
+    "branch": "main",
+    "language": "Swift",
+    "description": "MacOS语音输入工具，实时识别、大模型文本优化、全本地存储"
+  },
+  {
+    "repo": "kyutai-labs/hibiki-zero",
     "branch": "main",
     "language": "Python",
-    "description": "DevECO REV"
+    "description": "A real-time and multilingual speech translation model"
   },
   {
-    "repo": "gluon-framework/gluon",
+    "repo": "imj01y/trace-ui",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "A new framework for creating desktop apps from websites, using system installed browsers and NodeJS"
+    "language": "TypeScript",
+    "description": "高性能 ARM64 执行 trace 可视化分析工具"
   },
   {
-    "repo": "microsoft/onnxruntime",
+    "repo": "ryanstephen/lil-agents",
     "branch": "main",
-    "language": "C++",
-    "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
-  },
-  {
-    "repo": "QuantML-Research/wq-alpha-research",
-    "branch": "main",
-    "language": "Python",
-    "description": ""
+    "language": "Swift",
+    "description": "tiny AI companions that live on your macOS dock"
   }
 ]
