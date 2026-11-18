@@ -1,8 +1,8 @@
 {
-  "repo": "huggingface/pybot",
+  "repo": "sybil-solutions/inference-optimisation-skill",
   "branch": "main",
   "language": "Python",
-  "description": "PyBot: a chatbot written in pure Python by a swarm of agents. No weights, no training, just rules.",
-  "stars": 789,
-  "forks": 74
+  "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+  "stars": 1104,
+  "forks": 99
 }
