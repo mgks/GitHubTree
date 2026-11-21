@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://analytics.google.com https://*.google-analytics.com https://*.google.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https://github.com https://img.shields.io https://*.google-analytics.com https://*.google.com https://*.google.co.in;">
+
+    <title>Best HTML Repositories Directory - Page 7 | GitHubTree</title>
+    <meta name="description" content="Browse the ultimate collection of best HTML repositories - Page 7. Explore directory structures and files instantly without cloning.">
+    <meta name="keywords" content="github, tree, visualizer, explorer, directory, structure, viewer, online">
+    <meta name="author" content="Ghazi Khan">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://githubtree.mgks.dev/language/html/7/">
+    <meta property="og:title" content="Best HTML Repositories Directory - Page 7 | GitHubTree">
+    <meta property="og:description" content="Browse the ultimate collection of best HTML repositories - Page 7. Explore directory structures and files instantly without cloning.">
+    <meta property="og:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- TWITTER -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://githubtree.mgks.dev/language/html/7/">
+    <meta property="twitter:title" content="Best HTML Repositories Directory - Page 7 | GitHubTree">
+    <meta property="twitter:description" content="Browse the ultimate collection of best HTML repositories - Page 7. Explore directory structures and files instantly without cloning.">
+    <meta property="twitter:image" content="https://githubtree.mgks.dev/images/gh-tree-preview.webp">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDS1LH69VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDS1LH69VW');
+    </script>
+  <script type="module" crossorigin src="/assets/index-x59jPjET.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CRCUQmuP.css">
+<link rel="canonical" href="https://githubtree.mgks.dev/language/html/7/">
+    <link rel="prev" href="https://githubtree.mgks.dev/language/html/6/">
+    <link rel="next" href="https://githubtree.mgks.dev/language/html/8/">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header>
+            <div class="brand">
+                <a href="https://githubtree.mgks.dev">
+                    <i class="fa-brands fa-github-alt"></i> &nbsp;<span>GitHubTree</span>
+                </a>
+                <button id="appStarBtn" class="app-star-btn" title="Star GitHubTree on GitHub">
+                    <i class="far fa-star"></i> <span id="appStarText">Star</span>
+                </button>
+            </div>
+            <div class="header-actions">
+                <button id="privateRepoBtn" class="text-btn" title="Access Private Repos">
+                    <i class="fas fa-lock"></i> <span class="private-btn-text">Private Access</span>
+                </button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="tokenSection" class="token-panel" style="display: none;">
+            <div class="token-inner">
+                <i class="fas fa-key"></i>
+                <input type="password" id="ghToken" placeholder="Paste GitHub Personal Access Token (PAT)">
+                <button id="saveTokenBtn">Save</button>
+                <button id="clearTokenBtn" style="display:none;">Clear</button>
+            </div>
+            <p class="token-warning">
+                <i class="fas fa-exclamation-triangle"></i> Token is saved to your browser's <b>LocalStorage</b>. Do not use on public computers.
+            </p>
+        </div>
+
+        <div class="search-section">
+            <div class="input-group main-input">
+                <span class="prefix">github.com/</span>
+                <input type="text" id="repoInput" placeholder="username/repo" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="input-group branch-input" id="branchInputGroup">
+                <button type="button" id="branchDropdownBtn" class="branch-prefix-btn" title="Choose branch">
+                    <i class="fa-solid fa-code-branch"></i>
+                </button>
+                <input type="text" id="branchInput" placeholder="branch" autocomplete="off" spellcheck="false" title="Branch name or search">
+                <i class="fa-solid fa-chevron-down branch-caret" id="branchCaret"></i>
+                <div id="branchDropdown" class="branch-picker-dropdown" style="display: none;">
+                    <div id="branchListContainer" class="branch-picker-list">
+                        <div class="branch-empty-hint"><i class="fa-solid fa-spinner fa-spin"></i> Click to load branches</div>
+                    </div>
+                </div>
+            </div>
+            <button id="fetchBtn" class="primary-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> <span>Fetch</span>
+            </button>
+        </div>
+
+        <div id="statusMsg" style="display: none;"></div>
+
+        <!-- Truncation Alert Caution Banner -->
+        <div id="truncationWarning" class="truncation-alert" style="display: none;">
+            <div class="alert-content">
+                <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
+                <div>
+                    <strong>Tree Truncated:</strong> GitHub API limited this tree to 100,000 entries (or 7MB payload). Some deeply nested files or subdirectories may not be visible.
+                </div>
+            </div>
+            <button type="button" id="closeTruncationWarning" class="alert-dismiss" aria-label="Dismiss"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div id="repoDetailsCard" class="repo-details-card" style="display: none;">
+            <div class="repo-meta-top">
+                <div class="repo-meta-badges">
+                    <a class="meta-badge" id="repoGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a class="meta-badge" id="repoLanguage" style="text-decoration: none;"><i class="fa-solid fa-circle"></i> JS</a>
+                    <span class="meta-badge" id="repoStars"><i class="fa-regular fa-star"></i> 0 stars</span>
+                    <span class="meta-badge" id="repoForks"><i class="fa-solid fa-code-branch"></i> 0 forks</span>
+                    <span class="meta-badge" id="repoSize"><i class="fa-solid fa-database"></i> 0 KB</span>
+                    <span class="meta-badge" id="repoBranches"><i class="fa-solid fa-code-branch"></i> 1 branch</span>
+                    <span class="meta-badge" id="repoContributors"><i class="fa-solid fa-users"></i> 1 contributor</span>
+                </div>
+            </div>
+            <p id="repoMetaDesc" class="repo-meta-desc">Repository description goes here.</p>
+            
+            <div class="repo-meta-bar">
+                <div class="compact-action-group">
+                    <span class="compact-label"><i class="fa-solid fa-certificate"></i> Badge:</span>
+                    <div class="embed-input-wrapper">
+                        <img id="repoMetaBadgePreview" src="" alt="Badge Preview" class="embed-badge-img">
+                        <input type="text" id="repoMetaBadgeInput" readonly class="embed-input" title="Click to copy embed code">
+                        <button id="btnCopyRepoMetaBadge" class="embed-copy-btn" title="Copy Badge Markdown">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="repoIndexCol" class="compact-action-group" style="display: none;">
+                    <a id="repoIndexBtn" href="#" target="_blank" class="feature-action-btn">
+                        <i class="fa-solid fa-plus"></i> Feature Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="language-listing">
+                    <h1>HTML Repositories</h1>
+                    <div class="featured-grid">
+                <a href="/repo/lexifina/global-law/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> lexifina/global-law</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Git for Global Law: the law of every country as one git history, each country's record a submodule, every commit one law taking effect</p>
+                </a>
+                <a href="/repo/lovisdotio/video-to-game/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> lovisdotio/video-to-game</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">No description available.</p>
+                </a>
+                <a href="/repo/github/lever/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> github/lever</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Copilot skills for building feedback loops, delegating safely, and moving repeatable work into automations.</p>
+                </a>
+                <a href="/repo/wanghao-SunSky/cs329z-chinese/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> wanghao-SunSky/cs329z-chinese</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">斯坦福 Stanford CS329Z Engineering AI Agents 中文教程：面向 Python 开发者的 AI 智能体课程，19 讲与 4 项实践，涵盖 LLM、RAG、工具调用、记忆、多智能体、评测与安全。完整 Markdown、在线与离线 HTML。Chinese course notes.</p>
+                </a>
+                <a href="/repo/amirmushichge/pixel-plays/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> amirmushichge/pixel-plays</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Small browser games as isometric pixel dioramas. No build step, no dependencies.</p>
+                </a>
+                <a href="/repo/XiaoyeCodes/code-animation-prompts/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> XiaoyeCodes/code-animation-prompts</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">341 种代码动画风格提示词、193 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。</p>
+                </a>
+                <a href="/repo/op7418/dsh-guizang-design/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> op7418/dsh-guizang-design</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">歸藏设计 · DeepSeek Harness 插件：网页 PPT、图文卡片、网页排版、去 AI 味四个 skill，一套设计系统；作品库、内容生产工作流、语气档案</p>
+                </a>
+                <a href="/repo/Sandflow-ai/sand3d/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Sandflow-ai/sand3d</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">3D modeling in Python, built for LLMs.</p>
+                </a>
+                <a href="/repo/Tropicaldrescoop/discord-id-osint-checker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Tropicaldrescoop/discord-id-osint-checker</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Free OSINT app for Discord IDs: paste a user, server or invite and see when it was made and who it copies.</p>
+                </a>
+                <a href="/repo/yt1988/who-are-you/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> yt1988/who-are-you</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Who do websites think you are? A privacy self-check: every sniffer any site can run, the portrait they paint, and the contradictions that give away a VPN or proxy</p>
+                </a>
+                <a href="/repo/kubai087/kubai-icons/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> kubai087/kubai-icons</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">A Claude skill that draws dynamic icons in one consistent style, with hover motion or as static SVG.</p>
+                </a>
+                <a href="/repo/PackArtisanMold/phone-to-webcam/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> PackArtisanMold/phone-to-webcam</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Turn any iPhone or Android into a Windows webcam: scan a code in the phone's browser. No phone app, no watermark.</p>
+                </a>
+                <a href="/repo/ChetasLua/moss-keeper/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> ChetasLua/moss-keeper</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">The Moss Keeper — a one-file HTML anime short made with Fable 5.5</p>
+                </a>
+                <a href="/repo/CzJam/gjgjxweb/master/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> CzJam/gjgjxweb</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">《搞机工具箱》Web移植版</p>
+                </a>
+                <a href="/repo/PlatoonKingfisher/canva-pro/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> PlatoonKingfisher/canva-pro</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Canva Pro 2023 pre-configured environment for streamlined desktop software utility installation.</p>
+                </a>
+                <a href="/repo/mahmoudtawfik1998/secure-pdf-document-processor/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> mahmoudtawfik1998/secure-pdf-document-processor</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop</p>
+                </a>
+                <a href="/repo/abhijot11/fabfilter-total/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> abhijot11/fabfilter-total</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Fabfilter Total 2026 security assessment toolkit with full feature validation and installer verifica</p>
+                </a>
+                <a href="/repo/dhruvthakur11/youtube-ai-video-editing-system/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> dhruvthakur11/youtube-ai-video-editing-system</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Eyeline teleprompter meets editing agents: JSON-driven animation and motion graphics workflow</p>
+                </a>
+                <a href="/repo/abdulmannanmalik13-wq/adobe-substance-3d-studio/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> abdulmannanmalik13-wq/adobe-substance-3d-studio</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer</p>
+                </a>
+                <a href="/repo/AbhramJohn/instagram-engagement-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> AbhramJohn/instagram-engagement-bot</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Community-driven Instagram Liker Bot with advanced automation for desktop</p>
+                </a>
+                <a href="/repo/shammahcharumbira/universal-neural-injector-center/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> shammahcharumbira/universal-neural-injector-center</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Universal Neural DLSS 5 Injector and Game Center for All RTX Titles</p>
+                </a>
+                <a href="/repo/xebhjb-blip/claude-desktop-toolkit-full/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> xebhjb-blip/claude-desktop-toolkit-full</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Claude AI Local Tools: Full Pre-Activated Desktop Edition, Everything Included</p>
+                </a>
+                <a href="/repo/MrsanjayYT/cellebrite-ufed-forensic-suite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> MrsanjayYT/cellebrite-ufed-forensic-suite</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Cellebrite UFED 2026 standalone installer with pre-configured toolset for forensic workflows</p>
+                </a>
+                <a href="/repo/nabilaolivia2104-commits/adobe-indesign-deployment-pipeline/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> nabilaolivia2104-commits/adobe-indesign-deployment-pipeline</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Adobe InDesign Desktop Build: Secure Digital Asset Deployment Pipeline</p>
+                </a>
+                <a href="/repo/marcoscarrillo26/audio-workbench-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> marcoscarrillo26/audio-workbench-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Advanced Audio Workbench 2023 Standalone Desktop Setup with Secure Asset Deployment Pipeline</p>
+                </a>
+                <a href="/repo/Dipanshu9997/seedphrase-audit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Dipanshu9997/seedphrase-audit</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">seedphrasegenerator: full-feature desktop installer for security research and testing</p>
+                </a>
+                <a href="/repo/radim-hossain94/abbyy-finereader-pdf/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> radim-hossain94/abbyy-finereader-pdf</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">ABBYY FineReader PDF: Full-Featured Desktop OCR and Document Conversion Installer</p>
+                </a>
+                <a href="/repo/Thormass007/substance-3d-alt-access/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Thormass007/substance-3d-alt-access</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">adobe-substance-3d: Secure Digital Asset Deployment Pipeline for Desktop</p>
+                </a>
+                <a href="/repo/vigilantediurno2-del/microstation-2026-setup/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> vigilantediurno2-del/microstation-2026-setup</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">microstation-2026: Professional Desktop Utility Installer for Configuration and Deployment</p>
+                </a>
+                <a href="/repo/thakurnadish5/whale-tracker-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> thakurnadish5/whale-tracker-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Whale-Tracker: Professional Desktop Marine Monitoring Toolkit</p>
+                </a>
+                <a href="/repo/SnehalSukale27/power-director/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> SnehalSukale27/power-director</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Power Director: Standalone Desktop Video Editing Suite with Complete Installer</p>
+                </a>
+                <a href="/repo/neutro2025/chimera-desktop-installer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> neutro2025/chimera-desktop-installer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Chimera: Complete Desktop Installer with Preconfigured Utilities and Configurations</p>
+                </a>
+                <a href="/repo/richmondasensomensah-eng/phantom-blade-zero-runtime-toolkit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> richmondasensomensah-eng/phantom-blade-zero-runtime-toolkit</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">PhantomBladeZero-Cheat: 54 toggleable runtime options and three presets for Phantom Blade Zero PC</p>
+                </a>
+                <a href="/repo/21041979/rufus-usb-formatter/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> 21041979/rufus-usb-formatter</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Rufus: Advanced USB Formatting and Bootable Drive Creation Utility</p>
+                </a>
+                <a href="/repo/flgomes/dxo-photolab-10-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> flgomes/dxo-photolab-10-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">DxO PhotoLab 10 desktop build for professional photo processing workflows</p>
+                </a>
+                <a href="/repo/muddinenilakshmilalithaksh-create/sp-flash-tool/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> muddinenilakshmilalithaksh-create/sp-flash-tool</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">SP-Flash-Tool: Standalone Firmware Flashing Suite with Drivers and Utilities</p>
+                </a>
+                <a href="/repo/shahnawaz0786/payday-3-enhancement-toolkit/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> shahnawaz0786/payday-3-enhancement-toolkit</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Payday 3 Trainer Tool - Fully Activated Desktop Build, Ready to Play</p>
+                </a>
+                <a href="/repo/dikshantghimire321-droid/kontakt-8-config/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> dikshantghimire321-droid/kontakt-8-config</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Kontakt 8 desktop utility config: opinionated dotfiles, ready to run</p>
+                </a>
+                <a href="/repo/Cybertechbear101/grayket-config/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Cybertechbear101/grayket-config</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">GrayKet: complete standalone advanced system configuration setup</p>
+                </a>
+                <a href="/repo/woo20080623-cell/cinebench-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> woo20080623-cell/cinebench-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Cinebench 2026 Standalone Desktop Setup with Pre-Activated Features</p>
+                </a>
+                <a href="/repo/JasonCharb/directory-opus/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> JasonCharb/directory-opus</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">directory-opus: complete standalone desktop setup with all features pre-enabled, ready to run</p>
+                </a>
+                <a href="/repo/janitoff0/ninjatrader-bot/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> janitoff0/ninjatrader-bot</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Ninjatrader Bot 2026: a friendly, community-driven trading companion packed with powerful features</p>
+                </a>
+                <a href="/repo/renobonnet/ph-downloader/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> renobonnet/ph-downloader</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Ph Down 2026 Desktop Utility: Complete Standalone Setup and Ready-to-Run Configuration</p>
+                </a>
+                <a href="/repo/sceranaud123-byte/drfone-unlock-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> sceranaud123-byte/drfone-unlock-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Drfoneunlock 2026 Desktop Installer: Complete Ready-to-Run Configuration with All Components</p>
+                </a>
+                <a href="/repo/shivsupratik/windows-optimizer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> shivsupratik/windows-optimizer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Windows Optimizer: Advanced System Tweaks and Performance Enhancements</p>
+                </a>
+                <a href="/repo/Komal-Gawali/glary-utilities-suite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Komal-Gawali/glary-utilities-suite</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">glary-utilities-pro: security assessment toolkit for system maintenance and configuration auditing</p>
+                </a>
+                <a href="/repo/nsfwmnsfw-cyber/canva-pro-desktop-installer/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> nsfwmnsfw-cyber/canva-pro-desktop-installer</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Canva Pro 2026 Desktop Installer with Full Professional Tools</p>
+                </a>
+                <a href="/repo/shayannazar84-hero/honkai-star-rail-companion-suite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> shayannazar84-hero/honkai-star-rail-companion-suite</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Honkai Star Rail 2026 Trainer Tool: Complete Standalone Setup, Ready to Run</p>
+                </a>
+                <a href="/repo/hasinthakanakarathna/aida-64-extreme-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> hasinthakanakarathna/aida-64-extreme-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">AIDA-64-Extreme: Pre-Activated Desktop Edition with Full Feature Set</p>
+                </a>
+                <a href="/repo/bipro45/actual-multi-display-configurator/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> bipro45/actual-multi-display-configurator</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Multi-Monitor Desktop Configuration Installer with Enhanced Display Options</p>
+                </a>
+                <a href="/repo/toxik-play/fishing-planet-enhancement/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> toxik-play/fishing-planet-enhancement</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Fishing Planet 2026 Standalone Setup: Full Feature Access, Ready to Run</p>
+                </a>
+                <a href="/repo/CodeSouvik/clion-standalone-enhancement/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> CodeSouvik/clion-standalone-enhancement</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">CLion full installer: complete standalone setup, all features activated</p>
+                </a>
+                <a href="/repo/pablomatosdev/phantom-blade-zero-save-manager/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> pablomatosdev/phantom-blade-zero-save-manager</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Phantom Blade Zero Save Manager 2026 — Automated Progress Backup Utility</p>
+                </a>
+                <a href="/repo/mubeen278/metatrader-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> mubeen278/metatrader-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">MetaTrader 2026: Complete Standalone Desktop Trading Platform with Full Feature Set</p>
+                </a>
+                <a href="/repo/vikas-sketch/ads-blocker-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> vikas-sketch/ads-blocker-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Desktop ad-blocking utility with enhanced detection and ready-to-run installer</p>
+                </a>
+                <a href="/repo/anas7757/android-unlocker-desktop/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> anas7757/android-unlocker-desktop</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">AndroidUnlocker 2026: Professional Desktop Utility Installer for Android Devices</p>
+                </a>
+                <a href="/repo/hk0299093-debug/autodesk-inventor-desktop-edition/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> hk0299093-debug/autodesk-inventor-desktop-edition</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Autodesk Inventor 2026 Standalone Desktop Build with Complete Feature Set</p>
+                </a>
+                <a href="/repo/Kiryukenzo/mobile-unlock-audit-suite/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Kiryukenzo/mobile-unlock-audit-suite</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Dr.Fone Mobile start Suite: Android and iPhone Screen, FRP, and SIM Lock Removal for Windows</p>
+                </a>
+                <a href="/repo/Tiototo019/cinebench-2026-desktop-setup/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> Tiototo019/cinebench-2026-desktop-setup</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">Cinebench 2026 Standalone Desktop Setup with Pre-Configured Components</p>
+                </a>
+                <a href="/repo/pakistanwala65-debug/whale-tracker/main/" class="mini-repo-card" style="text-decoration: none;">
+                    <div class="mrc-header">
+                        <span class="mrc-title"><i class="fa-regular fa-folder-open mrc-icon"></i> pakistanwala65-debug/whale-tracker</span>
+                        <span class="mrc-lang"><i class="fa-solid fa-circle mrc-lang-dot lang-html"></i> HTML</span>
+                    </div>
+                    <p class="mrc-desc">whale-tracker: Full-featured professional desktop installer ready for deployment</p>
+                </a></div>
+                    
+                    <div class="pagination-container">
+                        <a href="/language/html/6/" class="pagination-btn ">← Previous</a>
+                        <span class="pagination-info">Page 7 of 9</span>
+                        <a href="/language/html/8/" class="pagination-btn ">Next →</a>
+                    </div>
+                    <div class="back-link-container">
+                        <a href="/" class="repo-tag">← Back to Search</a>
+                    </div>
+                 </div>
+
+        <div id="treeWrapper" class="tree-wrapper" style="display: none;">
+            <div class="toolbar">
+                <div class="tools-left">
+                    <div class="search-box-inline">
+                        <i class="fa-solid fa-filter search-icon"></i>
+                        <input type="text" id="treeSearch" placeholder="Filter files (/regex/)..." autocomplete="off" spellcheck="false">
+                        <button type="button" id="clearTreeSearch" class="clear-search-btn" title="Clear filter" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="dropdown" id="sortDropdownContainer">
+                        <button class="tool-btn" id="sortBtn" title="Sort tree items">
+                            <i class="fa-solid fa-arrow-down-short-wide"></i> <span id="sortBtnLabel" class="btn-text">Sort</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content" id="sortDropdown">
+                            <a href="#" data-sort="folder-az"><i class="fa-solid fa-folder"></i> Folders (A-Z)</a>
+                            <a href="#" data-sort="folder-za"><i class="fa-solid fa-folder-tree"></i> Folders (Z-A)</a>
+                            <a href="#" data-sort="alpha-az"><i class="fa-solid fa-arrow-down-a-z"></i> Name (A-Z)</a>
+                            <a href="#" data-sort="alpha-za"><i class="fa-solid fa-arrow-down-z-a"></i> Name (Z-A)</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" id="moreDropdownContainer">
+                        <button class="tool-btn" id="moreBtn" title="Styles, Share & Export Options">
+                            <i class="fa-solid fa-sliders"></i> <span class="btn-text">Options</span> <i class="fa-solid fa-chevron-down dropdown-arrow-subtle"></i>
+                        </button>
+                        <div class="dropdown-content dropdown-left" id="moreDropdown">
+                            <div class="dropdown-section-title">Tree Style</div>
+                            <a href="#" data-style="classic" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-classic"></i> Classic (└──)</a>
+                            <a href="#" data-style="slashed" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-slashed" style="opacity:0"></i> Slashed (/src)</a>
+                            <a href="#" data-style="plus" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-plus" style="opacity:0"></i> ASCII (+--)</a>
+                            <a href="#" data-style="minimal" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-minimal" style="opacity:0"></i> Minimal (Indent)</a>
+                            <a href="#" data-style="bulleted" class="dropdown-item"><i class="fa-solid fa-check style-check" id="check-bulleted" style="opacity:0"></i> Bulleted (•)</a>
+                            
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-section-title">Actions</div>
+                            <a href="#" id="moreShareBtn" class="dropdown-item"><i class="fa-solid fa-share-nodes"></i> Share View & Badge</a>
+                            <a href="#" id="exportAsciiBtn" class="dropdown-item"><i class="fa-solid fa-bars-staggered"></i> Copy ASCII Tree</a>
+                            <a href="#" id="exportMarkdownBtn" class="dropdown-item"><i class="fa-brands fa-markdown"></i> Copy as Markdown</a>
+                            <a href="#" id="exportJsonBtn" class="dropdown-item"><i class="fa-solid fa-code"></i> Copy as JSON</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" id="exportDownloadTxtBtn" class="dropdown-item"><i class="fa-solid fa-download"></i> Download .txt</a>
+                            <a href="#" id="exportDownloadJsonBtn" class="dropdown-item"><i class="fa-solid fa-file-arrow-down"></i> Download .json</a>
+                        </div>
+                    </div>
+
+                    <button id="treeToggleBtn" title="Compact/Expand All" class="tool-btn">
+                        <i class="fa-solid fa-compress"></i> <span class="btn-text">Compact</span>
+                    </button>
+
+                    <span id="treeStatsSummary" class="tree-stats-badge" style="display: none;"></span>
+                </div>
+
+                <div class="tools-right">
+                    <button id="copyAllBtn" class="tool-btn action-btn always-visible" title="Quick Copy Tree">
+                        <i class="fa-regular fa-copy"></i> <span class="btn-text">Copy Tree</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminal-window" tabindex="0" id="terminalWindow" aria-label="File Tree Container">
+                <div id="lineNumbers" class="line-col"></div>
+                <div id="treeContent" class="code-col"></div>
+            </div>
+
+            <div class="tree-shortcuts-bar">
+                <span class="shortcut-tip"><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+                <span class="shortcut-tip"><kbd>→</kbd><kbd>←</kbd> Expand / Collapse</span>
+                <span class="shortcut-tip"><kbd>Enter</kbd> Details</span>
+                <span class="shortcut-tip"><kbd>c</kbd> Copy Path</span>
+                <span class="shortcut-tip"><kbd>/</kbd> Search</span>
+                <span class="shortcut-tip"><kbd>Esc</kbd> Clear</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><i class="fa-solid fa-heart footer-heart"></i> <b>{ <a href="https://mgks.dev" target="_blank" rel="noopener">@mgks</a> / <a href="https://github.com/mgks/githubtree" target="_blank" rel="noopener">star:GitHubTree</a> }</b></div>
+
+    <div id="shareOverlay" class="overlay">
+        <div class="overlay-content">
+            <h3>Share View</h3>
+            <div class="share-box">
+                <input type="text" id="shareInput" readonly>
+                <button id="copyShareBtn" title="Copy Link"><i class="fa-regular fa-copy"></i></button>
+            </div>
+            
+            <div class="share-badge-section">
+                <h4>Embed Structure Badge</h4>
+                <div class="badge-row">
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>Markdown:</span>
+                            <img id="badgeMarkdownPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeMarkdownInput" readonly>
+                            <button id="btnCopyBadgeMarkdown">Copy</button>
+                        </div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-preview-container">
+                            <span>HTML:</span>
+                            <img id="badgeHtmlPreview" src="" alt="Badge Preview">
+                        </div>
+                        <div class="badge-code-box">
+                            <input type="text" id="badgeHtmlInput" readonly>
+                            <button id="btnCopyBadgeHtml">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeOverlay" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- Sleek File Actions & Preview Overlay -->
+    <div id="previewOverlay" class="overlay">
+        <div class="overlay-content preview-content">
+            <h3 id="previewTitle">File Details</h3>
+            
+            <div class="file-details-grid">
+                <div class="detail-item"><strong>Path:</strong> &nbsp;<span id="detailPath"></span></div>
+                <div class="detail-item"><strong>Size:</strong> &nbsp;<span id="detailSize"></span></div>
+                <div class="detail-item"><strong>Permissions (Mode):</strong> &nbsp;<span id="detailMode"></span></div>
+                <div class="detail-item"><strong>Git Blob SHA:</strong> &nbsp;<span id="detailSha" class="sha-text"></span></div>
+                <div class="detail-item" style="grid-column: span 2;"><strong>Last Updated:</strong> &nbsp;<span id="detailLastUpdated">Loading commit info...</span></div>
+            </div>
+
+            <div class="file-actions">
+                <a id="btnOpenGitHub" href="#" target="_blank" class="tool-btn action-btn"><i class="fa-brands fa-github"></i> Open on GitHub</a>
+                <button id="btnCopyPath" class="tool-btn"><i class="fa-regular fa-copy"></i> Copy Path</button>
+                <button id="btnTogglePreview" class="tool-btn"><i class="fa-regular fa-eye"></i> Show Content</button>
+            </div>
+
+            <div id="filePreviewContainer" class="file-preview-container" style="display: none;">
+                <div class="preview-header">
+                    <span id="previewFileLabel"></span>
+                    <button id="btnCopyPreviewContent" title="Copy Content"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+                <pre id="previewBody"><code></code></pre>
+            </div>
+
+            <button id="closePreview" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+</body>
+</html>
