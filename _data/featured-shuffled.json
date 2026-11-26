@@ -1,146 +1,146 @@
 [
   {
-    "repo": "zarazhangrui/beautiful-html-templates",
+    "repo": "ashayas/icloud-s3",
+    "branch": "main",
+    "language": "Rust",
+    "description": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole."
+  },
+  {
+    "repo": "axios/axios",
+    "branch": "main",
+    "language": "JavaScript",
+    "description": "Promise based HTTP client for the browser and node.js"
+  },
+  {
+    "repo": "ansible-collections/community.general",
+    "branch": "main",
+    "language": "Python",
+    "description": "Ansible Community General Collection"
+  },
+  {
+    "repo": "facebookresearch/audiocraft",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / tokenizer, along with MusicGen, a simple and controllable music generation LM with textual and melodic conditioning."
+  },
+  {
+    "repo": "Anxcye/anx-reader",
+    "branch": "main",
+    "language": "Dart",
+    "description": "Featuring powerful AI capabilities and supporting various e-book formats, it makes reading smarter and more focused."
+  },
+  {
+    "repo": "apache/groovy",
+    "branch": "master",
+    "language": "Java",
+    "description": "Apache Groovy: A powerful multi-faceted programming language for the JVM platform"
+  },
+  {
+    "repo": "PoIyClaw/Polymarket-Arbitrage-Trading-Bot",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": ""
+  },
+  {
+    "repo": "iliya-Developer/VortexL2",
+    "branch": "main",
+    "language": "Python",
+    "description": ""
+  },
+  {
+    "repo": "OranAi-Ltd/oransim",
+    "branch": "main",
+    "language": "Python",
+    "description": "Causal Digital Twin for Marketing at Scale · Predict any marketing decision before you spend a dollar."
+  },
+  {
+    "repo": "pocketbase/pocketbase",
+    "branch": "master",
+    "language": "Go",
+    "description": "Open Source realtime backend in 1 file"
+  },
+  {
+    "repo": "pcruz1905/hls-restream-proxy",
+    "branch": "main",
+    "language": "Shell",
+    "description": "Lightweight HLS restream proxy for Jellyfin/Emby/Plex — injects headers, rewrites playlists, auto-refreshes tokens"
+  },
+  {
+    "repo": "CalyxOS/calyxos",
     "branch": "main",
     "language": "HTML",
-    "description": "A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically."
+    "description": "CalyxOS - Google-free Android"
   },
   {
-    "repo": "seedds/nxnative",
-    "branch": "main",
-    "language": "C",
-    "description": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)"
-  },
-  {
-    "repo": "therealaleph/MasterHttpRelayVPN-RUST",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Rust port of @masterking32's MasterHttpRelayVPN — all credit to @masterking32 for the original idea and Python implementation. Free DPI bypass via a Google Apps Script relay with TLS SNI concealment. CLI + cross-platform desktop UI, HTTP + SOCKS5 proxy, no runtime deps."
-  },
-  {
-    "repo": "XposeMarket/SmallClaw",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "© 2026 Xpose Market. SmallClaw is a product of Xpose Market. All rights reserved."
-  },
-  {
-    "repo": "jure/webphysics",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "WebGPU physics engine based on the AVBD solver"
-  },
-  {
-    "repo": "PolyEdgeLab/Web3-casino-game",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "This is casino game tool."
-  },
-  {
-    "repo": "0xGF/boneyard",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Auto generated skeleton loading framework"
-  },
-  {
-    "repo": "webpack/webpack-dev-server",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "Serves a webpack app. Updates the browser on changes. Documentation https://webpack.js.org/configuration/dev-server/."
-  },
-  {
-    "repo": "mohshomis/modo",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "wasmerio/wasmer",
-    "branch": "master",
-    "language": "Rust",
-    "description": "🚀 Fast, secure, lightweight containers based on WebAssembly"
-  },
-  {
-    "repo": "openai/triton",
-    "branch": "main",
-    "language": "MLIR",
-    "description": "Development repository for the Triton language and compiler"
-  },
-  {
-    "repo": "RevylAI/greenlight",
-    "branch": "main",
-    "language": "Go",
-    "description": "Pre-submission compliance scanner for the Apple App Store"
-  },
-  {
-    "repo": "Sortesylvia25678/Polymarket-Arbitrage-Bot",
-    "branch": "main",
-    "language": "Python",
-    "description": "Automated arbitrage and copy-trading bot for Polymarket prediction markets with real-time odds monitoring, Kelly criterion sizing, and comprehensive P&L tracking"
-  },
-  {
-    "repo": "MapleShaw/yt-dlp-downloader-skill",
-    "branch": "master",
-    "language": "Shell",
-    "description": "Cursor Agent Skill for downloading videos using yt-dlp"
-  },
-  {
-    "repo": "op7418/m5-paper-buddy",
+    "repo": "pedrodg28/yuzu-emu",
     "branch": "main",
     "language": "C++",
-    "description": "📟 Claude Code physical companion on M5Paper V1.1 e-ink. Multi-session dashboard, hardware approval (buttons + touch), AskUserQuestion option cards, CJK, USB/BLE, installable as a Claude Code plugin. / Claude Code 实体搭档，把 M5Paper 变成 Claude Code 的多会话看板 + 硬件审批面板。"
+    "description": "Yuzu Emulator Switch Nintendo Pokemon Scarlet Violet, Mario Kart 8 Deluxe, firmware 18.1.0, prod.keys, shader stutter fix, FPS++ mod, save file importer, amiibo bin, motion control setup, local wireless LDN, multicore, handheld mode, docked mode, custom resolution, Joy-Con drift fix."
   },
   {
-    "repo": "element-plus/element-plus",
-    "branch": "dev",
-    "language": "TypeScript",
-    "description": "🎉 A Vue.js 3 UI Library made by Element team"
-  },
-  {
-    "repo": "symbolica-ai/arcgentica",
+    "repo": "SakanaAI/AI-Scientist-v2",
     "branch": "main",
     "language": "Python",
-    "description": "An ARC-AGI solution using Agentica from Symbolica"
+    "description": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
   },
   {
-    "repo": "iamzifei/bookmark-is-learned",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "收藏到就是学到，解决光收藏不看的问题。收藏的当下立刻学习或者丢弃"
-  },
-  {
-    "repo": "openperf/openclaw-cloud",
+    "repo": "sass/sass",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Give your AI Agent a cloud-native life. Deploy once, converse everywhere."
+    "description": "Sass makes CSS fun!"
   },
   {
-    "repo": "direkturcrypto/polymarket-terminal",
+    "repo": "zhu1090093659/spec_driven_develop",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Copy, Scalping & Sniper for polymarket"
+    "language": "Shell",
+    "description": "Cross-platform AI agent skill for spec-driven development: analyze codebases, decompose large  transformations, and track long-running work."
   },
   {
-    "repo": "AMAP-ML/SpatialGenEval",
+    "repo": "junit-team/junit4",
+    "branch": "main",
+    "language": "Java",
+    "description": "A programmer-oriented testing framework for Java — :warning: maintenance mode"
+  },
+  {
+    "repo": "phpmyadmin/phpmyadmin",
+    "branch": "master",
+    "language": "PHP",
+    "description": "A web interface for MySQL and MariaDB"
+  },
+  {
+    "repo": "fish-shell/fish-shell",
+    "branch": "master",
+    "language": "Rust",
+    "description": "The user-friendly command line shell."
+  },
+  {
+    "repo": "tensorflow/tensorboard",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "TensorFlow's Visualization Toolkit"
+  },
+  {
+    "repo": "agenmod/immortal-skill",
+    "branch": "main",
+    "language": "Python",
+    "description": "♾️ 开源数字永生框架 — 从聊天记录蒸馏任何人的七维数字分身。支持微信/飞书/iMessage/Telegram等12+平台，7种角色模板，对齐 OpenClaw Soul Spec 标准。一行指令让你的AI学会蒸馏。"
+  },
+  {
+    "repo": "amirmushichge/tribeV2_ViralAnalyser",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "he-yufeng/CoreCoder",
+    "repo": "millionco/spawn-agent",
     "branch": "main",
-    "language": "Python",
-    "description": "Minimal AI coding agent (~950 LoC Python) inspired by Claude Code. Works with any LLM. Think NanoGPT for coding agent. Formerly NanoCoder."
+    "language": "TypeScript",
+    "description": "Spawn available local agents on a user's computer"
   },
   {
-    "repo": "iflytek/iFly-Skills",
+    "repo": "99xAgency/GodModeSkill",
     "branch": "main",
-    "language": "Python",
-    "description": "Official collection of iFLYTEK skills for speech, OCR, translation, proofreading, and multimodal AI capabilities."
-  },
-  {
-    "repo": "neovim/neovim",
-    "branch": "master",
-    "language": "Vim Script",
-    "description": "Vim-fork focused on extensibility and usability"
+    "language": "Shell",
+    "description": "Multi-LLM cross-review workflow for Claude Code. /work orchestrates plan/implement/bug-fix with 3 different model families voting on every gate."
   }
 ]
