@@ -1,146 +1,146 @@
 [
   {
-    "repo": "GreatScott/enveil",
-    "branch": "main",
-    "language": "Rust",
-    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
-  },
-  {
-    "repo": "pytorch/audio",
+    "repo": "deepseek-ai/DeepSeek-Math",
     "branch": "main",
     "language": "Python",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
+    "description": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
   },
   {
-    "repo": "Devin-AXIS/jev-dsh-decision",
+    "repo": "omlahore/RemoveMacAI",
     "branch": "main",
-    "language": "JavaScript",
-    "description": "Jev DSH 决策引擎｜面向 Agent Harness 的结构化决策插件。原生支持 DeepSeek Harness，通过 iPolloWork 支持 OpenCode、Codex Harness。"
+    "language": "Swift",
+    "description": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible."
   },
   {
-    "repo": "element-plus/element-plus",
-    "branch": "dev",
+    "repo": "PKU-YuanGroup/Helios",
+    "branch": "main",
+    "language": "Python",
+    "description": "Helios: Real Real-Time Long Video Generation Model"
+  },
+  {
+    "repo": "HBAI-Ltd/Toonflow-app",
+    "branch": "master",
+    "language": "HTML",
+    "description": "Toonflow 是一款 AI 短剧漫剧工具，能够利用 AI 技术将小说自动转化为剧本，并结合 AI 生成的图片和视频，实现高效的短剧创作。借助 Toonflow，可以轻松完成从文字到影像的全流程，让短剧制作变得更加智能与便捷。"
+  },
+  {
+    "repo": "SumeLabs/clawra",
+    "branch": "main",
     "language": "TypeScript",
-    "description": "🎉 A Vue.js 3 UI Library made by Element team"
+    "description": "Clawra - Openclaw as your girlfriend"
   },
   {
-    "repo": "inspatio/inspatio-world",
+    "repo": "BoundingBoxSoftware/CharacterController",
+    "branch": "main",
+    "language": "C#",
+    "description": "A character controller for Unity that covers many edge cases."
+  },
+  {
+    "repo": "perplexityai/bumblebee",
+    "branch": "main",
+    "language": "Go",
+    "description": "Read-only inventory collector for package, extension, and developer-tool metadata on macOS and Linux developer endpoints, built for fast supply-chain exposure checks."
+  },
+  {
+    "repo": "mosaicml/llm-foundry",
     "branch": "main",
     "language": "Python",
+    "description": "LLM training code for Databricks foundation models"
+  },
+  {
+    "repo": "wailsapp/wails",
+    "branch": "master",
+    "language": "Go",
+    "description": "Create beautiful applications using Go"
+  },
+  {
+    "repo": "bazelbuild/bazel",
+    "branch": "master",
+    "language": "Java",
+    "description": "a fast, scalable, multi-language and extensible build system"
+  },
+  {
+    "repo": "jackc/pgx",
+    "branch": "master",
+    "language": "Go",
+    "description": "PostgreSQL driver and toolkit for Go"
+  },
+  {
+    "repo": "Jawaz-Keyzor/DarkGPT",
+    "branch": "main",
+    "language": "Python",
+    "description": "Unrestricted ChatGPT client with built-in jailbreak presets, web interface, and streaming API. No content filters, no refusals, no ethical blocks. Open source."
+  },
+  {
+    "repo": "basketikun/chatgpt2api",
+    "branch": "main",
+    "language": "TypeScript",
     "description": ""
   },
   {
-    "repo": "react-hook-form/react-hook-form",
-    "branch": "master",
-    "language": "TypeScript",
-    "description": "📋 React Hooks for form state management and validation (Web + React Native)"
+    "repo": "raspberrypi/linux",
+    "branch": "rpi-6.6.y",
+    "language": "C",
+    "description": "Kernel source tree for Raspberry Pi-provided kernel builds. Issues unrelated to the linux kernel should be posted on the community forum at https://forums.raspberrypi.com/"
   },
   {
-    "repo": "GordenSun/LearningCell",
+    "repo": "rit3zh/expo-motion-tabs",
     "branch": "main",
     "language": "TypeScript",
-    "description": "细胞3D模型展示"
+    "description": "⚡️ Smooth motion tabs for Expo Router"
   },
   {
-    "repo": "scipy/scipy",
+    "repo": "shitagaki-lab/see-through",
+    "branch": "main",
+    "language": "Jupyter Notebook",
+    "description": "Single-image Layer Decomposition for Anime Characters (SIGGRAPH 2026, Conditionally Accepted)"
+  },
+  {
+    "repo": "google-deepmind/graphcast",
     "branch": "main",
     "language": "Python",
-    "description": "SciPy library main repository"
+    "description": "Deep learning weather model from Google DeepMind."
   },
   {
-    "repo": "drivelineresearch/autoresearch-claude-code",
+    "repo": "langgenius/dify",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Production-ready platform for agentic workflow development."
+  },
+  {
+    "repo": "tanviet12/chat-quality-agent",
+    "branch": "main",
+    "language": "Go",
+    "description": ""
+  },
+  {
+    "repo": "HugoRCD/evlog",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Logging that makes sense. Wide events, structured errors, zero chaos."
+  },
+  {
+    "repo": "Significant-Gravitas/AutoGPT",
     "branch": "master",
     "language": "Python",
-    "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch"
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
   },
   {
-    "repo": "lzhgus/Capso",
+    "repo": "edgedb/edgedb",
+    "branch": "master",
+    "language": "Python",
+    "description": "Gel supercharges Postgres with a modern data model, graph queries, Auth & AI solutions, and much more."
+  },
+  {
+    "repo": "mykolaharmash/notelet",
     "branch": "main",
     "language": "Swift",
-    "description": "Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI."
+    "description": "SwiftUI component for displaying rich release notes inside an app"
   },
   {
-    "repo": "CristianRO2003/Tomodachi-Share-Discover-Share-Mii",
-    "branch": "main",
-    "language": "C++",
-    "description": "Tomodachi Share Discover share Mii download Tomodachi Life PC Mii QR codes sharing platform discovery tool characters island outfits interiors 3DS emulator Citra save editor custom Miis community hub fan port native port desktop version modding tools assets resources apartment management food items collection database storage export import"
-  },
-  {
-    "repo": "kapishdima/remocn",
+    "repo": "nhevers/MoltBrain",
     "branch": "main",
     "language": "TypeScript",
-    "description": "Production-ready animations, transitions, backgrounds, and scenes for Remotion. A shadcn registry that lets you `npx shadcn add` polished video components into any Remotion project. Built for solo builders shipping demo videos fast"
-  },
-  {
-    "repo": "DeepSeek-TUI/DeepSeek-TUI",
-    "branch": "main",
-    "language": "Rust",
-    "description": "Install DeepSeek TUI - Coding agent for DeepSeek models that runs in your terminal."
-  },
-  {
-    "repo": "ray-project/ray",
-    "branch": "master",
-    "language": "Python",
-    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
-  },
-  {
-    "repo": "koodo-reader/koodo-reader",
-    "branch": "master",
-    "language": "JavaScript",
-    "description": "A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web"
-  },
-  {
-    "repo": "wagmi-dev/wagmi",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "Reactive primitives for Ethereum apps"
-  },
-  {
-    "repo": "web3/web3.js",
-    "branch": "1.x",
-    "language": "TypeScript",
-    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
-  },
-  {
-    "repo": "preactjs/preact",
-    "branch": "main",
-    "language": "JavaScript",
-    "description": "⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM."
-  },
-  {
-    "repo": "microsoft/autogen",
-    "branch": "main",
-    "language": "Python",
-    "description": "A programming framework for agentic AI"
-  },
-  {
-    "repo": "aave/aave-v2",
-    "branch": "master",
-    "language": "Other",
-    "description": "Aave Protocol V2"
-  },
-  {
-    "repo": "robertorobotics/Nextis-AIRA-3D",
-    "branch": "main",
-    "language": "Python",
-    "description": "Open-source 7DoF 3D-printable robotic arm with LeRobot integration."
-  },
-  {
-    "repo": "openmax-server/server",
-    "branch": "master",
-    "language": "Python",
-    "description": "Открытый сервер для MAX"
-  },
-  {
-    "repo": "LocoreMind/locoagent",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "AI-powered social media agent with real browser automation"
-  },
-  {
-    "repo": "chojs23/concord",
-    "branch": "main",
-    "language": "Rust",
-    "description": "A feature rich terminal client for Discord"
+    "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically."
   }
 ]
