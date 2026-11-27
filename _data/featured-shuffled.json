@@ -1,87 +1,69 @@
 [
   {
-    "repo": "M-Hitesh/sylenth-1-desktop-build",
+    "repo": "GreatScott/enveil",
     "branch": "main",
-    "language": "HTML",
-    "description": "Sylenth-1 Desktop Build: Fully Functional Installer with All Features Enabled"
+    "language": "Rust",
+    "description": "ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext."
   },
   {
-    "repo": "verssache/chatgpt-creator",
-    "branch": "main",
-    "language": "Go",
-    "description": "A high-performance Go bot for automated bulk ChatGPT account creation, featuring TLS fingerprint spoofing and auto email OTP verification."
-  },
-  {
-    "repo": "LemoLev/tg-ws-proxy-ANDROID",
+    "repo": "pytorch/audio",
     "branch": "main",
     "language": "Python",
-    "description": "Flowseal/tg-ws-proxy на андроид (да и не только)"
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch"
   },
   {
-    "repo": "actions/download-artifact",
+    "repo": "Devin-AXIS/jev-dsh-decision",
     "branch": "main",
+    "language": "JavaScript",
+    "description": "Jev DSH 决策引擎｜面向 Agent Harness 的结构化决策插件。原生支持 DeepSeek Harness，通过 iPolloWork 支持 OpenCode、Codex Harness。"
+  },
+  {
+    "repo": "element-plus/element-plus",
+    "branch": "dev",
     "language": "TypeScript",
-    "description": "Download artifacts from your build"
+    "description": "🎉 A Vue.js 3 UI Library made by Element team"
   },
   {
-    "repo": "timwuhaotian/the-pair",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "The Pair - Automated pair programming — grab a coffee while two AI agents cross-check each other's work"
-  },
-  {
-    "repo": "Justi1980/Dawn-Validator-BOT",
-    "branch": "main",
-    "language": "Python",
-    "description": "Dawn Validator BOT — Automated node validation bot for Dawn Protocol testnet with multi-account support, proxy rotation, validator registration, keepalive pings, reward tracking, and Rich CLI interface for decentralized bandwidth network participation"
-  },
-  {
-    "repo": "jarodise/pdf2epub-paddle",
+    "repo": "inspatio/inspatio-world",
     "branch": "main",
     "language": "Python",
     "description": ""
   },
   {
-    "repo": "AnnaSuSu/TechSpar",
+    "repo": "react-hook-form/react-hook-form",
+    "branch": "master",
+    "language": "TypeScript",
+    "description": "📋 React Hooks for form state management and validation (Web + React Native)"
+  },
+  {
+    "repo": "GordenSun/LearningCell",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "细胞3D模型展示"
+  },
+  {
+    "repo": "scipy/scipy",
     "branch": "main",
     "language": "Python",
-    "description": "AI 驱动的八股文面试备战系统。支持长期记忆和人物画像，系统会记住你每次的表现，追踪薄弱点和掌握度，自动针对短板出题。支持简历模拟面试和专项强化训练，练得越多，题目越精准，一个越来越了解你的 AI 面试教练。"
+    "description": "SciPy library main repository"
   },
   {
-    "repo": "phuryn/claude-usage",
-    "branch": "main",
+    "repo": "drivelineresearch/autoresearch-claude-code",
+    "branch": "master",
     "language": "Python",
-    "description": "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture."
+    "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch"
   },
   {
-    "repo": "krisrice/oracle-db-skills",
-    "branch": "main",
-    "language": "Shell",
-    "description": "Oracle DB Skills is a curated library of 100+ practical, documentation-backed guides for working with Oracle Database, organized by domain"
-  },
-  {
-    "repo": "Emanuele-web04/remodex",
+    "repo": "lzhgus/Capso",
     "branch": "main",
     "language": "Swift",
-    "description": "Remote Control for Codex. 24/7 version on the way"
+    "description": "Open-source screenshot and screen recording for macOS. The free, native alternative to CleanShot X. Built with Swift 6.0 and SwiftUI."
   },
   {
-    "repo": "TianyiDataScience/openclaw-control-center",
+    "repo": "CristianRO2003/Tomodachi-Share-Discover-Share-Mii",
     "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "SamuelQZQ/auto-coding-agent-demo",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "一个长达 10 小时的 AI 全自动编程实验"
-  },
-  {
-    "repo": "Infatoshi/metal-mc-terrain",
-    "branch": "main",
-    "language": "Objective-C",
-    "description": "Native Metal terrain renderer for Minecraft 1.16.5 on Apple Silicon. 10x FPS by replacing macOS OpenGL with Metal."
+    "language": "C++",
+    "description": "Tomodachi Share Discover share Mii download Tomodachi Life PC Mii QR codes sharing platform discovery tool characters island outfits interiors 3DS emulator Citra save editor custom Miis community hub fan port native port desktop version modding tools assets resources apartment management food items collection database storage export import"
   },
   {
     "repo": "kapishdima/remocn",
@@ -90,57 +72,75 @@
     "description": "Production-ready animations, transitions, backgrounds, and scenes for Remotion. A shadcn registry that lets you `npx shadcn add` polished video components into any Remotion project. Built for solo builders shipping demo videos fast"
   },
   {
-    "repo": "etcd-io/etcd",
+    "repo": "DeepSeek-TUI/DeepSeek-TUI",
     "branch": "main",
-    "language": "Go",
-    "description": "Distributed reliable key-value store for the most critical data of a distributed system"
+    "language": "Rust",
+    "description": "Install DeepSeek TUI - Coding agent for DeepSeek models that runs in your terminal."
   },
   {
-    "repo": "emotion-js/emotion",
+    "repo": "ray-project/ray",
+    "branch": "master",
+    "language": "Python",
+    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
+  },
+  {
+    "repo": "koodo-reader/koodo-reader",
+    "branch": "master",
+    "language": "JavaScript",
+    "description": "A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux, Android, iOS and Web"
+  },
+  {
+    "repo": "wagmi-dev/wagmi",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "Reactive primitives for Ethereum apps"
+  },
+  {
+    "repo": "web3/web3.js",
+    "branch": "1.x",
+    "language": "TypeScript",
+    "description": "Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions."
+  },
+  {
+    "repo": "preactjs/preact",
     "branch": "main",
     "language": "JavaScript",
-    "description": "👩‍🎤 CSS-in-JS library designed for high performance style composition"
+    "description": "⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM."
   },
   {
-    "repo": "boratanrikulu/gecit",
-    "branch": "main",
-    "language": "Go",
-    "description": "DPI bypass tool - eBPF on Linux, TUN on macOS/Windows."
-  },
-  {
-    "repo": "sightflow-dev/sightflow-desktop-agent",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": ""
-  },
-  {
-    "repo": "HKUSTDial/Supervisor-Skills",
+    "repo": "microsoft/autogen",
     "branch": "main",
     "language": "Python",
-    "description": "将博导十年科研经验炼化为可直接调用的 AI 技能。从 Idea 构思到论文投稿，你的 AI 科研副导师。"
+    "description": "A programming framework for agentic AI"
   },
   {
-    "repo": "rustdesk/rustdesk",
+    "repo": "aave/aave-v2",
     "branch": "master",
+    "language": "Other",
+    "description": "Aave Protocol V2"
+  },
+  {
+    "repo": "robertorobotics/Nextis-AIRA-3D",
+    "branch": "main",
+    "language": "Python",
+    "description": "Open-source 7DoF 3D-printable robotic arm with LeRobot integration."
+  },
+  {
+    "repo": "openmax-server/server",
+    "branch": "master",
+    "language": "Python",
+    "description": "Открытый сервер для MAX"
+  },
+  {
+    "repo": "LocoreMind/locoagent",
+    "branch": "main",
+    "language": "TypeScript",
+    "description": "AI-powered social media agent with real browser automation"
+  },
+  {
+    "repo": "chojs23/concord",
+    "branch": "main",
     "language": "Rust",
-    "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer."
-  },
-  {
-    "repo": "PinchToDebug/EverythingQuickSearch",
-    "branch": "master",
-    "language": "C#",
-    "description": ""
-  },
-  {
-    "repo": "chekusu/mails",
-    "branch": "main",
-    "language": "TypeScript",
-    "description": "email for agents. Built for AI agents that need to send, receive, and understand emails programmatically"
-  },
-  {
-    "repo": "SAGAR-TAMANG/friday-tony-stark-demo",
-    "branch": "main",
-    "language": "Python",
-    "description": "Demo of tools of capabilities of Tony Stark."
+    "description": "A feature rich terminal client for Discord"
   }
 ]
